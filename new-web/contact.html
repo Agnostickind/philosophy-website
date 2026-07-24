@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Philosophy</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+<a href="home.html" class="logo">
+<h2>Φ Philosophy</h2>
+</a>
+
+<div class="nav-links">
+
+<a href="home.html">Home</a>
+<a href="history.html">History</a>
+<a href="thinkers.html">Thinkers</a>
+<a href="branches.html">Branches</a>
+<a href="schools.html">Schools</a>
+<a href="books.html">Books</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+<button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<header class="contact-hero">
+
+<div class="hero-content">
+
+<h1>Get in Touch</h1>
+
+<p>
+
+Questions, feedback, or a philosopher you think belongs on this site?
+I'd genuinely like to hear from you.
+
+</p>
+
+</div>
+
+</header>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-wrap">
+
+<!-- ---- form ---- -->
+
+<div class="contact-form-card">
+
+<h2>Send a Message</h2>
+
+<!--
+  Connected to Formspree (formspree.io) — endpoint below.
+  Submission is handled via fetch() in script.js so the page
+  never navigates away to Formspree's default page; visitors
+  stay on this styled confirmation instead.
+-->
+
+<form id="contact-form" class="contact-form" action="https://formspree.io/f/mnjegjeg" method="POST" novalidate>
+
+<input type="hidden" name="_subject" value="New message from the Philosophy Library contact form">
+
+<div class="form-group">
+<label for="name">Name</label>
+<input type="text" id="name" name="name" placeholder="Your name" required>
+<span class="form-error"></span>
+</div>
+
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="you@example.com" required>
+<span class="form-error"></span>
+</div>
+
+<div class="form-group">
+<label for="subject">Subject</label>
+<input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+<span class="form-error"></span>
+</div>
+
+<div class="form-group">
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+<span class="form-error"></span>
+</div>
+
+<button type="submit" class="form-submit">Send Message</button>
+
+<p class="form-success" role="status"></p>
+
+</form>
+
+</div>
+
+<!-- ---- info ---- -->
+
+<div class="contact-info-card">
+
+<h2>Contact Details</h2>
+
+<ul class="contact-details">
+
+<li>
+
+<span class="contact-label">Email</span>
+<a href="mailto:kavyajn02@gmail.com">kavyajn02@gmail.com</a>
+</li>
+
+<li>
+
+<span class="contact-label">Response Time</span>
+<span>Usually within 2–3 days</span>
+
+</li>
+
+<li>
+
+<span class="contact-label">Best For</span>
+<span>Feedback, corrections, or suggestions for new pages</span>
+
+</li>
+
+</ul>
+
+<hr>
+
+<h3>Follow Along</h3>
+
+<div class="social-links">
+
+<a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+<a href="https://www.instagram.com/" target="_blank">Instagram</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+
+<h3>Is this website free to use?</h3>
+
+<p>Yes — everything on this site, including the books, thinkers, and schools of philosophy, is free to browse.</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Can I suggest a philosopher or book to add?</h3>
+
+<p>Absolutely. Send a message using the form above with the name and a short reason why you think it belongs here.</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Did you write all the content yourself?</h3>
+
+<p>The site is written and maintained by one person as a personal project — corrections and suggestions are always welcome.</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Do you take content requests for specific branches or schools?</h3>
+
+<p>Yes, within reason. Let me know what's missing and I'll look into adding it in a future update.</p>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+<h2>Φ Philosophy</h2>
+
+<p>
+
+A digital library dedicated to exploring the ideas,
+books and thinkers that shaped human civilization.
+
+</p>
+
+<div class="footer-links">
+
+<a href="home.html">Home</a>
+
+<a href="history.html">History</a>
+
+<a href="thinkers.html">Thinkers</a>
+
+<a href="schools.html">Schools</a>
+
+<a href="books.html">Books</a>
+
+<a href="branches.html">Branches</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<hr>
+
+<p>
+
+© 2026 Philosophy Library
+Designed &amp; Developed by Kavya Jain
+
+</p>
+
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>

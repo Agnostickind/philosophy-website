@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
      current page, so visitors can see where they are.
      --------------------------------------------------------- */
 
-  const currentPage = window.location.pathname.split('/').pop() || 'home.html';
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
   document.querySelectorAll('.nav-links a, .footer-links a').forEach((link) => {
     const href = link.getAttribute('href');

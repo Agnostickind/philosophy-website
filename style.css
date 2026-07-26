@@ -1237,9 +1237,6 @@ grid-template-columns:1fr;
     color:#5b4a39;
 }
 
-/* ================= ORIGIN OF PHILOSOPHY ================= */
-
-/* ================= ORIGIN OF PHILOSOPHY ================= */
 
 /* ===================================
    ORIGIN OF PHILOSOPHY
@@ -1527,6 +1524,8 @@ text-align:left;
 }
 
 }
+
+
 
 /*=========================================
       PHILOSOPHY AROUND THE WORLD
@@ -2180,34 +2179,7 @@ grid-template-columns:1fr;
    HISTORY PAGE
    ========================================================= */
 
-.history-hero {
-  background:
-    radial-gradient(ellipse at 20% -10%, rgba(185, 138, 78, 0.16), transparent 55%),
-    var(--ink);
-  color: var(--light-text);
-  padding: 8rem 6vw 6rem;
-  text-align: center;
-  border-bottom: 1px solid var(--ink-line);
-}
 
-.history-hero .hero-content {
-  max-width: 680px;
-  margin: 0 auto;
-}
-
-.history-hero h1 {
-  color: var(--light-text);
-  font-size: clamp(2.3rem, 5vw, 3.6rem);
-  margin-bottom: 1.2rem;
-}
-
-.history-hero .subtitle {
-  color: var(--muted-light);
-  font-size: 1.08rem;
-  margin-bottom: 2rem;
-}
-
-.history-hero button,
 .history-summary button {
   background: var(--gold);
   color: var(--ink);
@@ -2220,11 +2192,57 @@ grid-template-columns:1fr;
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.history-hero button:hover,
 .history-summary button:hover {
   background: var(--gold-bright);
   transform: translateY(-2px);
 }
+
+.home-hero {
+  background:
+    radial-gradient(ellipse at 20% -10%, rgba(185, 138, 78, 0.16), transparent 55%),
+    var(--ink);
+  color: var(--light-text);
+  padding: 8.5rem 6vw 6.5rem;
+
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--ink-line);
+}
+
+.home-hero::before {
+  content: "Φ";
+  position: absolute;
+  right: -2vw;
+  top: -6vw;
+  font-family: var(--serif-display);
+  font-size: 34vw;
+  line-height: 1;
+  color: rgba(185, 138, 78, 0.05);
+  pointer-events: none;
+  user-select: none;
+}
+
+
+.home-hero button{
+  background: var(--gold);
+  color: var(--ink);
+  padding: 0.85rem 1.8rem;
+  border-radius: var(--radius);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: background 0.2s ease, transform 0.2s ease;
+  margin-top: 30px;
+
+}
+
+.home-hero button:hover{
+  background: var(--gold-bright);
+  transform: translateY(-2px);
+}
+
+
 
 /* ---- intro / overview text ---- */
 
@@ -2236,8 +2254,11 @@ grid-template-columns:1fr;
 
 .history-intro h2 {
   text-align: center;
-  font-size: 1.9rem;
+  
   margin-bottom: 2.2rem;
+  font-size:2rem;
+    font-weight:700;
+    color:#2b1d0f;
 }
 
 .intro-text {
@@ -2249,6 +2270,13 @@ grid-template-columns:1fr;
 
 .intro-text p {
   margin-bottom: 1.3rem;
+    font-size:1.18rem;
+    font-weight:500;
+    line-height:2;
+    color:#3f2f1b;
+    font-family:"Cormorant Garamond", serif;
+    
+
 }
 
 .intro-text p:first-of-type::first-letter {
@@ -2260,6 +2288,45 @@ grid-template-columns:1fr;
   line-height: 0.85;
   margin: 0.1rem 0.5rem 0 0;
 }
+
+.history-section-title{
+    max-width:900px;
+    margin:7rem auto 5rem;
+    text-align:center;
+}
+
+.history-section-title .section-label{
+    font-family:var(--mono);
+    color:var(--gold);
+    letter-spacing:.18em;
+    font-size:.85rem;
+}
+
+.history-section-title h2{
+    font-size:3rem;
+    margin:1rem 0;
+}
+
+.history-section-title h2::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:3px;
+    background:var(--gold);
+    margin:20px auto 0;
+}
+
+.history-section-title p{
+    max-width:700px;
+    margin:2rem auto 0;
+    line-height:2;
+    color:var(--muted-dark);
+}
+
+
+
+
+
 
 /* ---- eras: chronological, so shown on a connected timeline ---- */
 
@@ -2303,9 +2370,13 @@ grid-template-columns:1fr;
 }
 
 .era-content > p {
-  color: #4a4536;
-  font-size: 1rem;
-  margin-bottom: 1.1rem;
+  color: #3f3426;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 1.4rem;
+  border-left: 4px solid var(--gold);
+  padding-left: 18px;
+  text-align: justify;
 }
 
 .era-content h3 {
@@ -2466,22 +2537,7 @@ grid-template-columns:1fr;
   margin-bottom: 2.2rem;
 }
 
-.hero button {
-  background: var(--gold);
-  color: var(--ink);
-  padding: 0.9rem 2rem;
-  border-radius: var(--radius);
-  font-family: var(--mono);
-  font-size: 0.82rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
 
-.hero button:hover {
-  background: var(--gold-bright);
-  transform: translateY(-2px);
-}
 
 /* ---- about ---- */
 
@@ -3248,18 +3304,28 @@ grid-template-columns:1fr;
    ========================================================= */
 
 .thinkers-hero {
-  background:
-    radial-gradient(ellipse at 50% -20%, rgba(185, 138, 78, 0.18), transparent 60%),
+ background:
+    radial-gradient(ellipse at 20% -10%, rgba(185, 138, 78, 0.16), transparent 55%),
     var(--ink);
   color: var(--light-text);
-  padding: 8rem 6vw 5rem;
-  text-align: center;
+  padding: 8.5rem 6vw 6.5rem;
+  position: relative;
   border-bottom: 1px solid var(--ink-line);
+  overflow: hidden;
+
+}
+
+
+
+.thinkers-hero .subtitle {
+  color: var(--muted-light);
+  font-size: 1.08rem;
+  margin-bottom: 2rem;
 }
 
 .thinkers-hero h1 {
   color: var(--light-text);
-  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-size: clamp(2.3rem, 5vw, 3.6rem);
   margin-bottom: 1.2rem;
 }
 
@@ -3665,3 +3731,9 @@ grid-template-columns:1fr;
     grid-template-columns: 1fr;
   }
 }
+ 
+
+/* ============ UNIFIED HERO WATERMARK ============ */
+
+
+

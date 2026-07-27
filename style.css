@@ -1881,19 +1881,12 @@ border-radius:50px;
 
 box-shadow:0 4px 8px rgba(0,0,0,.35);
 
-}
-
-.daily-life::before{
-
 top:-12px;
 
-}
-
-.daily-life::after{
-
 bottom:-12px;
-
 }
+
+
 
 .daily-life h2{
 
@@ -2542,16 +2535,31 @@ grid-template-columns:1fr;
 /* ---- about ---- */
 
 .about-home {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 5rem 6vw;
-  text-align: center;
+
+    max-width:1300px;
+    margin:120px auto;
+    padding:0 7vw;
+    text-align:center;
 }
 
-.about-home h2 {
-  font-size: 1.9rem;
-  margin-bottom: 1.4rem;
+.about-home h2{
+
+    font-size:2.5rem;
+    color:var(--gold-dark);
+    margin-bottom:20px;
+    position:relative;
 }
+
+.about-home  h2::after{
+
+    content:"";
+    width:90px;
+    height:3px;
+    background:var(--gold);
+    display:block;
+    margin:18px auto 0;
+}
+
 
 .about-home p {
   color: var(--muted-dark);

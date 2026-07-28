@@ -2562,9 +2562,19 @@ grid-template-columns:1fr;
 
 
 .about-home p {
-  color: var(--muted-dark);
+  max-width: 74ch;
+  margin: 0 auto;
+  color: #4a4536;
   font-size: 1.02rem;
-  line-height: 1.75;
+}
+
+.about-home p {
+  margin-bottom: 1.3rem;
+    font-size:1.18rem;
+    font-weight:500;
+    line-height:2;
+    color:#3f2f1b;
+    font-family:"Cormorant Garamond", serif;
 }
 
 /* ---- shared card-row pattern (why-philosophy / explore) ---- */

@@ -998,22 +998,39 @@ img { max-width: 100%; display: block; }
 }
 
 .branch-intro {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 4.5rem 6vw 3rem;
-  text-align: center;
+
+    max-width:1300px;
+    margin:120px auto;
+    padding:0 7vw;
+    text-align:center;
 }
 
-.branch-intro h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.2rem;
+.branch-intro h2{
+
+    font-size:2.5rem;
+    color:var(--gold-dark);
+    margin-bottom:20px;
+    position:relative;
 }
+
+.branch-intro  h2::after{
+
+    content:"";
+    width:90px;
+    height:3px;
+    background:var(--gold);
+    display:block;
+    margin:18px auto 0;
+}
+
 
 .branch-intro p {
-  max-width: 64ch;
-  margin: 0 auto;
-  color: var(--muted-dark);
-  font-size: 1.02rem;
+  margin-bottom: 1.3rem;
+    font-size:1.18rem;
+    font-weight:500;
+    line-height:2;
+    color:#3f2f1b;
+    font-family:"Cormorant Garamond", serif;
 }
 
 /* ---- tree of philosophy: shelved like a card-catalog index ---- */
@@ -1060,6 +1077,37 @@ img { max-width: 100%; display: block; }
     border-radius:10px;
 
 }
+
+.philosophy-tree > p {
+  max-width: 62ch;
+  margin: 0 auto 2.4rem;
+  color: var(--muted-dark);
+
+}
+
+.tree-box {
+  background: var(--ink);
+  color: var(--light-text);
+  border: 1px solid var(--ink-line);
+  border-radius: var(--radius);
+  padding: 2.4rem 2.6rem;
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: var(--mono);
+  font-size: 0.92rem;
+  line-height: 1.9;
+  box-shadow: var(--shadow-card);
+}
+
+.tree-box p { color: var(--muted-light); white-space: pre; }
+
+.tree-box .tree-root {
+  color: var(--gold-bright);
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
+
 
 
 
@@ -1676,35 +1724,7 @@ padding:30px 22px;
 
 }
 
-.philosophy-tree > p {
-  max-width: 62ch;
-  margin: 0 auto 2.4rem;
-  color: var(--muted-dark);
 
-}
-
-.tree-box {
-  background: var(--ink);
-  color: var(--light-text);
-  border: 1px solid var(--ink-line);
-  border-radius: var(--radius);
-  padding: 2.4rem 2.6rem;
-  max-width: 480px;
-  margin: 0 auto;
-  text-align: left;
-  font-family: var(--mono);
-  font-size: 0.92rem;
-  line-height: 1.9;
-  box-shadow: var(--shadow-card);
-}
-
-.tree-box p { color: var(--muted-light); white-space: pre; }
-
-.tree-box .tree-root {
-  color: var(--gold-bright);
-  font-size: 1.05rem;
-  margin-bottom: 0.3rem;
-}
 
 /* ---- individual branch spreads (image + text, alternating) ---- */
 

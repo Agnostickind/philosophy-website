@@ -293,9 +293,28 @@ img { max-width: 100%; display: block; }
   padding-bottom: 3rem;
 }
 
+
 .library-intro h2 {
-  font-size: 1.9rem;
-  margin-bottom: 1.3rem;
+
+    font-size:2.5rem;
+    color:var(--gold-dark);
+    margin-bottom:20px;
+    position:relative;
+    font-family: "Cinzel", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #2B1F17;
+
+} 
+
+.library-intro h2::after{
+
+    content:"";
+    width:90px;
+    height:3px;
+    background:var(--gold);
+    display:block;
+    margin:18px auto 0;
 }
 
 .library-intro p {
@@ -1011,6 +1030,11 @@ img { max-width: 100%; display: block; }
     color:var(--gold-dark);
     margin-bottom:20px;
     position:relative;
+    font-family: "Cinzel", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #2B1F17;
+
 }
 
 .branch-intro  h2::after{
@@ -1035,81 +1059,128 @@ img { max-width: 100%; display: block; }
 
 /* ---- tree of philosophy: shelved like a card-catalog index ---- */
 
-.philosophy-tree {
 
-    padding: 2rem 6vw 5rem;
-  
-    width:90%;
-    max-width:1300px;
 
-    margin:140px auto;
+/* =========================
+   TREE OF PHILOSOPHY
+========================= */
 
-    text-align:center
+.philosophy-tree{
+    max-width:1100px;
+    margin:90px auto;
+    padding:20px;
+    text-align:center;
+    
 }
+ 
 
-.philosophy-tree h2 {
+.philosophy-tree h2{
 
-  
-   font-size:3rem;
-
-    color:#2b1d0f;
-
+    font-size:2.5rem;
+    color:var(--gold-dark);
     margin-bottom:20px;
-
-    letter-spacing:1px;
-
     position:relative;
+    font-family: "Cinzel", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #2B1F17;
+
 }
 
 .philosophy-tree h2::after{
 
     content:"";
-
     width:90px;
     height:3px;
-
-    background:#c69a2d;
-
+    background:var(--gold);
     display:block;
+    margin:18px auto 0;
+}
 
-    margin:20px auto 0;
+
+
+.tree-intro{
+    max-width:850px;
+    margin:auto;
+    margin-bottom:45px;
+
+    font-size:1.2rem;
+    line-height:1.9;
+    color:#6A5642;
+}
+
+.tree-box{
+
+    background:#FBF7EF;
+
+    border:2px solid #D6B46A;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.tree-root{
+
+    font-size:2rem;
+
+    color:#7B4B1A;
+
+    margin-bottom:35px;
+
+}
+
+.tree-list{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.tree-list li{
+
+    text-align:left;
+
+    margin:18px 0;
+
+    padding:18px 22px;
+
+    background:#FFFDF8;
+
+    border-left:6px solid #B8863B;
 
     border-radius:10px;
 
+    line-height:1.8;
+
+    color:#4B3929;
+
+    transition:.35s;
+
 }
 
-.philosophy-tree > p {
-  max-width: 62ch;
-  margin: 0 auto 2.4rem;
-  color: var(--muted-dark);
+.tree-list li:hover{
+
+    background:#F6E4B7;
+
+    transform:translateX(12px);
+
+    border-left-color:#7B4B1A;
 
 }
 
-.tree-box {
-  background: var(--ink);
-  color: var(--light-text);
-  border: 1px solid var(--ink-line);
-  border-radius: var(--radius);
-  padding: 2.4rem 2.6rem;
-  max-width: 480px;
-  margin: 0 auto;
-  text-align: left;
-  font-family: var(--mono);
-  font-size: 0.92rem;
-  line-height: 1.9;
-  box-shadow: var(--shadow-card);
+.tree-list strong{
+
+    color:#5A3510;
+
 }
-
-.tree-box p { color: var(--muted-light); white-space: pre; }
-
-.tree-box .tree-root {
-  color: var(--gold-bright);
-  font-size: 1.05rem;
-  margin-bottom: 0.3rem;
-}
-
-
-
 
 /* ================= GRID ================= */
 
@@ -1593,6 +1664,11 @@ text-align:left;
     color:var(--gold-dark);
     margin-bottom:20px;
     position:relative;
+    font-family: "Cinzel", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #2B1F17;
+
 }
 
 .world-philosophy h2::after{
@@ -1809,10 +1885,34 @@ padding:30px 22px;
   text-align: center;
 }
 
+
 .comparison h2 {
-  font-size: 1.85rem;
-  margin-bottom: 2.2rem;
+
+    font-size:2.5rem;
+    color:var(--gold-dark);
+    margin-bottom:20px;
+    position:relative;
+    
+    font-family: "Cinzel", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #2B1F17;
+
+    
+}  
+.comparison h2::after{
+
+    content:"";
+    width:90px;
+    height:3px;
+    background:var(--gold);
+    display:block;
+    margin:18px auto 0;
 }
+
+
+
+
 
 .comparison table {
   width: 100%;
@@ -2004,6 +2104,12 @@ margin:auto;
     letter-spacing:1px;
 
     position:relative;
+
+    font-family: "Cinzel", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #2B1F17;
+
 
 }
 
@@ -2318,6 +2424,11 @@ grid-template-columns:1fr;
 .history-section-title h2{
     font-size:3rem;
     margin:1rem 0;
+    font-family: "Cinzel", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #2B1F17;
+
 }
 
 .history-section-title h2::after{
@@ -2568,6 +2679,11 @@ grid-template-columns:1fr;
     color:var(--gold-dark);
     margin-bottom:20px;
     position:relative;
+    font-family: "Cinzel", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #2B1F17;
+
 }
 
 .about-home  h2::after{
@@ -2639,6 +2755,12 @@ grid-template-columns:1fr;
     letter-spacing:1px;
 
     position:relative;
+
+    font-family: "Cinzel", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #2B1F17;
+
 }
 
 .explore h2::after{
@@ -2857,6 +2979,12 @@ grid-template-columns:1fr;
 
     position:relative;
 
+    font-family: "Cinzel", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #2B1F17;
+
+
 }
 
 .quotes h2::after{
@@ -2983,6 +3111,11 @@ grid-template-columns:1fr;
     letter-spacing:1px;
 
     position:relative;
+    font-family: "Cinzel", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #2B1F17;
+
 
 }
 
@@ -3739,10 +3872,31 @@ grid-template-columns:1fr;
   padding: 4rem 6vw 6rem;
 }
 
-.faq > h2 {
-  text-align: center;
-  font-size: 1.85rem;
-  margin-bottom: 2.4rem;
+
+.faq h2 {
+
+    font-size:2.5rem;
+    color:var(--gold-dark);
+    margin-bottom:20px;
+    position:relative;
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #2B1F17;
+
+  
+    
+} 
+
+.faq h2::after{
+
+    content:"";
+    width:90px;
+    height:3px;
+    background:var(--gold);
+    display:block;
+    margin:18px auto 0;
 }
 
 .faq-item {

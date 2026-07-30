@@ -316,13 +316,18 @@ img { max-width: 100%; display: block; }
     display:block;
     margin:18px auto 0;
 }
-
 .library-intro p {
-  max-width: 62ch;
-  margin: 0 auto;
-  color: var(--muted-dark);
-  font-size: 1.05rem;
+    max-width: 74ch;
+    margin: 0 auto 1.3rem;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.18rem;
+    font-weight: 500;
+    line-height: 2;
+
+    color: #3f2f1b;
 }
+
 
 /* =========================================================
    SECTION HEADERS (shared)
@@ -1049,12 +1054,16 @@ img { max-width: 100%; display: block; }
 
 
 .branch-intro p {
-  margin-bottom: 1.3rem;
-    font-size:1.18rem;
-    font-weight:500;
-    line-height:2;
-    color:#3f2f1b;
-    font-family:"Cormorant Garamond", serif;
+   max-width: 74ch;
+    margin: 0 auto 1.3rem;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.18rem;
+    font-weight: 500;
+    line-height: 2;
+
+    color: #3f2f1b;
+
 }
 
 /* ---- tree of philosophy: shelved like a card-catalog index ---- */

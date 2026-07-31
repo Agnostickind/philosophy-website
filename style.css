@@ -1958,7 +1958,6 @@ padding:30px 22px;
   border-radius: var(--radius);
   overflow: hidden;
 }
-
 .comparison th,
 .comparison td {
   padding: 0.9rem 1.3rem;
@@ -1980,6 +1979,11 @@ padding:30px 22px;
 
 .comparison tr:not(:first-child):hover td {
   background: rgba(185, 138, 78, 0.08);
+}
+
+.comparison td[rowspan] {
+  vertical-align: middle;
+  font-weight: 600;
 }
 
 /* ---- philosophy in everyday life ---- */
@@ -2191,24 +2195,19 @@ margin:auto;
 
 /* ================= CARD ================= */
 
-.school-card{
+.school-card {
+  background: var(--parchment);
+  border: 1px dashed var(--paper-line);
+  border-radius: var(--radius);
+  padding: 1.6rem 1.5rem;
+  position:relative;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+   overflow:hidden;
+}
 
-    background:#f7f1df;
-
-    padding:40px 35px;
-
-    border-radius:18px;
-
-    border:1px solid #d8c7a0;
-
-    box-shadow:0 12px 28px rgba(0,0,0,.08);
-
-    transition:.35s;
-
-    position:relative;
-
-    overflow:hidden;
-
+.category:nth-of-type(even) .school-card {
+  background: var(--parchment);
 }
 
 /* Gold line on top */
@@ -2231,7 +2230,7 @@ margin:auto;
 
 /* Hover */
 
-.school-card:hover{
+.school-card:hover {
 
     transform:translateY(-12px);
 
@@ -2253,7 +2252,7 @@ margin:auto;
 
 .school-card h3{
 
-    font-size:1.7rem;
+    font-size:1.4rem;
 
     color:#3d2b16;
 
@@ -2263,14 +2262,11 @@ margin:auto;
 
 /* Text */
 
-.school-card p{
-
-    font-size:1.05rem;
-
-    color:#5b4630;
-
-    line-height:1.9;
-
+.school-card > p {
+  color: #4a4536;
+  font-size: 0.93rem;
+  margin-bottom: 1rem;
+  line-height:1.9;
 }
 
 /* Responsive */
@@ -3427,29 +3423,6 @@ grid-template-columns:1fr;
   gap: 1.6rem;
 }
 
-.school-card {
-  background: var(--parchment);
-  border: 1px dashed var(--paper-line);
-  border-radius: var(--radius);
-  padding: 1.6rem 1.5rem;
-  box-shadow: var(--shadow-card);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.category:nth-of-type(even) .school-card {
-  background: var(--parchment);
-}
-
-.school-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-card-hover);
-}
-
-.school-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.6rem;
-}
-
 .founder-tag {
   display: inline-block;
   font-family: var(--mono);
@@ -3463,11 +3436,7 @@ grid-template-columns:1fr;
   margin-bottom: 0.9rem;
 }
 
-.school-card > p {
-  color: #4a4536;
-  font-size: 0.93rem;
-  margin-bottom: 1rem;
-}
+
 
 .thinkers {
   list-style: none;

@@ -341,11 +341,44 @@ img { max-width: 100%; display: block; }
 .spotlight > h2,
 .recommendation > h2,
 .reading-levels > h2 {
-  font-size: 1.85rem;
-  display: inline-block;
+  font-size: 1.9rem;
   padding-bottom: 0.6rem;
-  border-bottom: 2px solid var(--gold);
   margin-bottom: 0.9rem;
+  text-align: center;
+  margin: 0 auto 0.9rem;
+   /* Remove this */
+    border-bottom: none;
+
+    position: relative;
+}
+
+.beginner-library h2 span,
+.library-section h2 span,
+.editors-picks h2 span,
+.book-month h2 span,
+.book-quotes h2 span,
+.spotlight h2 span,
+.recommendation h2 span,
+.reading-levels h2 span {
+    font-size: 1.6rem;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+}
+
+.beginner-library > h2::after,
+.library-section > h2::after,
+.editors-picks > h2::after,
+.book-month > h2::after,
+.book-quotes > h2::after,
+.spotlight > h2::after,
+.recommendation > h2::after,
+.reading-levels > h2::after {
+    content: "";
+    display: block;
+    width: 220px;
+    height: 2px;
+    background: var(--gold);
+    margin: 14px auto 0;
 }
 
 .beginner-library > p,
@@ -356,7 +389,9 @@ img { max-width: 100%; display: block; }
   color: var(--muted-dark);
   max-width: 68ch;
   margin-bottom: 2.8rem;
-  font-size: 1.02rem;
+  font-size: 1.03rem;
+  text-align: center;
+  margin: 0 auto 0.9rem;
 }
 
 /* =========================================================

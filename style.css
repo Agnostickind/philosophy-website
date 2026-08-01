@@ -533,24 +533,38 @@ img { max-width: 100%; display: block; }
 .difficulty.expert { color: var(--indigo); }
 
 .read-btn {
-  margin-top: 1rem;
-  width: 100%;
-  padding: 0.7rem;
-  background: var(--ink);
-  color: var(--light-text);
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  border-radius: var(--radius);
-  transition: background 0.2s ease, color 0.2s ease, letter-spacing 0.2s ease;
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 1rem;
+
+    background: #171923;
+    color: #fff8e8;
+
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 6px;
+    border: 1px solid #171923;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease;
 }
 
 .read-btn:hover {
-  background: var(--gold);
-  color: var(--ink);
-  letter-spacing: 0.09em;
+    background: var(--gold);
+    color: #171923;
+    border-color: var(--gold);
+
+    transform: translateY(-2px);
 }
 
+.read-btn:active {
+    transform: translateY(0);
+}
 /* =========================================================
    LIBRARY SECTIONS (thematic collections, alternating ground)
    ========================================================= */

@@ -182,19 +182,32 @@ window.addEventListener("scroll", () => {
     sections.forEach(section => {
 
         const sectionTop = section.offsetTop - 180;
-        const sectionHeight = section.clientHeight;
 
-        if (pageYOffset >= sectionTop) {
+        if (window.scrollY >= sectionTop) {
             current = section.getAttribute("id");
         }
 
     });
 
+    // Remove active highlight after leaving the last navigation section
+    const lastSection = sections[sections.length - 1];
+
+    if (lastSection) {
+
+        const lastSectionBottom =
+            lastSection.offsetTop + lastSection.offsetHeight;
+
+        if (window.scrollY > lastSectionBottom - 180) {
+            current = "";
+        }
+
+    }
+
     navLinks.forEach(link => {
 
         link.classList.remove("active");
 
-        if(link.getAttribute("href") === "#" + current){
+        if (link.getAttribute("href") === "#" + current) {
             link.classList.add("active");
         }
 

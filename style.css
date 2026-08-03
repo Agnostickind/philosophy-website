@@ -3434,6 +3434,15 @@ grid-template-columns:1fr;
   transition: all 0.2s ease;
 }
 
+.category-nav a.active{
+    background:#c79b4b;
+    color:#ffffff;
+    border-color:#c79b4b;
+    font-weight:600;
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(199,155,75,.35);
+}
+
 .category-nav a:hover {
   color: var(--ink);
   border-color: var(--gold);

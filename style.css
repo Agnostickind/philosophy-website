@@ -2850,7 +2850,7 @@ grid-template-columns:1fr;
 
     background:#c69a2d;
 
-    display:horizontal;
+    display:block;
 
     margin:20px auto 0;
 

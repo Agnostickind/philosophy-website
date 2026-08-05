@@ -4173,6 +4173,11 @@ grid-template-columns:1fr;
     grid-template-columns: 1fr;
   }
 }
+
+.lit-hero::before {
+  content: "❦";
+  color: rgba(185, 138, 78, 0.05);
+}
  
 
 /* ============ UNIFIED HERO WATERMARK ============ */

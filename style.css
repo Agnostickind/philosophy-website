@@ -1718,6 +1718,12 @@ text-align:left;
     overflow:hidden;
 
     box-shadow:0 12px 28px rgba(0,0,0,.08);
+
+     display:block;
+
+    text-decoration:none;
+
+    color:inherit;
 }
 
 .world-card::before{
@@ -4203,6 +4209,35 @@ grid-template-columns:1fr;
 .bestsellers-list {
   max-width: 500px;
   margin: 0 auto;
+}
+
+.world-card{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    display:block;
+
+}
+
+.world-btn button {
+    background: var(--gold);
+    color: var(--ink);
+    padding: 0.85rem 1.8rem;
+    border-radius: var(--radius);
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: background 0.2s ease, transform 0.2s ease;
+    
+    margin-top:28px;
+}
+
+.world-btn button:hover {
+    background: var(--gold-bright);
+    transform: translateY(-2px);
 }
 
 /* ============ UNIFIED HERO WATERMARK ============ */

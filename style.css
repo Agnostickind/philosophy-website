@@ -1372,49 +1372,10 @@ grid-template-columns:1fr;
     color:#6b5846;
 }
 
-.books-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-}
-
-.book-card-home{
-    background:#f8f2e7;
-    border:1px solid #dcc8aa;
-    border-radius:18px;
-    padding:35px 28px;
-    transition:.35s;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-.book-card-home:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 35px rgba(0,0,0,.15);
-}
-
 .book-icon{
     font-size:2.4rem;
     margin-bottom:18px;
 }
-
-.book-card-home h3{
-    font-size:1.45rem;
-    margin-bottom:8px;
-    color:#2b1d0f;
-}
-
-.book-card-home h4{
-    color:#b07b16;
-    margin-bottom:18px;
-    font-size:1rem;
-    font-weight:600;
-}
-
-.book-card-home p{
-    line-height:1.8;
-    color:#5b4a39;
-}
-
 
 /* ===================================
    ORIGIN OF PHILOSOPHY
@@ -4179,6 +4140,70 @@ grid-template-columns:1fr;
   color: rgba(185, 138, 78, 0.05);
 }
  
+
+/* ---- Award-Winning Books ---- */
+
+.awards-section {
+  max-width: 1000px;
+  margin: 5rem auto;
+  padding: 3.5rem 3rem;
+  background: var(--ink);
+  color: var(--light-text);
+  border-radius: var(--radius);
+  border: 1px solid var(--ink-line);
+}
+
+.awards-section > h2 {
+  color: var(--light-text);
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+}
+
+.award-category h3 {
+  color: var(--light-text);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.award-category ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+
+.award-category li {
+  margin-bottom: 0.65rem;
+}
+
+.award-category a {
+  color: var(--muted-light);
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.award-category a:hover {
+  color: var(--gold-bright);
+}
+
+@media (max-width: 600px) {
+  .awards-section {
+    padding: 2.5rem 1.6rem;
+  }
+}
+
+.bestsellers-list {
+  max-width: 500px;
+  margin: 0 auto;
+}
 
 /* ============ UNIFIED HERO WATERMARK ============ */
 

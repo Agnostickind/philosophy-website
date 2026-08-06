@@ -2464,6 +2464,11 @@ grid-template-columns:1fr;
     color:#3f2f1b;
     font-family:"Cormorant Garamond", serif;
     
+    margin: 0 auto;
+    text-align: left;
+    line-height: 2;
+    max-width:850px;
+    
 
 }
 
@@ -2515,12 +2520,6 @@ grid-template-columns:1fr;
     line-height:2;
     color:var(--muted-dark);
 }
-
-
-
-
-
-
 /* ---- eras: chronological, so shown on a connected timeline ---- */
 
 .era {
@@ -4240,7 +4239,90 @@ grid-template-columns:1fr;
     transform: translateY(-2px);
 }
 
+/* ---- Era page: timeline ---- */
+
+.era-timeline-section {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 0 6vw;
+  text-align: center;
+}
+
+.era-timeline-section h2 {
+  margin-bottom: 2.5rem;
+}
+
+.era-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.timeline-point {
+  flex: 1 1 150px;
+  max-width: 180px;
+  text-align: left;
+  border-top: 3px solid var(--gold);
+  padding-top: 12px;
+}
+
+.timeline-date {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--gold);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.timeline-point p {
+  font-size: 0.88rem;
+  color: var(--muted-dark);
+  line-height: 1.5;
+}
+
+/* ---- Era page: related pages ---- */
+
+.related-pages {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 6vw;
+  text-align: center;
+}
+
+.related-pages h2 {
+  margin-bottom: 1.5rem;
+}
+
+.related-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.related-links a {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--paper-line);
+  border-radius: 999px;
+  color: var(--ink-text);
+  transition: all 0.2s ease;
+}
+
+.related-links a:hover {
+  border-color: var(--gold);
+  background: var(--parchment-2);
+}
+
+@media (max-width: 600px) {
+  .timeline-point {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 /* ============ UNIFIED HERO WATERMARK ============ */
-
-
-

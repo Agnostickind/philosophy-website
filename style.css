@@ -2615,36 +2615,63 @@ transition:.45s ease;
 }
 
 .era-content ul{
-    list-style:none;
+
     display:flex;
+
     flex-wrap:wrap;
-    gap:.8rem;
-    margin:0;
-    padding:0;
+
+    gap:1rem;
+
+    margin-top:2rem;
+    
 }
 
+
 .era-content li{
-    font-family:var(--mono);
-    font-size:.88rem;
-    font-weight:500;
-    color:var(--ink);
-    background:linear-gradient(180deg,#f8f2e5,#efe4ca);
-    border:1px solid #d7c5a2;
-    border-radius:999px;
-    padding:.65rem 1.2rem;
+    font-family: var(--mono);
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+
+    color: #4b3720;
+
+    background: linear-gradient(
+        to bottom,
+        #fbf7ed,
+        #f1e5cb
+    );
+
+    border: 1px solid #d2bc8c;
+    border-radius: 999px;
+
+    padding: .8rem 1.5rem;
+
     box-shadow:
-        0 2px 6px rgba(0,0,0,.04),
-        inset 0 1px 0 rgba(255,255,255,.6);
-    transition:all .28s ease;
-    cursor:default;
+        0 4px 10px rgba(0,0,0,.06),
+        inset 0 1px 0 rgba(255,255,255,.7);
+
+    transition: all .3s ease;
+
+    font-weight:600;
+letter-spacing:.04em;
 }
 
 .era-content li:hover{
-    background:#c79b4b;
-    color:#fff;
-    border-color:#c79b4b;
-    transform:translateY(-3px);
-    box-shadow:0 10px 22px rgba(199,155,75,.30);
+
+    background: linear-gradient(
+        to bottom,
+        #d3aa58,
+        #bf8d32
+    );
+
+    color: #fff;
+
+    border-color: #bf8d32;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 25px rgba(191,141,50,.28);
 }
 
 /* ---- philosopher spotlight ribbons ---- */

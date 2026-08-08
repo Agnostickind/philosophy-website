@@ -189,6 +189,59 @@ window.addEventListener("scroll", () => {
 
     });
 
+
+const newsletterForm = document.getElementById('newsletter-form');
+
+if (newsletterForm) {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const submitBtn = newsletterForm.querySelector('.form-submit');
+  const successMessage = newsletterForm.querySelector('.form-success');
+
+  newsletterForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const emailField = newsletterForm.querySelector('input[type="email"]');
+    const group = emailField.closest('.form-group');
+    const errorSpan = group.querySelector('.form-error');
+
+    successMessage.classList.remove('visible', 'error');
+    group.classList.remove('invalid');
+    errorSpan.textContent = '';
+
+    if (!emailField.value.trim() || !emailPattern.test(emailField.value.trim())) {
+      group.classList.add('invalid');
+      errorSpan.textContent = 'Please enter a valid email address.';
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Subscribing...';
+
+    fetch(newsletterForm.action, {
+      method: 'POST',
+      body: new FormData(newsletterForm),
+      headers: { Accept: 'application/json' },
+    })
+      .then((response) => {
+        if (response.ok) {
+          successMessage.textContent = "Thanks — you're subscribed!";
+          successMessage.classList.add('visible');
+          newsletterForm.reset();
+        } else {
+          successMessage.textContent = 'Something went wrong — please try again.';
+          successMessage.classList.add('visible', 'error');
+        }
+      })
+      .catch(() => {
+        successMessage.textContent = 'Network error — please check your connection and try again.';
+        successMessage.classList.add('visible', 'error');
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Subscribe';
+      });
+  });
+}
     // Remove active highlight after leaving the last navigation section
     const lastSection = sections[sections.length - 1];
 

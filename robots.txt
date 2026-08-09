@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://agnostickind.github.io/philosophy-website/sitemap.xml

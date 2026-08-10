@@ -316,15 +316,15 @@ img { max-width: 100%; display: block; }
     display:block;
     margin:18px auto 0;
 }
+
 .library-intro p {
     max-width: 74ch;
     margin: 0 auto 1.3rem;
-
     font-family: "Cormorant Garamond", serif;
     font-size: 1.18rem;
     font-weight: 500;
     line-height: 2;
-
+    text-align:left;
     color: #3f2f1b;
 }
 
@@ -1111,6 +1111,7 @@ img { max-width: 100%; display: block; }
     font-weight: 500;
     line-height: 2;
     color: #3f2f1b;
+    text-align: left;
    
 
 
@@ -2039,6 +2040,19 @@ box-shadow:0 8px 20px rgba(199,155,75,.25);
     line-height: 1.9;
     color: #3f2f1b;
     text-align: left;
+  margin-bottom: 1.3rem;
+  line-height:2;
+    
+}
+
+.daily-life p:first-of-type::first-letter {
+  font-family: var(--serif-display);
+  font-size: 3.4rem;
+  font-weight: 600;
+  color: var(--gold);
+  float: left;
+  line-height: 0.95;
+  margin: 0.1rem 0.5rem 0 0;
 }
 
 .daily-life h3 {
@@ -2051,24 +2065,33 @@ box-shadow:0 8px 20px rgba(199,155,75,.25);
 }
 
 @media (max-width: 600px) {
-    .daily-life {
-        margin: 3.5rem auto;
-        padding: 0 1.2rem;
-    }
 
-    .daily-life h2 {
-        font-size: 1.8rem;
-    }
+  .daily-life {
+    margin: 3.5rem auto;
+    padding: 0 1.2rem;
+  }
 
-    .daily-life p {
-        font-size: 1.02rem;
-        line-height: 1.75;
-    }
+  .daily-life h2 {
+    font-size: 1.8rem;
+  }
 
-    .daily-life h3 {
-        font-size: 1.15rem;
-        margin-top: 1.8rem;
-    }
+  .daily-life p {
+    font-size: 1.02rem;
+    line-height: 1.75;
+  }
+
+  .daily-life h3 {
+    font-size: 1.15rem;
+    margin-top: 1.8rem;
+  }
+
+  .intro-text p {
+    max-width: 100%;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+  }
+
 }
 
 .start-here {
@@ -2457,21 +2480,16 @@ grid-template-columns:1fr;
 }
 
 .intro-text p {
-  margin-bottom: 1.3rem;
-    font-size:1.18rem;
-    font-weight:500;
-    line-height:2;
-    color:#3f2f1b;
-    font-family:"Cormorant Garamond", serif;
-    
-    margin: 0 auto;
-    text-align: left;
-    line-height: 2;
-    max-width:850px;
-    
+  margin: 0 auto 1.4rem;
+  text-align: left;
+ max-width: 950px;
 
+  font-size: 1.18rem;
+  font-weight: 500;
+  line-height: 2;
+  color: #3f2f1b;
+  font-family: "Cormorant Garamond", serif;
 }
-
 .intro-text p:first-of-type::first-letter {
   font-family: var(--serif-display);
   font-size: 3.4rem;
@@ -2845,16 +2863,14 @@ letter-spacing:.04em;
   max-width: 74ch;
   margin: 0 auto;
   color: #4a4536;
-  font-size: 1.02rem;
-}
-
-.about-home p {
+  color:#3f2f1b;
+  font-size:1.18rem;
   margin-bottom: 1.3rem;
-    font-size:1.18rem;
-    font-weight:500;
-    line-height:2;
-    color:#3f2f1b;
-    font-family:"Cormorant Garamond", serif;
+  font-weight:500;
+  line-height:2;
+  font-family:"Cormorant Garamond", serif;
+  text-align: left;
+  
 }
 
 /* ---- shared card-row pattern (why-philosophy / explore) ---- */

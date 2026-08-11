@@ -2067,6 +2067,8 @@ box-shadow:0 8px 20px rgba(199,155,75,.25);
   color: #5c3a18;
 }
 
+
+
 .daily-life h3 {
     font-size: 1.3rem;
     margin-top: 2.5rem;
@@ -2512,6 +2514,18 @@ grid-template-columns:1fr;
   margin: 0.1rem 0.5rem 0 0;
 }
 
+.intro-text a {
+  color: #8a5a24;
+  text-decoration: underline;
+  text-decoration-color: #b88a4a;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.intro-text a:hover {
+  color: #5c3a18;
+}
+
 .history-section-title{
     max-width:900px;
     margin:7rem auto 5rem;
@@ -2883,6 +2897,18 @@ letter-spacing:.04em;
   font-family:"Cormorant Garamond", serif;
   text-align: left;
   
+}
+
+.about-home a {
+  color: #8a5a24;
+  text-decoration: underline;
+  text-decoration-color: #b88a4a;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.about-home a:hover {
+  color: #5c3a18;
 }
 
 /* ---- shared card-row pattern (why-philosophy / explore) ---- */

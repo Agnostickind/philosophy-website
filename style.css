@@ -328,6 +328,28 @@ img { max-width: 100%; display: block; }
     color: #3f2f1b;
 }
 
+.library-intro a {
+  color: #8a5a24;
+  text-decoration: underline;
+  text-decoration-color: #b88a4a;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.library-intro a:hover {
+  color: #5c3a18;
+}
+
+.library-intro p:first-of-type::first-letter {
+  font-family: var(--serif-display);
+  font-size: 3.4rem;
+  font-weight: 600;
+  color: var(--gold);
+  float: left;
+  line-height: 0.85;
+  margin: 0.1rem 0.5rem 0 0;
+}
+
 
 /* =========================================================
    SECTION HEADERS (shared)
@@ -1113,9 +1135,19 @@ img { max-width: 100%; display: block; }
     color: #3f2f1b;
     text-align: left;
    
-
-
 }
+
+.branch-intro p:first-of-type::first-letter {
+  font-family: var(--serif-display);
+  font-size: 3.4rem;
+  font-weight: 600;
+  color: var(--gold);
+  float: left;
+  line-height: 0.85;
+  margin: 0.1rem 0.5rem 0 0;
+}
+
+
 
 /* ---- tree of philosophy: shelved like a card-catalog index ---- */
 
@@ -2899,6 +2931,16 @@ letter-spacing:.04em;
   
 }
 
+.about-home p:first-of-type::first-letter {
+  font-family: var(--serif-display);
+  font-size: 3.4rem;
+  font-weight: 600;
+  color: var(--gold);
+  float: left;
+  line-height: 0.85;
+  margin: 0.1rem 0.5rem 0 0;
+}
+
 .about-home a {
   color: #8a5a24;
   text-decoration: underline;
@@ -2910,6 +2952,8 @@ letter-spacing:.04em;
 .about-home a:hover {
   color: #5c3a18;
 }
+
+
 
 /* ---- shared card-row pattern (why-philosophy / explore) ---- */
 
@@ -3749,30 +3793,32 @@ color: #fff;
 /* ---- era dividers between groups of thinkers ---- */
 
 .era-divider {
-  scroll-margin-top: 130px;
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 3rem 6vw 0;
+    scroll-margin-top: 130px;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 3rem 6vw 0;
 }
 
 .era-divider::before,
 .era-divider::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--paper-line);
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #c4a15a;
+    opacity: 0.65;
 }
 
 .era-divider span {
-  font-family: var(--mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--gold);
-  white-space: nowrap;
+    font-family: var(--mono);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #a87832;
+    white-space: nowrap;
 }
 
 /* ---- individual thinker profiles ---- */

@@ -4794,4 +4794,299 @@ color: #fff;
   }
 }
 
+/* ================= SEARCH BAR ================= */
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.search-toggle {
+    background: none;
+    border: none;
+    color: #c9954d;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 6px;
+    transition: 0.3s ease;
+}
+
+.search-toggle:hover {
+    transform: scale(1.1);
+    color: #e0b56f;
+}
+
+
+/* Search box */
+
+.search-box {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+
+    position: absolute;
+    right: 0;
+    top: 45px;
+
+    width: 320px;
+
+    background: #25262e;
+    border: 1px solid #c9954d;
+    padding: 6px;
+
+    border-radius: 6px;
+    z-index: 1000;
+
+    box-sizing: border-box;
+}
+
+.search-box.active {
+    display: flex;
+}
+
+
+/* Search input */
+
+#site-search {
+    width: 100%;
+    padding: 10px 12px;
+
+    background: #1b1c23;
+    color: #f1ead9;
+
+    border: none;
+    outline: none;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    box-sizing: border-box;
+}
+
+#site-search::placeholder {
+    color: #aaa6a0;
+}
+
+
+/* Search results */
+
+/* Search results */
+
+.search-results {
+    width: 100%;
+    margin-top: 6px;
+
+    background: #25262e;
+
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+}
+
+/* Search results scrollbar */
+
+.search-results::-webkit-scrollbar {
+    width: 6px;
+}
+
+.search-results::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.search-results::-webkit-scrollbar-thumb {
+    background: #c9954d;
+    border-radius: 10px;
+}
+
+.search-results::-webkit-scrollbar-thumb:hover {
+    background: #e0b56f;
+}
+
+
+/* Individual result */
+
+.search-result {
+    display: block;
+
+    padding: 12px 14px;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(201, 149, 77, 0.2);
+
+    transition: background 0.2s ease;
+}
+
+.search-result:last-child {
+    border-bottom: none;
+}
+
+.search-result:hover {
+    background: #30313a;
+}
+
+
+/* Result title */
+
+.search-result strong {
+    display: block;
+
+    color: #f1ead9;
+
+    font-family: inherit;
+    font-size: 1rem;
+
+    margin-bottom: 3px;
+}
+
+
+/* Result category */
+
+.search-result-category {
+    display: block;
+
+    color: #c9954d;
+
+    font-size: 0.75rem;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    margin-bottom: 5px;
+}
+
+
+/* Result description */
+
+.search-result p {
+    margin: 0;
+
+    color: #b8b3aa;
+
+    font-size: 0.82rem;
+    line-height: 1.4;
+}
+
+
+/* No results */
+
+.search-no-results {
+    padding: 14px;
+
+    color: #b8b3aa;
+
+    font-size: 0.9rem;
+}
+
+/* ================= LANGUAGE SELECTOR ================= */
+
+.language-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.language-toggle {
+    background: none;
+    border: none;
+    color: #c9954d;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 6px;
+    transition: 0.3s ease;
+}
+
+.language-toggle:hover {
+    transform: scale(1.1);
+    color: #e0b56f;
+}
+
+.language-box {
+    display: none;
+
+    position: absolute;
+    right: 0;
+    top: 45px;
+
+    width: 190px;
+
+    background: #25262e;
+    border: 1px solid #c9954d;
+    padding: 12px;
+
+    border-radius: 6px;
+    z-index: 1000;
+
+    box-sizing: border-box;
+}
+
+.language-box.active {
+    display: block;
+}
+
+.language-box label {
+    display: block;
+
+    color: #c9954d;
+    font-size: 0.8rem;
+
+    margin-bottom: 7px;
+}
+
+#language-select {
+    width: 100%;
+
+    padding: 9px 10px;
+
+    background: #1b1c23;
+    color: #f1ead9;
+
+    border: 1px solid rgba(201, 149, 77, 0.4);
+    border-radius: 4px;
+
+    font-family: inherit;
+    font-size: 0.9rem;
+
+    outline: none;
+    cursor: pointer;
+}
+
+#language-select:focus {
+    border-color: #c9954d;
+}
+
+.language-option {
+    display: block;
+
+    width: 100%;
+
+    background: none;
+    border: none;
+
+    color: #f1ead9;
+
+    text-align: left;
+
+    padding: 9px 10px;
+
+    font-family: inherit;
+    font-size: 0.9rem;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+
+    transition: 0.2s ease;
+}
+
+.language-option:hover {
+    background: #30313a;
+    color: #e0b56f;
+}
+
 /* ============ UNIFIED HERO WATERMARK ============ */

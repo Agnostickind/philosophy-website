@@ -5103,6 +5103,15 @@ color: #fff;
     color: #e0b56f;
 }
 
+@media (max-width: 768px) {
+
+    .search-box {
+        width: min(320px, calc(100vw - 30px));
+        right: 0;
+    }
+
+}
+
 
 
 /* ============ UNIFIED HERO WATERMARK ============ */

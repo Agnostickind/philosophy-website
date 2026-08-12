@@ -3521,8 +3521,6 @@ color: #fff;
 
 }
 
-
-
 .thinkers-hero .subtitle {
   color: var(--muted-light);
   font-size: 1.08rem;
@@ -3582,7 +3580,7 @@ color: #fff;
   display: flex;
   align-items: center;
   gap: 3rem;
-  border-bottom: 1px dashed var(--paper-line);
+ border-bottom: 1px dashed #8f7445;
 }
 
 .thinker img {
@@ -4795,12 +4793,17 @@ color: #fff;
     top: 100%;
     left: 0;
     right: 0;
+
     flex-direction: column;
     gap: 0;
+
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+
     background: var(--ink);
     border-bottom: 1px solid var(--ink-line);
     padding: 0.4rem 6vw 1rem;
-  }
+}
 
   .nav-links.open { display: flex; }
 

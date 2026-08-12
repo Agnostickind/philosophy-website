@@ -86,11 +86,6 @@ img { max-width: 100%; display: block; }
   outline-offset: 3px;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * { animation: none !important; transition: none !important; }
-  html { scroll-behavior: auto; }
-}
-
 .library-section,
 .editors-picks,
 .book-month,
@@ -1019,65 +1014,7 @@ img { max-width: 100%; display: block; }
   margin-top: 1rem;
 }
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
 
-@media (max-width: 860px) {
-  .menu-toggle { display: flex; }
-
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    gap: 0;
-    background: var(--ink);
-    border-bottom: 1px solid var(--ink-line);
-    padding: 0.4rem 6vw 1rem;
-  }
-
-  .nav-links.open { display: flex; }
-
-  .nav-links a {
-    padding: 0.9rem 0;
-    border-bottom: 1px solid var(--ink-line);
-  }
-
-  .nav-links a:last-child { border-bottom: none; }
-
-  .featured-book,
-  .spotlight-card {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .featured-book img,
-  .spotlight-card img {
-    margin: 0 auto;
-    width: 160px;
-  }
-
-  .featured-content ul { justify-content: center; }
-
-  .levels {
-    grid-template-columns: 1fr;
-    gap: 2.2rem;
-  }
-
-  .levels::before { display: none; }
-}
-
-@media (max-width: 520px) {
-  .books-hero { padding: 6rem 6vw 4rem; }
-  .library-section, .editors-picks, .book-month,
-  .book-quotes, .spotlight, .recommendation,
-  .reading-levels, .library-intro, .beginner-library {
-    padding: 3.5rem 6vw;
-  }
-}
 
 /* =========================================================
    BRANCHES PAGE
@@ -1384,17 +1321,7 @@ img { max-width: 100%; display: block; }
 
 }
 
-/* Responsive */
 
-@media(max-width:768px){
-
-.school-grid{
-
-grid-template-columns:1fr;
-
-}
-
-}
 
 /* ================= ESSENTIAL BOOKS ================= */
 
@@ -1646,54 +1573,6 @@ text-shadow:
     color:#8a5d15;
 }
 
-/* Mobile */
-
-@media(max-width:768px){
-
-.fact-box{
-
-padding:40px 25px;
-
-}
-
-.greek-word{
-
-flex-direction:column;
-
-gap:22px;
-
-}
-
-.plus-sign{
-
-transform:rotate(90deg);
-
-font-size:3rem;
-
-}
-
-.word-part{
-
-width:100%;
-max-width:280px;
-
-}
-
-.meaning-box{
-
-padding:30px 25px;
-
-text-align:center;
-
-}
-
-.meaning-box p{
-
-text-align:left;
-
-}
-
-}
 
 
 
@@ -1839,25 +1718,6 @@ text-align:left;
     font-size:.98rem;
 }
 
-/*======== Mobile ========*/
-
-@media(max-width:768px){
-
-.world-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.world-card{
-
-padding:30px 22px;
-
-}
-
-}
-
-
 
 /* ---- individual branch spreads (image + text, alternating) ---- */
 
@@ -1939,12 +1799,7 @@ box-shadow:0 8px 20px rgba(199,155,75,.25);
    line-height: 1.6;
    max-width:62ch;
 }
-@media (max-width: 768px) {
-    .branch-content > p {
-        font-size: 1.05rem;
-        line-height: 1.8;
-    }
-}
+
 
 .branch-content h4 {
   font-family: var(--mono);
@@ -2124,35 +1979,7 @@ box-shadow:0 8px 20px rgba(199,155,75,.25);
     font-family: "Cinzel", serif;
 }
 
-@media (max-width: 600px) {
 
-  .daily-life {
-    margin: 3.5rem auto;
-    padding: 0 1.2rem;
-  }
-
-  .daily-life h2 {
-    font-size: 1.8rem;
-  }
-
-  .daily-life p {
-    font-size: 1.02rem;
-    line-height: 1.75;
-  }
-
-  .daily-life h3 {
-    font-size: 1.15rem;
-    margin-top: 1.8rem;
-  }
-
-  .intro-text p {
-    max-width: 100%;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    margin-bottom: 1.2rem;
-  }
-
-}
 
 .start-here {
     max-width: 900px;
@@ -2201,15 +2028,6 @@ box-shadow:0 8px 20px rgba(199,155,75,.25);
     transform: translateY(-2px);
 }
 
-@media (max-width: 600px) {
-    .start-here-box {
-        padding: 2.2rem 1.5rem;
-    }
-
-    .start-here-box h2 {
-        font-size: 1.5rem;
-    }
-}
 
 .life-grid {
   display: grid;
@@ -2392,17 +2210,6 @@ box-shadow:0 8px 20px rgba(199,155,75,.25);
   line-height:1.9;
 }
 
-/* Responsive */
-
-@media(max-width:768px){
-
-.school-grid{
-
-grid-template-columns:1fr;
-
-}
-
-}
 
 
 
@@ -2428,23 +2235,7 @@ grid-template-columns:1fr;
 
 /* ---- responsive ---- */
 
-@media (max-width: 860px) {
-  .branch,
-  .branch.reverse {
-    grid-template-columns: 1fr;
-  }
 
-  .branch.reverse .branch-image,
-  .branch.reverse .branch-content,
-  .branch-image,
-  .branch-content {
-    order: initial;
-  }
-
-  .tree-box { padding: 1.8rem; font-size: 0.85rem; }
-
-  .comparison th, .comparison td { padding: 0.7rem 0.9rem; font-size: 0.85rem; }
-}
 
 /* =========================================================
    HISTORY PAGE
@@ -2832,37 +2623,6 @@ letter-spacing:.04em;
   margin-bottom: 2rem;
 }
 
-/* ---- responsive ---- */
-
-@media (max-width: 860px) {
-  .era,
-  .era:nth-of-type(even) {
-    grid-template-columns: 1fr;
-  }
-
-  .era .era-image,
-  .era .era-content,
-  .era:nth-of-type(even) .era-image,
-  .era:nth-of-type(even) .era-content {
-    order: initial;
-  }
-
-  .philosopher {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .philosopher-info blockquote {
-    border-left: none;
-    border-top: 2px solid var(--gold);
-    padding-left: 0;
-    padding-top: 0.8rem;
-  }
-
-  .intro-text p:first-of-type::first-letter {
-    font-size: 2.6rem;
-  }
-}
 
 /* =========================================================
    HOME PAGE
@@ -3117,18 +2877,6 @@ letter-spacing:.04em;
     color:#5b4630;
 
     line-height:1.9;
-
-}
-
-/* Responsive */
-
-@media(max-width:768px){
-
-.why-philosophy{
-
-grid-template-columns:1fr;
-
-}
 
 }
 
@@ -3756,16 +3504,6 @@ color: #fff;
 
 /* ---- responsive ---- */
 
-@media (max-width: 640px) {
-  .category-nav {
-    position: static;
-    justify-content: flex-start;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-  }
-
-  .category-nav a { flex-shrink: 0; }
-}
 
 /* =========================================================
    THINKERS PAGE
@@ -3956,34 +3694,6 @@ color: #fff;
   transform: translateY(-2px);
 }
 
-/* ---- responsive ---- */
-
-@media (max-width: 720px) {
-  .thinker {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .thinker img {
-    width: 150px;
-    height: 150px;
-    min-width: 0;
-  }
-
-  .thinker-info ul,
-  .thinker-info blockquote {
-    justify-content: center;
-  }
-
-  .thinker-info blockquote {
-    border-left: none;
-    border-top: 2px solid var(--gold);
-    padding-left: 0;
-    padding-top: 0.8rem;
-  }
-
-  .era-divider span { white-space: normal; text-align: center; }
-}
 
 /* =========================================================
    CONTACT PAGE
@@ -4293,11 +4003,7 @@ color: #fff;
 
 /* ---- responsive ---- */
 
-@media (max-width: 780px) {
-  .contact-wrap {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 .lit-hero::before {
   content: "❦";
@@ -4358,11 +4064,6 @@ color: #fff;
   color: var(--gold-bright);
 }
 
-@media (max-width: 600px) {
-  .awards-section {
-    padding: 2.5rem 1.6rem;
-  }
-}
 
 .bestsellers-list {
   max-width: 500px;
@@ -4477,12 +4178,7 @@ color: #fff;
   background: var(--parchment-2);
 }
 
-@media (max-width: 600px) {
-  .timeline-point {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
+
 
 /* =========================================================
    NARRATIVE BLOCK — clean paragraph + side image
@@ -4647,14 +4343,7 @@ color: #fff;
   clear: both;
 }
 
-@media (max-width: 700px) {
-  .narrative-figure {
-    float: none;
-    width: 100%;
-    max-width: 100%;
-    margin: 1rem 0;
-  }
-}
+
 
 .narrative-block {
   column-count: 1 !important;
@@ -4793,20 +4482,6 @@ color: #fff;
   order: 2;
 }
 
-@media (max-width: 700px) {
-  .blog-card,
-  .blog-card.reverse {
-    grid-template-columns: 1fr;
-  }
-
-  .blog-card.reverse .blog-card-image {
-    order: 0;
-  }
-
-  .blog-card-image {
-    aspect-ratio: 16 / 9;
-  }
-}
 
 /* ================= SEARCH BAR ================= */
 
@@ -5103,20 +4778,282 @@ color: #fff;
     color: #e0b56f;
 }
 
+/* ===== Accessibility ===== */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}
+
+/* ===== 860px ===== */
+@media (max-width: 1100px) {
+  .menu-toggle { display: flex; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--ink);
+    border-bottom: 1px solid var(--ink-line);
+    padding: 0.4rem 6vw 1rem;
+  }
+
+  .nav-links.open { display: flex; }
+
+  .nav-links a {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--ink-line);
+  }
+
+  .nav-links a:last-child { border-bottom: none; }
+
+  .featured-book,
+  .spotlight-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .featured-book img,
+  .spotlight-card img {
+    margin: 0 auto;
+    width: 160px;
+  }
+
+  .featured-content ul { justify-content: center; }
+
+  .levels {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+  }
+
+  .levels::before { display: none; }
+
+  .branch,
+  .branch.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .branch.reverse .branch-image,
+  .branch.reverse .branch-content,
+  .branch-image,
+  .branch-content {
+    order: initial;
+  }
+
+  .tree-box { padding: 1.8rem; font-size: 0.85rem; }
+
+  .comparison th, .comparison td { padding: 0.7rem 0.9rem; font-size: 0.85rem; }
+
+  .era,
+  .era:nth-of-type(even) {
+    grid-template-columns: 1fr;
+  }
+
+  .era .era-image,
+  .era .era-content,
+  .era:nth-of-type(even) .era-image,
+  .era:nth-of-type(even) .era-content {
+    order: initial;
+  }
+
+  .philosopher {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .philosopher-info blockquote {
+    border-left: none;
+    border-top: 2px solid var(--gold);
+    padding-left: 0;
+    padding-top: 0.8rem;
+  }
+
+  .intro-text p:first-of-type::first-letter {
+    font-size: 2.6rem;
+  }
+}
+
+/* ===== 780px ===== */
+@media (max-width: 780px) {
+  .contact-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== 768px ===== */
 @media (max-width: 768px) {
+  .school-grid { grid-template-columns: 1fr; }
+  .school-grid { grid-template-columns: 1fr; } /* duplicate in original — kept as-is */
 
-    .search-box {
-        position: fixed;
-        top: 70px;
-        left: 15px;
-        right: 15px;
+  .fact-box { padding: 40px 25px; }
 
-        width: auto;
-        max-width: none;
+  .greek-word {
+    flex-direction: column;
+    gap: 22px;
+  }
 
-        box-sizing: border-box;
-    }
+  .plus-sign {
+    transform: rotate(90deg);
+    font-size: 3rem;
+  }
 
+  .word-part {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .meaning-box {
+    padding: 30px 25px;
+    text-align: center;
+  }
+
+  .meaning-box p { text-align: left; }
+
+  .world-grid { grid-template-columns: 1fr; }
+
+  .world-card { padding: 30px 22px; }
+
+  .branch-content > p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .why-philosophy { grid-template-columns: 1fr; }
+
+  .search-box {
+    position: fixed;
+    top: 70px;
+    left: 15px;
+    right: 15px;
+    width: auto;
+    max-width: none;
+    box-sizing: border-box;
+  }
+}
+
+/* ===== 720px ===== */
+@media (max-width: 720px) {
+  .thinker {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .thinker img {
+    width: 150px;
+    height: 150px;
+    min-width: 0;
+  }
+
+  .thinker-info ul,
+  .thinker-info blockquote {
+    justify-content: center;
+  }
+
+  .thinker-info blockquote {
+    border-left: none;
+    border-top: 2px solid var(--gold);
+    padding-left: 0;
+    padding-top: 0.8rem;
+  }
+
+  .era-divider span { white-space: normal; text-align: center; }
+}
+
+/* ===== 700px ===== */
+@media (max-width: 700px) {
+  .narrative-figure {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  .blog-card,
+  .blog-card.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-card.reverse .blog-card-image {
+    order: 0;
+  }
+
+  .blog-card-image {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* ===== 640px ===== */
+@media (max-width: 640px) {
+  .category-nav {
+    position: static;
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .category-nav a { flex-shrink: 0; }
+}
+
+/* ===== 600px ===== */
+@media (max-width: 600px) {
+  .daily-life {
+    margin: 3.5rem auto;
+    padding: 0 1.2rem;
+  }
+
+  .daily-life h2 { font-size: 1.8rem; }
+
+  .daily-life p {
+    font-size: 1.02rem;
+    line-height: 1.75;
+  }
+
+  .daily-life h3 {
+    font-size: 1.15rem;
+    margin-top: 1.8rem;
+  }
+
+  .intro-text p {
+    max-width: 100%;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+  }
+
+  .start-here-box {
+    padding: 2.2rem 1.5rem;
+  }
+
+  .start-here-box h2 { font-size: 1.5rem; }
+
+  .awards-section { padding: 2.5rem 1.6rem; }
+
+  .timeline-point {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* ===== 520px ===== */
+@media (max-width: 520px) {
+  .books-hero { padding: 6rem 6vw 4rem; }
+
+  .library-section, .editors-picks, .book-month,
+  .book-quotes, .spotlight, .recommendation,
+  .reading-levels, .library-intro, .beginner-library {
+    padding: 3.5rem 6vw;
+  }
+}
+
+/* ===== Non-responsive rules (not media queries — left as-is) ===== */
+.explore .card { background: var(--parchment-2); }
+
+.lit-hero::before {
+  content: "❦";
+  color: rgba(185, 138, 78, 0.05);
 }
 
 

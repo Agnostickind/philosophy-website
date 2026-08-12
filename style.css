@@ -4311,18 +4311,7 @@ color: #fff;
    Chapter 2, Chapter 3, Influence). Replaces bubble/pill lists.
    ========================================================= */
 
-.narrative-block {
-  max-width: 1100px;
-  margin: 3rem auto;
-  padding: 0 6vw;
-  display: flex;
-  gap: 3rem;
-  align-items: flex-start;
-}
 
-.narrative-block.no-figure {
-  display: block;
-}
 
 .narrative-text {
   flex: 1 1 60%;
@@ -4400,9 +4389,16 @@ color: #fff;
    ========================================================= */
 
 .narrative-block {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 3rem auto;
   padding: 0 6vw;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.narrative-block.no-figure {
+  display: block;
 }
 
 .narrative-block h2 {
@@ -4494,13 +4490,6 @@ color: #fff;
   clear: both;
 }
 
-
-
-.narrative-block {
-  column-count: 1 !important;
-  columns: unset !important;
-  display: block !important;
-}
 
 .title-icon {
     font-size: 0.75em;

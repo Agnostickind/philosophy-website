@@ -5106,8 +5106,15 @@ color: #fff;
 @media (max-width: 768px) {
 
     .search-box {
-        width: min(320px, calc(100vw - 30px));
-        right: 0;
+        position: fixed;
+        top: 70px;
+        left: 15px;
+        right: 15px;
+
+        width: auto;
+        max-width: none;
+
+        box-sizing: border-box;
     }
 
 }

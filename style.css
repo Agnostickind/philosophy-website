@@ -107,7 +107,7 @@ img { max-width: 100%; display: block; }
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   align-items: center;
   padding: 1.1rem 6vw;
@@ -3339,7 +3339,7 @@ letter-spacing:.04em;
 .category-nav{
     position:sticky;
     top:65px;
-    z-index:100;
+    z-index:50;
 
     display:flex;
     justify-content:center;
@@ -4803,6 +4803,8 @@ color: #fff;
     background: var(--ink);
     border-bottom: 1px solid var(--ink-line);
     padding: 0.4rem 6vw 1rem;
+
+    z-index: 1001;
 }
 
   .nav-links.open { display: flex; }

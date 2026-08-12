@@ -23,85 +23,106 @@
 
 <nav class="navbar">
 
-<a href="index.html" class="logo">
-<h2>Φ Philosophy</h2>
-</a>
+    <a href="index.html" class="logo">
+        <h2>Φ Philosophy</h2>
+    </a>
 
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="history.html">History</a>
-<a href="thinkers.html">Thinkers</a>
-<a href="branches.html">Branches</a>
-<a href="schools.html">Schools</a>
-<a href="books.html">Books</a>
-<a href="world-literature.html">Literature</a>
-<a href="blog.html">Blog</a>
-<a href="contact.html">Contact</a>
-</div>
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="thinkers.html">Thinkers</a>
+        <a href="branches.html">Branches</a>
+        <a href="schools.html">Schools</a>
+        <a href="books.html">Books</a>
+        <a href="world-literature.html">Literature</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+    <div class="nav-tools">
+
+    <!-- SEARCH -->
+    <div class="search-container">
+
+        <button class="search-toggle"
+                aria-label="Open search"
+                aria-expanded="false">
+            🔍
+        </button>
+
+        <div class="search-box">
+
+            <input
+                type="search"
+                id="site-search"
+                placeholder="Search philosophy..."
+                aria-label="Search this website"
+            >
+
+            <div class="search-results" id="search-results"></div>
+
+        </div>
+
+    </div>
 
 
+    <!-- LANGUAGE -->
+    <div class="language-container">
 
-<!-- SEARCH -->
-<div class="search-container">
+        <button class="language-toggle"
+                aria-label="Choose language"
+                aria-expanded="false">
+            🌐
+        </button>
 
-    <button class="search-toggle"
-            aria-label="Open search"
-            aria-expanded="false">
-        🔍
-    </button>
+        <div class="language-box">
 
-    <div class="search-box">
+            <label>Language</label>
 
-        <input
-            type="search"
-            id="site-search"
-            placeholder="Search philosophy..."
-            aria-label="Search this website"
-        >
+            <button class="language-option" data-lang="hi">
+                हिन्दी
+            </button>
 
-        <div class="search-results" id="search-results"></div>
+            <button class="language-option" data-lang="es">
+                Español
+            </button>
+
+            <button class="language-option" data-lang="fr">
+                Français
+            </button>
+
+            <button class="language-option" data-lang="de">
+                Deutsch
+            </button>
+
+            <button class="language-option" data-lang="ja">
+                日本語
+            </button>
+
+            <button class="language-option" data-lang="ar">
+                العربية
+            </button>
+
+        </div>
 
     </div>
 
 </div>
 
-<!-- LANGUAGE -->
-<div class="language-container">
 
-    <button class="language-toggle"
-            aria-label="Choose language"
+    <!-- ================= MOBILE MENU ================= -->
+
+    <button class="menu-toggle"
+            aria-label="Toggle navigation menu"
             aria-expanded="false">
-        🌐
+
+        <span></span>
+        <span></span>
+        <span></span>
+
     </button>
-
-    <div class="language-box">
-       <button class="language-option" data-lang="hi">
-            हिन्दी
-        </button>
-
-        <button class="language-option" data-lang="es">
-            Español
-        </button>
-
-        <button class="language-option" data-lang="fr">
-            Français
-        </button>
-
-        <button class="language-option" data-lang="de">
-            Deutsch
-        </button>
-
-        <button class="language-option" data-lang="ja">
-            日本語
-        </button>
-
-        <button class="language-option" data-lang="ar">
-            العربية
-        </button>
-        <!-- languages will go here -->
-    </div>
-
-</div>
 
 </nav>
 

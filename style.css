@@ -115,16 +115,16 @@ img { max-width: 100%; display: block; }
   z-index: 100;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 1.1rem 6vw;
   background: rgba(20, 22, 31, 0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--ink-line);
+  
 }
 
 .navbar .logo h2 {
   color: var(--light-text);
-  font-size: 1.35rem;
+  font-size: 1.65rem;
   letter-spacing: 0.03em;
 }
 
@@ -134,8 +134,14 @@ img { max-width: 100%; display: block; }
 }
 
 .nav-links {
-  display: flex;
-  gap: 2.1rem;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin-left: 50px;
+}
+
+.navbar .logo {
+  flex-shrink: 0;
 }
 
 .nav-links a {
@@ -177,6 +183,14 @@ img { max-width: 100%; display: block; }
   transform: scaleX(1);
   transform-origin: left;
 }
+
+.nav-tools {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+}
+
 
 
 /* ---- mobile hamburger toggle ---- */
@@ -5088,5 +5102,7 @@ color: #fff;
     background: #30313a;
     color: #e0b56f;
 }
+
+
 
 /* ============ UNIFIED HERO WATERMARK ============ */

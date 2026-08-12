@@ -4979,18 +4979,7 @@ color: #fff;
 
   .comparison th, .comparison td { padding: 0.7rem 0.9rem; font-size: 0.85rem; }
 
-  .era,
-  .era:nth-of-type(even) {
-    grid-template-columns: 1fr;
-  }
-
-  .era .era-image,
-  .era .era-content,
-  .era:nth-of-type(even) .era-image,
-  .era:nth-of-type(even) .era-content {
-    order: initial;
-  }
-
+  
   .philosopher {
     flex-direction: column;
     text-align: center;
@@ -5106,6 +5095,19 @@ color: #fff;
     max-width: 100%;
     margin: 1rem 0;
   }
+
+  .era,
+  .era:nth-of-type(even) {
+    grid-template-columns: 1fr;
+  }
+
+  .era .era-image,
+  .era .era-content,
+  .era:nth-of-type(even) .era-image,
+  .era:nth-of-type(even) .era-content {
+    order: initial;
+  }
+
 
   .blog-card,
   .blog-card.reverse {

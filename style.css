@@ -3617,6 +3617,7 @@ color: #fff;
   color: #4a4536;
   font-size: 0.98rem;
   margin-bottom: 1.1rem;
+  text-align: left;
 }
 
 .thinker-info h3 {
@@ -4958,6 +4959,10 @@ color: #fff;
     padding-left: 0;
     padding-top: 0.8rem;
   }
+
+  .thinker-info p {
+    text-align: left;
+}
 
   .era-divider span { white-space: normal; text-align: center; }
 }

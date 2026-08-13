@@ -608,6 +608,47 @@ img { max-width: 100%; display: block; }
   background: var(--parchment-2);
 }
 
+.library-section a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+
+    padding: 0.75rem 1.3rem;
+
+    border: 1px solid var(--paper-line);
+    border-radius: 6px;
+
+    color: var(--ink-text);
+    text-decoration: none;
+
+    background: transparent;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.library-section a span {
+    color: var(--gold);
+    transition: transform 0.2s ease;
+}
+
+.library-section a:hover {
+    border-color: var(--gold);
+    background: var(--parchment-2);
+    transform: translateY(-2px);
+}
+
+.library-section a:hover span {
+    transform: translateX(3px);
+}
+
+
 /* =========================================================
    EDITOR'S PICKS
    ========================================================= */
@@ -2972,6 +3013,20 @@ letter-spacing:.04em;
         transform 0.2s ease;
 }
 
+.books a span {
+    color: var(--gold);
+    transition: transform 0.2s ease;
+}
+
+.books a:hover {
+    border-color: var(--gold);
+    background: var(--parchment-2);
+    transform: translateY(-2px);
+}
+
+.books a:hover span {
+    transform: translateX(3px);
+}
 
 .books h2 {
   font-size: 1.85rem;
@@ -4178,13 +4233,33 @@ color: #fff;
 .era-timeline-section {
   max-width: 1000px;
   margin: 4rem auto;
-  padding: 0 6vw;
+  padding: 0 4vw;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .era-timeline-section h2 {
-  margin-bottom: 2.5rem;
+  font-family: "Cinzel", serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #2B1F17;
+    text-align: center;
+    margin-bottom: 1.7rem;
+    position: relative;
+
 }
+
+.era-timeline-section  h2::after{
+
+    content:"";
+    width:90px;
+    height:3px;
+    background:var(--gold);
+    display:block;
+    margin:18px auto 0;
+    margin-bottom: 4rem;
+}
+
 
 .era-timeline {
   display: flex;

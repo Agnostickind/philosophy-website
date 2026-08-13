@@ -1300,9 +1300,40 @@ if (languageToggle && languageBox) {
 }
 
 /* ================= GOOGLE TRANSLATION ================= */
+/* ================= GOOGLE TRANSLATION ================= */
 
 const languageOptions =
     document.querySelectorAll(".language-option");
+
+const languageCurrent =
+    document.querySelector(".language-current");
+
+
+/* Language names shown in the button */
+
+const languageNames = {
+    en: "English",
+    hi: "हिन्दी",
+    es: "Español",
+    fr: "Français",
+    de: "Deutsch",
+    ja: "日本語",
+    ar: "العربية"
+};
+
+
+/* Show saved language */
+
+const savedLanguage =
+    localStorage.getItem("selectedLanguage") || "en";
+
+if (languageCurrent) {
+    languageCurrent.textContent =
+        languageNames[savedLanguage] || "English";
+}
+
+
+/* Language selection */
 
 languageOptions.forEach((option) => {
 
@@ -1311,8 +1342,82 @@ languageOptions.forEach((option) => {
         const targetLanguage =
             option.getAttribute("data-lang");
 
+
+        /* ================= ENGLISH ================= */
+
+        if (targetLanguage === "en") {
+
+            /* Remove saved translated language */
+            localStorage.removeItem("selectedLanguage");
+
+            /*
+             * If currently on a Google Translate page,
+             * get the original page from the "u" parameter.
+             */
+            const params =
+                new URLSearchParams(window.location.search);
+
+            const originalPage =
+                params.get("u");
+
+            if (originalPage) {
+
+                window.location.href =
+                    decodeURIComponent(originalPage);
+
+                return;
+            }
+
+
+            /*
+             * Otherwise return to the original page
+             * that was saved before translation.
+             */
+            const savedOriginalPage =
+                localStorage.getItem("originalPage");
+
+            if (savedOriginalPage) {
+
+                window.location.href =
+                    savedOriginalPage;
+
+                return;
+            }
+
+
+            /* Fallback */
+            window.location.href =
+                "https://agnostickind.github.io/philosophy-website/";
+
+            return;
+        }
+
+
+        /* ================= OTHER LANGUAGES ================= */
+
         const currentPage =
             window.location.href;
+
+
+        /*
+         * Save the original GitHub Pages URL
+         * before sending the visitor to Google Translate.
+         */
+        if (window.location.protocol !== "file:") {
+
+            localStorage.setItem(
+                "originalPage",
+                currentPage
+            );
+
+            localStorage.setItem(
+                "selectedLanguage",
+                targetLanguage
+            );
+        }
+
+
+        /* Google Translate URL */
 
         const googleTranslateUrl =
             "https://translate.google.com/translate" +
@@ -1320,7 +1425,9 @@ languageOptions.forEach((option) => {
             "&tl=" + targetLanguage +
             "&u=" + encodeURIComponent(currentPage);
 
-        window.location.href = googleTranslateUrl;
+
+        window.location.href =
+            googleTranslateUrl;
 
     });
 

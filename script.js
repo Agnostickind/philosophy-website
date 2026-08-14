@@ -1432,3 +1432,657 @@ languageOptions.forEach((option) => {
     });
 
 });
+
+/* =========================================
+   READING & APPEARANCE SETTINGS
+   ========================================= */
+
+const appearanceToggle =
+    document.getElementById("appearanceToggle");
+
+const appearancePanel =
+    document.getElementById("appearancePanel");
+
+const appearanceClose =
+    document.getElementById("appearanceClose");
+
+const resetAppearance =
+    document.getElementById("resetAppearance");
+
+
+/* =========================================
+   OPEN / CLOSE PANEL
+   ========================================= */
+
+function openAppearancePanel() {
+
+    appearancePanel.classList.add("open");
+
+    appearancePanel.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+    appearanceToggle.setAttribute(
+        "aria-expanded",
+        "true"
+    );
+}
+
+
+function closeAppearancePanel() {
+
+    appearancePanel.classList.remove("open");
+
+    appearancePanel.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    appearanceToggle.setAttribute(
+        "aria-expanded",
+        "false"
+    );
+}
+
+
+/* Aa BUTTON */
+
+appearanceToggle.addEventListener(
+    "click",
+    function (event) {
+
+        event.stopPropagation();
+
+        if (
+            appearancePanel.classList.contains("open")
+        ) {
+
+            closeAppearancePanel();
+
+        } else {
+
+            openAppearancePanel();
+
+        }
+
+    }
+);
+
+
+/* CLOSE BUTTON */
+
+appearanceClose.addEventListener(
+    "click",
+    function () {
+
+        closeAppearancePanel();
+
+    }
+);
+
+
+/* ESCAPE KEY */
+
+document.addEventListener(
+    "keydown",
+    function (event) {
+
+        if (event.key === "Escape") {
+
+            closeAppearancePanel();
+
+        }
+
+    }
+);
+
+
+/* =========================================
+   TEXT SIZE
+   ========================================= */
+
+const textSizeButtons =
+    document.querySelectorAll(
+        "[data-text-size]"
+    );
+
+
+textSizeButtons.forEach(
+    function (button) {
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                const size =
+                    button.dataset.textSize;
+
+                let scale = 1;
+
+
+                if (size === "small") {
+
+                    scale = 0.9;
+
+                }
+
+
+                if (size === "large") {
+
+                    scale = 1.1;
+
+                }
+
+
+                document.documentElement.style.setProperty(
+                    "--reading-scale",
+                    scale
+                );
+
+
+                setActiveButton(
+                    textSizeButtons,
+                    button
+                );
+
+
+                localStorage.setItem(
+                    "appearance-text-size",
+                    size
+                );
+
+            }
+        );
+
+    }
+);
+
+
+/* =========================================
+   PAGE WIDTH
+   ========================================= */
+
+const widthButtons =
+    document.querySelectorAll(
+        "[data-page-width]"
+    );
+
+
+widthButtons.forEach(
+    function (button) {
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                const width =
+                    button.dataset.pageWidth;
+
+
+                document.body.classList.remove(
+                    "page-wide"
+                );
+
+
+                if (width === "wide") {
+
+                    document.body.classList.add(
+                        "page-wide"
+                    );
+
+                }
+
+
+                setActiveButton(
+                    widthButtons,
+                    button
+                );
+
+
+                localStorage.setItem(
+                    "appearance-page-width",
+                    width
+                );
+
+            }
+        );
+
+    }
+);
+
+
+/* =========================================
+   THEME
+   ========================================= */
+
+const themeButtons =
+    document.querySelectorAll(
+        "[data-theme]"
+    );
+
+
+themeButtons.forEach(
+    function (button) {
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                const theme =
+                    button.dataset.theme;
+
+
+                document.body.classList.remove(
+                    "theme-dark"
+                );
+
+
+                /* DARK */
+
+                if (theme === "dark") {
+
+                    document.body.classList.add(
+                        "theme-dark"
+                    );
+
+                }
+
+
+                /* AUTOMATIC */
+
+                if (theme === "automatic") {
+
+                    const prefersDark =
+                        window.matchMedia(
+                            "(prefers-color-scheme: dark)"
+                        ).matches;
+
+
+                    if (prefersDark) {
+
+                        document.body.classList.add(
+                            "theme-dark"
+                        );
+
+                    }
+
+                }
+
+
+                setActiveButton(
+                    themeButtons,
+                    button
+                );
+
+
+                localStorage.setItem(
+                    "appearance-theme",
+                    theme
+                );
+
+            }
+        );
+
+    }
+);
+
+
+/* =========================================
+   READING SPACING
+   ========================================= */
+
+const spacingButtons =
+    document.querySelectorAll(
+        "[data-spacing]"
+    );
+
+
+spacingButtons.forEach(
+    function (button) {
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                const spacing =
+                    button.dataset.spacing;
+
+
+                document.body.classList.remove(
+                    "spacing-comfortable"
+                );
+
+
+                if (
+                    spacing === "comfortable"
+                ) {
+
+                    document.body.classList.add(
+                        "spacing-comfortable"
+                    );
+
+                }
+
+
+                setActiveButton(
+                    spacingButtons,
+                    button
+                );
+
+
+                localStorage.setItem(
+                    "appearance-spacing",
+                    spacing
+                );
+
+            }
+        );
+
+    }
+);
+
+
+/* =========================================
+   ACTIVE BUTTON
+   ========================================= */
+
+function setActiveButton(
+    buttons,
+    selectedButton
+) {
+
+    buttons.forEach(
+        function (button) {
+
+            button.classList.remove(
+                "active"
+            );
+
+        }
+    );
+
+
+    selectedButton.classList.add(
+        "active"
+    );
+
+}
+
+
+/* =========================================
+   LOAD SAVED SETTINGS
+   ========================================= */
+
+function loadAppearanceSettings() {
+
+
+    /* -----------------------------------------
+       SAVED VALUES
+       ----------------------------------------- */
+
+    const savedTextSize =
+        localStorage.getItem(
+            "appearance-text-size"
+        ) || "standard";
+
+
+    const savedWidth =
+        localStorage.getItem(
+            "appearance-page-width"
+        ) || "standard";
+
+
+    const savedTheme =
+        localStorage.getItem(
+            "appearance-theme"
+        ) || "light";
+
+
+    const savedSpacing =
+        localStorage.getItem(
+            "appearance-spacing"
+        ) || "standard";
+
+
+    /* -----------------------------------------
+       TEXT SIZE
+       ----------------------------------------- */
+
+    let savedScale = 1;
+
+
+    if (savedTextSize === "small") {
+
+        savedScale = 0.9;
+
+    }
+
+
+    if (savedTextSize === "large") {
+
+        savedScale = 1.1;
+
+    }
+
+
+    document.documentElement.style.setProperty(
+        "--reading-scale",
+        savedScale
+    );
+
+
+    const savedTextButton =
+        document.querySelector(
+            `[data-text-size="${savedTextSize}"]`
+        );
+
+
+    if (savedTextButton) {
+
+        setActiveButton(
+            textSizeButtons,
+            savedTextButton
+        );
+
+    }
+
+
+    /* -----------------------------------------
+       PAGE WIDTH
+       ----------------------------------------- */
+
+    document.body.classList.remove(
+        "page-wide"
+    );
+
+
+    if (savedWidth === "wide") {
+
+        document.body.classList.add(
+            "page-wide"
+        );
+
+    }
+
+
+    const savedWidthButton =
+        document.querySelector(
+            `[data-page-width="${savedWidth}"]`
+        );
+
+
+    if (savedWidthButton) {
+
+        setActiveButton(
+            widthButtons,
+            savedWidthButton
+        );
+
+    }
+
+
+    /* -----------------------------------------
+       THEME
+       ----------------------------------------- */
+
+    document.body.classList.remove(
+        "theme-dark"
+    );
+
+
+    if (savedTheme === "dark") {
+
+        document.body.classList.add(
+            "theme-dark"
+        );
+
+    }
+
+
+    if (savedTheme === "automatic") {
+
+        const prefersDark =
+            window.matchMedia(
+                "(prefers-color-scheme: dark)"
+            ).matches;
+
+
+        if (prefersDark) {
+
+            document.body.classList.add(
+                "theme-dark"
+            );
+
+        }
+
+    }
+
+
+    const savedThemeButton =
+        document.querySelector(
+            `[data-theme="${savedTheme}"]`
+        );
+
+
+    if (savedThemeButton) {
+
+        setActiveButton(
+            themeButtons,
+            savedThemeButton
+        );
+
+    }
+
+
+    /* -----------------------------------------
+       READING SPACING
+       ----------------------------------------- */
+
+    document.body.classList.remove(
+        "spacing-comfortable"
+    );
+
+
+    if (savedSpacing === "comfortable") {
+
+        document.body.classList.add(
+            "spacing-comfortable"
+        );
+
+    }
+
+
+    const savedSpacingButton =
+        document.querySelector(
+            `[data-spacing="${savedSpacing}"]`
+        );
+
+
+    if (savedSpacingButton) {
+
+        setActiveButton(
+            spacingButtons,
+            savedSpacingButton
+        );
+
+    }
+
+}
+
+
+/* =========================================
+   RESET ALL SETTINGS
+   ========================================= */
+
+resetAppearance.addEventListener(
+    "click",
+    function () {
+
+
+        /* Remove saved preferences */
+
+        localStorage.removeItem(
+            "appearance-text-size"
+        );
+
+        localStorage.removeItem(
+            "appearance-page-width"
+        );
+
+        localStorage.removeItem(
+            "appearance-theme"
+        );
+
+        localStorage.removeItem(
+            "appearance-spacing"
+        );
+
+
+        /* Reset reading scale */
+
+        document.documentElement.style.setProperty(
+            "--reading-scale",
+            1
+        );
+
+
+        /* Reset body classes */
+
+        document.body.classList.remove(
+            "page-wide",
+            "theme-dark",
+            "spacing-comfortable"
+        );
+
+
+        /* Reset buttons */
+
+        document.querySelector(
+            '[data-text-size="standard"]'
+        ).click();
+
+
+        document.querySelector(
+            '[data-page-width="standard"]'
+        ).click();
+
+
+        document.querySelector(
+            '[data-theme="light"]'
+        ).click();
+
+
+        document.querySelector(
+            '[data-spacing="standard"]'
+        ).click();
+
+    }
+);
+
+
+/* =========================================
+   START
+   ========================================= */
+
+loadAppearanceSettings();

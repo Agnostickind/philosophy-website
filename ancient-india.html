@@ -67,7 +67,11 @@
         </div>
 
     </div>
-
+<button class="appearance-toggle" id="appearanceToggle" type="button"
+        aria-label="Open reading and appearance settings"
+        aria-expanded="false">
+    Aa
+</button>
 
     <!-- LANGUAGE -->
     <div class="language-container">
@@ -616,6 +620,95 @@ a fractured world be governed?
 </footer>
 
 <script src="script.js" defer></script>
+<div class="appearance-panel" id="appearancePanel" aria-hidden="true">
 
+    <div class="appearance-panel-header">
+        <div>
+            <span class="appearance-label">READING</span>
+            <h3>Appearance</h3>
+        </div>
+
+        <button class="appearance-close" id="appearanceClose" type="button"
+                aria-label="Close appearance settings">
+            ×
+        </button>
+    </div>
+
+
+    <div class="appearance-section">
+
+        <h4>Text Size</h4>
+
+        <div class="appearance-options text-size-options">
+            <button type="button" data-text-size="small">Small</button>
+            <button type="button" data-text-size="standard" class="active">Standard</button>
+            <button type="button" data-text-size="large">Large</button>
+        </div>
+
+    </div>
+
+
+    <div class="appearance-section">
+
+        <h4>Page Width</h4>
+
+        <div class="appearance-options width-options">
+            <button type="button" data-page-width="standard" class="active">
+                Standard
+            </button>
+
+            <button type="button" data-page-width="wide">
+                Wide
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="appearance-section">
+
+        <h4>Theme</h4>
+
+        <div class="appearance-options theme-options">
+            <button type="button" data-theme="automatic">
+                Auto
+            </button>
+
+            <button type="button" data-theme="light" class="active">
+                Light
+            </button>
+
+            <button type="button" data-theme="dark">
+                Dark
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="appearance-section">
+
+        <h4>Reading Spacing</h4>
+
+        <div class="appearance-options spacing-options">
+            <button type="button" data-spacing="standard" class="active">
+                Standard
+            </button>
+
+            <button type="button" data-spacing="comfortable">
+                Comfortable
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="appearance-footer">
+        <button id="resetAppearance" type="button">
+            Reset preferences
+        </button>
+    </div>
+
+</div>
 </body>
 </html>

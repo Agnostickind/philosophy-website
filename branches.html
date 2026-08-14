@@ -78,6 +78,13 @@
 
     </div>
 
+    <button class="appearance-toggle" id="appearanceToggle" type="button"
+        aria-label="Open reading and appearance settings"
+        aria-expanded="false">
+    Aa
+</button>
+
+
 
     <!-- LANGUAGE -->
     <div class="language-container">
@@ -194,28 +201,53 @@ The division of <strong>philosophy</strong>  into branches also allows scholars 
         <h3 class="tree-root">🌳 Philosophy</h3>
 
         <ul class="tree-list">
-            <li>🧠 <strong>Ethics</strong> — Studies morality, right and wrong, and how we should live.</li>
 
-            <li>🌌 <strong>Metaphysics</strong> — Explores reality, existence, time, space, and the nature of being.</li>
+    <li>
+        <a href="ethics-branch-philosophy.html">
+            <span class="branch-info">
+                🧠 <strong>Ethics</strong> — Studies morality, right and wrong, and how we should live.
+            </span>
+            <span class="read-more">READ MORE →</span>
+        </a>
+    </li>
 
-            <li>📚 <strong>Epistemology</strong> — Investigates knowledge, belief, truth, and how we know what we know.</li>
+    <li>
+        <a href="metaphysics-branch-philosophy.html">
+            <span class="branch-info">
+                🌌 <strong>Metaphysics</strong> — Explores reality, existence, time, space, and the nature of being.
+            </span>
+            <span class="read-more">READ MORE →</span>
+        </a>
+    </li>
 
-            <li>⚖ <strong>Logic</strong> — Examines valid reasoning, arguments, and critical thinking.</li>
+    <li>
+        <a href="epistemology-branch-philosophy.html">
+            <span class="branch-info">
+                📚 <strong>Epistemology</strong> — Investigates knowledge, belief, truth, and how we know what we know.
+            </span>
+            <span class="read-more">READ MORE →</span>
+        </a>
+    </li>
 
-            <li>🎨 <strong>Aesthetics</strong> — Focuses on beauty, art, creativity, and artistic experience.</li>
+    <li>
+        <a href="logic-branch-philosophy.html">
+            <span class="branch-info">
+                ⚖ <strong>Logic</strong> — Examines valid reasoning, arguments, and critical thinking.
+            </span>
+            <span class="read-more">READ MORE →</span>
+        </a>
+    </li>
 
-            <li>🏛 <strong>Political Philosophy</strong> — Studies justice, government, freedom, rights, and society.</li>
+    <li>
+        <a href="aesthetics-branch-philosophy.html">
+            <span class="branch-info">
+                🎨 <strong>Aesthetics</strong> — Focuses on beauty, art, creativity, and artistic experience.
+            </span>
+            <span class="read-more">READ MORE →</span>
+        </a>
+    </li>
 
-            <li>🧠 <strong>Philosophy of Mind</strong> — Explores consciousness, thought, emotion, and the relationship between mind and body.</li>
-
-            <li>💬 <strong>Philosophy of Language</strong> — Investigates meaning, communication, symbols, and language.</li>
-
-            <li>🔬 <strong>Philosophy of Science</strong> — Examines scientific methods, evidence, and the foundations of scientific knowledge.</li>
-
-            <li>⚖ <strong>Philosophy of Law</strong> — Explores justice, legal systems, rights, and the purpose of laws.</li>
-
-            <li>🙏 <strong>Philosophy of Religion</strong> — Investigates God, faith, spirituality, and religious beliefs.</li>
-        </ul>
+</ul>
 
     </div>
 
@@ -866,6 +898,94 @@ Designed &amp; Developed by Kavya Jain
 
 </footer>
 <script src="script.js" defer></script>
+<div class="appearance-panel" id="appearancePanel" aria-hidden="true">
+
+    <div class="appearance-panel-header">
+        <div>
+            <span class="appearance-label">READING</span>
+            <h3>Appearance</h3>
+        </div>
+
+        <button class="appearance-close" id="appearanceClose" type="button"
+                aria-label="Close appearance settings">
+            ×
+        </button>
+    </div>
+
+
+    <div class="appearance-section">
+
+        <h4>Text Size</h4>
+
+        <div class="appearance-options text-size-options">
+            <button type="button" data-text-size="small">Small</button>
+            <button type="button" data-text-size="standard" class="active">Standard</button>
+            <button type="button" data-text-size="large">Large</button>
+        </div>
+
+    </div>
+
+
+    <div class="appearance-section">
+
+        <h4>Page Width</h4>
+
+        <div class="appearance-options width-options">
+            <button type="button" data-page-width="standard" class="active">
+                Standard
+            </button>
+
+            <button type="button" data-page-width="wide">
+                Wide
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="appearance-section">
+
+        <h4>Theme</h4>
+
+        <div class="appearance-options theme-options">
+            <button type="button" data-theme="automatic">
+                Auto
+            </button>
+
+            <button type="button" data-theme="light" class="active">
+                Light
+            </button>
+
+            <button type="button" data-theme="dark">
+                Dark
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="appearance-section">
+
+        <h4>Reading Spacing</h4>
+
+        <div class="appearance-options spacing-options">
+            <button type="button" data-spacing="standard" class="active">
+                Standard
+            </button>
+
+            <button type="button" data-spacing="comfortable">
+                Comfortable
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="appearance-footer">
+        <button id="resetAppearance" type="button">
+            Reset preferences
+        </button>
+    </div>
 
 </body>
 

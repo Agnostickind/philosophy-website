@@ -2082,6 +2082,53 @@ resetAppearance.addEventListener(
 
 
 /* =========================================
+   CLICK OUTSIDE TO CLOSE
+   Tapping anywhere outside an open search box,
+   language box, or appearance panel closes it —
+   in addition to the existing toggle-button behavior.
+   ========================================= */
+
+document.addEventListener('click', (event) => {
+
+  /* ---- search box ---- */
+  if (searchBox && searchBox.classList.contains('active')) {
+    const withinSearch = event.target.closest('.search-container');
+    if (!withinSearch) {
+      searchBox.classList.remove('active');
+      if (searchToggle) {
+        searchToggle.setAttribute('aria-expanded', 'false');
+        searchToggle.setAttribute('aria-label', 'Open search');
+      }
+      if (searchInput) {
+        searchInput.value = '';
+      }
+    }
+  }
+
+  /* ---- language box ---- */
+  if (languageBox && languageBox.classList.contains('active')) {
+    const withinLanguage = event.target.closest('.language-container');
+    if (!withinLanguage) {
+      languageBox.classList.remove('active');
+      if (languageToggle) {
+        languageToggle.setAttribute('aria-expanded', 'false');
+      }
+    }
+  }
+
+  /* ---- appearance panel ---- */
+  if (appearancePanel && appearancePanel.classList.contains('open')) {
+    const withinAppearance =
+      event.target.closest('.appearance-panel') ||
+      event.target.closest('.appearance-toggle');
+    if (!withinAppearance) {
+      closeAppearancePanel();
+    }
+  }
+
+});
+
+/* =========================================
    START
    ========================================= */
 

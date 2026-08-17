@@ -1,0 +1,254 @@
+/* =========================================================
+   LIBRARY OF PHILOSOPHY â€” THINKERS PAGE REFINEMENT LAYER
+   Load AFTER style.css and home-refine.css:
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="home-refine.css">
+     <link rel="stylesheet" href="thinkers-refine.css">
+   Paragraph typography is intentionally left untouched.
+   ========================================================= */
+
+:root {
+  --portrait-size: clamp(150px, 17vw, 230px);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---- 1. Anchor offset under the sticky navbar ---------- */
+html { scroll-behavior: smooth; }
+.thinker,
+.thinker-era,
+section[id] { scroll-margin-top: clamp(72px, 12vh, 110px); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* ---- 2. Screen-reader-only helper ---------------------- */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  clip-path: inset(50%); white-space: nowrap;
+}
+.skip-link:focus {
+  position: fixed; inset-inline-start: 1rem; inset-block-start: 1rem;
+  z-index: 9999; padding: .6rem 1rem; border-radius: 6px;
+  background: var(--gold, #b88a44); color: #14100b; font-weight: 600;
+}
+
+/* ---- 3. Quick-jump nav becomes a real toolbar ---------- */
+.category-nav {
+  position: sticky;
+  top: clamp(56px, 9vh, 78px);
+  z-index: 20;
+  display: flex; flex-wrap: wrap;
+  justify-content: center; gap: .5rem .65rem;
+  padding: .7rem 1rem;
+  backdrop-filter: blur(9px);
+  background: color-mix(in srgb, var(--background, #f1f0ee) 78%, transparent);
+  border-block: 1px solid color-mix(in srgb, var(--gold, #b88a44) 22%, transparent);
+}
+.category-nav a {
+  padding: .38rem .85rem;
+  border: 1px solid color-mix(in srgb, var(--gold, #b88a44) 34%, transparent);
+  border-radius: 999px;
+  font-size: .9rem; letter-spacing: .02em; text-decoration: none;
+  transition: background .25s var(--ease-out), transform .25s var(--ease-out);
+}
+.category-nav a:hover,
+.category-nav a:focus-visible,
+.category-nav a[aria-current="true"] {
+  background: color-mix(in srgb, var(--gold, #b88a44) 18%, transparent);
+  transform: translateY(-1px);
+}
+
+/* ---- 4. Era rhythm ------------------------------------- */
+.thinker-era {
+  padding-block: clamp(1.5rem, 4vw, 3rem);
+}
+.era-divider {
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  gap: 1rem;
+  margin-block: clamp(1.2rem, 3vw, 2.4rem);
+  text-align: center;
+}
+.era-divider::before,
+.era-divider::after {
+  content: ""; flex: 1 1 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, color-mix(in srgb, var(--gold, #b88a44) 55%, transparent), transparent);
+}
+.era-divider span {
+  font-size: clamp(1.1rem, 2.4vw, 1.6rem);
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+
+/* ---- 5. Thinker cards ---------------------------------- */
+.thinker-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  width: min(1150px, 92vw);
+  margin-inline: auto;
+}
+
+.thinker {
+  display: grid;
+  grid-template-columns: var(--portrait-size) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(1.2rem, 3vw, 2.6rem);
+  padding: clamp(1.1rem, 2.6vw, 2rem);
+  border: 1px solid color-mix(in srgb, var(--gold, #b88a44) 18%, transparent);
+  border-radius: 16px;
+  background: color-mix(in srgb, #ffffff 4%, transparent);
+  transition: border-color .3s var(--ease-out), transform .3s var(--ease-out);
+}
+.thinker:hover {
+  border-color: color-mix(in srgb, var(--gold, #b88a44) 42%, transparent);
+}
+
+/* Alternate the portrait side so the long list never feels flat */
+@media (min-width: 861px) {
+  .thinker:nth-child(even) {
+    grid-template-columns: minmax(0, 1fr) var(--portrait-size);
+  }
+  .thinker:nth-child(even) .thinker-portrait { order: 2; }
+}
+
+/* ---- 6. PORTRAITS: perfect circles, never ovals -------- */
+.thinker-portrait {
+  margin: 0;
+  width: var(--portrait-size);
+  aspect-ratio: 1 / 1;          /* square box => circular mask */
+  border-radius: 50%;
+  overflow: hidden;
+  flex: 0 0 auto;
+  position: sticky;
+  top: clamp(110px, 16vh, 150px);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--gold, #b88a44) 40%, transparent),
+              0 14px 34px rgba(0, 0, 0, .35);
+}
+.thinker-portrait img,
+.thinker > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;            /* crops, never squashes */
+  object-position: center top;  /* keeps faces in frame */
+  border-radius: 50%;
+  transition: transform .5s var(--ease-out);
+}
+.thinker:hover .thinker-portrait img { transform: scale(1.04); }
+
+/* Safety net if the original (non-figure) markup is ever used */
+.thinker > img {
+  width: var(--portrait-size);
+  height: var(--portrait-size);
+}
+
+@media (max-width: 860px) {
+  .thinker { grid-template-columns: 1fr; justify-items: center; text-align: left; }
+  .thinker-portrait { position: static; }
+  .thinker-info { width: 100%; }
+}
+
+/* ---- 7. Info block: heading, dates, contributions ------ */
+.thinker-info h2 {
+  margin-block: 0 .2rem;
+  line-height: 1.2;
+}
+.thinker-dates {
+  margin-block: 0 .9rem;
+  font-size: .92rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  opacity: .75;
+}
+.contrib-title {
+  margin-block: 1.4rem .6rem;
+  font-size: .82rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  opacity: .8;
+}
+.thinker-contributions {
+  display: flex; flex-wrap: wrap; gap: .45rem;
+  list-style: none; padding: 0; margin: 0 0 1.2rem;
+}
+.thinker-contributions li {
+  padding: .3rem .75rem;
+  font-size: .86rem;
+  border: 1px solid color-mix(in srgb, var(--gold, #b88a44) 30%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--gold, #b88a44) 8%, transparent);
+}
+
+/* ---- 8. Quotes ----------------------------------------- */
+.thinker-quote {
+  margin: 0;
+  padding: .9rem 0 .3rem 1.1rem;
+  border-inline-start: 2px solid color-mix(in srgb, var(--gold, #b88a44) 55%, transparent);
+}
+.thinker-quote blockquote {
+  margin: 0; border: 0; padding: 0;
+  font-style: italic;
+}
+.thinker-quote figcaption {
+  margin-top: .4rem;
+  font-size: .82rem;
+  letter-spacing: .06em;
+  opacity: .7;
+}
+
+/* ---- 9. Closing sections ------------------------------- */
+.questions ul {
+  display: grid;
+  gap: .6rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  width: min(950px, 92vw);
+  margin-inline: auto;
+  list-style: none; padding: 0;
+  text-align: left;
+}
+.questions li {
+  padding: .8rem 1rem;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--gold, #b88a44) 18%, transparent);
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 1.4rem;
+  padding: .8rem 1.6rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--gold, #b88a44) 55%, transparent);
+  text-decoration: none;
+  transition: background .25s var(--ease-out), transform .25s var(--ease-out);
+}
+.cta-button:hover { transform: translateY(-2px); background: color-mix(in srgb, var(--gold, #b88a44) 16%, transparent); }
+
+/* ---- 10. Reveal on scroll ------------------------------ */
+.js-motion .thinker,
+.js-motion .era-divider {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .6s var(--ease-out), transform .6s var(--ease-out);
+}
+.js-motion .thinker.is-visible,
+.js-motion .era-divider.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .js-motion .thinker,
+  .js-motion .era-divider { opacity: 1; transform: none; transition: none; }
+}
+
+/* ---- 11. Focus visibility ------------------------------ */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--gold, #b88a44);
+  outline-offset: 3px;
+  border-radius: 6px;
+}

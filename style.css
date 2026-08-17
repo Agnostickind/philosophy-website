@@ -36,7 +36,12 @@
   --shadow-card: 0 1px 2px rgba(20, 22, 31, 0.06), 0 8px 24px rgba(20, 22, 31, 0.10);
   --shadow-card-hover: 0 2px 4px rgba(20, 22, 31, 0.10), 0 20px 36px rgba(20, 22, 31, 0.18);
 
+  /* ---- reading scale (Text Size appearance control) ---- */
+  --reading-scale: 1;
+}
 
+html {
+  font-size: calc(16px * var(--reading-scale));
 }
 
 /* =========================================================
@@ -508,12 +513,87 @@ body.text-large {
 }
 
 
-/* WIDE PAGE */
+/* WIDE PAGE
+   Every real page-section container on the site, grouped by its
+   original max-width, widened by the same fixed amount so the
+   whole page grows together rather than just a few sections.
+   Text-measure elements (paragraphs, blockquotes, list items,
+   small badges/images) are intentionally left alone — widening
+   those would make body text uncomfortably long to read. */
 
-body.page-wide .container,
-body.page-wide main,
-body.page-wide section {
-    max-width: 1250px;
+:root {
+  --wide-extra: 0px;
+}
+
+body.page-wide {
+  --wide-extra: 260px;
+}
+
+/* 1240px group */
+body.page-wide :is(
+  .library-section, .editors-picks, .book-month, .book-quotes,
+  .spotlight, .recommendation, .reading-levels, .library-intro,
+  .beginner-library, .why-philosophy, .explore, .category,
+  .category:nth-of-type(even) > *, .era-divider,
+  .branch, .comparison, .history-intro, .era
+) {
+  max-width: calc(1240px + var(--wide-extra));
+}
+
+/* 1300px group */
+body.page-wide :is(
+  .about-home, .schools, .branch-intro, .world-philosophy
+) {
+  max-width: calc(1300px + var(--wide-extra));
+}
+
+/* 1100px group */
+body.page-wide :is(
+  .books, .contact-wrap, .thinker, .philosophy-tree,
+  .philosophy-divider
+) {
+  max-width: calc(1100px + var(--wide-extra));
+}
+
+/* 1200px */
+body.page-wide .books-section {
+  max-width: calc(1200px + var(--wide-extra));
+}
+
+/* 1000px group */
+body.page-wide :is(
+  .awards-section, .era-timeline-section, .bp-thinker, .philosopher
+) {
+  max-width: calc(1000px + var(--wide-extra));
+}
+
+/* 900px group */
+body.page-wide :is(
+  .quotes, .questions, .related-pages, .start-here,
+  .blog-grid, .bp-section, .bp-thinkers-header,
+  .history-section-title
+) {
+  max-width: calc(900px + var(--wide-extra));
+}
+
+/* 820px group */
+body.page-wide :is(.daily-life, .bp-section.bp-no-figure) {
+  max-width: calc(820px + var(--wide-extra));
+}
+
+/* 800px group */
+body.page-wide :is(.faq, .connection, .bp-related) {
+  max-width: calc(800px + var(--wide-extra));
+}
+
+/* 720px group */
+body.page-wide :is(.thinkers-summary, .history-summary) {
+  max-width: calc(720px + var(--wide-extra));
+}
+
+/* 700px group */
+body.page-wide :is(.quote, .schools-intro) {
+  max-width: calc(700px + var(--wide-extra));
 }
 
 
@@ -3380,6 +3460,89 @@ color: #fff;
   html { scroll-behavior: auto; }
 }
 
+/* ===== NEW MOBILE FIXES (navbar icons, book-of-the-month,
+   philosopher spotlight, era/branch images) ===== */
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.9rem 4vw;
+    flex-wrap: nowrap;
+  }
+
+  .navbar .logo h2 {
+    font-size: 1.25rem;
+  }
+
+  .nav-links {
+    margin-left: 0;
+  }
+
+  .nav-tools {
+    gap: 4px;
+  }
+
+  .search-toggle,
+  .language-toggle,
+  .appearance-toggle,
+  .menu-toggle {
+    width: 34px;
+    height: 34px;
+  }
+
+  .menu-toggle {
+    padding: 4px;
+  }
+
+  .search-container,
+  .language-container {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+}
+
+@media (max-width: 640px) {
+  .featured-book {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .featured-book img {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .spotlight-card {
+    grid-template-columns: 1fr;
+    padding: 1.6rem;
+    text-align: center;
+  }
+
+  .spotlight-card img {
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+  }
+
+  .spotlight-card ul {
+    align-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .era-image,
+  .branch-image {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .thinker img,
+  .philosopher img {
+    max-width: 100%;
+  }
+}
+
 /* ===== 860px ===== */
 @media (max-width: 1100px) {
   .menu-toggle { display: flex; }
@@ -3479,7 +3642,6 @@ color: #fff;
 /* ===== 768px ===== */
 @media (max-width: 768px) {
   .school-grid { grid-template-columns: 1fr; }
-  .school-grid { grid-template-columns: 1fr; } /* duplicate in original — kept as-is */
 
   .fact-box { padding: 40px 25px; }
 
@@ -3832,6 +3994,10 @@ body.theme-dark {
   --theme-inset-strong: rgba(255,255,255,.07);
 }
 
+body.theme-dark strong {
+    color: #f0d08a;
+}
+
 body.theme-dark {
   background: var(--parchment);
   color: var(--ink-text);
@@ -3881,6 +4047,30 @@ body.theme-dark .fact-box,
 body.theme-dark .footer {
   background: var(--theme-ink-bg);
 }
+
+@media (max-width: 700px) {
+  .bp-figure,
+  .bp-figure.bp-left {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  .bp-thinker {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bp-thinker-info blockquote {
+    border-left: none;
+    border-top: 2px solid #b98a4e;
+    padding-left: 0;
+    padding-top: 0.8rem;
+  }
+}
+
+
 
 /* =========================================================
    HERO
@@ -6370,246 +6560,3 @@ transition:.45s ease;
   font-size: 1.02rem;
   margin-bottom: 2rem;
 }
-
-
-
-/* =========================================================
-   THEME BRIDGE — preserves the original light theme and
-   lets body.theme-dark recolor the light-only hard-coded styles.
-   ========================================================= */
-:root {
-  --theme-ink-bg: #14161f;
-  --theme-ink-text: #14161f;
-  --theme-heading-brown: #3d2b16;
-  --theme-divider: #8f7445;
-  --theme-emphasis: #7d5a2c;
-  --theme-parchment-alt: #e9e1cc;
-  --theme-heading: #2B1F17;
-  --theme-heading-deep: #2b1d0f;
-  --theme-heading-dark: #1d1d1d;
-  --theme-text-strong: #1f1f1f;
-  --theme-text-stronger: #222;
-  --theme-black: #000;
-  --theme-body: #3f2f1b;
-  --theme-body-soft: #4a4536;
-  --theme-body-brown: #5b4630;
-  --theme-body-muted: #5b5345;
-  --theme-gray: #666;
-  --theme-nav-text: #645640;
-  --theme-nav-hover: #2f2619;
-  --theme-muted: #6b6455;
-  --theme-muted-brown: #6A5642;
-  --theme-intro-muted: #67553d;
-  --theme-era-text: #3f3426;
-  --theme-pill-text: #4b3720;
-  --theme-books-muted: #6b5846;
-  --theme-gold-dark: #7a5415;
-  --theme-link: #8a5a24;
-  --theme-link-hover: #5c3a18;
-  --theme-card: #f7f1df;
-  --theme-surface-soft: #fbf7ed;
-  --theme-question-bg: #f8f2df;
-  --theme-nav-hover-bg: #f9f2df;
-  --theme-surface: #fffdf8;
-  --theme-hover-surface: #F6E4B7;
-  --theme-life-card: #f7eeee;
-  --theme-meaning-bg: #f0efec;
-  --theme-pill-grad-end: #f1e5cb;
-  --theme-card-border: #d8c7a0;
-  --theme-border: #d8cdaf;
-  --theme-life-border: #d0cdc6;
-  --theme-gold-border: #D6B46A;
-  --theme-word-border: #d5bc83;
-  --theme-gold-base: #b8860b;
-  --theme-gold-border-strong: #c9a227;
-  --theme-gold-mid: #c79b4b;
-  --theme-gold-mid-dark: #b88738;
-  --theme-gold-light: #d2ab5f;
-  --theme-gold-button: #b08d57;
-  --theme-gold-yellow: #d4af37;
-  --theme-gold-hover: #e0b437;
-  --theme-gold-muted: #8a6d3b;
-  --theme-gold-line: #c4a15a;
-  --theme-gold-label: #a87832;
-  --theme-gold: #b98a4e;
-  --theme-link-underline: #b88a4a;
-  --theme-gold-card: #c69a37;
-  --theme-body-brown-dark: #4B3929;
-  --theme-deep-brown: #5A3510;
-  --theme-gold-orange: #eda705;
-  --theme-gold-quote: #8a5d15;
-  --theme-cover-start: #d9cdae;
-  --theme-cover-end: #c6b891;
-  --theme-pill-border: #d2bc8c;
-  --theme-nav-bg: rgba(248,244,232,.92);
-  --theme-nav-button-bg: rgba(255,255,255,.35);
-  --theme-nav-border: rgba(170,145,100,.18);
-  --theme-nav-border-strong: rgba(170,145,100,.22);
-  --theme-shadow-soft: rgba(215,24,24,.08);
-  --theme-shadow-hover: rgba(230,7,7,.18);
-  --theme-inset: rgba(255,255,255,.55);
-  --theme-inset-strong: rgba(255,255,255,.7);
-}
-
-body.theme-dark {
-  /* site-wide dark palette */
-  --theme-ink-bg: #14161f;
-  --theme-ink-text: #eee8dc;
-  --parchment: #18191f;
-  --parchment-2: #202127;
-  --paper-line: #3a3b45;
-  --ink-text: #eee8dc;
-  --ink: #f0eadf;
-  --muted-dark: #aaa49a;
-  --gold: #c9a15a;
-  --gold-bright: #e0bb72;
-  --theme-heading-brown: #e2d8c8;
-  --theme-divider: #806a42;
-  --theme-emphasis: #d5b06a;
-  --theme-parchment-alt: #202127;
-  --theme-heading: #eee8dc;
-  --theme-heading-deep: #eee8dc;
-  --theme-heading-dark: #eee8dc;
-  --theme-text-strong: #eee8dc;
-  --theme-text-stronger: #eee8dc;
-  --theme-black: #eee8dc;
-  --theme-body: #ddd7ca;
-  --theme-body-soft: #d2ccbf;
-  --theme-body-brown: #c9c1b2;
-  --theme-body-muted: #b9b2a7;
-  --theme-gray: #b8b2a8;
-  --theme-nav-text: #c8c0b1;
-  --theme-nav-hover: #f0eadf;
-  --theme-muted: #aaa49a;
-  --theme-muted-brown: #aaa49a;
-  --theme-intro-muted: #b8b0a2;
-  --theme-era-text: #d5cec0;
-  --theme-pill-text: #d6cebf;
-  --theme-books-muted: #aaa49a;
-  --theme-gold-dark: #d9b56d;
-  --theme-link: #d3a565;
-  --theme-link-hover: #f0d08a;
-  --theme-card: #202127;
-  --theme-surface-soft: #202127;
-  --theme-question-bg: #22242b;
-  --theme-nav-hover-bg: #302f34;
-  --theme-surface: #1c1d23;
-  --theme-hover-surface: #302f34;
-  --theme-life-card: #202127;
-  --theme-meaning-bg: #22242b;
-  --theme-pill-grad-end: #2a2b31;
-  --theme-card-border: #3a3b45;
-  --theme-border: #3a3b45;
-  --theme-life-border: #3a3b45;
-  --theme-gold-border: #806535;
-  --theme-word-border: #6b5835;
-  --theme-gold-base: #c9a15a;
-  --theme-gold-border-strong: #d3a565;
-  --theme-gold-mid: #c9a15a;
-  --theme-gold-mid-dark: #b8863b;
-  --theme-gold-light: #e0bb72;
-  --theme-gold-button: #b98a4e;
-  --theme-gold-yellow: #e0bb72;
-  --theme-gold-hover: #f0ce8a;
-  --theme-gold-muted: #c9a15a;
-  --theme-gold-line: #9b7a42;
-  --theme-gold-label: #d3a565;
-  --theme-gold: #c9a15a;
-  --theme-link-underline: #b98a4e;
-  --theme-gold-card: #c9a15a;
-  --theme-body-brown-dark: #d0c8b9;
-  --theme-deep-brown: #e0d5c2;
-  --theme-gold-orange: #d9ad55;
-  --theme-gold-quote: #d6ad61;
-  --theme-cover-start: #34302a;
-  --theme-cover-end: #282620;
-  --theme-pill-border: #6b5a3c;
-  --theme-nav-bg: rgba(29,28,25,.94);
-  --theme-nav-button-bg: rgba(255,255,255,.04);
-  --theme-nav-border: rgba(201,161,90,.18);
-  --theme-nav-border-strong: rgba(201,161,90,.28);
-  --theme-shadow-soft: rgba(0,0,0,.22);
-  --theme-shadow-hover: rgba(0,0,0,.35);
-  --theme-inset: rgba(255,255,255,.04);
-  --theme-inset-strong: rgba(255,255,255,.07);
-}
-
-body.theme-dark strong {
-    color: #f0d08a;
-}
-
-body.theme-dark {
-  background: var(--parchment);
-  color: var(--ink-text);
-}
-
-/* Dark theme surface corrections for components that intentionally
-   used explicit light colors in their original rules. */
-body.theme-dark .category-nav {
-  background: var(--theme-nav-bg);
-  border-color: var(--theme-nav-border);
-}
-body.theme-dark .category-nav a {
-  color: var(--theme-nav-text);
-  background: var(--theme-nav-button-bg);
-  border-color: var(--theme-nav-border-strong);
-}
-body.theme-dark .category-nav a:hover {
-  color: var(--theme-nav-hover);
-  background: var(--theme-nav-hover-bg);
-}
-body.theme-dark .category-nav a.active {
-  color: #fff;
-  background: linear-gradient(135deg, var(--theme-gold-light), var(--theme-gold-mid-dark));
-  border-color: var(--theme-gold-mid-dark);
-}
-
-/* Search / language popovers were intentionally dark-looking before;
-   keep them consistent and readable in both themes. */
-body.theme-dark .search-box,
-body.theme-dark .search-results,
-body.theme-dark .language-box {
-  background: #25262e;
-  border-color: #c9954d;
-}
-
-body.theme-dark .search-result:hover,
-body.theme-dark .language-option:hover {
-  background: #30313a;
-}
-
-/* Existing dark ribbons/cards stay dark; their text remains readable. */
-body.theme-dark .bp-thinker,
-body.theme-dark .pick,
-body.theme-dark .book-month,
-body.theme-dark .awards-section,
-body.theme-dark .fact-box,
-body.theme-dark .footer {
-  background: var(--theme-ink-bg);
-}
-
-@media (max-width: 700px) {
-  .bp-figure,
-  .bp-figure.bp-left {
-    float: none;
-    width: 100%;
-    max-width: 100%;
-    margin: 1rem 0;
-  }
-
-  .bp-thinker {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .bp-thinker-info blockquote {
-    border-left: none;
-    border-top: 2px solid #b98a4e;
-    padding-left: 0;
-    padding-top: 0.8rem;
-  }
-}
-
-
-
-/* ============ UNIFIED HERO WATERMARK ============ */

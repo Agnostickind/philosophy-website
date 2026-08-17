@@ -1007,3 +1007,50 @@ body:not(.theme-dark) .history-section-title > p {
     color: #2f2b25;
     font-weight: 500;
 }
+
+/* =========================================================
+   MOBILE — KEEP ALL ERAS IN THE SAME ORDER
+   IMAGE → TEXT
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .era {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    /* Cancel the old alternating desktop rules */
+    .era:nth-of-type(even) {
+        grid-template-columns: 1fr;
+    }
+
+    .era:nth-of-type(even) .era-image,
+    .era:nth-of-type(even) .era-content {
+        order: initial;
+    }
+
+    /* Full-width mobile image */
+    .era-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .era-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Prevent text from becoming squeezed */
+    .era-content {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .era-content > p {
+        max-width: 100%;
+    }
+}

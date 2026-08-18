@@ -2133,3 +2133,170 @@ document.addEventListener('click', (event) => {
    ========================================= */
 
 loadAppearanceSettings();
+
+/* =========================================================
+   SITE-WIDE READING PROGRESS
+   ========================================================= */
+
+(function () {
+
+    const progress = document.createElement("div");
+
+    progress.className = "reading-progress";
+    progress.setAttribute("aria-hidden", "true");
+
+    document.body.appendChild(progress);
+
+    let ticking = false;
+
+    function updateReadingProgress() {
+
+        const scrollTop = window.scrollY;
+
+        const documentHeight =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+
+        const percentage =
+            documentHeight > 0
+                ? scrollTop / documentHeight
+                : 0;
+
+        progress.style.transform =
+            `scaleX(${percentage})`;
+
+        ticking = false;
+    }
+
+    window.addEventListener("scroll", function () {
+
+        if (!ticking) {
+
+            window.requestAnimationFrame(updateReadingProgress);
+
+            ticking = true;
+
+        }
+
+    }, { passive: true });
+
+    updateReadingProgress();
+
+})();
+
+/* =========================================================
+   THE GREAT LIBRARY OF PHILOSOPHY
+   PHILOSOPHER'S PARCHMENT — CURSOR GLOW
+   ========================================================= */
+
+(function () {
+    "use strict";
+
+    /* Only run on mouse/pointer devices */
+    if (
+        !window.matchMedia("(hover: hover) and (pointer: fine)").matches
+    ) {
+        return;
+    }
+
+    /* Respect reduced-motion preference */
+    if (
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+        return;
+    }
+
+    function initCursorGlow() {
+
+        /* Prevent duplicate creation */
+        if (document.querySelector(".philosopher-cursor-glow")) {
+            return;
+        }
+
+        const glow = document.createElement("div");
+
+        glow.className = "philosopher-cursor-glow";
+
+        glow.setAttribute("aria-hidden", "true");
+
+        document.body.appendChild(glow);
+
+        let mouseX = 0;
+        let mouseY = 0;
+
+        let currentX = 0;
+        let currentY = 0;
+
+        let active = false;
+
+        document.addEventListener("pointermove", function (event) {
+
+            mouseX = event.clientX;
+            mouseY = event.clientY;
+
+            if (!active) {
+                currentX = mouseX;
+                currentY = mouseY;
+
+                glow.style.transform =
+                    "translate3d(" +
+                    mouseX +
+                    "px, " +
+                    mouseY +
+                    "px, 0) translate(-50%, -50%)";
+
+                glow.classList.add("is-active");
+
+                active = true;
+            }
+
+        }, { passive: true });
+
+
+        function animate() {
+
+            currentX += (mouseX - currentX) * 0.12;
+            currentY += (mouseY - currentY) * 0.12;
+
+            glow.style.transform =
+                "translate3d(" +
+                currentX +
+                "px, " +
+                currentY +
+                "px, 0) translate(-50%, -50%)";
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+
+        /* Hide when the pointer leaves the webpage */
+
+        document.addEventListener("pointerleave", function () {
+            glow.classList.remove("is-active");
+            active = false;
+        });
+
+
+        document.addEventListener("pointerenter", function () {
+            active = false;
+        });
+
+    }
+
+
+    if (document.readyState === "loading") {
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            initCursorGlow
+        );
+
+    } else {
+
+        initCursorGlow();
+
+    }
+
+})();

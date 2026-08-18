@@ -252,3 +252,45 @@ a:focus-visible, button:focus-visible {
   outline-offset: 3px;
   border-radius: 6px;
 }
+
+/* =========================================================
+   THINKERS — MOBILE SAFETY OVERRIDES
+   Keeps the existing site design intact.
+   ========================================================= */
+
+@media (max-width: 860px) {
+
+  /* Thinker cards stack normally on phones */
+  .thinker {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: left;
+  }
+
+  /* Portrait should NOT stick on mobile */
+  .thinker-portrait {
+    position: static;
+    width: min(220px, 70vw);
+    height: auto;
+  }
+
+  .thinker-info {
+    width: 100%;
+  }
+
+  /* Category navigation stays below the real header */
+  .category-nav {
+    position: relative;
+    top: auto;
+    z-index: 10;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: .7rem 1rem;
+  }
+
+  .category-nav a {
+    font-size: .82rem;
+  }
+}

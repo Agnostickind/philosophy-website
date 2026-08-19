@@ -1,0 +1,289 @@
+/* =========================================================
+   BOOKS PAGE — refinement layer
+   Load AFTER style.css and home-refine.css:
+     style.css → home-refine.css → books-refine.css
+   Goal: catalog-grade polish on desktop, and a mobile layout
+   where NOTHING extra is pinned to the screen.
+   ========================================================= */
+
+/* ---------- 0. tokens local to this page ---------- */
+:root{
+  --bk-gap: clamp(1rem, 2.4vw, 1.8rem);
+  --bk-section-y: clamp(2.75rem, 6vw, 5rem);
+  --bk-measure: 68ch;
+}
+
+/* ---------- 1. skip link ---------- */
+.skip-link{
+  position:absolute; left:-9999px; top:0; z-index:2000;
+  background:var(--ink); color:var(--light-text);
+  font-family:var(--mono); font-size:.8rem;
+  padding:.7rem 1.1rem; border-radius:0 0 var(--radius) 0;
+}
+.skip-link:focus{ left:0; }
+
+:where(a,button,input,[tabindex]):focus-visible{
+  outline:2px solid var(--gold-bright);
+  outline-offset:3px;
+  border-radius:4px;
+}
+
+/* ---------- 2. section rhythm ---------- */
+main#main-content > section{
+  padding-block: var(--bk-section-y);
+}
+.library-intro p{ max-width:var(--bk-measure); }
+.library-intro h2,
+main#main-content > section > h2{
+  font-family:var(--serif-display);
+  font-size:clamp(1.5rem, 1.05rem + 1.9vw, 2.35rem);
+  line-height:1.15;
+  letter-spacing:-0.01em;
+  text-wrap:balance;
+}
+main#main-content > section > h2 + p{
+  max-width:var(--bk-measure);
+  color:var(--muted-dark);
+}
+body.theme-dark main#main-content > section > h2 + p{ color:var(--muted-light); }
+
+/* section heading gets a quiet gilt rule instead of a heavy bar */
+main#main-content > section > h2::after{
+  content:"";
+  display:block;
+  width:76px; height:2px;
+  margin-top:.7rem;
+  background:linear-gradient(90deg, var(--gold-bright), transparent);
+}
+
+/* ---------- 3. quick-jump category nav ----------
+   DESKTOP: sticky under the navbar.
+   MOBILE/TABLET: completely un-stuck — it scrolls away with
+   the page, so it can never eat the viewport. This is the
+   fix for the previous sticky-bar problem.                */
+@media (min-width: 1025px){
+  .category-nav{
+    position:sticky;
+    top:64px;
+    padding-block:.8rem;
+    scrollbar-width:none;
+  }
+}
+@media (max-width: 1024px){
+  .category-nav{
+    position:static !important;
+    top:auto !important;
+    box-shadow:none;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    scroll-snap-type:x proximity;
+    gap:.5rem;
+    padding:.75rem 5vw 1rem;
+    scrollbar-width:none;
+  }
+  .category-nav::-webkit-scrollbar{ display:none; }
+  .category-nav a{
+    flex:0 0 auto;
+    scroll-snap-align:start;
+    font-size:.74rem;
+    padding:.5rem 1rem;
+  }
+  .category-nav a:hover{ transform:none; box-shadow:none; }
+}
+
+/* anchor targets clear the sticky navbar without a jump */
+main#main-content > section[id]{ scroll-margin-top:84px; }
+@media (max-width:1024px){
+  main#main-content > section[id]{ scroll-margin-top:72px; }
+}
+
+/* ---------- 4. book grid ---------- */
+.book-grid{
+  grid-template-columns:repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+  gap:var(--bk-gap);
+  align-items:stretch;
+}
+@media (max-width: 560px){
+  /* two slim catalog cards per row reads better than one huge one */
+  .book-grid{
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    gap:.85rem;
+  }
+}
+@media (max-width: 360px){
+  .book-grid{ grid-template-columns:1fr; }
+}
+
+/* ---------- 5. the card ---------- */
+.book-card{
+  min-width:0;
+  border-style:solid;
+  border-color:color-mix(in oklab, var(--paper-line) 85%, transparent);
+  box-shadow:0 1px 2px rgba(20,22,31,.05), 0 10px 26px rgba(20,22,31,.07);
+  transition:transform .3s cubic-bezier(.2,.7,.3,1), box-shadow .3s ease, border-color .3s ease;
+}
+/* stitched inner hairline — catalog card feel */
+.book-card::after{
+  content:"";
+  position:absolute; inset:6px;
+  border:1px dashed color-mix(in oklab, var(--paper-line) 70%, transparent);
+  border-radius:2px;
+  pointer-events:none;
+  opacity:.55;
+}
+.book-card:hover{ border-color:var(--gold); }
+
+/* only lift on real pointers — no sticky hover states on touch */
+@media (hover:none), (pointer:coarse){
+  .book-card:hover{ transform:none; box-shadow:var(--shadow-card); }
+  .book-card:hover .book-cover img{ transform:none; }
+}
+
+.book-cover{
+  aspect-ratio:3/4;
+  background:linear-gradient(160deg, var(--theme-cover-start), var(--theme-cover-end));
+}
+.book-cover img{
+  object-fit:contain;
+  padding:.6rem;
+}
+.book-card .book-content{
+  display:flex;
+  flex-direction:column;
+  gap:.5rem;
+  padding:1rem 1rem 1.1rem;
+  flex:1;
+}
+.book-card h3{
+  font-family:var(--serif-display);
+  font-size:clamp(1rem, .93rem + .3vw, 1.16rem);
+  line-height:1.25;
+  letter-spacing:-0.005em;
+}
+.book-card h4{
+  font-family:var(--mono);
+  font-weight:500;
+  font-size:.72rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--muted-dark);
+}
+body.theme-dark .book-card h4{ color:var(--muted-light); }
+
+.book-description{
+  font-size:.9rem;
+  line-height:1.55;
+  overflow-wrap:anywhere;
+}
+@media (max-width: 560px){
+  .book-description{
+    font-size:.82rem;
+    display:-webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+}
+
+/* meta rows become small chips instead of loose text */
+.book-info{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.35rem;
+  margin:0;
+}
+.book-info span{
+  font-family:var(--mono);
+  font-size:.66rem;
+  letter-spacing:.04em;
+  padding:.25rem .5rem;
+  border-radius:999px;
+  border:1px solid color-mix(in oklab, var(--paper-line) 80%, transparent);
+  background:color-mix(in oklab, var(--parchment) 70%, transparent);
+  color:var(--muted-dark);
+  white-space:nowrap;
+}
+body.theme-dark .book-info span{
+  background:color-mix(in oklab, var(--ink-soft) 70%, transparent);
+  border-color:var(--ink-line);
+  color:var(--muted-light);
+}
+
+.difficulty{
+  font-family:var(--mono);
+  font-size:.66rem;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+
+/* read button — full width foot of the card, thumb-friendly */
+.book-card .read-btn{
+  margin-top:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:.4rem;
+  min-height:44px;
+  padding:.6rem 1rem;
+  border-radius:2px;
+  font-family:var(--mono);
+  font-size:.74rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  text-decoration:none;
+  transition:background .25s ease, color .25s ease, transform .2s ease;
+}
+@media (max-width: 560px){
+  .book-card .read-btn{ font-size:.66rem; padding:.55rem .5rem; }
+}
+
+/* ---------- 6. feature blocks ---------- */
+.book-month .featured-book,
+.spotlight .spotlight-card{
+  gap:clamp(1.2rem, 3vw, 2.4rem);
+  align-items:center;
+}
+.book-month img,
+.spotlight img{
+  border-radius:2px;
+  box-shadow:0 14px 34px rgba(20,22,31,.18);
+}
+
+.quote blockquote,
+.quote p{
+  max-width:60ch;
+  margin-inline:auto;
+  text-wrap:pretty;
+}
+
+/* responsive tables / level cards never overflow */
+.reading-levels .levels{ gap:clamp(1rem,3vw,2.2rem); }
+main#main-content img{ max-width:100%; height:auto; }
+
+/* ---------- 7. reveal on scroll (desktop + mobile, cheap) ---------- */
+.bk-reveal{
+  opacity:0;
+  transform:translateY(14px);
+  transition:opacity .55s ease, transform .55s cubic-bezier(.2,.7,.3,1);
+  will-change:opacity, transform;
+}
+.bk-reveal.is-visible{ opacity:1; transform:none; }
+
+@media (prefers-reduced-motion: reduce){
+  .bk-reveal{ opacity:1 !important; transform:none !important; transition:none !important; }
+  .book-card, .book-cover img{ transition:none !important; }
+}
+
+/* ---------- 8. mobile safety net ----------
+   Nothing on this page other than the main navbar is allowed
+   to pin itself to the viewport on small screens.            */
+@media (max-width: 1024px){
+  main#main-content [style*="position: sticky"],
+  main#main-content [style*="position:sticky"]{ position:static !important; }
+  .navbar{ padding-block:.7rem; }
+  .nav-links{ max-height:calc(100dvh - 64px); }
+  body{ overflow-x:hidden; }
+}
+

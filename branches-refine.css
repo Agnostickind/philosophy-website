@@ -1,18 +1,30 @@
 /* =========================================================
    LIBRARY OF PHILOSOPHY — BRANCHES PAGE REFINEMENT LAYER
+
    Load AFTER style.css and home-refine.css:
+
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="home-refine.css">
      <link rel="stylesheet" href="branches-refine.css">
+
    Paragraph typography is intentionally left untouched.
    ========================================================= */
 
+
 :root {
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-  --gold-line: color-mix(in srgb, var(--gold, #b88a44) 22%, transparent);
+  --gold-line: color-mix(
+    in srgb,
+    var(--gold, #b88a44) 22%,
+    transparent
+  );
 }
 
-/* ---- 1. Anchor offset under the sticky navbar ---------- */
+
+/* =========================================================
+   1. ANCHOR OFFSET UNDER STICKY NAVBAR
+   ========================================================= */
+
 section[id],
 .branch {
   scroll-margin-top: 90px;
@@ -31,502 +43,1040 @@ section[id],
     scroll-margin-top: 64px;
   }
 }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
-/* ---- 2. Screen-reader helpers -------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+
+/* =========================================================
+   2. SCREEN-READER HELPERS
+   ========================================================= */
+
 .visually-hidden {
   position: absolute !important;
-  width: 1px; height: 1px; padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
+
 .skip-link:focus {
-  position: fixed; inset-inline-start: 1rem; inset-block-start: 1rem;
-  z-index: 9999; padding: .6rem 1rem; border-radius: 6px;
-  background: var(--gold, #b88a44); color: #14100b; font-weight: 600;
+  position: fixed;
+  inset-inline-start: 1rem;
+  inset-block-start: 1rem;
+  z-index: 9999;
+  padding: .6rem 1rem;
+  border-radius: 6px;
+  background: var(--gold, #b88a44);
+  color: #14100b;
+  font-weight: 600;
 }
-a:focus-visible, button:focus-visible {
+
+a:focus-visible,
+button:focus-visible {
   outline: 2px solid var(--gold, #b88a44);
-  outline-offset: 3px; border-radius: 6px;
+  outline-offset: 3px;
+  border-radius: 6px;
 }
 
-/* ---- 3. Reading progress bar --------------------------- */
+
+/* =========================================================
+   3. READING PROGRESS BAR
+   ========================================================= */
+
 .reading-progress {
-  position: fixed; inset-block-start: 0; inset-inline: 0;
-  height: 3px; z-index: 9998;
-  transform: scaleX(0); transform-origin: 0 50%;
-  background: linear-gradient(to right,
-    color-mix(in srgb, var(--gold, #b88a44) 60%, transparent),
-    var(--gold, #b88a44));
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline: 0;
+  height: 3px;
+  z-index: 9998;
+
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+
+  background: linear-gradient(
+    to right,
+    color-mix(
+      in srgb,
+      var(--gold, #b88a44) 60%,
+      transparent
+    ),
+    var(--gold, #b88a44)
+  );
 }
 
-/* ---- 4. Branch jump navigation ------------------------- */
 
-/* Desktop: sticky jump navigation */
+ /* =========================================================
+    BRANCHES — REFINED DESKTOP SIDE NAVIGATION
+    ========================================================= */
+
 .branch-nav {
-  position: sticky;
-  top: clamp(56px, 9vh, 78px);
-  z-index: 20;
+    position: fixed;
 
+    top: 110px;
+    left: 22px;
+    right: auto;
+
+    width: 220px;
+    max-height: calc(100vh - 140px);
+
+    z-index: 900;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem .75rem;
+
+    overflow-y: auto;
+
+    border: 1px solid rgba(184, 138, 68, .24);
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(48, 43, 35, .97),
+            rgba(25, 23, 20, .97)
+        );
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, .28),
+        0 0 0 1px rgba(255, 255, 255, .025);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    scrollbar-width: thin;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform:
+        translateX(-28px);
+
+    pointer-events: none;
+
+    transition:
+        opacity .4s var(--ease-out),
+        transform .4s var(--ease-out),
+        visibility .4s ease;
+}
+
+
+/* ---------------------------------------------------------
+   APPEARS AFTER HERO
+   --------------------------------------------------------- */
+
+.branch-nav.branch-nav-visible {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateX(0);
+
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   SIDE NAVIGATION — INNER CONTAINER
+
+   If your HTML has a .branch-nav-inner element,
+   these styles control it.
+
+   If not, the .branch-nav itself still works.
+   ========================================================= */
+
+.branch-nav-inner {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: .5rem .6rem;
+  flex-direction: column;
 
-  padding: .7rem 1rem;
+  gap: .15rem;
 
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
+  padding: .8rem .65rem;
+
+  border: 1px solid var(--gold-line);
+  border-radius: 16px;
 
   background: color-mix(
     in srgb,
-    var(--background, #14100b) 78%,
+    var(--background, #0b0b0ae5) 88%,
     transparent
   );
 
-  border-block: 1px solid var(--gold-line);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, .18);
+
+  overflow-y: auto;
+
+  scrollbar-width: thin;
 }
 
-/* Jump links */
+
+/* =========================================================
+   SIDE NAVIGATION — HEADING
+   ========================================================= */
+
+.branch-side-label {
+  display: block;
+
+  padding: .35rem .55rem .55rem;
+
+  font-size: .65rem;
+  letter-spacing: .18em;
+
+  text-transform: uppercase;
+
+  opacity: .6;
+}
+
+
+/* =========================================================
+   SIDE NAVIGATION — LINKS
+   ========================================================= */
+
 .branch-nav a {
+    display: grid;
+
+    grid-template-columns: 2rem minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: .45rem;
+
+    width: 100%;
+
+    padding: .48rem .55rem;
+
+    margin: .08rem 0;
+
+    border-radius: 9px;
+
+    color: rgba(255, 255, 255, .78);
+
+    text-decoration: none;
+
+    font-size: .76rem;
+    line-height: 1.3;
+
+    transition:
+        background .22s var(--ease-out),
+        color .22s var(--ease-out),
+        transform .22s var(--ease-out);
+}
+
+
+
+/* =========================================================
+   SIDE NAVIGATION — NUMBER
+   ========================================================= */
+
+.branch-nav a span {
+    color: rgba(255, 255, 255, .35);
+
+    font-size: .61rem;
+
+    letter-spacing: .06em;
+}
+
+/* =========================================================
+   SIDE NAVIGATION — BRANCH NAME
+   ========================================================= */
+
+
+.branch-nav a strong {
+    min-width: 0;
+
+    color: inherit;
+
+    font-weight: 500;
+}
+
+/* =========================================================
+   SIDE NAVIGATION — HOVER
+   ========================================================= */
+
+.branch-nav a:hover,
+.branch-nav a:focus-visible {
+    color: #f0d39a;
+
+    background:
+        rgba(184, 138, 68, .10);
+
+    transform: translateX(-2px);
+}
+
+
+/* =========================================================
+   SIDE NAVIGATION — ACTIVE BRANCH
+   ========================================================= */
+
+.branch-nav a.is-active,
+.branch-nav a[aria-current="true"] {
+    color: #f0d39a;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(184, 138, 68, .18),
+            rgba(184, 138, 68, .08)
+        );
+
+    box-shadow:
+        inset 2px 0 0 #b88a44;
+}
+
+
+.branch-nav a.is-active span,
+.branch-nav a[aria-current="true"] span {
+    color: #c79a55;
+
+    opacity: 1;
+}
+
+
+.branch-nav a.is-active strong,
+.branch-nav a[aria-current="true"] strong {
+    font-weight: 600;
+}
+
+.branch-nav .branch-side-divider {
+    height: 1px;
+
+    margin:
+        .55rem .55rem;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(184, 138, 68, .28),
+            transparent
+        );
+}
+
+
+/* =========================================================
+   SIDE NAVIGATION — DIVIDER
+   ========================================================= */
+
+.branch-side-divider {
+  height: 1px;
+
+  margin: .45rem .5rem;
+
+  background: var(--gold-line);
+}
+
+
+/* =========================================================
+   LIGHT THEME
+   ========================================================= */
+
+body:not(.theme-dark) .branch-nav {
+    background:
+        rgba(255, 255, 255, .96);
+
+    border-color:
+        rgba(184, 138, 68, .24);
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, .12);
+}
+
+
+body:not(.theme-dark) .branch-nav .branch-side-label {
+    color: #6f6252;
+}
+
+
+body:not(.theme-dark) .branch-nav a {
+    color: #3a3025;
+}
+
+
+body:not(.theme-dark) .branch-nav a span {
+    color: #8d8171;
+}
+
+
+body:not(.theme-dark) .branch-nav a:hover,
+body:not(.theme-dark) .branch-nav a:focus-visible {
+    color: #6f4d1d;
+
+    background:
+        rgba(184, 138, 68, .09);
+}
+
+
+body:not(.theme-dark) .branch-nav a.is-active,
+body:not(.theme-dark) .branch-nav a[aria-current="true"] {
+    color: #795520;
+
+    background:
+        rgba(184, 138, 68, .13);
+
+    box-shadow:
+        inset 2px 0 0 #b88a44;
+}
+
+
+/* =========================================================
+   SIDE NAVIGATION — DARK THEME
+   ========================================================= */
+
+body.theme-dark .branch-nav {
+  color: #eee8dc;
+}
+
+body.theme-dark .branch-nav a {
+  color: #eee8dc;
+}
+
+body.theme-dark .branch-nav a:hover,
+body.theme-dark .branch-nav a:focus-visible {
+  background: color-mix(
+    in srgb,
+    var(--gold, #b88a44) 10%,
+    transparent
+  );
+}
+
+body.theme-dark .branch-nav a.is-active,
+body.theme-dark .branch-nav a[aria-current="true"] {
+  color: var(--gold, #b88a44);
+
+  background: color-mix(
+    in srgb,
+    var(--gold, #b88a44) 16%,
+    transparent
+  );
+}
+
+
+/* =========================================================
+   5. SECTION RHYTHM & MEASURE
+   ========================================================= */
+
+.branch-intro,
+.philosophy-tree,
+.comparison,
+.connection,
+.quote {
+  padding-block: clamp(2rem, 5vw, 3.6rem);
+}
+
+.branch-intro {
+  width: min(72ch, 92vw);
+  margin-inline: auto;
+}
+
+.section-eyebrow {
+  display: block;
+
+  margin-bottom: .35rem;
+
+  font-size: .76rem;
+  letter-spacing: .2em;
+
+  text-transform: uppercase;
+
+  opacity: .7;
+}
+
+
+/* =========================================================
+   6. TREE OF PHILOSOPHY
+   ========================================================= */
+
+.tree-intro {
+  width: min(68ch, 92vw);
+  margin-inline: auto;
+}
+
+.tree-box {
+  width: min(1000px, 92vw);
+
+  margin-inline: auto;
+
+  padding: clamp(1.2rem, 3vw, 2.2rem);
+
+  border: 1px solid var(--gold-line);
+  border-radius: 18px;
+
+  background: color-mix(
+    in srgb,
+    #ffffff 4%,
+    transparent
+  );
+}
+
+.tree-root {
+  text-align: center;
+  margin-block: 0 1.2rem;
+}
+
+.tree-list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+
+  gap: .7rem;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(290px, 1fr));
+}
+
+.tree-list a {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: stretch;
+
+  justify-content: flex-start;
+
+  gap: 1rem;
+
+  height: 100%;
+
+  padding: 1rem 1.1rem;
+
+  border: 1px solid var(--gold-line);
+
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  transition:
+    transform .28s var(--ease-out),
+    border-color .28s var(--ease-out),
+    background .28s var(--ease-out);
+}
+
+.tree-list a:hover,
+.tree-list a:focus-visible {
+  transform: translateY(-3px);
+
+  border-color: color-mix(
+    in srgb,
+    var(--gold, #b88a44) 48%,
+    transparent
+  );
+
+  background: color-mix(
+    in srgb,
+    var(--gold, #b88a44) 9%,
+    transparent
+  );
+}
+
+.branch-info {
+  flex: 1;
+
+  min-width: 0;
+
+  line-height: 1.5;
+}
+
+.read-more {
   flex: 0 0 auto;
 
-  padding: .36rem .85rem;
+  align-self: flex-end;
+
+  margin-top: auto;
+
+  font-size: .72rem;
+
+  letter-spacing: .14em;
+
+  white-space: nowrap;
+
+  opacity: .75;
+
+  transition:
+    transform .28s var(--ease-out),
+    opacity .28s var(--ease-out);
+}
+
+.tree-list a:hover .read-more {
+  opacity: 1;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   7. BRANCH SECTIONS
+   ========================================================= */
+
+.branch {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.85fr)
+    minmax(0, 1.15fr);
+
+  align-items: start;
+
+  gap: clamp(1.4rem, 4vw, 3rem);
+
+  width: min(1150px, 92vw);
+
+  margin-inline: auto;
+
+  padding-block: clamp(1.6rem, 4vw, 3rem);
+}
+
+.branch.reverse {
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(0, 0.85fr);
+}
+
+.branch-image {
+  margin: 0;
+
+  position: sticky;
+
+  top: clamp(118px, 17vh, 160px);
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 0 0 1px color-mix(
+      in srgb,
+      var(--gold, #b88a44) 30%,
+      transparent
+    ),
+    0 18px 40px rgba(0, 0, 0, .32);
+}
+
+.branch-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  aspect-ratio: 4 / 5;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition:
+    transform .6s var(--ease-out);
+}
+
+.branch:hover .branch-image img {
+  transform: scale(1.035);
+}
+
+.branch-content h2 {
+  margin-block: 0 .6rem;
+
+  line-height: 1.2;
+}
+
+.branch-content h4 {
+  margin-block: 1.4rem .5rem;
+
+  font-size: .8rem;
+
+  letter-spacing: .16em;
+
+  text-transform: uppercase;
+
+  opacity: .8;
+}
+
+
+/* Famous philosophers become chips */
+
+.branch-content ul {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: .45rem;
+
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+.branch-content ul li {
+  padding: .3rem .78rem;
+
+  font-size: .86rem;
 
   border: 1px solid color-mix(
     in srgb,
-    var(--gold, #b88a44) 34%,
+    var(--gold, #b88a44) 30%,
     transparent
   );
 
   border-radius: 999px;
 
-  font-size: .88rem;
-  letter-spacing: .02em;
+  background: color-mix(
+    in srgb,
+    var(--gold, #b88a44) 8%,
+    transparent
+  );
+}
+
+
+/* Main Question */
+
+.branch-question {
+  margin: 0;
+
+  padding: .7rem 0 .7rem 1.1rem;
+
+  border-inline-start:
+    2px solid color-mix(
+      in srgb,
+      var(--gold, #b88a44) 55%,
+      transparent
+    );
+
+  font-style: italic;
+}
+
+
+/* =========================================================
+   8. COMPARISON TABLE
+   ========================================================= */
+
+.comparison {
+  width: min(1100px, 92vw);
+
+  margin-inline: auto;
+}
+
+.table-scroll {
+  overflow-x: auto;
+
+  border: 1px solid var(--gold-line);
+
+  border-radius: 16px;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.comparison table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 620px;
+}
+
+.comparison caption {
+  caption-side: bottom;
+
+  padding-top: .8rem;
+
+  font-size: .82rem;
+
+  opacity: .7;
+}
+
+.comparison th,
+.comparison td {
+  padding: .85rem 1rem;
+
+  text-align: left;
+
+  border-bottom:
+    1px solid var(--gold-line);
+
+  vertical-align: top;
+}
+
+.comparison thead th {
+  position: sticky;
+
+  top: 0;
+
+  font-size: .78rem;
+
+  letter-spacing: .14em;
+
+  text-transform: uppercase;
+
+  background: color-mix(
+    in srgb,
+    var(--background, #14100b) 92%,
+    transparent
+  );
+}
+
+.comparison tbody tr {
+  transition:
+    background .2s var(--ease-out);
+}
+
+.comparison tbody tr:hover {
+  background: color-mix(
+    in srgb,
+    var(--gold, #b88a44) 8%,
+    transparent
+  );
+}
+
+.comparison tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+
+/* =========================================================
+   9. QUOTE & CLOSING CTA
+   ========================================================= */
+
+.quote {
+  width: 100%;
+
+  max-width: none;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
+.quote blockquote {
+  width: min(70ch, 90vw);
+
+  max-width: 70ch;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+
+  font-style: italic;
+}
+
+.connection {
+  width: min(72ch, 92vw);
+
+  margin-inline: auto;
+}
+
+.cta-button {
+  display: inline-block;
+
+  margin-top: 1.4rem;
+
+  padding: .8rem 1.6rem;
+
+  border-radius: 999px;
+
+  border: 1px solid color-mix(
+    in srgb,
+    var(--gold, #b88a44) 55%,
+    transparent
+  );
+
   text-decoration: none;
-  white-space: nowrap;
 
   transition:
     background .25s var(--ease-out),
     transform .25s var(--ease-out);
 }
 
-.branch-nav a:hover,
-.branch-nav a:focus-visible,
-.branch-nav a[aria-current="true"] {
-  background: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 18%,
-    transparent
-  );
-
-  transform: translateY(-1px);
-}
-
-
-/* =========================================================
-   TABLET + MOBILE
-   The branch navigation must NOT stick to the viewport.
-   It becomes a single horizontal scrolling row.
-   ========================================================= */
-
-@media (max-width: 1024px) {
-
-  .branch-nav {
-    position: static !important;
-    top: auto !important;
-    z-index: auto;
-
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-
-    width: 100%;
-    max-width: 100%;
-
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    gap: .5rem;
-
-    padding: .65rem 4vw .75rem;
-
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-
-    box-shadow: none;
-
-    scrollbar-width: none;
-
-    -webkit-overflow-scrolling: touch;
-
-    scroll-snap-type: x proximity;
-  }
-
-  .branch-nav::-webkit-scrollbar {
-    display: none;
-  }
-
-  .branch-nav a {
-    flex: 0 0 auto;
-
-    scroll-snap-align: start;
-
-    font-size: .76rem;
-    padding: .45rem .8rem;
-
-    white-space: nowrap;
-
-    transform: none;
-  }
-
-  .branch-nav a:hover,
-  .branch-nav a:focus-visible,
-  .branch-nav a[aria-current="true"] {
-    transform: none;
-  }
-}
-
-
-/* =========================================================
-   SMALL PHONES
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-  .branch-nav {
-    gap: .4rem;
-
-    padding: .55rem 4vw .65rem;
-  }
-
-  .branch-nav a {
-    font-size: .7rem;
-    padding: .4rem .7rem;
-  }
-}
-
-/* ---- 5. Section rhythm & measure ----------------------- */
-.branch-intro,
-.philosophy-tree,
-.comparison,
-.connection,
-.quote { padding-block: clamp(2rem, 5vw, 3.6rem); }
-
-.branch-intro { width: min(72ch, 92vw); margin-inline: auto; }
-.section-eyebrow {
-  display: block; margin-bottom: .35rem;
-  font-size: .76rem; letter-spacing: .2em; text-transform: uppercase;
-  opacity: .7;
-}
-
-/* ---- 6. Tree of philosophy ----------------------------- */
-.tree-intro { width: min(68ch, 92vw); margin-inline: auto; }
-.tree-box {
-  width: min(1000px, 92vw); margin-inline: auto;
-  padding: clamp(1.2rem, 3vw, 2.2rem);
-  border: 1px solid var(--gold-line);
-  border-radius: 18px;
-  background: color-mix(in srgb, #ffffff 4%, transparent);
-}
-.tree-root { text-align: center; margin-block: 0 1.2rem; }
-.tree-list {
-  list-style: none; margin: 0; padding: 0;
-  display: grid; gap: .7rem;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-}
-.tree-list a {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-
-    gap: 1rem;
-    height: 100%;
-
-    padding: 1rem 1.1rem;
-
-    border: 1px solid var(--gold-line);
-    border-radius: 14px;
-    text-decoration: none;
-
-    transition:
-        transform .28s var(--ease-out),
-        border-color .28s var(--ease-out),
-        background .28s var(--ease-out);
-}
-.tree-list a:hover,
-.tree-list a:focus-visible {
-  transform: translateY(-3px);
-  border-color: color-mix(in srgb, var(--gold, #b88a44) 48%, transparent);
-  background: color-mix(in srgb, var(--gold, #b88a44) 9%, transparent);
-}
-.branch-info {
-    flex: 1;
-    min-width: 0;
-    line-height: 1.5;
-}
-
-.read-more {
-    flex: 0 0 auto;
-
-    align-self: flex-end;
-
-    margin-top: auto;
-
-    font-size: .72rem;
-    letter-spacing: .14em;
-    white-space: nowrap;
-    opacity: .75;
-
-    transition:
-        transform .28s var(--ease-out),
-        opacity .28s var(--ease-out);
-}
-.tree-list a:hover .read-more { opacity: 1; transform: translateX(3px); }
-
-/* ---- 7. Branch sections -------------------------------- */
-.branch {
-  display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-  align-items: start;
-  gap: clamp(1.4rem, 4vw, 3rem);
-  width: min(1150px, 92vw);
-  margin-inline: auto;
-  padding-block: clamp(1.6rem, 4vw, 3rem);
-}
-.branch.reverse { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); }
-
-.branch-image {
-  margin: 0;
-  position: sticky;
-  top: clamp(118px, 17vh, 160px);
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--gold, #b88a44) 30%, transparent),
-              0 18px 40px rgba(0, 0, 0, .32);
-}
-.branch-image img {
-  display: block; width: 100%; height: 100%;
-  aspect-ratio: 4 / 5; object-fit: cover; object-position: center;
-  transition: transform .6s var(--ease-out);
-}
-.branch:hover .branch-image img { transform: scale(1.035); }
-
-.branch-content h2 { margin-block: 0 .6rem; line-height: 1.2; }
-.branch-content h4 {
-  margin-block: 1.4rem .5rem;
-  font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; opacity: .8;
-}
-/* "Famous philosophers" become chips */
-.branch-content ul {
-  display: flex; flex-wrap: wrap; gap: .45rem;
-  list-style: none; padding: 0; margin: 0;
-}
-.branch-content ul li {
-  padding: .3rem .78rem;
-  font-size: .86rem;
-  border: 1px solid color-mix(in srgb, var(--gold, #b88a44) 30%, transparent);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--gold, #b88a44) 8%, transparent);
-}
-/* The "Main Question" answer reads as a pull-quote */
-.branch-question {
-  margin: 0;
-  padding: .7rem 0 .7rem 1.1rem;
-  border-inline-start: 2px solid color-mix(in srgb, var(--gold, #b88a44) 55%, transparent);
-  font-style: italic;
-}
-
-@media (max-width: 860px) {
-  .branch,
-  .branch.reverse { grid-template-columns: 1fr; }
-  .branch-image { position: static; order: -1; }
-  .branch-image img { aspect-ratio: 16 / 10; }
-}
-
-/* ---- 8. Comparison table ------------------------------- */
-.comparison { width: min(1100px, 92vw); margin-inline: auto; }
-.table-scroll {
-  overflow-x: auto;
-  border: 1px solid var(--gold-line);
-  border-radius: 16px;
-  -webkit-overflow-scrolling: touch;
-}
-.comparison table {
-  width: 100%; border-collapse: collapse; min-width: 620px;
-}
-.comparison caption {
-  caption-side: bottom; padding-top: .8rem;
-  font-size: .82rem; opacity: .7;
-}
-.comparison th,
-.comparison td {
-  padding: .85rem 1rem;
-  text-align: left;
-  border-bottom: 1px solid var(--gold-line);
-  vertical-align: top;
-}
-.comparison thead th {
-  position: sticky; top: 0;
-  font-size: .78rem; letter-spacing: .14em; text-transform: uppercase;
-  background: color-mix(in srgb, var(--background, #14100b) 92%, transparent);
-}
-.comparison tbody tr { transition: background .2s var(--ease-out); }
-.comparison tbody tr:hover { background: color-mix(in srgb, var(--gold, #b88a44) 8%, transparent); }
-.comparison tbody tr:last-child td { border-bottom: 0; }
-
-/* ---- 9. Quote & closing CTA ---------------------------- */
-.quote blockquote {
-  width: min(60ch, 92vw); margin-inline: auto;
-  font-style: italic;
-  text-align: center;
-}
-.connection { width: min(72ch, 92vw); margin-inline: auto; }
-.cta-button {
-  display: inline-block; margin-top: 1.4rem;
-  padding: .8rem 1.6rem; border-radius: 999px;
-  border: 1px solid color-mix(in srgb, var(--gold, #b88a44) 55%, transparent);
-  text-decoration: none;
-  transition: background .25s var(--ease-out), transform .25s var(--ease-out);
-}
 .cta-button:hover,
 .cta-button:focus-visible {
   transform: translateY(-2px);
-  background: color-mix(in srgb, var(--gold, #b88a44) 16%, transparent);
+
+  background: color-mix(
+    in srgb,
+    var(--gold, #b88a44) 16%,
+    transparent
+  );
 }
 
-/* ---- 10. Reveal on scroll ------------------------------ */
+
+/* =========================================================
+   10. REVEAL ON SCROLL
+   ========================================================= */
+
 .js-motion .branch,
 .js-motion .tree-box,
 .js-motion .comparison,
 .js-motion .quote,
 .js-motion .connection {
-  opacity: 0; transform: translateY(18px);
-  transition: opacity .6s var(--ease-out), transform .6s var(--ease-out);
+  opacity: 0;
+
+  transform: translateY(18px);
+
+  transition:
+    opacity .6s var(--ease-out),
+    transform .6s var(--ease-out);
 }
-.js-motion .is-visible { opacity: 1; transform: none; }
+
+.js-motion .is-visible {
+  opacity: 1;
+
+  transform: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
+
   .js-motion .branch,
   .js-motion .tree-box,
   .js-motion .comparison,
   .js-motion .quote,
-  .js-motion .connection { opacity: 1; transform: none; transition: none; }
+  .js-motion .connection {
+    opacity: 1;
+
+    transform: none;
+
+    transition: none;
+  }
 }
+
 
 /* =========================================================
-   BRANCHES — LIGHT THEME NAVIGATION
-   ========================================================= */
-
-body:not(.theme-dark) .branch-nav {
-    background: rgba(255, 255, 255, 0.92);
-    border-block-color: rgba(184, 138, 68, 0.22);
-}
-
-body:not(.theme-dark) .branch-nav a {
-    color: #3a3025;
-    background: rgba(255, 255, 255, 0.45);
-    border-color: rgba(184, 138, 68, 0.38);
-}
-
-body:not(.theme-dark) .branch-nav a:hover,
-body:not(.theme-dark) .branch-nav a:focus-visible,
-body:not(.theme-dark) .branch-nav a[aria-current="true"] {
-    color: #2b2118;
-    background: rgba(184, 138, 68, 0.12);
-}
-
-/* =========================================================
-   BRANCHES — QUOTE CENTERING
-   ========================================================= */
-
-.quote {
-    width: 100%;
-    max-width: none;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.quote blockquote {
-    width: min(70ch, 90vw);
-    max-width: 70ch;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-/* =========================================================
-   BRANCHES — INTRODUCTION WIDTH
+   11. BRANCH INTRODUCTION WIDTH
    ========================================================= */
 
 .branch-intro {
-    width: min(900px, 90vw);
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+  width: min(900px, 90vw);
+
+  max-width: 900px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .branch-intro p {
-    width: 100%;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+
+  max-width: 900px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
+
 /* =========================================================
-   PAGE WIDTH SUPPORT — makes this page respond to the
-   Appearance panel's Standard/Wide control.
-
-   This file sets fixed widths (width: min(Npx, Nvw)) on
-   every major section, which normally override the generic
-   max-width rules in style.css's body.page-wide block —
-   so Wide mode had nothing left to actually widen here.
-
-   --wide-extra is the same CSS custom property style.css
-   sets on <body class="page-wide"> (default 0px, 260px when
-   Wide is active). Custom properties inherit down the DOM
-   regardless of which stylesheet defines them, so it's
-   available here even though this file loads after style.css.
-   Each section below is widened by that same fixed amount,
-   still capped to a comfortable viewport percentage so it
-   never overflows on smaller windows.
+   12. PAGE WIDTH SUPPORT
    ========================================================= */
 
 body.page-wide .branch-intro,
 body.page-wide .branch-intro p {
-  width: min(calc(900px + var(--wide-extra, 0px)), 94vw);
-  max-width: calc(900px + var(--wide-extra, 0px));
+  width: min(
+    calc(900px + var(--wide-extra, 0px)),
+    94vw
+  );
+
+  max-width:
+    calc(900px + var(--wide-extra, 0px));
 }
 
 body.page-wide .tree-intro {
-  width: min(calc(68ch + var(--wide-extra, 0px)), 94vw);
+  width: min(
+    calc(68ch + var(--wide-extra, 0px)),
+    94vw
+  );
 }
 
 body.page-wide .tree-box {
-  width: min(calc(1000px + var(--wide-extra, 0px)), 94vw);
+  width: min(
+    calc(1000px + var(--wide-extra, 0px)),
+    94vw
+  );
 }
 
 body.page-wide .branch,
 body.page-wide .branch.reverse {
-  width: min(calc(1150px + var(--wide-extra, 0px)), 94vw);
+  width: min(
+    calc(1150px + var(--wide-extra, 0px)),
+    94vw
+  );
 }
 
 body.page-wide .comparison {
-  width: min(calc(1100px + var(--wide-extra, 0px)), 94vw);
+  width: min(
+    calc(1100px + var(--wide-extra, 0px)),
+    94vw
+  );
 }
 
 body.page-wide .connection {
-  width: min(calc(72ch + var(--wide-extra, 0px)), 94vw);
+  width: min(
+    calc(72ch + var(--wide-extra, 0px)),
+    94vw
+  );
 }
 
 body.page-wide .quote blockquote {
-  width: min(calc(70ch + var(--wide-extra, 0px)), 94vw);
+  width: min(
+    calc(70ch + var(--wide-extra, 0px)),
+    94vw
+  );
+
   max-width: none;
 }
 
-/* Wide mode doesn't apply below the tablet breakpoint, where
-   the layout is already stacked and viewport-capped anyway. */
+
+/* =========================================================
+   13. TABLET / MOBILE BRANCH LAYOUT
+   ========================================================= */
+
 @media (max-width: 860px) {
+
+  .branch,
+  .branch.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .branch-image,
+  .branch.reverse .branch-image,
+  .branch-content,
+  .branch.reverse .branch-content {
+    order: initial;
+  }
+
+  .branch-image {
+    width: 100%;
+
+    max-width: 430px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    position: static;
+  }
+
+  .branch-image img {
+    width: 100%;
+
+    height: auto;
+
+    aspect-ratio: 16 / 10;
+
+    object-fit: cover;
+  }
+
   body.page-wide .branch,
   body.page-wide .branch.reverse,
   body.page-wide .branch-intro,
@@ -537,85 +1087,122 @@ body.page-wide .quote blockquote {
   body.page-wide .connection,
   body.page-wide .quote blockquote {
     width: 92vw;
+
     max-width: none;
+  }
+
+  /*
+     Side navigation disappears completely on tablet/mobile.
+     This prevents it from covering the hero or content.
+  */
+
+  .branch-nav {
+    display: none;
   }
 }
 
-/* =========================================================
-   4. MOBILE — STACK IMAGE ABOVE TEXT
-   This is the important part for phone screens.
-   ========================================================= */
-
-@media (max-width: 860px) {
-
-    .branch,
-    .branch.reverse {
-        grid-template-columns: 1fr;
-    }
-
-    .branch-image,
-    .branch.reverse .branch-image,
-    .branch-content,
-    .branch.reverse .branch-content {
-        order: initial;
-    }
-
-    .branch-image {
-        width: 100%;
-        max-width: 430px;
-        margin-left: auto;
-        margin-right: auto;
-        position: static;
-    }
-
-    .branch-image img {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 10;
-        object-fit: cover;
-    }
-
-}
-
 
 /* =========================================================
-   5. SMALL PHONES
+   14. SMALL PHONES
    ========================================================= */
 
 @media (max-width: 600px) {
 
-    .branch {
-        width: 92vw;
-        padding-left: 0;
-        padding-right: 0;
-        gap: 1.8rem;
+  .branch {
+    width: 92vw;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    gap: 1.8rem;
+  }
+
+  .branch-image {
+    max-width: 100%;
+  }
+
+  .branch-content > p {
+    max-width: none;
+
+    text-align: left;
+  }
+
+  .branch-content ul {
+    justify-content: flex-start;
+  }
+
+  .branch-intro {
+    width: 90vw;
+
+    max-width: none;
+  }
+
+  .branch-intro p {
+    max-width: none;
+  }
+
+  .quote blockquote {
+    width: 90vw;
+
+    max-width: none;
+  }
+}
+
+
+/* =========================================================
+   15. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .branch-nav {
+    transition: none;
+    transform: none;
+  }
+
+  .branch-nav.branch-nav-visible {
+    transform: none;
+  }
+
+  .branch-image img {
+    transition: none;
+  }
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .branch-nav {
+        left: 14px;
+        right: auto;
+
+        width: 190px;
     }
 
-    .branch-image {
-        max-width: 100%;
+    .branch-nav a {
+        font-size: .72rem;
     }
+}
 
-    .branch-content > p {
-        max-width: none;
-        text-align: left;
+
+/* =========================================================
+   MOBILE
+   Completely hidden
+   ========================================================= */
+
+@media (max-width: 860px) {
+
+    .branch-nav,
+    .branch-nav.branch-nav-visible {
+        display: none !important;
     }
+}
 
-    .branch-content ul {
-        justify-content: flex-start;
+@media (max-width: 860px) {
+    .branch-nav {
+        display: none;
     }
-
-    .branch-intro {
-        width: 90vw;
-        max-width: none;
-    }
-
-    .branch-intro p {
-        max-width: none;
-    }
-
-    .quote blockquote {
-        width: 90vw;
-        max-width: none;
-    }
-
 }

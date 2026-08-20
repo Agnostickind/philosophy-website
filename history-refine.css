@@ -1054,3 +1054,212 @@ body:not(.theme-dark) .history-section-title > p {
         max-width: 100%;
     }
 }
+
+/* =========================================================
+   HISTORY SIDE NAVIGATION
+   Hidden during hero. Appears only after hero has passed.
+   ========================================================= */
+
+.history-nav {
+  position: fixed;
+  top: 110px; /* Adjust if your navbar height is different */
+  left: 22px;
+  right: auto; /* Ensures it respects 'right' positioning */
+
+  z-index: 900;
+
+  width: 190px;
+  max-height: calc(100vh - 140px);
+  margin: 0;
+
+  /* Hidden by default while hero is visible */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateX(30px); /* Initial off-screen position */
+
+  transition:
+    opacity 0.35s ease,
+    visibility 0.35s ease,
+    transform 0.35s ease;
+
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* JavaScript adds this class to make it visible */
+.history-nav.history-nav-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0); /* Slide into view */
+}
+
+.history-nav-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+
+  padding: 0.8rem 0.65rem;
+
+  border: 1px solid color-mix(
+    in srgb,
+    var(--gold, #b88a44) 22%,
+    transparent
+  );
+  border-radius: 16px;
+
+  background: color-mix(
+    in srgb,
+    var(--background, #14100b) 92%,
+    transparent
+  );
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.history-side-label {
+  display: block;
+  padding: 0.35rem 0.55rem 0.55rem;
+
+  color: var(--gold, #b88a44);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.history-nav a {
+  display: grid;
+  grid-template-columns: 1.8rem 1fr;
+  align-items: center;
+  gap: 0.45rem;
+
+  padding: 0.48rem 0.5rem;
+  border-radius: 6px;
+
+  color: inherit;
+  font-size: 0.78rem;
+  line-height: 1.25;
+  text-decoration: none;
+
+  transition:
+    background 0.22s ease,
+    color 0.22s ease,
+    transform 0.22s ease;
+}
+
+.history-nav a span {
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.history-nav a strong {
+  font-weight: 500;
+}
+
+.history-nav a:hover,
+.history-nav a:focus-visible {
+  background: color-mix(
+    in srgb,
+    var(--gold, #b88a44) 10%,
+    transparent
+  );
+
+  transform: translateX(-2px);
+  outline: none;
+}
+
+/* Active timeline era */
+.history-nav a.is-active,
+.history-nav a[aria-current="true"] {
+  color: var(--gold, #b88a44);
+
+  background: color-mix(
+    in srgb,
+    var(--gold, #b88a44) 16%,
+    transparent
+  );
+}
+
+.history-nav a.is-active strong,
+.history-nav a[aria-current="true"] strong {
+  font-weight: 700;
+}
+
+/* Fixed navbar should not cover section headings after clicking links */
+.era[id] {
+  scroll-margin-top: 100px; /* Adjust this value to match your navbar height */
+}
+
+/* Hide side navigation on tablet and mobile */
+@media (max-width: 860px) {
+  .history-nav {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .history-nav,
+  .history-nav.history-nav-visible {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* =========================================================
+   SIDENAVIGATION — LIGHT THEME
+   ========================================================= */
+
+body:not(.theme-dark) .history-nav-inner {
+  background: rgba(255, 255, 255, .94);
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, .10);
+}
+
+body:not(.theme-dark) .history-nav a {
+  color: #ffffff; /* Changed to white */
+}
+
+body:not(.theme-dark) .history-nav a:hover,
+body:not(.theme-dark) .history-nav a:focus-visible {
+  background: rgba(184, 138, 68, .10);
+}
+
+body:not(.theme-dark) .history-nav a.is-active,
+body:not(.theme-dark) .history-nav a[aria-current="true"] {
+  color: #8a642d; /* You might want to change this active color too, if it's not visible on white */
+
+  background: rgba(184, 138, 68, .14);
+}
+/* =========================================================
+   SIDENAVIGATION — LIGHT THEME
+   ========================================================= */
+
+body:not(.theme-dark) .history-nav-inner {
+  background: rgba(255, 255, 255, .98); /* Slightly less transparent for better contrast */
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, .10);
+}
+
+body:not(.theme-dark) .history-nav a {
+  color: #0a0a0a; /* Changed to a very light off-white for better contrast */
+}
+
+body:not(.theme-dark) .history-nav a:hover,
+body:not(.theme-dark) .history-nav a:focus-visible {
+  background: rgba(134, 102, 55, 0.14); /* Slightly more pronounced hover background */
+  color: #0b0a0a; /* White text on hover for clarity */
+}
+
+body:not(.theme-dark) .history-nav a.is-active,
+body:not(.theme-dark) .history-nav a[aria-current="true"] {
+  color: #1d1710; /* Darker text for the active state for high contrast */
+  background: #b88a44; /* Solid gold background for active state */
+}
+

@@ -1,4 +1,4 @@
-```javascript
+
 /* =========================================================
    THE GREAT LIBRARY OF PHILOSOPHY
    HISTORY PAGE — ENHANCEMENT SCRIPT
@@ -28,6 +28,7 @@
 
 (function () {
     'use strict';
+    var EMOJI = /^(?:\p{Emoji_Presentation}|\p{Extended_Pictographic})\s*/u;
 
     /* =====================================================
        1. MOTION PREFERENCE
@@ -114,24 +115,6 @@
                 document.body.firstChild
             );
         }
-
-
-        /* =================================================
-           5. DECORATIVE EMOJIS
-
-           Emojis used purely as visual heading decoration
-           should not be unnecessarily announced by screen
-           readers.
-
-           Example:
-
-               🏛 Ancient Greece
-
-           becomes visually identical, while the emoji is
-           aria-hidden.
-           ================================================= */
-
-        var EMOJI = /^([\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}\u{200D}\s+)/u;
 
         document.querySelectorAll(
             '.era-content h2, ' +
@@ -533,4 +516,4 @@
     });
 
 })();
-```
+

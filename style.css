@@ -6952,3 +6952,173 @@ body.theme-dark .home-hero button:hover {
   }
 
 }
+
+/* =========================================================
+   MOBILE OVERRIDES FOR BOOK & SPOTLIGHT SECTIONS
+   ========================================================= */
+
+/* --- General Mobile Adjustments --- */
+@media (max-width: 600px) { /* Adjust breakpoint if needed */
+
+  .book-month,
+  .spotlight {
+    padding: 20px 15px !important; /* Add padding to the main sections */
+  }
+
+  .book-month h2,
+  .spotlight h2 {
+    font-size: 1.7rem !important; /* Larger main headings for clarity */
+    text-align: center !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* --- Book of the Month Section --- */
+  .book-month > p {
+    font-size: 0.98rem !important;
+    line-height: 1.55 !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important; /* More space below intro paragraph */
+  }
+
+  .book-month .featured-book {
+    flex-direction: column !important; /* Stack image and content */
+    align-items: center !important; /* Center stacked items */
+    text-align: center !important;
+  }
+
+  .book-month .featured-book img {
+    max-width: 75% !important; /* Image takes up most of the width */
+    height: auto !important;
+    margin-bottom: 2rem !important; /* Space below image */
+    border-radius: 15px !important; /* Rounded corners for image */
+    display: block !important; /* Ensure it behaves as a block element */
+    margin-left: auto !important; /* Center image */
+    margin-right: auto !important;
+  }
+
+  .book-month .featured-content {
+    max-width: 100% !important; /* Allow content to take full width */
+  }
+
+  .book-month .featured-content h3 {
+    font-size: 1.5rem !important; /* Larger book title */
+    margin-bottom: 0.7rem !important;
+  }
+
+  .book-month .featured-content h4 {
+    font-size: 1.1rem !important; /* Larger author name */
+    margin-bottom: 1rem !important;
+  }
+
+  .book-month .featured-content p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    max-width: 90% !important; /* Limit width for readability */
+    margin-inline: auto !important; /* Center the paragraph */
+  }
+
+  .book-month .featured-content ul {
+    padding-left: 0 !important;
+    list-style: none !important;
+    margin-top: 1.2rem !important;
+    text-align: center !important;
+  }
+
+  .book-month .featured-content ul li {
+    display: block !important; /* Stack list items vertically */
+    margin-bottom: 0.8rem !important; /* Space between list items */
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .book-month .featured-content ul li:before {
+    /* Custom gold dot marker for list items */
+    content: "●"; /* Using a filled circle emoji */
+    color: var(--gold, #b88a44);
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 0.8em; /* Smaller size for the dot */
+    vertical-align: middle;
+    position: relative;
+    top: -1px; /* Slightly adjust vertical alignment */
+  }
+
+  .book-month .read-btn {
+    padding: 0.9rem 1.8rem !important;
+    font-size: 1rem !important;
+    margin-top: 2rem !important;
+    display: inline-block !important;
+  }
+
+  /* --- Philosopher Spotlight Section --- */
+  .spotlight .spotlight-card {
+    flex-direction: column !important; /* Stack image and content */
+    align-items: center !important; /* Center stacked items */
+    text-align: center !important;
+    padding: 2rem 0 !important; /* Adjust padding for stacked layout */
+  }
+
+  .spotlight .spotlight-card img {
+    max-width: 70% !important; /* Image takes up most of the width */
+    height: auto !important;
+    margin-bottom: 2rem !important; /* Space below image */
+    border-radius: 15px !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto;
+  }
+
+  .spotlight .spotlight-card > div { /* Target the div containing text content */
+    max-width: 100% !important;
+  }
+
+  .spotlight .spotlight-card div h3 {
+    font-size: 1.5rem !important; /* Larger philosopher name */
+    margin-bottom: 0.5rem !important;
+  }
+
+  .spotlight .spotlight-card div h4 {
+    font-size: 1rem !important; /* Adjust dates size */
+    margin-bottom: 1rem !important;
+  }
+
+  .spotlight .spotlight-card div p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    max-width: 90% !important; /* Limit width for readability */
+    margin-inline: auto !important;
+  }
+
+  .spotlight .spotlight-card div ul {
+    padding-left: 0 !important;
+    list-style: none !important;
+    margin-top: 1.2rem !important;
+    text-align: center !important;
+  }
+
+  .spotlight .spotlight-card div ul li {
+    display: block !important; /* Stack list items vertically */
+    margin-bottom: 0.8rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .spotlight .spotlight-card div ul li:before {
+    /* Custom gold dot marker for list items */
+    content: "●";
+    color: var(--gold, #b88a44);
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 0.8em;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+
+  .spotlight .read-btn {
+    padding: 0.9rem 1.8rem !important;
+    font-size: 1rem !important;
+    margin-top: 2rem !important;
+    display: inline-block !important;
+  }
+}

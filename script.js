@@ -2300,3 +2300,200 @@ loadAppearanceSettings();
     }
 
 })();
+
+/* =========================================
+   DESKTOP HOVER SUPPORT
+   Search + Appearance + Language
+   ========================================= */
+
+if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+
+    /* -----------------------------------------
+       APPEARANCE — Aa
+       ----------------------------------------- */
+
+    let appearanceHoverTimer;
+
+    function openAppearanceOnHover() {
+
+        clearTimeout(appearanceHoverTimer);
+
+        openAppearancePanel();
+    }
+
+
+    function closeAppearanceOnHover() {
+
+        appearanceHoverTimer = setTimeout(function () {
+
+            closeAppearancePanel();
+
+        }, 180);
+
+    }
+
+
+    appearanceToggle.addEventListener(
+        "mouseenter",
+        openAppearanceOnHover
+    );
+
+
+    appearanceToggle.addEventListener(
+        "mouseleave",
+        closeAppearanceOnHover
+    );
+
+
+    appearancePanel.addEventListener(
+        "mouseenter",
+        function () {
+
+            clearTimeout(appearanceHoverTimer);
+
+        }
+    );
+
+
+    appearancePanel.addEventListener(
+        "mouseleave",
+        closeAppearanceOnHover
+    );
+
+
+    /* -----------------------------------------
+       SEARCH
+       ----------------------------------------- */
+
+    const searchContainer =
+        document.querySelector(".search-container");
+
+    const searchToggle =
+        document.querySelector(".search-toggle");
+
+    const searchBox =
+        document.querySelector(".search-box");
+
+
+    if (
+        searchContainer &&
+        searchToggle &&
+        searchBox
+    ) {
+
+        let searchHoverTimer;
+
+
+        searchContainer.addEventListener(
+            "mouseenter",
+            function () {
+
+                clearTimeout(searchHoverTimer);
+
+                if (
+                    searchToggle.getAttribute(
+                        "aria-expanded"
+                    ) !== "true"
+                ) {
+
+                    searchToggle.click();
+
+                }
+
+            }
+        );
+
+
+        searchContainer.addEventListener(
+            "mouseleave",
+            function () {
+
+                searchHoverTimer =
+                    setTimeout(function () {
+
+                        if (
+                            searchToggle.getAttribute(
+                                "aria-expanded"
+                            ) === "true"
+                        ) {
+
+                            searchToggle.click();
+
+                        }
+
+                    }, 180);
+
+            }
+        );
+
+    }
+
+
+    /* -----------------------------------------
+       LANGUAGE
+       ----------------------------------------- */
+
+    const languageContainer =
+        document.querySelector(".language-container");
+
+    const languageToggle =
+        document.querySelector(".language-toggle");
+
+    const languageBox =
+        document.querySelector(".language-box");
+
+
+    if (
+        languageContainer &&
+        languageToggle &&
+        languageBox
+    ) {
+
+        let languageHoverTimer;
+
+
+        languageContainer.addEventListener(
+            "mouseenter",
+            function () {
+
+                clearTimeout(languageHoverTimer);
+
+                if (
+                    languageToggle.getAttribute(
+                        "aria-expanded"
+                    ) !== "true"
+                ) {
+
+                    languageToggle.click();
+
+                }
+
+            }
+        );
+
+
+        languageContainer.addEventListener(
+            "mouseleave",
+            function () {
+
+                languageHoverTimer =
+                    setTimeout(function () {
+
+                        if (
+                            languageToggle.getAttribute(
+                                "aria-expanded"
+                            ) === "true"
+                        ) {
+
+                            languageToggle.click();
+
+                        }
+
+                    }, 180);
+
+            }
+        );
+
+    }
+
+}

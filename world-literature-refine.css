@@ -393,3 +393,17 @@ body:not(.theme-dark) .literature-side-nav a[aria-current="true"] {
     transform: none;
   }
 }
+
+  /* =========================================================
+   REVERSE SIDE NAV — TABLET + MOBILE
+   Completely hidden to prevent content overlap
+   ========================================================= */
+
+@media (max-width: 860px) {
+
+  .literature-side-nav nav-reverse.nav-reverse,
+  .literature-side-nav-inner.nav-reverse-visible {
+    display: none !important;
+  }
+
+}

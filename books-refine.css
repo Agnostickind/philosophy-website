@@ -481,3 +481,16 @@ body:not(.theme-dark) .books-side-nav a[aria-current="true"] {
     transform: none;
   }
 }
+/* =========================================================
+   BOOKS SIDE NAV — TABLET + MOBILE
+   Completely hidden to prevent content overlap
+   ========================================================= */
+
+@media (max-width: 860px) {
+
+  .books-side-nav,
+  .books-side-nav.books-side-nav-visible {
+    display: none !important;
+  }
+
+}

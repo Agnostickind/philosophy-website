@@ -1263,3 +1263,16 @@ body:not(.theme-dark) .history-nav a[aria-current="true"] {
   background: #b88a44; /* Solid gold background for active state */
 }
 
+/* =========================================================
+   HISTORY SIDE NAV — TABLET + MOBILE
+   Completely hidden so it cannot overlap page content
+   ========================================================= */
+
+@media (max-width: 860px) {
+
+  .history-nav,
+  .history-nav.history-nav-visible {
+    display: none !important;
+  }
+
+}

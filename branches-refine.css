@@ -1037,172 +1037,173 @@ body.page-wide .quote blockquote {
   max-width: none;
 }
 
-
 /* =========================================================
-   13. TABLET / MOBILE BRANCH LAYOUT
+   BRANCH SIDE NAVIGATION — RESPONSIVE LAYOUT
    ========================================================= */
 
-@media (max-width: 860px) {
+/* ---------------------------------------------------------
+   LARGE DESKTOP
+   Side navigation remains a vertical navigation panel.
+   --------------------------------------------------------- */
 
-  .branch,
-  .branch.reverse {
-    grid-template-columns: 1fr;
-  }
-
-  .branch-image,
-  .branch.reverse .branch-image,
-  .branch-content,
-  .branch.reverse .branch-content {
-    order: initial;
-  }
-
-  .branch-image {
-    width: 100%;
-
-    max-width: 430px;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    position: static;
-  }
-
-  .branch-image img {
-    width: 100%;
-
-    height: auto;
-
-    aspect-ratio: 16 / 10;
-
-    object-fit: cover;
-  }
-
-  body.page-wide .branch,
-  body.page-wide .branch.reverse,
-  body.page-wide .branch-intro,
-  body.page-wide .branch-intro p,
-  body.page-wide .tree-box,
-  body.page-wide .tree-intro,
-  body.page-wide .comparison,
-  body.page-wide .connection,
-  body.page-wide .quote blockquote {
-    width: 92vw;
-
-    max-width: none;
-  }
-
-  /*
-     Side navigation disappears completely on tablet/mobile.
-     This prevents it from covering the hero or content.
-  */
+@media (min-width: 1201px) {
 
   .branch-nav {
-    display: none;
+    position: fixed;
+    top: 110px;
+    left: 22px;
+
+    width: 190px;
+    max-height: calc(100vh - 140px);
+
+    z-index: 900;
   }
+
 }
 
 
-/* =========================================================
-   14. SMALL PHONES
-   ========================================================= */
+/* ---------------------------------------------------------
+   TABLET / SMALL LAPTOP
+   Do NOT allow the side navigation to float over content.
+   Turn it into a normal horizontal navigation bar.
+   --------------------------------------------------------- */
+
+@media (min-width: 861px) and (max-width: 1200px) {
+
+  .branch-nav {
+    position: static;
+
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
+    z-index: auto;
+
+    max-height: none;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: none;
+
+    overflow: visible;
+  }
+
+  .branch-nav-inner {
+    width: 92%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: .45rem;
+
+    overflow-x: auto;
+
+    padding: .7rem 0;
+
+    scrollbar-width: none;
+  }
+
+  .branch-nav-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  .branch-nav a {
+    flex: 0 0 auto;
+
+    font-size: .75rem;
+    white-space: nowrap;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   Compact horizontal navigation.
+   --------------------------------------------------------- */
+
+@media (max-width: 860px) {
+
+  .branch-nav {
+    position: static;
+
+    display: block;
+
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
+
+    z-index: auto;
+
+    max-height: none;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: none;
+
+    overflow: visible;
+  }
+
+  .branch-nav-inner {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: .4rem;
+
+    padding: .65rem 5vw;
+
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+
+    scroll-snap-type: x proximity;
+  }
+
+  .branch-nav-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  .branch-nav a {
+    flex: 0 0 auto;
+
+    white-space: nowrap;
+
+    font-size: .72rem;
+
+    padding: .5rem .75rem;
+
+    scroll-snap-align: start;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   SMALL PHONES
+   --------------------------------------------------------- */
 
 @media (max-width: 600px) {
 
-  .branch {
-    width: 92vw;
+  .branch-nav-inner {
+    padding-left: 4vw;
+    padding-right: 4vw;
 
-    padding-left: 0;
-    padding-right: 0;
-
-    gap: 1.8rem;
+    gap: .3rem;
   }
 
-  .branch-image {
-    max-width: 100%;
+  .branch-nav a {
+    font-size: .68rem;
+    padding: .45rem .65rem;
   }
 
-  .branch-content > p {
-    max-width: none;
-
-    text-align: left;
-  }
-
-  .branch-content ul {
-    justify-content: flex-start;
-  }
-
-  .branch-intro {
-    width: 90vw;
-
-    max-width: none;
-  }
-
-  .branch-intro p {
-    max-width: none;
-  }
-
-  .quote blockquote {
-    width: 90vw;
-
-    max-width: none;
-  }
-}
-
-
-/* =========================================================
-   15. REDUCED MOTION
-   ========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-  .branch-nav {
-    transition: none;
-    transform: none;
-  }
-
-  .branch-nav.branch-nav-visible {
-    transform: none;
-  }
-
-  .branch-image img {
-    transition: none;
-  }
-}
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (max-width: 1200px) {
-
-    .branch-nav {
-        left: 14px;
-        right: auto;
-
-        width: 190px;
-    }
-
-    .branch-nav a {
-        font-size: .72rem;
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-   Completely hidden
-   ========================================================= */
-
-@media (max-width: 860px) {
-
-    .branch-nav,
-    .branch-nav.branch-nav-visible {
-        display: none !important;
-    }
-}
-
-@media (max-width: 860px) {
-    .branch-nav {
-        display: none;
-    }
 }

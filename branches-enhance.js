@@ -199,27 +199,95 @@ link.dataset.branchTarget
 });
 
 /* =========================================================
-   BRANCH SIDE NAV — SHOW AFTER HERO
+   BRANCH SIDE NAV — HERO + FOOTER VISIBILITY
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
+
   const hero = document.querySelector(".home-hero");
   const branchNav = document.querySelector(".branch-nav");
+  const footer = document.querySelector("footer");
 
-  if (!hero || !branchNav) return;
+  if (!branchNav) return;
 
-  const heroObserver = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        branchNav.classList.remove("branch-nav-visible");
-      } else {
-        branchNav.classList.add("branch-nav-visible");
-      }
-    },
-    {
-      threshold: 0.05
+
+  /* =======================================================
+     UPDATE NAVIGATION VISIBILITY
+     
+     HERO   = hidden
+     CONTENT = visible
+     FOOTER = hidden
+     ======================================================= */
+
+  const updateBranchNavVisibility = () => {
+
+    let heroVisible = false;
+    let footerVisible = false;
+
+
+    /* ---------- HERO ---------- */
+
+    if (hero) {
+
+      const heroRect = hero.getBoundingClientRect();
+
+      heroVisible = heroRect.bottom > 0;
     }
+
+
+    /* ---------- FOOTER ---------- */
+
+    if (footer) {
+
+      const footerRect = footer.getBoundingClientRect();
+
+      footerVisible = footerRect.top < window.innerHeight;
+    }
+
+
+    /* ---------- FINAL STATE ---------- */
+
+    if (heroVisible || footerVisible) {
+
+      branchNav.classList.remove(
+        "branch-nav-visible"
+      );
+
+    } else {
+
+      branchNav.classList.add(
+        "branch-nav-visible"
+      );
+
+    }
+  };
+
+
+  /* =======================================================
+     SCROLL
+     ======================================================= */
+
+  window.addEventListener(
+    "scroll",
+    updateBranchNavVisibility,
+    { passive: true }
   );
 
-  heroObserver.observe(hero);
+
+  /* =======================================================
+     RESIZE
+     ======================================================= */
+
+  window.addEventListener(
+    "resize",
+    updateBranchNavVisibility
+  );
+
+
+  /* =======================================================
+     INITIAL CHECK
+     ======================================================= */
+
+  updateBranchNavVisibility();
+
 });

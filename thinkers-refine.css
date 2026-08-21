@@ -568,3 +568,17 @@ a:focus-visible, button:focus-visible {
   .thinker-info {
     width: 100%;
   }
+
+  /* =========================================================
+   REVERSE SIDE NAV — TABLET + MOBILE
+   Completely hidden to prevent content overlap
+   ========================================================= */
+
+@media (max-width: 860px) {
+
+  .category-nav.nav-reverse,
+  .category-nav.nav-reverse.nav-reverse-visible {
+    display: none !important;
+  }
+
+}

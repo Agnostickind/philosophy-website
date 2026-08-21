@@ -1,4 +1,3 @@
-
 /* =========================================================
    THE GREAT LIBRARY OF PHILOSOPHY
    HISTORY PAGE — REFINED LAYER
@@ -28,12 +27,10 @@
     --history-ease: cubic-bezier(0.22, 1, 0.36, 1);
 
     --history-rule-gold:
-        linear-gradient(
-            to right,
+        linear-gradient(to right,
             transparent,
             var(--gold),
-            transparent
-        );
+            transparent);
 }
 
 
@@ -120,12 +117,12 @@ section[id] {
 
 /* Hero paragraph refinement */
 
-.home-hero .hero-content > p {
+.home-hero .hero-content>p {
     font-size: 1.15rem;
-  color: var(--muted-light);
-  max-width: 56ch;
-  border-left: 2px solid var(--gold);
-  padding-left: 1.2rem;
+    color: var(--muted-light);
+    max-width: 56ch;
+    border-left: 2px solid var(--gold);
+    padding-left: 1.2rem;
 }
 
 
@@ -141,16 +138,12 @@ section[id] {
     opacity: 0.5;
 
     background-image:
-        radial-gradient(
-            circle at 20% 30%,
+        radial-gradient(circle at 20% 30%,
             rgba(211, 165, 101, 0.06),
-            transparent 45%
-        ),
-        radial-gradient(
-            circle at 80% 70%,
+            transparent 45%),
+        radial-gradient(circle at 80% 70%,
             rgba(211, 165, 101, 0.05),
-            transparent 40%
-        );
+            transparent 40%);
 }
 
 
@@ -165,7 +158,7 @@ section[id] {
     text-align: left;
 }
 
-.intro-text > p {
+.intro-text>p {
     margin-top: 0;
     margin-bottom: 1.4rem;
     line-height: var(--history-lead);
@@ -182,14 +175,14 @@ section[id] {
 
 /* First introduction paragraph */
 
-.intro-text > p:first-of-type {
+.intro-text>p:first-of-type {
     font-size: 1.08em;
 }
 
 
 /* First-letter treatment */
 
-.intro-text > p:first-of-type::first-letter {
+.intro-text>p:first-of-type::first-letter {
     float: left;
 
     font-family:
@@ -201,10 +194,7 @@ section[id] {
     line-height: 0.82;
 
     margin:
-        0.18rem
-        0.55rem
-        0
-        0;
+        0.18rem 0.55rem 0 0;
 
     color: var(--gold);
 }
@@ -212,12 +202,11 @@ section[id] {
 
 /* Separate civilization paragraphs */
 
-.intro-text > p + p {
+.intro-text>p+p {
     padding-top: 1.2rem;
 
     border-top:
-        1px solid
-        rgba(184, 138, 68, 0.16);
+        1px solid rgba(184, 138, 68, 0.16);
 }
 
 
@@ -272,7 +261,7 @@ section[id] {
 
     font-family:
         var(--mono,
-        monospace);
+            monospace);
 
     font-size: 0.72rem;
     letter-spacing: 0.3em;
@@ -289,7 +278,7 @@ section[id] {
     margin-bottom: 1.1rem;
 }
 
-.history-section-title > p,
+.history-section-title>p,
 .world-intro {
     max-width: 66ch;
 
@@ -331,17 +320,13 @@ section[id] {
     display: grid;
 
     grid-template-columns:
-        repeat(
-            auto-fit,
-            minmax(270px, 1fr)
-        );
+        repeat(auto-fit,
+            minmax(270px, 1fr));
 
     gap:
-        clamp(
-            1.1rem,
+        clamp(1.1rem,
             2.4vw,
-            1.8rem
-        );
+            1.8rem);
 
     max-width: 1180px;
 
@@ -421,15 +406,12 @@ section[id] {
     display: grid;
 
     grid-template-columns:
-        minmax(0, 0.95fr)
-        minmax(0, 1.05fr);
+        minmax(0, 0.95fr) minmax(0, 1.05fr);
 
     gap:
-        clamp(
-            1.5rem,
+        clamp(1.5rem,
             4vw,
-            3.5rem
-        );
+            3.5rem);
 
     align-items: center;
 
@@ -459,12 +441,10 @@ section[id] {
     border-radius: 10px;
 
     border:
-        1px solid
-        rgba(184, 138, 68, 0.22);
+        1px solid rgba(184, 138, 68, 0.22);
 
     box-shadow:
-        0 18px 40px -28px
-        rgba(0, 0, 0, 0.6);
+        0 18px 40px -28px rgba(0, 0, 0, 0.6);
 }
 
 .era-image img {
@@ -491,11 +471,9 @@ section[id] {
 
 .era-content h2 {
     font-size:
-        clamp(
-            1.5rem,
+        clamp(1.5rem,
             2.6vw,
-            2.1rem
-        );
+            2.1rem);
 
     line-height: 1.2;
 
@@ -516,7 +494,7 @@ section[id] {
 .era-content h3 {
     font-family:
         var(--mono,
-        monospace);
+            monospace);
 
     font-size: 0.75rem;
 
@@ -552,15 +530,12 @@ section[id] {
     display: grid;
 
     grid-template-columns:
-        minmax(160px, 220px)
-        minmax(0, 1fr);
+        minmax(160px, 220px) minmax(0, 1fr);
 
     gap:
-        clamp(
-            1.2rem,
+        clamp(1.2rem,
             3vw,
-            2.5rem
-        );
+            2.5rem);
 
     align-items: center;
 
@@ -570,7 +545,7 @@ section[id] {
     margin-right: auto;
 }
 
-.philosopher > img {
+.philosopher>img {
     width: 100%;
 
     aspect-ratio: 1 / 1;
@@ -580,21 +555,17 @@ section[id] {
     border-radius: 50%;
 
     border:
-        1px solid
-        rgba(184, 138, 68, 0.35);
+        1px solid rgba(184, 138, 68, 0.35);
 
     box-shadow:
-        0 14px 34px -24px
-        rgba(0, 0, 0, 0.65);
+        0 14px 34px -24px rgba(0, 0, 0, 0.65);
 }
 
 .philosopher-info h2 {
     font-size:
-        clamp(
-            1.35rem,
+        clamp(1.35rem,
             2.2vw,
-            1.85rem
-        );
+            1.85rem);
 
     line-height: 1.2;
 
@@ -618,8 +589,7 @@ section[id] {
     padding-left: 1.4rem;
 
     border-left:
-        2px solid
-        var(--gold);
+        2px solid var(--gold);
 
     font-family:
         "Cormorant Garamond",
@@ -629,11 +599,9 @@ section[id] {
     font-style: italic;
 
     font-size:
-        clamp(
-            1.05rem,
+        clamp(1.05rem,
             1.6vw,
-            1.3rem
-        );
+            1.3rem);
 
     line-height: 1.55;
 }
@@ -669,11 +637,9 @@ section[id] {
     font-style: italic;
 
     font-size:
-        clamp(
-            1.25rem,
+        clamp(1.25rem,
             2.6vw,
-            1.9rem
-        );
+            1.9rem);
 
     line-height: 1.65;
 
@@ -696,10 +662,10 @@ section[id] {
     margin-bottom: 0.4rem;
 }
 
-.quote > p {
+.quote>p {
     font-family:
         var(--mono,
-        monospace);
+            monospace);
 
     font-size: 0.78rem;
 
@@ -746,8 +712,7 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
     outline:
-        2px solid
-        var(--gold-bright, var(--gold));
+        2px solid var(--gold-bright, var(--gold));
 
     outline-offset: 3px;
 
@@ -789,7 +754,7 @@ textarea:focus-visible {
 
 @media (max-width: 900px) {
 
-    .home-hero .hero-content > p {
+    .home-hero .hero-content>p {
         max-width: 60ch;
     }
 
@@ -813,7 +778,7 @@ textarea:focus-visible {
         text-align: center;
     }
 
-    .philosopher > img {
+    .philosopher>img {
         max-width: 170px;
     }
 
@@ -831,14 +796,12 @@ textarea:focus-visible {
 
     .home-hero h1 {
         font-size:
-            clamp(
-                2.1rem,
+            clamp(2.1rem,
                 9vw,
-                3rem
-            );
+                3rem);
     }
 
-    .intro-text > p:first-of-type::first-letter {
+    .intro-text>p:first-of-type::first-letter {
         font-size: 2.6rem;
     }
 
@@ -858,11 +821,11 @@ textarea:focus-visible {
         font-size: 1.15rem;
     }
 
-    .philosopher > img {
+    .philosopher>img {
         max-width: 145px;
     }
 
-    .home-hero .hero-content > p {
+    .home-hero .hero-content>p {
         max-width: 100%;
     }
 }
@@ -873,7 +836,7 @@ textarea:focus-visible {
    Adapted from Home refinement
    ========================================================= */
 
-body:not(.theme-dark) .intro-text > p,
+body:not(.theme-dark) .intro-text>p,
 body:not(.theme-dark) .era-content p,
 body:not(.theme-dark) .philosopher-info p,
 body:not(.theme-dark) .history-summary p,
@@ -902,14 +865,13 @@ body.theme-dark .intro-text a,
 body.theme-dark .era-content a {
     text-decoration-color:
         var(--gold-bright,
-        var(--gold));
+            var(--gold));
 }
 
 body.theme-dark .quote blockquote,
 body.theme-dark .philosopher-info blockquote {
     text-shadow:
-        0 1px 12px
-        rgba(0, 0, 0, 0.18);
+        0 1px 12px rgba(0, 0, 0, 0.18);
 }
 
 
@@ -957,7 +919,7 @@ body.theme-dark .philosopher-info blockquote {
    PHILOSOPHER PORTRAIT — FORCE TRUE CIRCLE
    ========================================================= */
 
-.philosopher > img {
+.philosopher>img {
     width: 190px;
     height: 190px;
     aspect-ratio: 1 / 1;
@@ -974,7 +936,7 @@ body.theme-dark .philosopher-info blockquote {
 /* Tablet */
 @media (max-width: 860px) {
 
-    .philosopher > img {
+    .philosopher>img {
         width: 170px;
         height: 170px;
         max-width: none;
@@ -986,7 +948,7 @@ body.theme-dark .philosopher-info blockquote {
 /* Mobile */
 @media (max-width: 620px) {
 
-    .philosopher > img {
+    .philosopher>img {
         width: 145px;
         height: 145px;
         max-width: none;
@@ -997,13 +959,13 @@ body.theme-dark .philosopher-info blockquote {
 /* HISTORY PAGE — darker body paragraphs */
 /* HISTORY PAGE — darker body paragraphs */
 
-body:not(.theme-dark) .intro-text > p,
+body:not(.theme-dark) .intro-text>p,
 body:not(.theme-dark) .era-content p,
 body:not(.theme-dark) .philosopher-info p,
 body:not(.theme-dark) .history-summary p,
 body:not(.theme-dark) .world-card p,
 body:not(.theme-dark) .world-intro,
-body:not(.theme-dark) .history-section-title > p {
+body:not(.theme-dark) .history-section-title>p {
     color: #2f2b25;
     font-weight: 500;
 }
@@ -1050,229 +1012,7 @@ body:not(.theme-dark) .history-section-title > p {
         min-width: 0;
     }
 
-    .era-content > p {
+    .era-content>p {
         max-width: 100%;
     }
-}
-
-/* =========================================================
-   HISTORY SIDE NAVIGATION
-   Hidden during hero. Appears only after hero has passed.
-   ========================================================= */
-
-.history-nav {
-  position: fixed;
-  top: 110px; /* Adjust if your navbar height is different */
-  left: 22px;
-  right: auto; /* Ensures it respects 'right' positioning */
-
-  z-index: 900;
-
-  width: 190px;
-  max-height: calc(100vh - 140px);
-  margin: 0;
-
-  /* Hidden by default while hero is visible */
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-
-  transform: translateX(30px); /* Initial off-screen position */
-
-  transition:
-    opacity 0.35s ease,
-    visibility 0.35s ease,
-    transform 0.35s ease;
-
-  overflow-y: auto;
-  scrollbar-width: thin;
-}
-
-/* JavaScript adds this class to make it visible */
-.history-nav.history-nav-visible {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transform: translateX(0); /* Slide into view */
-}
-
-.history-nav-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-
-  padding: 0.8rem 0.65rem;
-
-  border: 1px solid color-mix(
-    in srgb,
-    var(--gold, #b88a44) 22%,
-    transparent
-  );
-  border-radius: 16px;
-
-  background: color-mix(
-    in srgb,
-    var(--background, #14100b) 92%,
-    transparent
-  );
-
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
-
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-.history-side-label {
-  display: block;
-  padding: 0.35rem 0.55rem 0.55rem;
-
-  color: var(--gold, #b88a44);
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-.history-nav a {
-  display: grid;
-  grid-template-columns: 1.8rem 1fr;
-  align-items: center;
-  gap: 0.45rem;
-
-  padding: 0.48rem 0.5rem;
-  border-radius: 6px;
-
-  color: inherit;
-  font-size: 0.78rem;
-  line-height: 1.25;
-  text-decoration: none;
-
-  transition:
-    background 0.22s ease,
-    color 0.22s ease,
-    transform 0.22s ease;
-}
-
-.history-nav a span {
-  font-size: 0.95rem;
-  text-align: center;
-}
-
-.history-nav a strong {
-  font-weight: 500;
-}
-
-.history-nav a:hover,
-.history-nav a:focus-visible {
-  background: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 10%,
-    transparent
-  );
-
-  transform: translateX(-2px);
-  outline: none;
-}
-
-/* Active timeline era */
-.history-nav a.is-active,
-.history-nav a[aria-current="true"] {
-  color: var(--gold, #b88a44);
-
-  background: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 16%,
-    transparent
-  );
-}
-
-.history-nav a.is-active strong,
-.history-nav a[aria-current="true"] strong {
-  font-weight: 700;
-}
-
-/* Fixed navbar should not cover section headings after clicking links */
-.era[id] {
-  scroll-margin-top: 100px; /* Adjust this value to match your navbar height */
-}
-
-/* Hide side navigation on tablet and mobile */
-@media (max-width: 860px) {
-  .history-nav {
-    display: none;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .history-nav,
-  .history-nav.history-nav-visible {
-    transition: none;
-    transform: none;
-  }
-}
-
-/* =========================================================
-   SIDENAVIGATION — LIGHT THEME
-   ========================================================= */
-
-body:not(.theme-dark) .history-nav-inner {
-  background: rgba(255, 255, 255, .94);
-
-  box-shadow:
-    0 12px 35px rgba(0, 0, 0, .10);
-}
-
-body:not(.theme-dark) .history-nav a {
-  color: #ffffff; /* Changed to white */
-}
-
-body:not(.theme-dark) .history-nav a:hover,
-body:not(.theme-dark) .history-nav a:focus-visible {
-  background: rgba(184, 138, 68, .10);
-}
-
-body:not(.theme-dark) .history-nav a.is-active,
-body:not(.theme-dark) .history-nav a[aria-current="true"] {
-  color: #8a642d; /* You might want to change this active color too, if it's not visible on white */
-
-  background: rgba(184, 138, 68, .14);
-}
-/* =========================================================
-   SIDENAVIGATION — LIGHT THEME
-   ========================================================= */
-
-body:not(.theme-dark) .history-nav-inner {
-  background: rgba(255, 255, 255, .98); /* Slightly less transparent for better contrast */
-  box-shadow:
-    0 12px 35px rgba(0, 0, 0, .10);
-}
-
-body:not(.theme-dark) .history-nav a {
-  color: #0a0a0a; /* Changed to a very light off-white for better contrast */
-}
-
-body:not(.theme-dark) .history-nav a:hover,
-body:not(.theme-dark) .history-nav a:focus-visible {
-  background: rgba(134, 102, 55, 0.14); /* Slightly more pronounced hover background */
-  color: #0b0a0a; /* White text on hover for clarity */
-}
-
-body:not(.theme-dark) .history-nav a.is-active,
-body:not(.theme-dark) .history-nav a[aria-current="true"] {
-  color: #1d1710; /* Darker text for the active state for high contrast */
-  background: #b88a44; /* Solid gold background for active state */
-}
-
-/* =========================================================
-   HISTORY SIDE NAV — TABLET + MOBILE
-   Completely hidden so it cannot overlap page content
-   ========================================================= */
-
-@media (max-width: 860px) {
-
-  .history-nav,
-  .history-nav.history-nav-visible {
-    display: none !important;
-  }
-
 }

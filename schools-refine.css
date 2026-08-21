@@ -27,9 +27,9 @@
   transform: translateX(30px);
 
   overflow-y: auto;
-overflow-x: hidden;
+  overflow-x: hidden;
 
-scrollbar-width: none;
+  scrollbar-width: none;
 
   transition:
     opacity 0.35s ease,
@@ -61,19 +61,15 @@ scrollbar-width: none;
 
   padding: 0.8rem 0.65rem;
 
-  border: 1px solid color-mix(
-    in srgb,
-    var(--gold, #b88a44) 22%,
-    transparent
-  );
+  border: 1px solid color-mix(in srgb,
+      var(--gold, #b88a44) 22%,
+      transparent);
 
   border-radius: 16px;
 
-  background: color-mix(
-    in srgb,
-    var(--background, #14100b) 92%,
-    transparent
-  );
+  background: color-mix(in srgb,
+      var(--background, #14100b) 92%,
+      transparent);
 
   box-shadow:
     0 12px 35px rgba(0, 0, 0, 0.22);
@@ -90,9 +86,7 @@ scrollbar-width: none;
   display: block;
 
   padding:
-    0.35rem
-    0.55rem
-    0.55rem;
+    0.35rem 0.55rem 0.55rem;
 
   color: var(--gold, #b88a44);
 
@@ -121,8 +115,7 @@ scrollbar-width: none;
   gap: 0.45rem;
 
   padding:
-    0.48rem
-    0.5rem;
+    0.48rem 0.5rem;
 
   border-radius: 6px;
 
@@ -164,11 +157,9 @@ scrollbar-width: none;
 .category-nav.nav-reverse a:hover,
 .category-nav.nav-reverse a:focus-visible {
 
-  background: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 10%,
-    transparent
-  );
+  background: color-mix(in srgb,
+      var(--gold, #b88a44) 10%,
+      transparent);
 
   color: var(--gold, #b88a44);
 
@@ -185,11 +176,9 @@ scrollbar-width: none;
 
   color: var(--gold, #b88a44);
 
-  background: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 16%,
-    transparent
-  );
+  background: color-mix(in srgb,
+      var(--gold, #b88a44) 16%,
+      transparent);
 }
 
 
@@ -315,6 +304,7 @@ body:not(.theme-dark) .category-nav.nav-reverse a[aria-current="location"] {
   }
 
 }
+
 .nav-reverse-inner {
   scrollbar-width: none;
   -ms-overflow-style: none;

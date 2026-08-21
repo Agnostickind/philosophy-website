@@ -7,490 +7,320 @@
    ========================================================= */
 
 /* ---------- 0. tokens local to this page ---------- */
-:root{
+:root {
   --bk-gap: clamp(1rem, 2.4vw, 1.8rem);
   --bk-section-y: clamp(2.75rem, 6vw, 5rem);
   --bk-measure: 68ch;
 }
 
 /* ---------- 1. skip link ---------- */
-.skip-link{
-  position:absolute; left:-9999px; top:0; z-index:2000;
-  background:var(--ink); color:var(--light-text);
-  font-family:var(--mono); font-size:.8rem;
-  padding:.7rem 1.1rem; border-radius:0 0 var(--radius) 0;
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 2000;
+  background: var(--ink);
+  color: var(--light-text);
+  font-family: var(--mono);
+  font-size: .8rem;
+  padding: .7rem 1.1rem;
+  border-radius: 0 0 var(--radius) 0;
 }
-.skip-link:focus{ left:0; }
 
-:where(a,button,input,[tabindex]):focus-visible{
-  outline:2px solid var(--gold-bright);
-  outline-offset:3px;
-  border-radius:4px;
+.skip-link:focus {
+  left: 0;
+}
+
+:where(a, button, input, [tabindex]):focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 /* ---------- 2. section rhythm ---------- */
-main#main-content > section{
+main#main-content>section {
   padding-block: var(--bk-section-y);
 }
-.library-intro p{ max-width:var(--bk-measure); }
+
+.library-intro p {
+  max-width: var(--bk-measure);
+}
+
 .library-intro h2,
-main#main-content > section > h2{
-  font-family:var(--serif-display);
-  font-size:clamp(1.5rem, 1.05rem + 1.9vw, 2.35rem);
-  line-height:1.15;
-  letter-spacing:-0.01em;
-  text-wrap:balance;
+main#main-content>section>h2 {
+  font-family: var(--serif-display);
+  font-size: clamp(1.5rem, 1.05rem + 1.9vw, 2.35rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
 }
-main#main-content > section > h2 + p{
-  max-width:var(--bk-measure);
-  color:var(--muted-dark);
+
+main#main-content>section>h2+p {
+  max-width: var(--bk-measure);
+  color: var(--muted-dark);
 }
-body.theme-dark main#main-content > section > h2 + p{ color:var(--muted-light); }
+
+body.theme-dark main#main-content>section>h2+p {
+  color: var(--muted-light);
+}
 
 /* section heading gets a quiet gilt rule instead of a heavy bar */
-main#main-content > section > h2::after{
-  content:"";
-  display:block;
-  width:76px; height:2px;
-  margin-top:.7rem;
-  background:linear-gradient(90deg, var(--gold-bright), transparent);
+main#main-content>section>h2::after {
+  content: "";
+  display: block;
+  width: 76px;
+  height: 2px;
+  margin-top: .7rem;
+  background: linear-gradient(90deg, var(--gold-bright), transparent);
 }
 
 
 /* ---------- 4. book grid ---------- */
-.book-grid{
-  grid-template-columns:repeat(auto-fill, minmax(min(100%, 250px), 1fr));
-  gap:var(--bk-gap);
-  align-items:stretch;
+.book-grid {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+  gap: var(--bk-gap);
+  align-items: stretch;
 }
-@media (max-width: 560px){
+
+@media (max-width: 560px) {
+
   /* two slim catalog cards per row reads better than one huge one */
-  .book-grid{
-    grid-template-columns:repeat(2, minmax(0,1fr));
-    gap:.85rem;
+  .book-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .85rem;
   }
 }
-@media (max-width: 360px){
-  .book-grid{ grid-template-columns:1fr; }
+
+@media (max-width: 360px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---------- 5. the card ---------- */
-.book-card{
-  min-width:0;
-  border-style:solid;
-  border-color:color-mix(in oklab, var(--paper-line) 85%, transparent);
-  box-shadow:0 1px 2px rgba(20,22,31,.05), 0 10px 26px rgba(20,22,31,.07);
-  transition:transform .3s cubic-bezier(.2,.7,.3,1), box-shadow .3s ease, border-color .3s ease;
+.book-card {
+  min-width: 0;
+  border-style: solid;
+  border-color: color-mix(in oklab, var(--paper-line) 85%, transparent);
+  box-shadow: 0 1px 2px rgba(20, 22, 31, .05), 0 10px 26px rgba(20, 22, 31, .07);
+  transition: transform .3s cubic-bezier(.2, .7, .3, 1), box-shadow .3s ease, border-color .3s ease;
 }
+
 /* stitched inner hairline — catalog card feel */
-.book-card::after{
-  content:"";
-  position:absolute; inset:6px;
-  border:1px dashed color-mix(in oklab, var(--paper-line) 70%, transparent);
-  border-radius:2px;
-  pointer-events:none;
-  opacity:.55;
+.book-card::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px dashed color-mix(in oklab, var(--paper-line) 70%, transparent);
+  border-radius: 2px;
+  pointer-events: none;
+  opacity: .55;
 }
-.book-card:hover{ border-color:var(--gold); }
+
+.book-card:hover {
+  border-color: var(--gold);
+}
 
 /* only lift on real pointers — no sticky hover states on touch */
-@media (hover:none), (pointer:coarse){
-  .book-card:hover{ transform:none; box-shadow:var(--shadow-card); }
-  .book-card:hover .book-cover img{ transform:none; }
+@media (hover:none),
+(pointer:coarse) {
+  .book-card:hover {
+    transform: none;
+    box-shadow: var(--shadow-card);
+  }
+
+  .book-card:hover .book-cover img {
+    transform: none;
+  }
 }
 
-.book-cover{
-  aspect-ratio:3/4;
-  background:linear-gradient(160deg, var(--theme-cover-start), var(--theme-cover-end));
+.book-cover {
+  aspect-ratio: 3/4;
+  background: linear-gradient(160deg, var(--theme-cover-start), var(--theme-cover-end));
 }
-.book-cover img{
-  object-fit:contain;
-  padding:.6rem;
-}
-.book-card .book-content{
-  display:flex;
-  flex-direction:column;
-  gap:.5rem;
-  padding:1rem 1rem 1.1rem;
-  flex:1;
-}
-.book-card h3{
-  font-family:var(--serif-display);
-  font-size:clamp(1rem, .93rem + .3vw, 1.16rem);
-  line-height:1.25;
-  letter-spacing:-0.005em;
-}
-.book-card h4{
-  font-family:var(--mono);
-  font-weight:500;
-  font-size:.72rem;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  color:var(--muted-dark);
-}
-body.theme-dark .book-card h4{ color:var(--muted-light); }
 
-.book-description{
-  font-size:.9rem;
-  line-height:1.55;
-  overflow-wrap:anywhere;
+.book-cover img {
+  object-fit: contain;
+  padding: .6rem;
 }
-@media (max-width: 560px){
-  .book-description{
-    font-size:.82rem;
-    display:-webkit-box;
-    -webkit-line-clamp:4;
-    -webkit-box-orient:vertical;
-    overflow:hidden;
+
+.book-card .book-content {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1rem 1rem 1.1rem;
+  flex: 1;
+}
+
+.book-card h3 {
+  font-family: var(--serif-display);
+  font-size: clamp(1rem, .93rem + .3vw, 1.16rem);
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+}
+
+.book-card h4 {
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted-dark);
+}
+
+body.theme-dark .book-card h4 {
+  color: var(--muted-light);
+}
+
+.book-description {
+  font-size: .9rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 560px) {
+  .book-description {
+    font-size: .82rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 
 /* meta rows become small chips instead of loose text */
-.book-info{
-  display:flex;
-  flex-wrap:wrap;
-  gap:.35rem;
-  margin:0;
-}
-.book-info span{
-  font-family:var(--mono);
-  font-size:.66rem;
-  letter-spacing:.04em;
-  padding:.25rem .5rem;
-  border-radius:999px;
-  border:1px solid color-mix(in oklab, var(--paper-line) 80%, transparent);
-  background:color-mix(in oklab, var(--parchment) 70%, transparent);
-  color:var(--muted-dark);
-  white-space:nowrap;
-}
-body.theme-dark .book-info span{
-  background:color-mix(in oklab, var(--ink-soft) 70%, transparent);
-  border-color:var(--ink-line);
-  color:var(--muted-light);
+.book-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin: 0;
 }
 
-.difficulty{
-  font-family:var(--mono);
-  font-size:.66rem;
-  letter-spacing:.05em;
-  text-transform:uppercase;
+.book-info span {
+  font-family: var(--mono);
+  font-size: .66rem;
+  letter-spacing: .04em;
+  padding: .25rem .5rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in oklab, var(--paper-line) 80%, transparent);
+  background: color-mix(in oklab, var(--parchment) 70%, transparent);
+  color: var(--muted-dark);
+  white-space: nowrap;
+}
+
+body.theme-dark .book-info span {
+  background: color-mix(in oklab, var(--ink-soft) 70%, transparent);
+  border-color: var(--ink-line);
+  color: var(--muted-light);
+}
+
+.difficulty {
+  font-family: var(--mono);
+  font-size: .66rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
 }
 
 /* read button — full width foot of the card, thumb-friendly */
-.book-card .read-btn{
-  margin-top:auto;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:.4rem;
-  min-height:44px;
-  padding:.6rem 1rem;
-  border-radius:2px;
-  font-family:var(--mono);
-  font-size:.74rem;
-  letter-spacing:.06em;
-  text-transform:uppercase;
-  text-decoration:none;
-  transition:background .25s ease, color .25s ease, transform .2s ease;
+.book-card .read-btn {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  min-height: 44px;
+  padding: .6rem 1rem;
+  border-radius: 2px;
+  font-family: var(--mono);
+  font-size: .74rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background .25s ease, color .25s ease, transform .2s ease;
 }
-@media (max-width: 560px){
-  .book-card .read-btn{ font-size:.66rem; padding:.55rem .5rem; }
+
+@media (max-width: 560px) {
+  .book-card .read-btn {
+    font-size: .66rem;
+    padding: .55rem .5rem;
+  }
 }
 
 /* ---------- 6. feature blocks ---------- */
 .book-month .featured-book,
-.spotlight .spotlight-card{
-  gap:clamp(1.2rem, 3vw, 2.4rem);
-  align-items:center;
+.spotlight .spotlight-card {
+  gap: clamp(1.2rem, 3vw, 2.4rem);
+  align-items: center;
 }
+
 .book-month img,
-.spotlight img{
-  border-radius:2px;
-  box-shadow:0 14px 34px rgba(20,22,31,.18);
+.spotlight img {
+  border-radius: 2px;
+  box-shadow: 0 14px 34px rgba(20, 22, 31, .18);
 }
 
 .quote blockquote,
-.quote p{
-  max-width:60ch;
-  margin-inline:auto;
-  text-wrap:pretty;
+.quote p {
+  max-width: 60ch;
+  margin-inline: auto;
+  text-wrap: pretty;
 }
 
 /* responsive tables / level cards never overflow */
-.reading-levels .levels{ gap:clamp(1rem,3vw,2.2rem); }
-main#main-content img{ max-width:100%; height:auto; }
+.reading-levels .levels {
+  gap: clamp(1rem, 3vw, 2.2rem);
+}
+
+main#main-content img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* ---------- 7. reveal on scroll (desktop + mobile, cheap) ---------- */
-.bk-reveal{
-  opacity:0;
-  transform:translateY(14px);
-  transition:opacity .55s ease, transform .55s cubic-bezier(.2,.7,.3,1);
-  will-change:opacity, transform;
+.bk-reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .55s ease, transform .55s cubic-bezier(.2, .7, .3, 1);
+  will-change: opacity, transform;
 }
-.bk-reveal.is-visible{ opacity:1; transform:none; }
 
-@media (prefers-reduced-motion: reduce){
-  .bk-reveal{ opacity:1 !important; transform:none !important; transition:none !important; }
-  .book-card, .book-cover img{ transition:none !important; }
+.bk-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bk-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .book-card,
+  .book-cover img {
+    transition: none !important;
+  }
 }
 
 /* ---------- 8. mobile safety net ----------
    Nothing on this page other than the main navbar is allowed
    to pin itself to the viewport on small screens.            */
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
+
   main#main-content [style*="position: sticky"],
-  main#main-content [style*="position:sticky"]{ position:static !important; }
-  .navbar{ padding-block:.7rem; }
-  .nav-links{ max-height:calc(100dvh - 64px); }
-  body{ overflow-x:hidden; }
-}
-
-/* =========================================================
-   BOOKS SIDE NAVIGATION
-   Hidden during hero. Appears after hero has passed.
-   ========================================================= */
-
-.books-side-nav {
-  position: fixed;
-  top: 110px;
-  left: 22px;
-  right: auto;
-  z-index: 900;
-
-  width: 190px;
-  max-height: calc(100vh - 140px);
-
-  margin: 0;
-
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-
-  transform: translateX(-30px);
-
-  transition:
-    opacity 0.35s ease,
-    visibility 0.35s ease,
-    transform 0.35s ease;
-
-  overflow-y: auto;
-  scrollbar-width: thin;
-}
-
-/* JavaScript adds this class after the hero */
-.books-side-nav.books-side-nav-visible {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transform: translateX(0);
-}
-
-
-/* =========================================================
-   INNER PANEL
-   ========================================================= */
-
-.books-side-nav-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-
-  padding: 0.8rem 0.65rem;
-
-  border: 1px solid color-mix(
-    in srgb,
-    var(--gold, #b88a44) 22%,
-    transparent
-  );
-
-  border-radius: 16px;
-
-  background: color-mix(
-    in srgb,
-    var(--background, #14100b) 92%,
-    transparent
-  );
-
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
-
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-
-/* =========================================================
-   LABEL
-   ========================================================= */
-
-.books-side-label {
-  display: block;
-
-  padding: 0.35rem 0.55rem 0.55rem;
-
-  color: var(--gold, #b88a44);
-
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-
-/* =========================================================
-   LINKS
-   ========================================================= */
-
-.books-side-nav a {
-  display: grid;
-  grid-template-columns: 1.8rem 1fr;
-
-  align-items: center;
-  gap: 0.45rem;
-
-  padding: 0.48rem 0.5rem;
-
-  color: inherit;
-
-  font-size: 0.78rem;
-  line-height: 1.25;
-
-  text-decoration: none;
-
-  border-radius: 6px;
-
-  transition:
-    background 0.22s ease,
-    color 0.22s ease,
-    transform 0.22s ease;
-}
-
-.books-side-nav a span {
-  font-size: 0.95rem;
-  text-align: center;
-}
-
-.books-side-nav a strong {
-  font-weight: 500;
-}
-
-
-/* =========================================================
-   HOVER / FOCUS
-   ========================================================= */
-
-.books-side-nav a:hover,
-.books-side-nav a:focus-visible {
-  background: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 10%,
-    transparent
-  );
-
-  transform: translateX(2px);
-
-  outline: none;
-}
-
-
-/* =========================================================
-   ACTIVE COLLECTION
-   ========================================================= */
-
-.books-side-nav a.is-active,
-.books-side-nav a[aria-current="true"] {
-  color: var(--gold, #b88a44);
-
-  background: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 16%,
-    transparent
-  );
-}
-
-.books-side-nav a.is-active strong,
-.books-side-nav a[aria-current="true"] strong {
-  font-weight: 700;
-}
-
-
-/* =========================================================
-   BOOK SECTION ANCHOR OFFSET
-   ========================================================= */
-
-#beginner,
-#ancient,
-#indian,
-#east-asian,
-#islamic,
-#enlightenment,
-#modern,
-#political-ethics {
-  scroll-margin-top: 100px;
-}
-
-
-/* =========================================================
-   LIGHT THEME
-   ========================================================= */
-
-body:not(.theme-dark) .books-side-nav-inner {
-  background: rgba(255, 255, 255, 0.98);
-
-  box-shadow:
-    0 12px 35px rgba(0, 0, 0, 0.10);
-}
-
-body:not(.theme-dark) .books-side-nav a {
-  color: #0a0a0a;
-}
-
-body:not(.theme-dark) .books-side-nav a:hover,
-body:not(.theme-dark) .books-side-nav a:focus-visible {
-  background: rgba(134, 102, 55, 0.14);
-  color: #0b0a0a;
-}
-
-body:not(.theme-dark) .books-side-nav a.is-active,
-body:not(.theme-dark) .books-side-nav a[aria-current="true"] {
-  color: #1d1710;
-  background: #b88a44;
-}
-
-
-/* =========================================================
-   TABLET / MOBILE
-   Same behavior as History:
-   side navigation is hidden.
-   ========================================================= */
-
-@media (max-width: 860px) {
-  .books-side-nav {
-    display: none;
-  }
-}
-
-
-/* =========================================================
-   REDUCED MOTION
-   ========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-  .books-side-nav,
-  .books-side-nav.books-side-nav-visible {
-    transition: none;
-    transform: none;
-  }
-}
-/* =========================================================
-   BOOKS SIDE NAV — TABLET + MOBILE
-   Completely hidden to prevent content overlap
-   ========================================================= */
-
-@media (max-width: 860px) {
-
-  .books-side-nav,
-  .books-side-nav.books-side-nav-visible {
-    display: none !important;
+  main#main-content [style*="position:sticky"] {
+    position: static !important;
   }
 
+  .navbar {
+    padding-block: .7rem;
+  }
+
+  .nav-links {
+    max-height: calc(100dvh - 64px);
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }

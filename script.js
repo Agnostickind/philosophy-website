@@ -9,166 +9,166 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ---------------------------------------------------------
-     1. MOBILE MENU
-     --------------------------------------------------------- */
+    /* ---------------------------------------------------------
+       1. MOBILE MENU
+       --------------------------------------------------------- */
 
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
-  if (menuToggle && navLinks) {
+    if (menuToggle && navLinks) {
 
-    const closeMenu = () => {
-      navLinks.classList.remove('open');
-      menuToggle.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-    };
+        const closeMenu = () => {
+            navLinks.classList.remove('open');
+            menuToggle.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        };
 
-    const toggleMenu = () => {
-      const isOpen = navLinks.classList.toggle('open');
-      menuToggle.classList.toggle('open', isOpen);
-      menuToggle.setAttribute('aria-expanded', String(isOpen));
-    };
+        const toggleMenu = () => {
+            const isOpen = navLinks.classList.toggle('open');
+            menuToggle.classList.toggle('open', isOpen);
+            menuToggle.setAttribute('aria-expanded', String(isOpen));
+        };
 
-    menuToggle.addEventListener('click', toggleMenu);
+        menuToggle.addEventListener('click', toggleMenu);
 
-    // Close the menu after tapping any link in it
-    navLinks.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', closeMenu);
-    });
-
-    // Close the menu automatically if the window is resized
-    // back up to desktop width while it's open
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 860) {
-        closeMenu();
-      }
-    });
-  }
-
-  /* ---------------------------------------------------------
-     2. ACTIVE NAV LINK
-     Highlights whichever nav/footer link matches the
-     current page, so visitors can see where they are.
-     --------------------------------------------------------- */
-
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-
-  document.querySelectorAll('.nav-links a, .footer-links a').forEach((link) => {
-    const href = link.getAttribute('href');
-    if (href === currentPage) {
-      link.classList.add('active');
-    }
-  });
-
-  /* ---------------------------------------------------------
-     3. BACK TO TOP BUTTON
-     Created once here rather than pasted into every HTML
-     file, so it stays in sync automatically across pages.
-     --------------------------------------------------------- */
-
-  const backToTop = document.createElement('button');
-  backToTop.className = 'back-to-top';
-  backToTop.setAttribute('aria-label', 'Back to top');
-  backToTop.innerHTML = '&uarr;';
-  document.body.appendChild(backToTop);
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 500) {
-      backToTop.classList.add('visible');
-    } else {
-      backToTop.classList.remove('visible');
-    }
-  });
-
-  backToTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-
-  /* ---------------------------------------------------------
-     4. CONTACT FORM
-     Only runs on contact.html (checks the form exists first).
-     Validates required fields + email format, shows inline
-     errors, then submits to Formspree via fetch() — this keeps
-     visitors on the styled page instead of redirecting them to
-     Formspree's default confirmation page.
-     --------------------------------------------------------- */
-
-  const contactForm = document.getElementById('contact-form');
-
-  if (contactForm) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const submitBtn = contactForm.querySelector('.form-submit');
-    const successMessage = contactForm.querySelector('.form-success');
-
-    const showError = (group, message) => {
-      group.classList.add('invalid');
-      group.querySelector('.form-error').textContent = message;
-    };
-
-    const clearError = (group) => {
-      group.classList.remove('invalid');
-      group.querySelector('.form-error').textContent = '';
-    };
-
-    contactForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-
-      let isValid = true;
-      successMessage.classList.remove('visible', 'error');
-
-      contactForm.querySelectorAll('.form-group').forEach((group) => {
-        const field = group.querySelector('input, textarea');
-        clearError(group);
-
-        if (!field.value.trim()) {
-          showError(group, 'This field is required.');
-          isValid = false;
-        } else if (field.type === 'email' && !emailPattern.test(field.value.trim())) {
-          showError(group, 'Please enter a valid email address.');
-          isValid = false;
-        }
-      }); 
-       
-      
-
-      if (!isValid) {
-        return;
-      }
-
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending...';
-
-      fetch(contactForm.action, {
-        method: 'POST',
-        body: new FormData(contactForm),
-        headers: { Accept: 'application/json' },
-      })
-        .then((response) => {
-          if (response.ok) {
-            successMessage.textContent = "Thanks — your message has been sent. I'll get back to you soon.";
-            successMessage.classList.add('visible');
-            contactForm.reset();
-          } else {
-            return response.json().then((data) => {
-              const errorText = data && data.errors
-                ? data.errors.map((e) => e.message).join(', ')
-                : 'Something went wrong — please try again or email directly.';
-              successMessage.textContent = errorText;
-              successMessage.classList.add('visible', 'error');
-            });
-          }
-        })
-        .catch(() => {
-          successMessage.textContent = 'Network error — please check your connection and try again.';
-          successMessage.classList.add('visible', 'error');
-        })
-        .finally(() => {
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Send Message';
+        // Close the menu after tapping any link in it
+        navLinks.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', closeMenu);
         });
+
+        // Close the menu automatically if the window is resized
+        // back up to desktop width while it's open
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 860) {
+                closeMenu();
+            }
+        });
+    }
+
+    /* ---------------------------------------------------------
+       2. ACTIVE NAV LINK
+       Highlights whichever nav/footer link matches the
+       current page, so visitors can see where they are.
+       --------------------------------------------------------- */
+
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+    document.querySelectorAll('.nav-links a, .footer-links a').forEach((link) => {
+        const href = link.getAttribute('href');
+        if (href === currentPage) {
+            link.classList.add('active');
+        }
     });
-  }
+
+    /* ---------------------------------------------------------
+       3. BACK TO TOP BUTTON
+       Created once here rather than pasted into every HTML
+       file, so it stays in sync automatically across pages.
+       --------------------------------------------------------- */
+
+    const backToTop = document.createElement('button');
+    backToTop.className = 'back-to-top';
+    backToTop.setAttribute('aria-label', 'Back to top');
+    backToTop.innerHTML = '&uarr;';
+    document.body.appendChild(backToTop);
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    /* ---------------------------------------------------------
+       4. CONTACT FORM
+       Only runs on contact.html (checks the form exists first).
+       Validates required fields + email format, shows inline
+       errors, then submits to Formspree via fetch() — this keeps
+       visitors on the styled page instead of redirecting them to
+       Formspree's default confirmation page.
+       --------------------------------------------------------- */
+
+    const contactForm = document.getElementById('contact-form');
+
+    if (contactForm) {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const submitBtn = contactForm.querySelector('.form-submit');
+        const successMessage = contactForm.querySelector('.form-success');
+
+        const showError = (group, message) => {
+            group.classList.add('invalid');
+            group.querySelector('.form-error').textContent = message;
+        };
+
+        const clearError = (group) => {
+            group.classList.remove('invalid');
+            group.querySelector('.form-error').textContent = '';
+        };
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            let isValid = true;
+            successMessage.classList.remove('visible', 'error');
+
+            contactForm.querySelectorAll('.form-group').forEach((group) => {
+                const field = group.querySelector('input, textarea');
+                clearError(group);
+
+                if (!field.value.trim()) {
+                    showError(group, 'This field is required.');
+                    isValid = false;
+                } else if (field.type === 'email' && !emailPattern.test(field.value.trim())) {
+                    showError(group, 'Please enter a valid email address.');
+                    isValid = false;
+                }
+            });
+
+
+
+            if (!isValid) {
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: { Accept: 'application/json' },
+            })
+                .then((response) => {
+                    if (response.ok) {
+                        successMessage.textContent = "Thanks — your message has been sent. I'll get back to you soon.";
+                        successMessage.classList.add('visible');
+                        contactForm.reset();
+                    } else {
+                        return response.json().then((data) => {
+                            const errorText = data && data.errors
+                                ? data.errors.map((e) => e.message).join(', ')
+                                : 'Something went wrong — please try again or email directly.';
+                            successMessage.textContent = errorText;
+                            successMessage.classList.add('visible', 'error');
+                        });
+                    }
+                })
+                .catch(() => {
+                    successMessage.textContent = 'Network error — please check your connection and try again.';
+                    successMessage.classList.add('visible', 'error');
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Send Message';
+                });
+        });
+    }
 
 });
 
@@ -190,58 +190,58 @@ window.addEventListener("scroll", () => {
     });
 
 
-const newsletterForm = document.getElementById('newsletter-form');
+    const newsletterForm = document.getElementById('newsletter-form');
 
-if (newsletterForm) {
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const submitBtn = newsletterForm.querySelector('.form-submit');
-  const successMessage = newsletterForm.querySelector('.form-success');
+    if (newsletterForm) {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const submitBtn = newsletterForm.querySelector('.form-submit');
+        const successMessage = newsletterForm.querySelector('.form-success');
 
-  newsletterForm.addEventListener('submit', (event) => {
-    event.preventDefault();
+        newsletterForm.addEventListener('submit', (event) => {
+            event.preventDefault();
 
-    const emailField = newsletterForm.querySelector('input[type="email"]');
-    const group = emailField.closest('.form-group');
-    const errorSpan = group.querySelector('.form-error');
+            const emailField = newsletterForm.querySelector('input[type="email"]');
+            const group = emailField.closest('.form-group');
+            const errorSpan = group.querySelector('.form-error');
 
-    successMessage.classList.remove('visible', 'error');
-    group.classList.remove('invalid');
-    errorSpan.textContent = '';
+            successMessage.classList.remove('visible', 'error');
+            group.classList.remove('invalid');
+            errorSpan.textContent = '';
 
-    if (!emailField.value.trim() || !emailPattern.test(emailField.value.trim())) {
-      group.classList.add('invalid');
-      errorSpan.textContent = 'Please enter a valid email address.';
-      return;
+            if (!emailField.value.trim() || !emailPattern.test(emailField.value.trim())) {
+                group.classList.add('invalid');
+                errorSpan.textContent = 'Please enter a valid email address.';
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Subscribing...';
+
+            fetch(newsletterForm.action, {
+                method: 'POST',
+                body: new FormData(newsletterForm),
+                headers: { Accept: 'application/json' },
+            })
+                .then((response) => {
+                    if (response.ok) {
+                        successMessage.textContent = "Thanks — you're subscribed!";
+                        successMessage.classList.add('visible');
+                        newsletterForm.reset();
+                    } else {
+                        successMessage.textContent = 'Something went wrong — please try again.';
+                        successMessage.classList.add('visible', 'error');
+                    }
+                })
+                .catch(() => {
+                    successMessage.textContent = 'Network error — please check your connection and try again.';
+                    successMessage.classList.add('visible', 'error');
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Subscribe';
+                });
+        });
     }
-
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Subscribing...';
-
-    fetch(newsletterForm.action, {
-      method: 'POST',
-      body: new FormData(newsletterForm),
-      headers: { Accept: 'application/json' },
-    })
-      .then((response) => {
-        if (response.ok) {
-          successMessage.textContent = "Thanks — you're subscribed!";
-          successMessage.classList.add('visible');
-          newsletterForm.reset();
-        } else {
-          successMessage.textContent = 'Something went wrong — please try again.';
-          successMessage.classList.add('visible', 'error');
-        }
-      })
-      .catch(() => {
-        successMessage.textContent = 'Network error — please check your connection and try again.';
-        successMessage.classList.add('visible', 'error');
-      })
-      .finally(() => {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Subscribe';
-      });
-  });
-}
     // Remove active highlight after leaving the last navigation section
     const lastSection = sections[sections.length - 1];
 
@@ -305,7 +305,7 @@ if (searchToggle && searchBox && searchInput) {
 const searchResults = document.querySelector("#search-results");
 
 const searchData = [
-   
+
     /* ================= MAIN PAGES ================= */
 
     {
@@ -669,487 +669,465 @@ const searchData = [
 
     /* ================= SCHOOLS OF PHILOSOPHY ================= */
 
-/* ---------- ANCIENT GREEK ---------- */
-
-{
-    title: "Stoicism",
-    category: "Greek Philosophy",
-    description: "A school of ancient Greek and Roman philosophy focused on virtue, reason, nature, and distinguishing what is within our control.",
-    keywords: "stoicism stoic zeno seneca epictetus marcus aurelius virtue control nature ethics tranquility",
-    url: "greek-schools.html#stoicism"
-},
-
-{
-    title: "Epicureanism",
-    category: "Greek Philosophy",
-    description: "A school of ancient Greek philosophy centered on tranquility, friendship, modest living, and freedom from unnecessary fear.",
-    keywords: "epicureanism epicurus garden ataraxia pleasure happiness friendship atoms death gods materialism",
-    url: "greek-schools.html#epicureanism"
-},
-
-{
-    title: "Cynicism",
-    category: "Greek Philosophy",
-    description: "An ancient Greek school emphasizing virtue, simplicity, self-sufficiency, and freedom from social conventions.",
-    keywords: "cynicism cynic diogenes antisthenes asceticism nature simplicity freedom wealth social convention",
-    url: "greek-schools.html#cynicism"
-},
-
-{
-    title: "Skepticism",
-    category: "Greek Philosophy",
-    description: "An ancient philosophical tradition questioning whether certain knowledge is attainable and emphasizing suspension of judgment.",
-    keywords: "skepticism pyrrhonism pyrrho doubt uncertainty epoche suspension judgment knowledge ataraxia",
-    url: "greek-schools.html#skepticism"
-},
-
-{
-    title: "Peripateticism",
-    category: "Greek Philosophy",
-    description: "The philosophical school founded by Aristotle at the Lyceum, emphasizing systematic inquiry, observation, logic, and natural philosophy.",
-    keywords: "peripateticism aristotle lyceum aristotelianism observation logic biology physics metaphysics golden mean",
-    url: "greek-schools.html#peripateticism"
-},
-
-{
-    title: "Neoplatonism",
-    category: "Greek Philosophy",
-    description: "A philosophical tradition associated with Plotinus that describes reality as emanating from the transcendent One.",
-    keywords: "neoplatonism plotinus plato one emanation soul intellect metaphysics porphyry",
-    url: "greek-schools.html#neoplatonsim"
-},
-
-{
-    title: "Atomism",
-    category: "Greek Philosophy",
-    description: "An ancient natural philosophy holding that physical reality consists of indivisible atoms moving through empty space.",
-    keywords: "atomism atoms democritus leucippus epicurus materialism void matter physics natural philosophy",
-    url: "greek-schools.html#atomism"
-},
-
-{
-    title: "Sophism",
-    category: "Greek Philosophy",
-    description: "A movement of traveling teachers in ancient Greece associated with rhetoric, argumentation, practical education, and relativism.",
-    keywords: "sophism sophists protagoras rhetoric relativism argumentation education democracy man measure all things",
-    url: "greek-schools.html#sophsim"
-},
-
-
-/* ---------- INDIAN ---------- */
-
-{
-    title: "Buddhism",
-    category: "Indian Philosophy",
-    description: "An ancient Indian philosophical tradition centered on suffering, the Middle Way, mindfulness, and liberation.",
-    keywords: "buddhism buddha gautama four noble truths eightfold path dukkha nirvana anatta impermanence",
-    url: "indian-schools.html#buddhism"
-},
-
-{
-    title: "Vedanta",
-    category: "Indian Philosophy",
-    description: "An orthodox Indian philosophical tradition exploring Brahman, Atman, reality, karma, and liberation.",
-    keywords: "vedanta hindu philosophy brahman atman upanishads karma samsara moksha advaita dvaita",
-    url: "indian-schools.html#vedanta"
-},
-
-{
-    title: "Jainism",
-    category: "Indian Philosophy",
-    description: "An ancient Indian tradition emphasizing non-violence, asceticism, multiple perspectives, and liberation.",
-    keywords: "jainism jain mahavira ahimsa non violence anekantavada karma soul liberation asceticism",
-    url: "indian-schools.html#jainism"
-},
-
-{
-    title: "Advaita Vedanta",
-    category: "Indian Philosophy",
-    description: "A non-dualistic school of Vedanta teaching the fundamental unity of Atman and Brahman.",
-    keywords: "advaita advaita vedanta shankara shankaracharya non dualism brahman atman maya avidya jnana",
-    url: "indian-schools.html#advaita-vedanta"
-},
-
-{
-    title: "Zen Buddhism",
-    category: "Indian Philosophy",
-    description: "A Buddhist tradition emphasizing direct experience, meditation, mindfulness, and awakening.",
-    keywords: "zen zen buddhism buddhism chan meditation zazen satori kensho koan mindfulness bodhidharma",
-    url: "indian-schools.html#zen--buddhism"
-},
-
-{
-    title: "Samkhya",
-    category: "Indian Philosophy",
-    description: "An ancient dualistic Indian school explaining reality through the distinction between consciousness and material nature.",
-    keywords: "samkhya sankhya purusha prakriti gunas sattva rajas tamas dualism kapila consciousness matter",
-    url: "indian-schools.html#samkhya"
-},
-
-{
-    title: "Yoga",
-    category: "Indian Philosophy",
-    description: "A classical Indian philosophical school associated with Patanjali, meditation, discipline, and spiritual liberation.",
-    keywords: "yoga patanjali yoga sutras ashtanga meditation samadhi dhyana pranayama moksha consciousness",
-    url: "indian-schools.html#yoga"
-},
-
-{
-    title: "Nyaya",
-    category: "Indian Philosophy",
-    description: "An Indian school of logic and epistemology focused on valid knowledge, reasoning, evidence, and debate.",
-    keywords: "nyaya logic epistemology pramana inference perception reasoning debate knowledge gautama",
-    url: "indian-schools.html#nyaya"
-},
-
-{
-    title: "Vaisheshika",
-    category: "Indian Philosophy",
-    description: "An ancient Indian school of natural philosophy, metaphysics, categorization, and atomism.",
-    keywords: "vaisheshika vaisesika kanada atomism atoms paramanu categories metaphysics natural philosophy",
-    url: "indian-schools.html#vaisheshika"
-},
-
-{
-    title: "Mimamsa",
-    category: "Indian Philosophy",
-    description: "An orthodox Indian school concerned with Vedic ritual, duty, interpretation, and the philosophy of language.",
-    keywords: "mimamsa purva mimamsa jaimini vedas dharma ritual language hermeneutics apurva",
-    url: "indian-schools.html#mimamsa"
-},
-
-{
-    title: "Charvaka",
-    category: "Indian Philosophy",
-    description: "An ancient Indian materialist and skeptical school emphasizing direct perception and rejecting religious dogma.",
-    keywords: "charvaka lokayata materialism skepticism empiricism perception atheism hedonism india",
-    url: "indian-schools.html#charvaka"
-},
-
-
-/* ---------- CHINESE & JAPANESE ---------- */
-
-{
-    title: "Confucianism",
-    category: "Chinese Philosophy",
-    description: "A Chinese ethical and philosophical tradition emphasizing social harmony, moral cultivation, education, and filial piety.",
-    keywords: "confucianism confucius mencius xunzi ren li xiao filial piety ethics education china",
-    url: "chinese-japanese-schools.html#confucianism"
-},
-
-{
-    title: "Taoism",
-    category: "Chinese Philosophy",
-    description: "A Chinese philosophical tradition centered on the Dao, naturalness, harmony, and effortless action.",
-    keywords: "taoism daoism laozi lao tzu zhuangzi dao wu wei yin yang nature harmony china",
-    url: "chinese-japanese-schools.html#taoism"
-},
-
-{
-    title: "Legalism",
-    category: "Chinese Philosophy",
-    description: "A Chinese political philosophy emphasizing strict laws, centralized authority, rewards, and punishments.",
-    keywords: "legalism fajia han feizi shang yang law government state china politics centralized power",
-    url: "chinese-japanese-schools.html#legalism"
-},
-
-{
-    title: "Mohism",
-    category: "Chinese Philosophy",
-    description: "A Chinese philosophical school founded by Mozi emphasizing universal love, meritocracy, and practical social benefit.",
-    keywords: "mohism mozi jianai universal love utilitarianism meritocracy anti fatalism china",
-    url: "chinese-japanese-schools.html#mohism"
-},
-
-{
-    title: "Neo-Confucianism",
-    category: "Chinese Philosophy",
-    description: "A revival of Confucian thought integrating metaphysical ideas concerning Li, Qi, morality, and the cosmos.",
-    keywords: "neo confucianism confucianism zhu xi wang yangming li qi chinese philosophy",
-    url: "chinese-japanese-schools.html#neo-confucianism"
-},
-
-{
-    title: "Kyoto School",
-    category: "Japanese Philosophy",
-    description: "A modern Japanese philosophical movement combining Western philosophy with Zen and Mahayana Buddhist thought.",
-    keywords: "kyoto school nishida nishitani zen buddhism absolute nothingness japan hegel heidegger",
-    url: "chinese-japanese-schools.html#kyoto-school"
-},
-
-{
-    title: "Bushidō",
-    category: "Japanese Philosophy",
-    description: "The ethical code of the Japanese samurai emphasizing loyalty, honor, discipline, courage, and integrity.",
-    keywords: "bushido samurai warrior honor loyalty courage discipline japan ethics",
-    url: "chinese-japanese-schools.html#bushido"
-},
-
-{
-    title: "Japanese Zen",
-    category: "Japanese Philosophy",
-    description: "A Japanese Zen tradition emphasizing meditation, mindfulness, direct awakening, and disciplined practice.",
-    keywords: "japanese zen zen rinzai soto dogen eisai zazen satori kensho shikantaza japan",
-    url: "chinese-japanese-schools.html#japanese-zen"
-},
-
-
-/* ---------- ISLAMIC ---------- */
-
-{
-    title: "Avicennism",
-    category: "Islamic Philosophy",
-    description: "The philosophical system of Ibn Sina combining Aristotelian logic, Neoplatonic metaphysics, and Islamic theology.",
-    keywords: "avicennism avicenna ibn sina falsafa essence existence necessary existent metaphysics aristotle neoplatonism",
-    url: "islamic-schools.html#avicennism"
-},
-
-{
-    title: "Averroism",
-    category: "Islamic Philosophy",
-    description: "The philosophical tradition associated with Ibn Rushd and his defense of Aristotelian rationalism.",
-    keywords: "averroism averroes ibn rushd aristotle rationalism reason religion philosophy islamic spain",
-    url: "islamic-schools.html#averroism"
-},
-
-{
-    title: "Illuminationism",
-    category: "Islamic Philosophy",
-    description: "Suhrawardi's philosophical school combining rational analysis with intuitive spiritual knowledge and a metaphysics of light.",
-    keywords: "illuminationism sufi suhrawardi hikmat al ishraq light darkness knowledge presence islamic philosophy",
-    url: "islamic-schools.html#illuminationism"
-},
-
-{
-    title: "Sufism",
-    category: "Islamic Philosophy",
-    description: "The mystical tradition of Islam emphasizing spiritual purification, divine love, remembrance, and direct experience.",
-    keywords: "sufism tasawwuf islamic mysticism rumi ibn arabi fana baqa dhikr divine love unity being",
-    url: "islamic-schools.html#sufism"
-},
-
-{
-    title: "Kalam",
-    category: "Islamic Philosophy",
-    description: "The Islamic tradition of speculative theology using dialectical reasoning to defend religious doctrines.",
-    keywords: "kalam islamic theology mutakallimun ashari maturidi mutazila occasionalism theology reason",
-    url: "islamic-schools.html#kalam"
-},
-
-{
-    title: "Transcendent Theosophy",
-    category: "Islamic Philosophy",
-    description: "Mulla Sadra's synthesis of Avicennian philosophy, Illuminationism, Sufi thought, and Shi'ite theology.",
-    keywords: "transcendent theosophy mulla sadra hikmat al muta aliyah existence asalat al wujud substantial motion islamic philosophy",
-    url: "islamic-schools.html#transcendent-theosophy"
-},
-
-
-/* ---------- ENLIGHTENMENT ---------- */
-
-{
-    title: "Rationalism",
-    category: "Enlightenment Philosophy",
-    description: "An epistemological framework emphasizing reason, innate ideas, deduction, and a priori knowledge.",
-    keywords: "rationalism descartes spinoza leibniz reason innate ideas deduction a priori knowledge",
-    url: "enlightenment-schools.html#rationalism"
-},
-
-{
-    title: "Empiricism",
-    category: "Enlightenment Philosophy",
-    description: "An epistemological tradition holding that knowledge develops through sensory experience and observation.",
-    keywords: "empiricism locke hume berkeley tabula rasa experience senses induction a posteriori",
-    url: "enlightenment-schools.html#empiricism"
-},
-
-{
-    title: "Idealism",
-    category: "Enlightenment Philosophy",
-    description: "A philosophical movement emphasizing the role of mind, consciousness, and conceptual structures in reality.",
-    keywords: "idealism kant hegel schopenhauer german idealism transcendental idealism absolute idealism mind",
-    url: "enlightenment-schools.html#idealism"
-},
-
-{
-    title: "Social Contract Theory",
-    category: "Enlightenment Philosophy",
-    description: "A political theory explaining political authority through an agreement among individuals.",
-    keywords: "social contract hobbes locke rousseau state nature natural rights consent government general will",
-    url: "enlightenment-schools.html#social-contact-theory"
-},
-
-{
-    title: "Materialism",
-    category: "Enlightenment Philosophy",
-    description: "The philosophical position that reality is fundamentally physical or material.",
-    keywords: "materialism physicalism matter atoms consciousness marx dialectical materialism lucretius",
-    url: "enlightenment-schools.html#materialism"
-},
-
-{
-    title: "Deism",
-    category: "Enlightenment Philosophy",
-    description: "An Enlightenment theological philosophy affirming a creator through reason and nature while rejecting revelation and miracles.",
-    keywords: "deism deist god creator watchmaker reason enlightenment thomas paine jefferson miracles religion",
-    url: "enlightenment-schools.html#deism"
-},
-
-{
-    title: "Natural Law Theory",
-    category: "Enlightenment Philosophy",
-    description: "A philosophical theory holding that universal moral principles can be discovered through human reason and nature.",
-    keywords: "natural law morality reason universal rights aquinas grotius locke ethics law human rights",
-    url: "enlightenment-schools.html#natural-law-theory"
-},
-
-{
-    title: "Pantheism",
-    category: "Enlightenment Philosophy",
-    description: "The view that God and nature or the universe are fundamentally identical.",
-    keywords: "pantheism spinoza god nature monism deus sive natura determinism",
-    url: "enlightenment-schools.html#pantheism"
-},
-
-{
-    title: "Classical Liberalism",
-    category: "Enlightenment Philosophy",
-    description: "A political and economic philosophy emphasizing individual liberty, civil rights, limited government, and free markets.",
-    keywords: "classical liberalism locke adam smith john stuart mill liberty rights free market capitalism government",
-    url: "enlightenment-schools.html#classical-liberalism"
-},
-
-{
-    title: "Deontology",
-    category: "Enlightenment Philosophy",
-    description: "An ethical theory that judges actions according to duties and moral rules rather than consequences.",
-    keywords: "deontology kant duty categorical imperative ethics moral rules obligation consequences",
-    url: "enlightenment-schools.html#deontology"
-},
-
-
-/* ---------- MODERN & CONTEMPORARY ---------- */
-
-{
-    title: "Existentialism",
-    category: "Modern Philosophy",
-    description: "A movement emphasizing individual existence, freedom, responsibility, choice, and the creation of meaning.",
-    keywords: "existentialism sartre beauvoir camus kierkegaard freedom meaning existence essence authenticity angst",
-    url: "modern-schools.html#existentialism"
-},
-
-{
-    title: "Nihilism",
-    category: "Modern Philosophy",
-    description: "A philosophical position questioning objective meaning, purpose, value, and moral truth.",
-    keywords: "nihilism nietzsche meaning purpose morality values death god existentialism",
-    url: "modern-schools.html#nihilism"
-},
-
-{
-    title: "Pragmatism",
-    category: "Modern Philosophy",
-    description: "A philosophical tradition evaluating ideas according to their practical consequences and usefulness.",
-    keywords: "pragmatism peirce william james john dewey practical consequences instrumentalism truth fallibilism",
-    url: "modern-schools.html#pragmatism"
-},
-
-{
-    title: "Utilitarianism",
-    category: "Modern Philosophy",
-    description: "An ethical theory judging actions by their consequences and their ability to maximize overall happiness.",
-    keywords: "utilitarianism bentham mill happiness pleasure pain consequentialism greatest happiness ethics",
-    url: "modern-schools.html#utilitariansim"
-},
-
-{
-    title: "Phenomenology",
-    category: "Modern Philosophy",
-    description: "A philosophical movement studying conscious experience and phenomena from the first-person perspective.",
-    keywords: "phenomenology husserl heidegger merleau ponty consciousness experience intentionality epoche lifeworld",
-    url: "modern-schools.html#phenomenology"
-},
-
-{
-    title: "Analytic Philosophy",
-    category: "Modern Philosophy",
-    description: "A tradition emphasizing logical rigor, clarity, language, and conceptual analysis.",
-    keywords: "analytic philosophy russell wittgenstein moore logic language linguistic turn logical atomism",
-    url: "modern-schools.html#analytic-philosophy"
-},
-
-{
-    title: "Marxism",
-    category: "Modern Philosophy",
-    description: "A philosophical, political, and economic framework centered on historical materialism and class struggle.",
-    keywords: "marxism marx engels capitalism class struggle historical materialism dialectical materialism bourgeoisie proletariat",
-    url: "modern-schools.html#marxism"
-},
-
-{
-    title: "Absurdism",
-    category: "Modern Philosophy",
-    description: "A philosophical perspective examining the conflict between humanity's search for meaning and an indifferent universe.",
-    keywords: "absurdism camus sisyphus absurd meaning revolt freedom passion existentialism",
-    url: "modern-schools.html#absurdism"
-},
-
-{
-    title: "Structuralism",
-    category: "Modern Philosophy",
-    description: "An intellectual movement analyzing human culture, language, and behavior through underlying structures.",
-    keywords: "structuralism saussure levi strauss barthes language signs culture binary oppositions structures",
-    url: "modern-schools.html#structuralism"
-},
-
-{
-    title: "Postmodernism",
-    category: "Modern Philosophy",
-    description: "A movement skeptical of grand narratives, absolute truth, and claims of universal certainty.",
-    keywords: "postmodernism lyotard foucault baudrillard metanarratives power knowledge hyperreality social construction",
-    url: "modern-schools.html#psotmodernism"
-},
-
-{
-    title: "Logical Positivism",
-    category: "Modern Philosophy",
-    description: "A philosophical movement emphasizing empirical verification and formal logical analysis.",
-    keywords: "logical positivism logical empiricism vienna circle verification principle ayer carnap science metaphysics",
-    url: "modern-schools.html#logical-positivism"
-},
-
-{
-    title: "Critical Theory",
-    category: "Modern Philosophy",
-    description: "A philosophical framework critically examining systems of power, domination, ideology, and social structures.",
-    keywords: "critical theory frankfurt school horkheimer adorno marcuse marxism ideology culture industry emancipation",
-    url: "modern-schools.html#critical-theory"
-},
+    /* ---------- ANCIENT GREEK ---------- */
+
+    {
+        title: "Stoicism",
+        category: "Greek Philosophy",
+        description: "A school of ancient Greek and Roman philosophy focused on virtue, reason, nature, and distinguishing what is within our control.",
+        keywords: "stoicism stoic zeno seneca epictetus marcus aurelius virtue control nature ethics tranquility",
+        url: "greek-schools.html#stoicism"
+    },
+
+    {
+        title: "Epicureanism",
+        category: "Greek Philosophy",
+        description: "A school of ancient Greek philosophy centered on tranquility, friendship, modest living, and freedom from unnecessary fear.",
+        keywords: "epicureanism epicurus garden ataraxia pleasure happiness friendship atoms death gods materialism",
+        url: "greek-schools.html#epicureanism"
+    },
+
+    {
+        title: "Cynicism",
+        category: "Greek Philosophy",
+        description: "An ancient Greek school emphasizing virtue, simplicity, self-sufficiency, and freedom from social conventions.",
+        keywords: "cynicism cynic diogenes antisthenes asceticism nature simplicity freedom wealth social convention",
+        url: "greek-schools.html#cynicism"
+    },
+
+    {
+        title: "Skepticism",
+        category: "Greek Philosophy",
+        description: "An ancient philosophical tradition questioning whether certain knowledge is attainable and emphasizing suspension of judgment.",
+        keywords: "skepticism pyrrhonism pyrrho doubt uncertainty epoche suspension judgment knowledge ataraxia",
+        url: "greek-schools.html#skepticism"
+    },
+
+    {
+        title: "Peripateticism",
+        category: "Greek Philosophy",
+        description: "The philosophical school founded by Aristotle at the Lyceum, emphasizing systematic inquiry, observation, logic, and natural philosophy.",
+        keywords: "peripateticism aristotle lyceum aristotelianism observation logic biology physics metaphysics golden mean",
+        url: "greek-schools.html#peripateticism"
+    },
+
+    {
+        title: "Neoplatonism",
+        category: "Greek Philosophy",
+        description: "A philosophical tradition associated with Plotinus that describes reality as emanating from the transcendent One.",
+        keywords: "neoplatonism plotinus plato one emanation soul intellect metaphysics porphyry",
+        url: "greek-schools.html#neoplatonsim"
+    },
+
+    {
+        title: "Atomism",
+        category: "Greek Philosophy",
+        description: "An ancient natural philosophy holding that physical reality consists of indivisible atoms moving through empty space.",
+        keywords: "atomism atoms democritus leucippus epicurus materialism void matter physics natural philosophy",
+        url: "greek-schools.html#atomism"
+    },
+
+    {
+        title: "Sophism",
+        category: "Greek Philosophy",
+        description: "A movement of traveling teachers in ancient Greece associated with rhetoric, argumentation, practical education, and relativism.",
+        keywords: "sophism sophists protagoras rhetoric relativism argumentation education democracy man measure all things",
+        url: "greek-schools.html#sophsim"
+    },
+
+
+    /* ---------- INDIAN ---------- */
+
+    {
+        title: "Buddhism",
+        category: "Indian Philosophy",
+        description: "An ancient Indian philosophical tradition centered on suffering, the Middle Way, mindfulness, and liberation.",
+        keywords: "buddhism buddha gautama four noble truths eightfold path dukkha nirvana anatta impermanence",
+        url: "indian-schools.html#buddhism"
+    },
+
+    {
+        title: "Vedanta",
+        category: "Indian Philosophy",
+        description: "An orthodox Indian philosophical tradition exploring Brahman, Atman, reality, karma, and liberation.",
+        keywords: "vedanta hindu philosophy brahman atman upanishads karma samsara moksha advaita dvaita",
+        url: "indian-schools.html#vedanta"
+    },
+
+    {
+        title: "Jainism",
+        category: "Indian Philosophy",
+        description: "An ancient Indian tradition emphasizing non-violence, asceticism, multiple perspectives, and liberation.",
+        keywords: "jainism jain mahavira ahimsa non violence anekantavada karma soul liberation asceticism",
+        url: "indian-schools.html#jainism"
+    },
+
+    {
+        title: "Advaita Vedanta",
+        category: "Indian Philosophy",
+        description: "A non-dualistic school of Vedanta teaching the fundamental unity of Atman and Brahman.",
+        keywords: "advaita advaita vedanta shankara shankaracharya non dualism brahman atman maya avidya jnana",
+        url: "indian-schools.html#advaita-vedanta"
+    },
+
+    {
+        title: "Zen Buddhism",
+        category: "Indian Philosophy",
+        description: "A Buddhist tradition emphasizing direct experience, meditation, mindfulness, and awakening.",
+        keywords: "zen zen buddhism buddhism chan meditation zazen satori kensho koan mindfulness bodhidharma",
+        url: "indian-schools.html#zen--buddhism"
+    },
+
+    {
+        title: "Samkhya",
+        category: "Indian Philosophy",
+        description: "An ancient dualistic Indian school explaining reality through the distinction between consciousness and material nature.",
+        keywords: "samkhya sankhya purusha prakriti gunas sattva rajas tamas dualism kapila consciousness matter",
+        url: "indian-schools.html#samkhya"
+    },
+
+    {
+        title: "Yoga",
+        category: "Indian Philosophy",
+        description: "A classical Indian philosophical school associated with Patanjali, meditation, discipline, and spiritual liberation.",
+        keywords: "yoga patanjali yoga sutras ashtanga meditation samadhi dhyana pranayama moksha consciousness",
+        url: "indian-schools.html#yoga"
+    },
+
+    {
+        title: "Nyaya",
+        category: "Indian Philosophy",
+        description: "An Indian school of logic and epistemology focused on valid knowledge, reasoning, evidence, and debate.",
+        keywords: "nyaya logic epistemology pramana inference perception reasoning debate knowledge gautama",
+        url: "indian-schools.html#nyaya"
+    },
+
+    {
+        title: "Vaisheshika",
+        category: "Indian Philosophy",
+        description: "An ancient Indian school of natural philosophy, metaphysics, categorization, and atomism.",
+        keywords: "vaisheshika vaisesika kanada atomism atoms paramanu categories metaphysics natural philosophy",
+        url: "indian-schools.html#vaisheshika"
+    },
+
+    {
+        title: "Mimamsa",
+        category: "Indian Philosophy",
+        description: "An orthodox Indian school concerned with Vedic ritual, duty, interpretation, and the philosophy of language.",
+        keywords: "mimamsa purva mimamsa jaimini vedas dharma ritual language hermeneutics apurva",
+        url: "indian-schools.html#mimamsa"
+    },
+
+    {
+        title: "Charvaka",
+        category: "Indian Philosophy",
+        description: "An ancient Indian materialist and skeptical school emphasizing direct perception and rejecting religious dogma.",
+        keywords: "charvaka lokayata materialism skepticism empiricism perception atheism hedonism india",
+        url: "indian-schools.html#charvaka"
+    },
+
+
+    /* ---------- CHINESE & JAPANESE ---------- */
+
+    {
+        title: "Confucianism",
+        category: "Chinese Philosophy",
+        description: "A Chinese ethical and philosophical tradition emphasizing social harmony, moral cultivation, education, and filial piety.",
+        keywords: "confucianism confucius mencius xunzi ren li xiao filial piety ethics education china",
+        url: "chinese-japanese-schools.html#confucianism"
+    },
+
+    {
+        title: "Taoism",
+        category: "Chinese Philosophy",
+        description: "A Chinese philosophical tradition centered on the Dao, naturalness, harmony, and effortless action.",
+        keywords: "taoism daoism laozi lao tzu zhuangzi dao wu wei yin yang nature harmony china",
+        url: "chinese-japanese-schools.html#taoism"
+    },
+
+    {
+        title: "Legalism",
+        category: "Chinese Philosophy",
+        description: "A Chinese political philosophy emphasizing strict laws, centralized authority, rewards, and punishments.",
+        keywords: "legalism fajia han feizi shang yang law government state china politics centralized power",
+        url: "chinese-japanese-schools.html#legalism"
+    },
+
+    {
+        title: "Mohism",
+        category: "Chinese Philosophy",
+        description: "A Chinese philosophical school founded by Mozi emphasizing universal love, meritocracy, and practical social benefit.",
+        keywords: "mohism mozi jianai universal love utilitarianism meritocracy anti fatalism china",
+        url: "chinese-japanese-schools.html#mohism"
+    },
+
+    {
+        title: "Neo-Confucianism",
+        category: "Chinese Philosophy",
+        description: "A revival of Confucian thought integrating metaphysical ideas concerning Li, Qi, morality, and the cosmos.",
+        keywords: "neo confucianism confucianism zhu xi wang yangming li qi chinese philosophy",
+        url: "chinese-japanese-schools.html#neo-confucianism"
+    },
+
+    {
+        title: "Kyoto School",
+        category: "Japanese Philosophy",
+        description: "A modern Japanese philosophical movement combining Western philosophy with Zen and Mahayana Buddhist thought.",
+        keywords: "kyoto school nishida nishitani zen buddhism absolute nothingness japan hegel heidegger",
+        url: "chinese-japanese-schools.html#kyoto-school"
+    },
+
+    {
+        title: "Bushidō",
+        category: "Japanese Philosophy",
+        description: "The ethical code of the Japanese samurai emphasizing loyalty, honor, discipline, courage, and integrity.",
+        keywords: "bushido samurai warrior honor loyalty courage discipline japan ethics",
+        url: "chinese-japanese-schools.html#bushido"
+    },
+
+    {
+        title: "Japanese Zen",
+        category: "Japanese Philosophy",
+        description: "A Japanese Zen tradition emphasizing meditation, mindfulness, direct awakening, and disciplined practice.",
+        keywords: "japanese zen zen rinzai soto dogen eisai zazen satori kensho shikantaza japan",
+        url: "chinese-japanese-schools.html#japanese-zen"
+    },
+
+
+    /* ---------- ISLAMIC ---------- */
+
+    {
+        title: "Avicennism",
+        category: "Islamic Philosophy",
+        description: "The philosophical system of Ibn Sina combining Aristotelian logic, Neoplatonic metaphysics, and Islamic theology.",
+        keywords: "avicennism avicenna ibn sina falsafa essence existence necessary existent metaphysics aristotle neoplatonism",
+        url: "islamic-schools.html#avicennism"
+    },
+
+    {
+        title: "Averroism",
+        category: "Islamic Philosophy",
+        description: "The philosophical tradition associated with Ibn Rushd and his defense of Aristotelian rationalism.",
+        keywords: "averroism averroes ibn rushd aristotle rationalism reason religion philosophy islamic spain",
+        url: "islamic-schools.html#averroism"
+    },
+
+    {
+        title: "Illuminationism",
+        category: "Islamic Philosophy",
+        description: "Suhrawardi's philosophical school combining rational analysis with intuitive spiritual knowledge and a metaphysics of light.",
+        keywords: "illuminationism sufi suhrawardi hikmat al ishraq light darkness knowledge presence islamic philosophy",
+        url: "islamic-schools.html#illuminationism"
+    },
+
+    {
+        title: "Sufism",
+        category: "Islamic Philosophy",
+        description: "The mystical tradition of Islam emphasizing spiritual purification, divine love, remembrance, and direct experience.",
+        keywords: "sufism tasawwuf islamic mysticism rumi ibn arabi fana baqa dhikr divine love unity being",
+        url: "islamic-schools.html#sufism"
+    },
+
+    {
+        title: "Kalam",
+        category: "Islamic Philosophy",
+        description: "The Islamic tradition of speculative theology using dialectical reasoning to defend religious doctrines.",
+        keywords: "kalam islamic theology mutakallimun ashari maturidi mutazila occasionalism theology reason",
+        url: "islamic-schools.html#kalam"
+    },
+
+    {
+        title: "Transcendent Theosophy",
+        category: "Islamic Philosophy",
+        description: "Mulla Sadra's synthesis of Avicennian philosophy, Illuminationism, Sufi thought, and Shi'ite theology.",
+        keywords: "transcendent theosophy mulla sadra hikmat al muta aliyah existence asalat al wujud substantial motion islamic philosophy",
+        url: "islamic-schools.html#transcendent-theosophy"
+    },
+
+
+    /* ---------- ENLIGHTENMENT ---------- */
+
+    {
+        title: "Rationalism",
+        category: "Enlightenment Philosophy",
+        description: "An epistemological framework emphasizing reason, innate ideas, deduction, and a priori knowledge.",
+        keywords: "rationalism descartes spinoza leibniz reason innate ideas deduction a priori knowledge",
+        url: "enlightenment-schools.html#rationalism"
+    },
+
+    {
+        title: "Empiricism",
+        category: "Enlightenment Philosophy",
+        description: "An epistemological tradition holding that knowledge develops through sensory experience and observation.",
+        keywords: "empiricism locke hume berkeley tabula rasa experience senses induction a posteriori",
+        url: "enlightenment-schools.html#empiricism"
+    },
+
+    {
+        title: "Idealism",
+        category: "Enlightenment Philosophy",
+        description: "A philosophical movement emphasizing the role of mind, consciousness, and conceptual structures in reality.",
+        keywords: "idealism kant hegel schopenhauer german idealism transcendental idealism absolute idealism mind",
+        url: "enlightenment-schools.html#idealism"
+    },
+
+    {
+        title: "Social Contract Theory",
+        category: "Enlightenment Philosophy",
+        description: "A political theory explaining political authority through an agreement among individuals.",
+        keywords: "social contract hobbes locke rousseau state nature natural rights consent government general will",
+        url: "enlightenment-schools.html#social-contact-theory"
+    },
+
+    {
+        title: "Materialism",
+        category: "Enlightenment Philosophy",
+        description: "The philosophical position that reality is fundamentally physical or material.",
+        keywords: "materialism physicalism matter atoms consciousness marx dialectical materialism lucretius",
+        url: "enlightenment-schools.html#materialism"
+    },
+
+    {
+        title: "Deism",
+        category: "Enlightenment Philosophy",
+        description: "An Enlightenment theological philosophy affirming a creator through reason and nature while rejecting revelation and miracles.",
+        keywords: "deism deist god creator watchmaker reason enlightenment thomas paine jefferson miracles religion",
+        url: "enlightenment-schools.html#deism"
+    },
+
+    {
+        title: "Natural Law Theory",
+        category: "Enlightenment Philosophy",
+        description: "A philosophical theory holding that universal moral principles can be discovered through human reason and nature.",
+        keywords: "natural law morality reason universal rights aquinas grotius locke ethics law human rights",
+        url: "enlightenment-schools.html#natural-law-theory"
+    },
+
+    {
+        title: "Pantheism",
+        category: "Enlightenment Philosophy",
+        description: "The view that God and nature or the universe are fundamentally identical.",
+        keywords: "pantheism spinoza god nature monism deus sive natura determinism",
+        url: "enlightenment-schools.html#pantheism"
+    },
+
+    {
+        title: "Classical Liberalism",
+        category: "Enlightenment Philosophy",
+        description: "A political and economic philosophy emphasizing individual liberty, civil rights, limited government, and free markets.",
+        keywords: "classical liberalism locke adam smith john stuart mill liberty rights free market capitalism government",
+        url: "enlightenment-schools.html#classical-liberalism"
+    },
+
+    {
+        title: "Deontology",
+        category: "Enlightenment Philosophy",
+        description: "An ethical theory that judges actions according to duties and moral rules rather than consequences.",
+        keywords: "deontology kant duty categorical imperative ethics moral rules obligation consequences",
+        url: "enlightenment-schools.html#deontology"
+    },
+
+
+    /* ---------- MODERN & CONTEMPORARY ---------- */
+
+    {
+        title: "Existentialism",
+        category: "Modern Philosophy",
+        description: "A movement emphasizing individual existence, freedom, responsibility, choice, and the creation of meaning.",
+        keywords: "existentialism sartre beauvoir camus kierkegaard freedom meaning existence essence authenticity angst",
+        url: "modern-schools.html#existentialism"
+    },
+
+    {
+        title: "Nihilism",
+        category: "Modern Philosophy",
+        description: "A philosophical position questioning objective meaning, purpose, value, and moral truth.",
+        keywords: "nihilism nietzsche meaning purpose morality values death god existentialism",
+        url: "modern-schools.html#nihilism"
+    },
+
+    {
+        title: "Pragmatism",
+        category: "Modern Philosophy",
+        description: "A philosophical tradition evaluating ideas according to their practical consequences and usefulness.",
+        keywords: "pragmatism peirce william james john dewey practical consequences instrumentalism truth fallibilism",
+        url: "modern-schools.html#pragmatism"
+    },
+
+    {
+        title: "Utilitarianism",
+        category: "Modern Philosophy",
+        description: "An ethical theory judging actions by their consequences and their ability to maximize overall happiness.",
+        keywords: "utilitarianism bentham mill happiness pleasure pain consequentialism greatest happiness ethics",
+        url: "modern-schools.html#utilitariansim"
+    },
+
+    {
+        title: "Phenomenology",
+        category: "Modern Philosophy",
+        description: "A philosophical movement studying conscious experience and phenomena from the first-person perspective.",
+        keywords: "phenomenology husserl heidegger merleau ponty consciousness experience intentionality epoche lifeworld",
+        url: "modern-schools.html#phenomenology"
+    },
+
+    {
+        title: "Analytic Philosophy",
+        category: "Modern Philosophy",
+        description: "A tradition emphasizing logical rigor, clarity, language, and conceptual analysis.",
+        keywords: "analytic philosophy russell wittgenstein moore logic language linguistic turn logical atomism",
+        url: "modern-schools.html#analytic-philosophy"
+    },
+
+    {
+        title: "Marxism",
+        category: "Modern Philosophy",
+        description: "A philosophical, political, and economic framework centered on historical materialism and class struggle.",
+        keywords: "marxism marx engels capitalism class struggle historical materialism dialectical materialism bourgeoisie proletariat",
+        url: "modern-schools.html#marxism"
+    },
+
+    {
+        title: "Absurdism",
+        category: "Modern Philosophy",
+        description: "A philosophical perspective examining the conflict between humanity's search for meaning and an indifferent universe.",
+        keywords: "absurdism camus sisyphus absurd meaning revolt freedom passion existentialism",
+        url: "modern-schools.html#absurdism"
+    },
+
+    {
+        title: "Structuralism",
+        category: "Modern Philosophy",
+        description: "An intellectual movement analyzing human culture, language, and behavior through underlying structures.",
+        keywords: "structuralism saussure levi strauss barthes language signs culture binary oppositions structures",
+        url: "modern-schools.html#structuralism"
+    },
+
+    {
+        title: "Postmodernism",
+        category: "Modern Philosophy",
+        description: "A movement skeptical of grand narratives, absolute truth, and claims of universal certainty.",
+        keywords: "postmodernism lyotard foucault baudrillard metanarratives power knowledge hyperreality social construction",
+        url: "modern-schools.html#psotmodernism"
+    },
+
+    {
+        title: "Logical Positivism",
+        category: "Modern Philosophy",
+        description: "A philosophical movement emphasizing empirical verification and formal logical analysis.",
+        keywords: "logical positivism logical empiricism vienna circle verification principle ayer carnap science metaphysics",
+        url: "modern-schools.html#logical-positivism"
+    },
+
+    {
+        title: "Critical Theory",
+        category: "Modern Philosophy",
+        description: "A philosophical framework critically examining systems of power, domination, ideology, and social structures.",
+        keywords: "critical theory frankfurt school horkheimer adorno marcuse marxism ideology culture industry emancipation",
+        url: "modern-schools.html#critical-theory"
+    },
 
 ];
 
-
-if (searchInput && searchResults) {
-
-    searchInput.addEventListener("input", () => {
-
-        const query = searchInput.value.trim().toLowerCase();
-
-        if (!query) {
-            searchResults.innerHTML = "";
-            return;
-        }
-
-        const matches = searchData.filter(item => {
-
-    return (
-        item.title.toLowerCase().includes(query) ||
-        item.category.toLowerCase().includes(query) ||
-        item.description.toLowerCase().includes(query) ||
-        (item.keywords && item.keywords.toLowerCase().includes(query))
-    );
-
-});
 
 if (searchInput && searchResults) {
 
@@ -1173,55 +1151,77 @@ if (searchInput && searchResults) {
 
         });
 
-        // Rank results by relevance
-        matches.sort((a, b) => {
+        if (searchInput && searchResults) {
 
-            const getScore = (item) => {
+            searchInput.addEventListener("input", () => {
 
-                const title = item.title.toLowerCase();
-                const category = item.category.toLowerCase();
-                const description = item.description.toLowerCase();
-                const keywords = item.keywords
-                    ? item.keywords.toLowerCase()
-                    : "";
+                const query = searchInput.value.trim().toLowerCase();
 
-                // Exact title match
-                if (title === query) return 100;
+                if (!query) {
+                    searchResults.innerHTML = "";
+                    return;
+                }
 
-                // Title starts with the search
-                if (title.startsWith(query)) return 90;
+                const matches = searchData.filter(item => {
 
-                // Search appears somewhere in title
-                if (title.includes(query)) return 80;
+                    return (
+                        item.title.toLowerCase().includes(query) ||
+                        item.category.toLowerCase().includes(query) ||
+                        item.description.toLowerCase().includes(query) ||
+                        (item.keywords && item.keywords.toLowerCase().includes(query))
+                    );
 
-                // Search appears in keywords
-                if (keywords.includes(query)) return 60;
+                });
 
-                // Search appears in category
-                if (category.includes(query)) return 50;
+                // Rank results by relevance
+                matches.sort((a, b) => {
 
-                // Search appears in description
-                if (description.includes(query)) return 20;
+                    const getScore = (item) => {
 
-                return 0;
-            };
+                        const title = item.title.toLowerCase();
+                        const category = item.category.toLowerCase();
+                        const description = item.description.toLowerCase();
+                        const keywords = item.keywords
+                            ? item.keywords.toLowerCase()
+                            : "";
 
-            return getScore(b) - getScore(a);
+                        // Exact title match
+                        if (title === query) return 100;
 
-        });
+                        // Title starts with the search
+                        if (title.startsWith(query)) return 90;
 
-        if (matches.length === 0) {
+                        // Search appears somewhere in title
+                        if (title.includes(query)) return 80;
 
-            searchResults.innerHTML = `
+                        // Search appears in keywords
+                        if (keywords.includes(query)) return 60;
+
+                        // Search appears in category
+                        if (category.includes(query)) return 50;
+
+                        // Search appears in description
+                        if (description.includes(query)) return 20;
+
+                        return 0;
+                    };
+
+                    return getScore(b) - getScore(a);
+
+                });
+
+                if (matches.length === 0) {
+
+                    searchResults.innerHTML = `
                 <div class="search-no-results">
                     No results found.
                 </div>
             `;
 
-            return;
-        }
+                    return;
+                }
 
-        searchResults.innerHTML = matches.map(item => `
+                searchResults.innerHTML = matches.map(item => `
 
             <a href="${item.url}" class="search-result">
 
@@ -1237,9 +1237,9 @@ if (searchInput && searchResults) {
 
         `).join("");
 
-    });
+            });
 
-}
+        }
 
         if (matches.length === 0) {
 
@@ -2090,41 +2090,41 @@ resetAppearance.addEventListener(
 
 document.addEventListener('click', (event) => {
 
-  /* ---- search box ---- */
-  if (searchBox && searchBox.classList.contains('active')) {
-    const withinSearch = event.target.closest('.search-container');
-    if (!withinSearch) {
-      searchBox.classList.remove('active');
-      if (searchToggle) {
-        searchToggle.setAttribute('aria-expanded', 'false');
-        searchToggle.setAttribute('aria-label', 'Open search');
-      }
-      if (searchInput) {
-        searchInput.value = '';
-      }
+    /* ---- search box ---- */
+    if (searchBox && searchBox.classList.contains('active')) {
+        const withinSearch = event.target.closest('.search-container');
+        if (!withinSearch) {
+            searchBox.classList.remove('active');
+            if (searchToggle) {
+                searchToggle.setAttribute('aria-expanded', 'false');
+                searchToggle.setAttribute('aria-label', 'Open search');
+            }
+            if (searchInput) {
+                searchInput.value = '';
+            }
+        }
     }
-  }
 
-  /* ---- language box ---- */
-  if (languageBox && languageBox.classList.contains('active')) {
-    const withinLanguage = event.target.closest('.language-container');
-    if (!withinLanguage) {
-      languageBox.classList.remove('active');
-      if (languageToggle) {
-        languageToggle.setAttribute('aria-expanded', 'false');
-      }
+    /* ---- language box ---- */
+    if (languageBox && languageBox.classList.contains('active')) {
+        const withinLanguage = event.target.closest('.language-container');
+        if (!withinLanguage) {
+            languageBox.classList.remove('active');
+            if (languageToggle) {
+                languageToggle.setAttribute('aria-expanded', 'false');
+            }
+        }
     }
-  }
 
-  /* ---- appearance panel ---- */
-  if (appearancePanel && appearancePanel.classList.contains('open')) {
-    const withinAppearance =
-      event.target.closest('.appearance-panel') ||
-      event.target.closest('.appearance-toggle');
-    if (!withinAppearance) {
-      closeAppearancePanel();
+    /* ---- appearance panel ---- */
+    if (appearancePanel && appearancePanel.classList.contains('open')) {
+        const withinAppearance =
+            event.target.closest('.appearance-panel') ||
+            event.target.closest('.appearance-toggle');
+        if (!withinAppearance) {
+            closeAppearancePanel();
+        }
     }
-  }
 
 });
 

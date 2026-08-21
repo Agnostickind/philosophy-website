@@ -50,8 +50,8 @@ body {
   letter-spacing: -0.015em;
 }
 
-.home-hero .hero-content > p {
-  
+.home-hero .hero-content>p {
+
   font-size: 1.15rem;
   color: var(--muted-light);
   max-width: 56ch;
@@ -204,6 +204,7 @@ textarea:focus-visible {
 
 /* TOUCH TARGETS */
 @media (pointer: coarse) {
+
   .menu-toggle,
   .appearance-toggle,
   .search-toggle,
@@ -215,7 +216,7 @@ textarea:focus-visible {
 
 /* RESPONSIVE HOME REFINEMENT */
 @media (max-width: 900px) {
-  .home-hero .hero-content > p {
+  .home-hero .hero-content>p {
     max-width: 60ch;
   }
 
@@ -378,12 +379,7 @@ body:not(.theme-dark) .daily-life p {
 
   /* Brand + five navigation sections */
   grid-template-columns:
-    1.35fr
-    1fr
-    1.15fr
-    1fr
-    0.9fr
-    1.15fr;
+    1.35fr 1fr 1.15fr 1fr 0.9fr 1.15fr;
 
   gap: 2.6rem;
 
@@ -434,7 +430,7 @@ body:not(.theme-dark) .daily-life p {
 }
 
 
-.footer-brand > p {
+.footer-brand>p {
   max-width: 30ch;
 
   margin: 0 0 1.35rem;
@@ -747,9 +743,7 @@ body:not(.theme-dark) .daily-life p {
 
   .footer-main {
     grid-template-columns:
-      1.25fr
-      1fr
-      1fr;
+      1.25fr 1fr 1fr;
 
     gap: 2.8rem 2.5rem;
   }
@@ -760,7 +754,7 @@ body:not(.theme-dark) .daily-life p {
     padding-right: 0;
   }
 
-  .footer-brand > p {
+  .footer-brand>p {
     max-width: 52ch;
   }
 
@@ -800,7 +794,7 @@ body:not(.theme-dark) .daily-life p {
     margin-right: auto;
   }
 
-  .footer-brand > p,
+  .footer-brand>p,
   .footer-brand .footer-tagline {
     margin-left: auto;
     margin-right: auto;
@@ -882,7 +876,7 @@ body:not(.theme-dark) .daily-life p {
     font-size: 1.55rem;
   }
 
-  .footer-brand > p {
+  .footer-brand>p {
     font-size: 0.9rem;
   }
 
@@ -895,6 +889,7 @@ body:not(.theme-dark) .daily-life p {
   }
 
 }
+
 .footer-column a {
   text-align: left !important;
 }

@@ -159,55 +159,6 @@ const bookSections = booksSideLinks
 
 
 /* ---------------------------------------------------------
-   1. SHOW SIDE NAV AFTER HERO
-   --------------------------------------------------------- */
-
-if (booksSideNav) {
-  const hero = document.querySelector('.home-hero');
-
-  if (hero && 'IntersectionObserver' in window) {
-
-    const heroObserver = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-
-        if (!entry.isIntersecting) {
-          booksSideNav.classList.add('books-side-nav-visible');
-        } else {
-          booksSideNav.classList.remove('books-side-nav-visible');
-        }
-      },
-      {
-        threshold: 0
-      }
-    );
-
-    heroObserver.observe(hero);
-
-  } else if (hero) {
-
-    const updateBooksSideNav = () => {
-      const heroBottom = hero.getBoundingClientRect().bottom;
-
-      if (heroBottom <= 110) {
-        booksSideNav.classList.add('books-side-nav-visible');
-      } else {
-        booksSideNav.classList.remove('books-side-nav-visible');
-      }
-    };
-
-    window.addEventListener(
-      'scroll',
-      updateBooksSideNav,
-      { passive: true }
-    );
-
-    updateBooksSideNav();
-  }
-}
-
-
-/* ---------------------------------------------------------
    2. ACTIVE COLLECTION
    --------------------------------------------------------- */
 

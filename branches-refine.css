@@ -13,11 +13,9 @@
 
 :root {
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-  --gold-line: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 22%,
-    transparent
-  );
+  --gold-line: color-mix(in srgb,
+      var(--gold, #b88a44) 22%,
+      transparent);
 }
 
 
@@ -31,6 +29,7 @@ section[id],
 }
 
 @media (max-width: 1024px) {
+
   section[id],
   .branch {
     scroll-margin-top: 72px;
@@ -38,6 +37,7 @@ section[id],
 }
 
 @media (max-width: 600px) {
+
   section[id],
   .branch {
     scroll-margin-top: 64px;
@@ -101,365 +101,11 @@ button:focus-visible {
   transform: scaleX(0);
   transform-origin: 0 50%;
 
-  background: linear-gradient(
-    to right,
-    color-mix(
-      in srgb,
-      var(--gold, #b88a44) 60%,
-      transparent
-    ),
-    var(--gold, #b88a44)
-  );
-}
-
-
- /* =========================================================
-    BRANCHES — REFINED DESKTOP SIDE NAVIGATION
-    ========================================================= */
-
-.branch-nav {
-    position: fixed;
-
-    top: 110px;
-    left: 22px;
-    right: auto;
-
-    width: 220px;
-    max-height: calc(100vh - 140px);
-
-    z-index: 900;
-
-    display: flex;
-    flex-direction: column;
-
-    padding: 1rem .75rem;
-
-    overflow-y: auto;
-
-    border: 1px solid rgba(184, 138, 68, .24);
-    border-radius: 18px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(48, 43, 35, .97),
-            rgba(25, 23, 20, .97)
-        );
-
-    box-shadow:
-        0 18px 45px rgba(0, 0, 0, .28),
-        0 0 0 1px rgba(255, 255, 255, .025);
-
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-
-    scrollbar-width: thin;
-
-    opacity: 0;
-    visibility: hidden;
-
-    transform:
-        translateX(-28px);
-
-    pointer-events: none;
-
-    transition:
-        opacity .4s var(--ease-out),
-        transform .4s var(--ease-out),
-        visibility .4s ease;
-}
-
-
-/* ---------------------------------------------------------
-   APPEARS AFTER HERO
-   --------------------------------------------------------- */
-
-.branch-nav.branch-nav-visible {
-    opacity: 1;
-    visibility: visible;
-
-    transform: translateX(0);
-
-    pointer-events: auto;
-}
-
-
-/* =========================================================
-   SIDE NAVIGATION — INNER CONTAINER
-
-   If your HTML has a .branch-nav-inner element,
-   these styles control it.
-
-   If not, the .branch-nav itself still works.
-   ========================================================= */
-
-.branch-nav-inner {
-  display: flex;
-  flex-direction: column;
-
-  gap: .15rem;
-
-  padding: .8rem .65rem;
-
-  border: 1px solid var(--gold-line);
-  border-radius: 16px;
-
-  background: color-mix(
-    in srgb,
-    var(--background, #0b0b0ae5) 88%,
-    transparent
-  );
-
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
-  box-shadow:
-    0 12px 35px rgba(0, 0, 0, .18);
-
-  overflow-y: auto;
-
-  scrollbar-width: thin;
-}
-
-
-/* =========================================================
-   SIDE NAVIGATION — HEADING
-   ========================================================= */
-
-.branch-side-label {
-  display: block;
-
-  padding: .35rem .55rem .55rem;
-
-  font-size: .65rem;
-  letter-spacing: .18em;
-
-  text-transform: uppercase;
-
-  opacity: .6;
-}
-
-
-/* =========================================================
-   SIDE NAVIGATION — LINKS
-   ========================================================= */
-
-.branch-nav a {
-    display: grid;
-
-    grid-template-columns: 2rem minmax(0, 1fr);
-
-    align-items: center;
-
-    gap: .45rem;
-
-    width: 100%;
-
-    padding: .48rem .55rem;
-
-    margin: .08rem 0;
-
-    border-radius: 9px;
-
-    color: rgba(255, 255, 255, .78);
-
-    text-decoration: none;
-
-    font-size: .76rem;
-    line-height: 1.3;
-
-    transition:
-        background .22s var(--ease-out),
-        color .22s var(--ease-out),
-        transform .22s var(--ease-out);
-}
-
-
-
-/* =========================================================
-   SIDE NAVIGATION — NUMBER
-   ========================================================= */
-
-.branch-nav a span {
-    color: rgba(255, 255, 255, .35);
-
-    font-size: .61rem;
-
-    letter-spacing: .06em;
-}
-
-/* =========================================================
-   SIDE NAVIGATION — BRANCH NAME
-   ========================================================= */
-
-
-.branch-nav a strong {
-    min-width: 0;
-
-    color: inherit;
-
-    font-weight: 500;
-}
-
-/* =========================================================
-   SIDE NAVIGATION — HOVER
-   ========================================================= */
-
-.branch-nav a:hover,
-.branch-nav a:focus-visible {
-    color: #f0d39a;
-
-    background:
-        rgba(184, 138, 68, .10);
-
-    transform: translateX(-2px);
-}
-
-
-/* =========================================================
-   SIDE NAVIGATION — ACTIVE BRANCH
-   ========================================================= */
-
-.branch-nav a.is-active,
-.branch-nav a[aria-current="true"] {
-    color: #f0d39a;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(184, 138, 68, .18),
-            rgba(184, 138, 68, .08)
-        );
-
-    box-shadow:
-        inset 2px 0 0 #b88a44;
-}
-
-
-.branch-nav a.is-active span,
-.branch-nav a[aria-current="true"] span {
-    color: #c79a55;
-
-    opacity: 1;
-}
-
-
-.branch-nav a.is-active strong,
-.branch-nav a[aria-current="true"] strong {
-    font-weight: 600;
-}
-
-.branch-nav .branch-side-divider {
-    height: 1px;
-
-    margin:
-        .55rem .55rem;
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            rgba(184, 138, 68, .28),
-            transparent
-        );
-}
-
-
-/* =========================================================
-   SIDE NAVIGATION — DIVIDER
-   ========================================================= */
-
-.branch-side-divider {
-  height: 1px;
-
-  margin: .45rem .5rem;
-
-  background: var(--gold-line);
-}
-
-
-/* =========================================================
-   LIGHT THEME
-   ========================================================= */
-
-body:not(.theme-dark) .branch-nav {
-    background:
-        rgba(255, 255, 255, .96);
-
-    border-color:
-        rgba(184, 138, 68, .24);
-
-    box-shadow:
-        0 18px 45px rgba(0, 0, 0, .12);
-}
-
-
-body:not(.theme-dark) .branch-nav .branch-side-label {
-    color: #6f6252;
-}
-
-
-body:not(.theme-dark) .branch-nav a {
-    color: #3a3025;
-}
-
-
-body:not(.theme-dark) .branch-nav a span {
-    color: #8d8171;
-}
-
-
-body:not(.theme-dark) .branch-nav a:hover,
-body:not(.theme-dark) .branch-nav a:focus-visible {
-    color: #6f4d1d;
-
-    background:
-        rgba(184, 138, 68, .09);
-}
-
-
-body:not(.theme-dark) .branch-nav a.is-active,
-body:not(.theme-dark) .branch-nav a[aria-current="true"] {
-    color: #795520;
-
-    background:
-        rgba(184, 138, 68, .13);
-
-    box-shadow:
-        inset 2px 0 0 #b88a44;
-}
-
-
-/* =========================================================
-   SIDE NAVIGATION — DARK THEME
-   ========================================================= */
-
-body.theme-dark .branch-nav {
-  color: #eee8dc;
-}
-
-body.theme-dark .branch-nav a {
-  color: #eee8dc;
-}
-
-body.theme-dark .branch-nav a:hover,
-body.theme-dark .branch-nav a:focus-visible {
-  background: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 10%,
-    transparent
-  );
-}
-
-body.theme-dark .branch-nav a.is-active,
-body.theme-dark .branch-nav a[aria-current="true"] {
-  color: var(--gold, #b88a44);
-
-  background: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 16%,
-    transparent
-  );
+  background: linear-gradient(to right,
+      color-mix(in srgb,
+        var(--gold, #b88a44) 60%,
+        transparent),
+      var(--gold, #b88a44));
 }
 
 
@@ -513,11 +159,9 @@ body.theme-dark .branch-nav a[aria-current="true"] {
   border: 1px solid var(--gold-line);
   border-radius: 18px;
 
-  background: color-mix(
-    in srgb,
-    #ffffff 4%,
-    transparent
-  );
+  background: color-mix(in srgb,
+      #ffffff 4%,
+      transparent);
 }
 
 .tree-root {
@@ -570,17 +214,13 @@ body.theme-dark .branch-nav a[aria-current="true"] {
 .tree-list a:focus-visible {
   transform: translateY(-3px);
 
-  border-color: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 48%,
-    transparent
-  );
+  border-color: color-mix(in srgb,
+      var(--gold, #b88a44) 48%,
+      transparent);
 
-  background: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 9%,
-    transparent
-  );
+  background: color-mix(in srgb,
+      var(--gold, #b88a44) 9%,
+      transparent);
 }
 
 .branch-info {
@@ -626,8 +266,7 @@ body.theme-dark .branch-nav a[aria-current="true"] {
   display: grid;
 
   grid-template-columns:
-    minmax(0, 0.85fr)
-    minmax(0, 1.15fr);
+    minmax(0, 0.85fr) minmax(0, 1.15fr);
 
   align-items: start;
 
@@ -642,8 +281,7 @@ body.theme-dark .branch-nav a[aria-current="true"] {
 
 .branch.reverse {
   grid-template-columns:
-    minmax(0, 1.15fr)
-    minmax(0, 0.85fr);
+    minmax(0, 1.15fr) minmax(0, 0.85fr);
 }
 
 .branch-image {
@@ -658,11 +296,9 @@ body.theme-dark .branch-nav a[aria-current="true"] {
   overflow: hidden;
 
   box-shadow:
-    0 0 0 1px color-mix(
-      in srgb,
+    0 0 0 1px color-mix(in srgb,
       var(--gold, #b88a44) 30%,
-      transparent
-    ),
+      transparent),
     0 18px 40px rgba(0, 0, 0, .32);
 }
 
@@ -726,19 +362,15 @@ body.theme-dark .branch-nav a[aria-current="true"] {
 
   font-size: .86rem;
 
-  border: 1px solid color-mix(
-    in srgb,
-    var(--gold, #b88a44) 30%,
-    transparent
-  );
+  border: 1px solid color-mix(in srgb,
+      var(--gold, #b88a44) 30%,
+      transparent);
 
   border-radius: 999px;
 
-  background: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 8%,
-    transparent
-  );
+  background: color-mix(in srgb,
+      var(--gold, #b88a44) 8%,
+      transparent);
 }
 
 
@@ -750,11 +382,9 @@ body.theme-dark .branch-nav a[aria-current="true"] {
   padding: .7rem 0 .7rem 1.1rem;
 
   border-inline-start:
-    2px solid color-mix(
-      in srgb,
+    2px solid color-mix(in srgb,
       var(--gold, #b88a44) 55%,
-      transparent
-    );
+      transparent);
 
   font-style: italic;
 }
@@ -821,11 +451,9 @@ body.theme-dark .branch-nav a[aria-current="true"] {
 
   text-transform: uppercase;
 
-  background: color-mix(
-    in srgb,
-    var(--background, #14100b) 92%,
-    transparent
-  );
+  background: color-mix(in srgb,
+      var(--background, #14100b) 92%,
+      transparent);
 }
 
 .comparison tbody tr {
@@ -834,11 +462,9 @@ body.theme-dark .branch-nav a[aria-current="true"] {
 }
 
 .comparison tbody tr:hover {
-  background: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 8%,
-    transparent
-  );
+  background: color-mix(in srgb,
+      var(--gold, #b88a44) 8%,
+      transparent);
 }
 
 .comparison tbody tr:last-child td {
@@ -889,11 +515,9 @@ body.theme-dark .branch-nav a[aria-current="true"] {
 
   border-radius: 999px;
 
-  border: 1px solid color-mix(
-    in srgb,
-    var(--gold, #b88a44) 55%,
-    transparent
-  );
+  border: 1px solid color-mix(in srgb,
+      var(--gold, #b88a44) 55%,
+      transparent);
 
   text-decoration: none;
 
@@ -906,11 +530,9 @@ body.theme-dark .branch-nav a[aria-current="true"] {
 .cta-button:focus-visible {
   transform: translateY(-2px);
 
-  background: color-mix(
-    in srgb,
-    var(--gold, #b88a44) 16%,
-    transparent
-  );
+  background: color-mix(in srgb,
+      var(--gold, #b88a44) 16%,
+      transparent);
 }
 
 
@@ -983,227 +605,42 @@ body.theme-dark .branch-nav a[aria-current="true"] {
 
 body.page-wide .branch-intro,
 body.page-wide .branch-intro p {
-  width: min(
-    calc(900px + var(--wide-extra, 0px)),
-    94vw
-  );
+  width: min(calc(900px + var(--wide-extra, 0px)),
+      94vw);
 
   max-width:
     calc(900px + var(--wide-extra, 0px));
 }
 
 body.page-wide .tree-intro {
-  width: min(
-    calc(68ch + var(--wide-extra, 0px)),
-    94vw
-  );
+  width: min(calc(68ch + var(--wide-extra, 0px)),
+      94vw);
 }
 
 body.page-wide .tree-box {
-  width: min(
-    calc(1000px + var(--wide-extra, 0px)),
-    94vw
-  );
+  width: min(calc(1000px + var(--wide-extra, 0px)),
+      94vw);
 }
 
 body.page-wide .branch,
 body.page-wide .branch.reverse {
-  width: min(
-    calc(1150px + var(--wide-extra, 0px)),
-    94vw
-  );
+  width: min(calc(1150px + var(--wide-extra, 0px)),
+      94vw);
 }
 
 body.page-wide .comparison {
-  width: min(
-    calc(1100px + var(--wide-extra, 0px)),
-    94vw
-  );
+  width: min(calc(1100px + var(--wide-extra, 0px)),
+      94vw);
 }
 
 body.page-wide .connection {
-  width: min(
-    calc(72ch + var(--wide-extra, 0px)),
-    94vw
-  );
+  width: min(calc(72ch + var(--wide-extra, 0px)),
+      94vw);
 }
 
 body.page-wide .quote blockquote {
-  width: min(
-    calc(70ch + var(--wide-extra, 0px)),
-    94vw
-  );
+  width: min(calc(70ch + var(--wide-extra, 0px)),
+      94vw);
 
   max-width: none;
-}
-
-/* =========================================================
-   BRANCH SIDE NAVIGATION — RESPONSIVE LAYOUT
-   ========================================================= */
-
-/* ---------------------------------------------------------
-   LARGE DESKTOP
-   Side navigation remains a vertical navigation panel.
-   --------------------------------------------------------- */
-
-@media (min-width: 1201px) {
-
-  .branch-nav {
-    position: fixed;
-    top: 110px;
-    left: 22px;
-
-    width: 190px;
-    max-height: calc(100vh - 140px);
-
-    z-index: 900;
-  }
-
-}
-
-
-/* ---------------------------------------------------------
-   TABLET / SMALL LAPTOP
-   Do NOT allow the side navigation to float over content.
-   Turn it into a normal horizontal navigation bar.
-   --------------------------------------------------------- */
-
-@media (min-width: 861px) and (max-width: 1200px) {
-
-  .branch-nav {
-    position: static;
-
-    width: 100%;
-    max-width: none;
-
-    margin: 0;
-    z-index: auto;
-
-    max-height: none;
-
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-
-    transform: none;
-
-    overflow: visible;
-  }
-
-  .branch-nav-inner {
-    width: 92%;
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-
-    gap: .45rem;
-
-    overflow-x: auto;
-
-    padding: .7rem 0;
-
-    scrollbar-width: none;
-  }
-
-  .branch-nav-inner::-webkit-scrollbar {
-    display: none;
-  }
-
-  .branch-nav a {
-    flex: 0 0 auto;
-
-    font-size: .75rem;
-    white-space: nowrap;
-  }
-
-}
-
-
-/* ---------------------------------------------------------
-   MOBILE
-   Compact horizontal navigation.
-   --------------------------------------------------------- */
-
-@media (max-width: 860px) {
-
-  .branch-nav {
-    position: static;
-
-    display: block;
-
-    width: 100%;
-    max-width: none;
-
-    margin: 0;
-
-    z-index: auto;
-
-    max-height: none;
-
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-
-    transform: none;
-
-    overflow: visible;
-  }
-
-  .branch-nav-inner {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-
-    gap: .4rem;
-
-    padding: .65rem 5vw;
-
-    overflow-x: auto;
-
-    -webkit-overflow-scrolling: touch;
-
-    scrollbar-width: none;
-
-    scroll-snap-type: x proximity;
-  }
-
-  .branch-nav-inner::-webkit-scrollbar {
-    display: none;
-  }
-
-  .branch-nav a {
-    flex: 0 0 auto;
-
-    white-space: nowrap;
-
-    font-size: .72rem;
-
-    padding: .5rem .75rem;
-
-    scroll-snap-align: start;
-  }
-
-}
-
-
-/* ---------------------------------------------------------
-   SMALL PHONES
-   --------------------------------------------------------- */
-
-@media (max-width: 600px) {
-
-  .branch-nav-inner {
-    padding-left: 4vw;
-    padding-right: 4vw;
-
-    gap: .3rem;
-  }
-
-  .branch-nav a {
-    font-size: .68rem;
-    padding: .45rem .65rem;
-  }
-
 }

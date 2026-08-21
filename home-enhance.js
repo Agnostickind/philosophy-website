@@ -274,7 +274,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const hero = document.querySelector(".home-hero");
 
 if (hero) {
-    if (!hero.id) {
-        hero.id = "main-content";
-    }
+  if (!hero.id) {
+    hero.id = "main-content";
+  }
 }

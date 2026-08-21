@@ -137,3 +137,140 @@
     });
   });
 })();
+
+/* =========================================================
+   BOOKS SIDE NAVIGATION
+   Show after hero + highlight current collection
+   ========================================================= */
+
+const booksSideNav = document.querySelector('.books-side-nav');
+const booksSideLinks = Array.from(
+  document.querySelectorAll('.books-side-nav a[href^="#"]')
+);
+
+const bookSections = booksSideLinks
+  .map((link) => {
+    const id = link.getAttribute('href').slice(1);
+    const section = document.getElementById(id);
+
+    return section ? { section, link } : null;
+  })
+  .filter(Boolean);
+
+
+/* ---------------------------------------------------------
+   1. SHOW SIDE NAV AFTER HERO
+   --------------------------------------------------------- */
+
+if (booksSideNav) {
+  const hero = document.querySelector('.home-hero');
+
+  if (hero && 'IntersectionObserver' in window) {
+
+    const heroObserver = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+
+        if (!entry.isIntersecting) {
+          booksSideNav.classList.add('books-side-nav-visible');
+        } else {
+          booksSideNav.classList.remove('books-side-nav-visible');
+        }
+      },
+      {
+        threshold: 0
+      }
+    );
+
+    heroObserver.observe(hero);
+
+  } else if (hero) {
+
+    const updateBooksSideNav = () => {
+      const heroBottom = hero.getBoundingClientRect().bottom;
+
+      if (heroBottom <= 110) {
+        booksSideNav.classList.add('books-side-nav-visible');
+      } else {
+        booksSideNav.classList.remove('books-side-nav-visible');
+      }
+    };
+
+    window.addEventListener(
+      'scroll',
+      updateBooksSideNav,
+      { passive: true }
+    );
+
+    updateBooksSideNav();
+  }
+}
+
+
+/* ---------------------------------------------------------
+   2. ACTIVE COLLECTION
+   --------------------------------------------------------- */
+
+if (
+  bookSections.length &&
+  'IntersectionObserver' in window
+) {
+
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+
+      entries.forEach((entry) => {
+
+        if (!entry.isIntersecting) return;
+
+        booksSideLinks.forEach((link) => {
+          link.classList.remove('is-active');
+          link.removeAttribute('aria-current');
+        });
+
+        const activeLink = bookSections.find(
+          (item) => item.section === entry.target
+        )?.link;
+
+        if (activeLink) {
+          activeLink.classList.add('is-active');
+          activeLink.setAttribute(
+            'aria-current',
+            'true'
+          );
+        }
+
+      });
+
+    },
+    {
+      rootMargin: '-20% 0px -65% 0px',
+      threshold: 0
+    }
+  );
+
+  bookSections.forEach(({ section }) => {
+    sectionObserver.observe(section);
+  });
+}
+
+
+/* ---------------------------------------------------------
+   3. SMOOTH JUMP + ACCESSIBILITY
+   --------------------------------------------------------- */
+
+booksSideLinks.forEach((link) => {
+
+  link.addEventListener('click', () => {
+
+    booksSideLinks.forEach((item) => {
+      item.classList.remove('is-active');
+      item.removeAttribute('aria-current');
+    });
+
+    link.classList.add('is-active');
+    link.setAttribute('aria-current', 'true');
+
+  });
+
+});

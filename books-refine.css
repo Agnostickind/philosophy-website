@@ -56,48 +56,6 @@ main#main-content > section > h2::after{
   background:linear-gradient(90deg, var(--gold-bright), transparent);
 }
 
-/* ---------- 3. quick-jump category nav ----------
-   DESKTOP: sticky under the navbar.
-   MOBILE/TABLET: completely un-stuck — it scrolls away with
-   the page, so it can never eat the viewport. This is the
-   fix for the previous sticky-bar problem.                */
-@media (min-width: 1025px){
-  .category-nav{
-    position:sticky;
-    top:64px;
-    padding-block:.8rem;
-    scrollbar-width:none;
-  }
-}
-@media (max-width: 1024px){
-  .category-nav{
-    position:static !important;
-    top:auto !important;
-    box-shadow:none;
-    flex-wrap:nowrap;
-    justify-content:flex-start;
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
-    scroll-snap-type:x proximity;
-    gap:.5rem;
-    padding:.75rem 5vw 1rem;
-    scrollbar-width:none;
-  }
-  .category-nav::-webkit-scrollbar{ display:none; }
-  .category-nav a{
-    flex:0 0 auto;
-    scroll-snap-align:start;
-    font-size:.74rem;
-    padding:.5rem 1rem;
-  }
-  .category-nav a:hover{ transform:none; box-shadow:none; }
-}
-
-/* anchor targets clear the sticky navbar without a jump */
-main#main-content > section[id]{ scroll-margin-top:84px; }
-@media (max-width:1024px){
-  main#main-content > section[id]{ scroll-margin-top:72px; }
-}
 
 /* ---------- 4. book grid ---------- */
 .book-grid{
@@ -287,3 +245,239 @@ main#main-content img{ max-width:100%; height:auto; }
   body{ overflow-x:hidden; }
 }
 
+/* =========================================================
+   BOOKS SIDE NAVIGATION
+   Hidden during hero. Appears after hero has passed.
+   ========================================================= */
+
+.books-side-nav {
+  position: fixed;
+  top: 110px;
+  left: 22px;
+  right: auto;
+  z-index: 900;
+
+  width: 190px;
+  max-height: calc(100vh - 140px);
+
+  margin: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateX(-30px);
+
+  transition:
+    opacity 0.35s ease,
+    visibility 0.35s ease,
+    transform 0.35s ease;
+
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* JavaScript adds this class after the hero */
+.books-side-nav.books-side-nav-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+
+/* =========================================================
+   INNER PANEL
+   ========================================================= */
+
+.books-side-nav-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+
+  padding: 0.8rem 0.65rem;
+
+  border: 1px solid color-mix(
+    in srgb,
+    var(--gold, #b88a44) 22%,
+    transparent
+  );
+
+  border-radius: 16px;
+
+  background: color-mix(
+    in srgb,
+    var(--background, #14100b) 92%,
+    transparent
+  );
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.books-side-label {
+  display: block;
+
+  padding: 0.35rem 0.55rem 0.55rem;
+
+  color: var(--gold, #b88a44);
+
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.books-side-nav a {
+  display: grid;
+  grid-template-columns: 1.8rem 1fr;
+
+  align-items: center;
+  gap: 0.45rem;
+
+  padding: 0.48rem 0.5rem;
+
+  color: inherit;
+
+  font-size: 0.78rem;
+  line-height: 1.25;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  transition:
+    background 0.22s ease,
+    color 0.22s ease,
+    transform 0.22s ease;
+}
+
+.books-side-nav a span {
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.books-side-nav a strong {
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   HOVER / FOCUS
+   ========================================================= */
+
+.books-side-nav a:hover,
+.books-side-nav a:focus-visible {
+  background: color-mix(
+    in srgb,
+    var(--gold, #b88a44) 10%,
+    transparent
+  );
+
+  transform: translateX(2px);
+
+  outline: none;
+}
+
+
+/* =========================================================
+   ACTIVE COLLECTION
+   ========================================================= */
+
+.books-side-nav a.is-active,
+.books-side-nav a[aria-current="true"] {
+  color: var(--gold, #b88a44);
+
+  background: color-mix(
+    in srgb,
+    var(--gold, #b88a44) 16%,
+    transparent
+  );
+}
+
+.books-side-nav a.is-active strong,
+.books-side-nav a[aria-current="true"] strong {
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   BOOK SECTION ANCHOR OFFSET
+   ========================================================= */
+
+#beginner,
+#ancient,
+#indian,
+#east-asian,
+#islamic,
+#enlightenment,
+#modern,
+#political-ethics {
+  scroll-margin-top: 100px;
+}
+
+
+/* =========================================================
+   LIGHT THEME
+   ========================================================= */
+
+body:not(.theme-dark) .books-side-nav-inner {
+  background: rgba(255, 255, 255, 0.98);
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.10);
+}
+
+body:not(.theme-dark) .books-side-nav a {
+  color: #0a0a0a;
+}
+
+body:not(.theme-dark) .books-side-nav a:hover,
+body:not(.theme-dark) .books-side-nav a:focus-visible {
+  background: rgba(134, 102, 55, 0.14);
+  color: #0b0a0a;
+}
+
+body:not(.theme-dark) .books-side-nav a.is-active,
+body:not(.theme-dark) .books-side-nav a[aria-current="true"] {
+  color: #1d1710;
+  background: #b88a44;
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+   Same behavior as History:
+   side navigation is hidden.
+   ========================================================= */
+
+@media (max-width: 860px) {
+  .books-side-nav {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .books-side-nav,
+  .books-side-nav.books-side-nav-visible {
+    transition: none;
+    transform: none;
+  }
+}

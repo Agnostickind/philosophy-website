@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -1245,9 +1246,12 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="home-refine.css" />
+    <link rel="stylesheet" href="books-refine.css" />
+    <link rel="stylesheet" href="world-literature-refine.css" />
   </head>
 
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- ================= NAVBAR ================= -->
 
     <nav class="navbar">
@@ -1357,17 +1361,47 @@
       </div>
     </header>
 
-    <!-- ================= QUICK JUMP ================= -->
+  <!-- ================= LITERATURE SIDE NAVIGATION ================= -->
 
-    <nav class="category-nav">
-      <a href="#ancient-epics"> Ancient Epics &amp; Myth</a>
-      <a href="#classical-medieval"> Classical &amp; Medieval</a>
-      <a href="#golden-age"> Golden Age Novels</a>
-      <a href="#modern-classics"> Modern Classics</a>
-      <a href="#psych-coming-of-age"> Psychological</a>
-      <a href="#inspirational"> Inspirational</a>
-    </nav>
+<nav class="literature-side-nav nav-reverse" aria-label="Jump to literature collection">
+  <div class="literature-side-nav-inner">
 
+    <span class="literature-side-label">COLLECTIONS</span>
+
+    <a href="#ancient-epics">
+      <span aria-hidden="true">🏛️</span>
+      <strong>Ancient Epics &amp; Myth</strong>
+    </a>
+
+    <a href="#classical-medieval">
+      <span aria-hidden="true">📜</span>
+      <strong>Classical &amp; Medieval</strong>
+    </a>
+
+    <a href="#golden-age">
+      <span aria-hidden="true">📚</span>
+      <strong>Golden Age Novels</strong>
+    </a>
+
+    <a href="#modern-classics">
+      <span aria-hidden="true">🖋️</span>
+      <strong>Modern Classics</strong>
+    </a>
+
+    <a href="#psych-coming-of-age">
+      <span aria-hidden="true">🧠</span>
+      <strong>Psychological</strong>
+    </a>
+
+    <a href="#inspirational">
+      <span aria-hidden="true">✨</span>
+      <strong>Inspirational</strong>
+    </a>
+
+  </div>
+</nav>
+
+<main id="main-content">
     <!-- ================= INTRODUCTION ================= -->
 
     <section class="library-intro">
@@ -1415,11 +1449,11 @@
       </p>
 
       <div class="book-grid">
-        <div class="book-card" id="the-epic-of-gilgamesh">
+        <article class="book-card" id="the-epic-of-gilgamesh">
           <div class="book-cover">
             <img
               src="images/Epic-of-Gilgamesh.jpg"
-              alt="The Epic of Gilgamesh"
+              alt="The Epic of Gilgamesh" loading="lazy" decoding="async"
             />
             <div class="level beginner">Beginner</div>
           </div>
@@ -1445,11 +1479,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-song-of-roland">
+        <article class="book-card" id="the-song-of-roland">
           <div class="book-cover">
-            <img src="images/Song-of-Roland.jpg" alt="The Song of Roland" />
+            <img src="images/Song-of-Roland.jpg" alt="The Song of Roland" loading="lazy" decoding="async" />
             <div class="level beginner">Beginner</div>
           </div>
           <div class="book-content">
@@ -1476,11 +1510,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-odyssey">
+        <article class="book-card" id="the-odyssey">
           <div class="book-cover">
-            <img src="images/Odyssey.jpg" alt="The Odyssey" />
+            <img src="images/Odyssey.jpg" alt="The Odyssey" loading="lazy" decoding="async" />
             <div class="level beginner">Beginner</div>
           </div>
           <div class="book-content">
@@ -1505,11 +1539,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-iliad">
+        <article class="book-card" id="the-iliad">
           <div class="book-cover">
-            <img src="images/Iliad.jpg" alt="The Iliad" />
+            <img src="images/Iliad.jpg" alt="The Iliad" loading="lazy" decoding="async" />
             <div class="level intermediate">Intermediate</div>
           </div>
           <div class="book-content">
@@ -1537,11 +1571,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-poetic-edda">
+        <article class="book-card" id="the-poetic-edda">
           <div class="book-cover">
-            <img src="images/Poetic-Edda.jpg" alt="The Poetic Edda" />
+            <img src="images/Poetic-Edda.jpg" alt="The Poetic Edda" loading="lazy" decoding="async" />
             <div class="level intermediate">Intermediate</div>
           </div>
           <div class="book-content">
@@ -1568,11 +1602,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="ramayana">
+        <article class="book-card" id="ramayana">
           <div class="book-cover">
-            <img src="images/ramayana.jpg" alt="Ramayana" />
+            <img src="images/ramayana.jpg" alt="Ramayana" loading="lazy" decoding="async" />
             <div class="level intermediate">Intermediate</div>
           </div>
           <div class="book-content">
@@ -1597,11 +1631,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="beowulf">
+        <article class="book-card" id="beowulf">
           <div class="book-cover">
-            <img src="images/Beowulf.jpg" alt="Beowulf" />
+            <img src="images/Beowulf.jpg" alt="Beowulf" loading="lazy" decoding="async" />
             <div class="level intermediate">Intermediate</div>
           </div>
           <div class="book-content">
@@ -1626,11 +1660,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="theogony">
+        <article class="book-card" id="theogony">
           <div class="book-cover">
-            <img src="images/Theogony.jpg" alt="Theogony" />
+            <img src="images/Theogony.jpg" alt="Theogony" loading="lazy" decoding="async" />
             <div class="level advanced">Advanced</div>
           </div>
           <div class="book-content">
@@ -1657,11 +1691,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="mahabharata">
+        <article class="book-card" id="mahabharata">
           <div class="book-cover">
-            <img src="images/Mahabharata.jpg" alt="Mahabharata" />
+            <img src="images/Mahabharata.jpg" alt="Mahabharata" loading="lazy" decoding="async" />
             <div class="level advanced">Advanced</div>
           </div>
           <div class="book-content">
@@ -1686,7 +1720,7 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -1702,9 +1736,9 @@
       </p>
 
       <div class="book-grid">
-        <div class="book-card" id="the-bustan">
+        <article class="book-card" id="the-bustan">
           <div class="book-cover">
-            <img src="images/Bustan.jpg" alt="The Bustan" />
+            <img src="images/Bustan.jpg" alt="The Bustan" loading="lazy" decoding="async" />
             <div class="level intermediate">Intermediate</div>
           </div>
           <div class="book-content">
@@ -1731,11 +1765,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="metamorphoses">
+        <article class="book-card" id="metamorphoses">
           <div class="book-cover">
-            <img src="images/Metamorphoses-ovid.jpg" alt="Metamorphoses" />
+            <img src="images/Metamorphoses-ovid.jpg" alt="Metamorphoses" loading="lazy" decoding="async" />
             <div class="level intermediate">Intermediate</div>
           </div>
           <div class="book-content">
@@ -1760,13 +1794,13 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="one-thousand-and-one-nights">
+        <article class="book-card" id="one-thousand-and-one-nights">
           <div class="book-cover">
             <img
               src="images/arabian-nights.jpg"
-              alt="One Thousand and One Nights"
+              alt="One Thousand and One Nights" loading="lazy" decoding="async"
             />
             <div class="level intermediate">Intermediate</div>
           </div>
@@ -1795,11 +1829,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="panchatantra">
+        <article class="book-card" id="panchatantra">
           <div class="book-cover">
-            <img src="images/Panchatantra.jpg" alt="Panchatantra" />
+            <img src="images/Panchatantra.jpg" alt="Panchatantra" loading="lazy" decoding="async" />
             <div class="level intermediate">Intermediate</div>
           </div>
           <div class="book-content">
@@ -1826,11 +1860,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-canterbury-tales">
+        <article class="book-card" id="the-canterbury-tales">
           <div class="book-cover">
-            <img src="images/Canterbury-Tales.jpg" alt="The Canterbury Tales" />
+            <img src="images/Canterbury-Tales.jpg" alt="The Canterbury Tales" loading="lazy" decoding="async" />
             <div class="level advanced">Advanced</div>
           </div>
           <div class="book-content">
@@ -1857,11 +1891,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-aeneid">
+        <article class="book-card" id="the-aeneid">
           <div class="book-cover">
-            <img src="images/Aeneid.jpg" alt="The Aeneid" />
+            <img src="images/Aeneid.jpg" alt="The Aeneid" loading="lazy" decoding="async" />
             <div class="level advanced">Advanced</div>
           </div>
           <div class="book-content">
@@ -1889,13 +1923,13 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="journey-to-the-west">
+        <article class="book-card" id="journey-to-the-west">
           <div class="book-cover">
             <img
               src="images/Journey-to-the-West.jpg"
-              alt="Journey to the West"
+              alt="Journey to the West" loading="lazy" decoding="async"
             />
             <div class="level advanced">Advanced</div>
           </div>
@@ -1924,11 +1958,11 @@
               >📖 Read Book (Chinese)</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-tale-of-genji">
+        <article class="book-card" id="the-tale-of-genji">
           <div class="book-cover">
-            <img src="images/Tale-of-Genji.jpg" alt="The Tale of Genji" />
+            <img src="images/Tale-of-Genji.jpg" alt="The Tale of Genji" loading="lazy" decoding="async" />
             <div class="level advanced">Advanced</div>
           </div>
           <div class="book-content">
@@ -1953,11 +1987,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-divine-comedy">
+        <article class="book-card" id="the-divine-comedy">
           <div class="book-cover">
-            <img src="images/Divine-Comedy.jpg" alt="The Divine Comedy" />
+            <img src="images/Divine-Comedy.jpg" alt="The Divine Comedy" loading="lazy" decoding="async" />
             <div class="level advanced">Advanced</div>
           </div>
           <div class="book-content">
@@ -1982,7 +2016,7 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -1997,11 +2031,11 @@
       </p>
 
       <div class="book-grid">
-        <div class="book-card" id="pride-and-prejudice">
+        <article class="book-card" id="pride-and-prejudice">
           <div class="book-cover">
             <img
               src="images/pride-and-prejudice.jpg"
-              alt="Pride and Prejudice"
+              alt="Pride and Prejudice" loading="lazy" decoding="async"
             />
             <div class="level beginner">Beginner</div>
           </div>
@@ -2027,11 +2061,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="oliver-twist">
+        <article class="book-card" id="oliver-twist">
           <div class="book-cover">
-            <img src="images/Oliver-Twist.jpg" alt="Oliver Twist" />
+            <img src="images/Oliver-Twist.jpg" alt="Oliver Twist" loading="lazy" decoding="async" />
             <div class="level intermediate">Intermediate</div>
           </div>
           <div class="book-content">
@@ -2059,13 +2093,13 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="a-tale-of-two-cities">
+        <article class="book-card" id="a-tale-of-two-cities">
           <div class="book-cover">
             <img
               src="images/Tale-of-Two-Cities.jpg"
-              alt="A Tale of Two Cities"
+              alt="A Tale of Two Cities" loading="lazy" decoding="async"
             />
             <div class="level intermediate">Intermediate</div>
           </div>
@@ -2093,13 +2127,13 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-three-musketeers">
+        <article class="book-card" id="the-three-musketeers">
           <div class="book-cover">
             <img
               src="images/The-Three-Musketeers.jpg"
-              alt="The Three Musketeers"
+              alt="The Three Musketeers" loading="lazy" decoding="async"
             />
             <div class="level intermediate">Intermediate</div>
           </div>
@@ -2128,11 +2162,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="don-quixote">
+        <article class="book-card" id="don-quixote">
           <div class="book-cover">
-            <img src="images/Don-Quixote.jpg" alt="Don Quixote" />
+            <img src="images/Don-Quixote.jpg" alt="Don Quixote" loading="lazy" decoding="async" />
             <div class="level intermediate">Intermediate</div>
           </div>
           <div class="book-content">
@@ -2157,13 +2191,13 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="crime-and-punishment">
+        <article class="book-card" id="crime-and-punishment">
           <div class="book-cover">
             <img
               src="images/Crime-and-Punishment.jpg"
-              alt="Crime and Punishment"
+              alt="Crime and Punishment" loading="lazy" decoding="async"
             />
             <div class="level intermediate">Intermediate</div>
           </div>
@@ -2189,13 +2223,13 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-brothers-karamazov">
+        <article class="book-card" id="the-brothers-karamazov">
           <div class="book-cover">
             <img
               src="images/Brothers-Karamazov.jpg"
-              alt="The Brothers Karamazov"
+              alt="The Brothers Karamazov" loading="lazy" decoding="async"
             />
             <div class="level advanced">Advanced</div>
           </div>
@@ -2223,11 +2257,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="dead-souls">
+        <article class="book-card" id="dead-souls">
           <div class="book-cover">
-            <img src="images/Dead-Souls.jpg" alt="Dead Souls" />
+            <img src="images/Dead-Souls.jpg" alt="Dead Souls" loading="lazy" decoding="async" />
             <div class="level advanced">Advanced</div>
           </div>
           <div class="book-content">
@@ -2254,11 +2288,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="les-mis-rables">
+        <article class="book-card" id="les-miserables">
           <div class="book-cover">
-            <img src="images/Les-Misérables.jpg" alt="Les Misérables" />
+            <img src="images/Les-Misérables.jpg" alt="Les Misérables" loading="lazy" decoding="async" />
             <div class="level advanced">Advanced</div>
           </div>
           <div class="book-content">
@@ -2284,11 +2318,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="godan">
+        <article class="book-card" id="godan">
           <div class="book-cover">
-            <img src="images/Godan.jpg" alt="Godan" />
+            <img src="images/Godan.jpg" alt="Godan" loading="lazy" decoding="async" />
             <div class="level advanced">Advanced</div>
           </div>
           <div class="book-content">
@@ -2319,11 +2353,11 @@
               >📖 Goodreads Page</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="moby-dick">
+        <article class="book-card" id="moby-dick">
           <div class="book-cover">
-            <img src="images/Moby-Dick.jpg" alt="Moby-Dick" />
+            <img src="images/Moby-Dick.jpg" alt="Moby-Dick" loading="lazy" decoding="async" />
             <div class="level advanced">Advanced</div>
           </div>
           <div class="book-content">
@@ -2348,11 +2382,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="war-and-peace">
+        <article class="book-card" id="war-and-peace">
           <div class="book-cover">
-            <img src="images/War-and-Peace.jpg" alt="War and Peace" />
+            <img src="images/War-and-Peace.jpg" alt="War and Peace" loading="lazy" decoding="async" />
             <div class="level advanced">Advanced</div>
           </div>
           <div class="book-content">
@@ -2377,7 +2411,7 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -2393,11 +2427,11 @@
       </p>
 
       <div class="book-grid">
-        <div class="book-card" id="nineteen-eighty-four">
+        <article class="book-card" id="nineteen-eighty-four">
           <div class="book-cover">
             <img
               src="images/1984 - George Orwell.jpg"
-              alt="Nineteen Eighty-Four"
+              alt="Nineteen Eighty-Four" loading="lazy" decoding="async"
             />
             <div class="level beginner">Beginner</div>
           </div>
@@ -2423,11 +2457,11 @@
               >📚 View Editions</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="things-fall-apart">
+        <article class="book-card" id="things-fall-apart">
           <div class="book-cover">
-            <img src="images/Things-Fall-Apart.jpg" alt="Things Fall Apart" />
+            <img src="images/Things-Fall-Apart.jpg" alt="Things Fall Apart" loading="lazy" decoding="async" />
             <div class="level beginner">Beginner</div>
           </div>
           <div class="book-content">
@@ -2452,11 +2486,11 @@
               >📚 View Editions</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-kite-runner">
+        <article class="book-card" id="the-kite-runner">
           <div class="book-cover">
-            <img src="images/The-Kite-Runner.jpg" alt="The Kite Runner" />
+            <img src="images/The-Kite-Runner.jpg" alt="The Kite Runner" loading="lazy" decoding="async" />
             <div class="level beginner">Beginner</div>
           </div>
           <div class="book-content">
@@ -2481,13 +2515,13 @@
               >📚 View Editions</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="one-hundred-years-of-solitude">
+        <article class="book-card" id="one-hundred-years-of-solitude">
           <div class="book-cover">
             <img
               src="images/One-Hundred-Years-of-Solitude.jpg"
-              alt="One Hundred Years of Solitude"
+              alt="One Hundred Years of Solitude" loading="lazy" decoding="async"
             />
             <div class="level intermediate">Intermediate</div>
           </div>
@@ -2513,13 +2547,13 @@
               >📚 View Editions</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="to-kill-a-mockingbird">
+        <article class="book-card" id="to-kill-a-mockingbird">
           <div class="book-cover">
             <img
               src="images/To-Kill-a-Mockingbird.jpg"
-              alt="To Kill a Mockingbird"
+              alt="To Kill a Mockingbird" loading="lazy" decoding="async"
             />
             <div class="level advanced">Advanced</div>
           </div>
@@ -2549,13 +2583,13 @@
               >📖 Goodreads Page</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-grapes-of-wrath">
+        <article class="book-card" id="the-grapes-of-wrath">
           <div class="book-cover">
             <img
               src="images/The-Grapes-of-Wrath.jpg"
-              alt="The Grapes of Wrath"
+              alt="The Grapes of Wrath" loading="lazy" decoding="async"
             />
             <div class="level advanced">Advanced</div>
           </div>
@@ -2585,11 +2619,11 @@
               >📖 Goodreads Page</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-trial">
+        <article class="book-card" id="the-trial">
           <div class="book-cover">
-            <img src="images/The-Trial.jpg" alt="The Trial" />
+            <img src="images/The-Trial.jpg" alt="The Trial" loading="lazy" decoding="async" />
             <div class="level advanced">Advanced</div>
           </div>
           <div class="book-content">
@@ -2619,13 +2653,13 @@
               >📖 Goodreads Page</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-god-of-small-things">
+        <article class="book-card" id="the-god-of-small-things">
           <div class="book-cover">
             <img
               src="images/The-God-of-Small-Things.jpg"
-              alt="The God of Small Things"
+              alt="The God of Small Things" loading="lazy" decoding="async"
             />
             <div class="level advanced">Advanced</div>
           </div>
@@ -2655,13 +2689,13 @@
               >📖 Goodreads Page</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="midnights-children">
+        <article class="book-card" id="midnight-s-children">
           <div class="book-cover">
             <img
               src="images/Midnight's-Children.jpg"
-              alt="Midnight's Children"
+              alt="Midnight's Children" loading="lazy" decoding="async"
             />
             <div class="level advanced">Advanced</div>
           </div>
@@ -2692,13 +2726,13 @@
               >📖 Goodreads Page</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-house-of-the-spirits">
+        <article class="book-card" id="the-house-of-the-spirits">
           <div class="book-cover">
             <img
               src="images/The-House-of-the-Spirits.jpg"
-              alt="The House of the Spirits"
+              alt="The House of the Spirits" loading="lazy" decoding="async"
             />
             <div class="level advanced">Advanced</div>
           </div>
@@ -2728,13 +2762,13 @@
               >📖 Goodreads Page</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-old-man-and-the-sea">
+        <article class="book-card" id="the-old-man-and-the-sea">
           <div class="book-cover">
             <img
               src="images/The-Old-Man-and-the-Sea.jpg"
-              alt="The Old Man and the Sea"
+              alt="The Old Man and the Sea" loading="lazy" decoding="async"
             />
             <div class="level advanced">Advanced</div>
           </div>
@@ -2764,11 +2798,11 @@
               >📖 Goodreads Page</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="beloved">
+        <article class="book-card" id="beloved">
           <div class="book-cover">
-            <img src="images/Beloved.jpg" alt="Beloved" />
+            <img src="images/Beloved.jpg" alt="Beloved" loading="lazy" decoding="async" />
             <div class="level advanced">Advanced</div>
           </div>
           <div class="book-content">
@@ -2793,7 +2827,7 @@
               >📚 View Editions</a
             >
           </div>
-        </div>
+        </article>
       </div>
     </section>
     <div class="philosophy-divider"></div>
@@ -2808,9 +2842,9 @@
       </p>
 
       <div class="book-grid">
-        <div class="book-card" id="the-bell-jar">
+        <article class="book-card" id="the-bell-jar">
           <div class="book-cover">
-            <img src="images/The-Bell-Jar.jpg" alt="The Bell Jar" />
+            <img src="images/The-Bell-Jar.jpg" alt="The Bell Jar" loading="lazy" decoding="async" />
             <div class="level intermediate">Intermediate</div>
           </div>
           <div class="book-content">
@@ -2835,13 +2869,13 @@
               >📚 View Editions</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-catcher-in-the-rye">
+        <article class="book-card" id="the-catcher-in-the-rye">
           <div class="book-cover">
             <img
               src="images/The-Catcher-in-the-Rye.jpg"
-              alt="The Catcher in the Rye"
+              alt="The Catcher in the Rye" loading="lazy" decoding="async"
             />
             <div class="level beginner">Beginner</div>
           </div>
@@ -2867,13 +2901,13 @@
               >📚 View Editions</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-perks-of-being-a-wallflower">
+        <article class="book-card" id="the-perks-of-being-a-wallflower">
           <div class="book-cover">
             <img
               src="images/Perks-of-Being-a-Wallflower.jpg"
-              alt="The Perks of Being a Wallflower"
+              alt="The Perks of Being a Wallflower" loading="lazy" decoding="async"
             />
             <div class="level beginner">Beginner</div>
           </div>
@@ -2899,11 +2933,11 @@
               >📚 View Editions</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-metamorphosis">
+        <article class="book-card" id="the-metamorphosis">
           <div class="book-cover">
-            <img src="images/Metamorphoses-ovid.jpg" alt="The Metamorphosis" />
+            <img src="images/Metamorphoses-ovid.jpg" alt="The Metamorphosis" loading="lazy" decoding="async" />
             <div class="level intermediate">Intermediate</div>
           </div>
           <div class="book-content">
@@ -2928,11 +2962,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="siddhartha">
+        <article class="book-card" id="siddhartha">
           <div class="book-cover">
-            <img src="images/Siddhartha.jpg" alt="Siddhartha" />
+            <img src="images/Siddhartha.jpg" alt="Siddhartha" loading="lazy" decoding="async" />
             <div class="level intermediate">Intermediate</div>
           </div>
           <div class="book-content">
@@ -2957,11 +2991,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="demian">
+        <article class="book-card" id="demian">
           <div class="book-cover">
-            <img src="images/Demian.jpg" alt="Demian" />
+            <img src="images/Demian.jpg" alt="Demian" loading="lazy" decoding="async" />
             <div class="level intermediate">Intermediate</div>
           </div>
           <div class="book-content">
@@ -2986,7 +3020,7 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -3003,9 +3037,9 @@
       </p>
 
       <div class="book-grid">
-        <div class="book-card" id="the-alchemist">
+        <article class="book-card" id="the-alchemist">
           <div class="book-cover">
-            <img src="images/The-Alchemist.jpg" alt="The Alchemist" />
+            <img src="images/The-Alchemist.jpg" alt="The Alchemist" loading="lazy" decoding="async" />
             <div class="level beginner">Beginner</div>
           </div>
           <div class="book-content">
@@ -3030,11 +3064,11 @@
               >📚 View Editions</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-little-prince">
+        <article class="book-card" id="the-little-prince">
           <div class="book-cover">
-            <img src="images/Little-Prince.jpg" alt="The Little Prince" />
+            <img src="images/Little-Prince.jpg" alt="The Little Prince" loading="lazy" decoding="async" />
             <div class="level beginner">Beginner</div>
           </div>
           <div class="book-content">
@@ -3059,11 +3093,11 @@
               >📚 View Editions</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-prophet">
+        <article class="book-card" id="the-prophet">
           <div class="book-cover">
-            <img src="images/The-Prophet.jpg" alt="The Prophet" />
+            <img src="images/The-Prophet.jpg" alt="The Prophet" loading="lazy" decoding="async" />
             <div class="level beginner">Beginner</div>
           </div>
           <div class="book-content">
@@ -3088,11 +3122,11 @@
               >📖 Read Book</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="ikigai">
+        <article class="book-card" id="ikigai">
           <div class="book-cover">
-            <img src="images/Ikigai.jpg" alt="Ikigai" />
+            <img src="images/Ikigai.jpg" alt="Ikigai" loading="lazy" decoding="async" />
             <div class="level beginner">Beginner</div>
           </div>
           <div class="book-content">
@@ -3117,11 +3151,11 @@
               >📚 View Editions</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="the-four-agreements">
+        <article class="book-card" id="the-four-agreements">
           <div class="book-cover">
-            <img src="images/Four-Agreements.jpg" alt="The Four Agreements" />
+            <img src="images/Four-Agreements.jpg" alt="The Four Agreements" loading="lazy" decoding="async" />
             <div class="level beginner">Beginner</div>
           </div>
           <div class="book-content">
@@ -3146,13 +3180,13 @@
               >📚 View Editions</a
             >
           </div>
-        </div>
+        </article>
 
-        <div class="book-card" id="who-moved-my-cheese">
+        <article class="book-card" id="who-moved-my-cheese">
           <div class="book-cover">
             <img
               src="images/Who-Moved-My-Cheese.jpg"
-              alt="Who Moved My Cheese?"
+              alt="Who Moved My Cheese?" loading="lazy" decoding="async"
             />
             <div class="level beginner">Beginner</div>
           </div>
@@ -3178,7 +3212,7 @@
               >📚 View Editions</a
             >
           </div>
-        </div>
+        </article>
       </div>
     </section>
     <div class="philosophy-divider"></div>
@@ -3522,7 +3556,7 @@
       </p>
 
       <div class="featured-book">
-        <img src="images/odyssey.jpg" alt="The Odyssey" />
+        <img src="images/odyssey.jpg" alt="The Odyssey" loading="lazy" decoding="async" />
 
         <div class="featured-content">
           <h3>The Odyssey</h3>
@@ -3625,6 +3659,8 @@
 
     <!-- ================= FOOTER ================= -->
 
+    </main>
+
     <footer class="footer">
       <h2>Φ Philosophy</h2>
 
@@ -3650,7 +3686,6 @@
       <p>© 2026 Philosophy Library Designed &amp; Developed by Kavya Jain</p>
     </footer>
 
-    <script src="script.js" defer></script>
 
     <div class="appearance-panel" id="appearancePanel" aria-hidden="true">
       <div class="appearance-panel-header">
@@ -3721,5 +3756,8 @@
         <button id="resetAppearance" type="button">Reset preferences</button>
       </div>
     </div>
+    <script src="script.js" defer></script>
+    <script src="books-enhance.js" defer></script>
+    <script src="world-literature-enhance.js" defer></script>
   </body>
 </html>

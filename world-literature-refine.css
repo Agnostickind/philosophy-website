@@ -1,0 +1,395 @@
+/* =========================================================
+   WORLD LITERATURE — refinement layer
+   Load order:
+     style.css → home-refine.css → books-refine.css → literature-refine.css
+   Everything shared with the Books page (cards, grid, chips,
+   non-sticky mobile category nav) comes from books-refine.css.
+   This file only adds what is unique to Literature.
+   ========================================================= */
+
+/* ---------- 1. award columns ---------- */
+.awards-section .award-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap:clamp(1rem, 2.5vw, 1.9rem);
+  align-items:start;
+}
+.awards-section .award-category{
+  background:color-mix(in oklab, var(--parchment-2) 88%, transparent);
+  border:1px solid color-mix(in oklab, var(--paper-line) 85%, transparent);
+  border-radius:var(--radius);
+  padding:1.15rem 1.15rem 1.25rem;
+  box-shadow:0 1px 2px rgba(20,22,31,.05), 0 10px 24px rgba(20,22,31,.06);
+  min-width:0;
+}
+body.theme-dark .awards-section .award-category{
+  background:color-mix(in oklab, var(--ink-soft) 88%, transparent);
+  border-color:var(--ink-line);
+}
+.awards-section .award-category h3{
+  font-family:var(--mono);
+  font-size:.74rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--gold);
+  padding-bottom:.55rem;
+  margin-bottom:.7rem;
+  border-bottom:1px solid color-mix(in oklab, var(--gold) 35%, transparent);
+}
+.awards-section .award-category ul{
+  list-style:none;
+  margin:0; padding:0;
+  display:flex; flex-direction:column;
+}
+.awards-section .award-category li + li{
+  border-top:1px dashed color-mix(in oklab, var(--paper-line) 70%, transparent);
+}
+body.theme-dark .awards-section .award-category li + li{ border-top-color:var(--ink-line); }
+.awards-section .award-category li a{
+  display:block;
+  min-height:44px;                 /* comfortable tap target */
+  padding:.7rem .2rem;
+  font-size:.92rem;
+  line-height:1.35;
+  text-decoration:none;
+  color:inherit;
+  overflow-wrap:anywhere;
+  transition:color .2s ease, padding-left .2s ease;
+}
+.awards-section .award-category li a:hover{
+  color:var(--gold);
+  padding-left:.4rem;
+}
+
+/* ---------- 2. regions grid ---------- */
+.world-philosophy .world-intro{
+  max-width:var(--bk-measure);
+  color:var(--muted-dark);
+}
+body.theme-dark .world-philosophy .world-intro{ color:var(--muted-light); }
+
+.world-philosophy .world-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap:clamp(.9rem, 2.2vw, 1.6rem);
+}
+.world-philosophy .world-card{
+  min-width:0;
+  padding:1.2rem;
+  border-radius:var(--radius);
+  border:1px solid color-mix(in oklab, var(--paper-line) 85%, transparent);
+  background:color-mix(in oklab, var(--parchment-2) 85%, transparent);
+  transition:transform .3s cubic-bezier(.2,.7,.3,1), border-color .3s ease, box-shadow .3s ease;
+}
+body.theme-dark .world-philosophy .world-card{
+  background:color-mix(in oklab, var(--ink-soft) 85%, transparent);
+  border-color:var(--ink-line);
+}
+.world-philosophy .world-card h3{
+  font-family:var(--serif-display);
+  font-size:1.08rem;
+  margin:.5rem 0 .35rem;
+}
+.world-philosophy .world-card p{
+  font-size:.9rem;
+  line-height:1.55;
+}
+.world-philosophy .world-icon{
+  font-size:1.7rem;
+  line-height:1;
+}
+@media (hover:hover) and (pointer:fine){
+  .world-philosophy .world-card:hover{
+    transform:translateY(-4px);
+    border-color:var(--gold);
+    box-shadow:0 16px 30px rgba(20,22,31,.10);
+  }
+}
+
+/* ---------- 3. themes / questions ---------- */
+.questions ul,
+.questions ol{
+  max-width:var(--bk-measure);
+  padding-left:1.1rem;
+}
+.questions li{
+  margin-block:.5rem;
+  line-height:1.6;
+  text-wrap:pretty;
+}
+
+/* ---------- 4. daily-life + quote blocks ---------- */
+.daily-life p,
+.editors-picks p{ max-width:var(--bk-measure); }
+.quote blockquote{
+  font-family:var(--serif-display);
+  font-size:clamp(1.05rem, .95rem + .6vw, 1.5rem);
+  line-height:1.45;
+}
+
+/* ---------- 5. mobile guarantees ----------
+   No element on this page other than the main navbar pins
+   itself to the viewport on phones/tablets.                */
+@media (max-width: 1024px){
+  .awards-section,
+  .world-philosophy,
+  .questions,
+  .book-month,
+  .editors-picks{ position:static !important; }
+
+  .awards-section .award-grid{ gap:.9rem; }
+  .world-philosophy .world-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 420px){
+  .world-philosophy .world-grid{ grid-template-columns:1fr; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .world-philosophy .world-card,
+  .awards-section .award-category li a{ transition:none !important; }
+}
+/* =========================================================
+   LITERATURE SIDE NAVIGATION
+   nav-reverse = appears from the RIGHT side
+   Hidden during hero, appears after hero has passed.
+   ========================================================= */
+
+.literature-side-nav {
+  position: fixed;
+
+  top: 110px;
+  left: 22px;
+  right: auto;
+
+  z-index: 900;
+
+  width: 170px;
+  max-height: calc(100vh - 140px);
+
+  margin: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateX(30px);
+
+  transition:
+    opacity 0.35s ease,
+    visibility 0.35s ease,
+    transform 0.35s ease;
+
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+
+/* =========================================================
+   VISIBLE STATE
+   ========================================================= */
+
+.literature-side-nav.literature-side-nav-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transform: translateX(0);
+}
+
+
+/* =========================================================
+   INNER PANEL
+   ========================================================= */
+
+.literature-side-nav-inner {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.15rem;
+
+  padding: 0.8rem 0.65rem;
+
+  border: 1px solid color-mix(
+    in srgb,
+    var(--gold, #b88a44) 22%,
+    transparent
+  );
+
+  border-radius: 16px;
+
+  background: color-mix(
+    in srgb,
+    var(--background, #14100b) 92%,
+    transparent
+  );
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.literature-side-label {
+  display: block;
+
+  padding: 0.35rem 0.55rem 0.55rem;
+
+  color: var(--gold, #b88a44);
+
+  font-size: 0.65rem;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.literature-side-nav a {
+  display: grid;
+
+  grid-template-columns: 1.8rem 1fr;
+
+  align-items: center;
+
+  gap: 0.45rem;
+
+  padding: 0.48rem 0.5rem;
+
+  color: inherit;
+
+  font-size: 0.78rem;
+  line-height: 1.25;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  transition:
+    background 0.22s ease,
+    color 0.22s ease,
+    transform 0.22s ease;
+}
+
+.literature-side-nav a span {
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.literature-side-nav a strong {
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   HOVER / FOCUS
+   ========================================================= */
+
+.literature-side-nav a:hover,
+.literature-side-nav a:focus-visible {
+  background: color-mix(
+    in srgb,
+    var(--gold, #b88a44) 10%,
+    transparent
+  );
+
+  transform: translateX(-2px);
+
+  outline: none;
+}
+
+
+/* =========================================================
+   ACTIVE COLLECTION
+   ========================================================= */
+
+.literature-side-nav a.is-active,
+.literature-side-nav a[aria-current="true"] {
+  color: var(--gold, #b88a44);
+
+  background: color-mix(
+    in srgb,
+    var(--gold, #b88a44) 16%,
+    transparent
+  );
+}
+
+.literature-side-nav a.is-active strong,
+.literature-side-nav a[aria-current="true"] strong {
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   LITERATURE SECTION ANCHOR OFFSET
+   ========================================================= */
+
+#ancient-epics,
+#classical-medieval,
+#golden-age,
+#modern-classics,
+#psych-coming-of-age,
+#inspirational {
+  scroll-margin-top: 100px;
+}
+
+
+/* =========================================================
+   LIGHT THEME
+   ========================================================= */
+
+body:not(.theme-dark) .literature-side-nav-inner {
+  background: rgba(255, 255, 255, 0.98);
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.10);
+}
+
+body:not(.theme-dark) .literature-side-nav a {
+  color: #0a0a0a;
+}
+
+body:not(.theme-dark) .literature-side-nav a:hover,
+body:not(.theme-dark) .literature-side-nav a:focus-visible {
+  background: rgba(134, 102, 55, 0.14);
+  color: #0b0a0a;
+}
+
+body:not(.theme-dark) .literature-side-nav a.is-active,
+body:not(.theme-dark) .literature-side-nav a[aria-current="true"] {
+  color: #1d1710;
+  background: #b88a44;
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+   Hide side navigation
+   ========================================================= */
+
+@media (max-width: 860px) {
+  .literature-side-nav {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .literature-side-nav,
+  .literature-side-nav.literature-side-nav-visible {
+    transition: none;
+    transform: none;
+  }
+}

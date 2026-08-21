@@ -251,7 +251,7 @@
       </div>
     </nav>
 
-    <section id="timeline" class="schools" >
+    <section id="timeline" class="schools">
       <h2>A Journey Through 2,500 Years of Thought</h2>
 
       <div class="intro-text">
@@ -827,37 +827,101 @@
       </a>
     </section>
 
+    <!-- ================= FOOTER ================= -->
+
     <footer class="footer">
-      <h2>Φ Philosophy</h2>
+      <div class="footer-main">
+        <!-- BRAND / INTRO -->
+        <div class="footer-brand">
+          <h2>Φ Philosophy</h2>
 
-      <p>
-        A digital library dedicated to exploring the ideas, books and thinkers
-        that shaped human civilization.
-      </p>
+          <p>
+            A growing digital library dedicated to philosophy, thinkers,
+            traditions, books, and human thought.
+          </p>
 
-      <div class="footer-links">
-        <a href="index.html">Home</a>
+          <p class="footer-tagline">WELCOME TO THE LIBRARY</p>
+        </div>
 
-        <a href="history.html">History</a>
+        <!-- EXPLORE -->
+        <div class="footer-column">
+          <h3>EXPLORE</h3>
 
-        <a href="thinkers.html">Thinkers</a>
+          <a href="index.html">Home</a>
+          <a href="history.html">History</a>
+          <a href="thinkers.html">Thinkers</a>
+          <a href="branches.html">Branches</a>
+          <a href="schools.html">Schools</a>
+          <a href="books.html">Books</a>
+          <a href="world-literature.html">Literature</a>
+          <a href="blog.html">Blog</a>
+        </div>
 
-        <a href="branches.html">Branches</a>
+        <!-- PHILOSOPHICAL ERAS -->
+        <div class="footer-column">
+          <h3>PHILOSOPHY</h3>
+          <a href="ancient-greece.html">Ancient Greece</a>
+          <a href="ancient-india.html">Ancient India</a>
+          <a href="ancient-china.html">Ancient China</a>
+          <a href="islamic-philosophy.html">Islamic Philosophy</a>
+          <a href="medieval-philosophy.html">Medieval Philosophy</a>
+          <a href="renaissance-philosophy.html">Renaissance Philosophy</a>
+          <a href="enlightenment-philosophy.html">Enlightenment Philosophy</a>
+          <a href="modern-philosophy.html">Modern Philosophy</a>
+          <a href="contemporary-philosophy.html">Contemporary Philosophy</a>
+        </div>
 
-        <a href="schools.html">Schools</a>
+        <div class="footer-column">
+          <h3>BRANCHES</h3>
 
-        <a href="world-literature.html">Literature</a>
+          <a href="ethics-branch-philosophy.html">Ethics</a>
+          <a href="metaphysics-branch-philosophy.html">Metaphysics</a>
+          <a href="epistemology-branch-philosophy.html">Epistemology</a>
+          <a href="logic-branch-philosophy.html">Logic</a>
+          <a href="aesthetics-branch-philosophy.html">Aesthetics</a>
+        </div>
 
-        <a href="blog.html">Blog</a>
+        <!-- TRADITIONS -->
+        <div class="footer-column">
+          <h3>SCHOOLS</h3>
+          <a href="greek-schools.html">Greeks Schools</a>
+          <a href="indian-schools.html">Indian Schools</a>
+          <a href="chinese-japanese-schools.html">Chinese&Japanese Schools</a>
+          <a href="islamic-persian-schools.html">Persian&Islamic Schools</a>
+          <a href="enlightenment-schools.html">Enlightenment Schools</a>
+          <a href="modern-schools.html">Modern Schools</a>
+        </div>
 
-        <a href="books.html">Books</a>
+        <!-- LIBRARY -->
+        <div class="footer-column">
+          <h3>LIBRARY</h3>
 
-        <a href="contact.html">Contact</a>
+          <a href="books.html">Philosophical Books</a>
+          <a href="world-literature.html">World Literature</a>
+          <a href="thinkers.html">Philosophers &amp; Thinkers</a>
+          <a href="schools.html">Schools of Thought</a>
+          <a href="branches.html">Branches of Philosophy</a>
+          <a href="contact.html">Contact the Library</a>
+        </div>
       </div>
 
-      <hr />
+      <!-- FOOTER BOTTOM -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-brand">
+          <strong>Φ The Great Library of Philosophy</strong>
 
-      <p>© 2026 Philosophy Library Designed &amp; Developed by Kavya Jain</p>
+          <span>
+            Explore ideas. Discover thinkers. Understand philosophy.
+          </span>
+        </div>
+
+        <hr />
+
+        <p class="footer-copyright">
+          © 2026 The Great Library of Philosophy · Designed &amp; Developed by
+          Kavya Jain
+        </p>
+      </div>
     </footer>
 
     <script src="script.js" defer></script>
@@ -932,124 +996,128 @@
         <button id="resetAppearance" type="button">Reset preferences</button>
       </div>
     </div>
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const historyNav = document.querySelector(".history-nav");
-    const hero = document.querySelector(".home-hero");
-    const navbar = document.querySelector(".navbar"); // Get the navbar element
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const historyNav = document.querySelector(".history-nav");
+        const hero = document.querySelector(".home-hero");
+        const navbar = document.querySelector(".navbar"); // Get the navbar element
 
-    // --- Function to manage the visibility of the history navigation ---
-    function updateHistoryNavVisibility() {
-      if (!historyNav) return; // Exit if the navigation element doesn't exist
+        // --- Function to manage the visibility of the history navigation ---
+        function updateHistoryNavVisibility() {
+          if (!historyNav) return; // Exit if the navigation element doesn't exist
 
-      // If there's no hero section, the nav should always be visible (unless on small screens)
-      if (!hero) {
-        if (window.innerWidth > 860) { // Check against the mobile breakpoint
-          historyNav.classList.add("history-nav-visible");
-        } else {
-          historyNav.classList.remove("history-nav-visible");
+          // If there's no hero section, the nav should always be visible (unless on small screens)
+          if (!hero) {
+            if (window.innerWidth > 860) {
+              // Check against the mobile breakpoint
+              historyNav.classList.add("history-nav-visible");
+            } else {
+              historyNav.classList.remove("history-nav-visible");
+            }
+            return;
+          }
+
+          // Calculate the height of the fixed navbar
+          const navbarHeight = navbar ? navbar.offsetHeight : 80; // Use offsetHeight or a fallback
+
+          // Get the bounding rectangle of the hero section
+          const heroRect = hero.getBoundingClientRect();
+
+          // Check if the bottom of the hero section has scrolled past the bottom of the navbar
+          // This means the user has scrolled past the hero
+          const heroHasScrolledPast = heroRect.bottom <= navbarHeight;
+
+          // Add or remove the visibility class based on scroll position and screen size
+          if (window.innerWidth > 860) {
+            // Only show on larger screens
+            historyNav.classList.toggle(
+              "history-nav-visible",
+              heroHasScrolledPast,
+            );
+          } else {
+            historyNav.classList.remove("history-nav-visible"); // Hide on small screens
+          }
         }
-        return;
-      }
 
-      // Calculate the height of the fixed navbar
-      const navbarHeight = navbar ? navbar.offsetHeight : 80; // Use offsetHeight or a fallback
+        // --- Initialize visibility and set up listeners ---
+        updateHistoryNavVisibility(); // Set initial state on load
 
-      // Get the bounding rectangle of the hero section
-      const heroRect = hero.getBoundingClientRect();
+        // Listen for scroll events
+        window.addEventListener("scroll", updateHistoryNavVisibility, {
+          passive: true,
+        });
+        // Listen for resize events to handle responsiveness
+        window.addEventListener("resize", updateHistoryNavVisibility);
 
-      // Check if the bottom of the hero section has scrolled past the bottom of the navbar
-      // This means the user has scrolled past the hero
-      const heroHasScrolledPast = heroRect.bottom <= navbarHeight;
+        // --- Highlight the current timeline section in the navigation ---
+        const historyLinks = [
+          ...document.querySelectorAll(".history-nav a[href^='#']"),
+        ];
 
-      // Add or remove the visibility class based on scroll position and screen size
-      if (window.innerWidth > 860) { // Only show on larger screens
-        historyNav.classList.toggle("history-nav-visible", heroHasScrolledPast);
-      } else {
-        historyNav.classList.remove("history-nav-visible"); // Hide on small screens
-      }
-    }
+        const historySections = historyLinks
+          .map((link) => {
+            const targetSelector = link.getAttribute("href");
+            const section = document.querySelector(targetSelector);
+            return section ? { link, section } : null;
+          })
+          .filter(Boolean);
 
-    // --- Initialize visibility and set up listeners ---
-    updateHistoryNavVisibility(); // Set initial state on load
-
-    // Listen for scroll events
-    window.addEventListener("scroll", updateHistoryNavVisibility, { passive: true });
-    // Listen for resize events to handle responsiveness
-    window.addEventListener("resize", updateHistoryNavVisibility);
-
-
-    // --- Highlight the current timeline section in the navigation ---
-    const historyLinks = [
-      ...document.querySelectorAll(".history-nav a[href^='#']")
-    ];
-
-    const historySections = historyLinks
-      .map((link) => {
-        const targetSelector = link.getAttribute("href");
-        const section = document.querySelector(targetSelector);
-        return section ? { link, section } : null;
-      })
-      .filter(Boolean);
-
-    function setActiveLink(activeLink) {
-      historyLinks.forEach((link) => {
-        const isActive = link === activeLink;
-        link.classList.toggle("is-active", isActive); // Use 'is-active' consistently
-        if (isActive) {
-          link.setAttribute("aria-current", "true");
-        } else {
-          link.removeAttribute("aria-current");
+        function setActiveLink(activeLink) {
+          historyLinks.forEach((link) => {
+            const isActive = link === activeLink;
+            link.classList.toggle("is-active", isActive); // Use 'is-active' consistently
+            if (isActive) {
+              link.setAttribute("aria-current", "true");
+            } else {
+              link.removeAttribute("aria-current");
+            }
+          });
         }
-      });
-    }
 
-    if (historySections.length > 0) {
-      const sectionObserver = new IntersectionObserver(
-        (entries) => {
-          const visibleSections = entries
-            .filter((entry) => entry.isIntersecting)
-            .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        if (historySections.length > 0) {
+          const sectionObserver = new IntersectionObserver(
+            (entries) => {
+              const visibleSections = entries
+                .filter((entry) => entry.isIntersecting)
+                .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
-          if (!visibleSections.length) return;
+              if (!visibleSections.length) return;
 
-          const currentSection = visibleSections[0].target;
-          const currentItem = historySections.find(
-            (item) => item.section === currentSection
+              const currentSection = visibleSections[0].target;
+              const currentItem = historySections.find(
+                (item) => item.section === currentSection,
+              );
+
+              if (currentItem) {
+                setActiveLink(currentItem.link);
+              }
+            },
+            {
+              root: null,
+              // Adjust rootMargin to make the active section highlight correctly.
+              // The negative bottom margin means it triggers 'is-intersecting' slightly before
+              // the section is fully visible, which helps with the active state.
+              rootMargin: "-18% 0px -62% 0px",
+              threshold: [0.1, 0.25, 0.5],
+            },
           );
 
-          if (currentItem) {
-            setActiveLink(currentItem.link);
-          }
-        },
-        {
-          root: null,
-          // Adjust rootMargin to make the active section highlight correctly.
-          // The negative bottom margin means it triggers 'is-intersecting' slightly before
-          // the section is fully visible, which helps with the active state.
-          rootMargin: "-18% 0px -62% 0px",
-          threshold: [0.1, 0.25, 0.5]
+          historySections.forEach(({ section }) => {
+            sectionObserver.observe(section);
+          });
+
+          // Add click listener to ensure the active link is set immediately when clicked
+          historyLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              // Wait a tiny bit for the scroll to start before setting active link
+              // This prevents a momentary jump to the wrong active link
+              setTimeout(() => {
+                setActiveLink(link);
+              }, 50); // Small delay
+            });
+          });
         }
-      );
-
-      historySections.forEach(({ section }) => {
-        sectionObserver.observe(section);
       });
-
-      // Add click listener to ensure the active link is set immediately when clicked
-      historyLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          // Wait a tiny bit for the scroll to start before setting active link
-          // This prevents a momentary jump to the wrong active link
-          setTimeout(() => {
-            setActiveLink(link);
-          }, 50); // Small delay
-        });
-      });
-    }
-  });
-</script>
-
-
+    </script>
   </body>
 </html>

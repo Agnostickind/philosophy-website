@@ -644,3 +644,51 @@ body.page-wide .quote blockquote {
 
   max-width: none;
 }
+
+/* =========================================================
+   13. MOBILE BRANCH LAYOUT FIX
+   (branches-refine.css loads after style.css and its .branch
+   grid-template-columns has no breakpoint, so it was silently
+   overriding style.css's mobile stacking rules — this restores
+   the stack and kills the sticky-image scroll glitch)
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .branch,
+  .branch.reverse {
+    grid-template-columns: 1fr !important;
+  }
+
+  .branch-image {
+    position: static !important;   /* kill the sticky pin */
+    top: auto !important;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .branch-image img {
+    aspect-ratio: 16 / 9 !important; /* portrait 4/5 looks too tall stacked full-width */
+    width: 100%;
+    height: 100%;
+  }
+
+  .branch-content {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .branch,
+  .branch.reverse {
+    padding-block: 1.6rem;
+  }
+
+  .branch-content h2 {
+    text-align: center;
+  }
+
+  .branch-content ul {
+    justify-content: center;
+  }
+}

@@ -7143,3 +7143,79 @@ body.theme-dark .home-hero button:hover {
     justify-content: center !important;
   }
 }
+
+/* ---------------------------------------------------------
+   LIGHT THEME — IMPROVE PROSE READABILITY
+   --------------------------------------------------------- */
+
+body:not(.theme-dark) .narrative-block p {
+  color: #29251f;
+  font-weight: 600;
+}
+
+body:not(.theme-dark) .narrative-block li {
+  color: #332f29;
+  font-weight: 500;
+}
+
+body:not(.theme-dark) .narrative-block a {
+  color: #8a5a24;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------
+   LIGHT THEME — IMPROVE PROSE READABILITY
+   --------------------------------------------------------- */
+
+body:not(.theme-dark) .bp-section p {
+  color: #29251f;
+  font-weight: 600;
+}
+
+body:not(.theme-dark) .bp-section li {
+  color: #332f29;
+  font-weight: 500;
+}
+
+body:not(.theme-dark) .bp-section a {
+  color: #8a5a24;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------
+   LIGHT THEME — IMPROVE PROSE READABILITY
+   --------------------------------------------------------- */
+
+body:not(.theme-dark) .branch-intro p {
+  color: #29251f;
+  font-weight: 600;
+}
+
+body:not(.theme-dark) .branch-info li {
+  color: #332f29;
+  font-weight: 500;
+}
+
+body:not(.theme-dark) .branch-info a {
+  color: #8a5a24;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------
+   LIGHT THEME — IMPROVE PROSE READABILITY
+   --------------------------------------------------------- */
+
+body:not(.theme-dark) .branch-content p {
+  color: #29251f;
+  font-weight: 600;
+}
+
+body:not(.theme-dark) .branch-content li {
+  color: #332f29;
+  font-weight: 500;
+}
+
+body:not(.theme-dark) .branch-content a {
+  color: #8a5a24;
+  font-weight: 600;
+}

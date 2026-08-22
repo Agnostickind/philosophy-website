@@ -311,6 +311,25 @@ body:not(.theme-dark) .daily-life a {
   font-weight: 600;
 }
 
+/* ---------------------------------------------------------
+   LIGHT THEME — IMPROVE PROSE READABILITY
+   --------------------------------------------------------- */
+
+body:not(.theme-dark) .about-home p {
+  color: #29251f;
+  font-weight: 600;
+}
+
+body:not(.theme-dark) .about-home li {
+  color: #332f29;
+  font-weight: 500;
+}
+
+body:not(.theme-dark) .about-home a {
+  color: #8a5a24;
+  font-weight: 600;
+}
+
 /* Skip link — hidden until keyboard focus */
 .skip-link {
   position: fixed;

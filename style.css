@@ -6960,6 +6960,7 @@ body.theme-dark .home-hero button:hover {
 /* --- General Mobile Adjustments --- */
 @media (max-width: 600px) { /* Adjust breakpoint if needed */
 
+
   .book-month,
   .spotlight {
     padding: 20px 15px !important; /* Add padding to the main sections */
@@ -7120,5 +7121,25 @@ body.theme-dark .home-hero button:hover {
     font-size: 1rem !important;
     margin-top: 2rem !important;
     display: inline-block !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .book-month .featured-book,
+  .spotlight .spotlight-card {
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+  }
+
+  .book-month .featured-book img,
+  .spotlight .spotlight-card img {
+    width: 70% !important;
+    max-width: 220px !important;
+    margin: 0 auto 1.5rem !important;
+  }
+
+  .book-month .featured-content ul,
+  .spotlight .spotlight-card ul {
+    justify-content: center !important;
   }
 }

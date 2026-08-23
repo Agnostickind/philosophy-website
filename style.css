@@ -2464,31 +2464,53 @@ body.theme-dark #resetAppearance:hover {
 
 /* ---- Era page: related pages ---- */
 
+/* =========================================================
+   RELATED PHILOSOPHERS — FINAL GRID
+   ========================================================= */
+
 .related-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(3, minmax(150px, 1fr)) !important;
+
+  gap: 1rem !important;
+
+  width: min(100%, 760px) !important;
+
+  margin: 0 auto !important;
+
+  /* Hide literal • separators */
+  font-size: 0 !important;
 }
 
 .related-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
+  display: flex !important;
 
-  font-family: var(--mono);
-  font-size: 0.82rem;
-  letter-spacing: 0.04em;
+  align-items: center !important;
+  justify-content: center !important;
 
-  padding: 0.75rem 1.3rem;
+  width: 100% !important;
+  min-height: 64px !important;
 
-  border: 1px solid var(--paper-line);
-  border-radius: 6px;
+  padding: 0.75rem 1rem !important;
 
-  color: var(--ink-text);
-  text-decoration: none;
+  box-sizing: border-box !important;
 
-  background: transparent;
+  font-family: var(--mono) !important;
+  font-size: 0.82rem !important;
+
+  letter-spacing: 0.04em !important;
+  text-align: center !important;
+
+  border: 1px solid var(--paper-line) !important;
+  border-radius: 6px !important;
+
+  color: var(--ink-text) !important;
+
+  text-decoration: none !important;
+
+  background: transparent !important;
 
   transition:
     background 0.2s ease,
@@ -2496,19 +2518,72 @@ body.theme-dark #resetAppearance:hover {
     transform 0.2s ease;
 }
 
-.related-links a span {
-  color: var(--gold);
-  transition: transform 0.2s ease;
-}
-
 .related-links a:hover {
-  border-color: var(--gold);
-  background: var(--parchment-2);
-  transform: translateY(-2px);
+  border-color: var(--gold) !important;
+
+  background: var(--parchment-2) !important;
+
+  transform: translateY(-2px) !important;
 }
 
-.related-links a:hover span {
-  transform: translateX(3px);
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .related-links {
+    grid-template-columns:
+      repeat(2, minmax(150px, 1fr)) !important;
+
+    width: min(92vw, 620px) !important;
+
+    gap: 0.9rem !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .related-links {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+
+    width: 92vw !important;
+
+    gap: 0.75rem !important;
+  }
+
+  .related-links a {
+    min-height: 58px !important;
+
+    padding:
+      0.65rem 0.4rem !important;
+
+    font-size: 0.76rem !important;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+  .related-links {
+    grid-template-columns: 1fr !important;
+
+    width: 90vw !important;
+  }
+
 }
 
 .related-pages {

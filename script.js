@@ -187,12 +187,23 @@ document.addEventListener('DOMContentLoaded', () => {
         /* -----------------------------------------------------
            CLOSE MOBILE MENU AFTER CLICKING A LINK
            ----------------------------------------------------- */
-
         navLinks.querySelectorAll('a').forEach((link) => {
 
             link.addEventListener(
                 'click',
                 () => {
+
+                    /* Do NOT close the menu when clicking
+                       the History submenu toggle */
+
+                    if (
+                        link.classList.contains(
+                            'mega-mobile-toggle'
+                        )
+                    ) {
+                        return;
+                    }
+
 
                     if (window.innerWidth <= 1100) {
 
@@ -219,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     closeMenu();
 
                 }
-                
+
             }
         );
 

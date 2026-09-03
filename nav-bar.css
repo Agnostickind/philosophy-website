@@ -1,0 +1,626 @@
+/* =========================================================
+   HISTORY MEGA MENU — DESKTOP
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   HISTORY WRAPPER
+   --------------------------------------------------------- */
+
+.nav-mega {
+    position: relative;
+}
+
+
+/* ---------------------------------------------------------
+   HISTORY TRIGGER
+   --------------------------------------------------------- */
+
+.nav-links .mega-trigger {
+    color: var(--muted-light);
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    position: relative;
+
+    padding-bottom: 4px;
+
+    transition: color 0.2s ease;
+}
+
+
+/* UNDERLINE */
+
+.nav-links .mega-trigger::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 1px;
+
+    background: var(--gold);
+
+    transform: scaleX(0);
+    transform-origin: right;
+
+    transition: transform 0.25s ease;
+}
+
+
+.nav-mega:hover .mega-trigger,
+.nav-mega:focus-within .mega-trigger {
+    color: var(--light-text);
+}
+
+
+.nav-mega:hover .mega-trigger::after,
+.nav-mega:focus-within .mega-trigger::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+/* ACTIVE HISTORY PAGE */
+
+.nav-mega .mega-trigger.active {
+    color: var(--gold-bright);
+}
+
+
+.nav-mega .mega-trigger.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+/* ---------------------------------------------------------
+   MEGA MENU CONTAINER
+   --------------------------------------------------------- */
+
+.mega-menu {
+    position: absolute;
+
+    top: calc(100% + 20px);
+    left: -220px;
+
+    width: min(1000px, 90vw);
+
+    background:
+        linear-gradient(135deg,
+            rgba(29, 31, 42, 0.98),
+            rgba(18, 20, 28, 0.98));
+
+    border: 1px solid var(--ink-line);
+    border-top: 2px solid var(--gold);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.45);
+
+    backdrop-filter: blur(14px);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-8px);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.22s ease,
+        transform 0.22s ease,
+        visibility 0.22s ease;
+}
+
+
+/* ---------------------------------------------------------
+   HOVER BRIDGE
+   Prevents the menu from disappearing while the cursor
+   moves from HISTORY into the dropdown.
+   --------------------------------------------------------- */
+
+.mega-menu::before {
+    content: "";
+
+    position: absolute;
+
+    top: -20px;
+    left: 0;
+
+    width: 100%;
+    height: 20px;
+}
+
+
+/* ---------------------------------------------------------
+   SHOW MENU
+   --------------------------------------------------------- */
+
+.nav-mega:hover .mega-menu,
+.nav-mega:focus-within .mega-menu {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+}
+
+
+/* ---------------------------------------------------------
+   DESKTOP GRID
+   --------------------------------------------------------- */
+
+.mega-menu-inner {
+    display: grid;
+
+    grid-template-columns:
+        1.25fr 1fr 1fr 1fr;
+
+    gap: 0;
+
+    padding: 2rem;
+}
+
+
+/* ---------------------------------------------------------
+   INTRODUCTION COLUMN
+   --------------------------------------------------------- */
+
+.mega-intro {
+    padding:
+        0.3rem 2rem 0.5rem 0.3rem;
+
+    border-right:
+        1px solid var(--ink-line);
+}
+
+
+.mega-eyebrow {
+    display: block;
+
+    margin-bottom: 0.8rem;
+
+    color: var(--gold-bright);
+
+    font-family: var(--mono);
+
+    font-size: 0.68rem;
+
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+}
+
+
+.mega-intro h3 {
+    margin-bottom: 0.8rem;
+
+    color: var(--light-text);
+
+    font-size: 1.45rem;
+
+    line-height: 1.2;
+}
+
+
+.mega-intro p {
+    margin-bottom: 1.3rem;
+
+    color: var(--muted-light);
+
+    font-size: 0.88rem;
+
+    line-height: 1.7;
+}
+
+
+/* EXPLORE HISTORY */
+
+.mega-explore {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 0.5rem;
+
+    color: var(--gold-bright);
+
+    font-family: var(--mono);
+
+    font-size: 0.72rem;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+}
+
+
+.mega-explore span {
+    transition: transform 0.2s ease;
+}
+
+
+.mega-explore:hover span {
+    transform: translateX(4px);
+}
+
+
+/* ---------------------------------------------------------
+   HISTORY COLUMNS
+   --------------------------------------------------------- */
+
+.mega-column {
+    padding:
+        0.3rem 1.5rem;
+}
+
+
+.mega-column h4 {
+    margin-bottom: 1rem;
+
+    color: var(--gold-bright);
+
+    font-family: var(--mono);
+
+    font-size: 0.65rem;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+}
+
+
+.mega-column a {
+    display: block;
+
+    padding:
+        0.65rem 0.7rem;
+
+    margin:
+        0 -0.7rem 0.25rem;
+
+    border-radius: 2px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.mega-column a:hover {
+    background:
+        rgba(201, 167, 94, 0.08);
+
+    transform:
+        translateX(4px);
+}
+
+
+/* PAGE TITLE */
+
+.mega-column a strong {
+    display: block;
+
+    margin-bottom: 0.3rem;
+
+    color: var(--light-text);
+
+    font-size: 0.82rem;
+
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+
+.mega-column a:hover strong {
+    color: var(--gold-bright);
+}
+
+
+/* PAGE DESCRIPTION */
+
+.mega-column a span {
+    display: block;
+
+    color: var(--muted-light);
+
+    font-size: 0.68rem;
+
+    line-height: 1.5;
+}
+
+
+/* ---------------------------------------------------------
+   ACTIVE PAGE INSIDE MEGA MENU
+   --------------------------------------------------------- */
+
+.mega-column a.active {
+    background:
+        rgba(201, 167, 94, 0.06);
+}
+
+
+.mega-column a.active strong {
+    color: var(--gold-bright);
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE TOGGLE
+   Hidden on desktop
+   --------------------------------------------------------- */
+
+.mega-mobile-toggle {
+    display: none;
+}
+
+/* =========================================================
+   HISTORY MEGA MENU — MOBILE & TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    /* ---------------------------------------------------------
+     HISTORY WRAPPER
+     --------------------------------------------------------- */
+
+    .nav-mega {
+        position: relative;
+
+        width: 100%;
+
+        border-bottom:
+            1px solid var(--ink-line);
+    }
+
+
+    /* ---------------------------------------------------------
+     HISTORY MAIN LINK
+     --------------------------------------------------------- */
+
+    .nav-mega .mega-trigger {
+        display: block;
+
+        width: calc(100% - 52px);
+
+        padding:
+            0.9rem 0;
+
+        border-bottom: none;
+    }
+
+
+    /* Remove desktop hover behaviour on mobile */
+
+    .nav-mega:hover .mega-trigger {
+        color: var(--muted-light);
+    }
+
+
+    .nav-mega:hover .mega-trigger::after {
+        transform: scaleX(0);
+    }
+
+
+    /* Keep active History page highlighted */
+
+    .nav-mega .mega-trigger.active {
+        color: var(--gold-bright);
+    }
+
+
+    .nav-mega .mega-trigger.active::after {
+        transform: scaleX(1);
+    }
+
+
+    /* ---------------------------------------------------------
+     MOBILE HISTORY ARROW
+     --------------------------------------------------------- */
+
+    .mega-mobile-toggle {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+
+        top: 0;
+        right: 0;
+
+        width: 52px;
+        height: 45px;
+
+        padding: 0;
+
+        border: none;
+
+        background: transparent;
+
+        cursor: pointer;
+    }
+
+
+    /* Arrow */
+
+    .mega-mobile-toggle span {
+        width: 8px;
+        height: 8px;
+
+        border-right:
+            1px solid var(--muted-light);
+
+        border-bottom:
+            1px solid var(--muted-light);
+
+        transform:
+            rotate(45deg) translateY(-2px);
+
+        transition:
+            transform 0.25s ease,
+            border-color 0.25s ease;
+    }
+
+
+    /* Arrow when open */
+
+    .history-mega.mobile-open .mega-mobile-toggle span {
+        border-color: var(--gold-bright);
+
+        transform:
+            rotate(-135deg) translate(-2px, -2px);
+    }
+
+
+    /* ---------------------------------------------------------
+     MOBILE HISTORY PANEL
+     --------------------------------------------------------- */
+
+    .mega-menu {
+        position: static;
+
+        width: 100%;
+
+        margin: 0;
+
+        background: transparent;
+
+        border: none;
+
+        box-shadow: none;
+
+        backdrop-filter: none;
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: none;
+
+        pointer-events: auto;
+
+        display: none;
+    }
+
+
+    /* Show when mobile History is expanded */
+
+    .history-mega.mobile-open .mega-menu {
+        display: block;
+    }
+
+
+    /* Remove desktop hover bridge */
+
+    .mega-menu::before {
+        display: none;
+    }
+
+
+    /* ---------------------------------------------------------
+     MOBILE CONTENT LAYOUT
+     --------------------------------------------------------- */
+
+    .mega-menu-inner {
+        display: block;
+
+        padding:
+            0.3rem 0 0.8rem 1rem;
+
+        border-left:
+            1px solid var(--ink-line);
+    }
+
+
+    /* Hide the large desktop introduction */
+
+    .mega-intro {
+        display: none;
+    }
+
+
+    /* ---------------------------------------------------------
+     HISTORY SECTIONS
+     --------------------------------------------------------- */
+
+    .mega-column {
+        padding:
+            0.8rem 0;
+    }
+
+
+    .mega-column h4 {
+        margin:
+            0.25rem 0 0.65rem;
+
+        color: var(--gold-bright);
+
+        font-size: 0.64rem;
+
+        letter-spacing: 0.1em;
+    }
+
+
+    /* ---------------------------------------------------------
+     HISTORY PAGE LINKS
+     --------------------------------------------------------- */
+
+    .mega-column a {
+        display: block;
+
+        padding:
+            0.6rem 0.65rem;
+
+        margin:
+            0 0 0.2rem;
+
+        border-bottom: none;
+
+        border-radius: 2px;
+
+        transform: none;
+    }
+
+
+    .mega-column a:hover {
+        transform: none;
+
+        background:
+            rgba(201, 167, 94, 0.06);
+    }
+
+
+    .mega-column a strong {
+        font-size: 0.8rem;
+    }
+
+
+    .mega-column a span {
+        font-size: 0.66rem;
+
+        line-height: 1.5;
+    }
+
+
+    /* ---------------------------------------------------------
+     ACTIVE HISTORY PAGE
+     --------------------------------------------------------- */
+
+    .mega-column a.active {
+        background:
+            rgba(201, 167, 94, 0.08);
+    }
+
+
+    .mega-column a.active strong {
+        color: var(--gold-bright);
+    }
+
+}

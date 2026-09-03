@@ -10,43 +10,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     /* ---------------------------------------------------------
-       1. MOBILE MENU
-       --------------------------------------------------------- */
-
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    if (menuToggle && navLinks) {
-
-        const closeMenu = () => {
-            navLinks.classList.remove('open');
-            menuToggle.classList.remove('open');
-            menuToggle.setAttribute('aria-expanded', 'false');
-        };
-
-        const toggleMenu = () => {
-            const isOpen = navLinks.classList.toggle('open');
-            menuToggle.classList.toggle('open', isOpen);
-            menuToggle.setAttribute('aria-expanded', String(isOpen));
-        };
-
-        menuToggle.addEventListener('click', toggleMenu);
-
-        // Close the menu after tapping any link in it
-        navLinks.querySelectorAll('a').forEach((link) => {
-            link.addEventListener('click', closeMenu);
-        });
-
-        // Close the menu automatically if the window is resized
-        // back up to desktop width while it's open
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 860) {
-                closeMenu();
-            }
-        });
-    }
-
-    /* ---------------------------------------------------------
        2. ACTIVE NAV LINK
        Highlights whichever nav/footer link matches the
        current page, so visitors can see where they are.

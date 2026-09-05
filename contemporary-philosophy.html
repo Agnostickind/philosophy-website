@@ -49,37 +49,22 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="home-refine.css" />
-  <!-- Website Favicon -->
-<link rel="icon" href="favicon.ico" sizes="any" />
+    <!-- Website Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="any" />
 
-<link
-  rel="icon"
-  type="image/png"
-  sizes="32x32"
-  href="favicon-32x32.png"
-/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
 
-<link
-  rel="icon"
-  type="image/png"
-  sizes="48x48"
-  href="favicon-48x48.png"
-/>
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png" />
 
-<link
-  rel="icon"
-  type="image/png"
-  sizes="192x192"
-  href="favicon-192x192.png"
-/>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon-192x192.png"
+    />
 
-<link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="apple-touch-icon.png"
-/>
-
-</head>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  </head>
 
   <body>
     <!-- ================= NAVBAR ================= -->
@@ -91,7 +76,144 @@
 
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="history.html">History</a>
+
+        <!-- ================= HISTORY MEGA MENU ================= -->
+
+        <div class="nav-mega history-mega">
+          <!-- Main History page link -->
+
+          <a href="history.html" class="mega-trigger" aria-haspopup="true">
+            History
+          </a>
+
+          <!-- Mobile expand / collapse button -->
+
+          <button
+            class="mega-mobile-toggle"
+            type="button"
+            aria-label="Open History navigation"
+            aria-expanded="false"
+            aria-controls="history-mega-menu"
+          >
+            <span></span>
+          </button>
+
+          <!-- History mega menu -->
+
+          <div class="mega-menu" id="history-mega-menu">
+            <div class="mega-menu-inner">
+              <!-- INTRODUCTION -->
+
+              <div class="mega-intro">
+                <span class="mega-eyebrow"> The Great Tradition </span>
+
+                <h3>History of Philosophy</h3>
+
+                <p>
+                  Explore the development of philosophical thought across
+                  civilizations, cultures, and historical eras.
+                </p>
+
+                <a href="history.html" class="mega-explore">
+                  Explore History <span>→</span>
+                </a>
+              </div>
+
+              <!-- ANCIENT -->
+
+              <div class="mega-column">
+                <h4>Ancient Civilizations</h4>
+
+                <a href="ancient-greece.html">
+                  <strong>Ancient Greece</strong>
+                  <span>Socrates, Plato, Aristotle</span>
+                </a>
+
+                <a href="ancient-india.html">
+                  <strong>Ancient India</strong>
+                  <span>Vedic and classical traditions</span>
+                </a>
+
+                <a href="ancient-china.html">
+                  <strong>Ancient China</strong>
+                  <span>Confucianism and Daoism</span>
+                </a>
+
+                <a href="african-philosophy.html">
+                  <strong>ANCIENT AFRICAN PHILOSOPHY</strong>
+                  <span>PHILOSOPHICAL TRADITIONS OF AFRICA</span>
+                </a>
+
+                <a href="ancient-egypt.html">
+                  <strong>ANCIENT EGYPTIAN PHILOSOPHY</strong>
+                  <span>WISDOM, ORDER, AND THE PRINCIPLES OF MA'AT</span>
+                </a>
+
+                <a href="hellenistic-roman-philosophy.html">
+                  <strong>HELLENISTIC &amp; ROMAN PHILOSOPHY</strong>
+                  <span>STOICISM, EPICUREANISM, AND THE GRECO-ROMAN WORLD</span>
+                </a>
+
+                <a href="ancient-persian-philosophy.html">
+                  <strong>ANCIENT PERSIAN PHILOSOPHY</strong>
+                  <span
+                    >ZOROASTRIAN THOUGHT AND THE PHILOSOPHY OF ANCIENT
+                    PERSIA</span
+                  >
+                </a>
+
+                <a href="ancient-mesopotamia.html">
+                  <strong>ANCIENT MESOPOTAMIAN PHILOSOPHY</strong>
+                  <span>WISDOM, COSMOS, AND THE EARLIEST CIVILIZATIONS</span>
+                </a>
+              </div>
+
+              <!-- MEDIEVAL -->
+
+              <div class="mega-column">
+                <h4>Medieval &amp; Renaissance</h4>
+
+                <a href="islamic-philosophy.html">
+                  <strong>Islamic Philosophy</strong>
+                  <span>Reason, faith, and the classical heritage</span>
+                </a>
+
+                <a href="medieval-philosophy.html">
+                  <strong>Medieval Philosophy</strong>
+                  <span>Scholasticism and theological inquiry</span>
+                </a>
+
+                <a href="renaissance-philosophy.html">
+                  <strong>Renaissance Philosophy</strong>
+                  <span>Humanism and intellectual renewal</span>
+                </a>
+              </div>
+
+              <!-- MODERN -->
+
+              <div class="mega-column">
+                <h4>Modern &amp; Contemporary</h4>
+
+                <a href="enlightenment-philosophy.html">
+                  <strong>The Enlightenment</strong>
+                  <span>Reason, science, and liberty</span>
+                </a>
+
+                <a href="modern-philosophy.html">
+                  <strong>Modern Philosophy</strong>
+                  <span>From Descartes to the nineteenth century</span>
+                </a>
+
+                <a href="contemporary-philosophy.html">
+                  <strong>Contemporary Philosophy</strong>
+                  <span>Twentieth century to the present</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         <a href="thinkers.html">Thinkers</a>
         <a href="branches.html">Branches</a>
         <a href="schools.html">Schools</a>
@@ -194,25 +316,48 @@
       <h2>Introduction</h2>
 
       <p>
-        Contemporary philosophy picks up in the mid-20th century, after the
-        Analytic and Existentialist/phenomenological traditions had already
-        staked out largely separate territory, and after two world wars had
-        badly shaken European confidence in reason, progress, and the grand
-        historical narratives that thinkers like Hegel had once proposed. Where
-        to go from there became, itself, a genuinely open question.
+        Contemporary philosophy generally refers to philosophical developments
+        from the mid-20th century to the present, although its boundaries remain
+        deliberately flexible because many movements that became especially
+        influential after 1945 had begun earlier. It developed in a world
+        profoundly transformed by two world wars, the Holocaust, nuclear
+        weapons, decolonization, the Cold War, rapid technological change, and
+        the growing globalization of intellectual life. These events made
+        questions about progress, reason, power, identity, language, science,
+        and human responsibility more urgent than ever, while also challenging
+        the assumption that philosophy could be organized around a single
+        universal method or exclusively European intellectual tradition.
       </p>
 
       <p>
-        This page traces that ongoing story across three broad chapters: the
-        Postmodern challenge to grand narratives and claims of objective truth,
-        the rise of philosophy of mind and language as central concerns in an
-        age of computers and cognitive science, and the continued, evolving work
-        of ethics and political philosophy in response to a rapidly changing
-        world. Unlike the earlier eras on this site, contemporary philosophy has
-        no settled ending — it is, quite literally, still being written.
+        Rather than forming one unified school, contemporary philosophy expanded
+        into a diverse landscape of overlapping traditions. Analytic
+        philosophers developed increasingly sophisticated work in logic,
+        language, metaphysics, epistemology, and the philosophy of mind;
+        Continental thinkers investigated power, history, interpretation,
+        subjectivity, and social structures; feminist, postcolonial, critical
+        race, and other traditions challenged the exclusions built into older
+        philosophical canons. At the same time, developments in computing,
+        neuroscience, cognitive science, environmental studies, and artificial
+        intelligence created entirely new philosophical problems that earlier
+        generations could scarcely have imagined.
+      </p>
+
+      <p>
+        This page traces that continuing history across nine broad starting
+        chapters: the challenge to universal narratives and fixed meanings
+        associated with post-structuralism and postmodern thought; the growing
+        importance of mind, language, consciousness, and cognition in an age
+        shaped by computers and cognitive science; and the renewed development
+        of ethics and political philosophy in response to inequality,
+        technology, environmental crisis, global justice, and changing
+        conceptions of human identity. Unlike earlier periods in the history of
+        philosophy, contemporary philosophy has no completed historical boundary
+        — its debates remain active, contested, and still being written.
       </p>
     </section>
     <div class="philosophy-divider"></div>
+
     <!-- ================= TIMELINE ================= -->
 
     <section class="era-timeline-section">
@@ -221,22 +366,25 @@
       <div class="era-timeline">
         <div class="timeline-point">
           <span class="timeline-date">1949</span>
-          <p>Simone de Beauvoir publishes The Second Sex</p>
+          <p>Simone de Beauvoir publishes <em>The Second Sex</em></p>
         </div>
 
         <div class="timeline-point">
           <span class="timeline-date">1962</span>
-          <p>Thomas Kuhn publishes The Structure of Scientific Revolutions</p>
+          <p>
+            Thomas Kuhn publishes
+            <em>The Structure of Scientific Revolutions</em>
+          </p>
+        </div>
+
+        <div class="timeline-point">
+          <span class="timeline-date">1966–1967</span>
+          <p>Jacques Derrida's early works help establish deconstruction</p>
         </div>
 
         <div class="timeline-point">
           <span class="timeline-date">1971</span>
-          <p>John Rawls publishes A Theory of Justice</p>
-        </div>
-
-        <div class="timeline-point">
-          <span class="timeline-date">1966</span>
-          <p>Jacques Derrida introduces deconstruction</p>
+          <p>John Rawls publishes <em>A Theory of Justice</em></p>
         </div>
 
         <div class="timeline-point">
@@ -247,12 +395,14 @@
         <div class="timeline-point">
           <span class="timeline-date">1990s–present</span>
           <p>
-            Philosophy of mind engages directly with cognitive science and AI
+            Philosophy increasingly engages with globalization, neuroscience,
+            digital technology, climate ethics, and artificial intelligence
           </p>
         </div>
       </div>
     </section>
     <div class="philosophy-divider"></div>
+
     <!-- ================= HISTORICAL BACKGROUND ================= -->
 
     <section class="narrative-block" id="background">
@@ -264,186 +414,818 @@
           alt="Mid-20th-century Europe"
         />
         <figcaption>
-          The devastation of two world wars badly shook European confidence in
-          reason, progress, and grand historical narratives.
+          The devastation of two world wars profoundly challenged older
+          assumptions about progress, civilization, and the relationship between
+          reason and human flourishing.
         </figcaption>
       </figure>
 
       <p>
-        The mid-20th century left European philosophy in a genuinely different
-        position than it had occupied in 1900. Two world wars, the Holocaust,
-        and the development of nuclear weapons had made it far harder to sustain
-        Enlightenment-era confidence that reason and progress moved history in a
-        broadly positive direction — a confidence that had already been under
-        pressure from Nietzsche and Kierkegaard, but which now faced direct
-        historical refutation in the eyes of many postwar thinkers.
+        The mid-20th century placed philosophy in a historical situation
+        profoundly different from that of the nineteenth century. The First and
+        Second World Wars, the Holocaust, totalitarian regimes, genocide, and
+        the development of nuclear weapons forced philosophers to confront an
+        uncomfortable question: how could societies possessing advanced science,
+        technology, education, and political institutions also produce
+        destruction on an unprecedented scale? For many thinkers, these events
+        did not simply disprove the value of reason, but they seriously
+        challenged the older belief that scientific and intellectual progress
+        automatically produced moral or political progress. Reason itself
+        increasingly became an object of philosophical criticism and
+        investigation rather than an unquestioned instrument of human
+        liberation.
       </p>
 
       <p>
-        At the same time, decolonization movements across Africa, Asia, and the
-        Caribbean brought sustained philosophical challenges to the idea that
-        European thought represented a universal, neutral standpoint from which
-        to judge other cultures and histories — questions taken up directly by
-        postcolonial theorists working alongside, and sometimes against, the
-        European philosophical traditions covered elsewhere on this site.
-        Meanwhile, rapid advances in logic, computing, and cognitive science
-        opened up entirely new philosophical territory: if machines could
-        process information and, eventually, simulate reasoning, what did that
-        suggest about the nature of human thought itself?
+        This historical crisis encouraged new examinations of power, ideology,
+        bureaucracy, technology, and social conformity. Thinkers associated with
+        Critical Theory investigated how modern systems of communication,
+        culture, economics, and administration could shape consciousness and
+        reproduce forms of domination even within formally democratic societies.
+        Other philosophers questioned the grand historical narratives that
+        claimed history moved according to a single rational direction. The
+        experience of the twentieth century made many philosophers increasingly
+        suspicious of theories that presented one culture, political system,
+        conception of reason, or model of human development as universally
+        authoritative.
       </p>
 
       <p>
-        It was against this backdrop — a Europe questioning its own narratives,
-        a wider world demanding to be heard on its own terms, and new
-        technologies raising unprecedented questions about mind and knowledge —
-        that contemporary philosophy's several distinct conversations took
-        shape.
+        At the same time, decolonization across Africa, Asia, the Caribbean, and
+        other regions transformed the intellectual landscape. Colonialism had
+        not only involved political and economic domination; it had also shaped
+        which traditions were recognized as philosophy and whose knowledge was
+        treated as universal. Postcolonial thinkers therefore challenged
+        Eurocentric accounts of history, identity, rationality, and
+        civilization, while feminist philosophers exposed the ways supposedly
+        universal accounts of humanity had often been constructed around male
+        experience. Contemporary philosophy consequently became increasingly
+        concerned with questions of voice, exclusion, identity, race, gender,
+        culture, and the relationship between knowledge and social power.
+      </p>
+
+      <p>
+        Meanwhile, extraordinary developments in formal logic, computing,
+        linguistics, neuroscience, and cognitive science opened new
+        philosophical territory. Alan Turing's work on computation helped make
+        the possibility of machine intelligence a serious philosophical
+        question, while later research into the brain and cognition renewed
+        debates about consciousness, personal identity, perception, and free
+        will. If thought could be understood partly as information processing,
+        philosophers asked, what distinguished human consciousness from
+        computation? Could a machine genuinely think, understand, or possess
+        subjective experience? These questions gradually moved from speculative
+        possibilities into central debates in philosophy of mind and,
+        eventually, artificial intelligence ethics.
+      </p>
+
+      <p>
+        Contemporary philosophy therefore developed not as a single movement but
+        as an increasingly plural and interconnected field. Some philosophers
+        continued the analytic search for conceptual clarity and logical
+        precision, while others investigated history, interpretation, language,
+        power, and lived experience. Political and ethical philosophy returned
+        with renewed urgency to questions of justice, rights, democracy, global
+        inequality, environmental responsibility, and technological power. It
+        was against this backdrop — a world questioning inherited narratives,
+        expanding beyond older philosophical boundaries, and confronting
+        unprecedented scientific and technological change — that the diverse
+        traditions of contemporary philosophy took shape.
       </p>
     </section>
 
     <!-- ================= CHAPTER 1 ================= -->
 
-    <div class="era-divider" id="chapter-1"><span>1️⃣ Postmodernism</span></div>
+    <div class="era-divider" id="chapter-1">
+      <span>1️⃣ Philosophy After the 20th Century</span>
+    </div>
 
     <section class="narrative-block">
-      <h2>Foucault, Derrida, and the Challenge to Grand Narratives</h2>
-
-      <figure class="narrative-figure left">
-        <img
-          src="images/simone-de-Beauvoir-contemporary-philosophy.jpg"
-          alt="Simone de Beauvoir"
-        />
-        <figcaption>
-          Simone de Beauvoir's The Second Sex laid foundational groundwork for
-          feminist existentialism and the philosophical critiques that followed.
-        </figcaption>
-      </figure>
+      <h2>A More Plural and Specialized Discipline</h2>
 
       <p>
-        Postmodern philosophy, emerging significantly in France from the 1960s
-        onward, is unified less by a shared doctrine than by a shared suspicion:
-        skepticism toward "grand narratives" — sweeping, totalizing stories,
-        whether Enlightenment progress, Marxist historical inevitability, or any
-        single framework claiming to explain history or society as a whole.
-        Michel Foucault examined how power operates not primarily through direct
-        force but through institutions, knowledge systems, and discourse itself
-        — the categories and vocabularies a society uses to define what counts
-        as sane or mad, criminal or lawful, normal or deviant — arguing that
-        these categories are historically constructed rather than simply
-        discovered facts about the world.
+        Contemporary philosophy emerged from the intellectual transformations of
+        the 20th century rather than from a single new philosophical movement.
+        By the late twentieth century, the large systems that had once attempted
+        to explain reality, history, consciousness, or society as a whole no
+        longer dominated philosophy in the same way. Instead, the discipline
+        became increasingly plural and specialized. Philosophers worked within
+        distinct traditions and subfields, often concentrating on highly
+        specific problems concerning language, knowledge, consciousness, ethics,
+        politics, science, technology, and culture.
       </p>
 
       <p>
-        Jacques Derrida developed <strong>deconstruction</strong>, a method of
-        close textual reading that exposes the internal instabilities and
-        unstated assumptions within any text or system of thought, challenging
-        the idea that language can ever achieve fully stable, fixed meaning.
-        Simone de Beauvoir, writing somewhat earlier from within the
-        Existentialist tradition, laid crucial groundwork for this wider
-        critical turn in <em>The Second Sex</em> (1949), applying Existentialist
-        concepts of freedom and the "Other" to analyze how women's social
-        position had been historically constructed rather than naturally given —
-        a foundational text for feminist philosophy that directly influenced the
-        postmodern and poststructuralist thinkers who followed.
+        This development did not mean that the older traditions disappeared.
+        Existentialism, phenomenology, Marxism, pragmatism, analytic philosophy,
+        critical theory, feminism, and post-structuralism continued to influence
+        contemporary debates. What changed was the intellectual landscape in
+        which they operated. Philosophers increasingly borrowed ideas and
+        methods across disciplinary boundaries, while the distinction between
+        philosophical questions and questions investigated by psychology,
+        linguistics, economics, computer science, biology, and neuroscience
+        became less sharply defined.
+      </p>
+
+      <p>
+        The growing specialization of philosophy also produced a remarkable
+        expansion of its subject matter. Philosophy of mind investigated
+        consciousness alongside cognitive science; bioethics addressed questions
+        created by modern medicine; environmental philosophy examined humanity's
+        responsibilities toward nature; and political philosophy reconsidered
+        justice in increasingly diverse and interconnected societies. New
+        technologies created further questions about privacy, artificial
+        intelligence, automation, and the power exercised through digital
+        systems.
+      </p>
+
+      <p>
+        Contemporary philosophy also became increasingly aware of the historical
+        limits of the traditional philosophical canon. For centuries, many
+        standard histories of philosophy concentrated overwhelmingly on European
+        thinkers. Late twentieth- and twenty-first-century scholarship
+        increasingly challenged this narrow framework, bringing
+        <a href="ancient-india.html">Indian</a>,
+        <a href="ancient-china.html">Chinese</a>,
+        <a href="african-philosophy.html">African</a>,
+        <a href="islamic-philosophy.html">Islamic</a>,
+        Indigenous,
+        Latin American, and other
+        intellectual traditions into wider philosophical conversation. This did
+        not create a single global philosophy, but it significantly changed
+        debates about whose ideas count as philosophy and how philosophical
+        history should be written.
+      </p>
+
+      <p>
+        As a result, contemporary philosophy is best understood not as one
+        unified school but as a diverse intellectual field connected by
+        recurring questions. What can human beings know? What is consciousness?
+        What makes an action right or wrong? What is justice? How should
+        societies respond to new technologies and environmental crises? These
+        questions are ancient, but the conditions under which they are now asked
+        are profoundly new.
+      </p>
+
+      <p>
+        The history of contemporary philosophy is therefore also the history of
+        a discipline learning to operate without a single dominant method or
+        worldview. Some philosophers continue to pursue logical precision and
+        systematic argument, while others emphasize historical interpretation,
+        lived experience, social critique, or dialogue between cultures. This
+        diversity can make contemporary philosophy appear fragmented, but it
+        also reflects the complexity of the modern world it seeks to understand.
       </p>
     </section>
 
     <!-- ================= CHAPTER 2 ================= -->
 
     <div class="era-divider" id="chapter-2">
-      <span>2️⃣ Philosophy of Mind &amp; Language</span>
+      <span>2️⃣ Contemporary Analytic Philosophy</span>
     </div>
 
     <section class="narrative-block">
-      <h2>Consciousness, Computation, and the Hard Problem</h2>
-
-      <figure class="narrative-figure">
-        <img
-          src="images/cognitive-science-contemporary-philosophy.jpg"
-          alt="Philosophy of mind and cognitive science"
-        />
-        <figcaption>
-          The rise of cognitive science and computing raised urgent new
-          questions about the relationship between mind, brain, and machine.
-        </figcaption>
-      </figure>
+      <h2>Logic, Language, Knowledge, and Reality</h2>
 
       <p>
-        As cognitive science and computing advanced through the second half of
-        the 20th century, philosophy of mind became one of the most active areas
-        of contemporary philosophy, wrestling directly with questions the era's
-        new technologies made newly urgent: is the mind essentially a kind of
-        computer, processing information according to formal rules? Could a
-        sufficiently sophisticated machine genuinely think, or merely simulate
-        the appearance of thinking? Gilbert Ryle's earlier critique of Cartesian
-        dualism — dismissing the idea of a mind somehow separate from the
-        physical body as a "ghost in the machine" — set the stage for
-        physicalist approaches that dominated much of the mid-century
-        discussion.
+        Analytic philosophy remained one of the most influential traditions in
+        English-speaking universities throughout the late twentieth and early
+        twenty-first centuries. Its earlier development had emphasized formal
+        logic and the analysis of language, particularly through thinkers such
+        as Frege, Russell, Moore, and Wittgenstein. Contemporary analytic
+        philosophy inherited this concern for clarity and rigorous argument but
+        expanded far beyond its original focus on whether philosophical problems
+        could be solved through linguistic analysis alone.
       </p>
 
       <p>
-        Thomas Nagel's 1974 paper "What Is It Like to Be a Bat?" reframed the
-        debate sharply, arguing that even a complete physical description of a
-        bat's brain and echolocation system would leave out something essential:
-        the subjective, first-person quality of what it actually feels like to
-        be a bat — what philosophers now call
-        <strong>qualia</strong>. This gap between objective physical description
-        and subjective experience became known as the
-        <strong>hard problem of consciousness</strong>, a phrase later coined by
-        David Chalmers, and remains one of contemporary philosophy's most
-        actively debated and genuinely unresolved questions, discussed directly
-        alongside developments in neuroscience and artificial intelligence.
+        One important development was the renewed study of metaphysics. Earlier
+        twentieth-century philosophers had sometimes regarded metaphysical
+        questions with suspicion, especially within logical positivism. Later
+        analytic philosophers returned to questions about existence, identity,
+        possibility, causation, time, and the nature of reality. Modal logic and
+        the philosophical analysis of possible worlds became important tools for
+        investigating what could have been different and what must be true in
+        every possible situation.
+      </p>
+
+      <p>
+        <a href="epistemology-branch-philosophy.html">Epistemology</a> also developed in new directions. Philosophers continued to
+        ask what knowledge is and how beliefs can be justified, but they
+        increasingly examined problems involving skepticism, testimony,
+        disagreement, social knowledge, and the reliability of cognitive
+        processes. The traditional image of a solitary individual trying to
+        prove the existence of the external world was supplemented by questions
+        about how knowledge is produced collectively through institutions,
+        experts, scientific communities, and social practices.
+      </p>
+
+      <p>
+        Philosophy of language likewise moved beyond its early concern with
+        logical form. Contemporary philosophers investigated reference, meaning,
+        interpretation, metaphor, communication, and the relationship between
+        language and thought. Thinkers such as Saul Kripke challenged earlier
+        assumptions about how names and necessity function, helping to reshape
+        both philosophy of language and metaphysics. These debates demonstrated
+        that apparently technical questions about words could have major
+        consequences for understanding reality itself.
+      </p>
+
+      <p>
+        Contemporary analytic philosophy is therefore defined less by a fixed
+        list of doctrines than by a style of philosophical inquiry. Careful
+        argument, conceptual precision, engagement with logic, and close
+        examination of objections remain central ideals. At the same time, the
+        tradition has become increasingly diverse, addressing ethics, politics,
+        feminism, race, consciousness, science, religion, and technology
+        alongside its more traditional subjects.
+      </p>
+
+      <p>
+        The boundaries between analytic and other philosophical traditions have
+        also become less absolute than they once appeared. Although important
+        differences in style and method remain, contemporary philosophers
+        increasingly engage with problems that cannot be confined to one
+        intellectual tradition. The result is an analytic philosophy that
+        remains committed to argumentative rigor while participating in a much
+        wider philosophical landscape.
       </p>
     </section>
 
     <!-- ================= CHAPTER 3 ================= -->
 
     <div class="era-divider" id="chapter-3">
-      <span>3️⃣ Ethics &amp; Political Philosophy Today</span>
+      <span>3️⃣ Philosophy of Mind &amp; Cognitive Science</span>
     </div>
 
     <section class="narrative-block">
-      <h2>Rawls, Justice, and Philosophy's Ongoing Work</h2>
-
-      <figure class="narrative-figure left">
-        <img
-          src="images/theory-of-Justice-contemporary.jpg"
-          alt="John Rawls and A Theory of Justice"
-        />
-        <figcaption>
-          John Rawls's A Theory of Justice revitalized political philosophy
-          through his influential thought experiment, the "veil of ignorance."
-        </figcaption>
-      </figure>
+      <h2>Consciousness, the Brain, and the Nature of Mind</h2>
 
       <p>
-        John Rawls's <em>A Theory of Justice</em> (1971) is widely credited with
-        revitalizing political philosophy as a serious, systematic discipline
-        after decades in which many philosophers had considered its central
-        questions largely settled or beyond rigorous argument. Rawls proposed a
-        thought experiment — the "veil of ignorance," in which people design a
-        society's basic institutions without knowing what position, wealth, or
-        abilities they themselves will have within it — to argue for principles
-        of justice that would be rationally chosen under conditions of genuine
-        fairness, reviving social contract reasoning in an explicitly
-        contemporary form.
+        The study of the mind became one of the central areas of contemporary
+        philosophy. Ancient and early modern philosophers had long asked about
+        the relationship between mind and body, but developments in psychology,
+        neuroscience, linguistics, and computer science gave these questions a
+        new scientific context. Philosophers of mind increasingly investigated
+        consciousness, perception, intentionality, memory, personal identity,
+        and the relationship between mental states and physical processes in the
+        brain.
       </p>
 
       <p>
-        Contemporary ethics and political philosophy have continued to expand
-        well beyond Rawls's framework, taking up questions his era had barely
-        begun to consider directly: global and intergenerational justice, the
-        ethical obligations raised by climate change and artificial
-        intelligence, and sustained critiques — from feminist, postcolonial, and
-        other perspectives — of whose interests and experiences earlier
-        "universal" theories of justice had actually represented. Applied
-        ethics, addressing concrete dilemmas in medicine, business, and
-        technology, has also grown into one of philosophy's most publicly
-        visible and practically consequential areas of contemporary work.
+        One major debate concerned physicalism: the view that mental phenomena
+        are, in some fundamental sense, dependent upon the physical world. If
+        thoughts, emotions, and perceptions arise from brain processes,
+        philosophers asked, how should consciousness itself be explained? Some
+        theories attempted to identify mental states directly with physical
+        brain states, while others argued that the same mental function could
+        potentially be realized in different physical systems.
+      </p>
+
+      <p>
+        Functionalism became particularly influential in this context. According
+        to functionalist approaches, a mental state may be understood partly
+        through the role it plays within a system rather than solely through the
+        material from which that system is made. This idea created important
+        connections between philosophy of mind and computer science, raising the
+        possibility that artificial systems might perform functions
+        traditionally associated with human cognition.
+      </p>
+
+      <p>
+        Yet consciousness remains one of philosophy's deepest unresolved
+        problems. A scientific explanation may describe how the brain processes
+        information, but philosophers continue to ask why some physical
+        processes are accompanied by subjective experience at all. What is it
+        like to see a color, feel pain, or experience the passage of time? This
+        distinction between describing cognitive functions and explaining
+        subjective experience continues to shape contemporary debates about the
+        so-called hard problem of consciousness.
+      </p>
+
+      <p>
+        Cognitive science has also transformed philosophical discussions of
+        human reasoning. Research into perception, language, memory, and
+        decision-making suggests that human cognition is neither perfectly
+        rational nor completely transparent to itself. Philosophers now examine
+        cognitive biases, embodied cognition, extended forms of mind, and the
+        possibility that thinking depends not only on the brain but also on the
+        body, social environment, and technological tools with which human
+        beings interact.
+      </p>
+
+      <p>
+        These debates became even more urgent with the development of
+        increasingly sophisticated artificial intelligence. Can a machine
+        genuinely understand, think, or become conscious, or can it merely
+        simulate the outward behavior associated with intelligence? Contemporary
+        philosophy of mind therefore stands at the intersection of some of the
+        most important questions of the twenty-first century: what makes a mind
+        a mind, what consciousness is, and whether intelligence must necessarily
+        be biological.
       </p>
     </section>
 
+    <!-- ================= CHAPTER 4 ================= -->
+
+    <div class="era-divider" id="chapter-4">
+      <span>4️⃣ Contemporary Political Philosophy</span>
+    </div>
+
+    <section class="narrative-block">
+      <h2>Justice, Equality, Liberty, and the Modern State</h2>
+
+      <p>
+        Contemporary political philosophy returned with particular force to the
+        question of justice. The political catastrophes of the twentieth
+        century, including world wars, totalitarian regimes, colonial violence,
+        and ideological conflict, raised urgent questions about the legitimate
+        limits of state power and the moral foundations of political
+        institutions. Philosophers increasingly asked how free and diverse
+        societies could distribute rights, opportunities, wealth, and political
+        authority fairly.
+      </p>
+
+      <p>
+        John Rawls became one of the most influential figures in this revival
+        with his theory of justice as fairness. In
+        <em>A Theory of Justice</em> (1971), Rawls introduced the thought
+        experiment of the "original position," in which individuals choose
+        principles of justice without knowing their own social class, wealth,
+        abilities, gender, or position in society. The purpose was to identify
+        principles that could be considered fair because they were not chosen to
+        benefit a particular group.
+      </p>
+
+      <p>
+        Rawls's work generated powerful responses from many directions.
+        Libertarian philosophers such as Robert Nozick defended stronger rights
+        of individual ownership and questioned extensive redistributive
+        policies. Communitarian thinkers argued that liberal theories sometimes
+        treated individuals too abstractly, neglecting the importance of
+        communities, traditions, and shared identities. Feminist, postcolonial,
+        and critical theorists further challenged political philosophy to
+        consider forms of inequality that older theories had often overlooked.
+      </p>
+
+      <p>
+        Contemporary political philosophy also expanded beyond the boundaries of
+        the nation-state. Globalization raised questions about international
+        inequality, migration, refugees, war, human rights, and the
+        responsibilities wealthy societies may have toward people beyond their
+        borders. Philosophers debated whether principles of justice should apply
+        primarily within political communities or whether global institutions
+        should be evaluated according to more universal standards.
+      </p>
+
+      <p>
+        Democracy itself became a major subject of philosophical investigation.
+        Contemporary thinkers ask what genuine political participation requires,
+        whether citizens can make informed decisions in complex technological
+        societies, and how democratic institutions should respond to
+        misinformation, economic inequality, and concentrated power. The rise of
+        digital communication has added new questions about political
+        polarization and the influence of algorithms on public debate.
+      </p>
+
+      <p>
+        Contemporary political philosophy therefore continues the Enlightenment
+        concern with freedom and legitimate authority while confronting problems
+        the eighteenth century could not have anticipated. Its central challenge
+        is not simply to describe political institutions but to determine how
+        societies containing deep moral, cultural, and economic differences can
+        nevertheless create institutions that are free, just, and politically
+        legitimate.
+      </p>
+    </section>
+
+    <!-- ================= CHAPTER 5 ================= -->
+
+    <div class="era-divider" id="chapter-5">
+      <span>5️⃣ Applied Ethics &amp; Bioethics</span>
+    </div>
+
+    <section class="narrative-block">
+      <h2>Philosophy Confronts Real-World Decisions</h2>
+
+      <p>
+        One of the most important developments in contemporary philosophy has
+        been the rapid growth of applied ethics. Rather than limiting ethical
+        inquiry to abstract questions about the nature of right and wrong,
+        applied philosophers examine difficult practical decisions arising in
+        medicine, business, technology, law, war, environmental policy, and
+        everyday life. These fields demonstrate that philosophical reasoning
+        remains deeply relevant whenever societies must decide what they ought
+        to do.
+      </p>
+
+      <p>
+        Bioethics became especially significant as advances in medicine created
+        possibilities that earlier generations had never faced. Organ
+        transplantation, life-support technology, genetic testing, reproductive
+        medicine, and new forms of medical research raised difficult questions
+        about consent, autonomy, death, suffering, and the limits of
+        professional authority. Philosophers work alongside doctors, scientists,
+        lawyers, and policymakers to examine the moral principles involved in
+        these decisions.
+      </p>
+
+      <p>
+        Questions surrounding the beginning and end of human life remain among
+        the most contested areas of bioethics. Debates concerning abortion,
+        euthanasia, physician-assisted dying, and reproductive technologies
+        involve fundamental disagreements about personhood, bodily autonomy,
+        human dignity, and the value of life. Philosophy does not eliminate
+        these disagreements, but it attempts to make their underlying
+        assumptions explicit and subject them to careful argument.
+      </p>
+
+      <p>
+        Animal ethics also transformed contemporary moral philosophy.
+        Traditional ethical theories had often focused almost exclusively on
+        obligations among human beings, but philosophers increasingly questioned
+        whether the capacity to suffer, possess interests, or experience life
+        should have moral significance. These discussions influenced debates
+        about animal experimentation, industrial farming, diet, conservation,
+        and the moral boundaries between humans and other animals.
+      </p>
+
+      <p>
+        Applied ethics has also challenged the idea that philosophy should
+        remain detached from public life. Ethical reasoning increasingly appears
+        in hospitals, government committees, research institutions,
+        corporations, and international organizations. Philosophers contribute
+        not by providing automatic answers but by clarifying values, identifying
+        hidden assumptions, distinguishing competing principles, and examining
+        whether proposed solutions can be morally justified.
+      </p>
+
+      <p>
+        The growth of applied ethics reflects a broader transformation in
+        contemporary philosophy. Philosophical questions are no longer treated
+        only as timeless intellectual puzzles; they are also recognized as
+        practical problems arising from the power human beings now possess to
+        alter bodies, societies, ecosystems, and technologies. The question
+        "What should we do?" has become inseparable from many of the defining
+        challenges of the modern world.
+      </p>
+    </section>
+
+    <!-- ================= CHAPTER 6 ================= -->
+
+    <div class="era-divider" id="chapter-6">
+      <span>6️⃣ Environmental Philosophy</span>
+    </div>
+
+    <section class="narrative-block">
+      <h2>Humanity and the Moral Status of Nature</h2>
+
+      <p>
+        Environmental philosophy developed as philosophers increasingly
+        recognized that traditional ethical theories often treated nature
+        primarily as a resource for human use. Industrialization, pollution,
+        species extinction, and climate change forced a reconsideration of
+        humanity's relationship with the natural world. If human actions can
+        transform entire ecosystems and affect generations yet unborn,
+        philosophers asked, what responsibilities do human beings have toward
+        animals, species, landscapes, and the planet as a whole?
+      </p>
+
+      <p>
+        A central debate concerns anthropocentrism — the view that human beings
+        are the primary or only source of moral value. Environmental
+        philosophers have challenged this assumption in several ways. Some argue
+        that individual animals possess moral standing because they can suffer
+        or flourish. Others defend the value of species, ecosystems, or the
+        natural world independently of their usefulness to human beings.
+      </p>
+
+      <p>
+        Deep ecology and related movements argued for a more radical
+        transformation of human attitudes toward nature. Rather than seeing
+        humanity as separate from the environment, these approaches emphasize
+        ecological interconnectedness and question the assumption that endless
+        economic growth should automatically take priority over ecological
+        stability. Such ideas have generated debate about whether environmental
+        ethics requires entirely new moral concepts or can be developed from
+        existing ethical traditions.
+      </p>
+
+      <p>
+        Climate change has made these philosophical questions increasingly
+        urgent. The causes and consequences of environmental damage are
+        distributed across different countries and generations, making
+        responsibility unusually difficult to assign. Those who contribute least
+        to climate change may suffer some of its most severe effects, while
+        future generations will live with decisions made long before they are
+        able to participate in them.
+      </p>
+
+      <p>
+        Environmental justice adds another dimension by examining how
+        environmental harms are distributed socially. Pollution, resource
+        extraction, and climate risks often affect poorer and politically
+        marginalized communities disproportionately. Philosophical discussions
+        of the environment therefore intersect with questions about economic
+        inequality, colonial history, political power, and global justice.
+      </p>
+
+      <p>
+        Environmental philosophy ultimately challenges one of the deepest
+        assumptions of modern civilization: that human progress can be
+        understood independently of the ecological systems that make human life
+        possible. It asks whether freedom, prosperity, and technological
+        development must be reconsidered when humanity possesses the power to
+        alter the conditions of life on a planetary scale.
+      </p>
+    </section>
+
+    <!-- ================= CHAPTER 7 ================= -->
+
+    <div class="era-divider" id="chapter-7">
+      <span>7️⃣ Philosophy of Technology &amp; Artificial Intelligence</span>
+    </div>
+
+    <section class="narrative-block">
+      <h2>Technology, Power, and the Future of Humanity</h2>
+
+      <p>
+        Technology has become one of the defining subjects of contemporary
+        philosophy because modern technologies do far more than provide useful
+        tools. They shape how people communicate, work, learn, remember, form
+        relationships, and understand themselves. Philosophers of technology ask
+        whether technologies are merely neutral instruments controlled by their
+        users or whether technological systems themselves influence the
+        possibilities available to human beings.
+      </p>
+
+      <p>
+        Digital technology has intensified these questions. Search engines,
+        social media platforms, recommendation systems, and algorithmic
+        decision-making increasingly influence what information people encounter
+        and how institutions classify individuals. This raises philosophical
+        concerns about privacy, surveillance, autonomy, manipulation,
+        responsibility, and the concentration of power in technological systems
+        that may be difficult for ordinary users to understand or challenge.
+      </p>
+
+      <p>
+        Artificial intelligence has brought older philosophical questions about
+        mind and knowledge into direct contact with practical technological
+        development. Can an artificial system genuinely reason or understand, or
+        does it merely produce behavior that appears intelligent? If
+        increasingly autonomous systems make decisions affecting employment,
+        healthcare, law, or warfare, who is morally responsible when those
+        decisions cause harm?
+      </p>
+
+      <p>
+        AI also raises questions about bias and fairness. Algorithms are
+        trained, designed, and deployed within human societies that already
+        contain inequalities and historical prejudices. A system may therefore
+        reproduce or amplify existing patterns even when it appears
+        mathematically objective. Philosophers examine not only whether an AI
+        system functions efficiently, but also what values are built into its
+        objectives and who has the authority to determine those values.
+      </p>
+
+      <p>
+        More speculative debates concern the future relationship between humans
+        and intelligent machines. Some philosophers investigate whether
+        artificial consciousness could ever be possible and what moral status a
+        genuinely conscious machine might possess. Others focus on automation,
+        human enhancement, biotechnology, and the possibility that technological
+        change could alter fundamental assumptions about work, identity, and
+        human nature.
+      </p>
+
+      <p>
+        Philosophy of technology therefore asks a question that extends far
+        beyond individual devices: what kind of world are human beings creating
+        through their technologies? As technological systems become more
+        powerful and deeply integrated into everyday life, philosophical
+        reflection becomes essential for deciding not merely what can be built,
+        but what should be built and under what ethical and political
+        conditions.
+      </p>
+    </section>
+
+    <!-- ================= CHAPTER 8 ================= -->
+
+    <div class="era-divider" id="chapter-8">
+      <span>8️⃣ Postcolonial &amp; Decolonial Philosophy</span>
+    </div>
+
+    <section class="narrative-block">
+      <h2>Questioning Power, Empire, and the Canon</h2>
+
+      <p>
+        Postcolonial and decolonial philosophy examine the enduring
+        intellectual, political, and cultural consequences of colonialism.
+        European empires did not merely control territories and economies; they
+        also shaped systems of knowledge that frequently presented European
+        concepts and institutions as universal while treating other cultures as
+        peripheral, irrational, or less developed. Contemporary philosophers
+        have therefore asked how colonial power influenced the categories
+        through which history, identity, reason, and knowledge have been
+        understood.
+      </p>
+
+      <p>
+        Postcolonial thought investigates the relationship between political
+        domination and cultural representation. Colonial societies were often
+        described through categories created by those who governed them, and
+        these descriptions could persist long after formal colonial rule ended.
+        Philosophical critique therefore examines who has the power to define
+        cultures, whose voices are considered authoritative, and how systems of
+        knowledge can exclude or marginalize particular experiences.
+      </p>
+
+      <p>
+        Decolonial approaches place particular emphasis on the continuing
+        structures of colonial power in the modern world. Political independence
+        did not always remove economic dependency, cultural hierarchy, or
+        intellectual systems that privileged certain traditions over others.
+        Decolonial philosophers therefore question whether genuine intellectual
+        pluralism requires more than simply adding non-European thinkers to an
+        existing canon; it may also require reconsidering the categories through
+        which philosophy itself is organized.
+      </p>
+
+      <p>
+        These movements have encouraged renewed engagement with philosophical
+        traditions from Africa, Asia, Latin America, and Indigenous cultures.
+        Importantly, this project is not simply an attempt to replace one
+        universal tradition with another. It raises a deeper question about
+        whether philosophy should assume that every intellectual tradition must
+        fit the categories developed within modern European thought in order to
+        count as philosophy.
+      </p>
+
+      <p>
+        Postcolonial and decolonial philosophy also intersect with questions
+        about race, migration, identity, language, gender, and economic
+        inequality. Historical systems of domination continue to influence
+        contemporary institutions, and philosophical analysis attempts to
+        understand how these structures shape both individual experience and
+        collective political life.
+      </p>
+
+      <p>
+        The broader importance of these approaches lies in their challenge to
+        philosophy's own self-understanding. They ask whether a discipline
+        devoted to questioning assumptions should also question the historical
+        boundaries of its canon. In doing so, they have helped make contemporary
+        philosophy more attentive to the relationship between knowledge and
+        power, and to the possibility that philosophical dialogue must become
+        genuinely global rather than merely international in appearance.
+      </p>
+    </section>
+
+    <!-- ================= CHAPTER 9 ================= -->
+
+    <div class="era-divider" id="chapter-9">
+      <span>9️⃣ Global Philosophy &amp; Cross-Cultural Dialogue</span>
+    </div>
+
+    <section class="narrative-block">
+      <h2>Philosophy Beyond a Single Intellectual Tradition</h2>
+
+      <p>
+        Contemporary philosophy increasingly recognizes that profound
+        philosophical traditions developed across the world. Indian philosophy
+        produced extensive debates about consciousness, knowledge, language,
+        liberation, and reality; Chinese traditions developed influential
+        approaches to ethics, political order, harmony, and self-cultivation;
+        Islamic philosophers preserved, transformed, and developed major
+        traditions of logic and metaphysics; and African and Indigenous
+        intellectual traditions contain rich reflections on community,
+        personhood, knowledge, and humanity's relationship with nature.
+      </p>
+
+      <p>
+        Cross-cultural philosophy seeks to place these traditions into serious
+        dialogue without assuming that one tradition provides the universal
+        standard by which all others must be judged. This is a difficult task.
+        Philosophical concepts do not always have exact equivalents across
+        languages and cultures, and ideas can be distorted when they are forced
+        into unfamiliar categories. Genuine dialogue therefore requires both
+        comparison and careful attention to historical and linguistic context.
+      </p>
+
+      <p>
+        Comparative philosophy can reveal both similarities and important
+        differences. Questions about the self, for example, appear in many
+        traditions, but different philosophers may understand the self as an
+        independent individual, a changing process, a relational being, or an
+        expression of a deeper metaphysical reality. Comparing these approaches
+        can expose assumptions that remain invisible when a thinker studies only
+        one intellectual tradition.
+      </p>
+
+      <p>
+        Global philosophical dialogue has also become increasingly important
+        because many contemporary problems are themselves global. Climate
+        change, technological transformation, economic inequality, migration,
+        and political conflict cannot be adequately understood from a single
+        national or cultural perspective. Different philosophical traditions may
+        offer distinct concepts of responsibility, community, nature, and human
+        flourishing that contribute to wider debates.
+      </p>
+
+      <p>
+        At the same time, global philosophy must avoid turning intellectual
+        traditions into simple collections of interchangeable ideas.
+        Philosophical traditions emerge from particular histories and cannot be
+        understood merely by extracting isolated concepts from them. The goal is
+        therefore not to create an artificial mixture in which all differences
+        disappear, but to develop forms of dialogue in which traditions can
+        challenge and enrich one another.
+      </p>
+
+      <p>
+        The increasing importance of cross-cultural philosophy represents one of
+        the most significant transformations of the contemporary discipline. It
+        suggests that the future history of philosophy may no longer be written
+        as a story moving primarily from ancient Greece through Europe and North
+        America. Instead, philosophy is increasingly understood as a global
+        human activity with multiple histories, methods, languages, and
+        intellectual centers.
+      </p>
+    </section>
+
+    <!-- ================= CHAPTER 10 ================= -->
+
+    <div class="era-divider" id="chapter-10">
+      <span>🔮 Philosophy Today and the Future</span>
+    </div>
+
+    <section class="narrative-block">
+      <h2>What Should Philosophy Become?</h2>
+
+      <p>
+        Philosophy today exists in a world transformed by scientific discovery,
+        digital technology, globalization, and environmental crisis. The
+        discipline has become more specialized than at almost any earlier point
+        in its history, yet many of its oldest questions remain unresolved. What
+        is knowledge? What is consciousness? What is a good life? What makes
+        political authority legitimate? The persistence of these questions
+        suggests that philosophical progress does not always take the form of
+        permanently solving a problem; it can also involve discovering new
+        dimensions of the problem itself.
+      </p>
+
+      <p>
+        Artificial intelligence and biotechnology may become especially
+        important philosophical challenges in the coming decades. As humans
+        develop systems capable of increasingly complex forms of reasoning and
+        technologies capable of altering bodies and genetic inheritance,
+        traditional concepts of person, intelligence, autonomy, and
+        responsibility may require reconsideration. Philosophers will be
+        required to examine not only the capabilities of these technologies but
+        the values that should guide their development.
+      </p>
+
+      <p>
+        Environmental change presents another challenge that cannot be addressed
+        by science alone. Scientific research can describe climate systems and
+        predict possible consequences, but decisions about responsibility,
+        sacrifice, justice, and obligations to future generations are
+        fundamentally normative. Philosophy therefore remains essential wherever
+        facts must be connected to questions about what human beings ought to
+        value and how they ought to act.
+      </p>
+
+      <p>
+        The future of philosophy will also depend on its relationship with other
+        disciplines. Neuroscience can investigate the brain, but philosophical
+        questions remain about consciousness and explanation. Economics can
+        model social behavior, but it cannot by itself determine what
+        constitutes a just distribution of resources. Artificial intelligence
+        can process enormous quantities of information, but questions about
+        meaning, value, and moral responsibility cannot simply be reduced to
+        computational efficiency.
+      </p>
+
+      <p>
+        Some philosophers worry that increasing specialization may fragment the
+        discipline into technical fields unable to communicate with one another.
+        Others see specialization as a necessary response to the growing
+        complexity of human knowledge. The continuing challenge is to preserve
+        philosophy's ability to connect questions across disciplines while
+        maintaining the rigor required for serious investigation.
+      </p>
+
+      <p>
+        Contemporary philosophy is therefore not the end of philosophical
+        history but an ongoing experiment in how human beings should think about
+        themselves and their world. Its future will be shaped by problems that
+        are already visible and by questions that have not yet emerged. As long
+        as human beings continue to ask what is true, what is real, what is
+        just, and what kind of future ought to be created, philosophy will
+        remain an unfinished and necessary part of human intellectual life.
+      </p>
+    </section>
     <!-- ================= MAJOR THINKERS ================= -->
 
     <section class="library-section" id="thinkers">
@@ -452,50 +1234,115 @@
       <p>The key figures behind each chapter of this era, in brief.</p>
 
       <div class="school-container">
-        <div class="school-card">
-          <h3>Simone de Beauvoir</h3>
-          <span class="founder-tag">1908–1986</span>
-          <p>
-            Applied Existentialist freedom to analyze the social construction of
-            gender in The Second Sex.
-          </p>
-        </div>
+        <a href="simone-de-beauvoir.html">
+          <div class="school-card">
+            <h3>Simone de Beauvoir</h3>
+            <span class="founder-tag">1908–1986</span>
+            <p>
+              Applied Existentialist freedom to analyze the social construction
+              of gender in The Second Sex.
+            </p>
+          </div>
+        </a>
+        <a href="michel-foucault.html">
+          <div class="school-card">
+            <h3>Michel Foucault</h3>
+            <span class="founder-tag">1926–1984</span>
+            <p>
+              Examined how power operates through institutions, knowledge, and
+              discourse.
+            </p>
+          </div>
+        </a>
 
-        <div class="school-card">
-          <h3>Michel Foucault</h3>
-          <span class="founder-tag">1926–1984</span>
-          <p>
-            Examined how power operates through institutions, knowledge, and
-            discourse.
-          </p>
-        </div>
+        <!-- Judith Butler -->
+        <a href="judith-butler.html">
+          <div class="school-card">
+            <h3>Judith Butler</h3>
+            <span class="founder-tag">1956–</span>
+            <p>
+              Influential philosopher of gender and identity whose work examines
+              performativity, power, social norms, and the formation of the
+              self.
+            </p>
+          </div>
+        </a>
 
-        <div class="school-card">
-          <h3>Jacques Derrida</h3>
-          <span class="founder-tag">1930–2004</span>
-          <p>
-            Developed deconstruction, challenging the stability of fixed textual
-            meaning.
-          </p>
-        </div>
+        <!-- Peter Singer -->
+        <a href="peter-singer.html">
+          <div class="school-card">
+            <h3>Peter Singer</h3>
+            <span class="founder-tag">1946–</span>
+            <p>
+              Major contemporary ethicist known for utilitarian arguments
+              concerning animal liberation, global poverty, and effective
+              altruism.
+            </p>
+          </div>
+        </a>
 
-        <div class="school-card">
-          <h3>Thomas Nagel</h3>
-          <span class="founder-tag">b. 1937</span>
-          <p>
-            Reframed philosophy of mind around the subjective, first-person
-            nature of consciousness.
-          </p>
-        </div>
+        <!-- Charles Taylor -->
+        <a href="charles-taylor.html">
+          <div class="school-card">
+            <h3>Charles Taylor</h3>
+            <span class="founder-tag">1931–</span>
+            <p>
+              Explored identity, recognition, secularism, and the historical
+              development of the modern understanding of the self.
+            </p>
+          </div>
+        </a>
 
-        <div class="school-card">
-          <h3>John Rawls</h3>
-          <span class="founder-tag">1921–2002</span>
-          <p>
-            Revitalized political philosophy with his theory of justice as
-            fairness.
-          </p>
-        </div>
+        <!-- Jacques Derrida -->
+        <a href="jacques-derrida.html">
+          <div class="school-card">
+            <h3>Jacques Derrida</h3>
+            <span class="founder-tag">1930–2004</span>
+            <p>
+              Developed deconstruction, examining how texts contain tensions,
+              assumptions, and unstable systems of meaning.
+            </p>
+          </div>
+        </a>
+
+        <!-- Martha Nussbaum -->
+        <a href="martha-nussbaum.html">
+          <div class="school-card">
+            <h3>Martha Nussbaum</h3>
+            <span class="founder-tag">1947–</span>
+            <p>
+              Developed influential work in ethics, political philosophy,
+              emotions, justice, and the Capabilities Approach to human
+              flourishing.
+            </p>
+          </div>
+        </a>
+
+        <!-- Gilles Deleuze -->
+        <a href="gilles-deleuze.html">
+          <div class="school-card">
+            <h3>Gilles Deleuze</h3>
+            <span class="founder-tag">1925–1995</span>
+            <p>
+              Developed a philosophy of difference, becoming, desire, and
+              multiplicity that challenged traditional ideas of identity and
+              fixed systems.
+            </p>
+          </div>
+        </a>
+
+        <!-- Bernard Williams -->
+        <a href="bernard-williams.html">
+          <div class="school-card">
+            <h3>Bernard Williams</h3>
+            <span class="founder-tag">1929–2003</span>
+            <p>
+              Major moral philosopher who criticized overly systematic ethical
+              theories and emphasized integrity, practical reason, and moral
+              complexity.
+            </p>
+          </div>
+        </a>
       </div>
 
       <p style="text-align: center; margin-top: 2rem">

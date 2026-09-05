@@ -49,37 +49,22 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="home-refine.css" />
-  <!-- Website Favicon -->
-<link rel="icon" href="favicon.ico" sizes="any" />
+    <!-- Website Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="any" />
 
-<link
-  rel="icon"
-  type="image/png"
-  sizes="32x32"
-  href="favicon-32x32.png"
-/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
 
-<link
-  rel="icon"
-  type="image/png"
-  sizes="48x48"
-  href="favicon-48x48.png"
-/>
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png" />
 
-<link
-  rel="icon"
-  type="image/png"
-  sizes="192x192"
-  href="favicon-192x192.png"
-/>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon-192x192.png"
+    />
 
-<link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="apple-touch-icon.png"
-/>
-
-</head>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  </head>
 
   <body>
     <!-- ================= NAVBAR ================= -->
@@ -91,7 +76,144 @@
 
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="history.html">History</a>
+
+        <!-- ================= HISTORY MEGA MENU ================= -->
+
+        <div class="nav-mega history-mega">
+          <!-- Main History page link -->
+
+          <a href="history.html" class="mega-trigger" aria-haspopup="true">
+            History
+          </a>
+
+          <!-- Mobile expand / collapse button -->
+
+          <button
+            class="mega-mobile-toggle"
+            type="button"
+            aria-label="Open History navigation"
+            aria-expanded="false"
+            aria-controls="history-mega-menu"
+          >
+            <span></span>
+          </button>
+
+          <!-- History mega menu -->
+
+          <div class="mega-menu" id="history-mega-menu">
+            <div class="mega-menu-inner">
+              <!-- INTRODUCTION -->
+
+              <div class="mega-intro">
+                <span class="mega-eyebrow"> The Great Tradition </span>
+
+                <h3>History of Philosophy</h3>
+
+                <p>
+                  Explore the development of philosophical thought across
+                  civilizations, cultures, and historical eras.
+                </p>
+
+                <a href="history.html" class="mega-explore">
+                  Explore History <span>→</span>
+                </a>
+              </div>
+
+              <!-- ANCIENT -->
+
+              <div class="mega-column">
+                <h4>Ancient Civilizations</h4>
+
+                <a href="ancient-greece.html">
+                  <strong>Ancient Greece</strong>
+                  <span>Socrates, Plato, Aristotle</span>
+                </a>
+
+                <a href="ancient-india.html">
+                  <strong>Ancient India</strong>
+                  <span>Vedic and classical traditions</span>
+                </a>
+
+                <a href="ancient-china.html">
+                  <strong>Ancient China</strong>
+                  <span>Confucianism and Daoism</span>
+                </a>
+
+                <a href="african-philosophy.html">
+                  <strong>ANCIENT AFRICAN PHILOSOPHY</strong>
+                  <span>PHILOSOPHICAL TRADITIONS OF AFRICA</span>
+                </a>
+
+                <a href="ancient-egypt.html">
+                  <strong>ANCIENT EGYPTIAN PHILOSOPHY</strong>
+                  <span>WISDOM, ORDER, AND THE PRINCIPLES OF MA'AT</span>
+                </a>
+
+                <a href="hellenistic-roman-philosophy.html">
+                  <strong>HELLENISTIC &amp; ROMAN PHILOSOPHY</strong>
+                  <span>STOICISM, EPICUREANISM, AND THE GRECO-ROMAN WORLD</span>
+                </a>
+
+                <a href="ancient-persian-philosophy.html">
+                  <strong>ANCIENT PERSIAN PHILOSOPHY</strong>
+                  <span
+                    >ZOROASTRIAN THOUGHT AND THE PHILOSOPHY OF ANCIENT
+                    PERSIA</span
+                  >
+                </a>
+
+                <a href="ancient-mesopotamia.html">
+                  <strong>ANCIENT MESOPOTAMIAN PHILOSOPHY</strong>
+                  <span>WISDOM, COSMOS, AND THE EARLIEST CIVILIZATIONS</span>
+                </a>
+              </div>
+
+              <!-- MEDIEVAL -->
+
+              <div class="mega-column">
+                <h4>Medieval &amp; Renaissance</h4>
+
+                <a href="islamic-philosophy.html">
+                  <strong>Islamic Philosophy</strong>
+                  <span>Reason, faith, and the classical heritage</span>
+                </a>
+
+                <a href="medieval-philosophy.html">
+                  <strong>Medieval Philosophy</strong>
+                  <span>Scholasticism and theological inquiry</span>
+                </a>
+
+                <a href="renaissance-philosophy.html">
+                  <strong>Renaissance Philosophy</strong>
+                  <span>Humanism and intellectual renewal</span>
+                </a>
+              </div>
+
+              <!-- MODERN -->
+
+              <div class="mega-column">
+                <h4>Modern &amp; Contemporary</h4>
+
+                <a href="enlightenment-philosophy.html">
+                  <strong>The Enlightenment</strong>
+                  <span>Reason, science, and liberty</span>
+                </a>
+
+                <a href="modern-philosophy.html">
+                  <strong>Modern Philosophy</strong>
+                  <span>From Descartes to the nineteenth century</span>
+                </a>
+
+                <a href="contemporary-philosophy.html">
+                  <strong>Contemporary Philosophy</strong>
+                  <span>Twentieth century to the present</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         <a href="thinkers.html">Thinkers</a>
         <a href="branches.html">Branches</a>
         <a href="schools.html">Schools</a>
@@ -193,29 +315,71 @@
       <h2>Introduction</h2>
 
       <p>
-        Indian philosophy developed along a path distinct from — though in
-        places strikingly similar to — the Greek tradition. Where Greek thought
-        largely began by asking what the physical world is made of, Indian
-        philosophy from its earliest period was already entangled with questions
-        of ritual, cosmic order, and the self's place within a much larger,
-        cyclical universe.
+        Ancient Indian philosophy developed across many centuries through a
+        dialogue between ritual tradition, metaphysical speculation, ethical
+        discipline, and the search for liberation. Although it is often compared
+        with <a href="ancient-greece.html">ancient Greek philosophy</a>, its
+        historical development followed a distinct path. Some of its earliest
+        surviving texts already asked questions about cosmic order, the origin
+        of existence, the nature of consciousness, and humanity's place within a
+        universe understood as part of a much larger cycle of life, death, and
+        renewal.
       </p>
 
       <p>
-        This page traces that development across three broad chapters: the
-        ritual world of the <a href="ancient-india.html#vedas">Vedas</a>, the
-        introspective turn of the
-        <a href="ancient-india.html#upanishads">Upanishads</a>
-        toward the nature of the self, and the emergence of
-        <a href="indian-schools.html#buddhism">Buddhism</a> and
-        <a href="indian-schools.html#jainism">Jainism</a> as heterodox movements
-        that broke from Vedic orthodoxy entirely. Unlike Greek philosophy, much
-        of this material is anonymous and communal, transmitted orally for
-        centuries before being written down — so the dates below reflect general
-        scholarly ranges rather than precise, agreed-upon years.
+        Indian philosophy did not emerge as a single unified doctrine or from
+        one individual founder. It developed through a vast intellectual
+        tradition containing anonymous hymns, dialogues between teachers and
+        students, debates among wandering philosophers, and eventually highly
+        systematic schools of <a href="logic-branch-philosophy.html">logic</a>,
+        <a href="metaphysics-branch-philosophy.html">metaphysics</a>,
+        <a href="epistemology-branch-philosophy.html">epistemology</a>, and
+        <a href="ethics-branch-philosophy.html">ethics</a>. Questions about
+        <strong>Atman</strong>, <strong>Brahman</strong>,
+        <strong>karma</strong>, <strong>samsara</strong>, knowledge, suffering,
+        and liberation became central to philosophical traditions that often
+        disagreed profoundly with one another.
+      </p>
+
+      <p>
+        This page follows that development through nine major chapters: the
+        early
+        <a href="ancient-india.html#vedas">Vedic world</a> and its ideas of
+        ritual and cosmic order; the movement from sacrifice toward
+        philosophical inquiry; the introspective transformation of the
+        <a href="ancient-india.html#upanishads">Upanishads</a>; the development
+        of karma, rebirth, and liberation; the intellectual revolution of the
+        <strong>śramaṇa</strong> movements; and the emergence of
+        <a href="indian-schools.html#buddhism">Buddhism</a>,
+        <a href="indian-schools.html#jainism">Jainism</a>, epic philosophy, and
+        the early foundations of India's great classical schools of thought.
+      </p>
+
+      <p>
+        Unlike philosophical traditions whose history can often be organized
+        around a relatively clear sequence of named authors and surviving books,
+        much of early Indian thought was transmitted orally for generations.
+        Many important texts were composed, expanded, edited, and preserved over
+        long periods, and the historical dates of early philosophers and
+        scriptures remain subjects of scholarly debate. The dates used on this
+        page should therefore be understood as broad chronological guides rather
+        than precise and universally agreed points in time.
+      </p>
+
+      <p>
+        The result is one of the world's longest and most diverse philosophical
+        histories. Ancient Indian thinkers investigated not only what the
+        universe is made of, but what it means to know something, whether a
+        permanent self exists, why suffering occurs, how actions shape future
+        existence, and whether human beings can attain a condition of genuine
+        freedom. These questions would continue to shape Indian philosophy for
+        more than two thousand years and would eventually influence intellectual
+        traditions across South, Central, East, and Southeast Asia.
       </p>
     </section>
+
     <div class="philosophy-divider"></div>
+
     <!-- ================= TIMELINE ================= -->
 
     <section class="era-timeline-section">
@@ -223,32 +387,81 @@
 
       <div class="era-timeline">
         <div class="timeline-point">
-          <span class="timeline-date">c. 1500 BCE</span>
-          <p>Composition of the Rigveda begins</p>
+          <span class="timeline-date">c. 3300–1300 BCE</span>
+          <p>
+            The Indus Civilization develops and declines across northwestern
+            South Asia; its script remains undeciphered, limiting certainty
+            about its religious and philosophical ideas.
+          </p>
         </div>
 
         <div class="timeline-point">
-          <span class="timeline-date">c. 800–200 BCE</span>
-          <p>The Upanishads shift focus toward the self and liberation</p>
+          <span class="timeline-date">c. 1500–1000 BCE</span>
+          <p>
+            The early Vedic period and composition of the oldest layers of the
+            Rigveda establish a tradition centered on hymns, ritual, and cosmic
+            order.
+          </p>
         </div>
 
         <div class="timeline-point">
-          <span class="timeline-date">c. 599–527 BCE</span>
-          <p>Traditional dates of Mahavira, reviver of Jainism</p>
+          <span class="timeline-date">c. 1000–700 BCE</span>
+          <p>
+            Later Vedic literature increasingly reflects on the meaning of
+            ritual, sacred speech, sacrifice, and the hidden structure of
+            reality.
+          </p>
         </div>
 
         <div class="timeline-point">
-          <span class="timeline-date">c. 5th century BCE</span>
-          <p>Siddhartha Gautama attains enlightenment, founding Buddhism</p>
+          <span class="timeline-date">c. 800–300 BCE</span>
+          <p>
+            The Upanishadic tradition places the self, ultimate reality, karma,
+            rebirth, knowledge, and liberation at the center of philosophical
+            inquiry.
+          </p>
         </div>
 
         <div class="timeline-point">
-          <span class="timeline-date">3rd century BCE</span>
-          <p>Emperor Ashoka's patronage spreads Buddhism across Asia</p>
+          <span class="timeline-date">c. 6th–5th Century BCE</span>
+          <p>
+            The śramaṇa movements transform the intellectual landscape as
+            Buddhism, Jainism, and other ascetic and philosophical traditions
+            challenge established Vedic authority.
+          </p>
+        </div>
+
+        <div class="timeline-point">
+          <span class="timeline-date">c. 5th Century BCE</span>
+          <p>
+            Siddhartha Gautama, the Buddha, teaches a path centered on
+            suffering, its causes, the possibility of liberation, and the
+            transformation of human understanding.
+          </p>
+        </div>
+
+        <div class="timeline-point">
+          <span class="timeline-date">c. 3rd Century BCE</span>
+          <p>
+            Emperor Ashoka's patronage helps Buddhism spread across and beyond
+            the Indian subcontinent, beginning a much wider Asian philosophical
+            history.
+          </p>
+        </div>
+
+        <div class="timeline-point">
+          <span class="timeline-date">c. 300 BCE onward</span>
+          <p>
+            Major philosophical traditions become increasingly systematic
+            through sutras, commentaries, debates, and formal theories of
+            reality, knowledge, reasoning, language, and liberation.
+          </p>
         </div>
       </div>
     </section>
+
     <div class="philosophy-divider"></div>
+
     <!-- ================= HISTORICAL BACKGROUND ================= -->
 
     <section class="narrative-block" id="background">
@@ -257,244 +470,810 @@
       <figure class="narrative-figure">
         <img
           src="images/indus-valley-ancient-india.jpg"
-          alt="Vedic-era India"
+          alt="Ancient Indus Valley Civilization in the Indian subcontinent"
         />
         <figcaption>
-          The Indus Valley Civilization — one of the world's earliest urban
-          civilizations, distinguished by carefully planned cities,
-          sophisticated drainage systems, skilled craftsmanship, and
-          long-distance trade.
+          The Indus Civilization — one of the world's great Bronze Age urban
+          civilizations, known for planned cities, sophisticated water systems,
+          skilled craftsmanship, standardized production, and long-distance
+          trade.
         </figcaption>
       </figure>
 
       <p>
-        Long before the Vedas were composed, the Indian subcontinent was home to
-        the Indus Valley Civilization (c. 3300–1300 BCE), one of the world's
-        earliest urban societies, with sophisticated cities, trade networks, and
-        a still-undeciphered script. Its religious and philosophical life
-        remains largely a mystery to modern scholars, and it is not directly
-        continuous with the Vedic tradition that follows it and that ancient
-        Indian philosophy is usually traced back to.
+        Long before the earliest surviving Vedic hymns were composed, the Indian
+        subcontinent was home to a wide range of ancient communities and
+        cultures. Among the most remarkable was the Indus Civilization, also
+        called the Harappan Civilization, which flourished primarily in the
+        northwestern regions of South Asia. Its development stretched across
+        many centuries, with its mature urban phase generally placed around the
+        third millennium BCE. Major settlements such as Harappa, Mohenjo-daro,
+        Dholavira, and Rakhigarhi reveal sophisticated planning, extensive trade
+        networks, specialized crafts, and complex systems for managing water and
+        urban life. :contentReference[oaicite:1]{index=1}
       </p>
 
       <p>
-        The Vedic period that followed was organized around clans of
-        pastoralists and agriculturalists who spoke an early form of Sanskrit,
-        and whose religious life centered on fire sacrifice (yajna), performed
-        by a specialized priestly class to honor a pantheon of deities
-        associated with natural forces — Agni (fire), Indra (storms and war),
-        Varuna (cosmic law). Ritual, in this world, was not incidental to
-        religious life; it was believed to actively sustain <em>ṛta</em>, the
-        cosmic order itself, making the priest's correct performance of
-        sacrifice a matter of universal, not merely local, consequence.
+        Yet the intellectual and religious life of the Indus Civilization
+        remains difficult to reconstruct. Its script has not been conclusively
+        deciphered, and historians therefore cannot read its literature,
+        philosophical debates, myths, or theological reflections in the way they
+        can read later Sanskrit, Pali, and Prakrit texts. Archaeological objects
+        provide evidence of ritual activity and symbolic practices, but they
+        cannot by themselves establish a complete philosophical system. For this
+        reason, scholars must be cautious about drawing direct conclusions
+        between Indus religious practices and the philosophical traditions that
+        developed in later periods. :contentReference[oaicite:2]{index=2}
       </p>
 
       <p>
-        It was within this ritual-centered world — and eventually in reaction
-        against parts of it — that the philosophical literature explored below
-        took shape, beginning with the hymns of the Vedas themselves.
+        The earliest textual foundations of what later became Indian philosophy
+        are usually sought in the Vedic tradition. The oldest layers of this
+        tradition belong broadly to the second millennium BCE, although the
+        precise chronology of individual hymns and texts remains uncertain. The
+        Vedic corpus preserved hymns, ritual instructions, and increasingly
+        complex reflections on humanity's relationship with natural forces and
+        the wider structure of the cosmos. Its intellectual world would
+        eventually become the starting point from which both orthodox and
+        heterodox philosophical traditions developed.
+        :contentReference[oaicite:3]{index=3}
+      </p>
+
+      <p>
+        Vedic society included pastoral and agricultural communities whose
+        religious life gave major importance to sacred speech and
+        <strong>yajña</strong>, or sacrificial ritual. Deities such as Agni,
+        associated with fire, Indra, associated with power and storms, and
+        Varuna, associated with cosmic and moral order, appeared within a
+        worldview that connected human action with the larger processes of
+        nature. Ritual was therefore not treated simply as a private act of
+        worship. Its correct performance was understood within a broader attempt
+        to maintain harmony between human society and the ordered structure of
+        the universe.
+      </p>
+
+      <p>
+        One of the important concepts associated with this early intellectual
+        world was <strong>ṛta</strong>, often understood as cosmic order,
+        regularity, or the principle by which the universe maintains coherence.
+        The movement of celestial bodies, the recurrence of natural processes,
+        the proper ordering of ritual, and the moral structure of human life
+        could all be understood against this larger background. Later Indian
+        philosophy would transform and challenge these inherited ideas, but the
+        early concern with order already encouraged thinkers to ask whether
+        reality possesses principles that can be discovered rather than merely
+        accepted through inherited custom.
+      </p>
+
+      <p>
+        The transition from Vedic religion to Indian philosophy was therefore
+        not a simple movement from "myth" to "reason." Philosophical reflection
+        emerged gradually from within an already highly developed culture of
+        ritual, language, memory, and speculation. The hymns themselves
+        sometimes asked questions that resisted easy answers: What existed
+        before the universe? How did order emerge from what was before it? Can
+        human beings truly know the origin of everything? These questions opened
+        intellectual possibilities that later generations would pursue with
+        increasing philosophical depth.
+      </p>
+
+      <p>
+        Over time, attention increasingly moved from the outward performance of
+        ritual toward questions about its meaning and the reality behind visible
+        experience. The search for cosmic order would become a search for
+        ultimate reality; reflection on action would develop into theories of
+        karma; and questions about human existence would turn inward toward
+        consciousness and the self. It was within this vast and changing
+        intellectual landscape — shaped by inherited Vedic traditions, new
+        social conditions, wandering teachers, and competing philosophical
+        movements — that the extraordinary history of ancient Indian philosophy
+        began.
       </p>
     </section>
 
     <!-- ================= CHAPTER 1 ================= -->
 
     <div class="era-divider" id="chapter-1">
-      <span>1️⃣ The Vedic Period (c. 1500–800 BCE)</span>
+      <span>1️⃣ The Vedic World (c. 1500–1000 BCE)</span>
     </div>
 
     <section class="narrative-block" id="vedas">
-      <h2>The Foundational Scriptures</h2>
+      <h2>The Foundations of Indian Thought</h2>
 
       <figure class="narrative-figure left">
         <img src="images/vedas-ancient-india.jpg" alt="The Rigveda" />
         <figcaption>
-          The Rigveda, the oldest of the four Vedas, is a collection of over a
-          thousand hymns to various deities.
+          The Vedic tradition preserved ancient hymns, rituals, and reflections
+          on cosmic order that became the foundation of later Indian philosophy.
         </figcaption>
       </figure>
 
       <p>
-        The Vedas are the oldest layer of Indian religious and philosophical
-        literature, composed over several centuries and traditionally divided
-        into four collections — the Rigveda, Samaveda, Yajurveda, and
-        Atharvaveda — with the Rigveda, a collection of hymns to various
-        deities, generally considered the oldest. At their core, the Vedas are
-        liturgical texts: hymns, chants, and ritual instructions used by priests
-        to conduct sacrifices intended to maintain cosmic and social order.
+        The earliest foundations of ancient Indian philosophy lie in the Vedic
+        tradition, a vast body of sacred literature composed and transmitted
+        orally over many centuries. The four Vedas — the Rigveda, Samaveda,
+        Yajurveda, and Atharvaveda — contain hymns, chants, ritual formulas, and
+        reflections on the powers believed to govern the cosmos. The Rigveda is
+        generally regarded as the oldest of these collections and preserves a
+        picture of a world in which human beings, natural forces, divine powers,
+        and cosmic order were understood as deeply connected.
       </p>
 
       <p>
-        Philosophically, the Vedas matter less for explicit argument than for
-        the questions they first raise about the origin of the universe and
-        humanity's relationship to a cosmic order beyond human control. The
-        Nasadiya Sukta, or "Hymn of Creation," found in the Rigveda, is often
-        cited as one of the earliest expressions of philosophical skepticism,
-        ending with the striking admission that perhaps not even the gods know
-        how the universe truly began — a note of genuine uncertainty embedded
-        within an otherwise confident ritual tradition.
+        At the center of this worldview stood the idea of <strong>ṛta</strong>,
+        the principle of cosmic order, regularity, and right arrangement.
+        Seasons followed their patterns, celestial bodies moved through the sky,
+        sacrifices were performed according to established forms, and human
+        society itself was understood within a larger ordered universe. The
+        earliest Indian thinkers therefore did not begin with philosophy
+        separated sharply from religion; questions about reality emerged within
+        reflection on ritual, language, nature, and humanity's relationship to
+        the wider cosmos.
+      </p>
+
+      <p>
+        Vedic religion gave particular importance to <strong>yajña</strong>, or
+        sacrifice. Ritual action was not understood merely as symbolic worship
+        but as something believed to participate in maintaining the relationship
+        between human society and the cosmic order. Priests developed elaborate
+        systems for preserving the exact pronunciation and performance of sacred
+        texts, creating an extraordinary oral tradition whose precision helped
+        preserve philosophical and religious ideas for centuries before they
+        were committed to writing.
+      </p>
+
+      <p>
+        Yet even within these ancient hymns, questions appeared that went beyond
+        ritual practice. What existed before the world? How did the universe
+        begin? What lies behind the visible diversity of nature? The famous
+        Nasadiya Sukta, or Hymn of Creation, is especially remarkable because it
+        does not present a simple dogmatic explanation. Instead, it reflects on
+        the possibility that the ultimate origin of the universe may remain
+        unknown, revealing an early willingness to confront uncertainty about
+        the deepest questions of existence.
+      </p>
+
+      <p>
+        The Vedic world therefore provided more than the religious background
+        for Indian philosophy. It supplied many of the concepts, problems, and
+        intellectual habits that later thinkers would transform. Questions about
+        cosmic order would eventually become metaphysical questions about
+        reality; reflection on ritual action would develop into theories of
+        karma; and speculation about the universe would gradually turn inward
+        toward one of the central concerns of Indian philosophy: the nature of
+        the self.
       </p>
     </section>
 
     <!-- ================= CHAPTER 2 ================= -->
 
     <div class="era-divider" id="chapter-2">
-      <span>2️⃣ The Upanishadic Turn (c. 800–200 BCE)</span>
+      <span>2️⃣ Ritual, Sacrifice &amp; Cosmic Order (c. 1000–700 BCE)</span>
     </div>
 
-    <section class="narrative-block" id="upanishads">
-      <h2>From Ritual to Inquiry</h2>
-
-      <figure class="narrative-figure">
-        <img src="images/upanishads-anient-india.jpg" alt="The Upanishads" />
-        <figcaption>
-          The Upanishads mark Indian philosophy's shift from ritual performance
-          toward direct inquiry into the nature of the self.
-        </figcaption>
-      </figure>
+    <section class="narrative-block">
+      <h2>When Ritual Became a Theory of Reality</h2>
 
       <p>
-        The Upanishads mark a decisive shift in Indian thought — away from the
-        ritual focus of the earlier Vedic hymns and toward direct philosophical
-        inquiry into the nature of reality, the self, and liberation. The texts
-        are structured largely as dialogues between sages and students, or
-        between a teacher and a questioning king, the term Upanishad itself
-        often translated as "sitting near" — a student sitting close to a
-        teacher to receive advanced or secret knowledge.
+        As Vedic culture developed, philosophical reflection increasingly grew
+        around the interpretation of ritual itself. The Brahmanas and related
+        ritual literature sought to explain why sacrifices had to be performed
+        in particular ways and what cosmic consequences followed from correct
+        action. The world was imagined as an interconnected structure in which
+        speech, ritual gestures, fire, seasons, social life, and divine powers
+        could correspond to one another through complex systems of analogy.
       </p>
 
       <p>
-        The central philosophical achievement of the Upanishads is the
-        identification of <strong>Atman</strong>, the innermost self of an
-        individual, with <strong>Brahman</strong>, the single, unchanging
-        ultimate reality underlying the entire universe — most famously
-        expressed in the phrase "Tat tvam asi" ("That thou art") from the
-        Chandogya Upanishad. This claim would become the philosophical
-        foundation of the later school of Advaita (non-dual) Vedanta.
+        This period is important because it shows that Indian philosophy did not
+        suddenly appear when thinkers abandoned religion. Rather, philosophical
+        inquiry gradually emerged from attempts to understand the deeper meaning
+        of inherited practices. A sacrifice could be interpreted not simply as
+        an external ceremony but as an expression of hidden relationships
+        between the human being and the universe. The search for those hidden
+        relationships encouraged increasingly abstract thinking about unity,
+        causation, order, and the structure of reality.
       </p>
 
       <p>
-        The Upanishads also give their clearest early articulation to concepts
-        that would define nearly all later Indian philosophy:
-        <strong>karma</strong> (actions shaping future existence),
-        <strong>samsara</strong> (the cycle of birth, death, and rebirth), and
-        <strong>moksha</strong> (liberation from that cycle through realizing
-        the self's true nature). Where the Vedas asked how to maintain cosmic
-        order through ritual, the Upanishads ask a more introspective question:
-        what is the self performing the ritual, and can it be freed from rebirth
-        altogether?
+        The authority of sacred speech also became an intellectual problem.
+        Vedic traditions placed enormous importance on the preservation of
+        language, sound, and recitation. This concern would later contribute to
+        sophisticated Indian theories about language, testimony, meaning, and
+        knowledge. Classical philosophers would eventually ask whether words
+        reveal reality, whether testimony can produce genuine knowledge, and
+        whether sacred texts possess authority because of divine origin, human
+        reliability, or some other philosophical principle.
+        :contentReference[oaicite:1]{index=1}
+      </p>
+
+      <p>
+        At the same time, a gradual tension began to emerge between external
+        ritual performance and the search for internal understanding. If ritual
+        action maintained order, what gave ritual its power? Was the deepest
+        truth found in the visible ceremony, or did the ceremony point toward a
+        more fundamental reality hidden beneath ordinary experience? These
+        questions helped prepare the intellectual transformation associated with
+        the Aranyakas and, eventually, the Upanishads.
       </p>
     </section>
 
     <!-- ================= CHAPTER 3 ================= -->
 
     <div class="era-divider" id="chapter-3">
-      <span>3️⃣ Buddhism &amp; Jainism (c. 6th–5th Century BCE)</span>
+      <span>3️⃣ The Upanishadic Turn (c. 800–300 BCE)</span>
     </div>
 
-    <section class="narrative-block">
-      <h2>The Heterodox Movements</h2>
+    <section class="narrative-block" id="upanishads">
+      <h2>From Ritual to the Search for the Self</h2>
 
-      <figure class="narrative-figure left">
-        <img src="images/buddha-anicent-india.jpg" alt="Gautama Buddha" />
+      <figure class="narrative-figure">
+        <img src="images/upanishads-anient-india.jpg" alt="The Upanishads" />
         <figcaption>
-          Siddhartha Gautama, later known as the Buddha, taught that liberation
-          comes through the Four Noble Truths rather than ritual or a permanent
-          self.
+          The Upanishads transformed Indian thought by placing the self,
+          ultimate reality, knowledge, and liberation at the center of inquiry.
         </figcaption>
       </figure>
 
       <p>
-        Around the 6th and 5th centuries BCE, two movements emerged that broke
-        directly with Vedic orthodoxy rather than reinterpreting it from within,
-        as the Upanishads largely had. Siddhartha Gautama, later called the
-        Buddha ("the awakened one"), taught the
-        <strong>Four Noble Truths</strong> — that life inherently involves
-        suffering; that suffering arises from craving; that suffering can cease;
-        and that the way to end it is the Noble Eightfold Path. Crucially,
-        Buddhism denies the existence of any permanent self at all, a doctrine
-        known as <strong>anatta</strong>, standing in direct contrast to the
-        Upanishadic teaching of an eternal Atman identical with Brahman.
+        The Upanishads mark one of the great philosophical transformations in
+        ancient Indian thought. Without entirely abandoning the intellectual
+        world of the Vedas, these texts increasingly shifted attention away from
+        the external performance of sacrifice and toward direct inquiry into the
+        nature of reality, consciousness, and liberation. Their teachings often
+        appear in dialogues between teachers and students, sages and kings, or
+        seekers engaged in demanding philosophical questions about what a human
+        being truly is.
       </p>
 
       <p>
-        Around the same period, Mahavira, traditionally regarded as the 24th and
-        final Tirthankara of the current cosmic cycle, revived and reformed the
-        older tradition of Jainism. Its central commitment is
-        <strong>ahimsa</strong> — non-violence extended to all living creatures
-        — paired with the epistemological doctrine of
-        <strong>anekantavada</strong> ("many-sidedness"), the view that reality
-        is genuinely complex and that any single perspective can capture only
-        part of the truth.
+        At the center of many Upanishadic discussions stands
+        <strong>Atman</strong>, the deepest or innermost self. The search for
+        Atman was not simply an attempt to describe personality or individual
+        psychology. The question was metaphysical: beneath changing thoughts,
+        sensations, memories, and bodily conditions, is there an enduring
+        reality that constitutes the true self? The Upanishadic answer often
+        moved toward the idea that genuine self-knowledge requires looking
+        beyond the ordinary identity constructed from social roles and changing
+        experiences.
       </p>
 
       <p>
-        Both movements rejected the authority of the Vedas and the priestly
-        caste that performed their rituals, offering instead paths to liberation
-        open to anyone willing to follow their ethical and meditative
-        disciplines — a genuinely radical proposition in a world still organized
-        around inherited ritual privilege.
+        This inquiry became connected with the concept of
+        <strong>Brahman</strong>, the ultimate reality or fundamental principle
+        underlying the universe. Different Upanishadic texts present complex and
+        sometimes varied accounts, but the relationship between Atman and
+        Brahman became one of the defining problems of later Indian philosophy.
+        The famous expression <em>tat tvam asi</em>, often translated as "That
+        thou art," became especially influential in traditions that interpreted
+        ultimate reality and the deepest self as profoundly united.
+      </p>
+
+      <p>
+        The Upanishads also helped establish the intellectual framework of
+        <strong>karma</strong>, <strong>samsara</strong>, and
+        <strong>moksha</strong>. Human actions were increasingly understood as
+        connected to future consequences and continued existence within the
+        cycle of birth and rebirth. Liberation therefore became the highest
+        philosophical and spiritual goal: freedom from ignorance, bondage, and
+        the cycle of repeated existence through a transformation of knowledge
+        and understanding.
+      </p>
+
+      <p>
+        This Upanishadic turn permanently changed Indian philosophy. The
+        fundamental question was no longer only how the universe should be
+        ritually maintained. It became: <strong>Who am I?</strong> What is the
+        ultimate reality behind the changing world? Why are human beings bound
+        to suffering and rebirth? And what kind of knowledge can bring genuine
+        freedom? These questions would be answered in radically different ways
+        by Vedanta, Buddhism, Jainism, Samkhya, Yoga, and many other Indian
+        philosophical traditions.
       </p>
     </section>
 
+    <!-- ================= CHAPTER 4 ================= -->
+
+    <div class="era-divider" id="chapter-4">
+      <span>4️⃣ Karma, Samsara &amp; Liberation</span>
+    </div>
+
+    <section class="narrative-block">
+      <h2>The Great Problem of Human Existence</h2>
+
+      <p>
+        One of the most distinctive features of Indian philosophy is the central
+        importance given to the problem of bondage and liberation. Across
+        traditions that disagreed profoundly about metaphysics, religion, and
+        knowledge, thinkers repeatedly returned to a similar existential
+        question: why do human beings remain trapped in dissatisfaction,
+        ignorance, suffering, and repeated existence, and how can this condition
+        be overcome?
+      </p>
+
+      <p>
+        The concept of <strong>karma</strong> became essential to this
+        discussion. In its broad philosophical development, karma refers to the
+        moral and causal significance of action. Actions are not treated as
+        isolated events that disappear once they are completed; they can produce
+        consequences that shape future experience. Different traditions
+        developed highly sophisticated and sometimes incompatible theories about
+        exactly how karma operates, what performs an action, and whether karmic
+        consequences require a permanent self.
+      </p>
+
+      <p>
+        <strong>Samsara</strong>, the cycle of birth, death, and rebirth,
+        provided the larger setting for these theories. Ordinary existence was
+        increasingly understood not as a single isolated lifetime but as part of
+        an extended process in which beings continue through different
+        conditions of existence. The philosophical challenge therefore became
+        more radical than simply achieving happiness within the present world:
+        the deepest goal was to understand and overcome the conditions that
+        perpetuate bondage itself.
+      </p>
+
+      <p>
+        The answer was <strong>moksha</strong>, or liberation, although the
+        meaning of liberation differed between schools. For some traditions it
+        meant realizing the true nature of Atman and Brahman. For Samkhya it
+        meant discriminating pure consciousness from material nature. For
+        Buddhism it meant nirvana and the cessation of the processes associated
+        with suffering and craving. Jain philosophy described liberation through
+        the purification of the soul from karmic bondage.
+      </p>
+
+      <p>
+        These ideas gave Indian philosophy a distinctive unity without making it
+        intellectually uniform. Philosophers could disagree about whether the
+        self exists, whether God exists, whether matter is eternal, and whether
+        knowledge comes through perception or scripture, while still treating
+        liberation from ignorance and bondage as one of the highest goals of
+        philosophical inquiry. :contentReference[oaicite:2]{index=2}
+      </p>
+    </section>
+
+    <!-- ================= CHAPTER 5 ================= -->
+
+    <div class="era-divider" id="chapter-5">
+      <span>5️⃣ The Śramaṇa Revolution (c. 6th–4th Century BCE)</span>
+    </div>
+
+    <section class="narrative-block">
+      <h2>New Paths Beyond Vedic Orthodoxy</h2>
+
+      <p>
+        During the first millennium BCE, northern India witnessed major social,
+        political, and intellectual changes. Urban centers expanded, new states
+        emerged across the Indo-Gangetic Plain, trade increased, and wandering
+        teachers began competing publicly over questions of morality, knowledge,
+        destiny, and liberation. This intellectual environment produced the
+        <strong>śramaṇa</strong> movements, traditions associated with
+        renunciation, ascetic discipline, meditation, and philosophical debate.
+      </p>
+
+      <p>
+        These movements challenged the assumption that Vedic sacrifice and
+        priestly authority provided the only path to the highest truth. A seeker
+        could leave ordinary household life, adopt ascetic practices, and pursue
+        liberation through personal discipline and philosophical understanding.
+        The authority of tradition itself became open to debate. Some teachers
+        defended the Vedas, while others rejected their authority entirely and
+        proposed alternative explanations of the self, the universe, and moral
+        responsibility.
+      </p>
+
+      <p>
+        This period was intellectually diverse far beyond Buddhism and Jainism.
+        Ancient sources describe materialists, skeptics, determinists, ascetics,
+        and teachers who disagreed about whether actions have consequences,
+        whether human beings possess freedom, and whether anything survives
+        death. Indian philosophy developed not as a single uninterrupted line of
+        agreement but through sustained argument among competing traditions,
+        many of which criticized one another with extraordinary philosophical
+        sophistication.
+      </p>
+
+      <p>
+        The śramaṇa revolution therefore represents a decisive expansion of
+        philosophical freedom in ancient India. The central questions of the
+        Upanishads remained important, but they could now receive radically
+        different answers. Was there an eternal self? Was sacrifice necessary?
+        Could liberation be achieved through meditation? Did moral actions bind
+        the soul, or was the entire idea of a soul mistaken? Out of this intense
+        environment emerged two of the most influential philosophical traditions
+        in Asian history: Buddhism and Jainism.
+      </p>
+    </section>
+
+    <!-- ================= CHAPTER 6 ================= -->
+
+    <div class="era-divider" id="chapter-6">
+      <span>6️⃣ Buddhism: The Analysis of Suffering</span>
+    </div>
+
+    <section class="narrative-block">
+      <h2>The Buddha and a New Philosophical Path</h2>
+
+      <figure class="narrative-figure left">
+        <img src="images/buddha-anicent-india.jpg" alt="Gautama Buddha" />
+        <figcaption>
+          Siddhartha Gautama, known as the Buddha, developed a path centered on
+          understanding suffering, its causes, and the possibility of
+          liberation.
+        </figcaption>
+      </figure>
+
+      <p>
+        <a href="buddha.html">Siddhartha Gautama</a>, later known as the Buddha, emerged within the wider
+        intellectual world of the śramaṇa movements. Buddhist tradition
+        describes his philosophical search as beginning with a confrontation
+        with the instability of ordinary existence: aging, illness, death, loss,
+        and dissatisfaction. Rather than accepting ritual or metaphysical
+        speculation as sufficient answers, the Buddha focused on understanding
+        the causes of suffering and identifying a practical path through which
+        it could cease.
+      </p>
+
+      <p>
+        The basic framework of this teaching is expressed through the
+        <strong>Four Noble Truths</strong>: suffering or dissatisfaction is a
+        fundamental feature of conditioned existence; suffering has causes,
+        especially craving and ignorance; its cessation is possible; and a path
+        exists that leads toward liberation. The
+        <strong>Noble Eightfold Path</strong> integrated ethical conduct, mental
+        discipline, and wisdom, presenting philosophy not merely as theoretical
+        knowledge but as a transformation of how a person understands and lives.
+      </p>
+
+      <p>
+        One of Buddhism's most important philosophical challenges concerned the
+        nature of the self. While many Upanishadic traditions sought an eternal
+        Atman beneath changing experience, Buddhist analysis emphasized
+        <strong>anatta</strong>, or non-self. What people ordinarily call a
+        permanent person can instead be analyzed into changing physical and
+        mental processes. This did not mean that Buddhism denied ordinary
+        continuity altogether; rather, it questioned whether continuity requires
+        an unchanging metaphysical substance.
+      </p>
+
+      <p>
+        Buddhist thought also developed the principle of
+        <strong>dependent arising</strong>, according to which phenomena arise
+        in dependence upon conditions rather than existing as completely
+        independent entities. This insight became foundational for later
+        Buddhist philosophy. Questions about causation, perception, language,
+        consciousness, and the nature of reality would later be developed by
+        thinkers such as Nagarjuna, Dignaga, and Dharmakirti into some of the
+        most sophisticated philosophical traditions in Asia.
+      </p>
+
+      <p>
+        Buddhism eventually spread far beyond the Indian subcontinent, but its
+        philosophical origins remain deeply rooted in ancient Indian debates
+        about suffering, karma, rebirth, meditation, and liberation. Its
+        challenge to the idea of a permanent self ensured that the nature of
+        personal identity became one of the great points of disagreement within
+        the broader history of Indian philosophy.
+      </p>
+    </section>
+
+    <!-- ================= CHAPTER 7 ================= -->
+
+    <div class="era-divider" id="chapter-7">
+      <span>7️⃣ Jain Philosophy: Non-Violence &amp; Many-Sided Truth</span>
+    </div>
+
+    <section class="narrative-block">
+      <h2>Mahavira and the Discipline of Liberation</h2>
+      <figure class="narrative-figure">
+        <img src="images/mahaveer.jpeg" alt="Mahavira" />
+        <figcaption>
+          Mahavira, the twenty-fourth Tirthankara, is traditionally regarded as
+          a decisive teacher in the historical development of Jainism.
+        </figcaption>
+      </figure>
+
+      <p>
+        Jainism developed as another major śramaṇa tradition and became one of
+        the oldest continuously surviving philosophical and religious traditions
+        of India. <a href="mahavira.html">Mahavira</a> is traditionally regarded as the twenty-fourth
+        Tirthankara of the present cosmic cycle and as a decisive teacher in the
+        historical development of Jainism. Jain philosophy developed a
+        distinctive account of the soul, karma, ethics, knowledge, and the
+        structure of reality.
+      </p>
+
+      <p>
+        At the center of Jain ethics stands <strong>ahimsa</strong>, or
+        non-violence. This principle extends moral concern far beyond ordinary
+        human relationships and treats harm to living beings as philosophically
+        significant because life itself possesses value. Jain ascetic practices
+        therefore developed extraordinary forms of ethical discipline involving
+        speech, action, consumption, and awareness of the consequences that even
+        apparently minor actions can have upon other forms of life.
+      </p>
+
+      <p>
+        Jain metaphysics distinguishes broadly between living beings
+        (<strong>jiva</strong>) and non-living reality (<strong>ajiva</strong>).
+        Souls are understood as genuinely real and capable of liberation, but
+        they become bound through karma. In Jain thought, karma can be described
+        in strikingly concrete metaphysical terms as something that attaches to
+        and obscures the purity of the soul. Liberation requires disciplined
+        action, knowledge, and the gradual removal of karmic bondage.
+      </p>
+
+      <p>
+        Jain philosophy is also famous for <strong>anekantavada</strong>, often
+        translated as the doctrine of many-sidedness. Reality is complex, and a
+        single statement or perspective may capture only one aspect of it.
+        Related theories of conditional predication encouraged philosophers to
+        qualify claims according to standpoint and context. This does not simply
+        mean that every opinion is equally true; rather, it reflects the
+        philosophical claim that reality may exceed the grasp of any isolated
+        perspective.
+      </p>
+
+      <p>
+        The Jain emphasis on non-violence and intellectual humility became one
+        of India's most distinctive philosophical contributions. Its ethical
+        influence continued far beyond the ancient world, while its theories of
+        knowledge and perspective remain important examples of how Indian
+        philosophers developed alternatives to simple absolutism without
+        abandoning the search for truth. :contentReference[oaicite:3]{index=3}
+      </p>
+    </section>
+
+    <!-- ================= CHAPTER 8 ================= -->
+
+    <div class="era-divider" id="chapter-8">
+      <span>8️⃣ Epic Philosophy &amp; the Bhagavad Gita</span>
+    </div>
+
+    <section class="narrative-block">
+      <h2>Philosophy Enters the Great Epics</h2>
+      <figure class="narrative-figure">
+        <img src="images/gita.jpg" alt="The Bhagavad Gita" />
+        <figcaption>
+          The Bhagavad Gita presents a dialogue between Arjuna and Krishna that
+          explores themes of duty, action, and liberation.
+        </figcaption>
+      </figure>
+
+      <p>
+        Indian philosophical ideas did not develop only in technical treatises
+        written for specialists. They also entered the great Sanskrit epics,
+        especially the Mahabharata, a vast literary work containing discussions
+        of duty, political power, violence, renunciation, liberation, and the
+        meaning of human action. Within this larger tradition, the
+        <strong>Bhagavad Gita</strong> became one of the most influential texts
+        in the history of Indian philosophy.
+      </p>
+
+      <p>
+        The philosophical problem of the Gita begins with action. Arjuna faces a
+        moral crisis before battle because acting appears to require the killing
+        of people he loves and respects. The dialogue that follows explores
+        <strong>dharma</strong>, duty and moral order, while asking whether a
+        person can act responsibly without becoming spiritually bound by the
+        consequences of action. The problem connects ethical life directly to
+        the larger philosophical theories of karma and liberation.
+      </p>
+
+      <p>
+        The Gita presents several paths that later traditions would interpret in
+        different ways. <strong>Karma yoga</strong> emphasizes disciplined
+        action without selfish attachment to its fruits.
+        <strong>Jnana yoga</strong> emphasizes knowledge and insight, while
+        <strong>bhakti</strong> emphasizes devotion and the relationship between
+        the individual and the divine. Rather than treating these approaches as
+        completely isolated, the text attempts to show how action, knowledge,
+        and devotion can each participate in a larger path toward liberation.
+      </p>
+
+      <p>
+        This development was philosophically important because it challenged the
+        idea that liberation necessarily required withdrawal from ordinary life.
+        A person might remain active in society while transforming the motives
+        and attachments that make action spiritually binding. The tension
+        between renunciation and participation in the world would remain a
+        central issue throughout later Indian philosophy.
+      </p>
+
+      <p>
+        The epic traditions also demonstrate that philosophy in India was deeply
+        connected with questions of politics, family, war, law, and everyday
+        moral responsibility. Metaphysical questions about the self were not
+        separated entirely from practical questions about how one should live.
+        The philosophical life was repeatedly understood as a problem of
+        knowledge, ethical action, discipline, and liberation considered
+        together rather than as completely separate fields of inquiry.
+      </p>
+    </section>
+
+    <!-- ================= CHAPTER 9 ================= -->
+
+    <div class="era-divider" id="chapter-9">
+      <span>9️⃣ The Classical Schools Take Shape (c. 300 BCE onward)</span>
+    </div>
+
+    <section class="narrative-block">
+      <h2>From Ancient Questions to Systematic Philosophy</h2>
+
+      <p>
+        The centuries following the early Upanishads and śramaṇa movements saw
+        the gradual development of increasingly systematic philosophical
+        schools. Thinkers began organizing their positions through concise
+        <em>sutra</em> texts, commentaries, debates, and technical vocabularies.
+        The questions inherited from earlier centuries — What is real? How do we
+        know? What is the self? What causes suffering? How is liberation
+        possible? — were now investigated through formal philosophical systems.
+      </p>
+
+      <p>
+        Later tradition commonly identifies six major schools associated with
+        the acceptance of Vedic authority: <strong>Nyaya</strong>,
+        <strong>Vaisheshika</strong>, <strong>Samkhya</strong>,
+        <strong>Yoga</strong>, <strong>Mimamsa</strong>, and
+        <strong>Vedanta</strong>. These traditions did not agree with one
+        another. Nyaya developed sophisticated theories of reasoning, inference,
+        and valid knowledge; Vaisheshika constructed an elaborate account of
+        categories and the physical world; Samkhya analyzed reality through the
+        distinction between consciousness and material nature.
+      </p>
+
+      <p>
+        Yoga shared important philosophical connections with Samkhya while
+        emphasizing disciplined practices of concentration and meditation.
+        Mimamsa concentrated heavily on the interpretation and authority of the
+        Vedic tradition, while Vedanta developed competing interpretations of
+        the Upanishads and the relationship between Brahman, the self, and the
+        world. These traditions demonstrate that Indian philosophy developed
+        extensive work in metaphysics, epistemology, logic, language, ethics,
+        hermeneutics, and philosophy of mind — not merely spiritual teaching.
+      </p>
+
+      <p>
+        Indian epistemology became especially sophisticated through debates
+        about <strong>pramana</strong>, or valid means of knowledge. Different
+        philosophical schools debated the status of perception, inference,
+        testimony, comparison, and other possible sources of knowledge. Buddhist
+        philosophers, Nyaya logicians, Mimamsa scholars, and Vedanta thinkers
+        developed competing theories about truth, error, justification, and the
+        relationship between language and reality.
+        :contentReference[oaicite:4]{index=4}
+      </p>
+
+      <p>
+        These systematic schools should be understood as the continuation of the
+        ancient philosophical revolution rather than as something entirely new.
+        The questions first explored in Vedic hymns, Upanishadic dialogues,
+        Buddhist teachings, Jain debates, and epic literature continued to
+        generate new answers for centuries. Ancient Indian philosophy therefore
+        cannot be reduced to a single doctrine or religion: it is a vast history
+        of competing systems united by an unusually persistent concern with
+        reality, knowledge, consciousness, action, suffering, and liberation.
+      </p>
+    </section>
     <!-- ================= MAJOR THINKERS ================= -->
 
     <section class="library-section" id="thinkers">
       <h2><span>👤</span> Major Thinkers</h2>
 
-      <p>The key figures behind each chapter of this era, in brief.</p>
+      <p>
+        The thinkers, teachers, and philosophical figures associated with the
+        major stages of Indian philosophy — from the Upanishadic search for the
+        self to Buddhist analysis, Jain metaphysics, classical systems of
+        reasoning, and later Vedantic interpretation.
+      </p>
 
       <div class="school-container">
         <div class="school-card">
-          <h3>Gautama Buddha</h3>
-          <span class="founder-tag">c. 563–483 BCE</span>
-          <p>
-            Taught the Four Noble Truths and the doctrine of anatta (non-self),
-            founding Buddhism.
-          </p>
-        </div>
-
-        <div class="school-card">
-          <h3>Mahavira</h3>
-          <span class="founder-tag">c. 599–527 BCE</span>
-          <p>
-            Reviver of Jainism; taught absolute non-violence (ahimsa) and
-            anekantavada.
-          </p>
-        </div>
-
-        <div class="school-card">
           <h3>Yajnavalkya</h3>
-          <span class="founder-tag">c. 8th century BCE</span>
+          <span class="founder-tag">c. 8th–7th century BCE</span>
           <p>
-            Sage central to the Brihadaranyaka Upanishad's teachings on the self
-            and liberation.
+            A central sage of the Brihadaranyaka Upanishad, associated with
+            profound inquiries into Atman, ultimate reality, knowledge, death,
+            and the possibility of liberation from the cycle of rebirth.
           </p>
         </div>
+        <a href="gautama-buddha.html">
+          <div class="school-card">
+            <h3>Gautama Buddha</h3>
+            <span class="founder-tag">c. 5th century BCE</span>
+            <p>
+              Taught the Four Noble Truths and the Noble Eightfold Path,
+              developing a philosophical path centered on suffering.
+            </p>
+          </div>
+        </a>
+        <a href="mahavira.html">
+          <div class="school-card">
+            <h3>Mahavira</h3>
+            <span class="founder-tag">c. 6th–5th century BCE</span>
+            <p>
+              The 24th Tirthankara in Jain tradition, associated with the
+              rigorous discipline of ahimsa, ascetic liberation, and a
+              philosophical tradition that emphasizes the complexity and
+              many-sided nature of reality.
+            </p>
+          </div>
+        </a>
+        <a href="kapila.html">
+          <div class="school-card">
+            <h3>Kapila</h3>
+            <span class="founder-tag"
+              >Traditional sage;uncertain</span
+            >
+            <p>
+              Traditionally associated with Samkhya philosophy, the influential
+              system that analyzes reality through the distinction between
+              purusha, consciousness, and prakriti, the dynamic material
+              principle of nature.
+            </p>
+          </div>
+        </a>
+        <a href="patanjali.html">
+          <div class="school-card">
+            <h3>Patanjali</h3>
+            <span class="founder-tag"
+              > early centuries BCE/CE</span
+            >
+            <p>
+              Traditionally associated with the Yoga Sutras, which present a
+              disciplined philosophical and practical path concerned with mental
+              concentration, the transformation of consciousness, and
+              liberation.
+            </p>
+          </div>
+        </a>
+        <a href="nagarjuna.html">
+          <div class="school-card">
+            <h3>Nagarjuna</h3>
+            <span class="founder-tag">c. 2nd–3rd century CE</span>
+            <p>
+              One of the most influential Buddhist philosophers, associated with
+              Madhyamaka and the analysis of shunyata, or emptiness, which
+              challenges the idea that things possess independent and permanent
+              existence.
+            </p>
+          </div>
+        </a>
+        <a href="adi-shankaracharya.html">
+          <div class="school-card">
+            <h3>Adi Shankar
+              acharya</h3>
+            <span class="founder-tag">c. 8th century CE</span>
+            <p>
+              A major interpreter of Advaita Vedanta who argued for the non-dual
+              reality of Brahman and developed an enormously influential
+              philosophical tradition centered on knowledge, appearance, and
+              liberation.
+            </p>
+          </div>
+        </a>
+        <a href="ramanuja.html">
+          <div class="school-card">
+            <h3>Ramanuja</h3>
+            <span class="founder-tag">c. 1017–1137 CE</span>
+            <p>
+              Developed Vishishtadvaita Vedanta, or qualified non-dualism,
+              offering a distinctive account of the relationship between
+              Brahman, individual selves, the material world, devotion, and
+              liberation.
+            </p>
+          </div>
+        </a>
 
         <div class="school-card">
-          <h3>Adi Shankaracharya</h3>
-          <span class="founder-tag">c. 8th century CE</span>
+          <h3>Madhva</h3>
+          <span class="founder-tag">c. 13th century CE</span>
           <p>
-            Developed Advaita Vedanta, teaching the non-dual nature of Brahman
-            and the ultimate unity of Atman and Brahman.
-          </p>
-        </div>
-
-        <div class="school-card">
-          <h3>Ramanuja</h3>
-          <span class="founder-tag">c. 1017–1137 CE</span>
-          <p>
-            Developed Vishishtadvaita Vedanta, emphasizing the relationship
-            between Brahman, individual souls, and the material world.
-          </p>
-        </div>
-
-        <div class="school-card">
-          <h3>Nagarjuna</h3>
-          <span class="founder-tag">c. 150–250 CE</span>
-          <p>
-            Developed Madhyamaka philosophy, emphasizing the concept of
-            emptiness (shunyata) and the dependent nature of reality.
+            A major Vedantic philosopher associated with Dvaita, a strongly
+            dualistic interpretation emphasizing the enduring distinction
+            between the supreme reality, individual souls, and the material
+            world.
           </p>
         </div>
       </div>
@@ -503,32 +1282,53 @@
         <a href="thinkers.html#eastern-indian">See full thinker profiles →</a>
       </p>
     </section>
+
     <div class="philosophy-divider"></div>
+
     <!-- ================= KEY BOOKS ================= -->
 
     <section class="books" id="books">
-      <h2>📚 Key Books From This Era</h2>
+      <h2>📚 Key Books From This Tradition</h2>
 
       <div class="book-list">
         <div>
           <h3>Rigveda</h3>
-          <p>Ancient Vedic Sages</p>
+          <p>Ancient Vedic Poets and Sages</p>
         </div>
+
         <div>
-          <h3>Upanishads</h3>
-          <p>Various Sages</p>
+          <h3>Principal Upanishads</h3>
+          <p>Various Sages and Teachers</p>
         </div>
-        <div>
-          <h3>Dhammapada</h3>
-          <p>Gautama Buddha</p>
-        </div>
-        <div>
-          <h3>Tattvartha Sutra</h3>
-          <p>Umaswati</p>
-        </div>
+
         <div>
           <h3>Bhagavad Gita</h3>
-          <p>Vyasa</p>
+          <p>Part of the Mahabharata tradition</p>
+        </div>
+
+        <div>
+          <h3>Dhammapada</h3>
+          <p>Buddhist Canonical Tradition</p>
+        </div>
+
+        <div>
+          <h3>Tattvartha Sutra</h3>
+          <p>Umaswati / Umasvami</p>
+        </div>
+
+        <div>
+          <h3>Yoga Sutras</h3>
+          <p>Traditionally attributed to Patanjali</p>
+        </div>
+
+        <div>
+          <h3>Nyaya Sutras</h3>
+          <p>Traditionally attributed to Akshapada Gautama</p>
+        </div>
+
+        <div>
+          <h3>Brahma Sutras</h3>
+          <p>Traditionally attributed to Badarayana</p>
         </div>
       </div>
 
@@ -538,67 +1338,149 @@
         >
       </p>
     </section>
+
     <div class="philosophy-divider"></div>
+
     <!-- ================= MAJOR IDEAS ================= -->
 
     <section class="questions" id="ideas">
-      <h2>💡 Major Ideas &amp; Discoveries</h2>
+      <h2>💡 Major Ideas &amp; Philosophical Traditions</h2>
 
       <ul>
         <li>
-          🕉 <strong>Atman–Brahman</strong> — the identity of the individual
-          self with ultimate reality
+          🕉 <strong>Atman and Brahman</strong> — the Upanishadic investigation
+          into the relationship between the deepest self and ultimate reality
         </li>
 
         <li>
-          🔄 <strong>Karma &amp; Samsara</strong> — action shaping the cycle of
-          rebirth
+          🔄 <strong>Karma and Samsara</strong> — actions shaping existence
+          across the recurring cycle of birth, death, and rebirth
         </li>
 
         <li>
-          🕊 <strong>Moksha</strong> — liberation from the cycle of rebirth
+          🕊 <strong>Moksha and Nirvana</strong> — different philosophical paths
+          toward liberation from suffering, ignorance, and conditioned existence
         </li>
 
         <li>
-          🚫 <strong>Anatta</strong> — the Buddhist denial of a permanent self
+          🚫 <strong>Anatta</strong> — the Buddhist critique of the idea of a
+          permanent and unchanging self
         </li>
 
         <li>
-          🙏 <strong>Ahimsa</strong> — non-violence toward all living beings
+          🌌 <strong>Shunyata</strong> — the Madhyamaka analysis of emptiness
+          and the dependent character of things
         </li>
 
-        <li>👁 <strong>Anekantavada</strong> — the many-sidedness of truth</li>
+        <li>
+          🙏 <strong>Ahimsa</strong> — the Jain principle of radical
+          non-violence toward living beings
+        </li>
+
+        <li>
+          👁 <strong>Anekantavada</strong> — the Jain doctrine that reality is
+          complex and cannot be exhausted by a single perspective
+        </li>
+
+        <li>
+          ⚖ <strong>Dharma</strong> — duty, order, ethical responsibility, and
+          the philosophical problem of how one ought to act
+        </li>
+
+        <li>
+          🧠 <strong>Pramana</strong> — systematic reflection on the sources and
+          validity of human knowledge, including perception and inference
+        </li>
+
+        <li>
+          ⚛ <strong>Atomism and Categories</strong> — Vaisheshika investigations
+          into the fundamental constituents and classifications of reality
+        </li>
+
+        <li>
+          🧘 <strong>Purusha and Prakriti</strong> — the Samkhya distinction
+          between consciousness and the material processes of nature
+        </li>
+
+        <li>
+          🔍 <strong>Logic and Debate</strong> — the Nyaya tradition's
+          systematic study of inference, argument, error, and reliable knowledge
+        </li>
+
+        <li>
+          📖 <strong>Vedanta</strong> — philosophical interpretation of the
+          Upanishads and the nature of Brahman, the self, and liberation
+        </li>
       </ul>
     </section>
+
     <div class="philosophy-divider"></div>
+
     <!-- ================= INFLUENCE ================= -->
 
     <section class="narrative-block" id="influence">
       <h2>🌍 Influence on Later Philosophy</h2>
 
       <p>
-        The Upanishadic vision of Atman and Brahman went on to become the
-        philosophical foundation of the later classical school of Advaita
-        Vedanta, systematized centuries afterward by Adi Shankaracharya, and
-        remains a living tradition in Hindu philosophy and practice today.
-        Buddhism, meanwhile, spread far beyond its place of origin — across the
-        Indian subcontinent, into Sri Lanka, Central Asia, and eventually China,
-        Korea, and Japan — splitting along the way into major branches including
-        Theravada and Mahayana, and profoundly shaping the philosophy, art, and
-        culture of nearly every society it reached.
+        Ancient Indian philosophy did not develop as a single doctrine moving in
+        one direction. Its early questions about ritual, cosmic order, the self,
+        karma, and liberation generated a long intellectual landscape in which
+        competing traditions argued over what is ultimately real and how human
+        beings can know it. The Upanishadic inheritance became central to later
+        Vedanta, while Samkhya, Yoga, Nyaya, Vaisheshika, Mimamsa, and Vedanta
+        developed into the classical systems most commonly presented as the
+        major darshanas of Indian philosophy.
       </p>
 
       <p>
-        Jain philosophy's uncompromising commitment to non-violence would
-        resurface many centuries later as a direct influence on Mahatma Gandhi's
-        philosophy of nonviolent resistance, itself a major influence on
-        20th-century civil rights and independence movements well beyond India.
-        In this sense, questions first raised in Vedic fire rituals and
-        Upanishadic dialogues traveled forward not only through religious and
-        philosophical tradition, but into modern political thought as well.
+        Buddhism transformed philosophical discussion across Asia. From the
+        Indian subcontinent it moved into Sri Lanka, Central Asia, China, Korea,
+        Japan, Tibet, and Southeast Asia, where Buddhist thinkers translated,
+        interpreted, and debated Indian ideas in entirely new intellectual
+        environments. Traditions such as Theravada, Madhyamaka, Yogacara, Zen,
+        and Tibetan Buddhist philosophy preserved the central concern with
+        suffering and liberation while producing highly sophisticated theories
+        of knowledge, consciousness, language, causation, and reality.
+      </p>
+
+      <p>
+        Jain philosophy likewise preserved one of the world's most rigorous
+        intellectual traditions of non-violence and ethical responsibility.
+        Anekantavada and related Jain theories of conditional judgment
+        encouraged a distinctive approach to philosophical disagreement:
+        different perspectives may disclose genuine aspects of a complex reality
+        without any single, isolated statement exhausting the whole truth. Jain
+        thinkers consequently contributed important debates concerning logic,
+        metaphysics, epistemology, ethics, and the nature of living beings.
+      </p>
+
+      <p>
+        The later history of Vedanta carried Upanishadic questions into new
+        forms of philosophical disagreement. Shankaracharya's Advaita,
+        Ramanuja's Vishishtadvaita, Madhva's Dvaita, and other traditions
+        offered sharply different answers to questions that had been explored
+        for centuries: Is reality ultimately one or many? What is the
+        relationship between the self and Brahman? Is the world ultimately real,
+        dependent, or transformed through appearance? These disagreements
+        ensured that Indian philosophy remained a living tradition of argument
+        rather than a fixed collection of ancient doctrines.
+      </p>
+
+      <p>
+        Indian philosophical ideas eventually entered global intellectual
+        history through translation, colonial encounters, comparative religion,
+        modern scholarship, and dialogue with Western philosophy. Concepts such
+        as karma, meditation, non-duality, ahimsa, and Buddhist emptiness now
+        appear in philosophical, psychological, ethical, and cultural
+        discussions around the world. Yet their historical meanings remain
+        richer than their modern popular use often suggests: each emerged from
+        long traditions of argument about knowledge, consciousness, suffering,
+        action, and the possibility of human liberation.
       </p>
     </section>
+
     <div class="philosophy-divider"></div>
+
     <!-- ================= QUICK FACTS ================= -->
 
     <section class="fact-box" id="facts">
@@ -606,22 +1488,37 @@
 
       <div class="fact-card">
         <p>
-          <strong>Time Period:</strong> c. 1500 BCE – 200 BCE (core period
-          covered here)
+          <strong>Historical Roots:</strong> Vedic and early Upanishadic
+          traditions from the second and first millennia BCE
         </p>
+
         <p>
-          <strong>Key Region:</strong> The Indo-Gangetic Plain, northern India
+          <strong>Core Ancient Regions:</strong> The northwestern subcontinent,
+          the Gangetic plain, and the wider cultural regions of South Asia
         </p>
+
         <p>
-          <strong>Major Movements Founded:</strong> Vedanta, Buddhism, Jainism
+          <strong>Major Intellectual Traditions:</strong> Vedic and Upanishadic
+          thought, Buddhism, Jainism, Samkhya, Yoga, Nyaya, Vaisheshika,
+          Mimamsa, and Vedanta
         </p>
+
         <p>
-          <strong>Central Question:</strong> What is the true nature of the
-          self, and how is liberation achieved?
+          <strong>Central Questions:</strong> What is the self? What is
+          ultimately real? How is reliable knowledge possible? Why do beings
+          suffer, and how can liberation be achieved?
         </p>
+
         <p>
-          <strong>Successor Traditions:</strong> The six classical schools of
-          Hindu philosophy; Buddhism across Asia
+          <strong>Key Concepts:</strong> Dharma, karma, samsara, moksha,
+          nirvana, Atman, Brahman, anatta, shunyata, ahimsa, and pramana
+        </p>
+
+        <p>
+          <strong>Long-Term Influence:</strong> Hindu philosophical traditions,
+          Buddhist philosophy across Asia, Jain intellectual traditions, and
+          modern global debates about consciousness, ethics, meditation, and
+          non-violence
         </p>
       </div>
     </section>

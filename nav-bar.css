@@ -83,25 +83,27 @@
    --------------------------------------------------------- */
 
 .mega-menu {
-    position: absolute;
+    position: fixed;
 
-    top: calc(100% + 20px);
-    left: -220px;
+    top: 74px;
+    left: 0;
 
-    width: min(1000px, 90vw);
+    width: 100vw;
+    height: calc(100dvh - 74px);
 
     background:
-        linear-gradient(135deg,
-            rgba(29, 31, 42, 0.98),
-            rgba(18, 20, 28, 0.98));
+        linear-gradient(
+            135deg,
+            rgba(29, 31, 42, 1),
+            rgba(18, 20, 28, 1)
+        );
 
-    border: 1px solid var(--ink-line);
+    border: none;
     border-top: 2px solid var(--gold);
 
-    box-shadow:
-        0 25px 60px rgba(0, 0, 0, 0.45);
+    box-shadow: none;
 
-    backdrop-filter: blur(14px);
+    backdrop-filter: none;
 
     opacity: 0;
     visibility: hidden;
@@ -114,8 +116,9 @@
         opacity 0.22s ease,
         transform 0.22s ease,
         visibility 0.22s ease;
-}
 
+    z-index: 1500;
+}
 
 /* ---------------------------------------------------------
    HOVER BRIDGE
@@ -164,8 +167,16 @@
     gap: 0;
 
     padding: 2rem;
-}
 
+    max-width: 1400px;
+    height: 100%;
+
+    margin: 0 auto;
+
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+}
 
 /* ---------------------------------------------------------
    INTRODUCTION COLUMN

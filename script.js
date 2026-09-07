@@ -569,7 +569,7 @@ const searchData = [
         category: "Ancient Greek",
         description: "Early Greek philosopher associated with natural philosophy and the search for the fundamental substance of reality.",
         keywords: "thales thales of miletus greek philosophy first philosopher natural philosophy water geometry astronomy",
-        url: "thinkers.html#thales"
+        url: "thales-of-miletus.html"
     },
 
     {
@@ -577,7 +577,7 @@ const searchData = [
         category: "Ancient Greek",
         description: "Greek philosopher and mathematician associated with Pythagoreanism, mathematics and harmony.",
         keywords: "pythagoras pythagorean pythagoreanism mathematics numbers harmony geometry",
-        url: "thinkers.html#pythagoras"
+        url: "pythagoras.html"
     },
 
     {

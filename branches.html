@@ -222,41 +222,26 @@
 
     <title>Φ Branches of Philosophy | Φ The Great Library of Philosophy</title>
 
-      <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
     <link rel="stylesheet" href="branches-refine.css" />
-  <!-- Website Favicon -->
-<link rel="icon" href="favicon.ico" sizes="any" />
+    <!-- Website Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="any" />
 
-<link
-  rel="icon"
-  type="image/png"
-  sizes="32x32"
-  href="favicon-32x32.png"
-/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
 
-<link
-  rel="icon"
-  type="image/png"
-  sizes="48x48"
-  href="favicon-48x48.png"
-/>
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png" />
 
-<link
-  rel="icon"
-  type="image/png"
-  sizes="192x192"
-  href="favicon-192x192.png"
-/>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon-192x192.png"
+    />
 
-<link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="apple-touch-icon.png"
-/>
-
-</head>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  </head>
 
   <body>
     <!-- ================= NAVBAR ================= -->
@@ -267,7 +252,142 @@
 
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="history.html">History</a>
+        <!-- ================= HISTORY MEGA MENU ================= -->
+
+        <div class="nav-mega history-mega">
+          <!-- Main History page link -->
+
+          <a href="history.html" class="mega-trigger" aria-haspopup="true">
+            History
+          </a>
+
+          <!-- Mobile expand / collapse button -->
+
+          <button
+            class="mega-mobile-toggle"
+            type="button"
+            aria-label="Open History navigation"
+            aria-expanded="false"
+            aria-controls="history-mega-menu"
+          >
+            <span></span>
+          </button>
+
+          <!-- History mega menu -->
+
+          <div class="mega-menu" id="history-mega-menu">
+            <div class="mega-menu-inner">
+              <!-- INTRODUCTION -->
+
+              <div class="mega-intro">
+                <span class="mega-eyebrow"> The Great Tradition </span>
+
+                <h3>History of Philosophy</h3>
+
+                <p>
+                  Explore the development of philosophical thought across
+                  civilizations, cultures, and historical eras.
+                </p>
+
+                <a href="history.html" class="mega-explore">
+                  Explore History <span>→</span>
+                </a>
+              </div>
+
+              <!-- ANCIENT -->
+
+              <div class="mega-column">
+                <h4>Ancient Civilizations</h4>
+
+                <a href="ancient-greece.html">
+                  <strong>Ancient Greece</strong>
+                  <span>Socrates, Plato, Aristotle</span>
+                </a>
+
+                <a href="ancient-india.html">
+                  <strong>Ancient India</strong>
+                  <span>Vedic and classical traditions</span>
+                </a>
+
+                <a href="ancient-china.html">
+                  <strong>Ancient China</strong>
+                  <span>Confucianism and Daoism</span>
+                </a>
+
+                <a href="african-philosophy.html">
+                  <strong>ANCIENT AFRICAN PHILOSOPHY</strong>
+                  <span>PHILOSOPHICAL TRADITIONS OF AFRICA</span>
+                </a>
+
+                <a href="ancient-egypt.html">
+                  <strong>ANCIENT EGYPTIAN PHILOSOPHY</strong>
+                  <span>WISDOM, ORDER, AND THE PRINCIPLES OF MA'AT</span>
+                </a>
+
+                <a href="hellenistic-roman-philosophy.html">
+                  <strong>HELLENISTIC &amp; ROMAN PHILOSOPHY</strong>
+                  <span>STOICISM, EPICUREANISM, AND THE GRECO-ROMAN WORLD</span>
+                </a>
+
+                <a href="ancient-persian-philosophy.html">
+                  <strong>ANCIENT PERSIAN PHILOSOPHY</strong>
+                  <span
+                    >ZOROASTRIAN THOUGHT AND THE PHILOSOPHY OF ANCIENT
+                    PERSIA</span
+                  >
+                </a>
+
+                <a href="ancient-mesopotamia.html">
+                  <strong>ANCIENT MESOPOTAMIAN PHILOSOPHY</strong>
+                  <span>WISDOM, COSMOS, AND THE EARLIEST CIVILIZATIONS</span>
+                </a>
+              </div>
+
+              <!-- MEDIEVAL -->
+
+              <div class="mega-column">
+                <h4>Medieval &amp; Renaissance</h4>
+
+                <a href="islamic-philosophy.html">
+                  <strong>Islamic Philosophy</strong>
+                  <span>Reason, faith, and the classical heritage</span>
+                </a>
+
+                <a href="medieval-philosophy.html">
+                  <strong>Medieval Philosophy</strong>
+                  <span>Scholasticism and theological inquiry</span>
+                </a>
+
+                <a href="renaissance-philosophy.html">
+                  <strong>Renaissance Philosophy</strong>
+                  <span>Humanism and intellectual renewal</span>
+                </a>
+              </div>
+
+              <!-- MODERN -->
+
+              <div class="mega-column">
+                <h4>Modern &amp; Contemporary</h4>
+
+                <a href="enlightenment-philosophy.html">
+                  <strong>The Enlightenment</strong>
+                  <span>Reason, science, and liberty</span>
+                </a>
+
+                <a href="modern-philosophy.html">
+                  <strong>Modern Philosophy</strong>
+                  <span>From Descartes to the nineteenth century</span>
+                </a>
+
+                <a href="contemporary-philosophy.html">
+                  <strong>Contemporary Philosophy</strong>
+                  <span>Twentieth century to the present</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <a href="thinkers.html">Thinkers</a>
         <a href="branches.html" aria-current="page">Branches</a>
         <a href="schools.html">Schools</a>
@@ -370,36 +490,98 @@
         </div>
       </header>
 
-    
       <!-- ================= INTRODUCTION ================= -->
       <section class="branch-intro" aria-labelledby="why-branches">
         <span class="section-eyebrow">Introduction</span>
-        <h2 id="why-branches">Why are there different branches?</h2>
+
+        <h2 id="why-branches">
+          Why Are There Different Branches of Philosophy?
+        </h2>
 
         <p>
-          Philosophy covers a vast range of questions about life, reality,
-          knowledge, and human existence. Because these questions are so
-          diverse, philosophy gradually developed into different branches, with
-          each focusing on a specific area of inquiry. Some branches explore
-          what is real and the nature of existence, while others examine how we
-          gain knowledge, what makes actions right or wrong, or how societies
-          should be governed. Although each branch has its own purpose and
-          methods, they are closely connected and often overlap. Together, they
-          provide a deeper understanding of the world, encourage critical
-          thinking, and help us approach complex problems from multiple
-          perspectives.
+          Philosophy is the systematic study of fundamental questions about
+          <strong
+            >reality, knowledge, truth, existence, morality, reasoning, beauty,
+            society, and human life</strong
+          >. Because philosophical inquiry addresses such a wide range of
+          questions, it is commonly organized into different
+          <strong>branches of philosophy</strong>, with each branch
+          concentrating on a particular area of investigation. The major
+          branches include
+          <strong
+            >metaphysics, epistemology, ethics, logic, and aesthetics</strong
+          >, while related fields such as political philosophy, philosophy of
+          mind, philosophy of language, philosophy of science, philosophy of
+          law, philosophy of religion, philosophy of mathematics, philosophy of
+          education, and philosophy of technology develop these questions in
+          more specialized directions.
         </p>
 
         <p>
-          The division of <strong>philosophy</strong> into branches also allows
-          scholars to study ideas in greater depth without losing sight of the
-          bigger picture. Just as the branches of a tree grow from the same
-          trunk, every branch of philosophy shares the common goal of seeking
-          wisdom, truth, and a better understanding of ourselves and the
-          universe. Whether exploring ethics, logic, metaphysics, or political
-          philosophy, each branch contributes to the rich tradition of
-          philosophical thought that continues to influence science, culture,
-          law, education, and everyday life.
+          Each branch of philosophy begins with a distinctive set of fundamental
+          questions. <strong>Metaphysics</strong> asks what exists and what
+          reality is ultimately like, including questions about being, identity,
+          causation, time, space, possibility, and the relationship between mind
+          and body. <strong>Epistemology</strong> examines knowledge, belief,
+          justification, evidence, truth, certainty, and the limits of human
+          understanding. <strong>Ethics</strong> investigates how we ought to
+          live, what makes actions right or wrong, and what justice, virtue,
+          responsibility, and moral value mean. <strong>Logic</strong> studies
+          correct reasoning, argument, validity, inference, and proof, while
+          <strong>aesthetics</strong> explores beauty, art, artistic value,
+          interpretation, taste, and aesthetic experience.
+        </p>
+
+        <p>
+          The branches of philosophy are not isolated subjects. Philosophical
+          questions frequently cross the boundaries between different fields
+          because problems about reality, knowledge, values, language, and human
+          action are deeply interconnected. Questions about consciousness, for
+          example, involve both
+          <strong>metaphysics and philosophy of mind</strong>, while questions
+          about scientific knowledge connect
+          <strong>epistemology with philosophy of science</strong>. Questions
+          about justice and political authority bring together
+          <strong>ethics and political philosophy</strong>, and questions about
+          legal rights and punishment connect
+          <strong>philosophy of law with ethics and political philosophy</strong
+          >. This interconnected structure is one reason why studying philosophy
+          as a whole provides a broader understanding than studying any single
+          philosophical field in isolation.
+        </p>
+
+        <p>
+          The organization of philosophy into branches also makes it easier to
+          study philosophical problems systematically while preserving their
+          connections to one another. Some fields focus primarily on
+          <strong>what is true</strong>, others on
+          <strong>how we know what is true</strong>, others on
+          <strong>how we should act</strong>, and others on
+          <strong
+            >how we should reason, interpret language, understand society, or
+            evaluate art</strong
+          >. These distinctions are useful for learning and research, but they
+          are not rigid boundaries. Philosophers have often worked across
+          several branches at once, showing that philosophical inquiry is better
+          understood as a connected network of questions than as a collection of
+          completely separate subjects.
+        </p>
+
+        <p>
+          Understanding the <strong>different branches of philosophy</strong> is
+          therefore a useful starting point for anyone who wants to learn
+          philosophy systematically. Whether you are asking
+          <strong
+            >what is reality, how knowledge is possible, what makes an action
+            morally right, what constitutes a valid argument, what makes
+            something beautiful, how the mind relates to the brain, how language
+            acquires meaning, or what makes political authority
+            legitimate</strong
+          >, there is a philosophical field that provides concepts and methods
+          for investigating the question. The sections that follow introduce the
+          major branches of philosophy, explain their central questions and
+          concepts, and show how they connect with one another across the wider
+          history of philosophical thought.
         </p>
       </section>
 
@@ -484,6 +666,164 @@
         </div>
       </section>
 
+      <div class="philosophy-divider" role="presentation"></div>
+
+      <!-- ================= FIELDS OF PHILOSOPHY TREE ================= -->
+      <section class="philosophy-tree" aria-labelledby="fields-tree-title">
+        <span class="section-eyebrow">Overview</span>
+
+        <h2 id="fields-tree-title">Fields of Philosophy</h2>
+
+        <p class="tree-intro">
+          Philosophy extends into many specialized fields, each applying
+          philosophical methods to a particular area of human knowledge,
+          experience, society, or intellectual inquiry. These fields examine
+          questions about education, history, language, law, mathematics, mind,
+          politics, religion, and science. Although each field has its own
+          subject matter, they remain deeply connected to the broader
+          philosophical questions of truth, reality, knowledge, value,
+          reasoning, and human existence.
+        </p>
+
+        <div class="tree-box">
+          <h3 class="tree-root">🌳 Fields of Philosophy</h3>
+
+          <ul class="tree-list">
+            <li>
+              <a href="education-philosophy.html">
+                <span class="branch-info">
+                  <span aria-hidden="true">🎓</span>
+                  <strong>Philosophy of Education</strong> — Examines the aims,
+                  methods, values, curriculum, authority, and purposes of
+                  education and learning.
+                </span>
+                <span class="read-more">
+                  READ MORE <span aria-hidden="true">&rarr;</span>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="history-philosophy.html">
+                <span class="branch-info">
+                  <span aria-hidden="true">🏛</span>
+                  <strong>Philosophy of History</strong> — Investigates
+                  historical knowledge, causation, interpretation, narrative,
+                  objectivity, progress, agency, and the meaning of historical
+                  development.
+                </span>
+                <span class="read-more">
+                  READ MORE <span aria-hidden="true">&rarr;</span>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="language-philosophy.html">
+                <span class="branch-info">
+                  <span aria-hidden="true">💬</span>
+                  <strong>Philosophy of Language</strong> — Explores meaning,
+                  reference, truth, communication, interpretation, speech acts,
+                  language use, and the relationship between language and
+                  thought.
+                </span>
+                <span class="read-more">
+                  READ MORE <span aria-hidden="true">&rarr;</span>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="law-philosophy.html">
+                <span class="branch-info">
+                  <span aria-hidden="true">⚖</span>
+                  <strong>Philosophy of Law</strong> — Examines the nature of
+                  law, legal authority, justice, rights, punishment, legal
+                  obligation, interpretation, and the relationship between law
+                  and morality.
+                </span>
+                <span class="read-more">
+                  READ MORE <span aria-hidden="true">&rarr;</span>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="maths-philosophy.html">
+                <span class="branch-info">
+                  <span aria-hidden="true">∞</span>
+                  <strong>Philosophy of Mathematics</strong> — Investigates
+                  mathematical objects, numbers, proof, truth, infinity,
+                  mathematical knowledge, and the foundations and reality of
+                  mathematics.
+                </span>
+                <span class="read-more">
+                  READ MORE <span aria-hidden="true">&rarr;</span>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mind-philosophy.html">
+                <span class="branch-info">
+                  <span aria-hidden="true">🧠</span>
+                  <strong>Philosophy of Mind</strong> — Explores consciousness,
+                  mental states, perception, intentionality, personal identity,
+                  free will, and the relationship between mind and body.
+                </span>
+                <span class="read-more">
+                  READ MORE <span aria-hidden="true">&rarr;</span>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="political-philosophy.html">
+                <span class="branch-info">
+                  <span aria-hidden="true">🏛</span>
+                  <strong>Political Philosophy</strong> — Examines justice,
+                  liberty, equality, rights, political authority, democracy,
+                  sovereignty, power, citizenship, and the legitimate
+                  organization of political society.
+                </span>
+                <span class="read-more">
+                  READ MORE <span aria-hidden="true">&rarr;</span>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="religion-philosophy.html">
+                <span class="branch-info">
+                  <span aria-hidden="true">✦</span>
+                  <strong>Philosophy of Religion</strong> — Investigates God,
+                  faith, reason, religious experience, evil, miracles, the
+                  afterlife, religious pluralism, and the relationship between
+                  religion and science.
+                </span>
+                <span class="read-more">
+                  READ MORE <span aria-hidden="true">&rarr;</span>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="science-philosophy.html">
+                <span class="branch-info">
+                  <span aria-hidden="true">🔬</span>
+                  <strong>Philosophy of Science</strong> — Examines scientific
+                  knowledge, evidence, explanation, causation, scientific
+                  reasoning, objectivity, realism, theory change, and the nature
+                  and limits of scientific inquiry.
+                </span>
+                <span class="read-more">
+                  READ MORE <span aria-hidden="true">&rarr;</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
       <div class="philosophy-divider" role="presentation"></div>
 
       <!-- ================= CORE BRANCHES ================= -->
@@ -990,23 +1330,168 @@
           />
         </figure>
       </section>
+      <div class="philosophy-divider"></div>
 
-      <div class="philosophy-divider" role="presentation"></div>
+      <!-- ================= PHILOSOPHY OF MATHEMATICS ================= -->
+
       <section
         class="branch"
-        id="philosophy-of-religion"
-        aria-labelledby="philosophy-of-religion-title"
+        id="philosophy-of-mathematics"
+        aria-labelledby="philosophy-of-mathematics-title"
       >
         <figure class="branch-image">
           <img
-            src="images/religion-period.jpg"
-            alt="Sacred architecture representing the philosophy of religion"
+            src="images/maths-philosophy.jpg"
+            alt="Mathematical symbols representing the philosophy of mathematics"
             loading="lazy"
             decoding="async"
             width="800"
             height="1000"
           />
         </figure>
+
+        <div class="branch-content">
+          <h2 id="philosophy-of-mathematics-title">
+            ∞ Philosophy of Mathematics
+          </h2>
+
+          <p>
+            Philosophy of mathematics examines the nature, foundations, truth,
+            and reality of mathematics. It asks whether mathematical objects
+            such as numbers, sets, and geometric structures exist independently
+            of human minds, whether mathematical truths are discovered or
+            constructed, and how abstract mathematical knowledge is possible.
+            Major positions include Platonism, logicism, formalism,
+            intuitionism, structuralism, nominalism, and fictionalism, while
+            debates over proof, infinity, and mathematical practice connect
+            mathematics with metaphysics, epistemology, and logic.
+          </p>
+
+          <h4>Main Question</h4>
+          <p class="branch-question">
+            What are mathematical objects, and how is mathematical knowledge and
+            truth possible?
+          </p>
+
+          <h4>Famous Philosophers</h4>
+          <ul>
+            <li>Plato</li>
+            <li>Gottlob Frege</li>
+            <li>Bertrand Russell</li>
+            <li>David Hilbert</li>
+            <li>L. E. J. Brouwer</li>
+          </ul>
+        </div>
+      </section>
+      <div class="philosophy-divider"></div>
+
+      <!-- ================= PHILOSOPHY OF EDUCATION ================= -->
+
+      <section
+        class="branch reverse"
+        id="philosophy-of-education"
+        aria-labelledby="philosophy-of-education-title"
+      >
+        <div class="branch-content">
+          <h2 id="philosophy-of-education-title">🎓 Philosophy of Education</h2>
+
+          <p>
+            Philosophy of education examines the aims, values, methods, and
+            purposes of education and asks what it means to educate a person
+            well. It considers questions about knowledge, learning, intellectual
+            development, moral formation, autonomy, authority, curriculum,
+            equality, and the role of education in society. Major approaches
+            range from child-centered and experiential education to critical and
+            civic education, with thinkers such as Rousseau, Dewey, and Freire
+            challenging traditional assumptions about teaching, discipline,
+            learning, and educational authority.
+          </p>
+
+          <h4>Main Question</h4>
+          <p class="branch-question">
+            What should education aim to achieve, and what makes an educational
+            practice genuinely valuable?
+          </p>
+
+          <h4>Famous Philosophers</h4>
+          <ul>
+            <li>Plato</li>
+            <li>Jean-Jacques Rousseau</li>
+            <li>John Dewey</li>
+            <li>Paulo Freire</li>
+            <li>John Locke</li>
+          </ul>
+        </div>
+
+        <figure class="branch-image">
+          <img
+            src="images/education-philosophy.jpg"
+            alt="Books and learning representing the philosophy of education"
+            loading="lazy"
+            decoding="async"
+            width="800"
+            height="1000"
+          />
+        </figure>
+      </section>
+      <div class="philosophy-divider"></div>
+
+      <!-- ================= PHILOSOPHY OF HISTORY ================= -->
+
+      <section
+        class="branch"
+        id="philosophy-of-history"
+        aria-labelledby="philosophy-of-history-title"
+      >
+        <figure class="branch-image">
+          <img
+            src="images/history-philosophy.jpg"
+            alt="Historical books and artifacts representing the philosophy of history"
+            loading="lazy"
+            decoding="async"
+            width="800"
+            height="1000"
+          />
+        </figure>
+        <div class="branch-content">
+          <h2 id="philosophy-of-history-title">🏛 Philosophy of History</h2>
+
+          <p>
+            Philosophy of history examines the nature of historical knowledge,
+            explanation, interpretation, causation, and the meaning of
+            historical development. It asks how historians establish knowledge
+            of the past, whether historical accounts can be objective, how
+            individual actions interact with social structures, and whether
+            history exhibits progress or direction. Its major debates include
+            historical explanation and understanding, hermeneutics, narrative
+            and historiography, historical causation, agency, memory, and
+            theories of progress associated with thinkers such as Hegel and
+            Marx.
+          </p>
+
+          <h4>Main Question</h4>
+          <p class="branch-question">
+            How can we understand the past, and does history have a meaning,
+            pattern, or direction?
+          </p>
+
+          <h4>Famous Philosophers</h4>
+          <ul>
+            <li>Giambattista Vico</li>
+            <li>Johann Gottfried Herder</li>
+            <li>G. W. F. Hegel</li>
+            <li>Karl Marx</li>
+            <li>R. G. Collingwood</li>
+          </ul>
+        </div>
+      </section>
+      <div class="philosophy-divider"></div>
+
+      <section
+        class="branch"
+        id="philosophy-of-religion"
+        aria-labelledby="philosophy-of-religion-title"
+      >
         <div class="branch-content">
           <h2 id="philosophy-of-religion-title">🕊 Philosophy of Religion</h2>
 
@@ -1036,6 +1521,16 @@
             <li>Alvin Plantinga</li>
           </ul>
         </div>
+        <figure class="branch-image">
+          <img
+            src="images/religion-period.jpg"
+            alt="Sacred architecture representing the philosophy of religion"
+            loading="lazy"
+            decoding="async"
+            width="800"
+            height="1000"
+          />
+        </figure>
       </section>
 
       <div class="philosophy-divider" role="presentation"></div>
@@ -1145,7 +1640,7 @@
       <div class="philosophy-divider" role="presentation"></div>
 
       <!-- ================= CONNECTION ================= -->
-      <section class="connection" aria-labelledby="connection-title">
+      <section class="narrative-block" aria-labelledby="connection-title">
         <span class="section-eyebrow">Conclusion</span>
         <h2 id="connection-title">How the Branches Connect</h2>
 

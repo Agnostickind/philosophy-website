@@ -3642,6 +3642,35 @@ body.theme-dark #resetAppearance:hover {
   background: var(--theme-parchment-alt);
 }
 
+.bp-button {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.82rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--theme-border);
+  border-radius: 999px;
+  color: var(--theme-body-brown-dark);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin-top: 2rem;
+  background: var(--theme-parchment-alt);
+  
+}
+
+.bp-list a {
+
+font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.82rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--theme-border);
+  border-radius: 999px;
+  color: var(--theme-body-brown-dark);
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+
+}
+
 @media (max-width: 700px) {
 
   .bp-figure,

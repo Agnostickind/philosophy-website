@@ -2686,3 +2686,171 @@ if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
     }
 
 }
+
+/* =========================================================
+   PHILOSOPHY WEBSITE PARTICLES
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* Stop if particles.js hasn't loaded */
+    if (typeof particlesJS === "undefined") {
+        return;
+    }
+
+    /* Stop particles for users who prefer reduced motion */
+    if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+        return;
+    }
+
+    /* Make sure the particles container exists */
+    const particlesContainer = document.getElementById("particles-js");
+
+    if (!particlesContainer) {
+        return;
+    }
+
+    particlesJS("particles-js", {
+
+        /* =====================================================
+           PARTICLES
+           ===================================================== */
+
+        particles: {
+
+            number: {
+                value: 50,
+
+                density: {
+                    enable: true,
+                    value_area: 900
+                }
+            },
+
+            color: {
+                value: "#ffffff"
+            },
+
+            shape: {
+                type: "circle",
+
+                stroke: {
+                    width: 0,
+                    color: "#000000"
+                }
+            },
+
+            opacity: {
+
+                value: 0.35,
+
+                random: true,
+
+                anim: {
+                    enable: true,
+                    speed: 0.7,
+                    opacity_min: 0.1,
+                    sync: false
+                }
+            },
+
+            size: {
+
+                value: 2,
+
+                random: true,
+
+                anim: {
+                    enable: false
+                }
+            },
+
+            /* =================================================
+               CONNECTION LINES
+               ================================================= */
+
+            line_linked: {
+
+                enable: true,
+
+                distance: 140,
+
+                color: "#ffffff",
+
+                opacity: 0.18,
+
+                width: 1
+            },
+
+            /* =================================================
+               PARTICLE MOVEMENT
+               ================================================= */
+
+            move: {
+
+                enable: true,
+
+                speed: 1.2,
+
+                direction: "none",
+
+                random: true,
+
+                straight: false,
+
+                out_mode: "out",
+
+                bounce: false
+            }
+        },
+
+
+        /* =====================================================
+           USER INTERACTION
+           ===================================================== */
+
+        interactivity: {
+
+            detect_on: "canvas",
+
+            events: {
+
+                onhover: {
+
+                    enable: true,
+
+                    mode: "repulse"
+                },
+
+                onclick: {
+
+                    enable: false
+                },
+
+                resize: true
+            },
+
+            modes: {
+
+                repulse: {
+
+                    distance: 100,
+
+                    duration: 0.4
+                }
+            }
+        },
+
+
+        /* =====================================================
+           HIGH-DPI / RETINA SUPPORT
+           ===================================================== */
+
+        retina_detect: true
+
+    });
+
+});

@@ -1,0 +1,2783 @@
+/* =========================================================
+   THE GREAT LIBRARY OF PHILOSOPHY
+   HOMEPAGE — index.css
+   ========================================================= */
+
+
+/* =========================================================
+   1. HOMEPAGE FOUNDATION
+   ========================================================= */
+
+.home-page {
+    --home-bg: #0b1020;
+    --home-bg-deep: #070b16;
+    --home-surface: rgba(255, 255, 255, 0.055);
+    --home-surface-strong: rgba(255, 255, 255, 0.085);
+
+    --home-text: #f4efe4;
+    --home-text-soft: rgba(244, 239, 228, 0.72);
+    --home-text-muted: rgba(244, 239, 228, 0.5);
+
+    --home-gold: #c9a96e;
+    --home-gold-light: #e1c58d;
+    --home-gold-dark: #8f7040;
+
+    --home-border: rgba(201, 169, 110, 0.24);
+    --home-border-soft: rgba(255, 255, 255, 0.11);
+
+    --home-max-width: 1280px;
+    --home-reading-width: 760px;
+
+    position: relative;
+    isolation: isolate;
+
+    width: 100%;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 75% 10%,
+            rgba(201, 169, 110, 0.12),
+            transparent 30%),
+        radial-gradient(circle at 10% 45%,
+            rgba(54, 74, 120, 0.16),
+            transparent 35%),
+        var(--home-bg);
+    color: var(--home-text);
+}
+
+
+/* =========================================================
+   2. GLOBAL HOMEPAGE ELEMENTS
+   ========================================================= */
+
+.home-page *,
+.home-page *::before,
+.home-page *::after {
+    box-sizing: border-box;
+}
+
+.home-page a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.home-page img {
+    max-width: 100%;
+    display: block;
+}
+
+.home-section {
+    position: relative;
+    width: min(100% - 48px, var(--home-max-width));
+    margin-inline: auto;
+    padding: 130px 0;
+}
+
+.home-section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 28px;
+
+    color: var(--home-gold-light);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.home-section-label::before {
+    content: "";
+
+    display: block;
+
+    width: 32px;
+    height: 1px;
+
+    background: var(--home-gold);
+}
+
+.home-page h2,
+.home-page h3,
+.home-page p {
+    margin-top: 0;
+}
+
+.home-page h2 {
+    margin-bottom: 24px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    letter-spacing: -0.035em;
+    line-height: 0.98;
+}
+
+.home-page h2 em,
+.home-page h1 em {
+    color: var(--home-gold-light);
+    font-style: italic;
+}
+
+.home-page p {
+    color: var(--home-text-soft);
+    line-height: 1.8;
+}
+
+/* =========================================================
+   HOMEPAGE TYPOGRAPHY OVERRIDE
+   Prevent global theme styles from making headings invisible
+   ========================================================= */
+
+.home-page h1,
+.home-page h2,
+.home-page h3,
+.home-page h4,
+.home-page h5,
+.home-page h6 {
+    color: var(--home-text);
+}
+
+.home-page h1 em,
+.home-page h2 em,
+.home-page h3 em {
+    color: var(--home-gold-light);
+}
+
+.home-page strong {
+    color: var(--home-text);
+}
+
+.home-page a {
+    color: inherit;
+}
+
+/* =========================================================
+   HOMEPAGE PHI WATERMARK
+   ========================================================= */
+
+.home-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.home-phi {
+    position: absolute;
+
+    top: 50%;
+    left: 58%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(28rem, 55vw, 55rem);
+    font-weight: 400;
+    line-height: 0.8;
+
+    color: rgba(201, 169, 110, 0.08);
+
+    pointer-events: none;
+    user-select: none;
+}
+
+.home-hero-content {
+    position: relative;
+    z-index: 3;
+}
+
+.home-hero-meta,
+.home-scroll-indicator {
+    z-index: 4;
+}
+
+
+/* =========================================================
+   3. HERO
+   ========================================================= */
+
+.home-hero {
+    position: relative;
+
+    min-height: calc(100vh - 80px);
+    min-height: max(720px, calc(100vh - 80px));
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px max(24px, 6vw) 110px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(90deg,
+            rgba(7, 11, 22, 0.96) 0%,
+            rgba(7, 11, 22, 0.82) 42%,
+            rgba(7, 11, 22, 0.42) 75%,
+            rgba(7, 11, 22, 0.7) 100%);
+}
+
+.home-hero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(circle at 72% 42%,
+            rgba(201, 169, 110, 0.15),
+            transparent 25%);
+}
+
+.home-hero::after {
+    content: "";
+
+    position: absolute;
+
+    top: 12%;
+    right: 8%;
+
+    width: 420px;
+    height: 420px;
+
+    border: 1px solid rgba(201, 169, 110, 0.13);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.home-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(760px, 100%);
+}
+
+.home-eyebrow {
+    display: block;
+
+    margin-bottom: 30px;
+
+    color: var(--home-gold-light);
+
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    line-height: 1.5;
+
+    text-shadow: 0 0 18px rgba(201, 169, 110, 0.18);
+}
+
+.home-hero h1 {
+    max-width: 850px;
+
+    margin: 0 0 34px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(4rem, 8vw, 7.6rem);
+    font-weight: 400;
+    letter-spacing: -0.055em;
+    line-height: 0.87;
+
+    color: var(--home-text);
+}
+
+.home-hero-text {
+    max-width: 650px;
+
+    margin: 0 0 42px;
+
+    color: rgba(244, 239, 228, 0.72);
+
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+.home-hero-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+
+/* =========================================================
+   4. BUTTONS
+   ========================================================= */
+
+.home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    min-height: 54px;
+
+    padding: 0 25px;
+
+    border: 1px solid transparent;
+
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+
+    transition:
+        transform 220ms ease,
+        background 220ms ease,
+        border-color 220ms ease,
+        color 220ms ease;
+}
+
+.home-button span {
+    font-size: 1.1rem;
+
+    transition: transform 220ms ease;
+}
+
+.home-button:hover {
+    transform: translateY(-3px);
+}
+
+.home-button:hover span {
+    transform: translateX(4px);
+}
+
+.home-button-primary {
+    background: var(--home-gold);
+    color: #11100d;
+}
+
+.home-button-primary:hover {
+    background: var(--home-gold-light);
+}
+
+.home-button-secondary {
+    border-color: rgba(244, 239, 228, 0.3);
+    background: rgba(255, 255, 255, 0.025);
+    color: var(--home-text);
+}
+
+.home-button-secondary:hover {
+    border-color: var(--home-gold);
+    color: var(--home-gold-light);
+}
+
+
+/* =========================================================
+   5. HERO META
+   ========================================================= */
+
+.home-hero-meta {
+    position: absolute;
+    right: max(24px, 6vw);
+    bottom: 58px;
+
+    z-index: 3;
+
+    display: flex;
+    gap: 28px;
+
+    color: rgba(244, 239, 228, 0.4);
+
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+.home-hero-meta span {
+    position: relative;
+}
+
+.home-hero-meta span:not(:last-child)::after {
+    content: "•";
+
+    position: absolute;
+    right: -17px;
+
+    color: var(--home-gold-dark);
+}
+
+
+/* =========================================================
+   6. HERO SCROLL INDICATOR
+   ========================================================= */
+
+.home-scroll-indicator {
+    position: absolute;
+
+    left: max(24px, 6vw);
+    bottom: 48px;
+
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    color: rgba(244, 239, 228, 0.42);
+
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.home-scroll-line {
+    display: block;
+
+    width: 55px;
+    height: 1px;
+
+    background: var(--home-gold);
+
+    transform-origin: left;
+
+    transition: width 220ms ease;
+}
+
+.home-scroll-indicator:hover {
+    color: var(--home-text);
+}
+
+.home-scroll-indicator:hover .home-scroll-line {
+    width: 80px;
+}
+
+
+/* =========================================================
+   7. INTRODUCTION
+   ========================================================= */
+
+.home-introduction {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.home-introduction-grid {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
+    gap: clamp(50px, 9vw, 150px);
+
+    align-items: start;
+}
+
+.home-introduction h2 {
+    font-size: clamp(3rem, 5vw, 5.2rem);
+}
+
+.home-introduction-content {
+    max-width: 700px;
+}
+
+.home-introduction-content .home-lead {
+    margin-bottom: 30px;
+
+    color: var(--home-text);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.35rem, 2vw, 1.8rem);
+    line-height: 1.45;
+}
+
+.home-introduction-content p:not(.home-lead) {
+    margin-bottom: 25px;
+}
+
+.home-text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 15px;
+
+    color: var(--home-gold-light);
+
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    transition: gap 220ms ease, color 220ms ease;
+}
+
+.home-text-link span {
+    font-size: 1.05rem;
+}
+
+.home-text-link:hover {
+    gap: 18px;
+    color: var(--home-text);
+}
+
+
+/* =========================================================
+   8. FIVE BRANCHES
+   ========================================================= */
+
+.home-branches {
+    padding-top: 120px;
+}
+
+.home-section-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    align-items: end;
+
+    margin-bottom: 65px;
+}
+
+.home-section-intro h2 {
+    font-size: clamp(3.2rem, 5vw, 5.5rem);
+}
+
+.home-section-intro>p {
+    max-width: 470px;
+
+    margin-bottom: 10px;
+
+    font-size: 1rem;
+}
+
+.home-branch-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+}
+
+.home-branch-card {
+    position: relative;
+
+    min-height: 390px;
+
+    grid-column: span 2;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--home-border-soft);
+
+    background:
+        linear-gradient(145deg,
+            rgba(255, 255, 255, 0.065),
+            rgba(255, 255, 255, 0.025));
+
+    transition:
+        transform 300ms ease,
+        border-color 300ms ease,
+        background 300ms ease;
+}
+
+.home-branch-card:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.home-branch-card:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
+.home-branch-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 170px;
+    height: 170px;
+
+    right: -70px;
+    bottom: -70px;
+
+    border: 1px solid rgba(201, 169, 110, 0.13);
+    border-radius: 50%;
+
+    transition: transform 400ms ease;
+}
+
+.home-branch-card:hover {
+    transform: translateY(-8px);
+
+    border-color: var(--home-border);
+
+    background:
+        linear-gradient(145deg,
+            rgba(201, 169, 110, 0.11),
+            rgba(255, 255, 255, 0.035));
+}
+
+.home-branch-card:hover::before {
+    transform: scale(1.35);
+}
+
+.home-card-number {
+    color: var(--home-gold);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+.home-card-content {
+    margin-top: auto;
+}
+
+.home-card-content h3 {
+    margin-bottom: 15px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.home-card-content p {
+    max-width: 270px;
+
+    margin-bottom: 0;
+
+    color: var(--home-text-muted);
+
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.home-card-arrow {
+    position: absolute;
+
+    right: 28px;
+    bottom: 27px;
+
+    color: var(--home-gold-light);
+
+    font-size: 1.25rem;
+
+    transition: transform 220ms ease;
+}
+
+.home-branch-card:hover .home-card-arrow {
+    transform: translate(4px, -4px);
+}
+
+
+/* =========================================================
+   9. LIBRARY EXPLORER
+   ========================================================= */
+
+.home-library {
+    padding-top: 150px;
+}
+
+.home-library-heading {
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 0.7fr);
+    gap: 60px;
+
+    align-items: end;
+
+    margin-bottom: 60px;
+}
+
+.home-library-heading h2 {
+    font-size: clamp(3.3rem, 5vw, 5.5rem);
+}
+
+.home-library-heading>p {
+    max-width: 520px;
+
+    margin-bottom: 8px;
+}
+
+.home-library-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.home-library-card {
+    position: relative;
+
+    min-height: 330px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 34px;
+
+    border: 1px solid var(--home-border-soft);
+
+    background: rgba(255, 255, 255, 0.035);
+
+    overflow: hidden;
+
+    transition:
+        transform 300ms ease,
+        border-color 300ms ease,
+        background 300ms ease;
+}
+
+.home-library-large {
+    min-height: 390px;
+}
+
+.home-library-card:hover {
+    transform: translateY(-7px);
+
+    border-color: var(--home-border);
+
+    background: rgba(201, 169, 110, 0.065);
+}
+
+.home-library-number {
+    color: var(--home-gold);
+
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+.home-library-category {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: var(--home-text-muted);
+
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+.home-library-card h3 {
+    margin-bottom: 16px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 4vw, 3.6rem);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.home-library-card p {
+    max-width: 470px;
+
+    margin-bottom: 0;
+
+    font-size: 0.92rem;
+}
+
+.home-library-arrow {
+    position: absolute;
+
+    right: 34px;
+    bottom: 30px;
+
+    color: var(--home-gold-light);
+
+    font-size: 1.25rem;
+
+    transition: transform 220ms ease;
+}
+
+.home-library-card:hover .home-library-arrow {
+    transform: translateX(6px);
+}
+
+
+/* =========================================================
+   10. CIVILIZATIONS
+   ========================================================= */
+
+.home-civilizations {
+    padding-top: 150px;
+}
+
+.home-civilization-heading {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    gap: 80px;
+
+    align-items: end;
+
+    margin-bottom: 65px;
+}
+
+.home-civilization-heading h2 {
+    font-size: clamp(3rem, 5vw, 5.3rem);
+}
+
+.home-civilization-heading p {
+    max-width: 490px;
+    margin-bottom: 10px;
+}
+
+.home-civilization-list {
+    border-top: 1px solid var(--home-border-soft);
+}
+
+.home-civilization-item {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    gap: 25px;
+
+    align-items: center;
+
+    padding: 28px 10px;
+
+    border-bottom: 1px solid var(--home-border-soft);
+
+    transition:
+        padding-left 250ms ease,
+        background 250ms ease;
+}
+
+.home-civilization-item:hover {
+    padding-left: 25px;
+
+    background: rgba(201, 169, 110, 0.045);
+}
+
+.home-civilization-number {
+    color: var(--home-gold);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.home-civilization-item span:not(.home-civilization-number):not(.home-civilization-arrow) {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--home-text-muted);
+
+    font-size: 0.61rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+.home-civilization-item h3 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.7rem, 3vw, 2.7rem);
+    font-weight: 400;
+}
+
+.home-civilization-arrow {
+    color: var(--home-gold-light);
+
+    font-size: 1.3rem;
+
+    transition: transform 220ms ease;
+}
+
+.home-civilization-item:hover .home-civilization-arrow {
+    transform: translateX(6px);
+}
+
+
+/* =========================================================
+   11. TIMELINE
+   ========================================================= */
+
+.home-timeline {
+    padding-top: 160px;
+    padding-bottom: 170px;
+}
+
+.home-timeline h2 {
+    max-width: 650px;
+
+    margin-bottom: 85px;
+
+    font-size: clamp(3.5rem, 6vw, 6rem);
+}
+
+.home-timeline-track {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    border-top: 1px solid var(--home-border);
+
+    padding-top: 1px;
+}
+
+.home-timeline-track::before {
+    content: "";
+
+    position: absolute;
+
+    top: -4px;
+    left: 0;
+    right: 0;
+
+    height: 7px;
+
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(201, 169, 110, 0.08),
+            transparent);
+
+    pointer-events: none;
+}
+
+.home-era {
+    position: relative;
+
+    min-height: 220px;
+
+    padding: 35px 22px 25px;
+
+    border-right: 1px solid var(--home-border-soft);
+
+    transition: background 250ms ease;
+}
+
+.home-era:first-child {
+    border-left: 1px solid var(--home-border-soft);
+}
+
+.home-era::before {
+    content: "";
+
+    position: absolute;
+
+    top: -6px;
+    left: 22px;
+
+    width: 11px;
+    height: 11px;
+
+    border: 2px solid var(--home-gold);
+    border-radius: 50%;
+
+    background: var(--home-bg);
+
+    transition:
+        transform 250ms ease,
+        background 250ms ease;
+}
+
+.home-era:hover {
+    background: rgba(201, 169, 110, 0.06);
+}
+
+.home-era:hover::before {
+    transform: scale(1.45);
+    background: var(--home-gold);
+}
+
+.home-era>span {
+    display: block;
+
+    margin-bottom: 38px;
+
+    color: var(--home-gold);
+
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.home-era strong {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.35rem, 2vw, 1.9rem);
+    font-weight: 400;
+}
+
+.home-era small {
+    color: var(--home-text-muted);
+
+    font-size: 0.72rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   12. FEATURED THINKERS
+   ========================================================= */
+
+.home-thinkers {
+    padding-top: 150px;
+}
+
+.home-thinkers-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 40px;
+
+    margin-bottom: 65px;
+}
+
+.home-thinkers-heading h2 {
+    font-size: clamp(3rem, 5vw, 5.2rem);
+}
+
+.home-thinker-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.home-thinker-card {
+    position: relative;
+
+    min-height: 310px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 30px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--home-border-soft);
+
+    background:
+        linear-gradient(160deg,
+            rgba(255, 255, 255, 0.06),
+            rgba(255, 255, 255, 0.02));
+
+    transition:
+        transform 300ms ease,
+        border-color 300ms ease;
+}
+
+.home-thinker-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: -80px;
+    right: -80px;
+
+    width: 180px;
+    height: 180px;
+
+    border: 1px solid rgba(201, 169, 110, 0.12);
+    border-radius: 50%;
+}
+
+.home-thinker-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--home-border);
+}
+
+.home-thinker-card>span {
+    position: absolute;
+
+    top: 28px;
+    left: 30px;
+
+    color: var(--home-text-muted);
+
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+.home-thinker-card h3 {
+    margin-bottom: 12px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 400;
+}
+
+.home-thinker-card p {
+    margin-bottom: 18px;
+
+    font-size: 0.86rem;
+    line-height: 1.65;
+}
+
+.home-thinker-card strong {
+    color: var(--home-gold-light);
+
+    font-size: 0.67rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   13. BEGINNER SECTION
+   ========================================================= */
+
+.home-beginner {
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+
+.home-beginner-inner {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: clamp(50px, 9vw, 140px);
+
+    align-items: center;
+
+    padding: clamp(50px, 7vw, 90px);
+
+    border: 1px solid var(--home-border);
+
+    background:
+        radial-gradient(circle at 80% 20%,
+            rgba(201, 169, 110, 0.11),
+            transparent 35%),
+        rgba(255, 255, 255, 0.035);
+}
+
+.home-beginner h2 {
+    margin-bottom: 0;
+
+    font-size: clamp(3.3rem, 5vw, 5.5rem);
+}
+
+.home-beginner-content {
+    max-width: 600px;
+}
+
+.home-beginner-content .home-lead {
+    margin-bottom: 20px;
+
+    color: var(--home-text);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.45rem;
+}
+
+.home-beginner-content p:not(.home-lead) {
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   14. FINAL CTA
+   ========================================================= */
+
+.home-final {
+    position: relative;
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 120px 24px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at center,
+            rgba(201, 169, 110, 0.13),
+            transparent 35%),
+        linear-gradient(180deg,
+            transparent,
+            rgba(0, 0, 0, 0.25));
+}
+
+.home-final::before,
+.home-final::after {
+    content: "";
+
+    position: absolute;
+
+    border: 1px solid rgba(201, 169, 110, 0.1);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.home-final::before {
+    width: 520px;
+    height: 520px;
+}
+
+.home-final::after {
+    width: 760px;
+    height: 760px;
+}
+
+.home-final-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+}
+
+.home-final .home-section-label {
+    justify-content: center;
+}
+
+.home-final .home-section-label::before {
+    display: none;
+}
+
+.home-final h2 {
+    margin-bottom: 30px;
+
+    font-size: clamp(4rem, 7vw, 7rem);
+}
+
+.home-final p {
+    max-width: 650px;
+
+    margin: 0 auto 38px;
+
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   15. HOMEPAGE VIDEO BACKGROUND
+   ========================================================= */
+
+#home-bg-video {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: cover;
+
+    z-index: -3;
+
+    pointer-events: none;
+}
+
+#home-video-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: -2;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(90deg,
+            rgba(7, 11, 22, 0.84),
+            rgba(7, 11, 22, 0.62),
+            rgba(7, 11, 22, 0.8));
+}
+
+
+/* =========================================================
+   16. HOMEPAGE PARTICLES
+   ========================================================= */
+
+.home-page~#particles-js,
+#particles-js {
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   17. RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .home-section {
+        width: min(100% - 40px, var(--home-max-width));
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .home-hero {
+        min-height: 700px;
+    }
+
+    .home-introduction-grid,
+    .home-library-heading,
+    .home-civilization-heading,
+    .home-beginner-inner {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .home-section-intro {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .home-branch-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-branch-card,
+    .home-branch-card:nth-child(4),
+    .home-branch-card:nth-child(5) {
+        grid-column: auto;
+    }
+
+    .home-library-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home-library-large {
+        min-height: 350px;
+    }
+
+    .home-timeline-track {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 25px;
+    }
+
+    .home-era {
+        border-bottom: 1px solid var(--home-border-soft);
+    }
+
+    .home-thinker-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   18. RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .home-section {
+        width: min(100% - 28px, var(--home-max-width));
+
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .home-hero {
+        min-height: 720px;
+
+        padding:
+            100px 24px 100px;
+    }
+
+    .home-hero::after {
+        width: 260px;
+        height: 260px;
+
+        right: -80px;
+        top: 18%;
+    }
+
+    .home-eyebrow {
+        margin-bottom: 24px;
+
+        font-size: 0.62rem;
+        letter-spacing: 0.19em;
+    }
+
+    .home-hero h1 {
+        font-size: clamp(3.6rem, 17vw, 5.5rem);
+
+        line-height: 0.88;
+    }
+
+    .home-hero-text {
+        font-size: 0.94rem;
+        line-height: 1.75;
+    }
+
+    .home-hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .home-button {
+        width: 100%;
+    }
+
+    .home-hero-meta {
+        display: none;
+    }
+
+    .home-scroll-indicator {
+        left: 24px;
+        bottom: 32px;
+    }
+
+    .home-section-label {
+        margin-bottom: 20px;
+
+        font-size: 0.62rem;
+        letter-spacing: 0.17em;
+    }
+
+    .home-introduction h2,
+    .home-section-intro h2,
+    .home-library-heading h2,
+    .home-civilization-heading h2,
+    .home-thinkers-heading h2,
+    .home-beginner h2 {
+        font-size: clamp(2.9rem, 13vw, 4.3rem);
+    }
+
+    .home-introduction-content .home-lead {
+        font-size: 1.25rem;
+    }
+
+    .home-branch-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-branch-card,
+    .home-branch-card:nth-child(4),
+    .home-branch-card:nth-child(5) {
+        grid-column: auto;
+
+        min-height: 330px;
+    }
+
+    .home-library-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-library-card,
+    .home-library-large {
+        min-height: 300px;
+    }
+
+    .home-civilization-item {
+        grid-template-columns: 45px 1fr auto;
+        gap: 12px;
+
+        padding: 24px 4px;
+    }
+
+    .home-civilization-item:hover {
+        padding-left: 10px;
+    }
+
+    .home-civilization-item h3 {
+        font-size: 1.65rem;
+    }
+
+    .home-civilization-item span:not(.home-civilization-number):not(.home-civilization-arrow) {
+        font-size: 0.54rem;
+        letter-spacing: 0.11em;
+    }
+
+    .home-timeline {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .home-timeline h2 {
+        margin-bottom: 55px;
+
+        font-size: clamp(3rem, 14vw, 4.5rem);
+    }
+
+    .home-timeline-track {
+        grid-template-columns: 1fr;
+    }
+
+    .home-era {
+        min-height: auto;
+
+        padding:
+            30px 20px 35px 40px;
+
+        border-left: 1px solid var(--home-border-soft);
+        border-right: 0;
+    }
+
+    .home-era:first-child {
+        border-left: 1px solid var(--home-border-soft);
+    }
+
+    .home-era::before {
+        top: 30px;
+        left: -6px;
+    }
+
+    .home-era>span {
+        margin-bottom: 18px;
+    }
+
+    .home-thinkers-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .home-thinker-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-thinker-card {
+        min-height: 290px;
+    }
+
+    .home-beginner {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .home-beginner-inner {
+        padding: 35px 25px;
+    }
+
+    .home-final {
+        min-height: 560px;
+
+        padding: 100px 20px;
+    }
+
+    .home-final h2 {
+        font-size: clamp(3.5rem, 15vw, 5.5rem);
+    }
+
+    .home-final::before {
+        width: 350px;
+        height: 350px;
+    }
+
+    .home-final::after {
+        width: 500px;
+        height: 500px;
+    }
+
+}
+
+
+/* =========================================================
+   19. VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .home-hero {
+        padding-inline: 20px;
+    }
+
+    .home-section {
+        width: min(100% - 22px, var(--home-max-width));
+    }
+
+    .home-hero h1 {
+        font-size: 3.3rem;
+    }
+
+    .home-button {
+        padding-inline: 18px;
+
+        font-size: 0.68rem;
+    }
+
+    .home-library-card,
+    .home-branch-card {
+        padding: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   20. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .home-page *,
+    .home-page *::before,
+    .home-page *::after {
+        scroll-behavior: auto !important;
+
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+    #home-bg-video {
+        display: none;
+    }
+
+}
+
+/* =========================================================
+   JAVASCRIPT INTERACTION LAYER
+   ========================================================= */
+
+.home-js-reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.home-js-reveal.home-is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Scroll progress */
+
+.home-scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: var(--home-scroll-progress, 0%);
+    height: 2px;
+
+    background: var(--home-gold, #c9a96e);
+
+    z-index: 10000;
+
+    pointer-events: none;
+
+    transition: width 0.08s linear;
+}
+
+
+/* Cards */
+
+.home-thinker-card,
+.home-library-card,
+.home-civilization-card {
+    will-change: transform;
+}
+
+
+/* Magnetic buttons */
+
+.home-button-primary,
+.home-button-secondary {
+    will-change: transform;
+}
+
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .home-js-reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .home-scroll-progress {
+        transition: none;
+    }
+
+    .home-thinker-card,
+    .home-library-card,
+    .home-civilization-card,
+    .home-button-primary,
+    .home-button-secondary {
+        transform: none !important;
+    }
+}
+
+/* =========================================================
+PHILOSOPHY IN MOTION=========================================================*/
+.home-video-section {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 130px 6%;
+}
+
+
+/* =========================================================
+   PHILOSOPHY IN MOTION — TYPOGRAPHY
+   ========================================================= */
+
+.home-video-heading {
+    max-width: 820px;
+    margin-bottom: 48px;
+}
+
+
+/* ---------- Section Label ---------- */
+
+.home-video-heading .home-section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    color: #c9a96e !important;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+
+/* ---------- Main Heading ---------- */
+
+.home-video-heading h2 {
+    display: block;
+
+    margin: 0 0 26px;
+    padding: 0;
+
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+
+    opacity: 1 !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+
+    background: none !important;
+    background-image: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3.2rem, 6.5vw, 5.4rem);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+
+    text-shadow: none;
+}
+
+
+/* ---------- Description ---------- */
+
+.home-video-heading p {
+    display: block;
+
+    max-width: 760px;
+    margin: 0;
+    padding: 0;
+
+    color: #d0cbc2 !important;
+    -webkit-text-fill-color: #d0cbc2 !important;
+
+    opacity: 1 !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.08rem;
+    font-weight: 400;
+    line-height: 1.9;
+    letter-spacing: 0.01em;
+}
+
+
+/* =========================================================
+   VIDEO FRAME
+   ========================================================= */
+
+.home-video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    background: #080d17;
+
+    border: 1px solid rgba(201, 169, 110, 0.28);
+
+    box-shadow:
+        0 35px 90px rgba(0, 0, 0, 0.32),
+        0 0 0 1px rgba(255, 255, 255, 0.025);
+
+    isolation: isolate;
+}
+
+
+/* ---------- Subtle Inner Gold Frame ---------- */
+
+.home-video-frame::before {
+    content: "";
+
+    position: absolute;
+    inset: 12px;
+
+    border: 1px solid rgba(201, 169, 110, 0.12);
+
+    pointer-events: none;
+    z-index: 2;
+}
+
+
+/* ---------- YouTube Iframe ---------- */
+
+.home-video-frame iframe {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+
+/* =========================================================
+   VIDEO INFORMATION
+   ========================================================= */
+
+.home-video-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px 18px;
+
+    margin-top: 18px;
+
+    color: #9e988d;
+
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+}
+
+
+.home-video-title {
+    color: #ded6c8;
+    font-weight: 600;
+}
+
+
+.home-video-credit {
+    color: #918b80;
+}
+
+
+.home-video-info a {
+    color: #c9a96e;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+.home-video-info a:hover {
+    color: #e0c48b;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .home-video-section {
+        padding: 90px 5%;
+    }
+
+    .home-video-heading {
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .home-video-heading h2 {
+        font-size: clamp(2.4rem, 10vw, 3.4rem);
+        line-height: 1.06;
+    }
+
+    .home-video-heading p {
+        font-size: 0.98rem;
+        line-height: 1.8;
+    }
+
+    .home-video-frame::before {
+        inset: 7px;
+    }
+
+    .home-video-info {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .home-video-info a {
+        transition: none;
+    }
+
+}
+
+/* =========================================================
+   PHILOSOPHY GALLERY
+   ========================================================= */
+
+.home-gallery-section {
+    position: relative;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding: 150px 6%;
+}
+
+
+/* =========================================================
+   GALLERY INTRO
+   ========================================================= */
+
+.home-gallery-intro {
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 80px;
+
+    align-items: end;
+
+    margin-bottom: 70px;
+}
+
+
+/* Small label */
+
+.home-gallery-intro .home-section-label {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    color: #c9a96e;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 0.2em;
+
+    text-transform: uppercase;
+}
+
+
+/* Main heading */
+
+.home-gallery-intro h2 {
+    margin: 0;
+
+    color: #ffffff !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(3rem, 6vw, 5.8rem);
+
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.035em;
+}
+
+
+/* Description */
+
+.home-gallery-description {
+    max-width: 500px;
+
+    padding-bottom: 5px;
+}
+
+.home-gallery-description p {
+    margin: 0 0 28px;
+
+    color: #b9b3a8 !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1rem;
+
+    line-height: 1.9;
+}
+
+
+/* Explore link */
+
+.home-gallery-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #c9a96e;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        gap 0.25s ease;
+}
+
+.home-gallery-link:hover {
+    color: #e0c48b;
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   THINKER GRID
+   ========================================================= */
+
+.home-gallery-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+   THINKER CARD
+   ========================================================= */
+
+.home-thinker-feature {
+    position: relative;
+
+    min-width: 0;
+
+    cursor: pointer;
+}
+
+
+/* Image container */
+
+.home-thinker-image {
+    position: relative;
+
+    aspect-ratio: 4 / 5;
+
+    overflow: hidden;
+
+    background: #111722;
+
+    border: 1px solid rgba(201, 169, 110, 0.18);
+
+    isolation: isolate;
+}
+
+
+/* Actual image */
+
+.home-thinker-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter:
+        grayscale(100%) brightness(0.72) contrast(1.05);
+
+    transform: scale(1.01);
+
+    transition:
+        transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+        filter 0.8s ease;
+}
+
+
+/* Dark overlay */
+
+.home-thinker-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(to bottom,
+            rgba(5, 9, 16, 0.05) 20%,
+            rgba(5, 9, 16, 0.25) 45%,
+            rgba(5, 9, 16, 0.92) 100%);
+
+    pointer-events: none;
+
+    transition:
+        background 0.5s ease;
+}
+
+
+/* Gold line */
+
+.home-thinker-image::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    z-index: 4;
+
+    background: #c9a96e;
+
+    transition: width 0.5s ease;
+}
+
+
+/* =========================================================
+   THINKER TEXT
+   ========================================================= */
+
+.home-thinker-era {
+    position: absolute;
+
+    top: 22px;
+    left: 22px;
+
+    z-index: 3;
+
+    color: #d6c39b;
+
+    font-size: 0.62rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+}
+
+
+.home-thinker-content {
+    position: absolute;
+
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+
+    z-index: 3;
+}
+
+
+.home-thinker-content h3 {
+    margin: 0 0 8px;
+
+    color: #ffffff !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(1.7rem, 2.5vw, 2.5rem);
+
+    font-weight: 400;
+
+    line-height: 1.05;
+}
+
+
+.home-thinker-content p {
+    margin: 0 0 18px;
+
+    color: #c0bbb1 !important;
+
+    font-size: 0.82rem;
+
+    line-height: 1.55;
+}
+
+
+.home-thinker-explore {
+    display: inline-block;
+
+    color: #c9a96e;
+
+    font-size: 0.65rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+
+    opacity: 0;
+
+    transform: translateY(8px);
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.home-thinker-feature:hover .home-thinker-image img {
+    filter:
+        grayscale(20%) brightness(0.82) contrast(1.05);
+
+    transform: scale(1.07);
+}
+
+
+.home-thinker-feature:hover .home-thinker-overlay {
+    background:
+        linear-gradient(to bottom,
+            rgba(5, 9, 16, 0.02) 15%,
+            rgba(5, 9, 16, 0.18) 42%,
+            rgba(5, 9, 16, 0.94) 100%);
+}
+
+
+.home-thinker-feature:hover .home-thinker-image::after {
+    width: 100%;
+}
+
+
+.home-thinker-feature:hover .home-thinker-explore {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .home-gallery-intro {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .home-gallery-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .home-gallery-section {
+        padding: 100px 5%;
+    }
+
+    .home-gallery-intro {
+        margin-bottom: 45px;
+    }
+
+    .home-gallery-intro h2 {
+        font-size: clamp(2.7rem, 12vw, 4rem);
+    }
+
+    .home-gallery-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .home-thinker-image {
+        aspect-ratio: 4 / 5;
+    }
+
+    .home-thinker-explore {
+        opacity: 1;
+
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .home-thinker-image img,
+    .home-thinker-overlay,
+    .home-thinker-image::after,
+    .home-thinker-explore,
+    .home-gallery-link {
+        transition: none;
+    }
+
+}
+
+/* =========================================================
+   HOMEPAGE FAQ
+   ========================================================= */
+
+.home-faq {
+    position: relative;
+    overflow: hidden;
+    padding: 140px 6% 150px;
+    background:
+        linear-gradient(180deg,
+            rgba(7, 12, 22, 0.96),
+            rgba(11, 16, 27, 1));
+}
+
+
+/* =========================================================
+   SUBTLE LIBRARY FRAME
+   ========================================================= */
+
+.home-faq::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 6%;
+    right: 6%;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(201, 169, 110, 0.45),
+            transparent);
+}
+
+.home-faq::after {
+    content: "Q";
+    position: absolute;
+    right: 3%;
+    bottom: -10%;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(18rem, 30vw, 34rem);
+    font-weight: 400;
+    line-height: 0.8;
+    color: rgba(201, 169, 110, 0.025);
+    pointer-events: none;
+    user-select: none;
+}
+
+
+/* =========================================================
+   FAQ INNER
+   ========================================================= */
+
+.home-faq-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   FAQ HEADING
+   ========================================================= */
+
+.home-faq-heading {
+    max-width: 780px;
+    margin-bottom: 70px;
+}
+
+.home-faq-heading .home-section-label {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    color: #c9a96e;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.home-faq-heading h2 {
+    margin: 0 0 28px;
+
+    color: #f4efe5;
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(3rem, 6vw, 5.2rem);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+}
+
+.home-faq-heading h2 em {
+    color: #c9a96e;
+    font-style: italic;
+}
+
+.home-faq-heading p {
+    max-width: 720px;
+    margin: 0;
+
+    color: #aaa397;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   FAQ LIST
+   ========================================================= */
+
+.home-faq-list {
+    border-top: 1px solid rgba(201, 169, 110, 0.25);
+}
+
+
+/* =========================================================
+   FAQ ITEM
+   ========================================================= */
+
+.home-faq-item {
+    margin: 0;
+    border-bottom: 1px solid rgba(201, 169, 110, 0.2);
+}
+
+
+/* =========================================================
+   FAQ SUMMARY
+   ========================================================= */
+
+.home-faq-item summary {
+    display: grid;
+    grid-template-columns: 70px 1fr 45px;
+    align-items: center;
+    gap: 24px;
+
+    min-height: 100px;
+    padding: 22px 0;
+
+    cursor: pointer;
+    list-style: none;
+
+    color: #e8e1d5;
+
+    transition:
+        color 0.25s ease,
+        padding-left 0.25s ease;
+}
+
+
+/* Remove browser marker */
+
+.home-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.home-faq-item summary::marker {
+    display: none;
+}
+
+
+/* =========================================================
+   QUESTION NUMBER
+   ========================================================= */
+
+.home-faq-number {
+    color: #817a6f;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+}
+
+
+/* =========================================================
+   QUESTION
+   ========================================================= */
+
+.home-faq-question {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(1.15rem, 2vw, 1.45rem);
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   PLUS ICON
+   ========================================================= */
+
+.home-faq-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid rgba(201, 169, 110, 0.3);
+
+    color: #c9a96e;
+
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.home-faq-item summary:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.home-faq-item summary:hover .home-faq-number {
+    color: #c9a96e;
+}
+
+.home-faq-item summary:hover .home-faq-icon {
+    border-color: rgba(201, 169, 110, 0.7);
+}
+
+
+/* =========================================================
+   OPEN STATE
+   ========================================================= */
+
+.home-faq-item[open] summary {
+    color: #ffffff;
+    padding-bottom: 18px;
+}
+
+.home-faq-item[open] .home-faq-icon {
+    transform: rotate(45deg);
+
+    background: rgba(201, 169, 110, 0.1);
+
+    border-color: rgba(201, 169, 110, 0.65);
+    color: #e0c48b;
+}
+
+
+/* =========================================================
+   FAQ ANSWER
+   ========================================================= */
+
+.home-faq-answer {
+    max-width: 820px;
+    padding: 0 69px 34px 94px;
+
+    animation: homeFaqReveal 0.35s ease;
+}
+
+.home-faq-answer p {
+    margin: 0 0 22px;
+
+    color: #aaa397;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   FAQ LINK
+   ========================================================= */
+
+.home-faq-link {
+    display: inline-block;
+
+    color: #c9a96e;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.home-faq-link:hover {
+    color: #e0c48b;
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   FAQ ANIMATION
+   ========================================================= */
+
+@keyframes homeFaqReveal {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .home-faq {
+        padding: 95px 5% 105px;
+    }
+
+    .home-faq::after {
+        right: -12%;
+        bottom: -3%;
+        font-size: 17rem;
+    }
+
+    .home-faq-heading {
+        margin-bottom: 48px;
+    }
+
+    .home-faq-heading h2 {
+        font-size: clamp(2.6rem, 11vw, 3.6rem);
+    }
+
+    .home-faq-heading p {
+        font-size: 0.98rem;
+        line-height: 1.8;
+    }
+
+    .home-faq-item summary {
+        grid-template-columns: 42px 1fr 36px;
+        gap: 14px;
+
+        min-height: 82px;
+        padding: 18px 0;
+    }
+
+    .home-faq-number {
+        font-size: 0.68rem;
+    }
+
+    .home-faq-question {
+        font-size: 1.05rem;
+        line-height: 1.4;
+    }
+
+    .home-faq-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .home-faq-answer {
+        padding: 0 0 28px 56px;
+    }
+
+    .home-faq-answer p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .home-faq-item summary {
+        grid-template-columns: 34px 1fr 32px;
+        gap: 10px;
+    }
+
+    .home-faq-question {
+        font-size: 0.98rem;
+    }
+
+    .home-faq-answer {
+        padding-left: 44px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .home-faq-item summary,
+    .home-faq-icon,
+    .home-faq-link {
+        transition: none;
+    }
+
+    .home-faq-answer {
+        animation: none;
+    }
+
+}

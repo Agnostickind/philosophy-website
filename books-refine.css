@@ -302,25 +302,3 @@ main#main-content img {
   }
 }
 
-/* ---------- 8. mobile safety net ----------
-   Nothing on this page other than the main navbar is allowed
-   to pin itself to the viewport on small screens.            */
-@media (max-width: 1024px) {
-
-  main#main-content [style*="position: sticky"],
-  main#main-content [style*="position:sticky"] {
-    position: static !important;
-  }
-
-  .navbar {
-    padding-block: .7rem;
-  }
-
-  .nav-links {
-    max-height: calc(100dvh - 64px);
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-}

@@ -45,7 +45,7 @@
 
     <meta
       property="og:image"
-      content="https://agnostickind.github.io/philosophy-website/images/og-preview.jpg"
+      content="https://agnostickind.github.io/philosophy-website/images/gandhi-independence-movement.jpg"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -71,7 +71,7 @@
 
     <meta
       name="twitter:image"
-      content="https://agnostickind.github.io/philosophy-website/images/og-preview.jpg"
+      content="https://agnostickind.github.io/philosophy-website/images/gandhi-independence-movement.jpg"
     />
 
     <link
@@ -84,70 +84,210 @@
       The Great Library of Philosophy
     </title>
 
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Mahatma Gandhi",
-        "alternateName": ["Mohandas Karamchand Gandhi", "Bapu"],
-        "description": "Mahatma Gandhi was an Indian philosopher and leader who developed the philosophy of Satyagraha, or truth-force, grounded in Ahimsa, or nonviolence, and led India's movement for independence through nonviolent resistance.",
-        "birthDate": "1869-10-02",
-        "deathDate": "1948-01-30",
-        "birthPlace": {
-          "@type": "Place",
-          "name": "Porbandar, Gujarat, India"
-        },
-        "knowsAbout": [
-          "Satyagraha",
-          "Ahimsa",
-          "Political philosophy",
-          "Indian philosophy",
-          "Ethics"
-        ],
-        "notableWork": [
-          "Hind Swaraj",
-          "The Story of My Experiments with Truth"
-        ],
-        "sameAs": "https://en.wikipedia.org/wiki/Mahatma_Gandhi"
-      }
-    </script>
+    <!-- ================= SCHEMA MARKUP ================= -->
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+        "@graph": [
           {
-            "@type": "Question",
-            "name": "Who was Mahatma Gandhi?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Mahatma Gandhi was an Indian philosopher and political leader who developed the philosophy of Satyagraha and led India's movement for independence through nonviolent resistance."
+            "@type": "ProfilePage",
+            "@id": "https://agnostickind.github.io/philosophy-website/mahatma-gandhi.html#profilepage",
+            "url": "https://agnostickind.github.io/philosophy-website/mahatma-gandhi.html",
+            "name": "Mahatma Gandhi: Satyagraha, Ahimsa, and the Philosophy of Nonviolence | The Great Library of Philosophy",
+            "description": "Learn about Mahatma Gandhi, the Indian philosopher and leader who developed Satyagraha and Ahimsa, his philosophy of nonviolent resistance, truth as God, and his lasting influence on movements for justice around the world.",
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
+            },
+            "mainEntity": {
+              "@id": "https://agnostickind.github.io/philosophy-website/mahatma-gandhi.html#person"
             }
           },
+
           {
-            "@type": "Question",
-            "name": "What is Satyagraha in Gandhi's philosophy?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Satyagraha, meaning truth-force or soul-force, is Gandhi's philosophy of nonviolent resistance, in which a person confronts injustice through disciplined, nonviolent action grounded in truth rather than through physical coercion."
+            "@type": "Person",
+            "@id": "https://agnostickind.github.io/philosophy-website/mahatma-gandhi.html#person",
+            "name": "Mahatma Gandhi",
+            "alternateName": ["Mohandas Karamchand Gandhi", "Bapu"],
+            "description": "Mahatma Gandhi was an Indian philosopher, lawyer, and political leader who developed Satyagraha, a philosophy of nonviolent resistance grounded in truth, and made Ahimsa a central ethical principle of political action.",
+            "birthDate": "1869-10-02",
+            "deathDate": "1948-01-30",
+            "birthPlace": {
+              "@type": "Place",
+              "name": "Porbandar, Gujarat, India"
+            },
+            "knowsAbout": [
+              "Mahatma Gandhi",
+              "Mohandas Karamchand Gandhi",
+              "Indian philosophy",
+              "Modern Indian philosophy",
+              "Satyagraha",
+              "Ahimsa",
+              "Nonviolence",
+              "Nonviolent resistance",
+              "Political philosophy",
+              "Ethics",
+              "Swaraj",
+              "Sarvodaya",
+              "Truth",
+              "Truth as God",
+              "Civil disobedience",
+              "Hind Swaraj",
+              "Bhagavad Gita",
+              "Nishkama karma",
+              "Jain philosophy",
+              "Nonviolent political action",
+              "Indian independence movement"
+            ],
+            "notableWork": [
+              "Hind Swaraj",
+              "The Story of My Experiments with Truth"
+            ],
+            "image": {
+              "@id": "https://agnostickind.github.io/philosophy-website/mahatma-gandhi.html#image"
+            },
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
             }
           },
+
           {
-            "@type": "Question",
-            "name": "What did Gandhi mean by Ahimsa?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Ahimsa, or nonviolence, is the foundational ethical principle of Gandhi's philosophy, requiring the avoidance of harm not only in physical action but in thought and speech, and treated by Gandhi as inseparable from the pursuit of truth."
+            "@type": "ImageObject",
+            "@id": "https://agnostickind.github.io/philosophy-website/mahatma-gandhi.html#image",
+            "contentUrl": "https://agnostickind.github.io/philosophy-website/images/gandhi-independence-movement.jpg",
+            "url": "https://agnostickind.github.io/philosophy-website/images/gandhi-independence-movement.jpg",
+            "caption": "Portrait-style representation of Mahatma Gandhi"
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://agnostickind.github.io/philosophy-website/mahatma-gandhi.html#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://agnostickind.github.io/philosophy-website/index.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Thinkers",
+                "item": "https://agnostickind.github.io/philosophy-website/thinkers.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Mahatma Gandhi",
+                "item": "https://agnostickind.github.io/philosophy-website/mahatma-gandhi.html"
+              }
+            ]
+          },
+
+          {
+            "@type": "WebSite",
+            "@id": "https://agnostickind.github.io/philosophy-website/#website",
+            "url": "https://agnostickind.github.io/philosophy-website/",
+            "name": "The Great Library of Philosophy",
+            "description": "An educational resource exploring philosophy, philosophers, philosophical traditions, schools, history, and major ideas.",
+            "publisher": {
+              "@type": "Person",
+              "name": "Kavya Jain"
             }
+          },
+
+          {
+            "@type": "FAQPage",
+            "@id": "https://agnostickind.github.io/philosophy-website/mahatma-gandhi.html#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who was Mahatma Gandhi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Mahatma Gandhi was an Indian philosopher and political leader who developed the philosophy of Satyagraha and led India's movement for independence through nonviolent resistance."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Gandhi famous for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Gandhi is famous for developing Satyagraha, leading nonviolent campaigns including the Salt March and the Quit India Movement, and inspiring later movements for civil rights and social justice around the world."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What did Gandhi believe?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Gandhi believed that truth and nonviolence are inseparable, that unjust means can never secure a just end, and that political transformation must be accompanied by personal ethical discipline and self-mastery."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Satyagraha in Gandhi's philosophy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Satyagraha, meaning truth-force or soul-force, is Gandhi's philosophy of nonviolent resistance, in which a person confronts injustice through disciplined, nonviolent action grounded in truth rather than through physical coercion."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What did Gandhi mean by Ahimsa?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ahimsa, or nonviolence, is the foundational ethical principle of Gandhi's philosophy, requiring the avoidance of harm not only in physical action but in thought and speech, and treated by Gandhi as inseparable from the pursuit of truth."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Swaraj?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Swaraj, or self-rule, refers both to Gandhi's political goal of Indian independence from colonial rule and to his ethical vision of individual self-mastery over one's own desires and impulses."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Hind Swaraj about?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hind Swaraj is Gandhi's 1909 text presenting his early political philosophy through a dialogue that critiques modern industrial civilization and argues that Indian self-rule requires more than a mere transfer of political power."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What influenced Gandhi's philosophy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Gandhi's philosophy drew on the Bhagavad Gita, Jain teachings on nonviolence, and Western thinkers including Henry David Thoreau and Leo Tolstoy, combined through his own extensive personal experimentation."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is Gandhi connected to earlier Indian philosophy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Gandhi's emphasis on Ahimsa draws directly on the older Jain tradition of nonviolence, while his ideal of selfless action echoes the teaching of nishkama karma found in the Bhagavad Gita."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is Gandhi important today?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Gandhi remains important because his philosophy of nonviolent resistance continues to influence movements for civil rights and social justice around the world, demonstrating the practical and philosophical seriousness of nonviolence as a method of political change."
+                }
+              }
+            ]
           }
         ]
       }
     </script>
 
-      <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
     <link rel="stylesheet" href="branches-refine.css" />
     <link rel="stylesheet" href="history-refine.css" />
@@ -172,7 +312,7 @@
   <body>
     <!-- ================= NAVBAR ================= -->
 
-     <nav class="navbar">
+    <nav class="navbar">
       <a href="index.html" class="logo">
         <h2>Φ Philosophy</h2>
       </a>

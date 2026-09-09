@@ -45,7 +45,7 @@
 
     <meta
       property="og:image"
-      content="https://agnostickind.github.io/philosophy-website/images/og-preview.jpg"
+      content="https://agnostickind.github.io/philosophy-website/images/kapila-samkhya-schools.jpg"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -71,7 +71,7 @@
 
     <meta
       name="twitter:image"
-      content="https://agnostickind.github.io/philosophy-website/images/og-preview.jpg"
+      content="https://agnostickind.github.io/philosophy-website/images/kapila-samkhya-schools.jpg"
     />
 
     <link
@@ -84,64 +84,201 @@
       Φ The Great Library of Philosophy
     </title>
 
-    <!-- Schema Markup -->
+    <!-- ================= KAPILA STRUCTURED DATA ================= -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Kapila",
-        "alternateName": ["Kapila Muni", "Maharishi Kapila"],
-        "description": "Kapila was an ancient Indian sage traditionally credited with founding Samkhya, one of the oldest systematic philosophies of India, built on the dualism of Purusha (consciousness) and Prakriti (matter).",
-        "knowsAbout": [
-          "Samkhya philosophy",
-          "Indian philosophy",
-          "Vedic philosophy",
-          "Dualism",
-          "Hindu theology"
-        ],
-        "notableWork": [
-          "Samkhya Sutra (traditionally attributed)",
-          "Tattva Samasa (traditionally attributed)"
-        ],
-        "sameAs": "https://en.wikipedia.org/wiki/Kapila"
-      }
-    </script>
+        "@graph": [
+          {
+            "@type": "ProfilePage",
+            "@id": "https://agnostickind.github.io/philosophy-website/kapila.html#profilepage",
+            "url": "https://agnostickind.github.io/philosophy-website/kapila.html",
+            "name": "Kapila: Samkhya Philosophy, Purusha-Prakriti, and Ancient Indian Dualism | Φ The Great Library of Philosophy",
+            "description": "Learn about Kapila, the ancient Indian sage credited with founding Samkhya philosophy, the dualist system of Purusha and Prakriti, the twenty-five tattvas, and one of the oldest philosophical traditions of India.",
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
+            },
+            "mainEntity": {
+              "@id": "https://agnostickind.github.io/philosophy-website/kapila.html#person"
+            },
+            "image": {
+              "@id": "https://agnostickind.github.io/philosophy-website/kapila.html#image"
+            }
+          },
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
           {
-            "@type": "Question",
-            "name": "Who was Kapila?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Kapila was an ancient Indian sage traditionally regarded as the founder of Samkhya philosophy, one of the oldest systematic schools of Indian thought, built around the dualism of consciousness and matter."
+            "@type": "Person",
+            "@id": "https://agnostickind.github.io/philosophy-website/kapila.html#person",
+            "name": "Kapila",
+            "alternateName": ["Kapila Muni"],
+            "description": "Kapila is an ancient Indian sage traditionally credited with founding Samkhya philosophy, although the historical identity and chronology of Kapila remain uncertain. The philosophy attributed to him is associated with the dualism of Purusha and Prakriti, the twenty-five tattvas, the three gunas, and liberation through discriminative knowledge.",
+            "knowsAbout": [
+              "Kapila",
+              "Kapila Muni",
+              "Samkhya philosophy",
+              "Sankhya Darshan",
+              "Indian philosophy",
+              "Ancient Indian philosophy",
+              "Samkhya dualism",
+              "Purusha",
+              "Prakriti",
+              "Purusha-Prakriti dualism",
+              "Twenty-five tattvas",
+              "Tattvas",
+              "Three gunas",
+              "Sattva",
+              "Rajas",
+              "Tamas",
+              "Samkhya metaphysics",
+              "Samkhya epistemology",
+              "Liberation",
+              "Discriminative knowledge",
+              "Yoga philosophy",
+              "Classical Indian philosophy",
+              "Ishvarakrishna",
+              "Samkhya Karika"
+            ],
+            "image": {
+              "@id": "https://agnostickind.github.io/philosophy-website/kapila.html#image"
+            },
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
             }
           },
+
           {
-            "@type": "Question",
-            "name": "What is Samkhya philosophy?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Samkhya is an ancient Indian philosophical system attributed to Kapila that explains reality through the interaction of two eternal principles, Purusha, or pure consciousness, and Prakriti, or primal matter."
-            }
+            "@type": "ImageObject",
+            "@id": "https://agnostickind.github.io/philosophy-website/kapila.html#image",
+            "url": "https://agnostickind.github.io/philosophy-website/images/kapila-samkhya-schools.jpg",
+            "contentUrl": "https://agnostickind.github.io/philosophy-website/images/kapila-samkhya-schools.jpg",
+            "caption": "Artistic representation of the sage Kapila"
           },
+
           {
-            "@type": "Question",
-            "name": "What are Purusha and Prakriti in Kapila's philosophy?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Purusha is the eternal, unchanging principle of pure consciousness or witness-awareness, while Prakriti is the eternal principle of primal matter that evolves into the entire physical and mental universe; Samkhya holds that liberation comes from correctly distinguishing the two."
-            }
+            "@type": "BreadcrumbList",
+            "@id": "https://agnostickind.github.io/philosophy-website/kapila.html#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://agnostickind.github.io/philosophy-website/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Thinkers",
+                "item": "https://agnostickind.github.io/philosophy-website/thinkers.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Kapila",
+                "item": "https://agnostickind.github.io/philosophy-website/kapila.html"
+              }
+            ]
+          },
+
+          {
+            "@type": "WebSite",
+            "@id": "https://agnostickind.github.io/philosophy-website/#website",
+            "url": "https://agnostickind.github.io/philosophy-website/",
+            "name": "The Great Library of Philosophy",
+            "description": "An educational philosophy website exploring philosophers, philosophical traditions, branches, schools, history, books, and philosophical ideas."
+          },
+
+          {
+            "@type": "FAQPage",
+            "@id": "https://agnostickind.github.io/philosophy-website/kapila.html#faqpage",
+            "url": "https://agnostickind.github.io/philosophy-website/kapila.html#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who was Kapila?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Kapila was an ancient Indian sage traditionally regarded as the founder of Samkhya philosophy, one of the oldest systematic schools of Indian thought, built around the dualism of consciousness and matter."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Kapila famous for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Kapila is famous for founding Samkhya philosophy, developing the dualist theory of Purusha and Prakriti, and originating the enumeration of the twenty-five tattvas that later shaped Yoga philosophy and much of Indian metaphysics."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What did Kapila believe?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Kapila's philosophy, as preserved through the Samkhya tradition, teaches that consciousness (Purusha) and matter (Prakriti) are two entirely distinct eternal principles, and that suffering arises from confusing the two, while liberation comes through discriminative knowledge that separates them."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Samkhya philosophy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Samkhya is an ancient Indian philosophical system attributed to Kapila that explains reality through the interaction of two eternal principles, Purusha, or pure consciousness, and Prakriti, or primal matter."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are Purusha and Prakriti in Kapila's philosophy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Purusha is the eternal, unchanging principle of pure consciousness or witness-awareness, while Prakriti is the eternal principle of primal matter that evolves into the entire physical and mental universe; Samkhya holds that liberation comes from correctly distinguishing the two."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are the twenty-five tattvas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The twenty-five tattvas are the fundamental principles of Samkhya philosophy, beginning with Purusha and Prakriti and unfolding through intellect, ego, mind, the senses, and the subtle and gross elements that make up the material world."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are the three gunas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The three gunas are sattva, rajas, and tamas, the fundamental qualities of clarity, activity, and inertia whose shifting balance within Prakriti drives the evolution of the manifest universe in Samkhya philosophy."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is Kapila connected to Yoga philosophy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Classical Yoga philosophy, systematized in the Yoga Sutras attributed to Patanjali, adopts much of Kapila's Samkhya vocabulary, including Purusha, Prakriti, and the three gunas, as the theoretical foundation for its meditative practices."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Did Kapila write any books?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No text confirmed to be Kapila's own original composition survives; the most important surviving systematic text of the tradition is the Samkhya Karika, composed by Ishvarakrishna several centuries after Kapila is traditionally said to have lived."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is Kapila important today?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Kapila remains important because his dualist framework of consciousness and matter continues to influence the study of Yoga philosophy, Indian metaphysics, and comparative discussions of mind and consciousness in contemporary philosophy."
+                }
+              }
+            ]
           }
         ]
       }
     </script>
-
-      <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
     <link rel="stylesheet" href="branches-refine.css" />
     <link rel="stylesheet" href="history-refine.css" />
@@ -166,7 +303,7 @@
   <body>
     <!-- ================= NAVBAR ================= -->
 
-     <nav class="navbar">
+    <nav class="navbar">
       <a href="index.html" class="logo">
         <h2>Φ Philosophy</h2>
       </a>

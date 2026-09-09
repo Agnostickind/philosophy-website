@@ -45,7 +45,7 @@
 
     <meta
       property="og:image"
-      content="https://agnostickind.github.io/philosophy-website/images/og-preview.jpg"
+      content="https://agnostickind.github.io/philosophy-website/images/rumi-sufi-schools.jpg"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -71,7 +71,7 @@
 
     <meta
       name="twitter:image"
-      content="https://agnostickind.github.io/philosophy-website/images/og-preview.jpg"
+      content="https://agnostickind.github.io/philosophy-website/images/rumi-sufi-schools.jpg"
     />
 
     <link
@@ -84,75 +84,215 @@
       of Philosophy
     </title>
 
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Rumi",
-        "alternateName": [
-          "Jalal ad-Din Muhammad Rumi",
-          "Mevlana",
-          "Jalaluddin Rumi"
-        ],
-        "description": "Rumi was a thirteenth-century Persian poet, Islamic scholar, and Sufi mystic best known for the Masnavi, whose philosophy of divine love and self-annihilation shaped the Mevlevi Sufi order and its practice of whirling.",
-        "birthDate": "1207",
-        "deathDate": "1273",
-        "birthPlace": {
-          "@type": "Place",
-          "name": "Balkh, in present-day Afghanistan"
-        },
-        "deathPlace": {
-          "@type": "Place",
-          "name": "Konya, in present-day Turkey"
-        },
-        "knowsAbout": [
-          "Sufism",
-          "Islamic philosophy",
-          "Persian poetry",
-          "Mysticism",
-          "Islamic theology"
-        ],
-        "notableWork": ["Masnavi-ye Ma'navi", "Diwan-e Shams-e Tabrizi"],
-        "sameAs": "https://en.wikipedia.org/wiki/Rumi"
-      }
-    </script>
+    <!-- ================= SCHEMA MARKUP ================= -->
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+        "@graph": [
           {
-            "@type": "Question",
-            "name": "Who was Rumi?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Rumi was a thirteenth-century Persian poet, Islamic scholar, and Sufi mystic who wrote the Masnavi, a major work of mystical Islamic poetry, and whose teachings inspired the Mevlevi Sufi order."
+            "@type": "ProfilePage",
+            "@id": "https://agnostickind.github.io/philosophy-website/rumi.html#profilepage",
+            "url": "https://agnostickind.github.io/philosophy-website/rumi.html",
+            "name": "Rumi: Sufi Mysticism, Divine Love, and the Masnavi | The Great Library of Philosophy",
+            "description": "Learn about Rumi, the thirteenth-century Persian poet and Sufi mystic behind the Masnavi, his philosophy of divine love, the whirling dance of the Mevlevi Order, and his transformative bond with Shams of Tabriz.",
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
+            },
+            "mainEntity": {
+              "@id": "https://agnostickind.github.io/philosophy-website/rumi.html#person"
             }
           },
+
           {
-            "@type": "Question",
-            "name": "What is Rumi's philosophy of divine love?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Rumi's philosophy of divine love, or ishq, holds that intense love for God is the most direct path to spiritual union, capable of dissolving the ego and drawing the soul back toward its divine source."
+            "@type": "Person",
+            "@id": "https://agnostickind.github.io/philosophy-website/rumi.html#person",
+            "name": "Rumi",
+            "alternateName": [
+              "Jalal ad-Din Muhammad Rumi",
+              "Mevlana",
+              "Jalaluddin Rumi"
+            ],
+            "description": "Rumi was a thirteenth-century Persian poet, Islamic scholar, and Sufi mystic best known for the Masnavi and for teachings centered on divine love, spiritual transformation, and mystical union with God.",
+            "birthDate": "1207",
+            "deathDate": "1273",
+            "birthPlace": {
+              "@type": "Place",
+              "name": "Balkh, in present-day Afghanistan"
+            },
+            "deathPlace": {
+              "@type": "Place",
+              "name": "Konya, in present-day Turkey"
+            },
+            "knowsAbout": [
+              "Rumi",
+              "Jalal ad-Din Muhammad Rumi",
+              "Sufism",
+              "Sufi philosophy",
+              "Islamic mysticism",
+              "Islamic philosophy",
+              "Persian poetry",
+              "Mysticism",
+              "Divine love",
+              "Ishq",
+              "Fana",
+              "Baqa",
+              "Spiritual transformation",
+              "Masnavi",
+              "Masnavi-ye Ma'navi",
+              "Diwan-e Shams-e Tabrizi",
+              "Shams of Tabriz",
+              "Mevlevi Order",
+              "Sama",
+              "Whirling Dervishes",
+              "Islamic theology"
+            ],
+            "notableWork": ["Masnavi-ye Ma'navi", "Diwan-e Shams-e Tabrizi"],
+            "image": {
+              "@id": "https://agnostickind.github.io/philosophy-website/rumi.html#image"
+            },
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
             }
           },
+
           {
-            "@type": "Question",
-            "name": "Why did Rumi start whirling?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Rumi is traditionally associated with the origin of the whirling practice known as sama, a form of moving meditation later formalized by his followers in the Mevlevi Order, symbolizing the soul's ascent toward God and the turning of the cosmos."
+            "@type": "ImageObject",
+            "@id": "https://agnostickind.github.io/philosophy-website/rumi.html#image",
+            "contentUrl": "https://agnostickind.github.io/philosophy-website/images/rumi-sufi-schools.jpg",
+            "url": "https://agnostickind.github.io/philosophy-website/images/rumi-sufi-schools.jpg",
+            "caption": "Artistic representation of the poet and mystic Rumi"
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://agnostickind.github.io/philosophy-website/rumi.html#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://agnostickind.github.io/philosophy-website/index.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Thinkers",
+                "item": "https://agnostickind.github.io/philosophy-website/thinkers.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Rumi",
+                "item": "https://agnostickind.github.io/philosophy-website/rumi.html"
+              }
+            ]
+          },
+
+          {
+            "@type": "WebSite",
+            "@id": "https://agnostickind.github.io/philosophy-website/#website",
+            "url": "https://agnostickind.github.io/philosophy-website/",
+            "name": "The Great Library of Philosophy",
+            "description": "An educational resource exploring philosophy, philosophers, philosophical traditions, schools, history, and major ideas.",
+            "publisher": {
+              "@type": "Person",
+              "name": "Kavya Jain"
             }
+          },
+
+          {
+            "@type": "FAQPage",
+            "@id": "https://agnostickind.github.io/philosophy-website/rumi.html#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who was Rumi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Rumi was a thirteenth-century Persian poet, Islamic scholar, and Sufi mystic who wrote the Masnavi, a major work of mystical Islamic poetry, and whose teachings inspired the Mevlevi Sufi order."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Rumi famous for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Rumi is famous for his mystical poetry, especially the Masnavi and the Diwan-e Shams-e Tabrizi, his philosophy of divine love, and his association with the whirling practice of the Mevlevi Order."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What did Rumi believe?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Rumi believed that intense, consuming love for God is the most direct path to spiritual union, capable of dissolving the ego and drawing the soul back toward its original divine source."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Rumi's philosophy of divine love?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Rumi's philosophy of divine love, or ishq, holds that intense love for God is the most direct path to spiritual union, capable of dissolving the ego and drawing the soul back toward its divine source."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who was Shams of Tabriz to Rumi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Shams of Tabriz was a wandering Sufi mystic whose intense spiritual companionship with Rumi transformed him from a respected legal scholar into an ecstatic poet, and whose disappearance deeply shaped Rumi's later poetry."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why did Rumi start whirling?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Rumi is traditionally associated with the origin of the whirling practice known as sama, a form of moving meditation later formalized by his followers in the Mevlevi Order, symbolizing the soul's ascent toward God and the turning of the cosmos."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the Masnavi about?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Masnavi is Rumi's major six-volume poetic work exploring themes of divine love, spiritual longing, and the soul's journey back to God through stories, parables, and direct spiritual teaching."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are fana and baqa in Rumi's philosophy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Fana is the dissolution of the limited, ego-bound self in the presence of the divine, while baqa is the renewed spiritual existence that follows, in which the mystic abides in continuous awareness of connection to God."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is Rumi different from Ibn Arabi and Suhrawardi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ibn Arabi developed a systematic metaphysics of divine reality and Suhrawardi built a philosophical system around illuminative knowledge, while Rumi expressed similar mystical themes chiefly through poetry, story, and lived spiritual practice rather than formal philosophical argument."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is Rumi important today?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Rumi remains important because his poetry continues to offer one of the most accessible and widely read expressions of Sufi spiritual philosophy, reaching readers across many languages and cultures long after his own lifetime."
+                }
+              }
+            ]
           }
         ]
       }
     </script>
 
-      <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
     <link rel="stylesheet" href="branches-refine.css" />
     <link rel="stylesheet" href="history-refine.css" />
@@ -177,7 +317,7 @@
   <body>
     <!-- ================= NAVBAR ================= -->
 
-     <nav class="navbar">
+    <nav class="navbar">
       <a href="index.html" class="logo">
         <h2>Φ Philosophy</h2>
       </a>

@@ -45,7 +45,7 @@
 
     <meta
       property="og:image"
-      content="https://agnostickind.github.io/philosophy-website/images/og-preview.jpg"
+      content="https://agnostickind.github.io/philosophy-website/images/radhakrishnan.jpg"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -71,7 +71,7 @@
 
     <meta
       name="twitter:image"
-      content="https://agnostickind.github.io/philosophy-website/images/og-preview.jpg"
+      content="https://agnostickind.github.io/philosophy-website/images/radhakrishnan.jpg"
     />
 
     <link
@@ -84,73 +84,155 @@
       Thought | Φ The Great Library of Philosophy
     </title>
 
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Sarvepalli Radhakrishnan",
-        "alternateName": ["Dr. S. Radhakrishnan"],
-        "description": "Sarvepalli Radhakrishnan was a twentieth-century Indian philosopher and statesman who reinterpreted Advaita Vedanta for the modern world, developed a philosophy of intuitive experience, and served as the second President of India.",
-        "birthDate": "1888-09-05",
-        "deathDate": "1975-04-17",
-        "birthPlace": {
-          "@type": "Place",
-          "name": "Tiruttani, Madras Presidency, India"
-        },
-        "jobTitle": ["Philosopher", "Professor", "President of India"],
-        "knowsAbout": [
-          "Advaita Vedanta",
-          "Comparative philosophy",
-          "Indian philosophy",
-          "Epistemology",
-          "Philosophy of religion"
-        ],
-        "notableWork": [
-          "Indian Philosophy",
-          "The Hindu View of Life",
-          "An Idealist View of Life",
-          "The Bhagavadgita"
-        ],
-        "sameAs": "https://en.wikipedia.org/wiki/Sarvepalli_Radhakrishnan"
-      }
-    </script>
+    <!-- ================= SCHEMA MARKUP ================= -->
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+        "@graph": [
           {
-            "@type": "Question",
-            "name": "Who was Sarvepalli Radhakrishnan?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sarvepalli Radhakrishnan was a twentieth-century Indian philosopher and statesman who reinterpreted Advaita Vedanta for a modern audience, taught philosophy at Oxford, and served as the second President of India."
+            "@type": "ProfilePage",
+            "@id": "https://agnostickind.github.io/philosophy-website/sarvepalli-radhakrishnan.html#profilepage",
+            "url": "https://agnostickind.github.io/philosophy-website/sarvepalli-radhakrishnan.html",
+            "name": "Sarvepalli Radhakrishnan: Vedanta Philosophy, Intuition, and East-West Thought | The Great Library of Philosophy",
+            "description": "Learn about Sarvepalli Radhakrishnan, the twentieth-century Indian philosopher and statesman who interpreted Advaita Vedanta for the modern world, championed intuition as a source of knowledge, and became the second President of India.",
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
+            },
+            "mainEntity": {
+              "@id": "https://agnostickind.github.io/philosophy-website/sarvepalli-radhakrishnan.html#person"
             }
           },
+
           {
-            "@type": "Question",
-            "name": "What is Radhakrishnan's philosophy of intuition?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Radhakrishnan argued that intuition, or integral experience, is a distinct and valid source of knowledge alongside perception and reason, capable of directly apprehending spiritual reality in a way that discursive logic alone cannot fully achieve."
+            "@type": "Person",
+            "@id": "https://agnostickind.github.io/philosophy-website/sarvepalli-radhakrishnan.html#person",
+            "name": "Sarvepalli Radhakrishnan",
+            "alternateName": ["Dr. S. Radhakrishnan"],
+            "description": "Sarvepalli Radhakrishnan was a twentieth-century Indian philosopher and statesman who reinterpreted Advaita Vedanta for the modern world, developed a philosophy of intuitive experience, and served as the second President of India.",
+            "birthDate": "1888-09-05",
+            "deathDate": "1975-04-17",
+            "birthPlace": {
+              "@type": "Place",
+              "name": "Tiruttani, Madras Presidency, India"
+            },
+            "jobTitle": ["Philosopher", "Professor", "President of India"],
+            "knowsAbout": [
+              "Sarvepalli Radhakrishnan",
+              "Indian philosophy",
+              "Modern Indian philosophy",
+              "Advaita Vedanta",
+              "Vedanta",
+              "Comparative philosophy",
+              "East-West philosophy",
+              "Philosophy of religion",
+              "Epistemology",
+              "Intuition",
+              "Integral experience",
+              "Indian religious philosophy",
+              "Hindu philosophy",
+              "Idealism",
+              "Bhagavad Gita",
+              "Indian Philosophy",
+              "The Hindu View of Life",
+              "An Idealist View of Life",
+              "Teachers' Day in India"
+            ],
+            "notableWork": [
+              "Indian Philosophy",
+              "The Hindu View of Life",
+              "An Idealist View of Life",
+              "The Bhagavadgita"
+            ],
+            "image": {
+              "@id": "https://agnostickind.github.io/philosophy-website/sarvepalli-radhakrishnan.html#image"
+            },
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
             }
           },
+
           {
-            "@type": "Question",
-            "name": "Why is Teacher's Day celebrated on Radhakrishnan's birthday in India?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "India celebrates Teacher's Day on September 5, Radhakrishnan's birthday, in honor of his lifelong career as a philosophy professor and his own request that the day be marked as tribute to teachers rather than to him personally."
+            "@type": "ImageObject",
+            "@id": "https://agnostickind.github.io/philosophy-website/sarvepalli-radhakrishnan.html#image",
+            "contentUrl": "https://agnostickind.github.io/philosophy-website/images/radhakrishnan.jpg",
+            "url": "https://agnostickind.github.io/philosophy-website/images/radhakrishnan.jpg",
+            "caption": "Portrait-style representation of the philosopher Sarvepalli Radhakrishnan"
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://agnostickind.github.io/philosophy-website/sarvepalli-radhakrishnan.html#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://agnostickind.github.io/philosophy-website/index.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Thinkers",
+                "item": "https://agnostickind.github.io/philosophy-website/thinkers.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Sarvepalli Radhakrishnan",
+                "item": "https://agnostickind.github.io/philosophy-website/sarvepalli-radhakrishnan.html"
+              }
+            ]
+          },
+
+          {
+            "@type": "WebSite",
+            "@id": "https://agnostickind.github.io/philosophy-website/#website",
+            "url": "https://agnostickind.github.io/philosophy-website/",
+            "name": "The Great Library of Philosophy",
+            "description": "An educational resource exploring philosophy, philosophers, philosophical traditions, schools, history, and major ideas.",
+            "publisher": {
+              "@type": "Person",
+              "name": "Kavya Jain"
             }
+          },
+
+          {
+            "@type": "FAQPage",
+            "@id": "https://agnostickind.github.io/philosophy-website/sarvepalli-radhakrishnan.html#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who was Sarvepalli Radhakrishnan?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sarvepalli Radhakrishnan was a twentieth-century Indian philosopher and statesman who reinterpreted Advaita Vedanta for a modern audience, taught philosophy at Oxford, and served as the second President of India."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Radhakrishnan's philosophy of intuition?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Radhakrishnan argued that intuition, or integral experience, is a distinct and valid source of knowledge alongside perception and reason, capable of directly apprehending spiritual reality in a way that discursive logic alone cannot fully achieve."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is Teacher's Day celebrated on Radhakrishnan's birthday in India?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "India celebrates Teacher's Day on September 5, Radhakrishnan's birthday, in honor of his lifelong career as a philosophy professor and his own request that the day be marked as tribute to teachers rather than to him personally."
+                }
+              }
+            ]
           }
         ]
       }
     </script>
 
-      <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
     <link rel="stylesheet" href="branches-refine.css" />
     <link rel="stylesheet" href="history-refine.css" />
@@ -175,7 +257,7 @@
   <body>
     <!-- ================= NAVBAR ================= -->
 
-     <nav class="navbar">
+    <nav class="navbar">
       <a href="index.html" class="logo">
         <h2>Φ Philosophy</h2>
       </a>
@@ -1438,8 +1520,6 @@
       <section class="narrative-block" id="intuition">
         <h2>Radhakrishnan's Philosophy of Intuition and Integral Experience</h2>
 
-        
-
         <p>
           <strong>Intuition</strong>, which Radhakrishnan also frequently calls
           <em>integral experience</em>, occupies a central and distinctive place
@@ -1582,7 +1662,6 @@
       <section class="narrative-block" id="works">
         <h2>Radhakrishnan's Major Philosophical Works</h2>
 
-       
         <p>
           Radhakrishnan's most comprehensive scholarly achievement is his
           two-volume <strong>Indian Philosophy</strong>, published in the 1920s,

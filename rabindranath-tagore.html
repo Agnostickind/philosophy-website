@@ -45,7 +45,7 @@
 
     <meta
       property="og:image"
-      content="https://agnostickind.github.io/philosophy-website/images/og-preview.jpg"
+      content="https://agnostickind.github.io/philosophy-website/images/rabindranath-tagore.jpg"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -71,7 +71,7 @@
 
     <meta
       name="twitter:image"
-      content="https://agnostickind.github.io/philosophy-website/images/og-preview.jpg"
+      content="https://agnostickind.github.io/philosophy-website/images/rabindranath-tagore.jpg"
     />
 
     <link
@@ -84,72 +84,223 @@
       Philosophy | Φ The Great Library of Philosophy
     </title>
 
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Rabindranath Tagore",
-        "alternateName": ["Gurudev"],
-        "description": "Rabindranath Tagore was a Bengali philosopher, poet, and Nobel laureate who developed a humanist philosophy known as the Religion of Man, critiqued narrow nationalism, and founded the experimental university of Visva-Bharati at Santiniketan.",
-        "birthDate": "1861-05-07",
-        "deathDate": "1941-08-07",
-        "birthPlace": {
-          "@type": "Place",
-          "name": "Kolkata (Calcutta), Bengal, India"
-        },
-        "knowsAbout": [
-          "Humanism",
-          "Philosophy of education",
-          "Indian philosophy",
-          "Philosophy of nationalism",
-          "Aesthetics"
-        ],
-        "notableWork": [
-          "Gitanjali",
-          "Sadhana: The Realisation of Life",
-          "Nationalism",
-          "The Religion of Man"
-        ],
-        "sameAs": "https://en.wikipedia.org/wiki/Rabindranath_Tagore"
-      }
-    </script>
+    <!-- ================= SCHEMA MARKUP ================= -->
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+        "@graph": [
           {
-            "@type": "Question",
-            "name": "Who was Rabindranath Tagore?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Rabindranath Tagore was a Bengali philosopher, poet, and Nobel laureate who developed a humanist philosophy called the Religion of Man, critiqued narrow nationalism, and founded the experimental university of Visva-Bharati at Santiniketan."
+            "@type": "ProfilePage",
+            "@id": "https://agnostickind.github.io/philosophy-website/rabindranath-tagore.html#profilepage",
+            "url": "https://agnostickind.github.io/philosophy-website/rabindranath-tagore.html",
+            "name": "Rabindranath Tagore: Humanism, the Religion of Man, and Universal Philosophy",
+            "description": "Learn about Rabindranath Tagore, the Bengali philosopher, poet, and Nobel laureate behind the Religion of Man, his humanist critique of nationalism, and his educational philosophy at Santiniketan.",
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
+            },
+            "mainEntity": {
+              "@id": "https://agnostickind.github.io/philosophy-website/rabindranath-tagore.html#person"
+            },
+            "image": {
+              "@id": "https://agnostickind.github.io/philosophy-website/rabindranath-tagore.html#image"
             }
           },
+
           {
-            "@type": "Question",
-            "name": "What is Tagore's Religion of Man?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Religion of Man is Tagore's humanist philosophy holding that the divine is realized through human relationships, creative expression, and love rather than through fixed doctrine, treating spirituality and humanity as inseparable."
+            "@type": "Person",
+            "@id": "https://agnostickind.github.io/philosophy-website/rabindranath-tagore.html#person",
+            "name": "Rabindranath Tagore",
+            "alternateName": ["Gurudev"],
+            "description": "Rabindranath Tagore was a Bengali poet, philosopher, musician, artist, and educator whose humanist philosophy was expressed most fully in his idea of the Religion of Man. He also developed a distinctive critique of narrow nationalism and an educational philosophy embodied at Santiniketan and Visva-Bharati.",
+            "birthDate": "1861-05-07",
+            "deathDate": "1941-08-07",
+            "birthPlace": {
+              "@type": "Place",
+              "name": "Kolkata (Calcutta), Bengal, India"
+            },
+            "jobTitle": [
+              "Philosopher",
+              "Poet",
+              "Educator",
+              "Artist",
+              "Musician"
+            ],
+            "knowsAbout": [
+              "Rabindranath Tagore",
+              "Tagore philosophy",
+              "Religion of Man",
+              "Tagore humanism",
+              "Humanism",
+              "Indian philosophy",
+              "Modern Indian philosophy",
+              "Bengal Renaissance",
+              "Brahmo Samaj",
+              "Philosophy of education",
+              "Tagore educational philosophy",
+              "Philosophy of nationalism",
+              "Tagore's critique of nationalism",
+              "Aesthetics",
+              "Gitanjali",
+              "Sadhana: The Realisation of Life",
+              "Nationalism",
+              "The Religion of Man",
+              "Santiniketan",
+              "Visva-Bharati",
+              "Upanishads",
+              "Tagore and Gandhi"
+            ],
+            "notableWork": [
+              "Gitanjali",
+              "Sadhana: The Realisation of Life",
+              "Nationalism",
+              "The Religion of Man"
+            ],
+            "image": {
+              "@id": "https://agnostickind.github.io/philosophy-website/rabindranath-tagore.html#image"
+            },
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
             }
           },
+
           {
-            "@type": "Question",
-            "name": "Why did Tagore criticize nationalism?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Tagore criticized nationalism for reducing a living, creative society into a mechanical political and economic organization focused on power and competition, arguing that it suppressed the humane, cultural, and spiritual dimensions of a people."
+            "@type": "ImageObject",
+            "@id": "https://agnostickind.github.io/philosophy-website/rabindranath-tagore.html#image",
+            "url": "https://agnostickind.github.io/philosophy-website/images/rabindranath-tagore.jpg",
+            "contentUrl": "https://agnostickind.github.io/philosophy-website/images/rabindranath-tagore.jpg",
+            "caption": "Rabindranath Tagore"
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://agnostickind.github.io/philosophy-website/rabindranath-tagore.html#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://agnostickind.github.io/philosophy-website/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Thinkers",
+                "item": "https://agnostickind.github.io/philosophy-website/thinkers.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Rabindranath Tagore",
+                "item": "https://agnostickind.github.io/philosophy-website/rabindranath-tagore.html"
+              }
+            ]
+          },
+
+          {
+            "@type": "WebSite",
+            "@id": "https://agnostickind.github.io/philosophy-website/#website",
+            "url": "https://agnostickind.github.io/philosophy-website/",
+            "name": "The Great Library of Philosophy",
+            "description": "Explore philosophy, philosophers, philosophical traditions, schools, branches, books, history, and ideas from around the world.",
+            "publisher": {
+              "@type": "Person",
+              "name": "Kavya Jain"
             }
+          },
+
+          {
+            "@type": "FAQPage",
+            "@id": "https://agnostickind.github.io/philosophy-website/rabindranath-tagore.html#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who was Rabindranath Tagore?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Rabindranath Tagore was a Bengali philosopher, poet, and Nobel laureate who developed a humanist philosophy called the Religion of Man, critiqued narrow nationalism, and founded the experimental university of Visva-Bharati at Santiniketan."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Tagore famous for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tagore is famous for winning the 1913 Nobel Prize in Literature for Gitanjali, developing the humanist philosophy known as the Religion of Man, and founding the educational institution of Santiniketan."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What did Tagore believe?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tagore believed that the divine is most fully realized through human relationship, love, and creative expression, and that spirituality, art, and education should be treated as inseparable dimensions of human flourishing."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Tagore's Religion of Man?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Religion of Man is Tagore's humanist philosophy holding that the divine is realized through human relationships, creative expression, and love rather than through fixed doctrine, treating spirituality and humanity as inseparable."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why did Tagore criticize nationalism?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tagore criticized nationalism for reducing a living, creative society into a mechanical political and economic organization focused on power and competition, arguing that it suppressed the humane, cultural, and spiritual dimensions of a people."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Santiniketan?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Santiniketan is the experimental school Tagore founded in 1901 in rural Bengal, later expanded into Visva-Bharati University, built around his philosophy of education through nature, creativity, and joyful learning."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What was the relationship between Tagore and Gandhi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tagore and Gandhi shared deep mutual respect, with Tagore giving Gandhi the title Mahatma and Gandhi calling Tagore Gurudev, while the two disagreed on questions including nationalism, industrialization, and the relationship between religion and natural events."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How did the Upanishads influence Tagore?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tagore drew heavily on the Upanishadic vision of unity between the individual self and universal reality, encountered through his family's involvement with the Brahmo Samaj, though he reworked this inheritance into a more personal, humanist idiom."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is Tagore different from Radhakrishnan?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Radhakrishnan interpreted Indian philosophy through systematic academic scholarship engaging Western idealist categories, while Tagore expressed similar spiritual themes primarily through poetry, art, and educational practice rather than formal philosophical argument."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is Tagore important today?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tagore remains important because his humanist philosophy, his critique of nationalism, and his educational vision continue to influence discussions of philosophy, culture, and pedagogy around the world."
+                }
+              }
+            ]
           }
         ]
       }
     </script>
 
-      <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
     <link rel="stylesheet" href="branches-refine.css" />
     <link rel="stylesheet" href="history-refine.css" />
@@ -174,7 +325,7 @@
   <body>
     <!-- ================= NAVBAR ================= -->
 
-     <nav class="navbar">
+    <nav class="navbar">
       <a href="index.html" class="logo">
         <h2>Φ Philosophy</h2>
       </a>

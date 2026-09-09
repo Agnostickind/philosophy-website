@@ -7,6 +7,7 @@
    3. A "back to top" button that appears after scrolling
    ========================================================= */
 
+
 document.addEventListener('DOMContentLoaded', () => {
     /* ---------------------------------------------------------
        1. MOBILE MENU + HISTORY SUBMENU
@@ -48,6 +49,370 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
         };
+
+        /* =========================================================
+   1. MOBILE MENU — OFF-CANVAS NAVIGATION
+   ========================================================= */
+
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+
+        if (menuToggle && navLinks) {
+
+            /* -----------------------------------------------------
+               CLOSE ALL MOBILE MEGA MENUS
+               ----------------------------------------------------- */
+
+            const closeMegaMenus = () => {
+
+                navLinks
+                    .querySelectorAll(".nav-mega.mobile-open")
+                    .forEach((mega) => {
+
+                        mega.classList.remove("mobile-open");
+
+                        const toggle =
+                            mega.querySelector(".mega-mobile-toggle");
+
+                        if (toggle) {
+
+                            toggle.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+
+                        }
+
+                    });
+
+            };
+
+
+            /* -----------------------------------------------------
+               CLOSE MAIN MOBILE MENU
+               ----------------------------------------------------- */
+
+            const closeMenu = () => {
+
+                navLinks.classList.remove("open");
+
+                menuToggle.classList.remove("open");
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+                closeMegaMenus();
+
+                document.body.classList.remove(
+                    "mobile-nav-open"
+                );
+
+            };
+
+
+            /* -----------------------------------------------------
+               TOGGLE MAIN HAMBURGER MENU
+               ----------------------------------------------------- */
+
+            menuToggle.addEventListener(
+                "click",
+                () => {
+
+                    const isOpen =
+                        navLinks.classList.toggle("open");
+
+
+                    menuToggle.classList.toggle(
+                        "open",
+                        isOpen
+                    );
+
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        String(isOpen)
+                    );
+
+
+                    document.body.classList.toggle(
+                        "mobile-nav-open",
+                        isOpen
+                    );
+
+
+                    /* Close all submenus when main menu closes */
+
+                    if (!isOpen) {
+
+                        closeMegaMenus();
+
+                    }
+
+                }
+            );
+
+
+            /* -----------------------------------------------------
+               CREATE MOBILE BACK BUTTONS
+               ----------------------------------------------------- */
+
+            navLinks
+                .querySelectorAll(".nav-mega")
+                .forEach((mega) => {
+
+                    const megaMenu =
+                        mega.querySelector(".mega-menu");
+
+                    if (!megaMenu) return;
+
+
+                    const trigger =
+                        mega.querySelector(".mega-trigger");
+
+
+                    const menuTitle =
+                        trigger
+                            ? trigger.textContent.trim()
+                            : "Menu";
+
+
+                    /* Prevent duplicate buttons */
+
+                    if (
+                        megaMenu.querySelector(
+                            ".mobile-mega-back"
+                        )
+                    ) {
+                        return;
+                    }
+
+
+                    const backButton =
+                        document.createElement("button");
+
+
+                    backButton.type = "button";
+
+                    backButton.className =
+                        "mobile-mega-back";
+
+
+                    backButton.setAttribute(
+                        "aria-label",
+                        `Back from ${menuTitle}`
+                    );
+
+
+                    backButton.innerHTML = `
+                <span aria-hidden="true">←</span>
+                <span>${menuTitle}</span>
+            `;
+
+
+                    megaMenu.prepend(
+                        backButton
+                    );
+
+
+                    /* -------------------------------------------------
+                       BACK BUTTON
+                       ------------------------------------------------- */
+
+                    backButton.addEventListener(
+                        "click",
+                        (event) => {
+
+                            event.preventDefault();
+                            event.stopPropagation();
+
+
+                            mega.classList.remove(
+                                "mobile-open"
+                            );
+
+
+                            const toggle =
+                                mega.querySelector(
+                                    ".mega-mobile-toggle"
+                                );
+
+
+                            if (toggle) {
+
+                                toggle.setAttribute(
+                                    "aria-expanded",
+                                    "false"
+                                );
+
+                            }
+
+                        }
+                    );
+
+                });
+
+
+            /* -----------------------------------------------------
+               MOBILE MEGA MENU TOGGLES
+               ----------------------------------------------------- */
+
+            const megaToggles =
+                navLinks.querySelectorAll(
+                    ".mega-mobile-toggle"
+                );
+
+
+            megaToggles.forEach((toggle) => {
+
+                toggle.addEventListener(
+                    "click",
+                    (event) => {
+
+                        event.preventDefault();
+                        event.stopPropagation();
+
+
+                        /* Desktop uses the normal mega-menu */
+
+                        if (window.innerWidth > 768) {
+                            return;
+                        }
+
+
+                        const mega =
+                            toggle.closest(".nav-mega");
+
+
+                        if (!mega) return;
+
+
+                        const isOpen =
+                            mega.classList.contains(
+                                "mobile-open"
+                            );
+
+
+                        /* Close other mega menus first */
+
+                        closeMegaMenus();
+
+
+                        /* Open this submenu */
+
+                        if (!isOpen) {
+
+                            mega.classList.add(
+                                "mobile-open"
+                            );
+
+
+                            toggle.setAttribute(
+                                "aria-expanded",
+                                "true"
+                            );
+
+                        }
+
+                    }
+                );
+
+            });
+
+
+            /* -----------------------------------------------------
+               ESCAPE KEY
+               ----------------------------------------------------- */
+
+            document.addEventListener(
+                "keydown",
+                (event) => {
+
+                    if (event.key !== "Escape") {
+                        return;
+                    }
+
+
+                    const openMega =
+                        navLinks.querySelector(
+                            ".nav-mega.mobile-open"
+                        );
+
+
+                    /* First Escape = close submenu */
+
+                    if (openMega) {
+
+                        closeMegaMenus();
+
+                        return;
+
+                    }
+
+
+                    /* Second Escape = close main menu */
+
+                    if (
+                        navLinks.classList.contains("open")
+                    ) {
+
+                        closeMenu();
+
+                    }
+
+                }
+            );
+
+
+            /* -----------------------------------------------------
+               CLICK OUTSIDE MOBILE NAV
+               ----------------------------------------------------- */
+
+            document.addEventListener(
+                "click",
+                (event) => {
+
+                    if (
+                        !navLinks.classList.contains("open")
+                    ) {
+                        return;
+                    }
+
+
+                    if (
+                        navLinks.contains(event.target) ||
+                        menuToggle.contains(event.target)
+                    ) {
+                        return;
+                    }
+
+
+                    closeMenu();
+
+                }
+            );
+
+
+            /* -----------------------------------------------------
+               CLOSE MOBILE NAV WHEN RESIZING TO DESKTOP
+               ----------------------------------------------------- */
+
+            window.addEventListener(
+                "resize",
+                () => {
+
+                    if (window.innerWidth > 768) {
+
+                        closeMenu();
+
+                    }
+
+                }
+            );
+
+        }
 
 
         /* -----------------------------------------------------

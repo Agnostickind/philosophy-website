@@ -1325,3 +1325,43 @@ body.command-palette-open {
 
     line-height: 1.35;
 }
+
+/* =========================================================
+   MOBILE — BOOKS MEGA MENU
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .books-mega .mega-menu-inner {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .books-mega .mega-intro {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .books-mega .mega-column {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        width: 100%;
+        padding: 0.3rem 0;
+    }
+
+    .books-collections {
+        display: block;
+        width: 100%;
+    }
+
+    .books-collections .mega-column {
+        width: 100%;
+        padding: 0.2rem 0;
+    }
+
+    .books-collections .mega-column a {
+        margin: 0;
+    }
+
+}

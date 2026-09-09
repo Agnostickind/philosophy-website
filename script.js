@@ -9,16 +9,14 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    /* ---------------------------------------------------------
-       1. MOBILE MENU + HISTORY SUBMENU
-       --------------------------------------------------------- */
+    /* =========================================================
+       1. MOBILE MENU — OFF-CANVAS NAVIGATION
+       ========================================================= */
 
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
     if (menuToggle && navLinks) {
-
 
         /* -----------------------------------------------------
            CLOSE ALL MOBILE MEGA MENUS
@@ -26,54 +24,158 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const closeMegaMenus = () => {
 
-            document
-                .querySelectorAll('.nav-mega.mobile-open')
+            navLinks
+                .querySelectorAll(".nav-mega.mobile-open")
                 .forEach((mega) => {
 
-                    mega.classList.remove('mobile-open');
-
+                    mega.classList.remove("mobile-open");
 
                     const toggle =
-                        mega.querySelector('.mega-mobile-toggle');
-
+                        mega.querySelector(".mega-mobile-toggle");
 
                     if (toggle) {
-
                         toggle.setAttribute(
-                            'aria-expanded',
-                            'false'
+                            "aria-expanded",
+                            "false"
                         );
-
                     }
 
                 });
 
         };
 
-        /* =========================================================
-   1. MOBILE MENU — OFF-CANVAS NAVIGATION
-   ========================================================= */
 
-        const menuToggle = document.querySelector(".menu-toggle");
-        const navLinks = document.querySelector(".nav-links");
+        /* -----------------------------------------------------
+           CLOSE MAIN MOBILE MENU
+           ----------------------------------------------------- */
+
+        const closeMenu = () => {
+
+            navLinks.classList.remove("open");
+
+            menuToggle.classList.remove("open");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            closeMegaMenus();
+
+            document.body.classList.remove(
+                "mobile-nav-open"
+            );
+
+        };
 
 
-        if (menuToggle && navLinks) {
+        /* -----------------------------------------------------
+           HAMBURGER BUTTON
+           ----------------------------------------------------- */
 
-            /* -----------------------------------------------------
-               CLOSE ALL MOBILE MEGA MENUS
-               ----------------------------------------------------- */
+        menuToggle.addEventListener(
+            "click",
+            () => {
 
-            const closeMegaMenus = () => {
+                const isOpen =
+                    navLinks.classList.toggle("open");
 
-                navLinks
-                    .querySelectorAll(".nav-mega.mobile-open")
-                    .forEach((mega) => {
+                menuToggle.classList.toggle(
+                    "open",
+                    isOpen
+                );
 
-                        mega.classList.remove("mobile-open");
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    String(isOpen)
+                );
+
+                document.body.classList.toggle(
+                    "mobile-nav-open",
+                    isOpen
+                );
+
+            }
+        );
+
+
+        /* -----------------------------------------------------
+           CREATE BACK BUTTON FOR EACH MEGA MENU
+           ----------------------------------------------------- */
+
+        navLinks
+            .querySelectorAll(".nav-mega")
+            .forEach((mega) => {
+
+                const megaMenu =
+                    mega.querySelector(".mega-menu");
+
+                if (!megaMenu) return;
+
+
+                /* Don't create it twice */
+
+                if (
+                    megaMenu.querySelector(
+                        ".mobile-mega-back"
+                    )
+                ) {
+                    return;
+                }
+
+
+                const trigger =
+                    mega.querySelector(".mega-trigger");
+
+                const menuTitle =
+                    trigger
+                        ? trigger.textContent.trim()
+                        : "Menu";
+
+
+                const backButton =
+                    document.createElement("button");
+
+                backButton.type = "button";
+
+                backButton.className =
+                    "mobile-mega-back";
+
+                backButton.setAttribute(
+                    "aria-label",
+                    `Back from ${menuTitle}`
+                );
+
+                backButton.innerHTML = `
+                <span aria-hidden="true">←</span>
+                <span>${menuTitle}</span>
+            `;
+
+
+                megaMenu.prepend(
+                    backButton
+                );
+
+
+                /* -------------------------------------------------
+                   BACK BUTTON ACTION
+                   ------------------------------------------------- */
+
+                backButton.addEventListener(
+                    "click",
+                    (event) => {
+
+                        event.preventDefault();
+                        event.stopPropagation();
+
+                        mega.classList.remove(
+                            "mobile-open"
+                        );
 
                         const toggle =
-                            mega.querySelector(".mega-mobile-toggle");
+                            mega.querySelector(
+                                ".mega-mobile-toggle"
+                            );
 
                         if (toggle) {
 
@@ -84,235 +186,99 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         }
 
-                    });
-
-            };
-
-
-            /* -----------------------------------------------------
-               CLOSE MAIN MOBILE MENU
-               ----------------------------------------------------- */
-
-            const closeMenu = () => {
-
-                navLinks.classList.remove("open");
-
-                menuToggle.classList.remove("open");
-
-                menuToggle.setAttribute(
-                    "aria-expanded",
-                    "false"
+                    }
                 );
 
-                closeMegaMenus();
-
-                document.body.classList.remove(
-                    "mobile-nav-open"
-                );
-
-            };
+            });
 
 
-            /* -----------------------------------------------------
-               TOGGLE MAIN HAMBURGER MENU
-               ----------------------------------------------------- */
+        /* -----------------------------------------------------
+           HISTORY / BRANCHES / BOOKS MOBILE TOGGLES
+           ----------------------------------------------------- */
 
-            menuToggle.addEventListener(
+        const megaToggles =
+            navLinks.querySelectorAll(
+                ".mega-mobile-toggle"
+            );
+
+
+        megaToggles.forEach((toggle) => {
+
+            toggle.addEventListener(
                 "click",
-                () => {
+                (event) => {
+
+                    event.preventDefault();
+                    event.stopPropagation();
+
+
+                    /* Only use this behaviour on mobile */
+
+                    if (window.innerWidth > 1100) {
+                        return;
+                    }
+
+
+                    const mega =
+                        toggle.closest(".nav-mega");
+
+                    if (!mega) return;
+
 
                     const isOpen =
-                        navLinks.classList.toggle("open");
+                        mega.classList.contains(
+                            "mobile-open"
+                        );
 
 
-                    menuToggle.classList.toggle(
-                        "open",
-                        isOpen
-                    );
+                    /* Close other mega menus */
+
+                    closeMegaMenus();
 
 
-                    menuToggle.setAttribute(
-                        "aria-expanded",
-                        String(isOpen)
-                    );
-
-
-                    document.body.classList.toggle(
-                        "mobile-nav-open",
-                        isOpen
-                    );
-
-
-                    /* Close all submenus when main menu closes */
+                    /* Open selected mega menu */
 
                     if (!isOpen) {
 
-                        closeMegaMenus();
+                        mega.classList.add(
+                            "mobile-open"
+                        );
+
+                        toggle.setAttribute(
+                            "aria-expanded",
+                            "true"
+                        );
 
                     }
 
                 }
             );
 
-
-            /* -----------------------------------------------------
-               CREATE MOBILE BACK BUTTONS
-               ----------------------------------------------------- */
-
-            navLinks
-                .querySelectorAll(".nav-mega")
-                .forEach((mega) => {
-
-                    const megaMenu =
-                        mega.querySelector(".mega-menu");
-
-                    if (!megaMenu) return;
+        });
 
 
-                    const trigger =
-                        mega.querySelector(".mega-trigger");
+        /* -----------------------------------------------------
+           CLOSE MENU AFTER NORMAL NAVIGATION
+           ----------------------------------------------------- */
 
+        navLinks
+            .querySelectorAll("a")
+            .forEach((link) => {
 
-                    const menuTitle =
-                        trigger
-                            ? trigger.textContent.trim()
-                            : "Menu";
-
-
-                    /* Prevent duplicate buttons */
-
-                    if (
-                        megaMenu.querySelector(
-                            ".mobile-mega-back"
-                        )
-                    ) {
-                        return;
-                    }
-
-
-                    const backButton =
-                        document.createElement("button");
-
-
-                    backButton.type = "button";
-
-                    backButton.className =
-                        "mobile-mega-back";
-
-
-                    backButton.setAttribute(
-                        "aria-label",
-                        `Back from ${menuTitle}`
-                    );
-
-
-                    backButton.innerHTML = `
-                <span aria-hidden="true">←</span>
-                <span>${menuTitle}</span>
-            `;
-
-
-                    megaMenu.prepend(
-                        backButton
-                    );
-
-
-                    /* -------------------------------------------------
-                       BACK BUTTON
-                       ------------------------------------------------- */
-
-                    backButton.addEventListener(
-                        "click",
-                        (event) => {
-
-                            event.preventDefault();
-                            event.stopPropagation();
-
-
-                            mega.classList.remove(
-                                "mobile-open"
-                            );
-
-
-                            const toggle =
-                                mega.querySelector(
-                                    ".mega-mobile-toggle"
-                                );
-
-
-                            if (toggle) {
-
-                                toggle.setAttribute(
-                                    "aria-expanded",
-                                    "false"
-                                );
-
-                            }
-
-                        }
-                    );
-
-                });
-
-
-            /* -----------------------------------------------------
-               MOBILE MEGA MENU TOGGLES
-               ----------------------------------------------------- */
-
-            const megaToggles =
-                navLinks.querySelectorAll(
-                    ".mega-mobile-toggle"
-                );
-
-
-            megaToggles.forEach((toggle) => {
-
-                toggle.addEventListener(
+                link.addEventListener(
                     "click",
-                    (event) => {
+                    () => {
 
-                        event.preventDefault();
-                        event.stopPropagation();
+                        if (
+                            window.innerWidth <= 1100
+                        ) {
 
+                            /*
+                             * If a mega menu is currently open,
+                             * normal links inside it should navigate.
+                             */
 
-                        /* Desktop uses the normal mega-menu */
-
-                        if (window.innerWidth > 768) {
-                            return;
-                        }
-
-
-                        const mega =
-                            toggle.closest(".nav-mega");
-
-
-                        if (!mega) return;
-
-
-                        const isOpen =
-                            mega.classList.contains(
-                                "mobile-open"
-                            );
-
-
-                        /* Close other mega menus first */
-
-                        closeMegaMenus();
-
-
-                        /* Open this submenu */
-
-                        if (!isOpen) {
-
-                            mega.classList.add(
-                                "mobile-open"
-                            );
-
-
-                            toggle.setAttribute(
-                                "aria-expanded",
-                                "true"
-                            );
+                            closeMenu();
 
                         }
 
@@ -322,264 +288,77 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
 
-            /* -----------------------------------------------------
-               ESCAPE KEY
-               ----------------------------------------------------- */
+        /* -----------------------------------------------------
+           ESCAPE KEY
+           ----------------------------------------------------- */
 
-            document.addEventListener(
-                "keydown",
-                (event) => {
+        document.addEventListener(
+            "keydown",
+            (event) => {
 
-                    if (event.key !== "Escape") {
-                        return;
-                    }
-
-
-                    const openMega =
-                        navLinks.querySelector(
-                            ".nav-mega.mobile-open"
-                        );
+                if (event.key !== "Escape") {
+                    return;
+                }
 
 
-                    /* First Escape = close submenu */
-
-                    if (openMega) {
-
-                        closeMegaMenus();
-
-                        return;
-
-                    }
+                const openMega =
+                    navLinks.querySelector(
+                        ".nav-mega.mobile-open"
+                    );
 
 
-                    /* Second Escape = close main menu */
+                /* First Escape = close submenu */
 
-                    if (
-                        navLinks.classList.contains("open")
-                    ) {
+                if (openMega) {
 
-                        closeMenu();
+                    closeMegaMenus();
 
-                    }
+                    return;
 
                 }
-            );
 
 
-            /* -----------------------------------------------------
-               CLICK OUTSIDE MOBILE NAV
-               ----------------------------------------------------- */
+                /* Second Escape = close main menu */
 
-            document.addEventListener(
-                "click",
-                (event) => {
-
-                    if (
-                        !navLinks.classList.contains("open")
-                    ) {
-                        return;
-                    }
-
-
-                    if (
-                        navLinks.contains(event.target) ||
-                        menuToggle.contains(event.target)
-                    ) {
-                        return;
-                    }
-
+                if (
+                    navLinks.classList.contains("open")
+                ) {
 
                     closeMenu();
 
                 }
-            );
-
-
-            /* -----------------------------------------------------
-               CLOSE MOBILE NAV WHEN RESIZING TO DESKTOP
-               ----------------------------------------------------- */
-
-            window.addEventListener(
-                "resize",
-                () => {
-
-                    if (window.innerWidth > 768) {
-
-                        closeMenu();
-
-                    }
-
-                }
-            );
-
-        }
-
-
-        /* -----------------------------------------------------
-           CLOSE MAIN MOBILE MENU
-           ----------------------------------------------------- */
-
-        const closeMenu = () => {
-
-            navLinks.classList.remove('open');
-
-            menuToggle.classList.remove('open');
-
-            menuToggle.setAttribute(
-                'aria-expanded',
-                'false'
-            );
-
-
-            /* Also close History submenu */
-
-            closeMegaMenus();
-
-        };
-
-
-        /* -----------------------------------------------------
-           TOGGLE MAIN HAMBURGER MENU
-           ----------------------------------------------------- */
-
-        const toggleMenu = () => {
-
-            const isOpen =
-                navLinks.classList.toggle('open');
-
-
-            menuToggle.classList.toggle(
-                'open',
-                isOpen
-            );
-
-
-            menuToggle.setAttribute(
-                'aria-expanded',
-                String(isOpen)
-            );
-
-
-            /* When closing the main menu,
-               close History too */
-
-            if (!isOpen) {
-
-                closeMegaMenus();
 
             }
-
-        };
-
-
-        /* -----------------------------------------------------
-           HAMBURGER BUTTON
-           ----------------------------------------------------- */
-
-        menuToggle.addEventListener(
-            'click',
-            toggleMenu
         );
 
 
         /* -----------------------------------------------------
-           HISTORY MOBILE EXPAND / COLLAPSE
+           CLICK OUTSIDE NAVIGATION
            ----------------------------------------------------- */
 
-        const megaToggles =
-            navLinks.querySelectorAll(
-                '.mega-mobile-toggle'
-            );
+        document.addEventListener(
+            "click",
+            (event) => {
 
-
-        megaToggles.forEach((toggle) => {
-
-            toggle.addEventListener(
-                'click',
-                (event) => {
-
-                    event.preventDefault();
-
-
-                    /* Only activate this behaviour
-                       at the mobile navbar breakpoint */
-
-                    if (window.innerWidth > 1100) {
-                        return;
-                    }
-
-
-                    const mega =
-                        toggle.closest('.nav-mega');
-
-
-                    if (!mega) return;
-
-
-                    const isOpen =
-                        mega.classList.contains(
-                            'mobile-open'
-                        );
-
-
-                    /* Close all other mega menus */
-
-                    closeMegaMenus();
-
-
-                    /* Open this one if it was closed */
-
-                    if (!isOpen) {
-
-                        mega.classList.add(
-                            'mobile-open'
-                        );
-
-
-                        toggle.setAttribute(
-                            'aria-expanded',
-                            'true'
-                        );
-
-                    }
-
+                if (
+                    !navLinks.classList.contains("open")
+                ) {
+                    return;
                 }
-            );
-
-        });
 
 
-        /* -----------------------------------------------------
-           CLOSE MOBILE MENU AFTER CLICKING A LINK
-           ----------------------------------------------------- */
-        navLinks.querySelectorAll('a').forEach((link) => {
-
-            link.addEventListener(
-                'click',
-                () => {
-
-                    /* Do NOT close the menu when clicking
-                       the History submenu toggle */
-
-                    if (
-                        link.classList.contains(
-                            'mega-mobile-toggle'
-                        )
-                    ) {
-                        return;
-                    }
-
-
-                    if (window.innerWidth <= 1100) {
-
-                        closeMenu();
-
-                    }
-
+                if (
+                    navLinks.contains(event.target) ||
+                    menuToggle.contains(event.target)
+                ) {
+                    return;
                 }
-            );
 
-        });
+
+                closeMenu();
+
+            }
+        );
 
 
         /* -----------------------------------------------------
@@ -587,7 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
            ----------------------------------------------------- */
 
         window.addEventListener(
-            'resize',
+            "resize",
             () => {
 
                 if (window.innerWidth > 1100) {

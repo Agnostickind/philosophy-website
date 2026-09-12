@@ -1,0 +1,160 @@
+# The Great Library of Philosophy
+
+> The Great Library of Philosophy is an educational digital library exploring more than 2,500 years of philosophy across civilizations, historical periods, thinkers, philosophical branches, schools, books, and major ideas.
+
+## About
+
+The Great Library of Philosophy presents philosophy as a connected history of human thought. The library explores philosophical questions about reality, knowledge, ethics, existence, mind, language, society, politics, science, religion, art, and the meaning of human life.
+
+The site organizes philosophy through several complementary paths: historical periods and civilizations, individual philosophers and thinkers, branches of philosophy, philosophical schools and traditions, and influential philosophical works.
+
+## Main Sections
+
+- [Home](https://agnostickind.github.io/philosophy-website/): Main entrance to The Great Library of Philosophy and overview of the site's major areas.
+
+- [History](https://agnostickind.github.io/philosophy-website/history.html): Explore the historical development of philosophy across civilizations and periods.
+
+- [Thinkers](https://agnostickind.github.io/philosophy-website/thinkers.html): Explore philosophers and major thinkers from different historical periods and intellectual traditions.
+
+- [Branches](https://agnostickind.github.io/philosophy-website/branches.html): Explore major branches of philosophy and the questions studied within each field.
+
+- [Schools](https://agnostickind.github.io/philosophy-website/schools.html): Explore philosophical schools and traditions from Ancient Greece, India, China, the Islamic world, the Enlightenment, and modern philosophy.
+
+- [Books](https://agnostickind.github.io/philosophy-website/books.html): Explore important philosophical works and texts that shaped the history of philosophy.
+
+- [Literature](https://agnostickind.github.io/philosophy-website/literature.html): Explore philosophical literature and writings connected with philosophical thought.
+
+- [Blog](https://agnostickind.github.io/philosophy-website/blog.html): Articles and discussions exploring philosophical ideas, thinkers, history, and concepts.
+
+## Philosophy Through History
+
+### Ancient Philosophy
+
+- [Ancient Greek Philosophy](https://agnostickind.github.io/philosophy-website/ancient-greece.html): Explore Greek philosophy from the Presocratics through Socrates, Plato, Aristotle, and the major schools of the ancient world.
+
+- [Ancient Indian Philosophy](https://agnostickind.github.io/philosophy-website/ancient-india.html): Explore the philosophical development of ancient India, including the Vedic and Upanishadic traditions and the emergence of Buddhism and Jainism.
+
+- [Ancient Chinese Philosophy](https://agnostickind.github.io/philosophy-website/ancient-china.html): Explore major Chinese philosophical traditions and thinkers, including Confucianism, Daoism, Mohism, and Legalism.
+
+- [Hellenistic and Roman Philosophy](https://agnostickind.github.io/philosophy-website/hellenistic-roman-philosophy.html): Explore Stoicism, Epicureanism, Skepticism, Neoplatonism, and other philosophical traditions of the Hellenistic and Roman worlds.
+
+### Medieval and Renaissance Philosophy
+
+- [Islamic Philosophy](https://agnostickind.github.io/philosophy-website/islamic-philosophy.html): Explore philosophical traditions and debates developed in the Islamic world, including major thinkers and relationships between philosophy, theology, science, and reason.
+
+- [Medieval Philosophy](https://agnostickind.github.io/philosophy-website/medieval-philosophy.html): Explore philosophical developments in medieval Europe and related intellectual traditions.
+
+- [Renaissance Philosophy](https://agnostickind.github.io/philosophy-website/renaissance-philosophy.html): Explore Renaissance humanism and philosophical developments surrounding knowledge, humanity, nature, politics, and classical learning.
+
+### Modern and Contemporary Philosophy
+
+- [Enlightenment Philosophy](https://agnostickind.github.io/philosophy-website/enlightenment-philosophy.html): Explore the philosophical transformation associated with reason, empiricism, rationalism, liberty, morality, politics, and human progress.
+
+- [Modern Philosophy](https://agnostickind.github.io/philosophy-website/modern-philosophy.html): Explore major philosophical developments from the nineteenth and twentieth centuries, including German Idealism, Existentialism, and Analytic Philosophy.
+
+- [Contemporary Philosophy](https://agnostickind.github.io/philosophy-website/contemporary-philosophy.html): Explore philosophy from the mid-twentieth century to the present, including questions concerning language, mind, power, identity, technology, science, ethics, and society.
+
+## Major Branches of Philosophy
+
+- [Ethics](https://agnostickind.github.io/philosophy-website/ethics-branch-philosophy.html): The philosophical study of morality, values, right and wrong action, virtue, responsibility, and the good life.
+
+- [Metaphysics](https://agnostickind.github.io/philosophy-website/metaphysics-branch-philosophy.html): The study of reality, existence, being, identity, causation, possibility, necessity, time, space, mind, and matter.
+
+- [Epistemology](https://agnostickind.github.io/philosophy-website/epistemology-branch-philosophy.html): The study of knowledge, belief, justification, truth, certainty, evidence, and the limits of human understanding.
+
+- [Logic](https://agnostickind.github.io/philosophy-website/logic-branch-philosophy.html): The study of valid reasoning, argument, inference, consistency, and formal methods of evaluating reasoning.
+
+- [Aesthetics](https://agnostickind.github.io/philosophy-website/aesthetics-branch-philosophy.html): The philosophical study of beauty, art, taste, aesthetic experience, interpretation, and artistic value.
+
+- [Philosophy of Science](https://agnostickind.github.io/philosophy-website/science-philosophy.html): The philosophical study of scientific knowledge, evidence, explanation, methods, theories, and the limits of scientific inquiry.
+
+## Philosophical Schools and Traditions
+
+- [Ancient Schools of Philosophy](https://agnostickind.github.io/philosophy-website/greek-schools.html): Explore major Greek and Roman philosophical schools including Stoicism, Epicureanism, Cynicism, Skepticism, Peripateticism, Neoplatonism, and Atomism.
+
+- [Indian Schools of Philosophy](https://agnostickind.github.io/philosophy-website/indian-schools.html): Explore major Indian philosophical traditions including Buddhism, Vedanta, Jainism, Samkhya, Yoga, Nyaya, Vaisheshika, Mimamsa, and Charvaka.
+
+- [Enlightenment Schools of Philosophy](https://agnostickind.github.io/philosophy-website/enlightenment-schools.html): Explore Rationalism, Empiricism, Idealism, Social Contract Theory, Materialism, Deism, Natural Law, Pantheism, Classical Liberalism, and Deontology.
+
+- [Modern Schools of Philosophy](https://agnostickind.github.io/philosophy-website/modern-schools.html): Explore modern philosophical movements including Existentialism, Nihilism, Pragmatism, Utilitarianism, Phenomenology, Analytic Philosophy, Marxism, Absurdism, Structuralism, Postmodernism, Logical Positivism, and Critical Theory.
+
+## Philosophical Thinkers
+
+The Thinkers section contains individual pages dedicated to philosophers and intellectual figures from different periods and traditions. These pages examine biography, philosophical ideas, major works, historical context, concepts, influence, and intellectual legacy.
+
+Examples of thinkers represented across the library include:
+
+- Socrates
+- Plato
+- Aristotle
+- Gautama Buddha
+- Confucius
+- Laozi
+- Epicurus
+- Epictetus
+- Marcus Aurelius
+- René Descartes
+- Baruch Spinoza
+- Gottfried Wilhelm Leibniz
+- John Locke
+- David Hume
+- Immanuel Kant
+- Georg Wilhelm Friedrich Hegel
+- Søren Kierkegaard
+- Friedrich Nietzsche
+- Karl Marx
+- Jean-Paul Sartre
+- Albert Camus
+- Michel Foucault
+- Jiddu Krishnamurti
+- Kabir
+
+## Philosophical Books and Works
+
+The Books section contains influential philosophical texts and works from different periods and traditions, including ancient Greek philosophy, Hellenistic philosophy, Indian philosophy, and later Western philosophical traditions.
+
+The library connects philosophical works with their authors, historical contexts, philosophical arguments, concepts, and lasting influence.
+
+## How to Explore the Library
+
+Visitors can approach philosophy through several interconnected paths:
+
+1. Follow philosophy chronologically through the History section.
+2. Explore individual philosophers through the Thinkers section.
+3. Study a particular philosophical discipline through the Branches section.
+4. Compare philosophical traditions through the Schools section.
+5. Read influential philosophical works through the Books section.
+6. Explore philosophical literature, concepts, and discussions through the Literature and Blog sections.
+
+## Scope
+
+The library covers philosophical questions concerning:
+
+- Ethics and morality
+- Metaphysics and reality
+- Epistemology and knowledge
+- Logic and reasoning
+- Aesthetics and art
+- Philosophy of mind
+- Philosophy of language
+- Political philosophy
+- Philosophy of science
+- Philosophy of religion
+- Education and law
+- Human nature
+- Freedom and responsibility
+- Meaning and existence
+- Society and political authority
+- Science and technology
+
+## Source and Content Principles
+
+The Great Library of Philosophy is intended as an educational reference resource. Philosophical claims, historical information, terminology, dates, works, and intellectual relationships should be presented as accurately as possible and interpreted within their historical and philosophical contexts.
+
+The library is designed to help readers discover philosophical ideas and navigate between thinkers, traditions, branches, schools, historical periods, and major works.
+
+## Full URL Inventory
+
+For the complete collection of publicly available pages on The Great Library of Philosophy, see the site's XML sitemap:
+
+https://agnostickind.github.io/philosophy-website/sitemap.xml

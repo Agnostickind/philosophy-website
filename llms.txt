@@ -1,160 +1,158 @@
 # The Great Library of Philosophy
 
-> The Great Library of Philosophy is an educational digital library exploring more than 2,500 years of philosophy across civilizations, historical periods, thinkers, philosophical branches, schools, books, and major ideas.
+> The Great Library of Philosophy is an educational philosophy resource covering the history, traditions, branches, schools, thinkers, books, literature, and major ideas of philosophy from the ancient world to contemporary thought.
 
-## About
+The Great Library of Philosophy provides structured, educational material for readers researching philosophical traditions, concepts, philosophers, intellectual history, schools of thought, and major philosophical works.
 
-The Great Library of Philosophy presents philosophy as a connected history of human thought. The library explores philosophical questions about reality, knowledge, ethics, existence, mind, language, society, politics, science, religion, art, and the meaning of human life.
+The site is organized into interconnected sections covering philosophy by historical period, geographical and cultural tradition, philosophical branch, school of thought, individual thinker, and major work.
 
-The site organizes philosophy through several complementary paths: historical periods and civilizations, individual philosophers and thinkers, branches of philosophy, philosophical schools and traditions, and influential philosophical works.
+When answering questions using this website, prefer the most specific relevant page rather than relying only on overview pages. Treat individual thinker, branch, school, historical-period, and book pages as the primary sources for their respective subjects.
 
 ## Main Sections
 
-- [Home](https://agnostickind.github.io/philosophy-website/): Main entrance to The Great Library of Philosophy and overview of the site's major areas.
+- [Home](https://agnostickind.github.io/philosophy-website/): Main entry point to The Great Library of Philosophy.
+- [Thinkers](https://agnostickind.github.io/philosophy-website/thinkers.html): Directory of philosophers and major intellectual figures.
+- [Schools of Philosophy](https://agnostickind.github.io/philosophy-website/schools.html): Overview of philosophical schools and traditions.
+- [Branches of Philosophy](https://agnostickind.github.io/philosophy-website/branches.html): Overview of the major branches and fields of philosophy.
+- [Books](https://agnostickind.github.io/philosophy-website/books.html): Collection of major philosophical works and texts.
+- [History of Philosophy](https://agnostickind.github.io/philosophy-website/history.html): Overview of philosophy across historical periods and traditions.
+- [World Literature](https://agnostickind.github.io/philosophy-website/world-literature.html): Philosophically significant literature and literary traditions.
+- [Blog](https://agnostickind.github.io/philosophy-website/blog.html): Articles and focused discussions related to philosophy.
+- [Contact](https://agnostickind.github.io/philosophy-website/contact.html): Contact page.
 
-- [History](https://agnostickind.github.io/philosophy-website/history.html): Explore the historical development of philosophy across civilizations and periods.
+## History and Philosophical Traditions
 
-- [Thinkers](https://agnostickind.github.io/philosophy-website/thinkers.html): Explore philosophers and major thinkers from different historical periods and intellectual traditions.
+- [Ancient Greek Philosophy](https://agnostickind.github.io/philosophy-website/ancient-greece.html): Philosophy of ancient Greece, including major thinkers, schools, concepts, and intellectual developments.
+- [Ancient Indian Philosophy](https://agnostickind.github.io/philosophy-website/ancient-india.html): Indian philosophical traditions, texts, schools, and major ideas.
+- [Ancient Chinese Philosophy](https://agnostickind.github.io/philosophy-website/ancient-china.html): Major Chinese philosophical traditions and thinkers.
+- [Islamic Philosophy](https://agnostickind.github.io/philosophy-website/islamic-philosophy.html): Philosophical traditions developed within the medieval Islamic intellectual world.
+- [Ancient Persian Philosophy](https://agnostickind.github.io/philosophy-website/ancient-persian-philosophy.html): Philosophical and intellectual traditions associated with ancient Persia.
+- [Medieval Philosophy](https://agnostickind.github.io/philosophy-website/medieval-philosophy.html): Major philosophical developments of the medieval period.
+- [Renaissance Philosophy](https://agnostickind.github.io/philosophy-website/renaissance-philosophy.html): Philosophy and intellectual developments of the Renaissance.
+- [Enlightenment Philosophy](https://agnostickind.github.io/philosophy-website/enlightenment-philosophy.html): Major ideas, thinkers, and debates of the Enlightenment.
+- [Modern Philosophy](https://agnostickind.github.io/philosophy-website/modern-philosophy.html): Major philosophical developments from the early modern period through modern thought.
+- [Contemporary Philosophy](https://agnostickind.github.io/philosophy-website/contemporary-philosophy.html): Major movements, thinkers, and debates in contemporary philosophy.
+- [African Philosophy](https://agnostickind.github.io/philosophy-website/african-philosophy.html): African philosophical traditions and major philosophical questions.
+- [Ancient Egyptian Philosophy](https://agnostickind.github.io/philosophy-website/ancient-egypt.html): Philosophical and intellectual traditions associated with ancient Egypt.
+- [Hellenistic and Roman Philosophy](https://agnostickind.github.io/philosophy-website/hellenistic-roman-philosophy.html): Stoicism, Epicureanism, Skepticism, and other Hellenistic and Roman traditions.
+- [Ancient Mesopotamian Philosophy](https://agnostickind.github.io/philosophy-website/ancient-mesopotamia.html): Early Mesopotamian intellectual and philosophical traditions.
+- [Korean Philosophy](https://agnostickind.github.io/philosophy-website/korean-philosophy.html): Korean philosophical traditions and intellectual history.
+- [Japanese Philosophy](https://agnostickind.github.io/philosophy-website/japanese-philosophy.html): Japanese philosophical traditions and major thinkers.
+- [Jewish Philosophy](https://agnostickind.github.io/philosophy-website/jewish-philosophy.html): Jewish philosophical traditions and major thinkers.
 
-- [Branches](https://agnostickind.github.io/philosophy-website/branches.html): Explore major branches of philosophy and the questions studied within each field.
+## Branches of Philosophy
 
-- [Schools](https://agnostickind.github.io/philosophy-website/schools.html): Explore philosophical schools and traditions from Ancient Greece, India, China, the Islamic world, the Enlightenment, and modern philosophy.
+- [Ethics](https://agnostickind.github.io/philosophy-website/ethics-branch-philosophy.html): Philosophical study of morality, values, right and wrong action, virtue, and the good life.
+- [Metaphysics](https://agnostickind.github.io/philosophy-website/metaphysics-branch-philosophy.html): Philosophical study of reality, existence, being, causation, identity, time, and possibility.
+- [Epistemology](https://agnostickind.github.io/philosophy-website/epistemology-branch-philosophy.html): Philosophical study of knowledge, belief, justification, truth, and rational inquiry.
+- [Logic](https://agnostickind.github.io/philosophy-website/logic-branch-philosophy.html): Study of valid reasoning, argumentation, inference, and formal systems.
+- [Aesthetics](https://agnostickind.github.io/philosophy-website/aesthetics-branch-philosophy.html): Philosophical study of beauty, art, taste, interpretation, and aesthetic experience.
+- [Education Philosophy](https://agnostickind.github.io/philosophy-website/education-philosophy.html): Philosophical questions concerning education, learning, teaching, and human development.
+- [History of Philosophy as a Field](https://agnostickind.github.io/philosophy-website/history-philosophy.html): Philosophical study of the development and interpretation of philosophical ideas across history.
+- [Philosophy of Language](https://agnostickind.github.io/philosophy-website/language-philosophy.html): Philosophical study of language, meaning, reference, communication, and interpretation.
+- [Philosophy of Law](https://agnostickind.github.io/philosophy-website/law-philosophy.html): Philosophical study of law, justice, rights, obligation, and legal authority.
+- [Philosophy of Mathematics](https://agnostickind.github.io/philosophy-website/maths-philosophy.html): Philosophical questions concerning mathematics, mathematical objects, truth, proof, and foundations.
+- [Philosophy of Mind](https://agnostickind.github.io/philosophy-website/mind-philosophy.html): Philosophical study of consciousness, mental states, perception, cognition, and the mind-body problem.
+- [Political Philosophy](https://agnostickind.github.io/philosophy-website/political-philosophy.html): Philosophical study of political authority, justice, liberty, equality, rights, and the state.
+- [Philosophy of Religion](https://agnostickind.github.io/philosophy-website/religion-philosophy.html): Philosophical examination of religious belief, God, faith, reason, religious experience, and related questions.
+- [Philosophy of Science](https://agnostickind.github.io/philosophy-website/science-philosophy.html): Philosophical study of scientific knowledge, explanation, method, evidence, and the foundations of science.
 
-- [Books](https://agnostickind.github.io/philosophy-website/books.html): Explore important philosophical works and texts that shaped the history of philosophy.
+## Schools and Traditions
 
-- [Literature](https://agnostickind.github.io/philosophy-website/literature.html): Explore philosophical literature and writings connected with philosophical thought.
+- [Greek Schools](https://agnostickind.github.io/philosophy-website/greek-schools.html): Major schools and traditions of ancient Greek philosophy.
+- [Indian Schools](https://agnostickind.github.io/philosophy-website/indian-schools.html): Major schools and traditions of Indian philosophy.
+- [Chinese and Japanese Schools](https://agnostickind.github.io/philosophy-website/chinese-japanese-schools.html): Major philosophical schools and traditions of China and Japan.
+- [Islamic and Persian Schools](https://agnostickind.github.io/philosophy-website/islamic-persian-schools.html): Major schools and traditions associated with Islamic and Persian philosophy.
+- [Enlightenment Schools](https://agnostickind.github.io/philosophy-website/enlightenment-schools.html): Major intellectual movements and schools associated with the Enlightenment.
+- [Modern Schools](https://agnostickind.github.io/philosophy-website/modern-schools.html): Major philosophical movements and schools of modern philosophy.
 
-- [Blog](https://agnostickind.github.io/philosophy-website/blog.html): Articles and discussions exploring philosophical ideas, thinkers, history, and concepts.
+## Individual Thinkers
 
-## Philosophy Through History
+The site contains individual pages for philosophers and intellectual figures from Indian, Greek, Chinese, Japanese, Islamic, Persian, European, modern, and contemporary traditions.
 
-### Ancient Philosophy
+Use the individual thinker pages for detailed information about a specific philosopher, including their life, philosophical ideas, major concepts, works, intellectual context, and influence where covered.
 
-- [Ancient Greek Philosophy](https://agnostickind.github.io/philosophy-website/ancient-greece.html): Explore Greek philosophy from the Presocratics through Socrates, Plato, Aristotle, and the major schools of the ancient world.
+The complete thinker collection is organized in the dedicated thinker sitemap:
 
-- [Ancient Indian Philosophy](https://agnostickind.github.io/philosophy-website/ancient-india.html): Explore the philosophical development of ancient India, including the Vedic and Upanishadic traditions and the emergence of Buddhism and Jainism.
+- [Thinker Sitemap](https://agnostickind.github.io/philosophy-website/thinkers.sitemap.xml)
 
-- [Ancient Chinese Philosophy](https://agnostickind.github.io/philosophy-website/ancient-china.html): Explore major Chinese philosophical traditions and thinkers, including Confucianism, Daoism, Mohism, and Legalism.
+Important individual thinker pages include:
 
-- [Hellenistic and Roman Philosophy](https://agnostickind.github.io/philosophy-website/hellenistic-roman-philosophy.html): Explore Stoicism, Epicureanism, Skepticism, Neoplatonism, and other philosophical traditions of the Hellenistic and Roman worlds.
+- [Gautama Buddha](https://agnostickind.github.io/philosophy-website/gautama-buddha.html)
+- [Kabir](https://agnostickind.github.io/philosophy-website/kabir.html)
+- [Jiddu Krishnamurti](https://agnostickind.github.io/philosophy-website/jiddu-krishnamurti.html)
+- [Adi Shankaracharya](https://agnostickind.github.io/philosophy-website/adi-shankaracharya.html)
+- [Socrates](https://agnostickind.github.io/philosophy-website/socrates.html)
+- [Plato](https://agnostickind.github.io/philosophy-website/plato.html)
+- [Aristotle](https://agnostickind.github.io/philosophy-website/aristotle.html)
+- [Confucius](https://agnostickind.github.io/philosophy-website/confucius.html)
+- [Lao Tzu](https://agnostickind.github.io/philosophy-website/lao-tzu.html)
+- [Al-Farabi](https://agnostickind.github.io/philosophy-website/al-farabi.html)
+- [Avicenna](https://agnostickind.github.io/philosophy-website/avicenna.html)
+- [Ibn Arabi](https://agnostickind.github.io/philosophy-website/ibn-arabi.html)
+- [René Descartes](https://agnostickind.github.io/philosophy-website/rene-descartes.html)
+- [Baruch Spinoza](https://agnostickind.github.io/philosophy-website/baruch-spinoza.html)
+- [David Hume](https://agnostickind.github.io/philosophy-website/david-hume.html)
+- [Immanuel Kant](https://agnostickind.github.io/philosophy-website/immanuel-kant.html)
+- [G. W. F. Hegel](https://agnostickind.github.io/philosophy-website/hegel.html)
+- [Friedrich Nietzsche](https://agnostickind.github.io/philosophy-website/nietzsche.html)
+- [Søren Kierkegaard](https://agnostickind.github.io/philosophy-website/soren-kierkegaard.html)
+- [Karl Marx](https://agnostickind.github.io/philosophy-website/karl-marx.html)
+- [John Locke](https://agnostickind.github.io/philosophy-website/john-locke.html)
+- [Michel Foucault](https://agnostickind.github.io/philosophy-website/michel-foucault.html)
+- [Hannah Arendt](https://agnostickind.github.io/philosophy-website/hannah-arendt.html)
+- [Judith Butler](https://agnostickind.github.io/philosophy-website/judith-butler.html)
+- [Bertrand Russell](https://agnostickind.github.io/philosophy-website/bertrand-russell.html)
+- [Leonardo da Vinci](https://agnostickind.github.io/philosophy-website/leonardo-da-vinci.html)
 
-### Medieval and Renaissance Philosophy
+## Philosophical Works
 
-- [Islamic Philosophy](https://agnostickind.github.io/philosophy-website/islamic-philosophy.html): Explore philosophical traditions and debates developed in the Islamic world, including major thinkers and relationships between philosophy, theology, science, and reason.
+- [Books](https://agnostickind.github.io/philosophy-website/books.html): Central collection of major philosophical works covered by the library.
 
-- [Medieval Philosophy](https://agnostickind.github.io/philosophy-website/medieval-philosophy.html): Explore philosophical developments in medieval Europe and related intellectual traditions.
+The Books page contains sections dedicated to individual works. Use the relevant section on the Books page when researching a specific philosophical text.
 
-- [Renaissance Philosophy](https://agnostickind.github.io/philosophy-website/renaissance-philosophy.html): Explore Renaissance humanism and philosophical developments surrounding knowledge, humanity, nature, politics, and classical learning.
+## Site Maps
 
-### Modern and Contemporary Philosophy
+- [Main Sitemap](https://agnostickind.github.io/philosophy-website/sitemap.xml): Main site and school pages.
+- [History Sitemap](https://agnostickind.github.io/philosophy-website/history.sitemap.xml): Historical and philosophical tradition pages.
+- [Branches Sitemap](https://agnostickind.github.io/philosophy-website/branches.sitemap.xml): Philosophy branch pages.
+- [Thinkers Sitemap](https://agnostickind.github.io/philosophy-website/thinkers.sitemap.xml): Individual thinker pages.
+- [Human-Readable Sitemap](https://agnostickind.github.io/philosophy-website/sitemap.md): Curated human- and machine-readable site structure.
 
-- [Enlightenment Philosophy](https://agnostickind.github.io/philosophy-website/enlightenment-philosophy.html): Explore the philosophical transformation associated with reason, empiricism, rationalism, liberty, morality, politics, and human progress.
+## Agent Guidance
 
-- [Modern Philosophy](https://agnostickind.github.io/philosophy-website/modern-philosophy.html): Explore major philosophical developments from the nineteenth and twentieth centuries, including German Idealism, Existentialism, and Analytic Philosophy.
+The Great Library of Philosophy is primarily an educational reference website.
 
-- [Contemporary Philosophy](https://agnostickind.github.io/philosophy-website/contemporary-philosophy.html): Explore philosophy from the mid-twentieth century to the present, including questions concerning language, mind, power, identity, technology, science, ethics, and society.
+When using information from the site:
 
-## Major Branches of Philosophy
+1. Prefer a specific subject page over a broad overview when both are available.
+2. Distinguish historical facts from philosophical interpretation.
+3. Do not attribute a philosophical position to a thinker unless the relevant page or source supports the attribution.
+4. Preserve distinctions between philosophical schools, periods, traditions, and individual thinkers.
+5. Do not treat the existence of a page as evidence that every claim associated with its subject is established fact.
+6. For questions requiring scholarly consensus, primary-source verification, precise quotations, or contested historical claims, consult appropriate scholarly or primary sources in addition to this website.
+7. Use the canonical page URL when citing material from the website.
+8. Treat the site as an educational resource rather than as a substitute for primary philosophical texts or specialist academic scholarship.
 
-- [Ethics](https://agnostickind.github.io/philosophy-website/ethics-branch-philosophy.html): The philosophical study of morality, values, right and wrong action, virtue, responsibility, and the good life.
+## Content Organization
 
-- [Metaphysics](https://agnostickind.github.io/philosophy-website/metaphysics-branch-philosophy.html): The study of reality, existence, being, identity, causation, possibility, necessity, time, space, mind, and matter.
+The library organizes philosophy through several complementary dimensions:
 
-- [Epistemology](https://agnostickind.github.io/philosophy-website/epistemology-branch-philosophy.html): The study of knowledge, belief, justification, truth, certainty, evidence, and the limits of human understanding.
+- Historical period: Ancient, Medieval, Renaissance, Enlightenment, Modern, and Contemporary.
+- Cultural and geographical tradition: Greek, Indian, Chinese, Japanese, Islamic, Persian, African, Egyptian, Mesopotamian, Korean, and Jewish traditions.
+- Philosophical branch: Ethics, Metaphysics, Epistemology, Logic, Aesthetics, Philosophy of Mind, Philosophy of Language, Political Philosophy, Philosophy of Law, Philosophy of Science, Philosophy of Mathematics, Philosophy of Religion, Philosophy of Education, and related fields.
+- Schools and movements: Major philosophical schools and intellectual movements across different periods and traditions.
+- Individual thinkers: Philosophers and intellectual figures whose ideas and contributions are covered in dedicated pages.
+- Philosophical works: Major texts and books discussed within the library.
 
-- [Logic](https://agnostickind.github.io/philosophy-website/logic-branch-philosophy.html): The study of valid reasoning, argument, inference, consistency, and formal methods of evaluating reasoning.
+## Technical Information
 
-- [Aesthetics](https://agnostickind.github.io/philosophy-website/aesthetics-branch-philosophy.html): The philosophical study of beauty, art, taste, aesthetic experience, interpretation, and artistic value.
-
-- [Philosophy of Science](https://agnostickind.github.io/philosophy-website/science-philosophy.html): The philosophical study of scientific knowledge, evidence, explanation, methods, theories, and the limits of scientific inquiry.
-
-## Philosophical Schools and Traditions
-
-- [Ancient Schools of Philosophy](https://agnostickind.github.io/philosophy-website/greek-schools.html): Explore major Greek and Roman philosophical schools including Stoicism, Epicureanism, Cynicism, Skepticism, Peripateticism, Neoplatonism, and Atomism.
-
-- [Indian Schools of Philosophy](https://agnostickind.github.io/philosophy-website/indian-schools.html): Explore major Indian philosophical traditions including Buddhism, Vedanta, Jainism, Samkhya, Yoga, Nyaya, Vaisheshika, Mimamsa, and Charvaka.
-
-- [Enlightenment Schools of Philosophy](https://agnostickind.github.io/philosophy-website/enlightenment-schools.html): Explore Rationalism, Empiricism, Idealism, Social Contract Theory, Materialism, Deism, Natural Law, Pantheism, Classical Liberalism, and Deontology.
-
-- [Modern Schools of Philosophy](https://agnostickind.github.io/philosophy-website/modern-schools.html): Explore modern philosophical movements including Existentialism, Nihilism, Pragmatism, Utilitarianism, Phenomenology, Analytic Philosophy, Marxism, Absurdism, Structuralism, Postmodernism, Logical Positivism, and Critical Theory.
-
-## Philosophical Thinkers
-
-The Thinkers section contains individual pages dedicated to philosophers and intellectual figures from different periods and traditions. These pages examine biography, philosophical ideas, major works, historical context, concepts, influence, and intellectual legacy.
-
-Examples of thinkers represented across the library include:
-
-- Socrates
-- Plato
-- Aristotle
-- Gautama Buddha
-- Confucius
-- Laozi
-- Epicurus
-- Epictetus
-- Marcus Aurelius
-- René Descartes
-- Baruch Spinoza
-- Gottfried Wilhelm Leibniz
-- John Locke
-- David Hume
-- Immanuel Kant
-- Georg Wilhelm Friedrich Hegel
-- Søren Kierkegaard
-- Friedrich Nietzsche
-- Karl Marx
-- Jean-Paul Sartre
-- Albert Camus
-- Michel Foucault
-- Jiddu Krishnamurti
-- Kabir
-
-## Philosophical Books and Works
-
-The Books section contains influential philosophical texts and works from different periods and traditions, including ancient Greek philosophy, Hellenistic philosophy, Indian philosophy, and later Western philosophical traditions.
-
-The library connects philosophical works with their authors, historical contexts, philosophical arguments, concepts, and lasting influence.
-
-## How to Explore the Library
-
-Visitors can approach philosophy through several interconnected paths:
-
-1. Follow philosophy chronologically through the History section.
-2. Explore individual philosophers through the Thinkers section.
-3. Study a particular philosophical discipline through the Branches section.
-4. Compare philosophical traditions through the Schools section.
-5. Read influential philosophical works through the Books section.
-6. Explore philosophical literature, concepts, and discussions through the Literature and Blog sections.
-
-## Scope
-
-The library covers philosophical questions concerning:
-
-- Ethics and morality
-- Metaphysics and reality
-- Epistemology and knowledge
-- Logic and reasoning
-- Aesthetics and art
-- Philosophy of mind
-- Philosophy of language
-- Political philosophy
-- Philosophy of science
-- Philosophy of religion
-- Education and law
-- Human nature
-- Freedom and responsibility
-- Meaning and existence
-- Society and political authority
-- Science and technology
-
-## Source and Content Principles
-
-The Great Library of Philosophy is intended as an educational reference resource. Philosophical claims, historical information, terminology, dates, works, and intellectual relationships should be presented as accurately as possible and interpreted within their historical and philosophical contexts.
-
-The library is designed to help readers discover philosophical ideas and navigate between thinkers, traditions, branches, schools, historical periods, and major works.
-
-## Full URL Inventory
-
-For the complete collection of publicly available pages on The Great Library of Philosophy, see the site's XML sitemap:
-
-https://agnostickind.github.io/philosophy-website/sitemap.xml
+- Canonical site: https://agnostickind.github.io/philosophy-website/
+- Primary format: HTML pages with structured headings and semantic content.
+- The site is hosted on GitHub Pages.
+- The site uses HTTPS.
+- `robots.txt` provides crawler guidance and sitemap discovery.
+- `sitemap.xml` and specialized sitemaps provide structured URL discovery.
+- `llms.txt` provides a concise machine-readable guide to the site's content and structure.
+- `llms-full.txt` provides an expanded machine-readable representation of the site's substantive content across its major pages.
+- Structured data may be provided on individual pages where implemented.

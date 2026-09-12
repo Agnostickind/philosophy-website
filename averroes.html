@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
 
-    <!-- Google tag (gtag.js) -->
+    <!-- ================= GOOGLE ANALYTICS ================= -->
+
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-JPZD4Q0LLL"
@@ -21,25 +22,34 @@
       gtag("config", "G-JPZD4Q0LLL");
     </script>
 
+    <!-- ================= VIEWPORT ================= -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ================= SEO ================= -->
+    <!-- ================= PRIMARY SEO ================= -->
 
-    <title>Ibn Rushd (Averroes): Philosophy, Aristotle &amp; Reason</title>
+    <title>
+      Ibn Rushd (Averroes): Philosophy, Aristotle, Reason &amp; Islamic Thought
+      | The Great Library of Philosophy
+    </title>
 
     <meta
       name="description"
-      content="Explore Ibn Rushd (Averroes)'s philosophy, his Aristotle commentaries, the unity of the intellect, his reply to Al-Ghazali, and his influence on Western thought."
+      content="Learn about Ibn Rushd (Averroes), his philosophy, Aristotle commentaries, defense of reason, unity of the intellect, response to Al-Ghazali, and influence on medieval Islamic, Jewish, and Western philosophy."
     />
 
     <meta
       name="keywords"
-      content="Ibn Rushd, Averroes, Ibn Rushd philosophy, Averroes philosophy, Incoherence of the Incoherence, unity of the intellect, Averroism, Decisive Treatise, Ibn Rushd Aristotle commentaries, Ibn Rushd Al-Ghazali, Averroes Aquinas, Islamic philosophy, Arabic philosophy, medieval Islamic philosophy, Ibn Rushd Avicenna"
+      content="Ibn Rushd, Averroes, Ibn Rushd philosophy, Averroes philosophy, Ibn Rushd Aristotle, Averroes Aristotle commentaries, Incoherence of the Incoherence, Decisive Treatise, unity of the intellect, material intellect, Averroism, Ibn Rushd Al-Ghazali, Averroes Al-Ghazali, Islamic philosophy, Arabic philosophy, Andalusian philosophy, medieval Islamic philosophy, medieval Western philosophy, philosophy and religion, reason and religion"
     />
 
     <meta name="author" content="Kavya Jain" />
 
     <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <meta name="theme-color" content="#b88a44" />
+
+    <!-- ================= CANONICAL ================= -->
 
     <link
       rel="canonical"
@@ -50,12 +60,12 @@
 
     <meta
       property="og:title"
-      content="Ibn Rushd (Averroes): Philosophy, Aristotle &amp; Reason"
+      content="Ibn Rushd (Averroes): Philosophy, Aristotle, Reason &amp; Islamic Thought | The Great Library of Philosophy"
     />
 
     <meta
       property="og:description"
-      content="Discover Ibn Rushd (Averroes)'s philosophy, his defense of reason, Aristotle commentaries, the unity of the intellect, and his lasting influence on Western thought."
+      content="Explore Ibn Rushd (Averroes), his Aristotle commentaries, defense of philosophical reasoning, unity of the intellect, response to Al-Ghazali, and influence on medieval philosophy."
     />
 
     <meta property="og:type" content="article" />
@@ -67,106 +77,233 @@
 
     <meta
       property="og:image"
-      content="https://agnostickind.github.io/philosophy-website/images/og-preview.jpg"
+      content="https://agnostickind.github.io/philosophy-website/images/ibn-Rushd-islamic-schools.jpg"
     />
 
-    <!-- ================= TWITTER ================= -->
+    <meta
+      property="og:image:alt"
+      content="Representation of Ibn Rushd (Averroes), Andalusian philosopher, judge, and physician"
+    />
+
+    <meta property="og:site_name" content="The Great Library of Philosophy" />
+
+    <!-- ================= TWITTER / X ================= -->
 
     <meta name="twitter:card" content="summary_large_image" />
 
     <meta
       name="twitter:title"
-      content="Ibn Rushd (Averroes): Philosophy, Aristotle &amp; Reason"
+      content="Ibn Rushd (Averroes): Philosophy, Aristotle, Reason &amp; Islamic Thought | The Great Library of Philosophy"
     />
 
     <meta
       name="twitter:description"
-      content="Learn about Ibn Rushd (Averroes)'s philosophy, his Aristotle commentaries, the unity of the intellect, and his reply to Al-Ghazali."
+      content="Learn about Ibn Rushd (Averroes), his Aristotle commentaries, defense of reason, unity of the intellect, response to Al-Ghazali, and influence on medieval philosophy."
     />
 
     <meta
       name="twitter:image"
-      content="https://agnostickind.github.io/philosophy-website/images/og-preview.jpg"
+      content="https://agnostickind.github.io/philosophy-website/images/ibn-Rushd-islamic-schools.jpg"
     />
 
-    <meta name="theme-color" content="#b88a44" />
+    <meta
+      name="twitter:image:alt"
+      content="Representation of Ibn Rushd (Averroes), Andalusian philosopher, judge, and physician"
+    />
 
-      <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="nav-bar.css" />
+    <!-- ================= STYLESHEETS ================= -->
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
     <link rel="stylesheet" href="branches-refine.css" />
     <link rel="stylesheet" href="history-refine.css" />
 
-    <!-- ================= STRUCTURED DATA (FAQ SCHEMA) ================= -->
-    <!--
-      Mirrors the visible FAQ section below word-for-word. Keep both in
-      sync — mismatched schema/content can be treated as spam by Google.
-    -->
+    <!-- ================= STRUCTURED DATA ================= -->
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+        "@graph": [
           {
-            "@type": "Question",
-            "name": "Who was Ibn Rushd (Averroes)?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Ibn Rushd, known in the Latin West as Averroes, was a twelfth-century Andalusian philosopher, judge, and physician best known for his detailed commentaries on Aristotle and for defending philosophy against Al-Ghazali's critique."
+            "@type": "ProfilePage",
+            "@id": "https://agnostickind.github.io/philosophy-website/averroes.html#profilepage",
+            "url": "https://agnostickind.github.io/philosophy-website/averroes.html",
+            "name": "Ibn Rushd (Averroes): Philosophy, Aristotle, Reason & Islamic Thought",
+            "description": "Learn about Ibn Rushd (Averroes), his philosophy, Aristotle commentaries, defense of reason, unity of the intellect, response to Al-Ghazali, and influence on medieval Islamic, Jewish, and Western philosophy.",
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
+            },
+            "mainEntity": {
+              "@id": "https://agnostickind.github.io/philosophy-website/averroes.html#person"
+            },
+            "breadcrumb": {
+              "@id": "https://agnostickind.github.io/philosophy-website/averroes.html#breadcrumb"
+            },
+            "image": {
+              "@id": "https://agnostickind.github.io/philosophy-website/averroes.html#image"
             }
           },
+
           {
-            "@type": "Question",
-            "name": "What is Averroes known for?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Averroes is known for his extensive commentaries on Aristotle, his work The Incoherence of the Incoherence defending philosophy against Al-Ghazali, his theory of the unity of the material intellect, and his enormous influence on medieval Latin and Jewish philosophy."
+            "@type": "Person",
+            "@id": "https://agnostickind.github.io/philosophy-website/averroes.html#person",
+            "name": "Ibn Rushd",
+            "alternateName": "Averroes",
+            "description": "Ibn Rushd, known in the Latin West as Averroes, was a twelfth-century Andalusian philosopher, judge, and physician known especially for his commentaries on Aristotle, his defense of philosophical inquiry, and his influence on medieval Islamic, Jewish, and Latin philosophy.",
+            "birthDate": "1126",
+            "deathDate": "1198",
+            "birthPlace": {
+              "@type": "Place",
+              "name": "Córdoba, al-Andalus"
+            },
+            "deathPlace": {
+              "@type": "Place",
+              "name": "Marrakesh, Morocco"
+            },
+            "jobTitle": ["Philosopher", "Judge", "Physician"],
+            "image": {
+              "@id": "https://agnostickind.github.io/philosophy-website/averroes.html#image"
+            },
+            "knowsAbout": [
+              "Aristotelian philosophy",
+              "Islamic philosophy",
+              "Arabic philosophy",
+              "Andalusian philosophy",
+              "Philosophy of religion",
+              "Metaphysics",
+              "Logic",
+              "Psychology",
+              "Ethics",
+              "Political philosophy",
+              "Aristotle",
+              "Unity of the intellect",
+              "Material intellect",
+              "Reason and religion",
+              "Al-Ghazali",
+              "Averroism"
+            ],
+            "notableWork": [
+              "The Incoherence of the Incoherence",
+              "The Decisive Treatise",
+              "Commentaries on Aristotle"
+            ]
+          },
+
+          {
+            "@type": "ImageObject",
+            "@id": "https://agnostickind.github.io/philosophy-website/averroes.html#image",
+            "url": "https://agnostickind.github.io/philosophy-website/images/ibn-Rushd-islamic-schools.jpg",
+            "contentUrl": "https://agnostickind.github.io/philosophy-website/images/ibn-Rushd-islamic-schools.jpg",
+            "caption": "Representation of Ibn Rushd (Averroes), philosopher, judge, and physician of al-Andalus",
+            "representativeOfPage": true
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://agnostickind.github.io/philosophy-website/averroes.html#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://agnostickind.github.io/philosophy-website/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Thinkers",
+                "item": "https://agnostickind.github.io/philosophy-website/thinkers.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Ibn Rushd (Averroes)",
+                "item": "https://agnostickind.github.io/philosophy-website/averroes.html"
+              }
+            ]
+          },
+
+          {
+            "@type": "WebSite",
+            "@id": "https://agnostickind.github.io/philosophy-website/#website",
+            "url": "https://agnostickind.github.io/philosophy-website/",
+            "name": "The Great Library of Philosophy",
+            "description": "Explore over 2,500 years of philosophy, from ancient to contemporary thought.",
+            "publisher": {
+              "@type": "Person",
+              "name": "Kavya Jain"
             }
           },
+
           {
-            "@type": "Question",
-            "name": "What did Averroes believe about reason and religion?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "In the Decisive Treatise, Averroes argued that philosophy and religious law come from the same source of truth and cannot ultimately conflict, and that trained thinkers have a religious obligation to study philosophy using demonstrative reasoning."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Averroes' theory of the unity of the intellect?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Averroes argued that the material intellect, the faculty responsible for abstract human thought, is a single, separate, immaterial intellect shared by all humanity rather than a distinct faculty belonging to each individual soul."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Did Averroes believe in double truth?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. The idea that Averroes taught two separate and potentially contradictory truths, one philosophical and one religious, is a doctrine later associated with some Latin Averroists in medieval Europe rather than a position Averroes himself held; Averroes maintained that philosophy and religion express a single truth in different ways."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How did Averroes respond to Al-Ghazali?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Averroes wrote The Incoherence of the Incoherence as a detailed, point-by-point response to Al-Ghazali's The Incoherence of the Philosophers, defending Avicenna and Peripatetic philosophy against Al-Ghazali's objections, particularly on causation and the eternity of the world."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How did Averroes influence Western philosophy?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Averroes' commentaries on Aristotle were translated into Latin and Hebrew and became central to medieval European philosophy, earning him the title 'the Commentator' among scholastic thinkers and directly shaping the work of philosophers such as Thomas Aquinas."
-            }
+            "@type": "FAQPage",
+            "@id": "https://agnostickind.github.io/philosophy-website/averroes.html#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who was Ibn Rushd (Averroes)?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ibn Rushd, known in the Latin West as Averroes, was a twelfth-century Andalusian philosopher, judge, and physician best known for his detailed commentaries on Aristotle and for defending philosophy against Al-Ghazali's critique."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Averroes known for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Averroes is known for his extensive commentaries on Aristotle, his work The Incoherence of the Incoherence defending philosophy against Al-Ghazali, his theory of the unity of the material intellect, and his enormous influence on medieval Latin and Jewish philosophy."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What did Averroes believe about reason and religion?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In The Decisive Treatise, Averroes argued that philosophy and religious law come from the same source of truth and cannot ultimately conflict, and that trained thinkers have a religious obligation to study philosophy using demonstrative reasoning."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Averroes' theory of the unity of the intellect?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Averroes argued that the material intellect, the faculty responsible for abstract human thought, is a single, separate, immaterial intellect shared by all humanity rather than a distinct faculty belonging to each individual soul."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Did Averroes believe in double truth?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. The idea that Averroes taught two separate and potentially contradictory truths, one philosophical and one religious, is a doctrine later associated with some Latin Averroists in medieval Europe rather than a position Averroes himself held; Averroes maintained that philosophy and religion express a single truth in different ways."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How did Averroes respond to Al-Ghazali?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Averroes wrote The Incoherence of the Incoherence as a detailed, point-by-point response to Al-Ghazali's The Incoherence of the Philosophers, defending Avicenna and Peripatetic philosophy against Al-Ghazali's objections, particularly on causation and the eternity of the world."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How did Averroes influence Western philosophy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Averroes' commentaries on Aristotle were translated into Latin and Hebrew and became central to medieval European philosophy, earning him the title 'the Commentator' among scholastic thinkers and directly shaping the work of philosophers such as Thomas Aquinas."
+                }
+              }
+            ]
           }
         ]
       }
     </script>
-    <!-- Website Favicon -->
+
+    <!-- ================= WEBSITE FAVICON ================= -->
+
     <link rel="icon" href="favicon.ico" sizes="any" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -188,7 +325,7 @@
        NAVIGATION
        ===================================================== -->
 
-     <nav class="navbar">
+    <nav class="navbar">
       <a href="index.html" class="logo">
         <h2>Φ Philosophy</h2>
       </a>
@@ -1191,7 +1328,7 @@
           philosophy. He is especially famous for his extensive commentaries on
           <strong>Aristotle</strong>, as well as for his defense of
           philosophical inquiry in response to the criticisms of thinkers such
-          as <strong>Al-Ghazali</strong>. :contentReference[oaicite:0]{index=0}
+          as <strong>Al-Ghazali</strong>.   
         </p>
 
         <p>
@@ -1201,7 +1338,7 @@
           theology, philosophy, medicine, and the sciences. He served as a judge
           and later held important positions under the Almohad rulers,
           eventually becoming physician to the caliph in Marrakesh.
-          :contentReference[oaicite:1]{index=1}
+           
         </p>
 
         <p>
@@ -1212,7 +1349,7 @@
           shorter summaries to detailed and extensive interpretations. Through
           these works, he became known in medieval Latin philosophy simply as
           <strong>"the Commentator."</strong>
-          :contentReference[oaicite:2]{index=2}
+            
         </p>
 
         <p>
@@ -1224,7 +1361,7 @@
           critique of the philosophers, defending the value of philosophical
           reasoning while engaging directly with difficult questions concerning
           knowledge, causation, God, and the natural world.
-          :contentReference[oaicite:3]{index=3}
+             
         </p>
 
         <p>
@@ -1235,7 +1372,7 @@
           and contributed significantly to the transmission and development of
           Aristotelian philosophy in the Latin West, ensuring his place among
           the most consequential philosophers of the medieval world.
-          :contentReference[oaicite:4]{index=4}
+              
         </p>
       </section>
 

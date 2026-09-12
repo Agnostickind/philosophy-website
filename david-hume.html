@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
 
-    <!-- Google tag (gtag.js) -->
+    <!-- ================= GOOGLE ANALYTICS ================= -->
+
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-JPZD4Q0LLL"
@@ -21,6 +22,8 @@
       gtag("config", "G-JPZD4Q0LLL");
     </script>
 
+    <!-- ================= VIEWPORT ================= -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ================= SEO ================= -->
@@ -32,17 +35,21 @@
 
     <meta
       name="description"
-      content="Explore David Hume's philosophy, empiricism, skepticism, theory of knowledge, causation, problem of induction, bundle theory of the self, ethics, religion, major works, and influence on modern philosophy."
+      content="Learn about David Hume's philosophy, empiricism, skepticism, causation, problem of induction, bundle theory of the self, morality, religion, major works, and influence on modern philosophy."
     />
 
     <meta
       name="keywords"
-      content="David Hume, David Hume philosophy, David Hume empiricism, David Hume skepticism, David Hume scepticism, David Hume causation, David Hume problem of induction, David Hume induction, David Hume theory of knowledge, David Hume epistemology, David Hume philosophy of mind, David Hume bundle theory, David Hume self, David Hume ethics, David Hume moral philosophy, David Hume reason and passions, David Hume religion, David Hume philosophy of religion, David Hume Treatise of Human Nature, David Hume Enquiry concerning Human Understanding, David Hume Enquiry concerning the Principles of Morals, David Hume naturalism, David Hume British empiricism, Scottish Enlightenment, modern philosophy"
+      content="David Hume, David Hume philosophy, David Hume empiricism, David Hume skepticism, David Hume scepticism, David Hume causation, David Hume problem of induction, David Hume induction, David Hume epistemology, David Hume theory of knowledge, David Hume philosophy of mind, David Hume bundle theory, David Hume self, David Hume personal identity, David Hume ethics, David Hume moral philosophy, David Hume reason and passions, David Hume religion, David Hume philosophy of religion, David Hume Treatise of Human Nature, David Hume Enquiry concerning Human Understanding, David Hume Enquiry concerning the Principles of Morals, David Hume naturalism, David Hume British empiricism, Scottish Enlightenment, early modern philosophy"
     />
 
     <meta name="author" content="Kavya Jain" />
 
     <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <meta name="theme-color" content="#b88a44" />
+
+    <!-- ================= CANONICAL ================= -->
 
     <link
       rel="canonical"
@@ -58,10 +65,10 @@
 
     <meta
       property="og:description"
-      content="Learn about David Hume's empiricism, skepticism, causation, problem of induction, theory of the self, ethics, religion, major works, and influence on modern philosophy."
+      content="Explore David Hume's empiricism, skepticism, causation, problem of induction, theory of the self, moral philosophy, religion, major works, and influence on modern philosophy."
     />
 
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content="profile" />
 
     <meta
       property="og:url"
@@ -70,10 +77,17 @@
 
     <meta
       property="og:image"
-      content="https://agnostickind.github.io/philosophy-website/images/og-preview.jpg"
+      content="https://agnostickind.github.io/philosophy-website/images/david-hume-philo.jpg"
     />
 
-    <!-- ================= TWITTER ================= -->
+    <meta
+      property="og:image:alt"
+      content="Portrait of David Hume, Scottish Enlightenment philosopher"
+    />
+
+    <meta property="og:site_name" content="The Great Library of Philosophy" />
+
+    <!-- ================= TWITTER / X ================= -->
 
     <meta name="twitter:card" content="summary_large_image" />
 
@@ -84,18 +98,23 @@
 
     <meta
       name="twitter:description"
-      content="Explore David Hume's philosophy, empiricism, skepticism, causation, induction, theory of the self, ethics, religion, and major philosophical works."
+      content="Explore David Hume's philosophy, empiricism, skepticism, causation, induction, theory of the self, morality, religion, and major philosophical works."
     />
 
     <meta
       name="twitter:image"
-      content="https://agnostickind.github.io/philosophy-website/images/og-preview.jpg"
+      content="https://agnostickind.github.io/philosophy-website/images/david-hume-philo.jpg"
     />
 
-    <meta name="theme-color" content="#b88a44" />
+    <meta
+      name="twitter:image:alt"
+      content="Portrait of David Hume, Scottish Enlightenment philosopher"
+    />
 
-      <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="nav-bar.css" />
+    <!-- ================= STYLESHEETS ================= -->
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
     <link rel="stylesheet" href="branches-refine.css" />
     <link rel="stylesheet" href="history-refine.css" />
@@ -105,24 +124,248 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "David Hume: Philosophy, Empiricism, Skepticism and Causation",
-        "description": "A detailed guide to David Hume's philosophy, empiricism, skepticism, causation, induction, ethics, philosophy of mind, religion, major works, and influence.",
-        "author": {
-          "@type": "Person",
-          "name": "Kavya Jain"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "The Great Library of Philosophy"
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://agnostick.github.io/philosophy-website/david-hume.html"
-        }
+        "@graph": [
+          {
+            "@type": "ProfilePage",
+            "@id": "https://agnostickind.github.io/philosophy-website/david-hume.html#profilepage",
+            "url": "https://agnostickind.github.io/philosophy-website/david-hume.html",
+            "name": "David Hume: Philosophy, Empiricism, Skepticism & Causation",
+            "description": "Learn about David Hume's philosophy, empiricism, skepticism, causation, problem of induction, bundle theory of the self, morality, religion, major works, and influence on modern philosophy.",
+            "mainEntity": {
+              "@id": "https://agnostickind.github.io/philosophy-website/david-hume.html#person"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://agnostickind.github.io/philosophy-website/david-hume.html#image"
+            },
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://agnostickind.github.io/philosophy-website/david-hume.html#breadcrumb"
+            }
+          },
+
+          {
+            "@type": "Person",
+            "@id": "https://agnostickind.github.io/philosophy-website/david-hume.html#person",
+            "name": "David Hume",
+            "description": "Scottish philosopher, historian, and essayist known for his empiricism, skepticism, analysis of causation and induction, moral philosophy, philosophy of mind, and philosophy of religion.",
+            "birthDate": "1711",
+            "deathDate": "1776",
+            "birthPlace": {
+              "@type": "Place",
+              "name": "Edinburgh, Scotland"
+            },
+            "deathPlace": {
+              "@type": "Place",
+              "name": "Edinburgh, Scotland"
+            },
+            "jobTitle": ["Philosopher", "Historian", "Essayist"],
+            "knowsAbout": [
+              "Empiricism",
+              "Skepticism",
+              "Epistemology",
+              "Causation",
+              "Problem of induction",
+              "Philosophy of mind",
+              "Personal identity",
+              "Bundle theory",
+              "Moral philosophy",
+              "Moral sentimentalism",
+              "Reason and passions",
+              "Philosophy of religion",
+              "Naturalism",
+              "British empiricism",
+              "Scottish Enlightenment"
+            ],
+            "notableWork": [
+              "A Treatise of Human Nature",
+              "An Enquiry concerning Human Understanding",
+              "An Enquiry concerning the Principles of Morals",
+              "Dialogues concerning Natural Religion"
+            ],
+            "image": {
+              "@id": "https://agnostickind.github.io/philosophy-website/david-hume.html#image"
+            }
+          },
+
+          {
+            "@type": "ImageObject",
+            "@id": "https://agnostickind.github.io/philosophy-website/david-hume.html#image",
+            "url": "https://agnostickind.github.io/philosophy-website/images/david-hume-philo.jpg",
+            "contentUrl": "https://agnostickind.github.io/philosophy-website/images/david-hume-philo.jpg",
+            "caption": "Portrait of David Hume, Scottish Enlightenment philosopher"
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://agnostickind.github.io/philosophy-website/david-hume.html#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://agnostickind.github.io/philosophy-website/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Thinkers",
+                "item": "https://agnostickind.github.io/philosophy-website/thinkers.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "David Hume",
+                "item": "https://agnostickind.github.io/philosophy-website/david-hume.html"
+              }
+            ]
+          },
+
+          {
+            "@type": "WebSite",
+            "@id": "https://agnostickind.github.io/philosophy-website/#website",
+            "url": "https://agnostickind.github.io/philosophy-website/",
+            "name": "The Great Library of Philosophy",
+            "description": "Explore over 2,500 years of philosophy, from ancient thought to modern philosophy.",
+            "publisher": {
+              "@type": "Person",
+              "name": "Kavya Jain"
+            }
+          },
+
+          {
+            "@type": "FAQPage",
+            "@id": "https://agnostickind.github.io/philosophy-website/david-hume.html#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who was David Hume?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "David Hume was an eighteenth-century Scottish philosopher, historian, and essayist best known for his empiricism, skepticism, theory of causation, problem of induction, moral philosophy, and philosophy of religion."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is David Hume famous for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "David Hume is particularly famous for his analysis of causation, the problem of induction, empiricism, skepticism, the bundle theory of the self, moral sentimentalism, and his criticism of arguments for religious belief."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What was David Hume's philosophy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "David Hume's philosophy combines empiricism, skepticism, and naturalism. He investigated human knowledge through experience and examined how perception, imagination, habit, emotion, and association influence human belief."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Was David Hume an empiricist?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Hume was one of the major British empiricists. His empiricism emphasizes experience as the foundation for human knowledge and challenges philosophical concepts that cannot be connected to experience."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is David Hume's problem of induction?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The problem of induction asks how we can rationally justify inferences from past experience to future or unobserved events. Hume argues that the assumption that the future will resemble the past cannot itself be established through demonstrative reasoning without circularity."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What did David Hume believe about causation?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hume argued that experience reveals repeated patterns or constant conjunctions between events rather than directly revealing a necessary connection. Our expectation of causal relationships is strongly connected with custom and habit."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Hume's Fork?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hume's Fork distinguishes between relations of ideas and matters of fact. Relations of ideas concern demonstrative reasoning, while matters of fact concern empirical claims about the world."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is David Hume's bundle theory?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hume's bundle theory holds that introspection does not reveal a simple permanent self independently of experience. Instead, the mind is encountered as a changing collection or bundle of perceptions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What did David Hume believe about morality?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hume believed that moral judgments are closely connected with human sentiment. His moral philosophy emphasizes sympathy, usefulness, agreeableness, and the feelings of approval and disapproval through which people evaluate character and conduct."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Did David Hume believe reason controls human action?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hume gave passions and desires a fundamental role in motivation. Reason can inform us about facts and relationships, but motivation requires desire or passion."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What did David Hume believe about free will?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hume defended a form of compatibilism in which liberty can coexist with causal regularity. He understood freedom in terms of acting according to one's will without external constraint."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What did David Hume believe about religion?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hume subjected religious arguments to skeptical examination. He critically discussed miracles, divine providence, natural theology, and arguments from design. His precise personal religious position remains debated by scholars."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is David Hume's most famous book?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hume's best-known philosophical works include A Treatise of Human Nature and An Enquiry concerning Human Understanding. The Enquiry contains particularly influential discussions of causation, induction, skepticism, miracles, and human knowledge."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How did David Hume influence Kant?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hume's skepticism about causation, metaphysics, and the foundations of knowledge deeply influenced Immanuel Kant. Kant regarded Hume's challenge as an important stimulus for reconsidering the foundations of philosophy."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is David Hume important today?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "David Hume remains important because his questions about evidence, causation, induction, personal identity, morality, and religious belief continue to appear in contemporary epistemology, philosophy of science, philosophy of mind, ethics, and philosophy of religion."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
-    <!-- Website Favicon -->
+
+    <!-- ================= WEBSITE FAVICON ================= -->
+
     <link rel="icon" href="favicon.ico" sizes="any" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -144,7 +387,7 @@
        NAVIGATION
        ===================================================== -->
 
-     <nav class="navbar">
+    <nav class="navbar">
       <a href="index.html" class="logo">
         <h2>Φ Philosophy</h2>
       </a>

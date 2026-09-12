@@ -93,79 +93,213 @@
 
     <meta name="theme-color" content="#b88a44" />
 
-      <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
     <link rel="stylesheet" href="branches-refine.css" />
     <link rel="stylesheet" href="history-refine.css" />
+    <!-- =====================================================
+   STRUCTURED DATA / SCHEMA MARKUP
+   ===================================================== -->
 
-    <!-- ================= STRUCTURED DATA (FAQ SCHEMA) ================= -->
-    <!--
-      This marks up the FAQ section below so Google can potentially display
-      it as an expandable rich result directly in search. Every question
-      and answer here must match the visible on-page FAQ text exactly —
-      mismatched schema can be treated as spam by Google.
-    -->
-    <script type="application/ld+json">
+    <script type="application/ld+json" id="al-ghazali-schema">
       {
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+        "@graph": [
           {
-            "@type": "Question",
-            "name": "Who was Al-Ghazali?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Al-Ghazali was an eleventh-century Islamic theologian, jurist, and philosopher, best known for his critique of philosophy in The Incoherence of the Philosophers and for his later turn toward Sufi mysticism."
+            "@type": "ProfilePage",
+            "@id": "https://agnostickind.github.io/philosophy-website/al-ghazali.html#profilepage",
+            "url": "https://agnostickind.github.io/philosophy-website/al-ghazali.html",
+            "name": "Al-Ghazali: Philosophy, Sufism & Islamic Thought",
+            "description": "Explore Al-Ghazali's philosophy, his critique of Avicenna in The Incoherence of the Philosophers, occasionalism, Sufism, and his influence on Islamic thought.",
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
+            },
+            "mainEntity": {
+              "@id": "https://agnostickind.github.io/philosophy-website/al-ghazali.html#person"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://agnostickind.github.io/philosophy-website/al-ghazali.html#image"
             }
           },
+
           {
-            "@type": "Question",
-            "name": "What is Al-Ghazali known for?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Al-Ghazali is known for The Incoherence of the Philosophers, his critique of Avicenna's metaphysics, his theory of occasionalism, his spiritual autobiography Deliverance from Error, and his influence on Islamic theology and Sufism."
+            "@type": "Person",
+            "@id": "https://agnostickind.github.io/philosophy-website/al-ghazali.html#person",
+            "name": "Al-Ghazali",
+            "alternateName": [
+              "Abū Ḥāmid Muḥammad ibn Muḥammad al-Ghazālī",
+              "Algazel",
+              "Ghazali"
+            ],
+            "description": "Al-Ghazali was an influential Islamic theologian, jurist, philosopher, and mystical thinker whose work addressed Islamic theology, philosophy, epistemology, causation, ethics, law, and Sufi spirituality.",
+            "birthDate": "1058",
+            "deathDate": "1111",
+            "birthPlace": {
+              "@type": "Place",
+              "name": "Tus, present-day Iran"
+            },
+            "deathPlace": {
+              "@type": "Place",
+              "name": "Tus, present-day Iran"
+            },
+            "jobTitle": [
+              "Theologian",
+              "Jurist",
+              "Philosopher",
+              "Mystical Thinker"
+            ],
+            "knowsAbout": [
+              "Al-Ghazali",
+              "Islamic philosophy",
+              "Islamic theology",
+              "Kalam",
+              "Ash'arite theology",
+              "Sufism",
+              "Sufi mysticism",
+              "Epistemology",
+              "Causation",
+              "Occasionalism",
+              "Logic",
+              "Ethics",
+              "Avicenna",
+              "Al-Farabi",
+              "Peripatetic philosophy",
+              "The Incoherence of the Philosophers",
+              "Deliverance from Error",
+              "Alchemy of Happiness",
+              "Certainty",
+              "Mystical experience"
+            ],
+            "notableWork": [
+              {
+                "@type": "CreativeWork",
+                "name": "The Incoherence of the Philosophers"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Deliverance from Error"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "The Alchemy of Happiness"
+              }
+            ],
+            "image": {
+              "@id": "https://agnostickind.github.io/philosophy-website/al-ghazali.html#image"
+            },
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
             }
           },
+
           {
-            "@type": "Question",
-            "name": "Did Al-Ghazali destroy Islamic philosophy?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Al-Ghazali did not end Islamic philosophy, but his critique in The Incoherence of the Philosophers is traditionally seen as a major turning point that weakened the standing of Peripatetic philosophy within Sunni Islamic thought, even as philosophical inquiry continued in other forms."
+            "@type": "ImageObject",
+            "@id": "https://agnostickind.github.io/philosophy-website/al-ghazali.html#image",
+            "url": "https://agnostickind.github.io/philosophy-website/images/al-ghazali-ancient-islamic.jpg",
+            "contentUrl": "https://agnostickind.github.io/philosophy-website/images/al-ghazali-ancient-islamic.jpg",
+            "caption": "Representation of Al-Ghazali, medieval Islamic theologian and philosopher",
+            "representativeOfPage": true
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://agnostickind.github.io/philosophy-website/al-ghazali.html#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://agnostickind.github.io/philosophy-website/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Thinkers",
+                "item": "https://agnostickind.github.io/philosophy-website/thinkers.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Al-Ghazali",
+                "item": "https://agnostickind.github.io/philosophy-website/al-ghazali.html"
+              }
+            ]
+          },
+
+          {
+            "@type": "WebSite",
+            "@id": "https://agnostickind.github.io/philosophy-website/#website",
+            "url": "https://agnostickind.github.io/philosophy-website/",
+            "name": "The Great Library of Philosophy",
+            "description": "Explore philosophy, philosophers, philosophical traditions, schools of thought, history, books, and ideas from around the world.",
+            "publisher": {
+              "@type": "Person",
+              "name": "Kavya Jain"
             }
           },
+
           {
-            "@type": "Question",
-            "name": "What is The Incoherence of the Philosophers?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Incoherence of the Philosophers is Al-Ghazali's major work attacking the philosophical positions of Avicenna and Al-Farabi, arguing that several of their metaphysical claims were philosophically unproven and, in some cases, incompatible with Islamic belief."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Al-Ghazali's philosophy of causation?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Al-Ghazali argued against necessary causal connection between events, proposing instead that God directly causes what appears to be cause and effect, a position known as occasionalism."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why did Al-Ghazali turn to Sufism?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "According to his own account in Deliverance from Error, Al-Ghazali experienced a personal epistemological and spiritual crisis that led him to conclude that certainty and closeness to God were found through Sufi mystical experience rather than through philosophical argument alone."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between Al-Ghazali and Avicenna?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Avicenna built a systematic philosophical framework grounded in Aristotelian and Neoplatonic reasoning, while Al-Ghazali, working a generation later, challenged key parts of that framework as philosophically unproven and defended a theological and mystical alternative rooted in Islamic revelation and Sufi experience."
-            }
+            "@type": "FAQPage",
+            "@id": "https://agnostickind.github.io/philosophy-website/al-ghazali.html#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who was Al-Ghazali?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Al-Ghazali was an eleventh- and early twelfth-century Islamic jurist, theologian, philosopher, and mystical thinker. He is best known for The Incoherence of the Philosophers, his reflections on certainty in Deliverance from Error, and his influential synthesis of Islamic theology, ethics, and Sufi spirituality."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Al-Ghazali known for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Al-Ghazali is known for The Incoherence of the Philosophers, his critique of Avicennan metaphysics, his influential discussion of causation, his spiritual autobiography Deliverance from Error, and his lasting influence on Islamic theology, ethics, law, and Sufism."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Did Al-Ghazali destroy Islamic philosophy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Al-Ghazali's critique profoundly affected the standing of some forms of Peripatetic philosophy, particularly within parts of Sunni intellectual life, but philosophical inquiry continued and developed in many different traditions and regions of the Islamic world."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is The Incoherence of the Philosophers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Incoherence of the Philosophers is Al-Ghazali's major critique of twenty philosophical teachings associated principally with Avicenna and the falasifa. He argues that many of these teachings are not demonstratively proven and condemns three doctrines as incompatible with core Islamic beliefs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Al-Ghazali's philosophy of causation?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Al-Ghazali argued against the claim that causes and effects are necessarily connected in a way that observation can prove. His discussion is often associated with occasionalism and emphasizes God's freedom and the possibility that the regular course of nature can be interrupted."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why did Al-Ghazali turn to Sufism?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "According to his own account in Deliverance from Error, Al-Ghazali underwent an intellectual and spiritual crisis that led him to conclude that disciplined Sufi practice and direct spiritual experience were essential to attaining the kind of certainty and transformation he sought."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between Al-Ghazali and Avicenna?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Avicenna developed a systematic philosophical framework drawing upon Aristotelian and Neoplatonic traditions, while Al-Ghazali critically examined several of its central metaphysical claims and questioned whether they could be established by demonstration. Their disagreement concerned causation, creation, divine knowledge, and the proper limits of philosophical reasoning."
+                }
+              }
+            ]
           }
         ]
       }
@@ -192,7 +326,7 @@
        NAVIGATION
        ===================================================== -->
 
-     <nav class="navbar">
+    <nav class="navbar">
       <a href="index.html" class="logo">
         <h2>Φ Philosophy</h2>
       </a>

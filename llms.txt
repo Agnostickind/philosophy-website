@@ -74,7 +74,7 @@ Use the individual thinker pages for detailed information about a specific philo
 
 The complete thinker collection is organized in the dedicated thinker sitemap:
 
-- [Thinker Sitemap](https://agnostickind.github.io/philosophy-website/thinkers.sitemap.xml)
+- [Thinker Sitemap](https://agnostickind.github.io/philosophy-website/thinkers-sitemap.xml)
 
 Important individual thinker pages include:
 
@@ -114,9 +114,9 @@ The Books page contains sections dedicated to individual works. Use the relevant
 ## Site Maps
 
 - [Main Sitemap](https://agnostickind.github.io/philosophy-website/sitemap.xml): Main site and school pages.
-- [History Sitemap](https://agnostickind.github.io/philosophy-website/history.sitemap.xml): Historical and philosophical tradition pages.
-- [Branches Sitemap](https://agnostickind.github.io/philosophy-website/branches.sitemap.xml): Philosophy branch pages.
-- [Thinkers Sitemap](https://agnostickind.github.io/philosophy-website/thinkers.sitemap.xml): Individual thinker pages.
+- [History Sitemap](https://agnostickind.github.io/philosophy-website/history-sitemap.xml): Historical and philosophical tradition pages.
+- [Branches Sitemap](https://agnostickind.github.io/philosophy-website/branches-sitemap.xml): Philosophy branch pages.
+- [Thinkers Sitemap](https://agnostickind.github.io/philosophy-website/thinkers-sitemap.xml): Individual thinker pages.
 - [Human-Readable Sitemap](https://agnostickind.github.io/philosophy-website/sitemap.md): Curated human- and machine-readable site structure.
 
 ## Agent Guidance

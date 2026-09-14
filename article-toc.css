@@ -1,0 +1,917 @@
+/* =========================================================
+   ARTICLE READING LAYOUT
+   THE GREAT LIBRARY OF PHILOSOPHY
+   ========================================================= */
+
+.article-reading-area {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 270px minmax(0, 1fr);
+
+  align-items: start;
+
+  width: 100%;
+
+  /*
+   * Prevent anything inside the article from forcing
+   * horizontal overflow.
+   */
+  min-width: 0;
+}
+
+
+/* =========================================================
+   ARTICLE CONTENT
+   ========================================================= */
+
+.article-reading-area #main-content {
+  min-width: 0;
+  width: 100%;
+}
+
+
+/* =========================================================
+   TABLE OF CONTENTS
+   ========================================================= */
+
+.article-toc {
+  position: sticky;
+
+  /*
+   * Distance from the top of the viewport.
+   * Adjust this if your main navbar is taller/shorter.
+   */
+  top: 92px;
+
+  align-self: start;
+
+  width: 270px;
+
+  /*
+   * Never let the TOC become taller than the screen.
+   */
+  height: calc(100vh - 110px);
+
+  max-height: calc(100vh - 110px);
+
+  display: flex;
+
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: rgba(18, 21, 24, 0.98);
+
+  border-right:
+    1px solid rgba(255, 255, 255, 0.08);
+
+  z-index: 10;
+}
+
+
+/* =========================================================
+   TOC HEADER
+   ========================================================= */
+
+.article-toc__header {
+  min-height: 58px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 18px 0 22px;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.09);
+}
+
+
+.article-toc__title {
+  font-family:
+    "Cinzel",
+    Georgia,
+    serif;
+
+  font-size: 0.88rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  color: #f2f0ea;
+}
+
+
+.article-toc__hide {
+  border: 0;
+
+  padding: 6px 10px;
+
+  border-radius: 3px;
+
+  background:
+    rgba(255, 255, 255, 0.08);
+
+  color: #d9d5cd;
+
+  font: inherit;
+
+  font-size: 0.78rem;
+
+  cursor: pointer;
+}
+
+
+.article-toc__hide:hover {
+  background:
+    rgba(255, 255, 255, 0.14);
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   TOC SCROLLING AREA
+   ========================================================= */
+
+.article-toc__nav {
+  flex: 1;
+
+  min-height: 0;
+
+  overflow-y: auto;
+
+  overflow-x: hidden;
+
+  /*
+   * Prevent scroll chaining from the TOC into the page.
+   */
+  overscroll-behavior: contain;
+
+  /*
+   * Firefox
+   */
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    rgba(255, 255, 255, 0.35)
+    transparent;
+}
+
+
+/* Chrome / Edge / Safari */
+
+.article-toc__nav::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+.article-toc__nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.article-toc__nav::-webkit-scrollbar-thumb {
+  background:
+    rgba(255, 255, 255, 0.30);
+
+  border-radius: 999px;
+}
+
+
+/* =========================================================
+   TOC LIST
+   ========================================================= */
+
+.article-toc__list {
+  padding: 12px 10px 30px;
+}
+
+
+.article-toc__link {
+  display: block;
+
+  padding: 7px 11px;
+
+  margin: 1px 0;
+
+  border-left:
+    2px solid transparent;
+
+  border-radius: 2px;
+
+  color: #c9c6bf;
+
+  text-decoration: none;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: 0.98rem;
+
+  line-height: 1.25;
+
+  transition:
+    color 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease;
+}
+
+
+.article-toc__link:hover {
+  color: #ffffff;
+
+  background:
+    rgba(255, 255, 255, 0.045);
+}
+
+
+.article-toc__link.is-active {
+  color: #e1b866;
+
+  background:
+    rgba(225, 184, 102, 0.07);
+
+  border-left-color: #b88a44;
+}
+
+
+/* =========================================================
+   TOP LINK
+   ========================================================= */
+
+.article-toc__top {
+  margin-bottom: 8px;
+
+  font-family:
+    "Cinzel",
+    Georgia,
+    serif;
+
+  font-size: 0.78rem;
+
+  letter-spacing: 0.04em;
+
+  color: #e1b866;
+}
+
+
+/* =========================================================
+   ARTICLE ANCHOR OFFSET
+   ========================================================= */
+
+.article-reading-area #main-content > section {
+  scroll-margin-top: 105px;
+}
+
+
+/* =========================================================
+   HIDE / SHOW
+   ========================================================= */
+
+.article-reading-area.toc-hidden {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+
+.article-toc.is-hidden {
+  display: none;
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 1100px) {
+
+  .article-reading-area {
+    grid-template-columns:
+      270px minmax(0, 1fr);
+  }
+
+  .article-toc {
+    display: flex;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1099px) {
+
+  .article-reading-area {
+    display: block;
+  }
+
+  .article-toc {
+    display: none;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .article-reading-area {
+    display: block;
+
+    width: 100%;
+
+    min-width: 0;
+  }
+
+  .article-toc {
+    display: none;
+  }
+
+  .article-reading-area #main-content {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .article-toc__link {
+    transition: none;
+  }
+
+}
+
+/* =========================================================
+   MOBILE + TABLET ARTICLE TOC
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   DEFAULT: MOBILE TOC IS HIDDEN
+   --------------------------------------------------------- */
+
+.mobile-toc-trigger,
+.mobile-toc-overlay,
+.mobile-toc-drawer {
+  display: none;
+}
+
+
+/* =========================================================
+   TABLET + MOBILE
+   ========================================================= */
+
+@media (max-width: 1099px) {
+
+  /* -------------------------------------------------------
+     ARTICLE LAYOUT
+     ------------------------------------------------------- */
+
+  .article-reading-area {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+
+  /* -------------------------------------------------------
+     HIDE DESKTOP SIDEBAR
+     ------------------------------------------------------- */
+
+  .article-toc {
+    display: none !important;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE CONTENTS BUTTON
+     ------------------------------------------------------- */
+
+  .mobile-toc-trigger {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: calc(100% - 32px);
+    max-width: 760px;
+
+    min-height: 50px;
+
+    margin: 18px auto 24px;
+    padding: 0 17px;
+
+    border: 1px solid rgba(184, 138, 68, 0.55);
+    border-radius: 10px;
+
+    background: rgba(18, 21, 24, 0.97);
+
+    color: #f3eee5;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    letter-spacing: 0.04em;
+
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+
+    transition:
+      background 0.2s ease,
+      border-color 0.2s ease,
+      transform 0.15s ease;
+  }
+
+
+  .mobile-toc-trigger:hover {
+    border-color: rgba(184, 138, 68, 0.85);
+    background: rgba(25, 29, 33, 0.98);
+  }
+
+
+  .mobile-toc-trigger:active {
+    transform: scale(0.985);
+  }
+
+
+  .mobile-toc-trigger:focus-visible {
+    outline: 2px solid #b88a44;
+    outline-offset: 3px;
+  }
+
+
+  .mobile-toc-trigger__label {
+    line-height: 1;
+  }
+
+
+  .mobile-toc-trigger__icon {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    font-size: 1.15rem;
+    line-height: 1;
+
+    transition: transform 0.2s ease;
+  }
+
+
+  .mobile-toc-trigger[aria-expanded="true"]
+  .mobile-toc-trigger__icon {
+    transform: rotate(180deg);
+  }
+
+
+  /* =======================================================
+     OVERLAY
+     ======================================================= */
+
+  .mobile-toc-overlay {
+    display: block;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.58);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    z-index: 9990;
+
+    transition:
+      opacity 0.22s ease,
+      visibility 0.22s ease;
+  }
+
+
+  .mobile-toc-overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+
+  /* =======================================================
+     DRAWER
+     ======================================================= */
+
+  .mobile-toc-drawer {
+    display: flex;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: min(390px, 88vw);
+
+    flex-direction: column;
+
+    background: #121518;
+
+    border-right: 1px solid rgba(184, 138, 68, 0.35);
+
+    box-shadow:
+      12px 0 35px rgba(0, 0, 0, 0.35);
+
+    transform: translateX(-105%);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    z-index: 9991;
+
+    transition:
+      transform 0.25s ease,
+      opacity 0.2s ease,
+      visibility 0.25s ease;
+
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+
+  .mobile-toc-drawer.is-open {
+    transform: translateX(0);
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+
+  /* =======================================================
+     DRAWER HEADER
+     ======================================================= */
+
+  .mobile-toc-drawer__header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 64px;
+
+    padding:
+      8px 14px
+      8px 18px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    flex-shrink: 0;
+  }
+
+
+  .mobile-toc-drawer__title {
+    color: #f3eee5;
+
+    font-family: inherit;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+
+    letter-spacing: 0.05em;
+  }
+
+
+  /* -------------------------------------------------------
+     CLOSE BUTTON
+     ------------------------------------------------------- */
+
+  .mobile-toc-drawer__close {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    border: 0;
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #d9d2c7;
+
+    font-family: Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+  }
+
+
+  .mobile-toc-drawer__close:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
+  }
+
+
+  .mobile-toc-drawer__close:focus-visible {
+    outline: 2px solid #b88a44;
+    outline-offset: 2px;
+  }
+
+
+  /* =======================================================
+     SCROLLABLE TOC AREA
+     ======================================================= */
+
+  .mobile-toc-drawer__nav {
+    flex: 1;
+
+    min-height: 0;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 10px 8px 24px;
+
+    overscroll-behavior: contain;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: thin;
+
+    touch-action: pan-y;
+  }
+
+
+  .mobile-toc-drawer__list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+  }
+
+
+  /* =======================================================
+     TOC LINKS
+     ======================================================= */
+
+  .mobile-toc-drawer__link {
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 46px;
+
+    padding: 10px 12px;
+
+    border-left: 2px solid transparent;
+    border-radius: 6px;
+
+    background: transparent;
+
+    color: #c8c1b7;
+
+    text-decoration: none;
+
+    font-family: inherit;
+
+    font-size: 0.92rem;
+    line-height: 1.35;
+
+    overflow-wrap: anywhere;
+
+    transition:
+      background 0.15s ease,
+      color 0.15s ease,
+      border-color 0.15s ease;
+  }
+
+
+  .mobile-toc-drawer__link:hover {
+    background: rgba(255, 255, 255, 0.045);
+    color: #f1eadf;
+  }
+
+
+  .mobile-toc-drawer__link.is-active {
+    border-left-color: #b88a44;
+
+    background: rgba(184, 138, 68, 0.11);
+
+    color: #d8b06d;
+
+    font-weight: 600;
+  }
+
+
+  .mobile-toc-drawer__link:focus-visible {
+    outline: 2px solid #b88a44;
+    outline-offset: -2px;
+  }
+
+
+  /* -------------------------------------------------------
+     TOP LINK
+     ------------------------------------------------------- */
+
+  .mobile-toc-drawer__link.mobile-toc-top {
+    margin-bottom: 6px;
+
+    color: #d8b06d;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-left-color: transparent;
+  }
+
+
+  /* =======================================================
+     PREVENT PAGE SCROLL WHILE DRAWER IS OPEN
+     ======================================================= */
+
+  body.mobile-toc-lock {
+    overflow: hidden;
+  }
+
+
+  /* =======================================================
+     TABLET
+     ======================================================= */
+
+  @media (min-width: 768px) and (max-width: 1099px) {
+
+    .mobile-toc-trigger {
+      max-width: 680px;
+    }
+
+    .mobile-toc-drawer {
+      width: min(420px, 62vw);
+    }
+
+    .mobile-toc-drawer__link {
+      min-height: 48px;
+      font-size: 0.95rem;
+    }
+  }
+
+
+  /* =======================================================
+     PHONES
+     ======================================================= */
+
+  @media (max-width: 767px) {
+
+    .mobile-toc-trigger {
+      width: calc(100% - 24px);
+
+      min-height: 50px;
+
+      margin-top: 14px;
+      margin-bottom: 20px;
+
+      padding-left: 15px;
+      padding-right: 12px;
+    }
+
+    .mobile-toc-drawer {
+      width: min(390px, 91vw);
+    }
+
+    .mobile-toc-drawer__header {
+      min-height: 62px;
+
+      padding-left: 16px;
+    }
+
+    .mobile-toc-drawer__nav {
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+
+    .mobile-toc-drawer__link {
+      min-height: 46px;
+
+      padding:
+        10px 12px;
+
+      font-size: 0.91rem;
+    }
+  }
+
+
+  /* =======================================================
+     SMALL PHONES
+     ======================================================= */
+
+  @media (max-width: 480px) {
+
+    .mobile-toc-drawer {
+      width: 91vw;
+    }
+
+    .mobile-toc-trigger {
+      font-size: 0.9rem;
+    }
+
+    .mobile-toc-drawer__title {
+      font-size: 1rem;
+    }
+  }
+
+
+  /* =======================================================
+     VERY SMALL PHONES
+     ======================================================= */
+
+  @media (max-width: 360px) {
+
+    .mobile-toc-drawer {
+      width: 94vw;
+    }
+
+    .mobile-toc-trigger {
+      width: calc(100% - 20px);
+
+      min-height: 48px;
+
+      margin-bottom: 16px;
+    }
+
+    .mobile-toc-drawer__link {
+      font-size: 0.88rem;
+    }
+  }
+
+
+  /* =======================================================
+     LANDSCAPE PHONES
+     ======================================================= */
+
+  @media (max-height: 500px) and (orientation: landscape) {
+
+    .mobile-toc-drawer__header {
+      min-height: 54px;
+    }
+
+    .mobile-toc-drawer__link {
+      min-height: 42px;
+
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+
+
+  /* =======================================================
+     REDUCED MOTION
+     ======================================================= */
+
+  @media (prefers-reduced-motion: reduce) {
+
+    .mobile-toc-trigger,
+    .mobile-toc-trigger__icon,
+    .mobile-toc-overlay,
+    .mobile-toc-drawer,
+    .mobile-toc-drawer__link {
+      transition: none;
+    }
+  }
+}

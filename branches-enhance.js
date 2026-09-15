@@ -1,7 +1,8 @@
 /* =========================================================
    LIBRARY OF PHILOSOPHY â€” branches page enhancement
    Load AFTER script.js:
-     <script src="script.js" defer></script>
+      <script src="script.js" defer></script>
+     <script src="article-toc.js" defer></script>
      <script src="home-enhance.js" defer></script>
      <script src="branches-enhance.js" defer></script>
    Adds: skip link, reading progress, scroll reveal,

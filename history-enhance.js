@@ -5,7 +5,8 @@
 
    Load AFTER script.js:
 
-       <script src="script.js" defer></script>
+        <script src="script.js" defer></script>
+     <script src="article-toc.js" defer></script>
        <script src="history-enhance.js" defer></script>
 
    Adds:

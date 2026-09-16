@@ -31,10 +31,12 @@
       content="Explore Michel Foucault's philosophy of power, knowledge, and discourse — from the Panopticon and biopower to his lasting influence on modern thought."
     />
 
-    <meta
-      name="keywords"
-      content="Michel Foucault, Michel Foucault philosophy, Foucault philosophy, Michel Foucault ideas, Michel Foucault theory, Foucault power, Foucault power and knowledge, power/knowledge Foucault, Foucault discourse, Foucault genealogy, Foucault archaeology, Foucault Panopticon, Foucault surveillance, Foucault biopower, Foucault biopolitics, Foucault governmentality, Discipline and Punish, The History of Sexuality, Madness and Civilization, The Order of Things, French philosophy, continental philosophy, poststructuralism, philosophy of power, philosophy of knowledge, social theory"
-    />
+    <!--
+      NOTE: the meta "keywords" tag has been removed.
+      No major search engine has used it for ranking since ~2009;
+      it added no SEO value and only exposed the full internal
+      keyword list to anyone viewing page source.
+    -->
 
     <meta name="author" content="Kavya Jain" />
 
@@ -73,6 +75,16 @@
       content="https://agnostickind.github.io/philosophy-website/images/michel-foucault.jpg"
     />
 
+    <!--
+      Added: explicit image dimensions + type so platforms (Facebook,
+      LinkedIn, Slack, etc.) can lay out the preview card without
+      first fetching the image to inspect it. Update width/height
+      below if your actual file's pixel dimensions differ.
+    -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+
     <meta
       property="og:image:alt"
       content="Portrait of Michel Foucault, French philosopher, historian of ideas, and social theorist"
@@ -106,7 +118,7 @@
       content="Portrait of Michel Foucault, French philosopher and social theorist"
     />
 
-    <!-- ================= STYLESHEETS ================= -->
+    <!-- ================= STYLESHEETS (unchanged, left as-is) ================= -->
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="article-toc.css" />
@@ -201,18 +213,18 @@
               "Post-structuralism",
               "Modern philosophy"
             ],
-            "sameAs": [
-              "https://en.wikipedia.org/wiki/Michel_Foucault",
-              "https://www.wikidata.org/wiki/Q19837",
-              "https://plato.stanford.edu/entries/foucault/",
-              "https://www.britannica.com/biography/Michel-Foucault"
-            ],
             "notableWork": [
               "Madness and Civilization",
               "The Order of Things",
               "The Archaeology of Knowledge",
               "Discipline and Punish",
               "The History of Sexuality"
+            ],
+            "sameAs": [
+              "https://en.wikipedia.org/wiki/Michel_Foucault",
+              "https://www.wikidata.org/wiki/Q19837",
+              "https://plato.stanford.edu/entries/foucault/",
+              "https://www.britannica.com/biography/Michel-Foucault"
             ],
             "image": {
               "@id": "https://agnostickind.github.io/philosophy-website/michel-foucault.html#image"
@@ -258,7 +270,12 @@
             "@id": "https://agnostickind.github.io/philosophy-website/#website",
             "url": "https://agnostickind.github.io/philosophy-website/",
             "name": "The Great Library of Philosophy",
-            "description": "Explore over 2,500 years of philosophy, from ancient thought to modern philosophy."
+            "description": "Explore over 2,500 years of philosophy, from ancient thought to modern philosophy.",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://agnostickind.github.io/philosophy-website/search.html?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
           },
 
           {
@@ -383,6 +400,22 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Foucault influenced modern philosophy by transforming discussions about power, knowledge, institutions, sexuality, identity, and history. His work continues to influence philosophy, sociology, political theory, gender studies, cultural studies, history, and the social sciences."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you pronounce Michel Foucault?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Michel Foucault is pronounced mee-SHEL foo-KOH. In French, the final l and t in Foucault are silent, so the name ends on an open oh sound rather than a hard consonant."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What Michel Foucault book should I read first?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most readers are advised to start with Discipline and Punish or The History of Sexuality, Volume I, his most widely taught and accessible works, before moving on to earlier studies such as Madness and Civilization."
                 }
               }
             ]
@@ -959,6 +992,33 @@
         <div class="philosophy-divider"></div>
 
         <!-- =====================================================
+         PRONUNCIATION
+         ===================================================== -->
+
+        <section class="narrative-block" id="pronunciation">
+          <h2>How to Pronounce Michel Foucault</h2>
+
+          <p>
+            <strong>Michel Foucault</strong> is pronounced
+            <strong>mee-SHEL foo-KOH</strong>, or in the International Phonetic
+            Alphabet, <em>[miʃɛl fuko]</em>. The first name is closer to
+            "mee-SHEL" than the English "Michael," and the surname "Foucault"
+            ends on an open "oh" sound rather than a hard consonant, since
+            French does not pronounce the final "l" or "t" in this word.
+          </p>
+
+          <p>
+            A common mistake among English speakers is pronouncing the surname
+            as "foo-CAWLT," fully sounding the ending. In standard French
+            pronunciation, both the "l" and the "t" at the end of "Foucault" are
+            silent, so the name should end softly on "-KOH" rather than a hard
+            stop.
+          </p>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- =====================================================
          EARLY LIFE
          ===================================================== -->
 
@@ -966,14 +1026,17 @@
           <h2>Michel Foucault's Early Life and Education</h2>
 
           <figure class="narrative-figure">
-            <img
-              src="images/michel-foucault.jpg"
-              alt="Portrait of Michel Foucault, influential French philosopher and social theorist"
-              width="400"
-              height="500"
-              loading="lazy"
-              decoding="async"
-            />
+            <picture>
+              <source srcset="images/michel-foucault.webp" type="image/webp" />
+              <img
+                src="images/michel-foucault.jpg"
+                alt="Portrait of Michel Foucault, influential French philosopher and social theorist"
+                width="400"
+                height="500"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
 
             <figcaption>
               Michel Foucault became one of the most influential philosophers of
@@ -1790,6 +1853,16 @@
 
         <section class="narrative-block" id="discipline-and-punish">
           <h2>Michel Foucault's Discipline and Punish</h2>
+
+          <p>
+            <strong>Quick answer:</strong> <em>Discipline and Punish</em>
+            (1975) is Michel Foucault's genealogical study of how modern
+            punishment shifted from public physical torture to discreet
+            disciplinary institutions such as the prison. Its central argument
+            is that modern power operates less through visible force and more
+            through constant observation, examination, and normalization — a
+            shift Foucault illustrates through Jeremy Bentham's Panopticon.
+          </p>
 
           <p>
             <strong><em>Discipline and Punish</em></strong> is one of Michel
@@ -2758,7 +2831,20 @@
          ===================================================== -->
 
         <section class="narrative-block" id="works">
-          <h2>Major Works of Michel Foucault</h2>
+          <h2>Michel Foucault Books: The Complete Reading List</h2>
+
+          <p>
+            Readers approaching <strong>Michel Foucault's books</strong> for the
+            first time often ask where to start. A commonly recommended order is
+            <em>Discipline and Punish</em> or
+            <em>The History of Sexuality, Volume I</em> first, since these are
+            his most widely taught and accessible works, followed by
+            <em>Madness and Civilization</em> and
+            <em>The Order of Things</em> for his earlier historical studies, and
+            <em>The Archaeology of Knowledge</em> for readers specifically
+            interested in his method. Below is the complete list of his major
+            books in order of original publication.
+          </p>
 
           <ul class="plain-list">
             <li>
@@ -3249,6 +3335,24 @@
             political theory, gender studies, cultural studies, history, and the
             social sciences.
           </p>
+
+          <h3>How do you pronounce Michel Foucault?</h3>
+
+          <p>
+            Michel Foucault is pronounced "mee-SHEL foo-KOH." In French, the
+            final "l" and "t" in "Foucault" are silent, so the name ends on an
+            open "oh" sound rather than a hard consonant.
+          </p>
+
+          <h3>What Michel Foucault book should I read first?</h3>
+
+          <p>
+            Most readers are advised to start with
+            <em>Discipline and Punish</em> or
+            <em>The History of Sexuality, Volume I</em>, his most widely taught
+            and accessible works, before moving on to earlier studies such as
+            <em>Madness and Civilization</em>.
+          </p>
         </section>
 
         <div class="philosophy-divider"></div>
@@ -3491,7 +3595,7 @@
     </footer>
 
     <!-- =====================================================
-       SCRIPTS
+       SCRIPTS (unchanged, left as-is)
        ===================================================== -->
 
     <script src="script.js" defer></script>

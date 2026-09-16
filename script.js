@@ -13,200 +13,296 @@ document.addEventListener('DOMContentLoaded', () => {
 1. MOBILE MENU + HISTORY SUBMENU
 --------------------------------------------------------- */
 
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
 
-if (menuToggle && navLinks) {
+    if (menuToggle && navLinks) {
 
 
-    /* -----------------------------------------------------
-       CLOSE ALL MOBILE MEGA MENUS
-       ----------------------------------------------------- */
+        /* -----------------------------------------------------
+           CLOSE ALL MOBILE MEGA MENUS
+           ----------------------------------------------------- */
 
-    const closeMegaMenus = () => {
+        const closeMegaMenus = () => {
 
-        document
-            .querySelectorAll('.nav-mega.mobile-open')
-            .forEach((mega) => {
+            document
+                .querySelectorAll('.nav-mega.mobile-open')
+                .forEach((mega) => {
 
-                mega.classList.remove('mobile-open');
-
-
-                const toggle =
-                    mega.querySelector('.mega-mobile-toggle');
+                    mega.classList.remove('mobile-open');
 
 
-                if (toggle) {
-
-                    toggle.setAttribute(
-                        'aria-expanded',
-                        'false'
-                    );
-
-                }
-
-            });
-
-    };
+                    const toggle =
+                        mega.querySelector('.mega-mobile-toggle');
 
 
-    /* -----------------------------------------------------
+                    if (toggle) {
+
+                        toggle.setAttribute(
+                            'aria-expanded',
+                            'false'
+                        );
+
+                    }
+
+                });
+
+        };
+
+
+        /* -----------------------------------------------------
        CLOSE MAIN MOBILE MENU
        ----------------------------------------------------- */
 
-    const closeMenu = () => {
+        const closeMenu = () => {
 
-        navLinks.classList.remove('open');
+            navLinks.classList.remove('open');
 
-        menuToggle.classList.remove('open');
+            menuToggle.classList.remove('open');
 
-        menuToggle.setAttribute(
-            'aria-expanded',
-            'false'
-        );
+            menuToggle.setAttribute(
+                'aria-expanded',
+                'false'
+            );
 
-
-        /* Also close History submenu */
-
-        closeMegaMenus();
-
-    };
-
-
-    /* -----------------------------------------------------
-       TOGGLE MAIN HAMBURGER MENU
-       ----------------------------------------------------- */
-
-    const toggleMenu = () => {
-
-        const isOpen =
-            navLinks.classList.toggle('open');
-
-
-        menuToggle.classList.toggle(
-            'open',
-            isOpen
-        );
-
-
-        menuToggle.setAttribute(
-            'aria-expanded',
-            String(isOpen)
-        );
-
-
-        /* When closing the main menu,
-           close History too */
-
-        if (!isOpen) {
-
+            /* Also close existing mega menus */
             closeMegaMenus();
 
-        }
-
-    };
+        };
 
 
-    /* -----------------------------------------------------
-       HAMBURGER BUTTON
-       ----------------------------------------------------- */
+        /* -----------------------------------------------------
+           TOGGLE MAIN HAMBURGER MENU
+           ----------------------------------------------------- */
 
-    menuToggle.addEventListener(
-        'click',
-        toggleMenu
-    );
+        const toggleMenu = () => {
 
+            const isOpen =
+                navLinks.classList.toggle('open');
 
-    /* -----------------------------------------------------
-       HISTORY MOBILE EXPAND / COLLAPSE
-       ----------------------------------------------------- */
+            menuToggle.classList.toggle(
+                'open',
+                isOpen
+            );
 
-    const megaToggles =
-        navLinks.querySelectorAll(
-            '.mega-mobile-toggle'
-        );
+            menuToggle.setAttribute(
+                'aria-expanded',
+                String(isOpen)
+            );
 
-
-    megaToggles.forEach((toggle) => {
-
-        toggle.addEventListener(
-            'click',
-            (event) => {
-
-                event.preventDefault();
-
-
-                /* Only activate this behaviour
-                   at the mobile navbar breakpoint */
-
-                if (window.innerWidth > 1100) {
-                    return;
-                }
-
-
-                const mega =
-                    toggle.closest('.nav-mega');
-
-
-                if (!mega) return;
-
-
-                const isOpen =
-                    mega.classList.contains(
-                        'mobile-open'
-                    );
-
-
-                /* Close all other mega menus */
+            /* When closing the main menu,
+               close existing mega menus */
+            if (!isOpen) {
 
                 closeMegaMenus();
 
+            }
 
-                /* Open this one if it was closed */
-
-                if (!isOpen) {
-
-                    mega.classList.add(
-                        'mobile-open'
-                    );
+        };
 
 
-                    toggle.setAttribute(
+        /* -----------------------------------------------------
+           HAMBURGER BUTTON — CLICK
+           ----------------------------------------------------- */
+
+        menuToggle.addEventListener(
+            'click',
+            toggleMenu
+        );
+
+
+        /* -----------------------------------------------------
+           HAMBURGER — HOVER BEHAVIOR
+           Desktop mouse/trackpad only
+           ----------------------------------------------------- */
+
+        const hoverDevice = window.matchMedia(
+            '(hover: hover) and (pointer: fine)'
+        );
+
+        if (hoverDevice.matches) {
+
+            /* Open when hovering over hamburger */
+            menuToggle.addEventListener(
+                'mouseenter',
+                () => {
+
+                    navLinks.classList.add('open');
+
+                    menuToggle.classList.add('open');
+
+                    menuToggle.setAttribute(
                         'aria-expanded',
                         'true'
                     );
 
                 }
-
-            }
-        );
-
-    });
+            );
 
 
-    /* -----------------------------------------------------
-       CLOSE MOBILE MENU AFTER CLICKING A LINK
-       ----------------------------------------------------- */
-    navLinks.querySelectorAll('a').forEach((link) => {
+            /*
+               Keep the menu open while the mouse is
+               inside either the hamburger or the
+               mobile navigation.
+            */
+            menuToggle.addEventListener(
+                'mouseleave',
+                () => {
 
-        link.addEventListener(
-            'click',
+                    /*
+                       Small delay allows the pointer to
+                       move from the hamburger into the menu.
+                    */
+
+                    setTimeout(() => {
+
+                        if (
+                            !menuToggle.matches(':hover') &&
+                            !navLinks.matches(':hover')
+                        ) {
+
+                            closeMenu();
+
+                        }
+
+                    }, 100);
+
+                }
+            );
+
+
+            navLinks.addEventListener(
+                'mouseleave',
+                () => {
+
+                    setTimeout(() => {
+
+                        if (
+                            !menuToggle.matches(':hover') &&
+                            !navLinks.matches(':hover')
+                        ) {
+
+                            closeMenu();
+
+                        }
+
+                    }, 100);
+
+                }
+            );
+
+        }
+
+        /* -----------------------------------------------------
+           HISTORY MOBILE EXPAND / COLLAPSE
+           ----------------------------------------------------- */
+
+        const megaToggles =
+            navLinks.querySelectorAll(
+                '.mega-mobile-toggle'
+            );
+
+
+        megaToggles.forEach((toggle) => {
+
+            toggle.addEventListener(
+                'click',
+                (event) => {
+
+                    event.preventDefault();
+
+
+                    /* Only activate this behaviour
+                       at the mobile navbar breakpoint */
+
+                    if (window.innerWidth > 1100) {
+                        return;
+                    }
+
+
+                    const mega =
+                        toggle.closest('.nav-mega');
+
+
+                    if (!mega) return;
+
+
+                    const isOpen =
+                        mega.classList.contains(
+                            'mobile-open'
+                        );
+
+
+                    /* Close all other mega menus */
+
+                    closeMegaMenus();
+
+
+                    /* Open this one if it was closed */
+
+                    if (!isOpen) {
+
+                        mega.classList.add(
+                            'mobile-open'
+                        );
+
+
+                        toggle.setAttribute(
+                            'aria-expanded',
+                            'true'
+                        );
+
+                    }
+
+                }
+            );
+
+        });
+
+
+        /* -----------------------------------------------------
+           CLOSE MOBILE MENU AFTER CLICKING A LINK
+           ----------------------------------------------------- */
+        navLinks.querySelectorAll('a').forEach((link) => {
+
+            link.addEventListener(
+                'click',
+                () => {
+
+                    /* Do NOT close the menu when clicking
+                       the History submenu toggle */
+
+                    if (
+                        link.classList.contains(
+                            'mega-mobile-toggle'
+                        )
+                    ) {
+                        return;
+                    }
+
+
+                    if (window.innerWidth <= 1100) {
+
+                        closeMenu();
+
+                    }
+
+                }
+            );
+
+        });
+
+
+        /* -----------------------------------------------------
+           RESET WHEN RETURNING TO DESKTOP
+           ----------------------------------------------------- */
+
+        window.addEventListener(
+            'resize',
             () => {
 
-                /* Do NOT close the menu when clicking
-                   the History submenu toggle */
-
-                if (
-                    link.classList.contains(
-                        'mega-mobile-toggle'
-                    )
-                ) {
-                    return;
-                }
-
-
-                if (window.innerWidth <= 1100) {
+                if (window.innerWidth > 1100) {
 
                     closeMenu();
 
@@ -215,27 +311,7 @@ if (menuToggle && navLinks) {
             }
         );
 
-    });
-
-
-    /* -----------------------------------------------------
-       RESET WHEN RETURNING TO DESKTOP
-       ----------------------------------------------------- */
-
-    window.addEventListener(
-        'resize',
-        () => {
-
-            if (window.innerWidth > 1100) {
-
-                closeMenu();
-
-            }
-
-        }
-    );
-
-}
+    }
     /* ---------------------------------------------------------
        2. ACTIVE NAV LINK
        Highlights whichever nav/footer link matches the

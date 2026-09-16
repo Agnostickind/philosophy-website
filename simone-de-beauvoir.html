@@ -108,7 +108,7 @@
 
     <!-- ================= STYLESHEETS ================= -->
 
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="article-toc.css" />
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
@@ -372,10 +372,10 @@
       }
     </script>
     <link
-    rel="describedby"
-    href="https://agnostickind.github.io/philosophy-website/llms.txt"
-  >
-</head>
+      rel="describedby"
+      href="https://agnostickind.github.io/philosophy-website/llms.txt"
+    />
+  </head>
 
   <body>
     <!-- =====================================================
@@ -665,12 +665,11 @@
         </div>
 
         <a href="schools.html">Schools</a>
-       <a href="books.html">Books</a>
+        <a href="books.html">Books</a>
         <a href="world-literature.html">Literature</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </div>
-
 
       <div class="nav-tools">
         <!-- SEARCH -->
@@ -770,1977 +769,2053 @@
       </div>
     </header>
 
-    <main id="main-content" tabindex="-1">
-      <!-- =====================================================
+    <div class="article-reading-area">
+      <!-- =========================================================
+     ARTICLE TABLE OF CONTENTS
+     ========================================================= -->
+
+      <!-- Desktop TOC -->
+      <aside class="article-toc" aria-label="Article contents">
+        <div class="article-toc__header">
+          <span class="article-toc__title">Contents</span>
+
+          <button
+            type="button"
+            class="article-toc__hide"
+            aria-label="Hide article contents"
+          >
+            Hide
+          </button>
+        </div>
+
+        <nav class="article-toc__nav" aria-label="Article sections">
+          <div class="article-toc__list"></div>
+        </nav>
+      </aside>
+
+      <!-- Mobile TOC trigger -->
+      <button
+        type="button"
+        class="mobile-toc-trigger"
+        aria-expanded="false"
+        aria-controls="mobile-toc-drawer"
+      >
+        <span>Contents</span>
+        <span class="mobile-toc-trigger__chevron" aria-hidden="true">⌄</span>
+      </button>
+
+      <!-- Mobile TOC overlay -->
+      <div class="mobile-toc-overlay" hidden></div>
+
+      <!-- Mobile TOC drawer -->
+      <aside
+        id="mobile-toc-drawer"
+        class="mobile-toc-drawer"
+        aria-label="Article contents"
+        aria-hidden="true"
+      >
+        <div class="mobile-toc-drawer__header">
+          <span class="mobile-toc-drawer__title">Contents</span>
+
+          <button
+            type="button"
+            class="mobile-toc-drawer__close"
+            aria-label="Close article contents"
+          >
+            ×
+          </button>
+        </div>
+
+        <nav class="mobile-toc-drawer__nav" aria-label="Article sections">
+          <div class="mobile-toc-drawer__list"></div>
+        </nav>
+      </aside>
+
+      <main id="main-content" tabindex="-1">
+        <!-- =====================================================
          INTRODUCTION
          ===================================================== -->
 
-      <section class="about-home">
-        <h2>Who Was Simone de Beauvoir?</h2>
+        <section class="about-home">
+          <h2>Who Was Simone de Beauvoir?</h2>
 
-        <p>
-          <strong>Simone de Beauvoir</strong> (1908–1986) was a French
-          philosopher, writer, intellectual, and one of the most influential
-          figures in twentieth-century existentialism and feminist philosophy.
-          Her work examined freedom, responsibility, oppression, gender,
-          embodiment, relationships, and the conditions under which human beings
-          attempt to create meaningful lives.
-        </p>
+          <p>
+            <strong>Simone de Beauvoir</strong> (1908–1986) was a French
+            philosopher, writer, intellectual, and one of the most influential
+            figures in twentieth-century existentialism and feminist philosophy.
+            Her work examined freedom, responsibility, oppression, gender,
+            embodiment, relationships, and the conditions under which human
+            beings attempt to create meaningful lives.
+          </p>
 
-        <p>
-          Beauvoir is particularly famous for
-          <em>The Second Sex</em>, her major philosophical and feminist study of
-          women's historical, social, cultural, and existential situation.
-          Published in 1949, the work became a foundational text for modern
-          feminist thought and transformed philosophical discussions about
-          gender, identity, embodiment, social roles, and women's freedom.
-        </p>
+          <p>
+            Beauvoir is particularly famous for
+            <em>The Second Sex</em>, her major philosophical and feminist study
+            of women's historical, social, cultural, and existential situation.
+            Published in 1949, the work became a foundational text for modern
+            feminist thought and transformed philosophical discussions about
+            gender, identity, embodiment, social roles, and women's freedom.
+          </p>
 
-        <p>
-          Her philosophy developed in close conversation with existentialism.
-          Beauvoir argued that human beings are situated within concrete
-          historical and social conditions while still possessing the capacity
-          for freedom and choice. Her philosophical project therefore connects
-          existentialist questions about freedom and responsibility with an
-          analysis of oppression and unequal social structures.
-        </p>
+          <p>
+            Her philosophy developed in close conversation with existentialism.
+            Beauvoir argued that human beings are situated within concrete
+            historical and social conditions while still possessing the capacity
+            for freedom and choice. Her philosophical project therefore connects
+            existentialist questions about freedom and responsibility with an
+            analysis of oppression and unequal social structures.
+          </p>
 
-        <p>
-          Beauvoir's importance extends beyond feminism. Her writings explore
-          ethics, phenomenology, existentialism, political responsibility,
-          aging, death, love, sexuality, and the human condition. She remains a
-          major figure in modern philosophy because she connected abstract
-          questions about freedom with the lived experiences of embodied human
-          beings.
-        </p>
-      </section>
+          <p>
+            Beauvoir's importance extends beyond feminism. Her writings explore
+            ethics, phenomenology, existentialism, political responsibility,
+            aging, death, love, sexuality, and the human condition. She remains
+            a major figure in modern philosophy because she connected abstract
+            questions about freedom with the lived experiences of embodied human
+            beings.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          QUICK FACTS
          ===================================================== -->
 
-      <section class="narrative-block" id="quick-facts">
-        <h2>Simone de Beauvoir: Quick Facts</h2>
+        <section class="narrative-block" id="quick-facts">
+          <h2>Simone de Beauvoir: Quick Facts</h2>
 
-        <ul class="plain-list">
-          <li>
-            <strong>Full name</strong> — Simone Lucie Ernestine Marie Bertrand
-            de Beauvoir
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>Full name</strong> — Simone Lucie Ernestine Marie Bertrand
+              de Beauvoir
+            </li>
 
-          <li><strong>Born</strong> — 9 January 1908</li>
+            <li><strong>Born</strong> — 9 January 1908</li>
 
-          <li><strong>Died</strong> — 14 April 1986</li>
+            <li><strong>Died</strong> — 14 April 1986</li>
 
-          <li><strong>Nationality</strong> — French</li>
+            <li><strong>Nationality</strong> — French</li>
 
-          <li>
-            <strong>Known for</strong> — Existentialism, feminist philosophy,
-            ethics, literature, and social criticism
-          </li>
+            <li>
+              <strong>Known for</strong> — Existentialism, feminist philosophy,
+              ethics, literature, and social criticism
+            </li>
 
-          <li>
-            <strong>Major philosophical subjects</strong> — Freedom, ethics,
-            oppression, gender, embodiment, ambiguity, the Other, and human
-            existence
-          </li>
+            <li>
+              <strong>Major philosophical subjects</strong> — Freedom, ethics,
+              oppression, gender, embodiment, ambiguity, the Other, and human
+              existence
+            </li>
 
-          <li>
-            <strong>Most famous philosophical work</strong> —
-            <em>The Second Sex</em>
-          </li>
+            <li>
+              <strong>Most famous philosophical work</strong> —
+              <em>The Second Sex</em>
+            </li>
 
-          <li>
-            <strong>Major ethical work</strong> —
-            <em>The Ethics of Ambiguity</em>
-          </li>
+            <li>
+              <strong>Major ethical work</strong> —
+              <em>The Ethics of Ambiguity</em>
+            </li>
 
-          <li>
-            <strong>Other major work</strong> —
-            <em>Pyrrhus and Cineas</em>
-          </li>
+            <li>
+              <strong>Other major work</strong> —
+              <em>Pyrrhus and Cineas</em>
+            </li>
 
-          <li>
-            <strong>Philosophical tradition</strong> — Existentialism,
-            phenomenology, feminist philosophy
-          </li>
+            <li>
+              <strong>Philosophical tradition</strong> — Existentialism,
+              phenomenology, feminist philosophy
+            </li>
 
-          <li>
-            <strong>Associated thinkers</strong> — Jean-Paul Sartre, Maurice
-            Merleau-Ponty, and other twentieth-century French intellectuals
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>Associated thinkers</strong> — Jean-Paul Sartre, Maurice
+              Merleau-Ponty, and other twentieth-century French intellectuals
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          EARLY LIFE
          ===================================================== -->
 
-      <section class="narrative-block" id="early-life">
-        <h2>Simone de Beauvoir's Early Life and Education</h2>
+        <section class="narrative-block" id="early-life">
+          <h2>Simone de Beauvoir's Early Life and Education</h2>
 
-        <figure class="narrative-figure">
-          <img
-            src="images/simone.jpg"
-            alt="Simone de Beauvoir, French existentialist philosopher and feminist thinker"
-            loading="lazy"
-            decoding="async"
-          />
+          <figure class="narrative-figure">
+            <img
+              src="images/simone.jpg"
+              alt="Simone de Beauvoir, French existentialist philosopher and feminist thinker"
+              loading="lazy"
+              decoding="async"
+            />
 
-          <figcaption>
-            Simone de Beauvoir became one of the most influential philosophers
-            and feminist intellectuals of the twentieth century.
-          </figcaption>
-        </figure>
+            <figcaption>
+              Simone de Beauvoir became one of the most influential philosophers
+              and feminist intellectuals of the twentieth century.
+            </figcaption>
+          </figure>
 
-        <p>
-          Simone de Beauvoir was born in Paris in 1908 and grew up in a
-          relatively traditional Catholic family. Her early education exposed
-          her to literature, philosophy, religion, and questions concerning
-          morality. As she grew older, she increasingly questioned the religious
-          assumptions that had shaped her childhood.
-        </p>
+          <p>
+            Simone de Beauvoir was born in Paris in 1908 and grew up in a
+            relatively traditional Catholic family. Her early education exposed
+            her to literature, philosophy, religion, and questions concerning
+            morality. As she grew older, she increasingly questioned the
+            religious assumptions that had shaped her childhood.
+          </p>
 
-        <p>
-          Beauvoir developed an intense interest in philosophy and pursued
-          higher education in Paris. She studied philosophy at the Sorbonne and
-          prepared for the demanding agrégation examination in philosophy. Her
-          academic training gave her a strong foundation in philosophical
-          history while her later work increasingly challenged established
-          assumptions about human nature and social identity.
-        </p>
+          <p>
+            Beauvoir developed an intense interest in philosophy and pursued
+            higher education in Paris. She studied philosophy at the Sorbonne
+            and prepared for the demanding agrégation examination in philosophy.
+            Her academic training gave her a strong foundation in philosophical
+            history while her later work increasingly challenged established
+            assumptions about human nature and social identity.
+          </p>
 
-        <p>
-          In 1929, Beauvoir successfully completed the agrégation in philosophy,
-          ranking second. Jean-Paul Sartre ranked first that year. The two
-          philosophers subsequently developed a lifelong intellectual
-          relationship that became one of the most famous partnerships in
-          twentieth-century French intellectual history.
-        </p>
+          <p>
+            In 1929, Beauvoir successfully completed the agrégation in
+            philosophy, ranking second. Jean-Paul Sartre ranked first that year.
+            The two philosophers subsequently developed a lifelong intellectual
+            relationship that became one of the most famous partnerships in
+            twentieth-century French intellectual history.
+          </p>
 
-        <p>
-          Beauvoir's education was important to the development of her
-          philosophical method. She combined rigorous philosophical argument
-          with literature, biography, phenomenological description, and
-          attention to concrete human experience. This combination later became
-          particularly important in her analyses of women's lives and social
-          conditions.
-        </p>
-      </section>
+          <p>
+            Beauvoir's education was important to the development of her
+            philosophical method. She combined rigorous philosophical argument
+            with literature, biography, phenomenological description, and
+            attention to concrete human experience. This combination later
+            became particularly important in her analyses of women's lives and
+            social conditions.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          PARIS
          ===================================================== -->
 
-      <section class="narrative-block" id="paris">
-        <h2>Simone de Beauvoir and the Intellectual World of Paris</h2>
+        <section class="narrative-block" id="paris">
+          <h2>Simone de Beauvoir and the Intellectual World of Paris</h2>
 
-        <p>
-          Beauvoir's intellectual development took place within the rich
-          philosophical, literary, and political culture of twentieth-century
-          Paris. French intellectual life during this period was shaped by major
-          debates concerning phenomenology, existentialism, Marxism, literature,
-          religion, politics, and the meaning of human freedom. Philosophy was
-          not confined to universities alone but was closely connected with
-          novels, journals, theatres, publishing houses, and public political
-          debate.
-        </p>
+          <p>
+            Beauvoir's intellectual development took place within the rich
+            philosophical, literary, and political culture of twentieth-century
+            Paris. French intellectual life during this period was shaped by
+            major debates concerning phenomenology, existentialism, Marxism,
+            literature, religion, politics, and the meaning of human freedom.
+            Philosophy was not confined to universities alone but was closely
+            connected with novels, journals, theatres, publishing houses, and
+            public political debate.
+          </p>
 
-        <p>
-          Beauvoir became part of an important intellectual circle that included
-          <strong>Jean-Paul Sartre</strong>, as well as writers, philosophers,
-          and political thinkers associated with postwar French intellectual
-          life. Through teaching, writing, publishing, and later her work with
-          the journal <em>Les Temps Modernes</em>, she participated directly in
-          philosophical and political discussions that extended far beyond
-          academic philosophy.
-        </p>
+          <p>
+            Beauvoir became part of an important intellectual circle that
+            included
+            <strong>Jean-Paul Sartre</strong>, as well as writers, philosophers,
+            and political thinkers associated with postwar French intellectual
+            life. Through teaching, writing, publishing, and later her work with
+            the journal <em>Les Temps Modernes</em>, she participated directly
+            in philosophical and political discussions that extended far beyond
+            academic philosophy.
+          </p>
 
-        <p>
-          The historical circumstances through which Beauvoir lived also deeply
-          influenced her thought. She experienced the First World War during
-          childhood, the political crises of interwar Europe, the rise of
-          fascism, the German occupation of France during the Second World War,
-          and later political struggles concerning colonialism and women's
-          liberation. These events reinforced her conviction that philosophy
-          must confront the concrete historical world rather than retreat into
-          purely abstract speculation.
-        </p>
+          <p>
+            The historical circumstances through which Beauvoir lived also
+            deeply influenced her thought. She experienced the First World War
+            during childhood, the political crises of interwar Europe, the rise
+            of fascism, the German occupation of France during the Second World
+            War, and later political struggles concerning colonialism and
+            women's liberation. These events reinforced her conviction that
+            philosophy must confront the concrete historical world rather than
+            retreat into purely abstract speculation.
+          </p>
 
-        <p>
-          This intellectual and historical environment strengthened Beauvoir's
-          interest in <strong>situated freedom</strong>. For her, human beings
-          make choices, create projects, and assume responsibilities, but they
-          always do so within conditions they did not entirely choose. Freedom
-          therefore exists within a world of historical circumstances, social
-          institutions, economic realities, relationships, and embodied
-          existence.
-        </p>
-      </section>
+          <p>
+            This intellectual and historical environment strengthened Beauvoir's
+            interest in <strong>situated freedom</strong>. For her, human beings
+            make choices, create projects, and assume responsibilities, but they
+            always do so within conditions they did not entirely choose. Freedom
+            therefore exists within a world of historical circumstances, social
+            institutions, economic realities, relationships, and embodied
+            existence.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          EXISTENTIALISM
          ===================================================== -->
 
-      <section class="narrative-block" id="existentialism">
-        <h2>Simone de Beauvoir and Existentialism</h2>
+        <section class="narrative-block" id="existentialism">
+          <h2>Simone de Beauvoir and Existentialism</h2>
 
-        <p>
-          <strong>Existentialism</strong> is central to Simone de Beauvoir's
-          philosophy. Existentialist thought investigates concrete human
-          existence and raises questions concerning freedom, responsibility,
-          meaning, choice, anxiety, mortality, authenticity, and the
-          relationship between individuals and the world they inhabit. Rather
-          than beginning primarily with an abstract definition of human nature,
-          existentialist thinkers ask what it means for a person to exist as a
-          conscious and self-interpreting being.
-        </p>
+          <p>
+            <strong>Existentialism</strong> is central to Simone de Beauvoir's
+            philosophy. Existentialist thought investigates concrete human
+            existence and raises questions concerning freedom, responsibility,
+            meaning, choice, anxiety, mortality, authenticity, and the
+            relationship between individuals and the world they inhabit. Rather
+            than beginning primarily with an abstract definition of human
+            nature, existentialist thinkers ask what it means for a person to
+            exist as a conscious and self-interpreting being.
+          </p>
 
-        <p>
-          Beauvoir shared the existentialist emphasis on human freedom but
-          developed a distinctive account of what freedom means in lived
-          experience. Human beings are not isolated consciousnesses making
-          choices without limits. They are embodied beings who are born into
-          particular historical periods, social classes, cultures, families,
-          political systems, and material circumstances that shape the range of
-          possibilities available to them.
-        </p>
+          <p>
+            Beauvoir shared the existentialist emphasis on human freedom but
+            developed a distinctive account of what freedom means in lived
+            experience. Human beings are not isolated consciousnesses making
+            choices without limits. They are embodied beings who are born into
+            particular historical periods, social classes, cultures, families,
+            political systems, and material circumstances that shape the range
+            of possibilities available to them.
+          </p>
 
-        <p>
-          This idea of <strong>situated freedom</strong> became especially
-          important in Beauvoir's feminist philosophy. A person's formal or
-          abstract capacity for choice does not guarantee that all possibilities
-          are genuinely open to them. Economic dependence, discrimination,
-          restrictive social expectations, political institutions, and cultural
-          ideas about gender can profoundly limit a person's ability to pursue
-          independent projects.
-        </p>
+          <p>
+            This idea of <strong>situated freedom</strong> became especially
+            important in Beauvoir's feminist philosophy. A person's formal or
+            abstract capacity for choice does not guarantee that all
+            possibilities are genuinely open to them. Economic dependence,
+            discrimination, restrictive social expectations, political
+            institutions, and cultural ideas about gender can profoundly limit a
+            person's ability to pursue independent projects.
+          </p>
 
-        <p>
-          Beauvoir therefore used existentialist philosophy to investigate both
-          <strong>individual responsibility and structural oppression</strong>.
-          Her work asks not only whether human beings are free in some abstract
-          sense, but also what material, political, and social conditions allow
-          freedom to become concrete and meaningful. This concern helped extend
-          existentialism beyond an exclusive focus on individual choice toward
-          questions of ethics, oppression, reciprocity, and collective
-          responsibility.
-        </p>
-      </section>
+          <p>
+            Beauvoir therefore used existentialist philosophy to investigate
+            both
+            <strong>individual responsibility and structural oppression</strong
+            >. Her work asks not only whether human beings are free in some
+            abstract sense, but also what material, political, and social
+            conditions allow freedom to become concrete and meaningful. This
+            concern helped extend existentialism beyond an exclusive focus on
+            individual choice toward questions of ethics, oppression,
+            reciprocity, and collective responsibility.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          PHILOSOPHY OVERVIEW
          ===================================================== -->
 
-      <section class="narrative-block" id="philosophy">
-        <h2>What Was Simone de Beauvoir's Philosophy?</h2>
+        <section class="narrative-block" id="philosophy">
+          <h2>What Was Simone de Beauvoir's Philosophy?</h2>
 
-        <p>
-          Simone de Beauvoir's philosophy centers on the relationship between
-          <strong
-            >freedom, situation, embodiment, transcendence, and
-            responsibility</strong
-          >. She rejected the idea that human existence can be adequately
-          understood through an abstract definition of a fixed and unchanging
-          human nature. Instead, she examined how individuals become themselves
-          through projects, actions, relationships, and choices made within
-          concrete circumstances.
-        </p>
+          <p>
+            Simone de Beauvoir's philosophy centers on the relationship between
+            <strong
+              >freedom, situation, embodiment, transcendence, and
+              responsibility</strong
+            >. She rejected the idea that human existence can be adequately
+            understood through an abstract definition of a fixed and unchanging
+            human nature. Instead, she examined how individuals become
+            themselves through projects, actions, relationships, and choices
+            made within concrete circumstances.
+          </p>
 
-        <p>
-          Her existentialist philosophy emphasizes that human beings are
-          simultaneously <strong>free and constrained</strong>. A person cannot
-          choose the historical period into which they are born, their body,
-          their initial social circumstances, or every condition imposed by the
-          world. Yet these facts do not reduce the individual to a completely
-          passive object. Human beings respond to their situations, interpret
-          them, and attempt to create possibilities through action.
-        </p>
+          <p>
+            Her existentialist philosophy emphasizes that human beings are
+            simultaneously <strong>free and constrained</strong>. A person
+            cannot choose the historical period into which they are born, their
+            body, their initial social circumstances, or every condition imposed
+            by the world. Yet these facts do not reduce the individual to a
+            completely passive object. Human beings respond to their situations,
+            interpret them, and attempt to create possibilities through action.
+          </p>
 
-        <p>
-          Beauvoir also developed the concepts of
-          <strong>transcendence and immanence</strong> to describe important
-          dimensions of human existence. Transcendence refers to the human
-          capacity to move beyond what is already given through projects
-          directed toward the future, while immanence can describe forms of
-          repetitive or enclosed existence in which this capacity is restricted.
-          These concepts became especially significant in her analysis of
-          women's social position.
-        </p>
+          <p>
+            Beauvoir also developed the concepts of
+            <strong>transcendence and immanence</strong> to describe important
+            dimensions of human existence. Transcendence refers to the human
+            capacity to move beyond what is already given through projects
+            directed toward the future, while immanence can describe forms of
+            repetitive or enclosed existence in which this capacity is
+            restricted. These concepts became especially significant in her
+            analysis of women's social position.
+          </p>
 
-        <p>
-          Beauvoir extended her existentialism into ethics. Freedom is not
-          simply the ability to do whatever one wants, nor can an individual's
-          freedom be understood in complete isolation from other people. Human
-          beings live in a shared world, and ethical action must recognize
-          others as free subjects rather than treating them merely as objects or
-          instruments for one's own purposes.
-        </p>
+          <p>
+            Beauvoir extended her existentialism into ethics. Freedom is not
+            simply the ability to do whatever one wants, nor can an individual's
+            freedom be understood in complete isolation from other people. Human
+            beings live in a shared world, and ethical action must recognize
+            others as free subjects rather than treating them merely as objects
+            or instruments for one's own purposes.
+          </p>
 
-        <p>
-          This philosophical framework became particularly powerful in her
-          analysis of women's oppression. In <em>The Second Sex</em>, Beauvoir
-          investigated how women have historically been positioned as the
-          <strong>"Other"</strong> in relation to men and how economic
-          dependence, social institutions, cultural expectations, and ideas
-          about femininity can restrict women's possibilities for transcendence
-          and self-directed freedom.
-        </p>
-      </section>
+          <p>
+            This philosophical framework became particularly powerful in her
+            analysis of women's oppression. In <em>The Second Sex</em>, Beauvoir
+            investigated how women have historically been positioned as the
+            <strong>"Other"</strong> in relation to men and how economic
+            dependence, social institutions, cultural expectations, and ideas
+            about femininity can restrict women's possibilities for
+            transcendence and self-directed freedom.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          FREEDOM
          ===================================================== -->
 
-      <section class="narrative-block" id="freedom">
-        <h2>Simone de Beauvoir's Philosophy of Freedom</h2>
+        <section class="narrative-block" id="freedom">
+          <h2>Simone de Beauvoir's Philosophy of Freedom</h2>
 
-        <p>
-          <strong>Freedom</strong> is one of the most important concepts in
-          Beauvoir's philosophy. Like other existentialist thinkers, she
-          understood human beings as beings capable of choosing, acting, and
-          projecting themselves toward possibilities rather than being
-          completely determined by a fixed essence. However, she rejected an
-          overly simple understanding of freedom as unlimited personal choice or
-          independence from every external condition.
-        </p>
+          <p>
+            <strong>Freedom</strong> is one of the most important concepts in
+            Beauvoir's philosophy. Like other existentialist thinkers, she
+            understood human beings as beings capable of choosing, acting, and
+            projecting themselves toward possibilities rather than being
+            completely determined by a fixed essence. However, she rejected an
+            overly simple understanding of freedom as unlimited personal choice
+            or independence from every external condition.
+          </p>
 
-        <p>
-          Human beings are always <strong>situated</strong>. A person's
-          possibilities are shaped by their body, economic circumstances,
-          historical period, political institutions, relationships, education,
-          and social expectations. These conditions do not necessarily eliminate
-          freedom, but they help determine which projects are realistically
-          available and how difficult particular forms of action may become.
-        </p>
+          <p>
+            Human beings are always <strong>situated</strong>. A person's
+            possibilities are shaped by their body, economic circumstances,
+            historical period, political institutions, relationships, education,
+            and social expectations. These conditions do not necessarily
+            eliminate freedom, but they help determine which projects are
+            realistically available and how difficult particular forms of action
+            may become.
+          </p>
 
-        <p>
-          Beauvoir therefore distinguishes between an abstract account of human
-          freedom and the concrete conditions required to exercise that freedom.
-          Severe poverty, political domination, economic dependence, or social
-          oppression can make meaningful projects extremely difficult or even
-          impossible to pursue. For this reason, political and material
-          conditions are not secondary concerns but essential to understanding
-          how freedom exists in actual human lives.
-        </p>
+          <p>
+            Beauvoir therefore distinguishes between an abstract account of
+            human freedom and the concrete conditions required to exercise that
+            freedom. Severe poverty, political domination, economic dependence,
+            or social oppression can make meaningful projects extremely
+            difficult or even impossible to pursue. For this reason, political
+            and material conditions are not secondary concerns but essential to
+            understanding how freedom exists in actual human lives.
+          </p>
 
-        <p>
-          Her philosophy also gives freedom an ethical and
-          <strong>intersubjective</strong> dimension. Because other people are
-          themselves free subjects, an individual's freedom cannot be pursued
-          without regard for theirs. Beauvoir increasingly emphasizes that the
-          realization of one's own freedom is connected with the existence of
-          conditions in which others can also act, choose, speak, and pursue
-          meaningful projects.
-        </p>
+          <p>
+            Her philosophy also gives freedom an ethical and
+            <strong>intersubjective</strong> dimension. Because other people are
+            themselves free subjects, an individual's freedom cannot be pursued
+            without regard for theirs. Beauvoir increasingly emphasizes that the
+            realization of one's own freedom is connected with the existence of
+            conditions in which others can also act, choose, speak, and pursue
+            meaningful projects.
+          </p>
 
-        <p>
-          A society that systematically prevents particular groups from
-          developing their capacities and possibilities therefore creates an
-          ethical problem as well as a political one. Beauvoir's philosophy of
-          freedom ultimately connects individual existence with broader
-          questions about oppression, justice, reciprocity, and the
-          responsibility to oppose conditions that reduce human beings to
-          passive objects.
-        </p>
-      </section>
+          <p>
+            A society that systematically prevents particular groups from
+            developing their capacities and possibilities therefore creates an
+            ethical problem as well as a political one. Beauvoir's philosophy of
+            freedom ultimately connects individual existence with broader
+            questions about oppression, justice, reciprocity, and the
+            responsibility to oppose conditions that reduce human beings to
+            passive objects.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RESPONSIBILITY
          ===================================================== -->
 
-      <section class="narrative-block" id="responsibility">
-        <h2>Freedom, Choice, and Human Responsibility</h2>
+        <section class="narrative-block" id="responsibility">
+          <h2>Freedom, Choice, and Human Responsibility</h2>
 
-        <p>
-          Beauvoir connects <strong>freedom</strong> inseparably with
-          <strong>responsibility</strong>. Human beings must make choices
-          without relying upon a predetermined moral order that can decide every
-          question for them. Yet this responsibility does not mean that each
-          person creates values in complete isolation, because every choice
-          takes place within a world shared with other conscious and free
-          beings.   
-        </p>
+          <p>
+            Beauvoir connects <strong>freedom</strong> inseparably with
+            <strong>responsibility</strong>. Human beings must make choices
+            without relying upon a predetermined moral order that can decide
+            every question for them. Yet this responsibility does not mean that
+            each person creates values in complete isolation, because every
+            choice takes place within a world shared with other conscious and
+            free beings.
+          </p>
 
-        <p>
-          For this reason, Beauvoir's existentialist ethics cannot be reduced to
-          the slogan that everyone should simply "do whatever they choose."
-          Freedom is not equivalent to arbitrary preference or unrestricted
-          individual self-assertion. A genuinely ethical exercise of freedom
-          must recognize that one's actions can either expand or restrict the
-          possibilities available to other people.
-           
-        </p>
+          <p>
+            For this reason, Beauvoir's existentialist ethics cannot be reduced
+            to the slogan that everyone should simply "do whatever they choose."
+            Freedom is not equivalent to arbitrary preference or unrestricted
+            individual self-assertion. A genuinely ethical exercise of freedom
+            must recognize that one's actions can either expand or restrict the
+            possibilities available to other people.
+          </p>
 
-        <p>
-          Beauvoir therefore develops an ethics of <strong>reciprocity</strong>.
-          The freedom of the individual is connected with the freedom of others,
-          and she argues that one cannot genuinely affirm one's own freedom
-          while systematically denying the freedom of other human beings.
-          Ethical action consequently involves concern for the social and
-          material conditions that make meaningful freedom possible.
-            
-        </p>
+          <p>
+            Beauvoir therefore develops an ethics of
+            <strong>reciprocity</strong>. The freedom of the individual is
+            connected with the freedom of others, and she argues that one cannot
+            genuinely affirm one's own freedom while systematically denying the
+            freedom of other human beings. Ethical action consequently involves
+            concern for the social and material conditions that make meaningful
+            freedom possible.
+          </p>
 
-        <p>
-          At the same time, Beauvoir does not ignore the power of circumstance.
-          People exist within situations shaped by history, poverty, oppression,
-          political institutions, and relationships of dependence. These
-          conditions can severely restrict what a person is actually able to do,
-          and her philosophy therefore rejects the simplistic idea that all
-          individuals are equally free in every concrete situation.
-             
-        </p>
+          <p>
+            At the same time, Beauvoir does not ignore the power of
+            circumstance. People exist within situations shaped by history,
+            poverty, oppression, political institutions, and relationships of
+            dependence. These conditions can severely restrict what a person is
+            actually able to do, and her philosophy therefore rejects the
+            simplistic idea that all individuals are equally free in every
+            concrete situation.
+          </p>
 
-        <p>
-          Human responsibility must therefore be understood concretely rather
-          than abstractly. A person is responsible for how they respond to their
-          situation and for the projects they undertake, but ethical judgment
-          must also take account of whether oppression or coercion has deprived
-          them of meaningful possibilities for action. Beauvoir's conception of
-          responsibility thus combines individual agency with a serious
-          recognition of social reality.     
-        </p>
-      </section>
+          <p>
+            Human responsibility must therefore be understood concretely rather
+            than abstractly. A person is responsible for how they respond to
+            their situation and for the projects they undertake, but ethical
+            judgment must also take account of whether oppression or coercion
+            has deprived them of meaningful possibilities for action. Beauvoir's
+            conception of responsibility thus combines individual agency with a
+            serious recognition of social reality.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      ETHICS OF AMBIGUITY
      ===================================================== -->
 
-      <section class="narrative-block" id="ethics-ambiguity">
-        <h2>Simone de Beauvoir and The Ethics of Ambiguity</h2>
+        <section class="narrative-block" id="ethics-ambiguity">
+          <h2>Simone de Beauvoir and The Ethics of Ambiguity</h2>
 
-        <p>
-          <strong><em>The Ethics of Ambiguity</em></strong
-          >, published in 1947, is one of Simone de Beauvoir's most important
-          philosophical works. In this book, she develops an existentialist
-          account of ethics based on the ambiguous character of human existence.
-          Human beings are neither pure, disembodied consciousness nor merely
-          objects determined by external forces; they are free subjects who
-          nevertheless exist within concrete situations they did not entirely
-          choose.   
-        </p>
+          <p>
+            <strong><em>The Ethics of Ambiguity</em></strong
+            >, published in 1947, is one of Simone de Beauvoir's most important
+            philosophical works. In this book, she develops an existentialist
+            account of ethics based on the ambiguous character of human
+            existence. Human beings are neither pure, disembodied consciousness
+            nor merely objects determined by external forces; they are free
+            subjects who nevertheless exist within concrete situations they did
+            not entirely choose.
+          </p>
 
-        <p>
-          This ambiguity arises from the relationship between
-          <strong>freedom and facticity</strong>. Each person is capable of
-          transcending their present circumstances through projects, choices,
-          and action, yet every person is also shaped and limited by a body, a
-          past, social conditions, historical circumstances, and the material
-          world. Beauvoir argues that an ethical philosophy must begin by
-          accepting both dimensions rather than reducing human existence to only
-          one of them.  
-        </p>
+          <p>
+            This ambiguity arises from the relationship between
+            <strong>freedom and facticity</strong>. Each person is capable of
+            transcending their present circumstances through projects, choices,
+            and action, yet every person is also shaped and limited by a body, a
+            past, social conditions, historical circumstances, and the material
+            world. Beauvoir argues that an ethical philosophy must begin by
+            accepting both dimensions rather than reducing human existence to
+            only one of them.
+          </p>
 
-        <p>
-          Beauvoir rejects the attempt to escape this condition by pretending
-          that life possesses an absolutely predetermined meaning or that a
-          fixed moral authority can resolve every ethical problem in advance.
-          Human beings must create and pursue values through their projects, but
-          these values cannot simply be treated as eternal objects existing
-          independently of human freedom and concrete action.
-            
-        </p>
+          <p>
+            Beauvoir rejects the attempt to escape this condition by pretending
+            that life possesses an absolutely predetermined meaning or that a
+            fixed moral authority can resolve every ethical problem in advance.
+            Human beings must create and pursue values through their projects,
+            but these values cannot simply be treated as eternal objects
+            existing independently of human freedom and concrete action.
+          </p>
 
-        <p>
-          At the same time, Beauvoir does not conclude that the absence of
-          absolute guarantees makes ethical life impossible. Freedom itself
-          creates ethical responsibilities because human beings act in a world
-          shared with other people. Her central principle is often expressed
-          through the idea that to will oneself free also requires willing the
-          freedom of others. Freedom, therefore, cannot be understood as purely
-          private self-assertion.    
-        </p>
+          <p>
+            At the same time, Beauvoir does not conclude that the absence of
+            absolute guarantees makes ethical life impossible. Freedom itself
+            creates ethical responsibilities because human beings act in a world
+            shared with other people. Her central principle is often expressed
+            through the idea that to will oneself free also requires willing the
+            freedom of others. Freedom, therefore, cannot be understood as
+            purely private self-assertion.
+          </p>
 
-        <p>
-          The book also examines different ways in which people attempt to
-          escape the burden of freedom. Beauvoir criticizes attitudes in which
-          individuals surrender responsibility to supposedly absolute values,
-          authorities, or ideologies. Such attempts can provide psychological
-          certainty, but they also risk allowing people to avoid responsibility
-          for the meanings and consequences of their own actions.
-              
-        </p>
+          <p>
+            The book also examines different ways in which people attempt to
+            escape the burden of freedom. Beauvoir criticizes attitudes in which
+            individuals surrender responsibility to supposedly absolute values,
+            authorities, or ideologies. Such attempts can provide psychological
+            certainty, but they also risk allowing people to avoid
+            responsibility for the meanings and consequences of their own
+            actions.
+          </p>
 
-        <p>
-          <em>The Ethics of Ambiguity</em> is especially important because it
-          shows that Beauvoir's philosophy was never limited to the analysis of
-          women's oppression alone. She developed a broader existentialist
-          ethics concerned with freedom, responsibility, oppression, political
-          action, violence, and the relationship between individual projects and
-          the shared conditions of human existence. These ethical concerns would
-          later become more concretely developed in her feminist and political
-          writings.     
-        </p>
-      </section>
+          <p>
+            <em>The Ethics of Ambiguity</em> is especially important because it
+            shows that Beauvoir's philosophy was never limited to the analysis
+            of women's oppression alone. She developed a broader existentialist
+            ethics concerned with freedom, responsibility, oppression, political
+            action, violence, and the relationship between individual projects
+            and the shared conditions of human existence. These ethical concerns
+            would later become more concretely developed in her feminist and
+            political writings.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      AMBIGUITY
      ===================================================== -->
 
-      <section class="narrative-block" id="ambiguity">
-        <h2>What Does Ambiguity Mean in Beauvoir's Philosophy?</h2>
+        <section class="narrative-block" id="ambiguity">
+          <h2>What Does Ambiguity Mean in Beauvoir's Philosophy?</h2>
 
-        <p>
-          <strong>Ambiguity</strong> describes a fundamental feature of human
-          existence in Beauvoir's philosophy. Human beings are conscious
-          subjects capable of reflection, projects, and choices, yet they are
-          also embodied beings situated within a material and social world. They
-          experience dependence, limitation, aging, suffering, and ultimately
-          death.   
-        </p>
+          <p>
+            <strong>Ambiguity</strong> describes a fundamental feature of human
+            existence in Beauvoir's philosophy. Human beings are conscious
+            subjects capable of reflection, projects, and choices, yet they are
+            also embodied beings situated within a material and social world.
+            They experience dependence, limitation, aging, suffering, and
+            ultimately death.
+          </p>
 
-        <p>
-          Human beings therefore cannot be reduced either to completely free
-          consciousness or to passive objects determined entirely by
-          circumstances. Beauvoir's philosophy attempts to hold these two
-          dimensions together. People possess the capacity to transcend aspects
-          of their situation, but they never escape situation altogether.
-          Freedom is always exercised by someone who exists somewhere, at a
-          particular time, and under particular conditions.
-            
-        </p>
+          <p>
+            Human beings therefore cannot be reduced either to completely free
+            consciousness or to passive objects determined entirely by
+            circumstances. Beauvoir's philosophy attempts to hold these two
+            dimensions together. People possess the capacity to transcend
+            aspects of their situation, but they never escape situation
+            altogether. Freedom is always exercised by someone who exists
+            somewhere, at a particular time, and under particular conditions.
+          </p>
 
-        <p>
-          This idea distinguishes Beauvoir's account from a simplified version
-          of existentialism in which every person is imagined as possessing
-          unlimited freedom regardless of social reality. Poverty, oppression,
-          political domination, bodily vulnerability, and historical
-          circumstances can profoundly affect the possibilities available to an
-          individual. For Beauvoir, these limitations must be taken seriously
-          within ethical and philosophical analysis.
-            
-        </p>
+          <p>
+            This idea distinguishes Beauvoir's account from a simplified version
+            of existentialism in which every person is imagined as possessing
+            unlimited freedom regardless of social reality. Poverty, oppression,
+            political domination, bodily vulnerability, and historical
+            circumstances can profoundly affect the possibilities available to
+            an individual. For Beauvoir, these limitations must be taken
+            seriously within ethical and philosophical analysis.
+          </p>
 
-        <p>
-          Accepting ambiguity also means recognizing that ethical life cannot be
-          reduced to a simple formula capable of eliminating every conflict.
-          Decisions may involve competing values, incomplete knowledge,
-          uncertain consequences, and situations in which no available choice is
-          entirely free from difficulty. The ethical individual must therefore
-          confront concrete problems rather than escape into abstract certainty.
-            
-        </p>
+          <p>
+            Accepting ambiguity also means recognizing that ethical life cannot
+            be reduced to a simple formula capable of eliminating every
+            conflict. Decisions may involve competing values, incomplete
+            knowledge, uncertain consequences, and situations in which no
+            available choice is entirely free from difficulty. The ethical
+            individual must therefore confront concrete problems rather than
+            escape into abstract certainty.
+          </p>
 
-        <p>
-          Beauvoir regards attempts to deny ambiguity as forms of philosophical
-          and ethical evasion. A person may attempt to treat themselves as a
-          fixed thing with a predetermined identity, or alternatively imagine
-          that freedom can completely escape the constraints of the body and the
-          world. Both approaches fail to describe the actual complexity of human
-          existence.  
-        </p>
+          <p>
+            Beauvoir regards attempts to deny ambiguity as forms of
+            philosophical and ethical evasion. A person may attempt to treat
+            themselves as a fixed thing with a predetermined identity, or
+            alternatively imagine that freedom can completely escape the
+            constraints of the body and the world. Both approaches fail to
+            describe the actual complexity of human existence.
+          </p>
 
-        <p>
-          To live authentically, therefore, is not to eliminate ambiguity but to
-          assume it. Human beings must act despite uncertainty, pursue projects
-          despite their finitude, and accept responsibility despite the fact
-          that neither the meaning nor the future of human life is completely
-          guaranteed. Ambiguity is consequently not merely a problem for
-          Beauvoir; it is the unavoidable condition from which ethical freedom
-          begins.  
-        </p>
-      </section>
+          <p>
+            To live authentically, therefore, is not to eliminate ambiguity but
+            to assume it. Human beings must act despite uncertainty, pursue
+            projects despite their finitude, and accept responsibility despite
+            the fact that neither the meaning nor the future of human life is
+            completely guaranteed. Ambiguity is consequently not merely a
+            problem for Beauvoir; it is the unavoidable condition from which
+            ethical freedom begins.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      THE OTHER
      ===================================================== -->
 
-      <section class="narrative-block" id="the-other">
-        <h2>Simone de Beauvoir's Philosophy of the Other</h2>
+        <section class="narrative-block" id="the-other">
+          <h2>Simone de Beauvoir's Philosophy of the Other</h2>
 
-        <p>
-          The concept of <strong>the Other</strong> is central to Beauvoir's
-          analysis of gender and human relationships. In
-          <em>The Second Sex</em>, she argues that women have historically been
-          represented not simply as another group of human subjects but as the
-          <strong>Other</strong> in relation to men. This philosophical
-          structure helps explain how inequality can become embedded within
-          social ideas about what counts as normal, universal, or fully human.
-         
-        </p>
+          <p>
+            The concept of <strong>the Other</strong> is central to Beauvoir's
+            analysis of gender and human relationships. In
+            <em>The Second Sex</em>, she argues that women have historically
+            been represented not simply as another group of human subjects but
+            as the <strong>Other</strong> in relation to men. This philosophical
+            structure helps explain how inequality can become embedded within
+            social ideas about what counts as normal, universal, or fully human.
+          </p>
 
-        <p>
-          In this relationship, man is positioned as the norm or universal
-          subject, while woman is defined in relation to him. The masculine can
-          appear as the neutral or general category of "human," whereas the
-          feminine is represented as particular, secondary, or different. Woman
-          is consequently treated not primarily as an independent subject but as
-          man's opposite, complement, or subordinate counterpart.
-           
-        </p>
+          <p>
+            In this relationship, man is positioned as the norm or universal
+            subject, while woman is defined in relation to him. The masculine
+            can appear as the neutral or general category of "human," whereas
+            the feminine is represented as particular, secondary, or different.
+            Woman is consequently treated not primarily as an independent
+            subject but as man's opposite, complement, or subordinate
+            counterpart.
+          </p>
 
-        <p>
-          Beauvoir's concept of the Other is connected with her broader
-          existentialist concern with <strong>subjectivity</strong> and
-          <strong>recognition</strong>. Every human being experiences themselves
-          as a subject who acts and pursues projects, but each person also
-          encounters other people who possess their own perspectives and
-          freedom. Ethical and social relations become distorted when one group
-          claims the position of full subjectivity while systematically reducing
-          another group to an object or subordinate Other.
-            
-        </p>
+          <p>
+            Beauvoir's concept of the Other is connected with her broader
+            existentialist concern with <strong>subjectivity</strong> and
+            <strong>recognition</strong>. Every human being experiences
+            themselves as a subject who acts and pursues projects, but each
+            person also encounters other people who possess their own
+            perspectives and freedom. Ethical and social relations become
+            distorted when one group claims the position of full subjectivity
+            while systematically reducing another group to an object or
+            subordinate Other.
+          </p>
 
-        <p>
-          Beauvoir's analysis shows that othering is not merely a matter of
-          individual prejudice. Cultural narratives, laws, traditions, economic
-          structures, educational systems, and social expectations can reproduce
-          a distinction between those treated as autonomous subjects and those
-          treated as secondary, dependent, or less capable of defining their own
-          lives.   
-        </p>
+          <p>
+            Beauvoir's analysis shows that othering is not merely a matter of
+            individual prejudice. Cultural narratives, laws, traditions,
+            economic structures, educational systems, and social expectations
+            can reproduce a distinction between those treated as autonomous
+            subjects and those treated as secondary, dependent, or less capable
+            of defining their own lives.
+          </p>
 
-        <p>
-          This is one reason why <em>The Second Sex</em> moves beyond an
-          abstract theory of freedom toward an examination of concrete social
-          situations. Beauvoir investigates how women's possibilities are shaped
-          by embodiment, family structures, education, work, sexuality, and
-          economic dependence. The question is not simply whether an individual
-          is theoretically free but whether social conditions provide meaningful
-          opportunities for freedom. 
-        </p>
+          <p>
+            This is one reason why <em>The Second Sex</em> moves beyond an
+            abstract theory of freedom toward an examination of concrete social
+            situations. Beauvoir investigates how women's possibilities are
+            shaped by embodiment, family structures, education, work, sexuality,
+            and economic dependence. The question is not simply whether an
+            individual is theoretically free but whether social conditions
+            provide meaningful opportunities for freedom.
+          </p>
 
-        <p>
-          Beauvoir's philosophical account of the Other became highly
-          influential in feminist philosophy and social theory. Later thinkers
-          expanded, criticized, and transformed the concept in discussions of
-          colonialism, race, class, sexuality, and other forms of social
-          exclusion. Its continuing importance lies in its attempt to explain
-          how differences between groups can become organized into unequal
-          relationships of subjectivity and power.
-           
-        </p>
-      </section>
+          <p>
+            Beauvoir's philosophical account of the Other became highly
+            influential in feminist philosophy and social theory. Later thinkers
+            expanded, criticized, and transformed the concept in discussions of
+            colonialism, race, class, sexuality, and other forms of social
+            exclusion. Its continuing importance lies in its attempt to explain
+            how differences between groups can become organized into unequal
+            relationships of subjectivity and power.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      FEMINISM
      ===================================================== -->
 
-      <section class="narrative-block" id="feminism">
-        <h2>Simone de Beauvoir and Feminist Philosophy</h2>
+        <section class="narrative-block" id="feminism">
+          <h2>Simone de Beauvoir and Feminist Philosophy</h2>
 
-        <p>
-          Simone de Beauvoir is one of the most influential figures in
-          <strong>modern feminist philosophy</strong>. Her work challenged the
-          idea that women's social position could be explained simply by biology
-          or by an eternal and unchanging feminine nature. Instead, she examined
-          the social, historical, economic, and cultural processes through which
-          women are encouraged, expected, and often pressured to occupy
-          particular roles.  
-        </p>
+          <p>
+            Simone de Beauvoir is one of the most influential figures in
+            <strong>modern feminist philosophy</strong>. Her work challenged the
+            idea that women's social position could be explained simply by
+            biology or by an eternal and unchanging feminine nature. Instead,
+            she examined the social, historical, economic, and cultural
+            processes through which women are encouraged, expected, and often
+            pressured to occupy particular roles.
+          </p>
 
-        <p>
-          Beauvoir's feminism is closely connected with existentialism. If human
-          beings are capable of freedom, transcendence, and self-definition,
-          then social systems that systematically restrict women's ability to
-          develop independent projects raise serious philosophical and ethical
-          questions. Oppression is not simply an unfortunate difference between
-          individuals; it can involve the active restriction of another person's
-          possibilities for freedom and self-development.
-            
-        </p>
+          <p>
+            Beauvoir's feminism is closely connected with existentialism. If
+            human beings are capable of freedom, transcendence, and
+            self-definition, then social systems that systematically restrict
+            women's ability to develop independent projects raise serious
+            philosophical and ethical questions. Oppression is not simply an
+            unfortunate difference between individuals; it can involve the
+            active restriction of another person's possibilities for freedom and
+            self-development.
+          </p>
 
-        <p>
-          In <em>The Second Sex</em>, Beauvoir examines numerous dimensions of
-          women's lived situation, including childhood, education, sexuality,
-          marriage, motherhood, work, economic dependence, and cultural images
-          of femininity. Her analysis attempts to show how social institutions
-          and expectations can shape the ways women understand themselves and
-          the possibilities that appear open to them.
-            
-        </p>
+          <p>
+            In <em>The Second Sex</em>, Beauvoir examines numerous dimensions of
+            women's lived situation, including childhood, education, sexuality,
+            marriage, motherhood, work, economic dependence, and cultural images
+            of femininity. Her analysis attempts to show how social institutions
+            and expectations can shape the ways women understand themselves and
+            the possibilities that appear open to them.
+          </p>
 
-        <p>
-          One of Beauvoir's most influential insights is her distinction between
-          <strong>biological fact</strong> and <strong>social meaning</strong>.
-          Bodily differences exist, but she argues that biology alone cannot
-          explain the complex social position assigned to women. Human societies
-          interpret bodies through cultural values, institutions, traditions,
-          and systems of power, producing social expectations that may then
-          appear natural or inevitable. 
-        </p>
+          <p>
+            One of Beauvoir's most influential insights is her distinction
+            between
+            <strong>biological fact</strong> and
+            <strong>social meaning</strong>. Bodily differences exist, but she
+            argues that biology alone cannot explain the complex social position
+            assigned to women. Human societies interpret bodies through cultural
+            values, institutions, traditions, and systems of power, producing
+            social expectations that may then appear natural or inevitable.
+          </p>
 
-        <p>
-          Beauvoir therefore argues that women must be understood as complete
-          human subjects rather than primarily through roles constructed around
-          men. Motherhood, marriage, domestic life, or sexuality may be
-          important parts of an individual's life, but they should not
-          automatically determine the entire meaning or social value of a
-          woman's existence. A central concern of her philosophy is whether
-          women possess genuine opportunities to pursue projects of their own.
-           
-        </p>
+          <p>
+            Beauvoir therefore argues that women must be understood as complete
+            human subjects rather than primarily through roles constructed
+            around men. Motherhood, marriage, domestic life, or sexuality may be
+            important parts of an individual's life, but they should not
+            automatically determine the entire meaning or social value of a
+            woman's existence. A central concern of her philosophy is whether
+            women possess genuine opportunities to pursue projects of their own.
+          </p>
 
-        <p>
-          Her feminist philosophy also emphasizes
-          <strong>material and social conditions</strong>. Legal equality alone
-          cannot necessarily produce substantive freedom if economic dependence,
-          unequal expectations, restricted educational opportunities, or
-          institutional barriers continue to limit what people are actually able
-          to do. Beauvoir's later work therefore connects existential freedom
-          with the concrete conditions required for that freedom to become
-          meaningful. 
-        </p>
+          <p>
+            Her feminist philosophy also emphasizes
+            <strong>material and social conditions</strong>. Legal equality
+            alone cannot necessarily produce substantive freedom if economic
+            dependence, unequal expectations, restricted educational
+            opportunities, or institutional barriers continue to limit what
+            people are actually able to do. Beauvoir's later work therefore
+            connects existential freedom with the concrete conditions required
+            for that freedom to become meaningful.
+          </p>
 
-        <p>
-          Beauvoir's influence extends far beyond a single school of feminism.
-          Although later feminist thinkers have criticized and revised aspects
-          of her work, <em>The Second Sex</em> remains a foundational text for
-          the philosophical study of gender, oppression, embodiment, freedom,
-          and social construction. Her lasting importance lies partly in the way
-          she connected abstract existential questions about freedom with the
-          concrete realities of women's lives.
-        
-        </p>
-      </section>
+          <p>
+            Beauvoir's influence extends far beyond a single school of feminism.
+            Although later feminist thinkers have criticized and revised aspects
+            of her work, <em>The Second Sex</em> remains a foundational text for
+            the philosophical study of gender, oppression, embodiment, freedom,
+            and social construction. Her lasting importance lies partly in the
+            way she connected abstract existential questions about freedom with
+            the concrete realities of women's lives.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
-      <!-- =====================================================
+        <div class="philosophy-divider"></div>
+        <!-- =====================================================
          SECOND SEX
          ===================================================== -->
 
-      <section class="narrative-block" id="second-sex">
-        <h2>What Is The Second Sex?</h2>
+        <section class="narrative-block" id="second-sex">
+          <h2>What Is The Second Sex?</h2>
 
-        <p>
-          <strong><em>The Second Sex</em></strong
-          >, published in 1949, is Simone de Beauvoir's most famous
-          philosophical work and one of the foundational texts of
-          twentieth-century feminist thought. Combining existentialism,
-          phenomenology, history, literature, biology, psychology, and social
-          analysis, the work investigates what it means to live as a woman in a
-          world whose institutions and cultural traditions have historically
-          been organized around masculine experience.
-        </p>
+          <p>
+            <strong><em>The Second Sex</em></strong
+            >, published in 1949, is Simone de Beauvoir's most famous
+            philosophical work and one of the foundational texts of
+            twentieth-century feminist thought. Combining existentialism,
+            phenomenology, history, literature, biology, psychology, and social
+            analysis, the work investigates what it means to live as a woman in
+            a world whose institutions and cultural traditions have historically
+            been organized around masculine experience.
+          </p>
 
-        <p>
-          Beauvoir examines how women have been represented and treated
-          throughout history. Rather than accepting traditional claims that
-          women possess a fixed and universal "feminine nature," she
-          investigates the historical and social processes through which
-          femininity is formed, interpreted, and imposed. Her analysis asks how
-          biological differences acquire social meaning and how those meanings
-          can become connected with unequal forms of power.
-        </p>
+          <p>
+            Beauvoir examines how women have been represented and treated
+            throughout history. Rather than accepting traditional claims that
+            women possess a fixed and universal "feminine nature," she
+            investigates the historical and social processes through which
+            femininity is formed, interpreted, and imposed. Her analysis asks
+            how biological differences acquire social meaning and how those
+            meanings can become connected with unequal forms of power.
+          </p>
 
-        <p>
-          One of the book's central arguments concerns the relationship between
-          woman and man as <strong>Subject and Other</strong>. Beauvoir argues
-          that masculine experience has frequently been treated as the universal
-          or neutral human norm, while women have been defined relationally in
-          opposition to men. Woman is consequently represented not simply as an
-          independent subject but as secondary, different, complementary, or
-          subordinate to the supposedly universal masculine subject.
-        </p>
+          <p>
+            One of the book's central arguments concerns the relationship
+            between woman and man as <strong>Subject and Other</strong>.
+            Beauvoir argues that masculine experience has frequently been
+            treated as the universal or neutral human norm, while women have
+            been defined relationally in opposition to men. Woman is
+            consequently represented not simply as an independent subject but as
+            secondary, different, complementary, or subordinate to the
+            supposedly universal masculine subject.
+          </p>
 
-        <p>
-          <em>The Second Sex</em> also investigates women's lived experience
-          across different stages and situations of life, including childhood,
-          adolescence, sexuality, marriage, motherhood, work, aging, and social
-          expectations. Its philosophical importance lies partly in connecting
-          these apparently ordinary experiences with larger questions about
-          freedom, embodiment, identity, transcendence, immanence, and
-          oppression.
-        </p>
+          <p>
+            <em>The Second Sex</em> also investigates women's lived experience
+            across different stages and situations of life, including childhood,
+            adolescence, sexuality, marriage, motherhood, work, aging, and
+            social expectations. Its philosophical importance lies partly in
+            connecting these apparently ordinary experiences with larger
+            questions about freedom, embodiment, identity, transcendence,
+            immanence, and oppression.
+          </p>
 
-        <p>
-          The book became enormously influential in later feminist theory and
-          helped establish questions about gender, embodiment, socialization,
-          and oppression as central subjects of modern philosophical debate.
-          Later feminists have criticized, revised, and extended important
-          aspects of Beauvoir's analysis, including some of its assumptions
-          about sexuality, race, motherhood, and gender. Nevertheless,
-          <em>The Second Sex</em> remains a landmark work whose philosophical
-          influence continues across feminism, phenomenology, existentialism,
-          and social and political philosophy.
-        </p>
-      </section>
+          <p>
+            The book became enormously influential in later feminist theory and
+            helped establish questions about gender, embodiment, socialization,
+            and oppression as central subjects of modern philosophical debate.
+            Later feminists have criticized, revised, and extended important
+            aspects of Beauvoir's analysis, including some of its assumptions
+            about sexuality, race, motherhood, and gender. Nevertheless,
+            <em>The Second Sex</em> remains a landmark work whose philosophical
+            influence continues across feminism, phenomenology, existentialism,
+            and social and political philosophy.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          SOCIAL CONSTRUCTION
          ===================================================== -->
 
-      <section class="narrative-block" id="gender">
-        <h2>Simone de Beauvoir and the Social Construction of Woman</h2>
+        <section class="narrative-block" id="gender">
+          <h2>Simone de Beauvoir and the Social Construction of Woman</h2>
 
-        <p>
-          Beauvoir's famous discussion of <strong>becoming a woman</strong>
-          challenges the idea that a person's social identity can be explained
-          entirely through biological characteristics. Her argument draws
-          attention to the cultural, historical, and social processes through
-          which societies form expectations about femininity and teach
-          individuals what it supposedly means to occupy the social position of
-          "woman."
-        </p>
+          <p>
+            Beauvoir's famous discussion of <strong>becoming a woman</strong>
+            challenges the idea that a person's social identity can be explained
+            entirely through biological characteristics. Her argument draws
+            attention to the cultural, historical, and social processes through
+            which societies form expectations about femininity and teach
+            individuals what it supposedly means to occupy the social position
+            of "woman."
+          </p>
 
-        <p>
-          From childhood onward, individuals can be encouraged toward different
-          behaviors, ambitions, responsibilities, appearances, and limitations
-          according to gender. Family life, education, religion, literature,
-          popular culture, economic institutions, and everyday social customs
-          can all participate in shaping these expectations. What appears
-          natural or inevitable may therefore partly be the result of a long
-          process of socialization.
-        </p>
+          <p>
+            From childhood onward, individuals can be encouraged toward
+            different behaviors, ambitions, responsibilities, appearances, and
+            limitations according to gender. Family life, education, religion,
+            literature, popular culture, economic institutions, and everyday
+            social customs can all participate in shaping these expectations.
+            What appears natural or inevitable may therefore partly be the
+            result of a long process of socialization.
+          </p>
 
-        <p>
-          This does not mean that Beauvoir believed biological embodiment was
-          irrelevant. On the contrary, the <strong>body</strong> is an important
-          dimension of her philosophy because human beings encounter the world
-          through embodied existence. Her point is that biological facts do not
-          by themselves determine a complete social destiny. The meaning
-          assigned to bodily differences is shaped by particular historical,
-          economic, cultural, and political circumstances.
-        </p>
+          <p>
+            This does not mean that Beauvoir believed biological embodiment was
+            irrelevant. On the contrary, the <strong>body</strong> is an
+            important dimension of her philosophy because human beings encounter
+            the world through embodied existence. Her point is that biological
+            facts do not by themselves determine a complete social destiny. The
+            meaning assigned to bodily differences is shaped by particular
+            historical, economic, cultural, and political circumstances.
+          </p>
 
-        <p>
-          Beauvoir's analysis therefore became highly influential in later
-          debates concerning sex, gender, identity, embodiment, and
-          socialization. Her work encouraged philosophers to ask how supposedly
-          natural roles are produced, justified, and maintained through social
-          practices. Although later theories of gender developed concepts that
-          go beyond Beauvoir's own terminology, her analysis provided an
-          important philosophical foundation for questioning the assumption that
-          femininity is simply a fixed natural essence.
-        </p>
-      </section>
+          <p>
+            Beauvoir's analysis therefore became highly influential in later
+            debates concerning sex, gender, identity, embodiment, and
+            socialization. Her work encouraged philosophers to ask how
+            supposedly natural roles are produced, justified, and maintained
+            through social practices. Although later theories of gender
+            developed concepts that go beyond Beauvoir's own terminology, her
+            analysis provided an important philosophical foundation for
+            questioning the assumption that femininity is simply a fixed natural
+            essence.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          OPPRESSION
          ===================================================== -->
 
-      <section class="narrative-block" id="oppression">
-        <h2>Gender, Society, and Oppression in Beauvoir's Philosophy</h2>
+        <section class="narrative-block" id="oppression">
+          <h2>Gender, Society, and Oppression in Beauvoir's Philosophy</h2>
 
-        <p>
-          <strong>Oppression</strong> is a central concept in Beauvoir's
-          analysis of women's situation. Oppression occurs when social,
-          political, and economic arrangements systematically restrict the
-          possibilities through which people can exercise their freedom and
-          pursue meaningful projects. It is therefore not simply a matter of one
-          individual disliking or mistreating another; oppression can be
-          embedded within the wider structures that organize social life.
-        </p>
+          <p>
+            <strong>Oppression</strong> is a central concept in Beauvoir's
+            analysis of women's situation. Oppression occurs when social,
+            political, and economic arrangements systematically restrict the
+            possibilities through which people can exercise their freedom and
+            pursue meaningful projects. It is therefore not simply a matter of
+            one individual disliking or mistreating another; oppression can be
+            embedded within the wider structures that organize social life.
+          </p>
 
-        <p>
-          Beauvoir's account emphasizes that institutions and material
-          conditions can shape the opportunities available to different groups.
-          Economic dependence, unequal access to education and work, legal
-          inequality, cultural expectations, and restrictions surrounding
-          sexuality and family life can all influence a person's ability to
-          become an independent agent. Women's dependence on men was therefore,
-          for Beauvoir, not merely a psychological condition but also a social
-          and economic reality.
-        </p>
+          <p>
+            Beauvoir's account emphasizes that institutions and material
+            conditions can shape the opportunities available to different
+            groups. Economic dependence, unequal access to education and work,
+            legal inequality, cultural expectations, and restrictions
+            surrounding sexuality and family life can all influence a person's
+            ability to become an independent agent. Women's dependence on men
+            was therefore, for Beauvoir, not merely a psychological condition
+            but also a social and economic reality.
+          </p>
 
-        <p>
-          Oppression is closely connected to Beauvoir's existentialist
-          understanding of <strong>freedom</strong>. Human beings may possess
-          the capacity to act and project themselves toward the future, but
-          concrete circumstances can severely restrict the possibilities through
-          which that capacity can be exercised. Social conditions that
-          systematically close possibilities for particular groups therefore
-          create not only political inequality but also a serious ethical
-          problem.
-        </p>
+          <p>
+            Oppression is closely connected to Beauvoir's existentialist
+            understanding of <strong>freedom</strong>. Human beings may possess
+            the capacity to act and project themselves toward the future, but
+            concrete circumstances can severely restrict the possibilities
+            through which that capacity can be exercised. Social conditions that
+            systematically close possibilities for particular groups therefore
+            create not only political inequality but also a serious ethical
+            problem.
+          </p>
 
-        <p>
-          Her analysis consequently suggests that liberation requires more than
-          a change in individual attitudes. Challenging oppressive conditions
-          may involve transformations in economic arrangements, education,
-          employment, political and legal rights, social expectations, and
-          interpersonal relationships. Beauvoir thus connects existential
-          freedom with a broader analysis of the material and institutional
-          conditions required for human beings to pursue genuinely independent
-          projects.
-        </p>
-      </section>
+          <p>
+            Her analysis consequently suggests that liberation requires more
+            than a change in individual attitudes. Challenging oppressive
+            conditions may involve transformations in economic arrangements,
+            education, employment, political and legal rights, social
+            expectations, and interpersonal relationships. Beauvoir thus
+            connects existential freedom with a broader analysis of the material
+            and institutional conditions required for human beings to pursue
+            genuinely independent projects.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          IMMANENCE
          ===================================================== -->
 
-      <section class="narrative-block" id="immanence">
-        <h2>Immanence and Transcendence in Simone de Beauvoir's Philosophy</h2>
+        <section class="narrative-block" id="immanence">
+          <h2>
+            Immanence and Transcendence in Simone de Beauvoir's Philosophy
+          </h2>
 
-        <p>
-          <strong>Immanence and transcendence</strong> are important concepts in
-          Beauvoir's analysis of human existence. Transcendence refers broadly
-          to the human capacity to move beyond what is immediately given through
-          action, projects, creation, and possibilities directed toward the
-          future. Immanence, by contrast, refers to dimensions of existence in
-          which life remains enclosed within repetition, maintenance, and
-          immediate conditions rather than opening toward freely chosen
-          possibilities.
-        </p>
+          <p>
+            <strong>Immanence and transcendence</strong> are important concepts
+            in Beauvoir's analysis of human existence. Transcendence refers
+            broadly to the human capacity to move beyond what is immediately
+            given through action, projects, creation, and possibilities directed
+            toward the future. Immanence, by contrast, refers to dimensions of
+            existence in which life remains enclosed within repetition,
+            maintenance, and immediate conditions rather than opening toward
+            freely chosen possibilities.
+          </p>
 
-        <p>
-          Beauvoir does not simply treat immanence as something inherently
-          negative. Human beings are embodied and situated, and ordinary life
-          necessarily includes repetition, physical maintenance, dependence, and
-          material responsibilities. No human existence consists entirely of
-          transcendence. The philosophical problem arises when a person or
-          social group is systematically denied opportunities for transcendence
-          and confined predominantly to activities and conditions imposed by
-          others.
-        </p>
+          <p>
+            Beauvoir does not simply treat immanence as something inherently
+            negative. Human beings are embodied and situated, and ordinary life
+            necessarily includes repetition, physical maintenance, dependence,
+            and material responsibilities. No human existence consists entirely
+            of transcendence. The philosophical problem arises when a person or
+            social group is systematically denied opportunities for
+            transcendence and confined predominantly to activities and
+            conditions imposed by others.
+          </p>
 
-        <p>
-          In <em>The Second Sex</em>, Beauvoir uses these concepts to analyze
-          women's historical situation. Traditional gender arrangements often
-          assigned women primary responsibility for domestic labor,
-          reproduction, childcare, and service to others, while men were more
-          readily encouraged to pursue public, political, intellectual,
-          artistic, and economic projects. Beauvoir's argument concerns not the
-          intrinsic worthlessness of domestic or bodily activities but the
-          unequal social organization of possibilities and freedom.
-        </p>
+          <p>
+            In <em>The Second Sex</em>, Beauvoir uses these concepts to analyze
+            women's historical situation. Traditional gender arrangements often
+            assigned women primary responsibility for domestic labor,
+            reproduction, childcare, and service to others, while men were more
+            readily encouraged to pursue public, political, intellectual,
+            artistic, and economic projects. Beauvoir's argument concerns not
+            the intrinsic worthlessness of domestic or bodily activities but the
+            unequal social organization of possibilities and freedom.
+          </p>
 
-        <p>
-          Her analysis therefore connects everyday social roles with existential
-          freedom. A central feminist question becomes whether women possess
-          genuine opportunities to move beyond socially imposed identities and
-          pursue projects of their own. Liberation, in this framework, requires
-          social conditions in which women can be recognized as full subjects
-          capable of both embodied existence and self-directed transcendence.
-        </p>
-      </section>
+          <p>
+            Her analysis therefore connects everyday social roles with
+            existential freedom. A central feminist question becomes whether
+            women possess genuine opportunities to move beyond socially imposed
+            identities and pursue projects of their own. Liberation, in this
+            framework, requires social conditions in which women can be
+            recognized as full subjects capable of both embodied existence and
+            self-directed transcendence.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          BODY
          ===================================================== -->
 
-      <section class="narrative-block" id="body">
-        <h2>Simone de Beauvoir on the Body and Human Experience</h2>
+        <section class="narrative-block" id="body">
+          <h2>Simone de Beauvoir on the Body and Human Experience</h2>
 
-        <p>
-          The <strong>body</strong> plays an essential role in Beauvoir's
-          philosophy. Human beings do not exist as abstract minds separated from
-          physical reality. We encounter the world through embodied existence,
-          and the body is simultaneously something through which we act and a
-          reality that can be seen, interpreted, evaluated, and regulated by
-          others. This makes embodiment inseparable from questions about freedom
-          and social situation.
-        </p>
+          <p>
+            The <strong>body</strong> plays an essential role in Beauvoir's
+            philosophy. Human beings do not exist as abstract minds separated
+            from physical reality. We encounter the world through embodied
+            existence, and the body is simultaneously something through which we
+            act and a reality that can be seen, interpreted, evaluated, and
+            regulated by others. This makes embodiment inseparable from
+            questions about freedom and social situation.
+          </p>
 
-        <p>
-          In <em>The Second Sex</em>, Beauvoir examines menstruation, sexuality,
-          pregnancy, motherhood, aging, and other dimensions of bodily
-          experience. Her purpose is not simply to describe biological processes
-          but to investigate how societies assign meanings, expectations, and
-          values to those processes. The same bodily reality can therefore be
-          experienced differently according to a person's historical and social
-          circumstances.
-        </p>
+          <p>
+            In <em>The Second Sex</em>, Beauvoir examines menstruation,
+            sexuality, pregnancy, motherhood, aging, and other dimensions of
+            bodily experience. Her purpose is not simply to describe biological
+            processes but to investigate how societies assign meanings,
+            expectations, and values to those processes. The same bodily reality
+            can therefore be experienced differently according to a person's
+            historical and social circumstances.
+          </p>
 
-        <p>
-          The body can consequently become a source of both possibility and
-          social limitation. Biological processes are real, but their social
-          significance is not determined by biology alone. Cultural institutions
-          and political arrangements can transform bodily differences into
-          expectations about appropriate work, behavior, sexuality, appearance,
-          and social status, sometimes producing hierarchies that restrict
-          individual possibilities.
-        </p>
+          <p>
+            The body can consequently become a source of both possibility and
+            social limitation. Biological processes are real, but their social
+            significance is not determined by biology alone. Cultural
+            institutions and political arrangements can transform bodily
+            differences into expectations about appropriate work, behavior,
+            sexuality, appearance, and social status, sometimes producing
+            hierarchies that restrict individual possibilities.
+          </p>
 
-        <p>
-          Beauvoir's approach helped make <strong>embodiment</strong> a major
-          subject in later feminist philosophy and phenomenology. Her work
-          encouraged philosophers to investigate the lived body rather than
-          treating physical existence as irrelevant to consciousness or freedom.
-          At the same time, aspects of her account of female embodiment have
-          been extensively debated and criticized by later feminist thinkers,
-          demonstrating the continuing importance of her work for philosophical
-          discussions of bodies, identity, and social power.
-        </p>
-      </section>
+          <p>
+            Beauvoir's approach helped make <strong>embodiment</strong> a major
+            subject in later feminist philosophy and phenomenology. Her work
+            encouraged philosophers to investigate the lived body rather than
+            treating physical existence as irrelevant to consciousness or
+            freedom. At the same time, aspects of her account of female
+            embodiment have been extensively debated and criticized by later
+            feminist thinkers, demonstrating the continuing importance of her
+            work for philosophical discussions of bodies, identity, and social
+            power.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          LOVE
          ===================================================== -->
 
-      <section class="narrative-block" id="love">
-        <h2>Simone de Beauvoir on Love, Relationships, and Independence</h2>
+        <section class="narrative-block" id="love">
+          <h2>Simone de Beauvoir on Love, Relationships, and Independence</h2>
 
-        <p>
-          Beauvoir's philosophy also examines
-          <strong>love and human relationships</strong>. From an existentialist
-          perspective, a relationship between two people raises difficult
-          questions about freedom, dependence, recognition, desire, and the
-          temptation to treat another person as an object. Human relationships
-          are significant because individuals seek connection with others while
-          also remaining distinct subjects with their own projects and
-          perspectives.
-        </p>
+          <p>
+            Beauvoir's philosophy also examines
+            <strong>love and human relationships</strong>. From an
+            existentialist perspective, a relationship between two people raises
+            difficult questions about freedom, dependence, recognition, desire,
+            and the temptation to treat another person as an object. Human
+            relationships are significant because individuals seek connection
+            with others while also remaining distinct subjects with their own
+            projects and perspectives.
+          </p>
 
-        <p>
-          Beauvoir was critical of romantic ideals that encourage one person to
-          make another the absolute center or ultimate justification of their
-          existence. If an individual abandons their own projects entirely in
-          order to live through another person, their possibilities for
-          independence and self-directed activity can become severely
-          restricted. This problem becomes especially important when unequal
-          gender expectations encourage women to define themselves primarily
-          through men.
-        </p>
+          <p>
+            Beauvoir was critical of romantic ideals that encourage one person
+            to make another the absolute center or ultimate justification of
+            their existence. If an individual abandons their own projects
+            entirely in order to live through another person, their
+            possibilities for independence and self-directed activity can become
+            severely restricted. This problem becomes especially important when
+            unequal gender expectations encourage women to define themselves
+            primarily through men.
+          </p>
 
-        <p>
-          In Beauvoir's philosophical framework, a valuable relationship should
-          involve recognition of both people as <strong>free subjects</strong>.
-          Love need not require the destruction of individuality or the
-          absorption of one person's existence into another's. Ideally, a
-          relationship can involve reciprocity in which two individuals
-          recognize each other's distinct freedom while sharing experiences and
-          pursuing both common and individual projects.
-        </p>
+          <p>
+            In Beauvoir's philosophical framework, a valuable relationship
+            should involve recognition of both people as
+            <strong>free subjects</strong>. Love need not require the
+            destruction of individuality or the absorption of one person's
+            existence into another's. Ideally, a relationship can involve
+            reciprocity in which two individuals recognize each other's distinct
+            freedom while sharing experiences and pursuing both common and
+            individual projects.
+          </p>
 
-        <p>
-          These ideas connect Beauvoir's philosophy of relationships with her
-          broader criticism of gender inequality. Traditional expectations
-          surrounding romance, marriage, and femininity can encourage women to
-          sacrifice independent ambitions or to derive their entire identity
-          from relationships. Beauvoir's analysis therefore asks how intimacy
-          might become compatible with freedom rather than reproducing
-          dependence and unequal power.
-        </p>
-      </section>
+          <p>
+            These ideas connect Beauvoir's philosophy of relationships with her
+            broader criticism of gender inequality. Traditional expectations
+            surrounding romance, marriage, and femininity can encourage women to
+            sacrifice independent ambitions or to derive their entire identity
+            from relationships. Beauvoir's analysis therefore asks how intimacy
+            might become compatible with freedom rather than reproducing
+            dependence and unequal power.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          SARTRE
          ===================================================== -->
 
-      <section class="narrative-block" id="sartre">
-        <h2>Simone de Beauvoir and Jean-Paul Sartre</h2>
+        <section class="narrative-block" id="sartre">
+          <h2>Simone de Beauvoir and Jean-Paul Sartre</h2>
 
-        <p>
-          <strong>Simone de Beauvoir and Jean-Paul Sartre</strong> met while
-          studying philosophy in Paris and developed one of the most famous
-          intellectual relationships of the twentieth century. Both became major
-          figures in existentialism and participated actively in French
-          literary, philosophical, and political life. Their long intellectual
-          exchange influenced the development of their ideas, but their
-          philosophical relationship should not be understood as the simple
-          dependence of one thinker upon the other.
-        </p>
+          <p>
+            <strong>Simone de Beauvoir and Jean-Paul Sartre</strong> met while
+            studying philosophy in Paris and developed one of the most famous
+            intellectual relationships of the twentieth century. Both became
+            major figures in existentialism and participated actively in French
+            literary, philosophical, and political life. Their long intellectual
+            exchange influenced the development of their ideas, but their
+            philosophical relationship should not be understood as the simple
+            dependence of one thinker upon the other.
+          </p>
 
-        <p>
-          Sartre's existentialist philosophy was an important influence on
-          Beauvoir, particularly through questions concerning consciousness,
-          freedom, responsibility, and human projects. Beauvoir engaged deeply
-          with these philosophical problems and shared many elements of the
-          existentialist intellectual environment. However, she developed
-          distinctive arguments and increasingly directed philosophical
-          attention toward questions that could not be adequately understood
-          through abstract accounts of freedom alone.
-        </p>
+          <p>
+            Sartre's existentialist philosophy was an important influence on
+            Beauvoir, particularly through questions concerning consciousness,
+            freedom, responsibility, and human projects. Beauvoir engaged deeply
+            with these philosophical problems and shared many elements of the
+            existentialist intellectual environment. However, she developed
+            distinctive arguments and increasingly directed philosophical
+            attention toward questions that could not be adequately understood
+            through abstract accounts of freedom alone.
+          </p>
 
-        <p>
-          Beauvoir's work placed particular emphasis on
-          <strong
-            >embodiment, concrete social conditions, intersubjective
-            relationships, oppression, and lived experience</strong
-          >. Her account of freedom is strongly situated, meaning that
-          philosophical analysis must consider the actual material and
-          historical circumstances in which people live. This orientation became
-          especially important in <em>The Second Sex</em>, where existentialist
-          concepts are used to analyze the concrete situation of women.
-        </p>
+          <p>
+            Beauvoir's work placed particular emphasis on
+            <strong
+              >embodiment, concrete social conditions, intersubjective
+              relationships, oppression, and lived experience</strong
+            >. Her account of freedom is strongly situated, meaning that
+            philosophical analysis must consider the actual material and
+            historical circumstances in which people live. This orientation
+            became especially important in <em>The Second Sex</em>, where
+            existentialist concepts are used to analyze the concrete situation
+            of women.
+          </p>
 
-        <p>
-          Their intellectual relationship therefore belongs to the history of
-          existentialism without erasing Beauvoir's independent philosophical
-          contribution. Contemporary scholarship has increasingly emphasized
-          Beauvoir as a major philosopher in her own right and has examined the
-          ways her work develops original contributions to existential ethics,
-          phenomenology, feminist philosophy, political thought, and the
-          philosophy of embodiment.
-        </p>
-      </section>
+          <p>
+            Their intellectual relationship therefore belongs to the history of
+            existentialism without erasing Beauvoir's independent philosophical
+            contribution. Contemporary scholarship has increasingly emphasized
+            Beauvoir as a major philosopher in her own right and has examined
+            the ways her work develops original contributions to existential
+            ethics, phenomenology, feminist philosophy, political thought, and
+            the philosophy of embodiment.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          EXISTENTIAL ETHICS
          ===================================================== -->
 
-      <section class="narrative-block" id="ethics">
-        <h2>Simone de Beauvoir's Philosophy of Existential Ethics</h2>
+        <section class="narrative-block" id="ethics">
+          <h2>Simone de Beauvoir's Philosophy of Existential Ethics</h2>
 
-        <p>
-          Beauvoir's <strong>existential ethics</strong> begins from the
-          recognition that human beings do not simply discover a complete and
-          predetermined moral meaning written into the universe. They exist in
-          an uncertain and changing world in which they must make choices,
-          undertake projects, and assume responsibility for their actions.
-          Ethical life therefore cannot be reduced to mechanically following a
-          universal formula that eliminates every difficulty of decision.
-        </p>
+          <p>
+            Beauvoir's <strong>existential ethics</strong> begins from the
+            recognition that human beings do not simply discover a complete and
+            predetermined moral meaning written into the universe. They exist in
+            an uncertain and changing world in which they must make choices,
+            undertake projects, and assume responsibility for their actions.
+            Ethical life therefore cannot be reduced to mechanically following a
+            universal formula that eliminates every difficulty of decision.
+          </p>
 
-        <p>
-          This does not imply that every choice is equally good. Beauvoir argues
-          that freedom has an ethical dimension because human actions take place
-          within a world shared with other free beings. A person who treats
-          another's freedom as irrelevant, or who seeks to dominate and reduce
-          others to instruments, creates conditions that contradict the broader
-          possibilities of reciprocal human freedom.
-        </p>
+          <p>
+            This does not imply that every choice is equally good. Beauvoir
+            argues that freedom has an ethical dimension because human actions
+            take place within a world shared with other free beings. A person
+            who treats another's freedom as irrelevant, or who seeks to dominate
+            and reduce others to instruments, creates conditions that contradict
+            the broader possibilities of reciprocal human freedom.
+          </p>
 
-        <p>
-          Her ethics consequently combines
-          <strong>personal responsibility with concern for others</strong>.
-          Freedom cannot be understood entirely as private independence because
-          human beings exist within relationships, institutions, and shared
-          historical circumstances. The possibilities available to one person
-          can be expanded or restricted by the actions of others, making ethical
-          reflection inseparable from questions about reciprocity and
-          responsibility.
-        </p>
+          <p>
+            Her ethics consequently combines
+            <strong>personal responsibility with concern for others</strong>.
+            Freedom cannot be understood entirely as private independence
+            because human beings exist within relationships, institutions, and
+            shared historical circumstances. The possibilities available to one
+            person can be expanded or restricted by the actions of others,
+            making ethical reflection inseparable from questions about
+            reciprocity and responsibility.
+          </p>
 
-        <p>
-          Beauvoir's ethics also became important for political philosophy
-          because it connects individual freedom with struggles against
-          oppression. Ethical action may require confronting institutions and
-          social conditions that systematically prevent people from exercising
-          meaningful freedom. Her existential ethics therefore moves beyond the
-          isolated individual and asks how human beings can create a shared
-          world in which freedom becomes a concrete possibility rather than
-          merely an abstract principle.
-        </p>
-      </section>
+          <p>
+            Beauvoir's ethics also became important for political philosophy
+            because it connects individual freedom with struggles against
+            oppression. Ethical action may require confronting institutions and
+            social conditions that systematically prevent people from exercising
+            meaningful freedom. Her existential ethics therefore moves beyond
+            the isolated individual and asks how human beings can create a
+            shared world in which freedom becomes a concrete possibility rather
+            than merely an abstract principle.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          MAJOR WORKS
          ===================================================== -->
 
-      <section class="narrative-block" id="works">
-        <h2>Major Works of Simone de Beauvoir</h2>
+        <section class="narrative-block" id="works">
+          <h2>Major Works of Simone de Beauvoir</h2>
 
-        <p>
-          Simone de Beauvoir wrote philosophy, novels, memoirs, essays, and
-          political works. Her literary writing often develops philosophical
-          questions through concrete characters and situations, while her
-          philosophical works directly examine freedom, ethics, gender, and
-          human existence.
-        </p>
+          <p>
+            Simone de Beauvoir wrote philosophy, novels, memoirs, essays, and
+            political works. Her literary writing often develops philosophical
+            questions through concrete characters and situations, while her
+            philosophical works directly examine freedom, ethics, gender, and
+            human existence.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong><em>The Second Sex</em></strong>
-            — Beauvoir's landmark work on women's situation, gender, oppression,
-            embodiment, and freedom.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong><em>The Second Sex</em></strong>
+              — Beauvoir's landmark work on women's situation, gender,
+              oppression, embodiment, and freedom.
+            </li>
 
-          <li>
-            <strong><em>The Ethics of Ambiguity</em></strong>
-            — An existentialist account of freedom, responsibility, ambiguity,
-            and ethical action.
-          </li>
+            <li>
+              <strong><em>The Ethics of Ambiguity</em></strong>
+              — An existentialist account of freedom, responsibility, ambiguity,
+              and ethical action.
+            </li>
 
-          <li>
-            <strong><em>Pyrrhus and Cineas</em></strong>
-            — An early philosophical essay concerning action, projects, freedom,
-            and relationships with others.
-          </li>
+            <li>
+              <strong><em>Pyrrhus and Cineas</em></strong>
+              — An early philosophical essay concerning action, projects,
+              freedom, and relationships with others.
+            </li>
 
-          <li>
-            <strong><em>She Came to Stay</em></strong>
-            — A philosophical novel exploring relationships, freedom,
-            consciousness, jealousy, and existential conflict.
-          </li>
+            <li>
+              <strong><em>She Came to Stay</em></strong>
+              — A philosophical novel exploring relationships, freedom,
+              consciousness, jealousy, and existential conflict.
+            </li>
 
-          <li>
-            <strong><em>The Blood of Others</em></strong>
-            — A novel dealing with freedom, responsibility, political
-            commitment, and the consequences of human action.
-          </li>
+            <li>
+              <strong><em>The Blood of Others</em></strong>
+              — A novel dealing with freedom, responsibility, political
+              commitment, and the consequences of human action.
+            </li>
 
-          <li>
-            <strong><em>All Men Are Mortal</em></strong>
-            — A philosophical novel exploring mortality, historical existence,
-            freedom, and the meaning of an individual life.
-          </li>
+            <li>
+              <strong><em>All Men Are Mortal</em></strong>
+              — A philosophical novel exploring mortality, historical existence,
+              freedom, and the meaning of an individual life.
+            </li>
 
-          <li>
-            <strong><em>The Coming of Age</em></strong>
-            — A major study of aging and the social position of older people.
-          </li>
+            <li>
+              <strong><em>The Coming of Age</em></strong>
+              — A major study of aging and the social position of older people.
+            </li>
 
-          <li>
-            <strong><em>A Very Easy Death</em></strong>
-            — A deeply personal philosophical and literary reflection on
-            illness, death, suffering, and human vulnerability.
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong><em>A Very Easy Death</em></strong>
+              — A deeply personal philosophical and literary reflection on
+              illness, death, suffering, and human vulnerability.
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          MAIN IDEAS
          ===================================================== -->
 
-      <section class="narrative-block" id="key-ideas">
-        <h2>Simone de Beauvoir's Main Philosophical Ideas</h2>
+        <section class="narrative-block" id="key-ideas">
+          <h2>Simone de Beauvoir's Main Philosophical Ideas</h2>
 
-        <h3>1. Human Beings Are Free but Situated</h3>
+          <h3>1. Human Beings Are Free but Situated</h3>
 
-        <p>
-          Beauvoir understands freedom as existing within concrete conditions.
-          People make choices, but those choices occur within historical,
-          economic, bodily, political, and social circumstances. Freedom is
-          therefore neither complete determinism nor unlimited choice.
-        </p>
+          <p>
+            Beauvoir understands freedom as existing within concrete conditions.
+            People make choices, but those choices occur within historical,
+            economic, bodily, political, and social circumstances. Freedom is
+            therefore neither complete determinism nor unlimited choice.
+          </p>
 
-        <h3>2. Freedom and Responsibility Are Connected</h3>
+          <h3>2. Freedom and Responsibility Are Connected</h3>
 
-        <p>
-          Human freedom creates responsibility because actions affect a shared
-          world. Beauvoir's ethics asks people to recognize both their own
-          freedom and the freedom of others rather than treating other human
-          beings as objects.
-        </p>
+          <p>
+            Human freedom creates responsibility because actions affect a shared
+            world. Beauvoir's ethics asks people to recognize both their own
+            freedom and the freedom of others rather than treating other human
+            beings as objects.
+          </p>
 
-        <h3>3. Women Have Historically Been Made the Other</h3>
+          <h3>3. Women Have Historically Been Made the Other</h3>
 
-        <p>
-          Beauvoir argues that women have frequently been defined in relation to
-          men rather than recognized as independent subjects. This concept of
-          the Other became one of the central ideas of modern feminist
-          philosophy.
-        </p>
+          <p>
+            Beauvoir argues that women have frequently been defined in relation
+            to men rather than recognized as independent subjects. This concept
+            of the Other became one of the central ideas of modern feminist
+            philosophy.
+          </p>
 
-        <h3>4. Gender Is Shaped by Social Experience</h3>
+          <h3>4. Gender Is Shaped by Social Experience</h3>
 
-        <p>
-          Beauvoir challenged the assumption that social femininity follows
-          automatically from biological sex. Childhood, education, culture,
-          institutions, and expectations all influence how gendered identities
-          are lived and understood.
-        </p>
+          <p>
+            Beauvoir challenged the assumption that social femininity follows
+            automatically from biological sex. Childhood, education, culture,
+            institutions, and expectations all influence how gendered identities
+            are lived and understood.
+          </p>
 
-        <h3>5. Oppression Restricts Freedom</h3>
+          <h3>5. Oppression Restricts Freedom</h3>
 
-        <p>
-          Oppressive social structures can limit the possibilities available to
-          individuals. Beauvoir therefore connects feminist liberation with the
-          broader existentialist problem of creating conditions in which people
-          can genuinely pursue meaningful projects.
-        </p>
+          <p>
+            Oppressive social structures can limit the possibilities available
+            to individuals. Beauvoir therefore connects feminist liberation with
+            the broader existentialist problem of creating conditions in which
+            people can genuinely pursue meaningful projects.
+          </p>
 
-        <h3>6. Human Existence Is Ambiguous</h3>
+          <h3>6. Human Existence Is Ambiguous</h3>
 
-        <p>
-          Human beings are simultaneously free subjects and embodied beings
-          subject to limitation, dependence, aging, suffering, and death.
-          Beauvoir's concept of ambiguity provides the foundation for much of
-          her existentialist ethics.
-        </p>
-      </section>
+          <p>
+            Human beings are simultaneously free subjects and embodied beings
+            subject to limitation, dependence, aging, suffering, and death.
+            Beauvoir's concept of ambiguity provides the foundation for much of
+            her existentialist ethics.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      FEMINIST EXISTENTIALISM
      ===================================================== -->
 
-      <section class="narrative-block" id="feminist-existentialism">
-        <h2>Simone de Beauvoir and Feminist Existentialism</h2>
+        <section class="narrative-block" id="feminist-existentialism">
+          <h2>Simone de Beauvoir and Feminist Existentialism</h2>
 
-        <p>
-          <strong>Feminist existentialism</strong> brings existentialist
-          questions about freedom, identity, responsibility, and human existence
-          into direct contact with the lived realities of gender. Simone de
-          Beauvoir is widely regarded as one of its foundational figures because
-          she showed that the philosophical problem of freedom cannot be
-          separated from the social conditions in which different people
-          actually live.
-        </p>
+          <p>
+            <strong>Feminist existentialism</strong> brings existentialist
+            questions about freedom, identity, responsibility, and human
+            existence into direct contact with the lived realities of gender.
+            Simone de Beauvoir is widely regarded as one of its foundational
+            figures because she showed that the philosophical problem of freedom
+            cannot be separated from the social conditions in which different
+            people actually live.
+          </p>
 
-        <p>
-          Beauvoir's contribution was distinctive because she refused to treat
-          the individual as an abstract consciousness existing outside history
-          and society. A woman may experience herself as a free subject while
-          simultaneously encountering institutions and expectations that shape
-          what she is encouraged to desire, how she should behave, and which
-          possibilities appear open or unavailable to her.
-        </p>
+          <p>
+            Beauvoir's contribution was distinctive because she refused to treat
+            the individual as an abstract consciousness existing outside history
+            and society. A woman may experience herself as a free subject while
+            simultaneously encountering institutions and expectations that shape
+            what she is encouraged to desire, how she should behave, and which
+            possibilities appear open or unavailable to her.
+          </p>
 
-        <p>
-          Her feminist existentialism therefore asks how freedom can be
-          exercised within circumstances that individuals did not choose. Human
-          beings always begin from a particular situation, yet situations are
-          neither philosophically irrelevant nor necessarily permanent. Social
-          arrangements can restrict possibilities, but they can also be
-          criticized and transformed.
-        </p>
+          <p>
+            Her feminist existentialism therefore asks how freedom can be
+            exercised within circumstances that individuals did not choose.
+            Human beings always begin from a particular situation, yet
+            situations are neither philosophically irrelevant nor necessarily
+            permanent. Social arrangements can restrict possibilities, but they
+            can also be criticized and transformed.
+          </p>
 
-        <p>
-          This approach helped establish an enduring philosophical connection
-          between individual agency and structural oppression. Later feminist
-          thinkers developed, criticized, and revised Beauvoir's ideas while
-          extending debates about embodiment, gender identity, social
-          construction, oppression, and the conditions required for genuine
-          human freedom.
-        </p>
-      </section>
+          <p>
+            This approach helped establish an enduring philosophical connection
+            between individual agency and structural oppression. Later feminist
+            thinkers developed, criticized, and revised Beauvoir's ideas while
+            extending debates about embodiment, gender identity, social
+            construction, oppression, and the conditions required for genuine
+            human freedom.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      INFLUENCE
      ===================================================== -->
 
-      <section class="narrative-block" id="influence">
-        <h2>Simone de Beauvoir's Influence on Feminism and Philosophy</h2>
+        <section class="narrative-block" id="influence">
+          <h2>Simone de Beauvoir's Influence on Feminism and Philosophy</h2>
 
-        <p>
-          Beauvoir's influence on <strong>feminist philosophy</strong> has been
-          profound. <em>The Second Sex</em> helped transform the philosophical
-          study of women by demonstrating that gender inequality raises
-          fundamental questions about freedom, identity, embodiment, social
-          institutions, and the meaning of human existence.
-        </p>
+          <p>
+            Beauvoir's influence on <strong>feminist philosophy</strong> has
+            been profound. <em>The Second Sex</em> helped transform the
+            philosophical study of women by demonstrating that gender inequality
+            raises fundamental questions about freedom, identity, embodiment,
+            social institutions, and the meaning of human existence.
+          </p>
 
-        <p>
-          Her analysis contributed to later debates about sex and gender,
-          embodiment, reproductive politics, women's work, sexuality, family
-          structures, and social identity. Feminist philosophers have both drawn
-          upon and criticized her arguments, particularly her treatment of
-          biological difference, social construction, and the relationship
-          between women as a social category and diverse individual experiences.
-        </p>
+          <p>
+            Her analysis contributed to later debates about sex and gender,
+            embodiment, reproductive politics, women's work, sexuality, family
+            structures, and social identity. Feminist philosophers have both
+            drawn upon and criticized her arguments, particularly her treatment
+            of biological difference, social construction, and the relationship
+            between women as a social category and diverse individual
+            experiences.
+          </p>
 
-        <p>
-          Beauvoir also made an important contribution to phenomenological
-          approaches to embodiment. Her attention to lived experience showed how
-          apparently abstract concepts such as freedom and subjectivity are
-          experienced through the body, everyday social practices,
-          relationships, work, and institutions.
-        </p>
+          <p>
+            Beauvoir also made an important contribution to phenomenological
+            approaches to embodiment. Her attention to lived experience showed
+            how apparently abstract concepts such as freedom and subjectivity
+            are experienced through the body, everyday social practices,
+            relationships, work, and institutions.
+          </p>
 
-        <p>
-          Her influence extends beyond academic philosophy. Beauvoir became a
-          major public intellectual whose writings and political engagements
-          connected philosophical reflection with questions about women's
-          liberation, colonialism, political responsibility, and social justice.
-          Her example helped demonstrate that philosophy could engage critically
-          with the concrete conflicts of historical life.
-        </p>
-      </section>
+          <p>
+            Her influence extends beyond academic philosophy. Beauvoir became a
+            major public intellectual whose writings and political engagements
+            connected philosophical reflection with questions about women's
+            liberation, colonialism, political responsibility, and social
+            justice. Her example helped demonstrate that philosophy could engage
+            critically with the concrete conflicts of historical life.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      POLITICAL THOUGHT
      ===================================================== -->
 
-      <section class="narrative-block" id="politics">
-        <h2>Simone de Beauvoir, Politics, and Social Liberation</h2>
+        <section class="narrative-block" id="politics">
+          <h2>Simone de Beauvoir, Politics, and Social Liberation</h2>
 
-        <p>
-          Beauvoir's philosophy increasingly engaged with political questions
-          concerning oppression, liberation, war, colonialism, and social
-          inequality. Her existentialist understanding of freedom led her to ask
-          not merely whether people possess freedom in principle, but under what
-          historical and material conditions they can genuinely exercise it.
-        </p>
+          <p>
+            Beauvoir's philosophy increasingly engaged with political questions
+            concerning oppression, liberation, war, colonialism, and social
+            inequality. Her existentialist understanding of freedom led her to
+            ask not merely whether people possess freedom in principle, but
+            under what historical and material conditions they can genuinely
+            exercise it.
+          </p>
 
-        <p>
-          She rejected the idea that philosophy should remain entirely detached
-          from lived political realities. Human beings always act within
-          particular situations, and political institutions, economic
-          arrangements, and social hierarchies can profoundly affect the
-          possibilities available to different individuals and groups.
-        </p>
+          <p>
+            She rejected the idea that philosophy should remain entirely
+            detached from lived political realities. Human beings always act
+            within particular situations, and political institutions, economic
+            arrangements, and social hierarchies can profoundly affect the
+            possibilities available to different individuals and groups.
+          </p>
 
-        <p>
-          Beauvoir's political thought therefore connects existential ethics
-          with social transformation. If freedom is a central human value, then
-          conditions that systematically reduce people to dependence, prevent
-          them from pursuing projects, or deny them meaningful agency demand
-          both ethical and political criticism.
-        </p>
+          <p>
+            Beauvoir's political thought therefore connects existential ethics
+            with social transformation. If freedom is a central human value,
+            then conditions that systematically reduce people to dependence,
+            prevent them from pursuing projects, or deny them meaningful agency
+            demand both ethical and political criticism.
+          </p>
 
-        <p>
-          Her political writings and activism also reveal an important
-          development in her philosophy: freedom cannot always be understood
-          adequately from the perspective of an isolated individual. The
-          struggle for liberation involves collective conditions, conflicts
-          between groups, and institutions capable of either expanding or
-          restricting human possibilities.
-        </p>
-      </section>
+          <p>
+            Her political writings and activism also reveal an important
+            development in her philosophy: freedom cannot always be understood
+            adequately from the perspective of an isolated individual. The
+            struggle for liberation involves collective conditions, conflicts
+            between groups, and institutions capable of either expanding or
+            restricting human possibilities.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      AGING
      ===================================================== -->
 
-      <section class="narrative-block" id="aging">
-        <h2>Simone de Beauvoir's Philosophy of Aging and Death</h2>
+        <section class="narrative-block" id="aging">
+          <h2>Simone de Beauvoir's Philosophy of Aging and Death</h2>
 
-        <p>
-          Beauvoir's philosophical interests extended far beyond gender to
-          questions concerning <strong>aging, mortality, and death</strong>. Her
-          work repeatedly examines the limits imposed by embodiment and the
-          unavoidable fact that human projects unfold within finite lives rather
-          than from a position of unlimited freedom.
-        </p>
+          <p>
+            Beauvoir's philosophical interests extended far beyond gender to
+            questions concerning <strong>aging, mortality, and death</strong>.
+            Her work repeatedly examines the limits imposed by embodiment and
+            the unavoidable fact that human projects unfold within finite lives
+            rather than from a position of unlimited freedom.
+          </p>
 
-        <p>
-          In <em>The Coming of Age</em>, Beauvoir offers a wide-ranging analysis
-          of old age and argues that aging cannot be understood as merely a
-          biological process. The social meaning of growing old is shaped by
-          economic conditions, work, family relationships, public institutions,
-          and cultural attitudes toward older people.
-        </p>
+          <p>
+            In <em>The Coming of Age</em>, Beauvoir offers a wide-ranging
+            analysis of old age and argues that aging cannot be understood as
+            merely a biological process. The social meaning of growing old is
+            shaped by economic conditions, work, family relationships, public
+            institutions, and cultural attitudes toward older people.
+          </p>
 
-        <p>
-          Her analysis is particularly concerned with the way older people may
-          be marginalized or treated primarily as objects of social management
-          rather than as subjects with histories, projects, relationships, and
-          continuing capacities. Aging therefore becomes another example of the
-          interaction between bodily reality and social interpretation.
-        </p>
+          <p>
+            Her analysis is particularly concerned with the way older people may
+            be marginalized or treated primarily as objects of social management
+            rather than as subjects with histories, projects, relationships, and
+            continuing capacities. Aging therefore becomes another example of
+            the interaction between bodily reality and social interpretation.
+          </p>
 
-        <p>
-          Beauvoir's reflections on death likewise connect personal experience
-          with philosophical questions about freedom and meaning. Human beings
-          can pursue projects and transform aspects of their world, yet they
-          cannot escape mortality. This tension between possibility and
-          limitation is another expression of the ambiguity at the center of
-          existential existence.
-        </p>
-      </section>
+          <p>
+            Beauvoir's reflections on death likewise connect personal experience
+            with philosophical questions about freedom and meaning. Human beings
+            can pursue projects and transform aspects of their world, yet they
+            cannot escape mortality. This tension between possibility and
+            limitation is another expression of the ambiguity at the center of
+            existential existence.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      LITERATURE
      ===================================================== -->
 
-      <section class="narrative-block" id="literature">
-        <h2>Simone de Beauvoir as a Philosopher and Writer</h2>
+        <section class="narrative-block" id="literature">
+          <h2>Simone de Beauvoir as a Philosopher and Writer</h2>
 
-        <p>
-          Beauvoir did not restrict philosophical thinking to traditional
-          academic treatises. She wrote novels, memoirs, essays, biographies,
-          philosophical works, and political commentary. Literature gave her a
-          distinctive way to investigate philosophical questions through
-          individual lives and concrete situations rather than through abstract
-          argument alone.
-        </p>
+          <p>
+            Beauvoir did not restrict philosophical thinking to traditional
+            academic treatises. She wrote novels, memoirs, essays, biographies,
+            philosophical works, and political commentary. Literature gave her a
+            distinctive way to investigate philosophical questions through
+            individual lives and concrete situations rather than through
+            abstract argument alone.
+          </p>
 
-        <p>
-          Her novels frequently explore freedom, relationships, responsibility,
-          jealousy, political commitment, mortality, and the difficulty of
-          understanding other people. Fiction allowed Beauvoir to show how
-          philosophical problems emerge within decisions whose consequences are
-          often uncertain and emotionally complex.
-        </p>
+          <p>
+            Her novels frequently explore freedom, relationships,
+            responsibility, jealousy, political commitment, mortality, and the
+            difficulty of understanding other people. Fiction allowed Beauvoir
+            to show how philosophical problems emerge within decisions whose
+            consequences are often uncertain and emotionally complex.
+          </p>
 
-        <p>
-          This relationship between philosophy and literature is characteristic
-          of much twentieth-century French existentialist writing. Beauvoir's
-          literary work complements her theoretical philosophy by making
-          concepts such as freedom, ambiguity, dependence, and responsibility
-          visible within the ordinary circumstances of human life.
-        </p>
+          <p>
+            This relationship between philosophy and literature is
+            characteristic of much twentieth-century French existentialist
+            writing. Beauvoir's literary work complements her theoretical
+            philosophy by making concepts such as freedom, ambiguity,
+            dependence, and responsibility visible within the ordinary
+            circumstances of human life.
+          </p>
 
-        <p>
-          Her memoirs are also philosophically significant because they examine
-          the formation of a self within a particular historical and social
-          world. Taken together, her philosophical and literary writings
-          challenge the assumption that rigorous reflection on human existence
-          must always take the form of impersonal or purely systematic
-          philosophy.
-        </p>
-      </section>
+          <p>
+            Her memoirs are also philosophically significant because they
+            examine the formation of a self within a particular historical and
+            social world. Taken together, her philosophical and literary
+            writings challenge the assumption that rigorous reflection on human
+            existence must always take the form of impersonal or purely
+            systematic philosophy.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      LEGACY
      ===================================================== -->
 
-      <section class="narrative-block" id="legacy">
-        <h2>Simone de Beauvoir's Philosophical Legacy</h2>
+        <section class="narrative-block" id="legacy">
+          <h2>Simone de Beauvoir's Philosophical Legacy</h2>
 
-        <p>
-          Simone de Beauvoir left a lasting legacy in existentialism, feminist
-          philosophy, ethics, phenomenology, political thought, and literary
-          studies. Her analysis of women's situation transformed philosophical
-          approaches to gender and demonstrated that lived social experience
-          could be investigated with serious philosophical rigor.
-        </p>
+          <p>
+            Simone de Beauvoir left a lasting legacy in existentialism, feminist
+            philosophy, ethics, phenomenology, political thought, and literary
+            studies. Her analysis of women's situation transformed philosophical
+            approaches to gender and demonstrated that lived social experience
+            could be investigated with serious philosophical rigor.
+          </p>
 
-        <p>
-          Her concept of the Other, her account of situated freedom, and her
-          philosophy of ambiguity continue to shape discussions about identity,
-          oppression, and human agency. Later thinkers have adapted these
-          concepts while also challenging some of Beauvoir's assumptions and
-          extending her questions to other forms of social difference and
-          exclusion.
-        </p>
+          <p>
+            Her concept of the Other, her account of situated freedom, and her
+            philosophy of ambiguity continue to shape discussions about
+            identity, oppression, and human agency. Later thinkers have adapted
+            these concepts while also challenging some of Beauvoir's assumptions
+            and extending her questions to other forms of social difference and
+            exclusion.
+          </p>
 
-        <p>
-          Beauvoir's work remains especially important because it resists a
-          simple opposition between individual freedom and social structure.
-          People possess agency, but agency is exercised through bodies,
-          relationships, institutions, histories, and material circumstances.
-          Freedom is therefore real without being unlimited or equally available
-          to everyone.
-        </p>
+          <p>
+            Beauvoir's work remains especially important because it resists a
+            simple opposition between individual freedom and social structure.
+            People possess agency, but agency is exercised through bodies,
+            relationships, institutions, histories, and material circumstances.
+            Freedom is therefore real without being unlimited or equally
+            available to everyone.
+          </p>
 
-        <p>
-          Today, Beauvoir remains one of the most widely studied philosophers of
-          the twentieth century. Her work continues to generate debate because
-          it raises difficult questions about freedom, gender, embodiment,
-          responsibility, equality, oppression, and what it means to become a
-          person within a particular social and historical world.
-        </p>
-      </section>
-      <div class="philosophy-divider"></div>
+          <p>
+            Today, Beauvoir remains one of the most widely studied philosophers
+            of the twentieth century. Her work continues to generate debate
+            because it raises difficult questions about freedom, gender,
+            embodiment, responsibility, equality, oppression, and what it means
+            to become a person within a particular social and historical world.
+          </p>
+        </section>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          SIMPLE EXPLANATION
          ===================================================== -->
 
-      <section class="narrative-block" id="explained-simply">
-        <h2>Simone de Beauvoir's Philosophy Explained Simply</h2>
+        <section class="narrative-block" id="explained-simply">
+          <h2>Simone de Beauvoir's Philosophy Explained Simply</h2>
 
-        <p>
-          Beauvoir's philosophy can be understood as an investigation of how
-          human beings attempt to live freely within circumstances they did not
-          choose. She believed that people are capable of creating projects and
-          making choices, but their possibilities are influenced by society,
-          history, embodiment, and relationships.
-        </p>
+          <p>
+            Beauvoir's philosophy can be understood as an investigation of how
+            human beings attempt to live freely within circumstances they did
+            not choose. She believed that people are capable of creating
+            projects and making choices, but their possibilities are influenced
+            by society, history, embodiment, and relationships.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong>Are human beings free?</strong>
-            Yes, but freedom is always situated within concrete social,
-            historical, bodily, and material conditions.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>Are human beings free?</strong>
+              Yes, but freedom is always situated within concrete social,
+              historical, bodily, and material conditions.
+            </li>
 
-          <li>
-            <strong>What is the Other?</strong>
-            The Other is a person or group defined as secondary in relation to a
-            dominant subject. Beauvoir uses this concept to analyze women's
-            historical position in relation to men.
-          </li>
+            <li>
+              <strong>What is the Other?</strong>
+              The Other is a person or group defined as secondary in relation to
+              a dominant subject. Beauvoir uses this concept to analyze women's
+              historical position in relation to men.
+            </li>
 
-          <li>
-            <strong>What did Beauvoir say about gender?</strong>
-            She argued that social femininity is shaped through cultural,
-            historical, and social processes rather than being explained by
-            biology alone.
-          </li>
+            <li>
+              <strong>What did Beauvoir say about gender?</strong>
+              She argued that social femininity is shaped through cultural,
+              historical, and social processes rather than being explained by
+              biology alone.
+            </li>
 
-          <li>
-            <strong>Why is freedom important?</strong>
-            Freedom allows people to pursue projects and create meaning, but it
-            also creates responsibility toward other people.
-          </li>
+            <li>
+              <strong>Why is freedom important?</strong>
+              Freedom allows people to pursue projects and create meaning, but
+              it also creates responsibility toward other people.
+            </li>
 
-          <li>
-            <strong>What is ambiguity?</strong>
-            Human beings are simultaneously free subjects and embodied beings
-            who experience limitation, dependence, suffering, aging, and death.
-          </li>
+            <li>
+              <strong>What is ambiguity?</strong>
+              Human beings are simultaneously free subjects and embodied beings
+              who experience limitation, dependence, suffering, aging, and
+              death.
+            </li>
 
-          <li>
-            <strong>Why is The Second Sex important?</strong>
-            It connects women's lived experiences with philosophical questions
-            about freedom, gender, embodiment, identity, and oppression.
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>Why is The Second Sex important?</strong>
+              It connects women's lived experiences with philosophical questions
+              about freedom, gender, embodiment, identity, and oppression.
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          IMPORTANCE
          ===================================================== -->
 
-      <section class="narrative-block" id="importance">
-        <h2>
-          Why Is Simone de Beauvoir Important in the History of Philosophy?
-        </h2>
+        <section class="narrative-block" id="importance">
+          <h2>
+            Why Is Simone de Beauvoir Important in the History of Philosophy?
+          </h2>
 
-        <p>
-          Simone de Beauvoir is important because she expanded existentialist
-          philosophy beyond abstract discussions of freedom and responsibility
-          toward the concrete social conditions in which people actually live.
-          Her work demonstrated that philosophical questions about freedom can
-          be inseparable from questions about gender, embodiment, economics,
-          relationships, and political power.
-        </p>
+          <p>
+            Simone de Beauvoir is important because she expanded existentialist
+            philosophy beyond abstract discussions of freedom and responsibility
+            toward the concrete social conditions in which people actually live.
+            Her work demonstrated that philosophical questions about freedom can
+            be inseparable from questions about gender, embodiment, economics,
+            relationships, and political power.
+          </p>
 
-        <p>
-          Her analysis of women challenged the assumption that philosophical
-          accounts of "the human" automatically represent everyone's experience.
-          By examining women's lives as a philosophical subject, Beauvoir
-          exposed how supposedly universal concepts can sometimes reflect the
-          experiences of particular social groups.
-        </p>
+          <p>
+            Her analysis of women challenged the assumption that philosophical
+            accounts of "the human" automatically represent everyone's
+            experience. By examining women's lives as a philosophical subject,
+            Beauvoir exposed how supposedly universal concepts can sometimes
+            reflect the experiences of particular social groups.
+          </p>
 
-        <p>
-          Her work also created an enduring connection between existentialism
-          and feminist philosophy. Questions about freedom, identity, and
-          meaning became connected to questions about oppression and the social
-          conditions necessary for genuine autonomy.
-        </p>
+          <p>
+            Her work also created an enduring connection between existentialism
+            and feminist philosophy. Questions about freedom, identity, and
+            meaning became connected to questions about oppression and the
+            social conditions necessary for genuine autonomy.
+          </p>
 
-        <p>
-          For these reasons, Beauvoir is now studied not merely as an important
-          companion to Sartre or as the author of a famous feminist book, but as
-          a major philosopher whose ideas continue to shape contemporary debates
-          about freedom, gender, ethics, embodiment, and social justice.
-        </p>
-      </section>
+          <p>
+            For these reasons, Beauvoir is now studied not merely as an
+            important companion to Sartre or as the author of a famous feminist
+            book, but as a major philosopher whose ideas continue to shape
+            contemporary debates about freedom, gender, ethics, embodiment, and
+            social justice.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          FAQ
          ===================================================== -->
 
-      <section class="narrative-block" id="faq">
-        <h2>Frequently Asked Questions About Simone de Beauvoir</h2>
+        <section class="narrative-block" id="faq">
+          <h2>Frequently Asked Questions About Simone de Beauvoir</h2>
 
-        <h3>Who was Simone de Beauvoir?</h3>
+          <h3>Who was Simone de Beauvoir?</h3>
 
-        <p>
-          Simone de Beauvoir was a French philosopher, writer, and intellectual
-          best known for her contributions to existentialism and feminist
-          philosophy. Her major works examine freedom, ethics, gender,
-          oppression, embodiment, relationships, and human existence.
-        </p>
+          <p>
+            Simone de Beauvoir was a French philosopher, writer, and
+            intellectual best known for her contributions to existentialism and
+            feminist philosophy. Her major works examine freedom, ethics,
+            gender, oppression, embodiment, relationships, and human existence.
+          </p>
 
-        <h3>What was Simone de Beauvoir famous for?</h3>
+          <h3>What was Simone de Beauvoir famous for?</h3>
 
-        <p>
-          Beauvoir is most famous for <em>The Second Sex</em>, a landmark work
-          of feminist philosophy published in 1949. She is also known for
-          <em>The Ethics of Ambiguity</em> and for her contributions to
-          existentialist philosophy, ethics, and twentieth-century French
-          intellectual life.
-        </p>
+          <p>
+            Beauvoir is most famous for <em>The Second Sex</em>, a landmark work
+            of feminist philosophy published in 1949. She is also known for
+            <em>The Ethics of Ambiguity</em> and for her contributions to
+            existentialist philosophy, ethics, and twentieth-century French
+            intellectual life.
+          </p>
 
-        <h3>What was Simone de Beauvoir's philosophy?</h3>
+          <h3>What was Simone de Beauvoir's philosophy?</h3>
 
-        <p>
-          Simone de Beauvoir's philosophy focused on freedom, responsibility,
-          ambiguity, embodiment, relationships, oppression, and the social
-          conditions of human existence. Her existentialist philosophy argues
-          that people are free but always situated within concrete
-          circumstances.
-        </p>
+          <p>
+            Simone de Beauvoir's philosophy focused on freedom, responsibility,
+            ambiguity, embodiment, relationships, oppression, and the social
+            conditions of human existence. Her existentialist philosophy argues
+            that people are free but always situated within concrete
+            circumstances.
+          </p>
 
-        <h3>Was Simone de Beauvoir an existentialist?</h3>
+          <h3>Was Simone de Beauvoir an existentialist?</h3>
 
-        <p>
-          Yes. Beauvoir is widely associated with existentialism, although her
-          philosophical position should not simply be reduced to Jean-Paul
-          Sartre's existentialism. She developed distinctive ideas about
-          situated freedom, ambiguity, ethics, embodiment, oppression, and
-          women's lived experience.
-        </p>
+          <p>
+            Yes. Beauvoir is widely associated with existentialism, although her
+            philosophical position should not simply be reduced to Jean-Paul
+            Sartre's existentialism. She developed distinctive ideas about
+            situated freedom, ambiguity, ethics, embodiment, oppression, and
+            women's lived experience.
+          </p>
 
-        <h3>What is The Second Sex about?</h3>
+          <h3>What is The Second Sex about?</h3>
 
-        <p>
-          <em>The Second Sex</em> examines women's historical and social
-          situation through philosophy, history, biology, literature, and lived
-          experience. Beauvoir investigates how women have been defined as the
-          Other and how gendered social structures can restrict freedom.
-        </p>
+          <p>
+            <em>The Second Sex</em> examines women's historical and social
+            situation through philosophy, history, biology, literature, and
+            lived experience. Beauvoir investigates how women have been defined
+            as the Other and how gendered social structures can restrict
+            freedom.
+          </p>
 
-        <h3>
-          What did Simone de Beauvoir mean by "One is not born, but rather
-          becomes, a woman"?
-        </h3>
+          <h3>
+            What did Simone de Beauvoir mean by "One is not born, but rather
+            becomes, a woman"?
+          </h3>
 
-        <p>
-          The statement expresses Beauvoir's argument that social femininity is
-          not simply determined by biological sex. Socialization, culture,
-          education, institutions, and expectations contribute to the process
-          through which a person becomes socially understood as a woman.
-        </p>
+          <p>
+            The statement expresses Beauvoir's argument that social femininity
+            is not simply determined by biological sex. Socialization, culture,
+            education, institutions, and expectations contribute to the process
+            through which a person becomes socially understood as a woman.
+          </p>
 
-        <h3>What is Simone de Beauvoir's feminism?</h3>
+          <h3>What is Simone de Beauvoir's feminism?</h3>
 
-        <p>
-          Beauvoir's feminism is strongly influenced by existentialism. She
-          argued that women should be recognized as free subjects capable of
-          independent projects rather than being confined to roles defined
-          primarily through men, marriage, motherhood, or traditional social
-          expectations.
-        </p>
+          <p>
+            Beauvoir's feminism is strongly influenced by existentialism. She
+            argued that women should be recognized as free subjects capable of
+            independent projects rather than being confined to roles defined
+            primarily through men, marriage, motherhood, or traditional social
+            expectations.
+          </p>
 
-        <h3>What is the Other in Simone de Beauvoir's philosophy?</h3>
+          <h3>What is the Other in Simone de Beauvoir's philosophy?</h3>
 
-        <p>
-          The Other describes a position in which one group is defined as
-          secondary or different in relation to a dominant subject. Beauvoir
-          argues that women have historically been positioned as the Other in
-          relation to men, who have often been treated as the universal human
-          subject.
-        </p>
+          <p>
+            The Other describes a position in which one group is defined as
+            secondary or different in relation to a dominant subject. Beauvoir
+            argues that women have historically been positioned as the Other in
+            relation to men, who have often been treated as the universal human
+            subject.
+          </p>
 
-        <h3>What is existentialist feminism?</h3>
+          <h3>What is existentialist feminism?</h3>
 
-        <p>
-          Existentialist feminism applies existentialist ideas about freedom,
-          responsibility, identity, and meaning to women's lived experience.
-          Beauvoir's work is foundational because it investigates how social
-          conditions can restrict women's freedom while also examining the
-          possibility of liberation.
-        </p>
+          <p>
+            Existentialist feminism applies existentialist ideas about freedom,
+            responsibility, identity, and meaning to women's lived experience.
+            Beauvoir's work is foundational because it investigates how social
+            conditions can restrict women's freedom while also examining the
+            possibility of liberation.
+          </p>
 
-        <h3>What is The Ethics of Ambiguity?</h3>
+          <h3>What is The Ethics of Ambiguity?</h3>
 
-        <p>
-          <em>The Ethics of Ambiguity</em> is Beauvoir's major philosophical
-          work on existentialist ethics. It examines freedom, responsibility,
-          uncertainty, human limitation, and the ethical relationship between
-          one's own freedom and the freedom of others.
-        </p>
+          <p>
+            <em>The Ethics of Ambiguity</em> is Beauvoir's major philosophical
+            work on existentialist ethics. It examines freedom, responsibility,
+            uncertainty, human limitation, and the ethical relationship between
+            one's own freedom and the freedom of others.
+          </p>
 
-        <h3>What did Simone de Beauvoir believe about freedom?</h3>
+          <h3>What did Simone de Beauvoir believe about freedom?</h3>
 
-        <p>
-          Beauvoir believed that human beings possess freedom but that freedom
-          is always situated within concrete circumstances. Social, economic,
-          historical, bodily, and political conditions can expand or restrict
-          the possibilities through which people exercise their freedom.
-        </p>
+          <p>
+            Beauvoir believed that human beings possess freedom but that freedom
+            is always situated within concrete circumstances. Social, economic,
+            historical, bodily, and political conditions can expand or restrict
+            the possibilities through which people exercise their freedom.
+          </p>
 
-        <h3>What did Simone de Beauvoir say about gender?</h3>
+          <h3>What did Simone de Beauvoir say about gender?</h3>
 
-        <p>
-          Beauvoir argued that gendered identity is shaped by social and
-          historical processes rather than being explained entirely by biology.
-          Her philosophy examines how childhood, culture, institutions, and
-          social expectations influence the way femininity is lived.
-        </p>
+          <p>
+            Beauvoir argued that gendered identity is shaped by social and
+            historical processes rather than being explained entirely by
+            biology. Her philosophy examines how childhood, culture,
+            institutions, and social expectations influence the way femininity
+            is lived.
+          </p>
 
-        <h3>How did Simone de Beauvoir influence feminism?</h3>
+          <h3>How did Simone de Beauvoir influence feminism?</h3>
 
-        <p>
-          Beauvoir helped establish gender, embodiment, oppression, and women's
-          freedom as major subjects of philosophical inquiry. Her work
-          influenced later feminist theories concerning gender, social
-          construction, sexuality, embodiment, identity, and liberation.
-        </p>
+          <p>
+            Beauvoir helped establish gender, embodiment, oppression, and
+            women's freedom as major subjects of philosophical inquiry. Her work
+            influenced later feminist theories concerning gender, social
+            construction, sexuality, embodiment, identity, and liberation.
+          </p>
 
-        <h3>
-          What was Simone de Beauvoir's relationship with Jean-Paul Sartre?
-        </h3>
+          <h3>
+            What was Simone de Beauvoir's relationship with Jean-Paul Sartre?
+          </h3>
 
-        <p>
-          Beauvoir and Jean-Paul Sartre were lifelong intellectual and romantic
-          partners. They shared an important intellectual environment and
-          influenced one another, but Beauvoir developed philosophical ideas of
-          her own, particularly concerning situated freedom, embodiment,
-          oppression, and women's experience.
-        </p>
+          <p>
+            Beauvoir and Jean-Paul Sartre were lifelong intellectual and
+            romantic partners. They shared an important intellectual environment
+            and influenced one another, but Beauvoir developed philosophical
+            ideas of her own, particularly concerning situated freedom,
+            embodiment, oppression, and women's experience.
+          </p>
 
-        <h3>What are Simone de Beauvoir's major philosophical works?</h3>
+          <h3>What are Simone de Beauvoir's major philosophical works?</h3>
 
-        <p>
-          Her major philosophical works include <em>The Second Sex</em>,
-          <em>The Ethics of Ambiguity</em>, and <em>Pyrrhus and Cineas</em>. Her
-          novels, memoirs, essays, and studies of aging and death also contain
-          substantial philosophical analysis.
-        </p>
+          <p>
+            Her major philosophical works include <em>The Second Sex</em>,
+            <em>The Ethics of Ambiguity</em>, and <em>Pyrrhus and Cineas</em>.
+            Her novels, memoirs, essays, and studies of aging and death also
+            contain substantial philosophical analysis.
+          </p>
 
-        <h3>Why is Simone de Beauvoir important today?</h3>
+          <h3>Why is Simone de Beauvoir important today?</h3>
 
-        <p>
-          Beauvoir remains important because her philosophy connects individual
-          freedom with social conditions. Her ideas continue to influence
-          feminist philosophy, existentialism, phenomenology, ethics, political
-          philosophy, and debates about gender, embodiment, oppression, and
-          human autonomy.
-        </p>
-      </section>
+          <p>
+            Beauvoir remains important because her philosophy connects
+            individual freedom with social conditions. Her ideas continue to
+            influence feminist philosophy, existentialism, phenomenology,
+            ethics, political philosophy, and debates about gender, embodiment,
+            oppression, and human autonomy.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED THINKERS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-thinkers-title">
-        <span class="section-eyebrow"> Continue Exploring </span>
+        <section class="connection" aria-labelledby="related-thinkers-title">
+          <span class="section-eyebrow"> Continue Exploring </span>
 
-        <h2 id="related-thinkers-title">
-          Related Modern and Existentialist Philosophers
-        </h2>
+          <h2 id="related-thinkers-title">
+            Related Modern and Existentialist Philosophers
+          </h2>
 
-        <p>
-          Explore other major philosophers connected with existentialism, modern
-          philosophy, ethics, freedom, consciousness, and feminist thought.
-        </p>
+          <p>
+            Explore other major philosophers connected with existentialism,
+            modern philosophy, ethics, freedom, consciousness, and feminist
+            thought.
+          </p>
 
-        <div class="related-links">
-          <a href="rene-descartes.html"> René Descartes </a>
-          ·
+          <div class="related-links">
+            <a href="rene-descartes.html"> René Descartes </a>
+            ·
 
-          <a href="john-locke.html"> John Locke </a>
-          ·
+            <a href="john-locke.html"> John Locke </a>
+            ·
 
-          <a href="baruch-spinoza.html"> Baruch Spinoza </a>
-          ·
+            <a href="baruch-spinoza.html"> Baruch Spinoza </a>
+            ·
 
-          <a href="leibniz.html"> Gottfried Wilhelm Leibniz </a>
-          ·
+            <a href="leibniz.html"> Gottfried Wilhelm Leibniz </a>
+            ·
 
-          <a href="george-berkeley.html"> George Berkeley </a>
-          ·
+            <a href="george-berkeley.html"> George Berkeley </a>
+            ·
 
-          <a href="david-hume.html"> David Hume </a>
-          ·
+            <a href="david-hume.html"> David Hume </a>
+            ·
 
-          <a href="immanuel-kant.html"> Immanuel Kant </a>
-          ·
+            <a href="immanuel-kant.html"> Immanuel Kant </a>
+            ·
 
-          <a href="voltaire.html"> Voltaire </a>
-          ·
+            <a href="voltaire.html"> Voltaire </a>
+            ·
 
-          <a href="montesquieu.html"> Montesquieu </a>
-        </div>
-      </section>
+            <a href="montesquieu.html"> Montesquieu </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED AREAS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-topics-title">
-        <span class="section-eyebrow"> Philosophical Connections </span>
+        <section class="connection" aria-labelledby="related-topics-title">
+          <span class="section-eyebrow"> Philosophical Connections </span>
 
-        <h2 id="related-topics-title">Related Areas of Philosophy</h2>
+          <h2 id="related-topics-title">Related Areas of Philosophy</h2>
 
-        <p>
-          Beauvoir's philosophy connects existentialism with ethics, feminist
-          philosophy, metaphysics, epistemology, social and political
-          philosophy, philosophy of the body, and modern philosophical thought.
-        </p>
+          <p>
+            Beauvoir's philosophy connects existentialism with ethics, feminist
+            philosophy, metaphysics, epistemology, social and political
+            philosophy, philosophy of the body, and modern philosophical
+            thought.
+          </p>
 
-        <div class="related-links">
-          <a href="ethics-branch-philosophy.html"> Ethics </a>
-          ·
+          <div class="related-links">
+            <a href="ethics-branch-philosophy.html"> Ethics </a>
+            ·
 
-          <a href="epistemology-branch-philosophy.html"> Epistemology </a>
-          ·
+            <a href="epistemology-branch-philosophy.html"> Epistemology </a>
+            ·
 
-          <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
-          ·
+            <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
+            ·
 
-          <a href="modern-philosophy.html"> Modern Philosophy </a>
-          ·
+            <a href="modern-philosophy.html"> Modern Philosophy </a>
+            ·
 
-          <a href="schools.html"> Schools of Philosophy </a>
-          ·
+            <a href="schools.html"> Schools of Philosophy </a>
+            ·
 
-          <a href="thinkers.html"> Philosophers and Thinkers </a>
-        </div>
-      </section>
+            <a href="thinkers.html"> Philosophers and Thinkers </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          CONCLUSION
          ===================================================== -->
 
-      <section class="narrative-block" aria-labelledby="conclusion-title">
-        <span class="section-eyebrow"> Modern Philosophy </span>
+        <section class="narrative-block" aria-labelledby="conclusion-title">
+          <span class="section-eyebrow"> Modern Philosophy </span>
 
-        <h2 id="conclusion-title">Why Simone de Beauvoir Still Matters</h2>
+          <h2 id="conclusion-title">Why Simone de Beauvoir Still Matters</h2>
 
-        <p>
-          Simone de Beauvoir occupies a foundational position in modern
-          existentialist and feminist philosophy. Her work transformed
-          philosophical discussions of women's lives by connecting gender with
-          questions of freedom, embodiment, social identity, oppression, and
-          human responsibility.
-        </p>
+          <p>
+            Simone de Beauvoir occupies a foundational position in modern
+            existentialist and feminist philosophy. Her work transformed
+            philosophical discussions of women's lives by connecting gender with
+            questions of freedom, embodiment, social identity, oppression, and
+            human responsibility.
+          </p>
 
-        <p>
-          Her philosophy demonstrates that freedom cannot be understood only as
-          an abstract capacity to choose. People are situated within bodies,
-          relationships, economies, cultures, histories, and political
-          institutions that shape the possibilities available to them. Genuine
-          freedom therefore requires attention to the conditions under which
-          human beings can pursue meaningful projects.
-        </p>
+          <p>
+            Her philosophy demonstrates that freedom cannot be understood only
+            as an abstract capacity to choose. People are situated within
+            bodies, relationships, economies, cultures, histories, and political
+            institutions that shape the possibilities available to them. Genuine
+            freedom therefore requires attention to the conditions under which
+            human beings can pursue meaningful projects.
+          </p>
 
-        <p>
-          From <em>The Second Sex</em> to <em>The Ethics of Ambiguity</em>,
-          Beauvoir developed a philosophy that connected existential questions
-          with concrete human experience. Her concepts of ambiguity, the Other,
-          situated freedom, immanence, and transcendence continue to influence
-          philosophical debates about gender, ethics, identity, and liberation.
-        </p>
+          <p>
+            From <em>The Second Sex</em> to <em>The Ethics of Ambiguity</em>,
+            Beauvoir developed a philosophy that connected existential questions
+            with concrete human experience. Her concepts of ambiguity, the
+            Other, situated freedom, immanence, and transcendence continue to
+            influence philosophical debates about gender, ethics, identity, and
+            liberation.
+          </p>
 
-        <p>
-          Understanding Beauvoir also helps explain the development of
-          twentieth-century philosophy. She expanded existentialism into a
-          sustained examination of social and embodied existence and helped make
-          feminist philosophy a major field of philosophical inquiry. Her work
-          remains relevant wherever questions of freedom, equality,
-          responsibility, and human possibility are debated.
-        </p>
+          <p>
+            Understanding Beauvoir also helps explain the development of
+            twentieth-century philosophy. She expanded existentialism into a
+            sustained examination of social and embodied existence and helped
+            make feminist philosophy a major field of philosophical inquiry. Her
+            work remains relevant wherever questions of freedom, equality,
+            responsibility, and human possibility are debated.
+          </p>
 
-        <a class="cta-button" href="thinkers.html">
-          Explore Great Philosophers
-          <span aria-hidden="true">&rarr;</span>
-        </a>
-      </section>
-    </main>
+          <a class="cta-button" href="thinkers.html">
+            Explore Great Philosophers
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </section>
+      </main>
+    </div>
 
     <!-- =====================================================
        FOOTER
@@ -2855,8 +2930,8 @@
        SCRIPTS
        ===================================================== -->
 
-     <script src="script.js" defer></script>
-     <script src="article-toc.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="article-toc.js" defer></script>
 
     <script src="branches-enhance.js" defer></script>
 

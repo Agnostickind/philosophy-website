@@ -110,7 +110,7 @@
 
     <!-- ================= STYLESHEETS ================= -->
 
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="article-toc.css" />
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
@@ -398,10 +398,10 @@
       }
     </script>
     <link
-    rel="describedby"
-    href="https://agnostickind.github.io/philosophy-website/llms.txt"
-  >
-</head>
+      rel="describedby"
+      href="https://agnostickind.github.io/philosophy-website/llms.txt"
+    />
+  </head>
 
   <body>
     <!-- =====================================================
@@ -691,12 +691,11 @@
         </div>
 
         <a href="schools.html">Schools</a>
-       <a href="books.html">Books</a>
+        <a href="books.html">Books</a>
         <a href="world-literature.html">Literature</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </div>
-
 
       <div class="nav-tools">
         <!-- SEARCH -->
@@ -791,1772 +790,1866 @@
       </div>
     </header>
 
-    <main id="main-content" tabindex="-1">
-      <!-- =====================================================
+    <div class="article-reading-area">
+      <!-- =========================================================
+     ARTICLE TABLE OF CONTENTS
+     ========================================================= -->
+
+      <!-- Desktop TOC -->
+      <aside class="article-toc" aria-label="Article contents">
+        <div class="article-toc__header">
+          <span class="article-toc__title">Contents</span>
+
+          <button
+            type="button"
+            class="article-toc__hide"
+            aria-label="Hide article contents"
+          >
+            Hide
+          </button>
+        </div>
+
+        <nav class="article-toc__nav" aria-label="Article sections">
+          <div class="article-toc__list"></div>
+        </nav>
+      </aside>
+
+      <!-- Mobile TOC trigger -->
+      <button
+        type="button"
+        class="mobile-toc-trigger"
+        aria-expanded="false"
+        aria-controls="mobile-toc-drawer"
+      >
+        <span>Contents</span>
+        <span class="mobile-toc-trigger__chevron" aria-hidden="true">⌄</span>
+      </button>
+
+      <!-- Mobile TOC overlay -->
+      <div class="mobile-toc-overlay" hidden></div>
+
+      <!-- Mobile TOC drawer -->
+      <aside
+        id="mobile-toc-drawer"
+        class="mobile-toc-drawer"
+        aria-label="Article contents"
+        aria-hidden="true"
+      >
+        <div class="mobile-toc-drawer__header">
+          <span class="mobile-toc-drawer__title">Contents</span>
+
+          <button
+            type="button"
+            class="mobile-toc-drawer__close"
+            aria-label="Close article contents"
+          >
+            ×
+          </button>
+        </div>
+
+        <nav class="mobile-toc-drawer__nav" aria-label="Article sections">
+          <div class="mobile-toc-drawer__list"></div>
+        </nav>
+      </aside>
+
+      <main id="main-content" tabindex="-1">
+        <!-- =====================================================
      1. INTRODUCTION
      ===================================================== -->
 
-      <section class="about-home">
-        <h2>Who Was Voltaire?</h2>
+        <section class="about-home">
+          <h2>Who Was Voltaire?</h2>
 
-        <p>
-          <strong>Voltaire</strong> was the pen name of François-Marie Arouet
-          (1694–1778), one of the most influential writers and intellectual
-          figures of the European Enlightenment. A French author, historian,
-          satirist, philosopher, and public controversialist, he became famous
-          for his attacks on religious intolerance, arbitrary authority,
-          censorship, and intellectual dogmatism. Through an enormous range of
-          literary and philosophical works, Voltaire helped bring complex ideas
-          about reason, liberty, religion, and society to a broad European
-          reading public.
-        </p>
+          <p>
+            <strong>Voltaire</strong> was the pen name of François-Marie Arouet
+            (1694–1778), one of the most influential writers and intellectual
+            figures of the European Enlightenment. A French author, historian,
+            satirist, philosopher, and public controversialist, he became famous
+            for his attacks on religious intolerance, arbitrary authority,
+            censorship, and intellectual dogmatism. Through an enormous range of
+            literary and philosophical works, Voltaire helped bring complex
+            ideas about reason, liberty, religion, and society to a broad
+            European reading public.
+          </p>
 
-        <p>
-          Unlike philosophers such as Descartes or Leibniz, Voltaire did not
-          construct a single, comprehensive philosophical system based upon a
-          unified set of metaphysical principles. His ideas instead appeared
-          across essays, letters, histories, philosophical dictionaries, plays,
-          poems, political writings, and works of fiction. He used argument,
-          irony, satire, historical criticism, and storytelling to challenge
-          accepted beliefs and examine questions about knowledge, religion,
-          morality, political authority, and human society.
-        </p>
+          <p>
+            Unlike philosophers such as Descartes or Leibniz, Voltaire did not
+            construct a single, comprehensive philosophical system based upon a
+            unified set of metaphysical principles. His ideas instead appeared
+            across essays, letters, histories, philosophical dictionaries,
+            plays, poems, political writings, and works of fiction. He used
+            argument, irony, satire, historical criticism, and storytelling to
+            challenge accepted beliefs and examine questions about knowledge,
+            religion, morality, political authority, and human society.
+          </p>
 
-        <p>
-          Voltaire became one of the defining voices of the
-          <strong>French Enlightenment</strong>, a broader intellectual movement
-          that emphasized critical inquiry and challenged inherited forms of
-          authority. He admired scientific achievement and was strongly
-          influenced by the ideas associated with John Locke and Isaac Newton.
-          His writings encouraged readers to question prejudice and fanaticism
-          while recognizing the limits of human knowledge and the dangers of
-          absolute certainty.
-        </p>
+          <p>
+            Voltaire became one of the defining voices of the
+            <strong>French Enlightenment</strong>, a broader intellectual
+            movement that emphasized critical inquiry and challenged inherited
+            forms of authority. He admired scientific achievement and was
+            strongly influenced by the ideas associated with John Locke and
+            Isaac Newton. His writings encouraged readers to question prejudice
+            and fanaticism while recognizing the limits of human knowledge and
+            the dangers of absolute certainty.
+          </p>
 
-        <p>
-          His enduring reputation rests especially on his defense of religious
-          tolerance, freedom of thought, civil liberty, and opposition to
-          persecution. Voltaire was not simply a theorist writing for
-          universities; he intervened directly in public controversies and used
-          his international reputation to influence contemporary debates. His
-          philosophy therefore remains closely connected with the history of
-          <strong>Enlightenment philosophy</strong> and the development of
-          modern ideas about criticism, tolerance, and public intellectual
-          freedom.
-        </p>
-      </section>
+          <p>
+            His enduring reputation rests especially on his defense of religious
+            tolerance, freedom of thought, civil liberty, and opposition to
+            persecution. Voltaire was not simply a theorist writing for
+            universities; he intervened directly in public controversies and
+            used his international reputation to influence contemporary debates.
+            His philosophy therefore remains closely connected with the history
+            of
+            <strong>Enlightenment philosophy</strong> and the development of
+            modern ideas about criticism, tolerance, and public intellectual
+            freedom.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      2. QUICK FACTS
      ===================================================== -->
 
-      <section class="narrative-block" id="quick-facts">
-        <h2>Voltaire: Quick Facts</h2>
+        <section class="narrative-block" id="quick-facts">
+          <h2>Voltaire: Quick Facts</h2>
 
-        <ul class="plain-list">
-          <li><strong>Full name</strong> — François-Marie Arouet</li>
+          <ul class="plain-list">
+            <li><strong>Full name</strong> — François-Marie Arouet</li>
 
-          <li><strong>Pen name</strong> — Voltaire</li>
+            <li><strong>Pen name</strong> — Voltaire</li>
 
-          <li><strong>Born</strong> — 1694, Paris, France</li>
+            <li><strong>Born</strong> — 1694, Paris, France</li>
 
-          <li><strong>Died</strong> — 1778, Paris, France</li>
+            <li><strong>Died</strong> — 1778, Paris, France</li>
 
-          <li><strong>Philosophical period</strong> — Enlightenment</li>
+            <li><strong>Philosophical period</strong> — Enlightenment</li>
 
-          <li><strong>Tradition</strong> — French Enlightenment philosophy</li>
+            <li>
+              <strong>Tradition</strong> — French Enlightenment philosophy
+            </li>
 
-          <li>
-            <strong>Major influences</strong> — John Locke, Isaac Newton,
-            English constitutional thought, classical philosophy
-          </li>
+            <li>
+              <strong>Major influences</strong> — John Locke, Isaac Newton,
+              English constitutional thought, classical philosophy
+            </li>
 
-          <li>
-            <strong>Major subjects</strong> — Religion, tolerance, reason,
-            politics, morality, history, society, and human freedom
-          </li>
+            <li>
+              <strong>Major subjects</strong> — Religion, tolerance, reason,
+              politics, morality, history, society, and human freedom
+            </li>
 
-          <li><strong>Religious position</strong> — Deism</li>
+            <li><strong>Religious position</strong> — Deism</li>
 
-          <li><strong>Famous work</strong> — <em>Candide</em></li>
+            <li><strong>Famous work</strong> — <em>Candide</em></li>
 
-          <li>
-            <strong>Important philosophical work</strong> —
-            <em>Letters Concerning the English Nation</em>
-            (also known as <em>Philosophical Letters</em>)
-          </li>
+            <li>
+              <strong>Important philosophical work</strong> —
+              <em>Letters Concerning the English Nation</em>
+              (also known as <em>Philosophical Letters</em>)
+            </li>
 
-          <li>
-            <strong>Important work on religion</strong> —
-            <em>Treatise on Tolerance</em>
-          </li>
+            <li>
+              <strong>Important work on religion</strong> —
+              <em>Treatise on Tolerance</em>
+            </li>
 
-          <li>
-            <strong>Other major work</strong> —
-            <em>Dictionnaire philosophique</em>
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>Other major work</strong> —
+              <em>Dictionnaire philosophique</em>
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      3. EARLY LIFE
      ===================================================== -->
 
-      <section class="narrative-block" id="early-life">
-        <h2>Voltaire's Early Life and Education</h2>
+        <section class="narrative-block" id="early-life">
+          <h2>Voltaire's Early Life and Education</h2>
 
-        <figure class="narrative-figure">
-          <img
-            src="images/voltaire.jpg"
-            alt="Portrait of Voltaire, French Enlightenment philosopher and writer"
-            loading="lazy"
-            decoding="async"
-          />
+          <figure class="narrative-figure">
+            <img
+              src="images/voltaire.jpg"
+              alt="Portrait of Voltaire, French Enlightenment philosopher and writer"
+              loading="lazy"
+              decoding="async"
+            />
 
-          <figcaption>
-            Voltaire became one of the most influential intellectuals of the
-            European Enlightenment.
-          </figcaption>
-        </figure>
+            <figcaption>
+              Voltaire became one of the most influential intellectuals of the
+              European Enlightenment.
+            </figcaption>
+          </figure>
 
-        <p>
-          Voltaire was born François-Marie Arouet in Paris in 1694 into a
-          prosperous middle-class family. He received his education at the
-          Jesuit Collège Louis-le-Grand, where he studied literature, rhetoric,
-          Latin, and the classical authors of Greece and Rome. The school gave
-          him an exceptional command of language and literary expression,
-          abilities that would later become central to his career as a writer,
-          satirist, historian, and public critic.
-        </p>
+          <p>
+            Voltaire was born François-Marie Arouet in Paris in 1694 into a
+            prosperous middle-class family. He received his education at the
+            Jesuit Collège Louis-le-Grand, where he studied literature,
+            rhetoric, Latin, and the classical authors of Greece and Rome. The
+            school gave him an exceptional command of language and literary
+            expression, abilities that would later become central to his career
+            as a writer, satirist, historian, and public critic.
+          </p>
 
-        <p>
-          Although his education was closely connected with the intellectual
-          culture of Catholic France, Voltaire eventually became a prominent
-          critic of religious intolerance and ecclesiastical power. His
-          criticism, however, developed within a society in which religious
-          belief remained deeply connected to political authority and public
-          life. This historical background helped shape his later concern with
-          the dangers that could arise when institutions possessed the power to
-          punish people for their beliefs.
-        </p>
+          <p>
+            Although his education was closely connected with the intellectual
+            culture of Catholic France, Voltaire eventually became a prominent
+            critic of religious intolerance and ecclesiastical power. His
+            criticism, however, developed within a society in which religious
+            belief remained deeply connected to political authority and public
+            life. This historical background helped shape his later concern with
+            the dangers that could arise when institutions possessed the power
+            to punish people for their beliefs.
+          </p>
 
-        <p>
-          From an early age, Voltaire showed a strong interest in poetry,
-          theatre, literature, and public intellectual life. His remarkable wit
-          and talent for satire quickly attracted attention, but they also
-          brought him into conflict with powerful individuals and institutions.
-          His early writings demonstrated a willingness to ridicule established
-          authority, a characteristic that would become one of the defining
-          features of his long and controversial intellectual career.
-        </p>
+          <p>
+            From an early age, Voltaire showed a strong interest in poetry,
+            theatre, literature, and public intellectual life. His remarkable
+            wit and talent for satire quickly attracted attention, but they also
+            brought him into conflict with powerful individuals and
+            institutions. His early writings demonstrated a willingness to
+            ridicule established authority, a characteristic that would become
+            one of the defining features of his long and controversial
+            intellectual career.
+          </p>
 
-        <p>
-          Experiences of censorship, imprisonment, and exile profoundly
-          influenced Voltaire's intellectual development. These encounters
-          showed him how easily political and religious power could be used to
-          suppress criticism and disagreement. Over time, he became an
-          increasingly forceful advocate of reason, civil liberty, freedom of
-          expression, and religious tolerance, while repeatedly attacking
-          persecution, fanaticism, and institutions that demanded unquestioning
-          obedience.
-        </p>
-      </section>
-      <div class="philosophy-divider"></div>
+          <p>
+            Experiences of censorship, imprisonment, and exile profoundly
+            influenced Voltaire's intellectual development. These encounters
+            showed him how easily political and religious power could be used to
+            suppress criticism and disagreement. Over time, he became an
+            increasingly forceful advocate of reason, civil liberty, freedom of
+            expression, and religious tolerance, while repeatedly attacking
+            persecution, fanaticism, and institutions that demanded
+            unquestioning obedience.
+          </p>
+        </section>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      4. ENLIGHTENMENT
      ===================================================== -->
 
-      <section class="narrative-block" id="enlightenment">
-        <h2>Voltaire and the Enlightenment</h2>
+        <section class="narrative-block" id="enlightenment">
+          <h2>Voltaire and the Enlightenment</h2>
 
-        <p>
-          Voltaire is one of the central figures of the
-          <strong>European Enlightenment</strong>, the intellectual movement
-          that encouraged the use of reason, criticism, scientific inquiry, and
-          historical investigation in examining inherited beliefs and
-          institutions. He believed that traditions should not be accepted
-          merely because they were ancient or supported by powerful authorities.
-          Human beings, in his view, had a duty to question claims and examine
-          whether they could withstand rational criticism.
-        </p>
+          <p>
+            Voltaire is one of the central figures of the
+            <strong>European Enlightenment</strong>, the intellectual movement
+            that encouraged the use of reason, criticism, scientific inquiry,
+            and historical investigation in examining inherited beliefs and
+            institutions. He believed that traditions should not be accepted
+            merely because they were ancient or supported by powerful
+            authorities. Human beings, in his view, had a duty to question
+            claims and examine whether they could withstand rational criticism.
+          </p>
 
-        <p>
-          The Enlightenment philosophy associated with Voltaire was especially
-          concerned with the practical consequences of intellectual freedom. He
-          attacked superstition, fanaticism, censorship, and persecution while
-          defending education, critical inquiry, and greater liberty of thought.
-          His writings brought philosophical criticism into public debates
-          concerning religion, law, justice, government, and the institutions
-          that shaped everyday social life.
-        </p>
+          <p>
+            The Enlightenment philosophy associated with Voltaire was especially
+            concerned with the practical consequences of intellectual freedom.
+            He attacked superstition, fanaticism, censorship, and persecution
+            while defending education, critical inquiry, and greater liberty of
+            thought. His writings brought philosophical criticism into public
+            debates concerning religion, law, justice, government, and the
+            institutions that shaped everyday social life.
+          </p>
 
-        <p>
-          Voltaire's Enlightenment thought was also strongly international in
-          character. His years in England introduced him to English philosophy,
-          Newtonian science, religious diversity, and political institutions
-          that differed significantly from those of France. He used these
-          comparisons to encourage French readers to reconsider assumptions
-          about absolutism, religious conformity, and the relationship between
-          political authority and intellectual freedom.
-        </p>
+          <p>
+            Voltaire's Enlightenment thought was also strongly international in
+            character. His years in England introduced him to English
+            philosophy, Newtonian science, religious diversity, and political
+            institutions that differed significantly from those of France. He
+            used these comparisons to encourage French readers to reconsider
+            assumptions about absolutism, religious conformity, and the
+            relationship between political authority and intellectual freedom.
+          </p>
 
-        <p>
-          Yet Voltaire did not believe that reason would automatically create a
-          perfect society. Human beings remained vulnerable to prejudice,
-          ignorance, ambition, and fanaticism. The task of Enlightenment was
-          therefore an ongoing process of criticism and improvement rather than
-          the construction of a final intellectual system. Through this
-          commitment to inquiry, tolerance, and public debate, Voltaire became
-          one of the defining voices of eighteenth-century European intellectual
-          culture.
-        </p>
-      </section>
+          <p>
+            Yet Voltaire did not believe that reason would automatically create
+            a perfect society. Human beings remained vulnerable to prejudice,
+            ignorance, ambition, and fanaticism. The task of Enlightenment was
+            therefore an ongoing process of criticism and improvement rather
+            than the construction of a final intellectual system. Through this
+            commitment to inquiry, tolerance, and public debate, Voltaire became
+            one of the defining voices of eighteenth-century European
+            intellectual culture.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      5. PHILOSOPHICAL METHOD
      ===================================================== -->
 
-      <section class="narrative-block" id="method">
-        <h2>What Was Voltaire's Philosophical Method?</h2>
+        <section class="narrative-block" id="method">
+          <h2>What Was Voltaire's Philosophical Method?</h2>
 
-        <p>
-          Voltaire did not construct philosophy primarily through a single
-          deductive system comparable to those developed by Descartes or
-          Leibniz. Instead, his method combined
-          <strong
-            >reason, historical criticism, empirical observation, literary
-            argument, and satire</strong
-          >. He frequently approached a philosophical problem by examining its
-          practical consequences and exposing contradictions within beliefs that
-          had become accepted through custom, authority, or religious tradition.
-        </p>
+          <p>
+            Voltaire did not construct philosophy primarily through a single
+            deductive system comparable to those developed by Descartes or
+            Leibniz. Instead, his method combined
+            <strong
+              >reason, historical criticism, empirical observation, literary
+              argument, and satire</strong
+            >. He frequently approached a philosophical problem by examining its
+            practical consequences and exposing contradictions within beliefs
+            that had become accepted through custom, authority, or religious
+            tradition.
+          </p>
 
-        <p>
-          History was particularly important to Voltaire's method. He believed
-          that historical investigation could reveal how institutions and
-          beliefs had developed rather than allowing them to appear natural or
-          eternal. By comparing different societies, periods, and political
-          systems, he could challenge claims that existing institutions
-          represented the only possible form of human life or government.
-        </p>
+          <p>
+            History was particularly important to Voltaire's method. He believed
+            that historical investigation could reveal how institutions and
+            beliefs had developed rather than allowing them to appear natural or
+            eternal. By comparing different societies, periods, and political
+            systems, he could challenge claims that existing institutions
+            represented the only possible form of human life or government.
+          </p>
 
-        <p>
-          Voltaire also used literature as an instrument of philosophical
-          criticism. A serious argument could appear in a letter, a fictional
-          narrative, a historical essay, a play, or a satirical dictionary
-          entry. His literary style was therefore not separate from his
-          philosophy; it was one of the principal means through which he
-          communicated difficult ideas and exposed the absurdities of
-          intolerance, dogmatism, and intellectual pretension.
-        </p>
+          <p>
+            Voltaire also used literature as an instrument of philosophical
+            criticism. A serious argument could appear in a letter, a fictional
+            narrative, a historical essay, a play, or a satirical dictionary
+            entry. His literary style was therefore not separate from his
+            philosophy; it was one of the principal means through which he
+            communicated difficult ideas and exposed the absurdities of
+            intolerance, dogmatism, and intellectual pretension.
+          </p>
 
-        <p>
-          Voltaire's philosophy should consequently be understood partly as a
-          form of
-          <strong>public philosophy</strong>. He wanted philosophical reasoning
-          to influence public attitudes toward injustice, persecution, political
-          power, and religious intolerance. Rather than writing only for
-          professional scholars, he addressed a wider reading public and
-          attempted to make philosophical criticism an active force within
-          European intellectual and social life.
-        </p>
-      </section>
+          <p>
+            Voltaire's philosophy should consequently be understood partly as a
+            form of
+            <strong>public philosophy</strong>. He wanted philosophical
+            reasoning to influence public attitudes toward injustice,
+            persecution, political power, and religious intolerance. Rather than
+            writing only for professional scholars, he addressed a wider reading
+            public and attempted to make philosophical criticism an active force
+            within European intellectual and social life.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      6. REASON
      ===================================================== -->
 
-      <section class="narrative-block" id="reason">
-        <h2>Voltaire's Philosophy of Reason</h2>
+        <section class="narrative-block" id="reason">
+          <h2>Voltaire's Philosophy of Reason</h2>
 
-        <p>
-          <strong>Reason</strong> occupies a central position in Voltaire's
-          philosophy. He believed that rational criticism could help human
-          beings distinguish defensible beliefs from superstition, prejudice,
-          and unsupported authority. Reason did not mean that every question
-          could be solved through abstract deduction alone; rather, it involved
-          examining evidence, questioning assumptions, comparing arguments, and
-          recognizing the limits of what human beings could genuinely know.
-        </p>
+          <p>
+            <strong>Reason</strong> occupies a central position in Voltaire's
+            philosophy. He believed that rational criticism could help human
+            beings distinguish defensible beliefs from superstition, prejudice,
+            and unsupported authority. Reason did not mean that every question
+            could be solved through abstract deduction alone; rather, it
+            involved examining evidence, questioning assumptions, comparing
+            arguments, and recognizing the limits of what human beings could
+            genuinely know.
+          </p>
 
-        <p>
-          Voltaire's use of reason was closely connected with his criticism of
-          dogmatism. He objected to situations in which individuals were
-          punished merely for holding different religious or philosophical
-          beliefs. A society capable of rational discussion, he believed, should
-          allow disagreement and criticism instead of treating intellectual
-          difference as evidence of criminality, moral corruption, or rebellion
-          against political authority.
-        </p>
+          <p>
+            Voltaire's use of reason was closely connected with his criticism of
+            dogmatism. He objected to situations in which individuals were
+            punished merely for holding different religious or philosophical
+            beliefs. A society capable of rational discussion, he believed,
+            should allow disagreement and criticism instead of treating
+            intellectual difference as evidence of criminality, moral
+            corruption, or rebellion against political authority.
+          </p>
 
-        <p>
-          His commitment to reason also shaped his approach to science and
-          history. Voltaire admired the achievements of scientific inquiry,
-          particularly the work associated with Newton, because they
-          demonstrated the power of careful observation and systematic
-          investigation. He believed that education and intellectual inquiry
-          could reduce ignorance, although he remained aware that prejudice and
-          irrational beliefs could survive even within educated societies.
-        </p>
+          <p>
+            His commitment to reason also shaped his approach to science and
+            history. Voltaire admired the achievements of scientific inquiry,
+            particularly the work associated with Newton, because they
+            demonstrated the power of careful observation and systematic
+            investigation. He believed that education and intellectual inquiry
+            could reduce ignorance, although he remained aware that prejudice
+            and irrational beliefs could survive even within educated societies.
+          </p>
 
-        <p>
-          Reason therefore served Voltaire not only as an intellectual ideal but
-          also as a practical defense against cruelty and injustice. Rational
-          examination could expose false accusations, challenge inherited
-          prejudices, and weaken claims to unquestionable authority. His
-          philosophy thus connects reason with tolerance, freedom of thought,
-          scientific inquiry, and the continuing effort to improve the
-          institutions through which human beings govern themselves.
-        </p>
-      </section>
+          <p>
+            Reason therefore served Voltaire not only as an intellectual ideal
+            but also as a practical defense against cruelty and injustice.
+            Rational examination could expose false accusations, challenge
+            inherited prejudices, and weaken claims to unquestionable authority.
+            His philosophy thus connects reason with tolerance, freedom of
+            thought, scientific inquiry, and the continuing effort to improve
+            the institutions through which human beings govern themselves.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      7. DEISM
      ===================================================== -->
 
-      <section class="narrative-block" id="deism">
-        <h2>Was Voltaire a Deist?</h2>
+        <section class="narrative-block" id="deism">
+          <h2>Was Voltaire a Deist?</h2>
 
-        <p>
-          Yes. <strong>Voltaire was broadly a deist</strong>, although his
-          religious outlook was distinctive and cannot simply be reduced to
-          disbelief in God. He generally believed in the existence of a rational
-          creator or supreme intelligence while rejecting many doctrines that he
-          considered unsupported by reason. His criticism was directed
-          especially against religious intolerance, superstition, and
-          institutions that claimed authority over human thought and conscience.
-        </p>
+          <p>
+            Yes. <strong>Voltaire was broadly a deist</strong>, although his
+            religious outlook was distinctive and cannot simply be reduced to
+            disbelief in God. He generally believed in the existence of a
+            rational creator or supreme intelligence while rejecting many
+            doctrines that he considered unsupported by reason. His criticism
+            was directed especially against religious intolerance, superstition,
+            and institutions that claimed authority over human thought and
+            conscience.
+          </p>
 
-        <p>
-          Voltaire's deism was influenced by the wider intellectual environment
-          of the Enlightenment and by his engagement with English thought and
-          Newtonian science. The order and intelligibility of the natural world
-          could, in his view, provide grounds for belief in a creator. At the
-          same time, he resisted explanations that relied upon continual appeals
-          to miracles or supernatural intervention whenever natural phenomena
-          could be investigated through reason and observation.
-        </p>
+          <p>
+            Voltaire's deism was influenced by the wider intellectual
+            environment of the Enlightenment and by his engagement with English
+            thought and Newtonian science. The order and intelligibility of the
+            natural world could, in his view, provide grounds for belief in a
+            creator. At the same time, he resisted explanations that relied upon
+            continual appeals to miracles or supernatural intervention whenever
+            natural phenomena could be investigated through reason and
+            observation.
+          </p>
 
-        <p>
-          His deism therefore occupied a position distinct from both orthodox
-          Christianity and atheism. Voltaire could criticize churches, priests,
-          and theological doctrines with extraordinary force while continuing to
-          affirm a belief in God. For this reason, describing him simply as an
-          enemy of religion can be misleading. His deepest objections concerned
-          fanaticism, persecution, and dogmatic certainty rather than belief in
-          a creator itself.
-        </p>
+          <p>
+            His deism therefore occupied a position distinct from both orthodox
+            Christianity and atheism. Voltaire could criticize churches,
+            priests, and theological doctrines with extraordinary force while
+            continuing to affirm a belief in God. For this reason, describing
+            him simply as an enemy of religion can be misleading. His deepest
+            objections concerned fanaticism, persecution, and dogmatic certainty
+            rather than belief in a creator itself.
+          </p>
 
-        <p>
-          Voltaire also connected religious belief with questions of morality
-          and social order, though his views changed in emphasis across his long
-          career. He feared the destructive consequences of fanaticism far more
-          than peaceful differences of belief. His deism thus formed part of a
-          broader Enlightenment attempt to separate rational reflection about
-          God and nature from coercive religious institutions and the political
-          persecution of those who thought differently.
-        </p>
-      </section>
+          <p>
+            Voltaire also connected religious belief with questions of morality
+            and social order, though his views changed in emphasis across his
+            long career. He feared the destructive consequences of fanaticism
+            far more than peaceful differences of belief. His deism thus formed
+            part of a broader Enlightenment attempt to separate rational
+            reflection about God and nature from coercive religious institutions
+            and the political persecution of those who thought differently.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      8. RELIGION
      ===================================================== -->
 
-      <section class="narrative-block" id="religion">
-        <h2>Voltaire's Philosophy of Religion</h2>
+        <section class="narrative-block" id="religion">
+          <h2>Voltaire's Philosophy of Religion</h2>
 
-        <p>
-          Voltaire's philosophy of religion examined the relationship between
-          religious belief, reason, morality, and social institutions. He
-          questioned doctrines that appeared inconsistent with rational inquiry
-          and strongly opposed the use of religious authority to justify
-          persecution, censorship, torture, or violence. His writings repeatedly
-          ask what happens when claims about divine truth are combined with
-          institutions possessing the power to punish those who disagree.
-        </p>
+          <p>
+            Voltaire's philosophy of religion examined the relationship between
+            religious belief, reason, morality, and social institutions. He
+            questioned doctrines that appeared inconsistent with rational
+            inquiry and strongly opposed the use of religious authority to
+            justify persecution, censorship, torture, or violence. His writings
+            repeatedly ask what happens when claims about divine truth are
+            combined with institutions possessing the power to punish those who
+            disagree.
+          </p>
 
-        <p>
-          At the same time, Voltaire did not simply argue that all religion was
-          socially harmful. He believed that belief in a supreme intelligence
-          could be compatible with a rational understanding of nature and could
-          possess moral significance for individuals and societies. His
-          criticism was directed more specifically toward fanaticism,
-          intolerance, superstition, and the abuse of ecclesiastical power for
-          political or personal purposes.
-        </p>
+          <p>
+            At the same time, Voltaire did not simply argue that all religion
+            was socially harmful. He believed that belief in a supreme
+            intelligence could be compatible with a rational understanding of
+            nature and could possess moral significance for individuals and
+            societies. His criticism was directed more specifically toward
+            fanaticism, intolerance, superstition, and the abuse of
+            ecclesiastical power for political or personal purposes.
+          </p>
 
-        <p>
-          Voltaire therefore drew an important distinction between
-          <strong>religion and religious fanaticism</strong>. A person might
-          believe sincerely in God while still rejecting the persecution of
-          others in the name of religious truth. For Voltaire, differences in
-          belief did not justify cruelty, because human beings possessed limited
-          knowledge and should therefore approach many disputed questions with
-          greater intellectual humility.
-        </p>
+          <p>
+            Voltaire therefore drew an important distinction between
+            <strong>religion and religious fanaticism</strong>. A person might
+            believe sincerely in God while still rejecting the persecution of
+            others in the name of religious truth. For Voltaire, differences in
+            belief did not justify cruelty, because human beings possessed
+            limited knowledge and should therefore approach many disputed
+            questions with greater intellectual humility.
+          </p>
 
-        <p>
-          His philosophy of religion was consequently inseparable from his wider
-          defense of civil liberty and intellectual freedom. Religious
-          institutions became dangerous when they attempted to control political
-          power or silence criticism through coercion. Voltaire's enduring
-          importance lies partly in this argument that belief and conscience
-          should be distinguished from fanaticism, persecution, and the
-          institutional demand for unquestioning obedience.
-        </p>
-      </section>
+          <p>
+            His philosophy of religion was consequently inseparable from his
+            wider defense of civil liberty and intellectual freedom. Religious
+            institutions became dangerous when they attempted to control
+            political power or silence criticism through coercion. Voltaire's
+            enduring importance lies partly in this argument that belief and
+            conscience should be distinguished from fanaticism, persecution, and
+            the institutional demand for unquestioning obedience.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      9. RELIGIOUS TOLERANCE
      ===================================================== -->
 
-      <section class="narrative-block" id="tolerance">
-        <h2>Why Did Voltaire Defend Religious Tolerance?</h2>
+        <section class="narrative-block" id="tolerance">
+          <h2>Why Did Voltaire Defend Religious Tolerance?</h2>
 
-        <p>
-          <strong>Religious tolerance</strong> is one of the most important
-          themes in Voltaire's philosophy. He believed that people should not be
-          persecuted merely because they belonged to a different religious
-          community or held different opinions about religious truth. In
-          societies containing competing beliefs, attempts to impose complete
-          religious uniformity could produce injustice, resentment, and violence
-          rather than genuine moral agreement.
-        </p>
+          <p>
+            <strong>Religious tolerance</strong> is one of the most important
+            themes in Voltaire's philosophy. He believed that people should not
+            be persecuted merely because they belonged to a different religious
+            community or held different opinions about religious truth. In
+            societies containing competing beliefs, attempts to impose complete
+            religious uniformity could produce injustice, resentment, and
+            violence rather than genuine moral agreement.
+          </p>
 
-        <p>
-          Voltaire was deeply influenced by cases in which religious prejudice
-          contributed to failures of justice. His writings repeatedly returned
-          to the dangers of fanaticism and to the tendency of institutions to
-          interpret religious difference as evidence of moral or political
-          guilt. Such cases demonstrated, for him, that prejudice could distort
-          legal judgment and transform courts that should protect citizens into
-          instruments of persecution.
-        </p>
+          <p>
+            Voltaire was deeply influenced by cases in which religious prejudice
+            contributed to failures of justice. His writings repeatedly returned
+            to the dangers of fanaticism and to the tendency of institutions to
+            interpret religious difference as evidence of moral or political
+            guilt. Such cases demonstrated, for him, that prejudice could
+            distort legal judgment and transform courts that should protect
+            citizens into instruments of persecution.
+          </p>
 
-        <p>
-          His defense of tolerance was therefore both philosophical and
-          practical. Voltaire argued that human beings should recognize the
-          limits of their own knowledge and avoid treating disagreement as
-          sufficient justification for coercion. A society in which different
-          communities could live without constant fear of persecution was, in
-          his view, more likely to maintain civil peace than one organized
-          around the forced suppression of dissent.
-        </p>
+          <p>
+            His defense of tolerance was therefore both philosophical and
+            practical. Voltaire argued that human beings should recognize the
+            limits of their own knowledge and avoid treating disagreement as
+            sufficient justification for coercion. A society in which different
+            communities could live without constant fear of persecution was, in
+            his view, more likely to maintain civil peace than one organized
+            around the forced suppression of dissent.
+          </p>
 
-        <p>
-          Tolerance did not mean that Voltaire believed every opinion was
-          equally reasonable or beyond criticism. He remained a fierce critic of
-          ideas he regarded as superstitious or destructive. The crucial
-          distinction was between criticizing a belief through argument and
-          persecuting the person who holds it. This commitment made religious
-          tolerance one of the clearest expressions of Voltaire's Enlightenment
-          defense of liberty and humanity.
-        </p>
-      </section>
+          <p>
+            Tolerance did not mean that Voltaire believed every opinion was
+            equally reasonable or beyond criticism. He remained a fierce critic
+            of ideas he regarded as superstitious or destructive. The crucial
+            distinction was between criticizing a belief through argument and
+            persecuting the person who holds it. This commitment made religious
+            tolerance one of the clearest expressions of Voltaire's
+            Enlightenment defense of liberty and humanity.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      10. FREEDOM OF SPEECH
      ===================================================== -->
 
-      <section class="narrative-block" id="freedom-of-speech">
-        <h2>Voltaire and Freedom of Speech</h2>
+        <section class="narrative-block" id="freedom-of-speech">
+          <h2>Voltaire and Freedom of Speech</h2>
 
-        <p>
-          Voltaire is strongly associated with the Enlightenment defense of
-          <strong>freedom of expression</strong>. His experiences with
-          censorship, imprisonment, and political authority made intellectual
-          liberty an important concern throughout his career. He believed that
-          writers and thinkers should be able to criticize institutions,
-          question accepted beliefs, and debate controversial ideas without
-          automatically facing persecution or punishment.
-        </p>
+          <p>
+            Voltaire is strongly associated with the Enlightenment defense of
+            <strong>freedom of expression</strong>. His experiences with
+            censorship, imprisonment, and political authority made intellectual
+            liberty an important concern throughout his career. He believed that
+            writers and thinkers should be able to criticize institutions,
+            question accepted beliefs, and debate controversial ideas without
+            automatically facing persecution or punishment.
+          </p>
 
-        <p>
-          Voltaire's position should not, however, be reduced to the famous
-          modern slogan sometimes attributed to him about defending another
-          person's right to speak. That wording was written by a later
-          biographer and does not appear as a direct statement by Voltaire
-          himself. Nevertheless, his writings contain a sustained opposition to
-          censorship and persecution and a powerful defense of intellectual
-          disagreement and religious toleration.
-        </p>
+          <p>
+            Voltaire's position should not, however, be reduced to the famous
+            modern slogan sometimes attributed to him about defending another
+            person's right to speak. That wording was written by a later
+            biographer and does not appear as a direct statement by Voltaire
+            himself. Nevertheless, his writings contain a sustained opposition
+            to censorship and persecution and a powerful defense of intellectual
+            disagreement and religious toleration.
+          </p>
 
-        <p>
-          His broader philosophy of expression was connected with his
-          understanding of reason. Errors become difficult to expose when
-          authorities prevent individuals from questioning established opinions.
-          Public criticism and disagreement can therefore serve an intellectual
-          purpose by forcing claims to confront objections and evidence rather
-          than surviving merely because they are protected by political or
-          religious authority.
-        </p>
+          <p>
+            His broader philosophy of expression was connected with his
+            understanding of reason. Errors become difficult to expose when
+            authorities prevent individuals from questioning established
+            opinions. Public criticism and disagreement can therefore serve an
+            intellectual purpose by forcing claims to confront objections and
+            evidence rather than surviving merely because they are protected by
+            political or religious authority.
+          </p>
 
-        <p>
-          Freedom of thought was consequently part of Voltaire's wider
-          Enlightenment project rather than an isolated political principle. He
-          saw intellectual liberty as necessary for scientific inquiry,
-          philosophical criticism, and resistance to fanaticism. Although his
-          own views did not always correspond exactly to modern theories of
-          unrestricted free speech, his opposition to censorship helped
-          establish him as an enduring symbol of intellectual freedom.
-        </p>
-      </section>
+          <p>
+            Freedom of thought was consequently part of Voltaire's wider
+            Enlightenment project rather than an isolated political principle.
+            He saw intellectual liberty as necessary for scientific inquiry,
+            philosophical criticism, and resistance to fanaticism. Although his
+            own views did not always correspond exactly to modern theories of
+            unrestricted free speech, his opposition to censorship helped
+            establish him as an enduring symbol of intellectual freedom.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      11. FANATICISM
      ===================================================== -->
 
-      <section class="narrative-block" id="fanaticism">
-        <h2>Voltaire's Criticism of Religious Fanaticism</h2>
+        <section class="narrative-block" id="fanaticism">
+          <h2>Voltaire's Criticism of Religious Fanaticism</h2>
 
-        <p>
-          Voltaire regarded <strong>religious fanaticism</strong> as one of the
-          greatest threats to social peace, justice, and rational thought. He
-          argued that fanaticism could transform ordinary disagreement into
-          persecution, violence, and political oppression. When individuals
-          became convinced that they possessed absolute certainty about divine
-          truth, they might believe that cruelty toward those who disagreed was
-          not only permitted but morally required.
-        </p>
+          <p>
+            Voltaire regarded <strong>religious fanaticism</strong> as one of
+            the greatest threats to social peace, justice, and rational thought.
+            He argued that fanaticism could transform ordinary disagreement into
+            persecution, violence, and political oppression. When individuals
+            became convinced that they possessed absolute certainty about divine
+            truth, they might believe that cruelty toward those who disagreed
+            was not only permitted but morally required.
+          </p>
 
-        <p>
-          His criticism was particularly directed toward the conviction that
-          one's own religious beliefs justify forcing those beliefs upon others.
-          Voltaire emphasized the limitations of human knowledge and argued that
-          such limitations should encourage caution rather than violent
-          certainty. Disagreement about difficult theological questions, in his
-          view, could not reasonably justify the destruction of another person's
-          life, liberty, or civil standing.
-        </p>
+          <p>
+            His criticism was particularly directed toward the conviction that
+            one's own religious beliefs justify forcing those beliefs upon
+            others. Voltaire emphasized the limitations of human knowledge and
+            argued that such limitations should encourage caution rather than
+            violent certainty. Disagreement about difficult theological
+            questions, in his view, could not reasonably justify the destruction
+            of another person's life, liberty, or civil standing.
+          </p>
 
-        <p>
-          Voltaire was especially concerned when fanaticism became connected
-          with political and legal institutions. Religious prejudice could
-          influence judges, rulers, and public opinion, making injustice appear
-          legitimate because it was defended in the language of faith. His
-          attacks on fanaticism were therefore also attacks on the institutional
-          conditions that allowed prejudice to acquire the force of law.
-        </p>
+          <p>
+            Voltaire was especially concerned when fanaticism became connected
+            with political and legal institutions. Religious prejudice could
+            influence judges, rulers, and public opinion, making injustice
+            appear legitimate because it was defended in the language of faith.
+            His attacks on fanaticism were therefore also attacks on the
+            institutional conditions that allowed prejudice to acquire the force
+            of law.
+          </p>
 
-        <p>
-          This criticism does not mean that Voltaire simply considered all
-          religious belief irrational. His central concern was the dangerous
-          combination of absolute certainty, intolerance, and coercive power. He
-          believed that a peaceful society required people and institutions to
-          distinguish conviction from persecution. This distinction between
-          personal belief and destructive fanaticism remains essential to
-          understanding his philosophy of religion.
-        </p>
-      </section>
+          <p>
+            This criticism does not mean that Voltaire simply considered all
+            religious belief irrational. His central concern was the dangerous
+            combination of absolute certainty, intolerance, and coercive power.
+            He believed that a peaceful society required people and institutions
+            to distinguish conviction from persecution. This distinction between
+            personal belief and destructive fanaticism remains essential to
+            understanding his philosophy of religion.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      12. TREATISE ON TOLERATION
      ===================================================== -->
 
-      <section class="narrative-block" id="treatise-on-tolerance">
-        <h2>Voltaire's Treatise on Tolerance</h2>
+        <section class="narrative-block" id="treatise-on-tolerance">
+          <h2>Voltaire's Treatise on Tolerance</h2>
 
-        <p>
-          <em>Treatise on Tolerance</em> (<em>Traité sur la tolérance</em>),
-          published in 1763, is one of Voltaire's most important works on
-          religious intolerance and justice. The book was written in connection
-          with the Jean Calas affair, a notorious case in which the Protestant
-          Jean Calas was wrongly condemned and executed amid an atmosphere of
-          religious prejudice and judicial controversy.
-        </p>
+          <p>
+            <em>Treatise on Tolerance</em> (<em>Traité sur la tolérance</em>),
+            published in 1763, is one of Voltaire's most important works on
+            religious intolerance and justice. The book was written in
+            connection with the Jean Calas affair, a notorious case in which the
+            Protestant Jean Calas was wrongly condemned and executed amid an
+            atmosphere of religious prejudice and judicial controversy.
+          </p>
 
-        <p>
-          Voltaire became convinced that the accusations against Calas had been
-          shaped by prejudice and helped transform the affair into a wider
-          public campaign against judicial injustice. He used the case to argue
-          that courts must rely upon careful examination of evidence rather than
-          allowing popular passion, religious hostility, or unsupported
-          assumptions to determine the fate of an accused person.
-        </p>
+          <p>
+            Voltaire became convinced that the accusations against Calas had
+            been shaped by prejudice and helped transform the affair into a
+            wider public campaign against judicial injustice. He used the case
+            to argue that courts must rely upon careful examination of evidence
+            rather than allowing popular passion, religious hostility, or
+            unsupported assumptions to determine the fate of an accused person.
+          </p>
 
-        <p>
-          The work extends beyond the circumstances of a single legal case.
-          Voltaire examines the history and consequences of religious
-          persecution and asks whether intolerance can genuinely be justified by
-          either religious or civil authority. His argument repeatedly connects
-          tolerance with humanity, rational judgment, and the recognition that
-          people can hold different beliefs without becoming enemies of the
-          political community.
-        </p>
+          <p>
+            The work extends beyond the circumstances of a single legal case.
+            Voltaire examines the history and consequences of religious
+            persecution and asks whether intolerance can genuinely be justified
+            by either religious or civil authority. His argument repeatedly
+            connects tolerance with humanity, rational judgment, and the
+            recognition that people can hold different beliefs without becoming
+            enemies of the political community.
+          </p>
 
-        <p>
-          The <strong>Treatise on Tolerance</strong> became an important
-          Enlightenment text because it connected philosophical criticism with a
-          concrete problem of law and social justice. It demonstrates Voltaire's
-          characteristic method of moving from a particular historical event
-          toward broader questions about prejudice, religious freedom, judicial
-          responsibility, and the conditions necessary for a more humane
-          society.
-        </p>
-      </section>
+          <p>
+            The <strong>Treatise on Tolerance</strong> became an important
+            Enlightenment text because it connected philosophical criticism with
+            a concrete problem of law and social justice. It demonstrates
+            Voltaire's characteristic method of moving from a particular
+            historical event toward broader questions about prejudice, religious
+            freedom, judicial responsibility, and the conditions necessary for a
+            more humane society.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      13. POLITICAL PHILOSOPHY
      ===================================================== -->
 
-      <section class="narrative-block" id="political-philosophy">
-        <h2>What Was Voltaire's Political Philosophy?</h2>
+        <section class="narrative-block" id="political-philosophy">
+          <h2>What Was Voltaire's Political Philosophy?</h2>
 
-        <p>
-          Voltaire's <strong>political philosophy</strong> emphasized civil
-          liberty, legal reform, religious tolerance, education, and opposition
-          to arbitrary persecution. He was highly critical of institutions that
-          exercised power without adequate legal or rational justification. His
-          political concerns were shaped less by the construction of a complete
-          constitutional theory than by practical questions about how
-          governments could reduce injustice and protect people from oppressive
-          authority.
-        </p>
+          <p>
+            Voltaire's <strong>political philosophy</strong> emphasized civil
+            liberty, legal reform, religious tolerance, education, and
+            opposition to arbitrary persecution. He was highly critical of
+            institutions that exercised power without adequate legal or rational
+            justification. His political concerns were shaped less by the
+            construction of a complete constitutional theory than by practical
+            questions about how governments could reduce injustice and protect
+            people from oppressive authority.
+          </p>
 
-        <p>
-          However, Voltaire was not a straightforward advocate of modern
-          democracy. He sometimes expressed admiration for enlightened rulers
-          and believed that an educated and capable monarch could introduce
-          useful reforms. He was often skeptical about the political judgment of
-          an uninformed public, and his political thought therefore cannot
-          simply be identified with later theories of popular sovereignty or
-          universal democratic participation.
-        </p>
+          <p>
+            However, Voltaire was not a straightforward advocate of modern
+            democracy. He sometimes expressed admiration for enlightened rulers
+            and believed that an educated and capable monarch could introduce
+            useful reforms. He was often skeptical about the political judgment
+            of an uninformed public, and his political thought therefore cannot
+            simply be identified with later theories of popular sovereignty or
+            universal democratic participation.
+          </p>
 
-        <p>
-          Voltaire's admiration for aspects of English political life also
-          influenced his criticism of French institutions. He was interested in
-          systems capable of limiting arbitrary power and allowing greater
-          intellectual and religious diversity. Nevertheless, he did not offer a
-          single unchanging political model, and his views developed in response
-          to the different rulers, institutions, and historical circumstances he
-          encountered.
-        </p>
+          <p>
+            Voltaire's admiration for aspects of English political life also
+            influenced his criticism of French institutions. He was interested
+            in systems capable of limiting arbitrary power and allowing greater
+            intellectual and religious diversity. Nevertheless, he did not offer
+            a single unchanging political model, and his views developed in
+            response to the different rulers, institutions, and historical
+            circumstances he encountered.
+          </p>
 
-        <p>
-          His central political concerns were therefore largely practical:
-          improving laws, reducing persecution, encouraging education,
-          protecting minorities, and creating conditions under which
-          intellectual inquiry could flourish. Voltaire's political philosophy
-          is best understood as part of his wider campaign against injustice and
-          fanaticism rather than as a systematic blueprint for modern democratic
-          government.
-        </p>
-      </section>
+          <p>
+            His central political concerns were therefore largely practical:
+            improving laws, reducing persecution, encouraging education,
+            protecting minorities, and creating conditions under which
+            intellectual inquiry could flourish. Voltaire's political philosophy
+            is best understood as part of his wider campaign against injustice
+            and fanaticism rather than as a systematic blueprint for modern
+            democratic government.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      14. VOLTAIRE AND LOCKE
      ===================================================== -->
 
-      <section class="narrative-block" id="locke">
-        <h2>Voltaire and John Locke</h2>
+        <section class="narrative-block" id="locke">
+          <h2>Voltaire and John Locke</h2>
 
-        <p>
-          <strong>John Locke</strong> was one of the most important English
-          thinkers to influence Voltaire. During his engagement with English
-          intellectual culture, Voltaire encountered Locke's philosophy of
-          knowledge and his arguments concerning religious toleration. These
-          ideas provided an important contrast to philosophical and religious
-          traditions that Voltaire regarded as excessively dependent upon
-          inherited authority and abstract speculation.
-        </p>
+          <p>
+            <strong>John Locke</strong> was one of the most important English
+            thinkers to influence Voltaire. During his engagement with English
+            intellectual culture, Voltaire encountered Locke's philosophy of
+            knowledge and his arguments concerning religious toleration. These
+            ideas provided an important contrast to philosophical and religious
+            traditions that Voltaire regarded as excessively dependent upon
+            inherited authority and abstract speculation.
+          </p>
 
-        <p>
-          Locke's theory of knowledge emphasized the importance of experience in
-          the development of human understanding rather than the possession of
-          fully formed innate ideas. Voltaire was attracted to this emphasis on
-          experience and observation, which fitted his broader admiration for
-          empirical inquiry. He did not simply reproduce Locke's philosophy, but
-          Locke helped strengthen his opposition to intellectual systems
-          detached from evidence and experience.
-        </p>
+          <p>
+            Locke's theory of knowledge emphasized the importance of experience
+            in the development of human understanding rather than the possession
+            of fully formed innate ideas. Voltaire was attracted to this
+            emphasis on experience and observation, which fitted his broader
+            admiration for empirical inquiry. He did not simply reproduce
+            Locke's philosophy, but Locke helped strengthen his opposition to
+            intellectual systems detached from evidence and experience.
+          </p>
 
-        <p>
-          Locke's writings on toleration were also significant for Voltaire's
-          development as an Enlightenment critic of religious persecution.
-          English debates about religious diversity offered him examples through
-          which he could reconsider the relationship between belief, political
-          authority, and civil peace. These comparisons became particularly
-          important when he wrote for French readers about the advantages of
-          greater intellectual liberty.
-        </p>
+          <p>
+            Locke's writings on toleration were also significant for Voltaire's
+            development as an Enlightenment critic of religious persecution.
+            English debates about religious diversity offered him examples
+            through which he could reconsider the relationship between belief,
+            political authority, and civil peace. These comparisons became
+            particularly important when he wrote for French readers about the
+            advantages of greater intellectual liberty.
+          </p>
 
-        <p>
-          The connection between
-          <strong>Voltaire and Locke</strong> consequently illustrates the
-          international character of Enlightenment philosophy. Philosophical
-          ideas crossed national boundaries and were transformed within new
-          political and cultural contexts. Locke's empiricism and arguments
-          about toleration became important resources through which Voltaire
-          developed his own distinctive French Enlightenment criticism of
-          dogmatism and intolerance.
-        </p>
-      </section>
+          <p>
+            The connection between
+            <strong>Voltaire and Locke</strong> consequently illustrates the
+            international character of Enlightenment philosophy. Philosophical
+            ideas crossed national boundaries and were transformed within new
+            political and cultural contexts. Locke's empiricism and arguments
+            about toleration became important resources through which Voltaire
+            developed his own distinctive French Enlightenment criticism of
+            dogmatism and intolerance.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      15. VOLTAIRE AND NEWTON
      ===================================================== -->
 
-      <section class="narrative-block" id="newton">
-        <h2>Voltaire and Isaac Newton</h2>
+        <section class="narrative-block" id="newton">
+          <h2>Voltaire and Isaac Newton</h2>
 
-        <p>
-          <strong>Isaac Newton</strong> was another major influence on
-          Voltaire's intellectual outlook. Through his engagement with English
-          culture, Voltaire became one of the important popularizers of
-          Newtonian science in France. He regarded Newton's achievements as a
-          powerful demonstration of what careful observation, mathematics, and
-          systematic reasoning could accomplish in the investigation of the
-          natural world.
-        </p>
+          <p>
+            <strong>Isaac Newton</strong> was another major influence on
+            Voltaire's intellectual outlook. Through his engagement with English
+            culture, Voltaire became one of the important popularizers of
+            Newtonian science in France. He regarded Newton's achievements as a
+            powerful demonstration of what careful observation, mathematics, and
+            systematic reasoning could accomplish in the investigation of the
+            natural world.
+          </p>
 
-        <p>
-          Voltaire's interest in Newton was not limited to scientific facts.
-          Newtonian science represented a broader intellectual model in which
-          claims about nature could be tested through observation and
-          mathematical explanation. This approach contrasted sharply with
-          explanations that depended primarily upon inherited authority. For
-          Voltaire, the success of science provided strong evidence that human
-          understanding could advance through disciplined inquiry and criticism.
-        </p>
+          <p>
+            Voltaire's interest in Newton was not limited to scientific facts.
+            Newtonian science represented a broader intellectual model in which
+            claims about nature could be tested through observation and
+            mathematical explanation. This approach contrasted sharply with
+            explanations that depended primarily upon inherited authority. For
+            Voltaire, the success of science provided strong evidence that human
+            understanding could advance through disciplined inquiry and
+            criticism.
+          </p>
 
-        <p>
-          Newtonian physics also influenced Voltaire's reflections on science
-          and religion. The intelligible order of nature could, in his view,
-          support a rational belief in a creator without requiring theological
-          explanations for every natural event. Scientific investigation
-          therefore did not necessarily destroy religious belief, but it did
-          challenge forms of thought that used supernatural explanations where
-          natural inquiry could provide better understanding.
-        </p>
+          <p>
+            Newtonian physics also influenced Voltaire's reflections on science
+            and religion. The intelligible order of nature could, in his view,
+            support a rational belief in a creator without requiring theological
+            explanations for every natural event. Scientific investigation
+            therefore did not necessarily destroy religious belief, but it did
+            challenge forms of thought that used supernatural explanations where
+            natural inquiry could provide better understanding.
+          </p>
 
-        <p>
-          Voltaire's engagement with Newton illustrates the close relationship
-          between
-          <strong>Enlightenment philosophy and the Scientific Revolution</strong
-          >. He believed that scientific knowledge could weaken superstition and
-          intellectual dogmatism while encouraging greater respect for evidence
-          and reason. His efforts to introduce Newtonian ideas to a wider French
-          audience made science an important component of his broader
-          Enlightenment project.
-        </p>
-      </section>
+          <p>
+            Voltaire's engagement with Newton illustrates the close relationship
+            between
+            <strong
+              >Enlightenment philosophy and the Scientific Revolution</strong
+            >. He believed that scientific knowledge could weaken superstition
+            and intellectual dogmatism while encouraging greater respect for
+            evidence and reason. His efforts to introduce Newtonian ideas to a
+            wider French audience made science an important component of his
+            broader Enlightenment project.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      16. PHILOSOPHICAL LETTERS
      ===================================================== -->
 
-      <section class="narrative-block" id="philosophical-letters">
-        <h2>Voltaire's Philosophical Letters</h2>
+        <section class="narrative-block" id="philosophical-letters">
+          <h2>Voltaire's Philosophical Letters</h2>
 
-        <p>
-          <em>Letters Concerning the English Nation</em>, commonly known as
-          <em>Philosophical Letters</em>, was published in English in 1733 and
-          in a French version in 1734. The work became an important means
-          through which Voltaire introduced aspects of English intellectual,
-          religious, scientific, and political culture to French readers while
-          encouraging them to examine their own institutions through comparison.
-        </p>
+          <p>
+            <em>Letters Concerning the English Nation</em>, commonly known as
+            <em>Philosophical Letters</em>, was published in English in 1733 and
+            in a French version in 1734. The work became an important means
+            through which Voltaire introduced aspects of English intellectual,
+            religious, scientific, and political culture to French readers while
+            encouraging them to examine their own institutions through
+            comparison.
+          </p>
 
-        <p>
-          The book discusses English religion, politics, philosophy, science,
-          and literature. Voltaire was particularly interested in the greater
-          religious diversity he observed in England and in the intellectual
-          achievements associated with thinkers such as Locke and Newton. These
-          examples allowed him to criticize aspects of French absolutism and
-          religious intolerance indirectly while presenting alternative
-          possibilities for intellectual life.
-        </p>
+          <p>
+            The book discusses English religion, politics, philosophy, science,
+            and literature. Voltaire was particularly interested in the greater
+            religious diversity he observed in England and in the intellectual
+            achievements associated with thinkers such as Locke and Newton.
+            These examples allowed him to criticize aspects of French absolutism
+            and religious intolerance indirectly while presenting alternative
+            possibilities for intellectual life.
+          </p>
 
-        <p>
-          Comparative observation was central to the philosophical importance of
-          the work. Voltaire did not merely describe another country for
-          curiosity's sake; he used differences between England and France as
-          instruments of criticism. By showing that political and religious
-          institutions could operate differently elsewhere, he challenged the
-          assumption that existing French arrangements were inevitable, natural,
-          or beyond rational examination.
-        </p>
+          <p>
+            Comparative observation was central to the philosophical importance
+            of the work. Voltaire did not merely describe another country for
+            curiosity's sake; he used differences between England and France as
+            instruments of criticism. By showing that political and religious
+            institutions could operate differently elsewhere, he challenged the
+            assumption that existing French arrangements were inevitable,
+            natural, or beyond rational examination.
+          </p>
 
-        <p>
-          The <strong>Philosophical Letters</strong> therefore occupy an
-          important place in the history of Enlightenment thought. They reveal
-          Voltaire using travel, comparison, and intellectual history to connect
-          philosophy with public criticism. The work also helped establish his
-          reputation as a writer capable of transforming philosophical ideas
-          into arguments relevant to contemporary political, religious, and
-          cultural debates.
-        </p>
-      </section>
+          <p>
+            The <strong>Philosophical Letters</strong> therefore occupy an
+            important place in the history of Enlightenment thought. They reveal
+            Voltaire using travel, comparison, and intellectual history to
+            connect philosophy with public criticism. The work also helped
+            establish his reputation as a writer capable of transforming
+            philosophical ideas into arguments relevant to contemporary
+            political, religious, and cultural debates.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      17. CANDIDE
      ===================================================== -->
 
-      <section class="narrative-block" id="candide">
-        <h2>Voltaire's Candide and the Problem of Optimism</h2>
+        <section class="narrative-block" id="candide">
+          <h2>Voltaire's Candide and the Problem of Optimism</h2>
 
-        <p>
-          <em>Candide</em>, published in 1759, is Voltaire's most famous work of
-          philosophical fiction. The short novel follows its central character
-          through wars, disasters, injustice, exploitation, and personal
-          tragedy. Behind its comic and often absurd style lies a serious
-          philosophical investigation of optimism, suffering, and the tendency
-          of abstract theories to ignore the concrete realities of human
-          experience.
-        </p>
+          <p>
+            <em>Candide</em>, published in 1759, is Voltaire's most famous work
+            of philosophical fiction. The short novel follows its central
+            character through wars, disasters, injustice, exploitation, and
+            personal tragedy. Behind its comic and often absurd style lies a
+            serious philosophical investigation of optimism, suffering, and the
+            tendency of abstract theories to ignore the concrete realities of
+            human experience.
+          </p>
 
-        <p>
-          The novel is particularly associated with Voltaire's criticism of a
-          form of philosophical optimism connected with Leibniz and caricatured
-          through the character Pangloss. Voltaire does not offer a technical
-          philosophical refutation of Leibniz's entire metaphysical system.
-          Instead, he uses satire and extreme events to ask whether confident
-          explanations of universal order can adequately account for the
-          suffering experienced by actual human beings.
-        </p>
+          <p>
+            The novel is particularly associated with Voltaire's criticism of a
+            form of philosophical optimism connected with Leibniz and
+            caricatured through the character Pangloss. Voltaire does not offer
+            a technical philosophical refutation of Leibniz's entire
+            metaphysical system. Instead, he uses satire and extreme events to
+            ask whether confident explanations of universal order can adequately
+            account for the suffering experienced by actual human beings.
+          </p>
 
-        <p>
-          The Lisbon earthquake of 1755 and other historical catastrophes formed
-          part of the intellectual background to these questions. Voltaire was
-          disturbed by attempts to explain terrible suffering too quickly as
-          necessary or ultimately beneficial. <em>Candide</em> therefore
-          challenges forms of optimism that appear to provide comforting
-          theories while failing to respond seriously to violence, disaster,
-          injustice, and human misery.
-        </p>
+          <p>
+            The Lisbon earthquake of 1755 and other historical catastrophes
+            formed part of the intellectual background to these questions.
+            Voltaire was disturbed by attempts to explain terrible suffering too
+            quickly as necessary or ultimately beneficial.
+            <em>Candide</em> therefore challenges forms of optimism that appear
+            to provide comforting theories while failing to respond seriously to
+            violence, disaster, injustice, and human misery.
+          </p>
 
-        <p>
-          <strong>Candide</strong> also illustrates Voltaire's preferred
-          philosophical method. Rather than presenting only a formal argument,
-          he transforms a philosophical dispute into a memorable literary
-          narrative. The novel encourages readers to abandon empty certainty and
-          to focus instead on practical action, work, and the improvement of
-          concrete human circumstances, making philosophy relevant to the
-          difficult conditions of ordinary life.
-        </p>
-      </section>
+          <p>
+            <strong>Candide</strong> also illustrates Voltaire's preferred
+            philosophical method. Rather than presenting only a formal argument,
+            he transforms a philosophical dispute into a memorable literary
+            narrative. The novel encourages readers to abandon empty certainty
+            and to focus instead on practical action, work, and the improvement
+            of concrete human circumstances, making philosophy relevant to the
+            difficult conditions of ordinary life.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      18. OPTIMISM
      ===================================================== -->
 
-      <section class="narrative-block" id="optimism">
-        <h2>Voltaire's Criticism of Philosophical Optimism</h2>
+        <section class="narrative-block" id="optimism">
+          <h2>Voltaire's Criticism of Philosophical Optimism</h2>
 
-        <p>
-          Voltaire's criticism of <strong>philosophical optimism</strong> was
-          closely connected with his awareness of war, natural disaster,
-          religious persecution, and political injustice. He questioned whether
-          human suffering could always be explained convincingly as part of a
-          perfectly ordered world. His concern was especially directed against
-          philosophical explanations that appeared to dismiss concrete suffering
-          by assuring victims that every event must serve some ultimately
-          beneficial purpose.
-        </p>
+          <p>
+            Voltaire's criticism of <strong>philosophical optimism</strong> was
+            closely connected with his awareness of war, natural disaster,
+            religious persecution, and political injustice. He questioned
+            whether human suffering could always be explained convincingly as
+            part of a perfectly ordered world. His concern was especially
+            directed against philosophical explanations that appeared to dismiss
+            concrete suffering by assuring victims that every event must serve
+            some ultimately beneficial purpose.
+          </p>
 
-        <p>
-          The 1755 Lisbon earthquake became particularly important in European
-          debates about providence and suffering. The catastrophe caused immense
-          destruction and intensified philosophical questions about how natural
-          disasters could be reconciled with optimistic accounts of the world.
-          Voltaire responded to these debates in works including his poem on the
-          Lisbon disaster and later incorporated related concerns into the
-          philosophical background of
-          <em>Candide</em>.
-        </p>
+          <p>
+            The 1755 Lisbon earthquake became particularly important in European
+            debates about providence and suffering. The catastrophe caused
+            immense destruction and intensified philosophical questions about
+            how natural disasters could be reconciled with optimistic accounts
+            of the world. Voltaire responded to these debates in works including
+            his poem on the Lisbon disaster and later incorporated related
+            concerns into the philosophical background of
+            <em>Candide</em>.
+          </p>
 
-        <p>
-          Voltaire's criticism did not mean that he believed human existence was
-          completely without value or that improvement was impossible. Rather,
-          he emphasized the limits of human knowledge and resisted confident
-          explanations of events whose ultimate meaning human beings could not
-          establish. Instead of claiming to understand the total purpose of
-          suffering, people should confront actual problems and work to reduce
-          the misery within their power.
-        </p>
+          <p>
+            Voltaire's criticism did not mean that he believed human existence
+            was completely without value or that improvement was impossible.
+            Rather, he emphasized the limits of human knowledge and resisted
+            confident explanations of events whose ultimate meaning human beings
+            could not establish. Instead of claiming to understand the total
+            purpose of suffering, people should confront actual problems and
+            work to reduce the misery within their power.
+          </p>
 
-        <p>
-          This practical orientation is central to the philosophical message
-          associated with <em>Candide</em>. Voltaire shifts attention away from
-          grand assurances about the perfection of the universe toward the
-          concrete responsibilities of human life. His criticism of optimism
-          therefore combines skepticism about metaphysical certainty with a
-          commitment to practical effort, improvement, and the attempt to create
-          better conditions despite the uncertainty and suffering that remain
-          part of human existence.
-        </p>
-      </section>
-      <div class="philosophy-divider"></div>
-      <!-- ===================================================== 
+          <p>
+            This practical orientation is central to the philosophical message
+            associated with <em>Candide</em>. Voltaire shifts attention away
+            from grand assurances about the perfection of the universe toward
+            the concrete responsibilities of human life. His criticism of
+            optimism therefore combines skepticism about metaphysical certainty
+            with a commitment to practical effort, improvement, and the attempt
+            to create better conditions despite the uncertainty and suffering
+            that remain part of human existence.
+          </p>
+        </section>
+        <div class="philosophy-divider"></div>
+        <!-- ===================================================== 
          19. MORAL PHILOSOPHY 
          ===================================================== -->
 
-      <section class="narrative-block" id="ethics">
-        <h2>Voltaire's Philosophy of Morality and Ethics</h2>
+        <section class="narrative-block" id="ethics">
+          <h2>Voltaire's Philosophy of Morality and Ethics</h2>
 
-        <p>
-          Voltaire's ethical philosophy emphasized practical morality,
-          compassion, justice, and the reduction of human suffering. He was
-          skeptical of moral systems that depended entirely upon theological
-          authority and instead explored whether moral principles could be
-          understood through reason, human experience, and the requirements of
-          social life.
-        </p>
+          <p>
+            Voltaire's ethical philosophy emphasized practical morality,
+            compassion, justice, and the reduction of human suffering. He was
+            skeptical of moral systems that depended entirely upon theological
+            authority and instead explored whether moral principles could be
+            understood through reason, human experience, and the requirements of
+            social life.
+          </p>
 
-        <p>
-          He believed that people living together in society require standards
-          of justice, reciprocity, and mutual respect. Human beings may disagree
-          about theology while still recognizing the importance of honesty,
-          fairness, and protection against cruelty. In this sense,
-          <strong>Voltaire's ethics</strong> is closely connected with his
-          broader philosophy of tolerance.
-        </p>
+          <p>
+            He believed that people living together in society require standards
+            of justice, reciprocity, and mutual respect. Human beings may
+            disagree about theology while still recognizing the importance of
+            honesty, fairness, and protection against cruelty. In this sense,
+            <strong>Voltaire's ethics</strong> is closely connected with his
+            broader philosophy of tolerance.
+          </p>
 
-        <p>
-          Voltaire repeatedly opposed the idea that religious conformity alone
-          could make a person morally good. A society that punishes individuals
-          for their beliefs while tolerating injustice and cruelty, he
-          suggested, confuses external conformity with genuine moral conduct.
-          Moral judgment should therefore remain concerned with the consequences
-          of human actions rather than merely with doctrinal agreement.
-        </p>
+          <p>
+            Voltaire repeatedly opposed the idea that religious conformity alone
+            could make a person morally good. A society that punishes
+            individuals for their beliefs while tolerating injustice and
+            cruelty, he suggested, confuses external conformity with genuine
+            moral conduct. Moral judgment should therefore remain concerned with
+            the consequences of human actions rather than merely with doctrinal
+            agreement.
+          </p>
 
-        <p>
-          His moral thought was also practical rather than purely theoretical.
-          The purpose of philosophy was not simply to construct an abstract
-          theory of virtue but to encourage conduct that reduced cruelty,
-          persecution, injustice, and unnecessary suffering. This practical
-          dimension appears throughout his historical, literary, and political
-          writings.
-        </p>
+          <p>
+            His moral thought was also practical rather than purely theoretical.
+            The purpose of philosophy was not simply to construct an abstract
+            theory of virtue but to encourage conduct that reduced cruelty,
+            persecution, injustice, and unnecessary suffering. This practical
+            dimension appears throughout his historical, literary, and political
+            writings.
+          </p>
 
-        <p>
-          Voltaire did not produce a single systematic ethical doctrine
-          comparable to those later developed by philosophers such as Kant.
-          Nevertheless, his persistent concern with humanity, justice, and
-          tolerance gave his work a recognizable moral orientation. Philosophy,
-          for Voltaire, should help expose the causes of human misery and
-          encourage institutions and individuals to act more justly.
-        </p>
-      </section>
+          <p>
+            Voltaire did not produce a single systematic ethical doctrine
+            comparable to those later developed by philosophers such as Kant.
+            Nevertheless, his persistent concern with humanity, justice, and
+            tolerance gave his work a recognizable moral orientation.
+            Philosophy, for Voltaire, should help expose the causes of human
+            misery and encourage institutions and individuals to act more
+            justly.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
          20. HUMAN NATURE 
          ===================================================== -->
 
-      <section class="narrative-block" id="human-nature">
-        <h2>Voltaire's View of Human Nature</h2>
+        <section class="narrative-block" id="human-nature">
+          <h2>Voltaire's View of Human Nature</h2>
 
-        <p>
-          Voltaire had a relatively skeptical view of human beings. He did not
-          assume that people naturally behave according to perfect rationality
-          or morality. Human beings are capable of reason and improvement, but
-          they are also influenced by prejudice, self-interest, passion,
-          ignorance, vanity, and the powerful influence of social institutions.
-        </p>
+          <p>
+            Voltaire had a relatively skeptical view of human beings. He did not
+            assume that people naturally behave according to perfect rationality
+            or morality. Human beings are capable of reason and improvement, but
+            they are also influenced by prejudice, self-interest, passion,
+            ignorance, vanity, and the powerful influence of social
+            institutions.
+          </p>
 
-        <p>
-          His literary works frequently expose the gap between the ideals people
-          profess and the ways they actually behave. Voltaire was particularly
-          alert to hypocrisy, especially when political or religious authorities
-          claimed moral certainty while participating in injustice or
-          persecution. Human beings could use noble principles to justify
-          conduct that those principles should have condemned.
-        </p>
+          <p>
+            His literary works frequently expose the gap between the ideals
+            people profess and the ways they actually behave. Voltaire was
+            particularly alert to hypocrisy, especially when political or
+            religious authorities claimed moral certainty while participating in
+            injustice or persecution. Human beings could use noble principles to
+            justify conduct that those principles should have condemned.
+          </p>
 
-        <p>
-          This view helps explain why Voltaire placed so much importance on
-          education, criticism, and institutions. If human beings are vulnerable
-          to superstition and fanaticism, societies need intellectual and legal
-          structures that discourage persecution and encourage rational
-          discussion. Good institutions cannot make people perfect, but they can
-          reduce opportunities for destructive behavior.
-        </p>
+          <p>
+            This view helps explain why Voltaire placed so much importance on
+            education, criticism, and institutions. If human beings are
+            vulnerable to superstition and fanaticism, societies need
+            intellectual and legal structures that discourage persecution and
+            encourage rational discussion. Good institutions cannot make people
+            perfect, but they can reduce opportunities for destructive behavior.
+          </p>
 
-        <p>
-          Voltaire therefore combined skepticism about human behavior with
-          confidence in the possibility of improvement. Education, scientific
-          knowledge, legal reform, and greater tolerance could help societies
-          reduce some of the harms produced by ignorance and fanaticism.
-          Progress, however, required continued criticism rather than blind
-          confidence in human perfection.
-        </p>
+          <p>
+            Voltaire therefore combined skepticism about human behavior with
+            confidence in the possibility of improvement. Education, scientific
+            knowledge, legal reform, and greater tolerance could help societies
+            reduce some of the harms produced by ignorance and fanaticism.
+            Progress, however, required continued criticism rather than blind
+            confidence in human perfection.
+          </p>
 
-        <p>
-          His understanding of human nature consequently avoided both complete
-          pessimism and naïve optimism. Human beings are imperfect and often
-          unreasonable, yet they possess capacities for learning, cooperation,
-          sympathy, and reform. The task of philosophy and public criticism is
-          therefore not to imagine a perfect humanity but to improve the
-          conditions under which imperfect human beings live together.
-        </p>
-      </section>
+          <p>
+            His understanding of human nature consequently avoided both complete
+            pessimism and naïve optimism. Human beings are imperfect and often
+            unreasonable, yet they possess capacities for learning, cooperation,
+            sympathy, and reform. The task of philosophy and public criticism is
+            therefore not to imagine a perfect humanity but to improve the
+            conditions under which imperfect human beings live together.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
          21. HISTORY 
          ===================================================== -->
 
-      <section class="narrative-block" id="history">
-        <h2>Voltaire's Philosophy of History</h2>
+        <section class="narrative-block" id="history">
+          <h2>Voltaire's Philosophy of History</h2>
 
-        <p>
-          Voltaire was an important contributor to the development of
-          <strong>Enlightenment philosophy of history</strong>. Rather than
-          writing history solely as a record of kings, battles, dynasties, and
-          political events, he increasingly examined customs, science,
-          economics, religion, literature, and the wider development of social
-          life.
-        </p>
+          <p>
+            Voltaire was an important contributor to the development of
+            <strong>Enlightenment philosophy of history</strong>. Rather than
+            writing history solely as a record of kings, battles, dynasties, and
+            political events, he increasingly examined customs, science,
+            economics, religion, literature, and the wider development of social
+            life.
+          </p>
 
-        <p>
-          His historical writing reflected the Enlightenment belief that the
-          past should be examined critically rather than repeated as inherited
-          tradition. Voltaire questioned legends, challenged sectarian accounts,
-          and attempted to understand historical events within broader cultural
-          contexts. He was interested in how institutions and beliefs shaped
-          human societies across different periods.
-        </p>
+          <p>
+            His historical writing reflected the Enlightenment belief that the
+            past should be examined critically rather than repeated as inherited
+            tradition. Voltaire questioned legends, challenged sectarian
+            accounts, and attempted to understand historical events within
+            broader cultural contexts. He was interested in how institutions and
+            beliefs shaped human societies across different periods.
+          </p>
 
-        <p>
-          His <em>Essay on the Manners and Spirit of Nations</em> attempted to
-          present a broad history of human civilization. Voltaire compared
-          different cultures and historical periods and paid attention to the
-          development of knowledge, commerce, religion, customs, and social
-          institutions rather than concentrating exclusively on rulers.
-        </p>
+          <p>
+            His <em>Essay on the Manners and Spirit of Nations</em> attempted to
+            present a broad history of human civilization. Voltaire compared
+            different cultures and historical periods and paid attention to the
+            development of knowledge, commerce, religion, customs, and social
+            institutions rather than concentrating exclusively on rulers.
+          </p>
 
-        <p>
-          This approach helped expand the meaning of historical inquiry. History
-          could become a means of examining how human societies develop and why
-          institutions such as religion, government, law, and culture change
-          over time. It could also reveal the destructive consequences of
-          fanaticism, intolerance, conquest, and political ambition.
-        </p>
+          <p>
+            This approach helped expand the meaning of historical inquiry.
+            History could become a means of examining how human societies
+            develop and why institutions such as religion, government, law, and
+            culture change over time. It could also reveal the destructive
+            consequences of fanaticism, intolerance, conquest, and political
+            ambition.
+          </p>
 
-        <p>
-          Voltaire's historical scholarship was nevertheless shaped by the
-          assumptions and limitations of eighteenth-century Europe, and modern
-          historians have criticized aspects of his judgments and cultural
-          perspectives. Even so, his attempt to write a broader history of
-          civilization helped establish history as an important field for
-          philosophical reflection on human development and social change.
-        </p>
-      </section>
+          <p>
+            Voltaire's historical scholarship was nevertheless shaped by the
+            assumptions and limitations of eighteenth-century Europe, and modern
+            historians have criticized aspects of his judgments and cultural
+            perspectives. Even so, his attempt to write a broader history of
+            civilization helped establish history as an important field for
+            philosophical reflection on human development and social change.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
          22. DICTIONNAIRE PHILOSOPHIQUE 
          ===================================================== -->
 
-      <section class="narrative-block" id="dictionary">
-        <h2>Voltaire's Dictionnaire philosophique</h2>
+        <section class="narrative-block" id="dictionary">
+          <h2>Voltaire's Dictionnaire philosophique</h2>
 
-        <p>
-          The <em>Dictionnaire philosophique</em>, first published in 1764,
-          collected short alphabetical entries addressing subjects including
-          religion, morality, history, philosophy, politics, and science. The
-          dictionary format allowed Voltaire to move rapidly between different
-          intellectual questions without constructing a conventional
-          philosophical system.
-        </p>
+          <p>
+            The <em>Dictionnaire philosophique</em>, first published in 1764,
+            collected short alphabetical entries addressing subjects including
+            religion, morality, history, philosophy, politics, and science. The
+            dictionary format allowed Voltaire to move rapidly between different
+            intellectual questions without constructing a conventional
+            philosophical system.
+          </p>
 
-        <p>
-          Voltaire used irony, satire, historical examples, and philosophical
-          criticism throughout the work. Rather than presenting a single
-          systematic doctrine, many entries encourage readers to question
-          conventional assumptions and examine controversial subjects from
-          perspectives that challenged established authority and dogmatism.
-        </p>
+          <p>
+            Voltaire used irony, satire, historical examples, and philosophical
+            criticism throughout the work. Rather than presenting a single
+            systematic doctrine, many entries encourage readers to question
+            conventional assumptions and examine controversial subjects from
+            perspectives that challenged established authority and dogmatism.
+          </p>
 
-        <p>
-          The alphabetical structure also suited Voltaire's style of public
-          intellectual engagement. Readers could encounter individual arguments
-          about particular concepts without first accepting an entire
-          philosophical system. This made the work flexible, accessible, and
-          well suited to his preference for criticism over rigid
-          system-building.
-        </p>
+          <p>
+            The alphabetical structure also suited Voltaire's style of public
+            intellectual engagement. Readers could encounter individual
+            arguments about particular concepts without first accepting an
+            entire philosophical system. This made the work flexible,
+            accessible, and well suited to his preference for criticism over
+            rigid system-building.
+          </p>
 
-        <p>
-          The dictionary frequently returns to themes found throughout
-          Voltaire's writings, including religious intolerance, superstition,
-          historical error, abuses of authority, and the importance of rational
-          inquiry. Its short entries could nevertheless contain serious
-          philosophical arguments beneath their often witty or provocative
-          literary surface.
-        </p>
+          <p>
+            The dictionary frequently returns to themes found throughout
+            Voltaire's writings, including religious intolerance, superstition,
+            historical error, abuses of authority, and the importance of
+            rational inquiry. Its short entries could nevertheless contain
+            serious philosophical arguments beneath their often witty or
+            provocative literary surface.
+          </p>
 
-        <p>
-          The work is especially important for understanding Voltaire's public
-          philosophy. His philosophical writing was designed not only for
-          specialists but also for educated readers interested in religion,
-          society, morality, science, and political life. The
-          <em>Dictionnaire philosophique</em> demonstrates how literary form
-          itself could become an instrument of Enlightenment criticism.
-        </p>
-      </section>
+          <p>
+            The work is especially important for understanding Voltaire's public
+            philosophy. His philosophical writing was designed not only for
+            specialists but also for educated readers interested in religion,
+            society, morality, science, and political life. The
+            <em>Dictionnaire philosophique</em> demonstrates how literary form
+            itself could become an instrument of Enlightenment criticism.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
          23. MAJOR WORKS 
          ===================================================== -->
 
-      <section class="narrative-block" id="works">
-        <h2>Major Works of Voltaire</h2>
+        <section class="narrative-block" id="works">
+          <h2>Major Works of Voltaire</h2>
 
-        <p>
-          Voltaire produced an enormous body of literary, historical,
-          philosophical, and political writing. His works frequently combine
-          philosophy with satire, storytelling, historical criticism, and public
-          controversy, making them important sources for understanding both his
-          own thought and the wider intellectual culture of the
-          eighteenth-century Enlightenment.
-        </p>
+          <p>
+            Voltaire produced an enormous body of literary, historical,
+            philosophical, and political writing. His works frequently combine
+            philosophy with satire, storytelling, historical criticism, and
+            public controversy, making them important sources for understanding
+            both his own thought and the wider intellectual culture of the
+            eighteenth-century Enlightenment.
+          </p>
 
-        <p>
-          His major works do not form a single philosophical system. Instead,
-          they approach recurring questions from different literary directions:
-          the problem of suffering, the dangers of fanaticism, the relationship
-          between reason and religion, the importance of tolerance, and the
-          possibility of improving political and social institutions.
-        </p>
+          <p>
+            His major works do not form a single philosophical system. Instead,
+            they approach recurring questions from different literary
+            directions: the problem of suffering, the dangers of fanaticism, the
+            relationship between reason and religion, the importance of
+            tolerance, and the possibility of improving political and social
+            institutions.
+          </p>
 
-        <p>
-          Some of Voltaire's most influential works became controversial because
-          they challenged powerful religious and political assumptions. Their
-          publication and reception were therefore closely connected with the
-          history of censorship and intellectual freedom in eighteenth-century
-          France and Europe. Voltaire's career illustrates how literature could
-          become a powerful medium for philosophical intervention.
-        </p>
+          <p>
+            Some of Voltaire's most influential works became controversial
+            because they challenged powerful religious and political
+            assumptions. Their publication and reception were therefore closely
+            connected with the history of censorship and intellectual freedom in
+            eighteenth-century France and Europe. Voltaire's career illustrates
+            how literature could become a powerful medium for philosophical
+            intervention.
+          </p>
 
-        <p>
-          Together, these writings demonstrate the extraordinary range of his
-          intellectual activity. Voltaire could write philosophical fiction,
-          historical studies, polemical essays, letters, poetry, drama, and
-          short critical pieces while repeatedly returning to central
-          Enlightenment questions about reason, justice, knowledge, and human
-          freedom.
-        </p>
+          <p>
+            Together, these writings demonstrate the extraordinary range of his
+            intellectual activity. Voltaire could write philosophical fiction,
+            historical studies, polemical essays, letters, poetry, drama, and
+            short critical pieces while repeatedly returning to central
+            Enlightenment questions about reason, justice, knowledge, and human
+            freedom.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong><em>Candide</em></strong> — A philosophical satire
-            criticizing excessive optimism and examining suffering, human
-            responsibility, and practical action.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong><em>Candide</em></strong> — A philosophical satire
+              criticizing excessive optimism and examining suffering, human
+              responsibility, and practical action.
+            </li>
 
-          <li>
-            <strong><em>Treatise on Tolerance</em></strong> — A major argument
-            for religious tolerance and against fanaticism and persecution.
-          </li>
+            <li>
+              <strong><em>Treatise on Tolerance</em></strong> — A major argument
+              for religious tolerance and against fanaticism and persecution.
+            </li>
 
-          <li>
-            <strong><em>Philosophical Letters</em></strong> — A discussion of
-            English religion, politics, philosophy, science, and culture.
-          </li>
+            <li>
+              <strong><em>Philosophical Letters</em></strong> — A discussion of
+              English religion, politics, philosophy, science, and culture.
+            </li>
 
-          <li>
-            <strong><em>Dictionnaire philosophique</em></strong> — A collection
-            of philosophical and critical entries addressing religion, morality,
-            history, politics, and science.
-          </li>
+            <li>
+              <strong><em>Dictionnaire philosophique</em></strong> — A
+              collection of philosophical and critical entries addressing
+              religion, morality, history, politics, and science.
+            </li>
 
-          <li>
-            <strong><em>Essay on the Manners and Spirit of Nations</em></strong>
-            — A broad work of Enlightenment history examining cultures,
-            institutions, and civilization.
-          </li>
+            <li>
+              <strong
+                ><em>Essay on the Manners and Spirit of Nations</em></strong
+              >
+              — A broad work of Enlightenment history examining cultures,
+              institutions, and civilization.
+            </li>
 
-          <li>
-            <strong><em>Zadig</em></strong> — A philosophical tale exploring
-            fate, justice, suffering, and the limits of human understanding.
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong><em>Zadig</em></strong> — A philosophical tale exploring
+              fate, justice, suffering, and the limits of human understanding.
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
          24. MAIN IDEAS 
          ===================================================== -->
 
-      <section class="narrative-block" id="key-ideas">
-        <h2>Voltaire's Main Philosophical Ideas</h2>
+        <section class="narrative-block" id="key-ideas">
+          <h2>Voltaire's Main Philosophical Ideas</h2>
 
-        <h3>1. Reason Against Fanaticism</h3>
+          <h3>1. Reason Against Fanaticism</h3>
 
-        <p>
-          Voltaire believed that rational inquiry could challenge superstition,
-          prejudice, and fanaticism. Reason was particularly important when
-          religious or political authority attempted to suppress disagreement,
-          because critical examination could expose claims that depended upon
-          fear, inherited assumptions, or unsupported assertions.
-        </p>
+          <p>
+            Voltaire believed that rational inquiry could challenge
+            superstition, prejudice, and fanaticism. Reason was particularly
+            important when religious or political authority attempted to
+            suppress disagreement, because critical examination could expose
+            claims that depended upon fear, inherited assumptions, or
+            unsupported assertions.
+          </p>
 
-        <h3>2. Religious Tolerance</h3>
+          <h3>2. Religious Tolerance</h3>
 
-        <p>
-          Voltaire argued that people should not be persecuted because of their
-          religious beliefs. Religious tolerance was essential for peaceful
-          coexistence and civil society, particularly in communities where
-          different groups held incompatible doctrines but still had to live
-          together under common laws.
-        </p>
+          <p>
+            Voltaire argued that people should not be persecuted because of
+            their religious beliefs. Religious tolerance was essential for
+            peaceful coexistence and civil society, particularly in communities
+            where different groups held incompatible doctrines but still had to
+            live together under common laws.
+          </p>
 
-        <h3>3. Deism and a Rational Creator</h3>
+          <h3>3. Deism and a Rational Creator</h3>
 
-        <p>
-          Voltaire generally accepted a deistic belief in a supreme creator
-          while rejecting many traditional theological doctrines and criticizing
-          institutional religious power. His belief in God therefore existed
-          alongside a strong opposition to superstition, clerical intolerance,
-          and attempts to impose religious conformity through political force.
-        </p>
+          <p>
+            Voltaire generally accepted a deistic belief in a supreme creator
+            while rejecting many traditional theological doctrines and
+            criticizing institutional religious power. His belief in God
+            therefore existed alongside a strong opposition to superstition,
+            clerical intolerance, and attempts to impose religious conformity
+            through political force.
+          </p>
 
-        <h3>4. Freedom of Thought</h3>
+          <h3>4. Freedom of Thought</h3>
 
-        <p>
-          Voltaire defended intellectual freedom and criticized censorship. He
-          believed that societies benefit when individuals can question
-          established beliefs and institutions, because disagreement and
-          criticism can reveal errors that would otherwise remain protected by
-          political, religious, or cultural authority.
-        </p>
+          <p>
+            Voltaire defended intellectual freedom and criticized censorship. He
+            believed that societies benefit when individuals can question
+            established beliefs and institutions, because disagreement and
+            criticism can reveal errors that would otherwise remain protected by
+            political, religious, or cultural authority.
+          </p>
 
-        <h3>5. Practical Improvement</h3>
+          <h3>5. Practical Improvement</h3>
 
-        <p>
-          Voltaire was skeptical of abstract philosophical systems that ignored
-          actual human suffering. His writings repeatedly emphasize practical
-          reform, education, justice, tolerance, and the improvement of social
-          conditions. Philosophy should therefore help human beings confront
-          real problems rather than merely construct intellectual abstractions.
-        </p>
+          <p>
+            Voltaire was skeptical of abstract philosophical systems that
+            ignored actual human suffering. His writings repeatedly emphasize
+            practical reform, education, justice, tolerance, and the improvement
+            of social conditions. Philosophy should therefore help human beings
+            confront real problems rather than merely construct intellectual
+            abstractions.
+          </p>
 
-        <h3>6. Criticism of Excessive Optimism</h3>
+          <h3>6. Criticism of Excessive Optimism</h3>
 
-        <p>
-          Through <em>Candide</em> and other writings, Voltaire challenged the
-          idea that every event in the world must be understood as part of a
-          perfectly good or rational order. Human suffering and catastrophe, in
-          his view, created serious difficulties for philosophical explanations
-          that too easily declared everything ultimately beneficial.
-        </p>
-      </section>
+          <p>
+            Through <em>Candide</em> and other writings, Voltaire challenged the
+            idea that every event in the world must be understood as part of a
+            perfectly good or rational order. Human suffering and catastrophe,
+            in his view, created serious difficulties for philosophical
+            explanations that too easily declared everything ultimately
+            beneficial.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
          25. VOLTAIRE AND OTHER ENLIGHTENMENT THINKERS 
          ===================================================== -->
 
-      <section class="narrative-block" id="comparisons">
-        <h2>Voltaire and Other Enlightenment Philosophers</h2>
+        <section class="narrative-block" id="comparisons">
+          <h2>Voltaire and Other Enlightenment Philosophers</h2>
 
-        <p>
-          Voltaire belonged to a generation of thinkers who transformed European
-          intellectual culture, but his philosophy differed from other
-          Enlightenment philosophers in important ways. His emphasis on
-          religious tolerance, criticism of fanaticism, and popular
-          philosophical writing gave his work a distinctive public and literary
-          character.
-        </p>
+          <p>
+            Voltaire belonged to a generation of thinkers who transformed
+            European intellectual culture, but his philosophy differed from
+            other Enlightenment philosophers in important ways. His emphasis on
+            religious tolerance, criticism of fanaticism, and popular
+            philosophical writing gave his work a distinctive public and
+            literary character.
+          </p>
 
-        <p>
-          His relationship with <strong>John Locke</strong> and
-          <strong>Isaac Newton</strong> was especially significant because he
-          helped introduce English empiricism, political ideas, and Newtonian
-          science to French audiences. Locke provided an important model of
-          philosophical inquiry, while Newton represented the achievements of
-          modern scientific explanation.
-        </p>
+          <p>
+            His relationship with <strong>John Locke</strong> and
+            <strong>Isaac Newton</strong> was especially significant because he
+            helped introduce English empiricism, political ideas, and Newtonian
+            science to French audiences. Locke provided an important model of
+            philosophical inquiry, while Newton represented the achievements of
+            modern scientific explanation.
+          </p>
 
-        <p>
-          Voltaire's relationship with <strong>Jean-Jacques Rousseau</strong>,
-          however, was much more complicated. The two thinkers participated in
-          the same broad Enlightenment world while developing sharply different
-          views about civilization, religion, society, culture, and human
-          progress. Their disagreements reveal important divisions within the
-          Enlightenment itself.
-        </p>
+          <p>
+            Voltaire's relationship with <strong>Jean-Jacques Rousseau</strong>,
+            however, was much more complicated. The two thinkers participated in
+            the same broad Enlightenment world while developing sharply
+            different views about civilization, religion, society, culture, and
+            human progress. Their disagreements reveal important divisions
+            within the Enlightenment itself.
+          </p>
 
-        <p>
-          Voltaire's criticism of <strong>Leibniz</strong> is particularly
-          visible in <em>Candide</em>, where he satirizes the philosophical
-          optimism associated with the claim that this is the best of all
-          possible worlds. Rather than offering only a technical philosophical
-          response, Voltaire transformed the disagreement into a powerful work
-          of literary satire.
-        </p>
+          <p>
+            Voltaire's criticism of <strong>Leibniz</strong> is particularly
+            visible in <em>Candide</em>, where he satirizes the philosophical
+            optimism associated with the claim that this is the best of all
+            possible worlds. Rather than offering only a technical philosophical
+            response, Voltaire transformed the disagreement into a powerful work
+            of literary satire.
+          </p>
 
-        <p>
-          These relationships place Voltaire within a broader network of
-          Enlightenment debates rather than presenting him as an isolated
-          thinker. He borrowed ideas, criticized rivals, popularized scientific
-          discoveries, and engaged with major philosophical questions through
-          forms of writing that reached audiences far beyond the traditional
-          boundaries of academic philosophy.
-        </p>
-      </section>
+          <p>
+            These relationships place Voltaire within a broader network of
+            Enlightenment debates rather than presenting him as an isolated
+            thinker. He borrowed ideas, criticized rivals, popularized
+            scientific discoveries, and engaged with major philosophical
+            questions through forms of writing that reached audiences far beyond
+            the traditional boundaries of academic philosophy.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
          26. LEGACY 
          ===================================================== -->
 
-      <section class="narrative-block" id="legacy">
-        <h2>Voltaire's Influence and Legacy</h2>
+        <section class="narrative-block" id="legacy">
+          <h2>Voltaire's Influence and Legacy</h2>
 
-        <p>
-          Voltaire's influence extended far beyond eighteenth-century France.
-          His arguments for religious tolerance, criticism of fanaticism,
-          opposition to arbitrary authority, and defense of intellectual freedom
-          became important elements of modern European intellectual history and
-          helped shape later discussions about civil liberties and public
-          criticism.
-        </p>
+          <p>
+            Voltaire's influence extended far beyond eighteenth-century France.
+            His arguments for religious tolerance, criticism of fanaticism,
+            opposition to arbitrary authority, and defense of intellectual
+            freedom became important elements of modern European intellectual
+            history and helped shape later discussions about civil liberties and
+            public criticism.
+          </p>
 
-        <p>
-          His writings also influenced debates about the relationship between
-          religion and government. Voltaire helped establish the idea that
-          public intellectuals could criticize powerful institutions and use
-          philosophy, history, and literature to address concrete problems of
-          justice, persecution, censorship, and social reform.
-        </p>
+          <p>
+            His writings also influenced debates about the relationship between
+            religion and government. Voltaire helped establish the idea that
+            public intellectuals could criticize powerful institutions and use
+            philosophy, history, and literature to address concrete problems of
+            justice, persecution, censorship, and social reform.
+          </p>
 
-        <p>
-          His influence should not, however, be understood as identical with the
-          development of modern democratic liberalism. Voltaire sometimes
-          expressed political views that differ significantly from contemporary
-          democratic ideals, including skepticism about broad political
-          participation. His historical importance is therefore more complex
-          than a simple story of progress.
-        </p>
+          <p>
+            His influence should not, however, be understood as identical with
+            the development of modern democratic liberalism. Voltaire sometimes
+            expressed political views that differ significantly from
+            contemporary democratic ideals, including skepticism about broad
+            political participation. His historical importance is therefore more
+            complex than a simple story of progress.
+          </p>
 
-        <p>
-          Modern readers have also criticized aspects of Voltaire's writings and
-          some of the prejudices found within them. Understanding his historical
-          context does not require ignoring these problems. A serious assessment
-          of his legacy must distinguish his powerful arguments for tolerance
-          and criticism from attitudes that later generations have rightly
-          rejected.
-        </p>
+          <p>
+            Modern readers have also criticized aspects of Voltaire's writings
+            and some of the prejudices found within them. Understanding his
+            historical context does not require ignoring these problems. A
+            serious assessment of his legacy must distinguish his powerful
+            arguments for tolerance and criticism from attitudes that later
+            generations have rightly rejected.
+          </p>
 
-        <p>
-          His lasting importance lies particularly in his contribution to
-          debates about tolerance, reason, criticism, and intellectual freedom.
-          Voltaire demonstrated that philosophical ideas could enter public life
-          through essays, satire, fiction, and historical writing. More than two
-          centuries after his death, his opposition to fanaticism remains one of
-          the most recognizable features of his intellectual legacy.
-        </p>
-      </section>
+          <p>
+            His lasting importance lies particularly in his contribution to
+            debates about tolerance, reason, criticism, and intellectual
+            freedom. Voltaire demonstrated that philosophical ideas could enter
+            public life through essays, satire, fiction, and historical writing.
+            More than two centuries after his death, his opposition to
+            fanaticism remains one of the most recognizable features of his
+            intellectual legacy.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
          27. PHILOSOPHY EXPLAINED SIMPLY 
          ===================================================== -->
 
-      <section class="narrative-block" id="explained-simply">
-        <h2>Voltaire's Philosophy Explained Simply</h2>
+        <section class="narrative-block" id="explained-simply">
+          <h2>Voltaire's Philosophy Explained Simply</h2>
 
-        <p>
-          Voltaire can be understood as an Enlightenment thinker who believed
-          that human beings should use reason to challenge fanaticism,
-          superstition, injustice, and arbitrary authority. He did not create
-          one complete philosophical system. Instead, he used essays, satire,
-          history, fiction, and philosophical criticism to examine the problems
-          of his society.
-        </p>
+          <p>
+            Voltaire can be understood as an Enlightenment thinker who believed
+            that human beings should use reason to challenge fanaticism,
+            superstition, injustice, and arbitrary authority. He did not create
+            one complete philosophical system. Instead, he used essays, satire,
+            history, fiction, and philosophical criticism to examine the
+            problems of his society.
+          </p>
 
-        <p>
-          His central concern was not simply to win abstract philosophical
-          arguments. Voltaire wanted people to think more critically about the
-          institutions and beliefs that governed their lives. He believed that
-          unquestioned authority could produce persecution and injustice, while
-          reasoned criticism could help expose error and encourage reform.
-        </p>
+          <p>
+            His central concern was not simply to win abstract philosophical
+            arguments. Voltaire wanted people to think more critically about the
+            institutions and beliefs that governed their lives. He believed that
+            unquestioned authority could produce persecution and injustice,
+            while reasoned criticism could help expose error and encourage
+            reform.
+          </p>
 
-        <p>
-          Voltaire also believed that disagreement did not have to lead to
-          violence. People could hold different religious and philosophical
-          beliefs while living together peacefully under just laws. This is why
-          tolerance became such an important part of his philosophy and why he
-          repeatedly criticized fanaticism and religious persecution.
-        </p>
+          <p>
+            Voltaire also believed that disagreement did not have to lead to
+            violence. People could hold different religious and philosophical
+            beliefs while living together peacefully under just laws. This is
+            why tolerance became such an important part of his philosophy and
+            why he repeatedly criticized fanaticism and religious persecution.
+          </p>
 
-        <p>
-          His writings on suffering and optimism also encourage a practical
-          attitude toward human problems. Rather than assuming that every
-          tragedy must somehow be justified by a perfect cosmic plan, Voltaire
-          urged attention to the real conditions of human life and to the
-          practical work required to improve those conditions.
-        </p>
+          <p>
+            His writings on suffering and optimism also encourage a practical
+            attitude toward human problems. Rather than assuming that every
+            tragedy must somehow be justified by a perfect cosmic plan, Voltaire
+            urged attention to the real conditions of human life and to the
+            practical work required to improve those conditions.
+          </p>
 
-        <p>
-          In simple terms, Voltaire's philosophy asks people to think
-          critically, tolerate disagreement, resist fanaticism, and work to
-          reduce injustice and suffering. His enduring importance comes from the
-          way he combined philosophical ideas with accessible and memorable
-          forms of writing that could influence public debate.
-        </p>
+          <p>
+            In simple terms, Voltaire's philosophy asks people to think
+            critically, tolerate disagreement, resist fanaticism, and work to
+            reduce injustice and suffering. His enduring importance comes from
+            the way he combined philosophical ideas with accessible and
+            memorable forms of writing that could influence public debate.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong>What did Voltaire believe about God?</strong>
-            Voltaire generally believed in a rational creator and is commonly
-            described as a deist.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>What did Voltaire believe about God?</strong>
+              Voltaire generally believed in a rational creator and is commonly
+              described as a deist.
+            </li>
 
-          <li>
-            <strong>Why did Voltaire criticize religion?</strong>
-            He strongly criticized religious fanaticism, persecution,
-            superstition, and institutional abuses while still defending a
-            rational belief in God.
-          </li>
+            <li>
+              <strong>Why did Voltaire criticize religion?</strong>
+              He strongly criticized religious fanaticism, persecution,
+              superstition, and institutional abuses while still defending a
+              rational belief in God.
+            </li>
 
-          <li>
-            <strong>Why was tolerance important to Voltaire?</strong>
-            He believed religious and intellectual tolerance could reduce
-            persecution and social conflict.
-          </li>
+            <li>
+              <strong>Why was tolerance important to Voltaire?</strong>
+              He believed religious and intellectual tolerance could reduce
+              persecution and social conflict.
+            </li>
 
-          <li>
-            <strong>What did Voltaire think about optimism?</strong>
-            He questioned the idea that all events are ultimately for the best,
-            especially in light of suffering and natural disasters.
-          </li>
+            <li>
+              <strong>What did Voltaire think about optimism?</strong>
+              He questioned the idea that all events are ultimately for the
+              best, especially in light of suffering and natural disasters.
+            </li>
 
-          <li>
-            <strong>Why is Candide important?</strong>
-            <em>Candide</em> uses satire to examine optimism, suffering,
-            philosophical speculation, and the need for practical action.
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>Why is Candide important?</strong>
+              <em>Candide</em> uses satire to examine optimism, suffering,
+              philosophical speculation, and the need for practical action.
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          FAQ
          ===================================================== -->
 
-      <section class="narrative-block" id="faq">
-        <h2>Frequently Asked Questions About Voltaire</h2>
+        <section class="narrative-block" id="faq">
+          <h2>Frequently Asked Questions About Voltaire</h2>
 
-        <h3>Who was Voltaire?</h3>
+          <h3>Who was Voltaire?</h3>
 
-        <p>
-          Voltaire was the pen name of François-Marie Arouet, a French
-          Enlightenment writer, philosopher, historian, and satirist who lived
-          from 1694 to 1778. He became famous for defending religious tolerance,
-          intellectual freedom, and criticism of fanaticism.
-        </p>
+          <p>
+            Voltaire was the pen name of François-Marie Arouet, a French
+            Enlightenment writer, philosopher, historian, and satirist who lived
+            from 1694 to 1778. He became famous for defending religious
+            tolerance, intellectual freedom, and criticism of fanaticism.
+          </p>
 
-        <h3>What was Voltaire's philosophy?</h3>
+          <h3>What was Voltaire's philosophy?</h3>
 
-        <p>
-          Voltaire's philosophy emphasized reason, religious tolerance,
-          intellectual freedom, criticism of fanaticism, deism, legal reform,
-          and practical improvement of human society. His ideas were expressed
-          across philosophical essays, histories, letters, fiction, and satire.
-        </p>
+          <p>
+            Voltaire's philosophy emphasized reason, religious tolerance,
+            intellectual freedom, criticism of fanaticism, deism, legal reform,
+            and practical improvement of human society. His ideas were expressed
+            across philosophical essays, histories, letters, fiction, and
+            satire.
+          </p>
 
-        <h3>Was Voltaire an Enlightenment philosopher?</h3>
+          <h3>Was Voltaire an Enlightenment philosopher?</h3>
 
-        <p>
-          Yes. Voltaire was one of the most influential philosophers and public
-          intellectuals of the European Enlightenment, particularly within the
-          French Enlightenment tradition.
-        </p>
+          <p>
+            Yes. Voltaire was one of the most influential philosophers and
+            public intellectuals of the European Enlightenment, particularly
+            within the French Enlightenment tradition.
+          </p>
 
-        <h3>Was Voltaire a deist?</h3>
+          <h3>Was Voltaire a deist?</h3>
 
-        <p>
-          Yes. Voltaire is generally classified as a deist because he believed
-          in a rational creator while rejecting many traditional theological
-          doctrines and strongly criticizing religious fanaticism.
-        </p>
+          <p>
+            Yes. Voltaire is generally classified as a deist because he believed
+            in a rational creator while rejecting many traditional theological
+            doctrines and strongly criticizing religious fanaticism.
+          </p>
 
-        <h3>What did Voltaire believe about religion?</h3>
+          <h3>What did Voltaire believe about religion?</h3>
 
-        <p>
-          Voltaire believed that religion should not become a justification for
-          persecution or violence. He criticized fanaticism and institutional
-          abuses while maintaining a rational belief in God.
-        </p>
+          <p>
+            Voltaire believed that religion should not become a justification
+            for persecution or violence. He criticized fanaticism and
+            institutional abuses while maintaining a rational belief in God.
+          </p>
 
-        <h3>Why did Voltaire support religious tolerance?</h3>
+          <h3>Why did Voltaire support religious tolerance?</h3>
 
-        <p>
-          Voltaire believed that people should not be persecuted for their
-          religious beliefs. He regarded religious tolerance as essential for
-          social peace, justice, and civil liberty.
-        </p>
+          <p>
+            Voltaire believed that people should not be persecuted for their
+            religious beliefs. He regarded religious tolerance as essential for
+            social peace, justice, and civil liberty.
+          </p>
 
-        <h3>Did Voltaire believe in freedom of speech?</h3>
+          <h3>Did Voltaire believe in freedom of speech?</h3>
 
-        <p>
-          Voltaire strongly defended freedom of thought and opposed censorship
-          and intellectual persecution. Although the famous modern quotation
-          about defending another person's right to speak is not actually
-          written by Voltaire, his works clearly defend intellectual and
-          religious liberty.
-        </p>
+          <p>
+            Voltaire strongly defended freedom of thought and opposed censorship
+            and intellectual persecution. Although the famous modern quotation
+            about defending another person's right to speak is not actually
+            written by Voltaire, his works clearly defend intellectual and
+            religious liberty.
+          </p>
 
-        <h3>What is Voltaire famous for?</h3>
+          <h3>What is Voltaire famous for?</h3>
 
-        <p>
-          Voltaire is famous for his Enlightenment philosophy, criticism of
-          religious intolerance, defense of tolerance and intellectual freedom,
-          advocacy of Newtonian science, and works such as <em>Candide</em>,
-          <em>Treatise on Tolerance</em>, and
-          <em>Dictionnaire philosophique</em>.
-        </p>
+          <p>
+            Voltaire is famous for his Enlightenment philosophy, criticism of
+            religious intolerance, defense of tolerance and intellectual
+            freedom, advocacy of Newtonian science, and works such as
+            <em>Candide</em>, <em>Treatise on Tolerance</em>, and
+            <em>Dictionnaire philosophique</em>.
+          </p>
 
-        <h3>What is Voltaire's most famous book?</h3>
+          <h3>What is Voltaire's most famous book?</h3>
 
-        <p>
-          Voltaire's most famous literary-philosophical work is
-          <em>Candide</em>, a satirical novel that examines optimism, suffering,
-          human behavior, and the relationship between philosophical theories
-          and real life.
-        </p>
+          <p>
+            Voltaire's most famous literary-philosophical work is
+            <em>Candide</em>, a satirical novel that examines optimism,
+            suffering, human behavior, and the relationship between
+            philosophical theories and real life.
+          </p>
 
-        <h3>What did Voltaire think about Candide and optimism?</h3>
+          <h3>What did Voltaire think about Candide and optimism?</h3>
 
-        <p>
-          In <em>Candide</em>, Voltaire satirized excessive philosophical
-          optimism, particularly the claim that the existing world must be the
-          best possible world. He used suffering and absurdity to question
-          attempts to justify every tragedy as ultimately necessary or good.
-        </p>
+          <p>
+            In <em>Candide</em>, Voltaire satirized excessive philosophical
+            optimism, particularly the claim that the existing world must be the
+            best possible world. He used suffering and absurdity to question
+            attempts to justify every tragedy as ultimately necessary or good.
+          </p>
 
-        <h3>What was Voltaire's political philosophy?</h3>
+          <h3>What was Voltaire's political philosophy?</h3>
 
-        <p>
-          Voltaire supported legal reform, civil liberties, religious tolerance,
-          education, and opposition to arbitrary persecution. He was not a
-          straightforward modern democrat and sometimes favored enlightened
-          monarchy as a practical means of reform.
-        </p>
+          <p>
+            Voltaire supported legal reform, civil liberties, religious
+            tolerance, education, and opposition to arbitrary persecution. He
+            was not a straightforward modern democrat and sometimes favored
+            enlightened monarchy as a practical means of reform.
+          </p>
 
-        <h3>What did Voltaire think about religious fanaticism?</h3>
+          <h3>What did Voltaire think about religious fanaticism?</h3>
 
-        <p>
-          Voltaire regarded religious fanaticism as dangerous because it could
-          transform differences of belief into persecution and violence. He
-          argued that reason and tolerance were necessary safeguards against
-          fanaticism.
-        </p>
+          <p>
+            Voltaire regarded religious fanaticism as dangerous because it could
+            transform differences of belief into persecution and violence. He
+            argued that reason and tolerance were necessary safeguards against
+            fanaticism.
+          </p>
 
-        <h3>What was Voltaire's relationship with John Locke?</h3>
+          <h3>What was Voltaire's relationship with John Locke?</h3>
 
-        <p>
-          Voltaire admired important aspects of John Locke's philosophy,
-          particularly his empiricism and writings on religious tolerance. Locke
-          became an important influence on Voltaire's understanding of English
-          philosophy and intellectual freedom.
-        </p>
+          <p>
+            Voltaire admired important aspects of John Locke's philosophy,
+            particularly his empiricism and writings on religious tolerance.
+            Locke became an important influence on Voltaire's understanding of
+            English philosophy and intellectual freedom.
+          </p>
 
-        <h3>How did Isaac Newton influence Voltaire?</h3>
+          <h3>How did Isaac Newton influence Voltaire?</h3>
 
-        <p>
-          Voltaire admired Newtonian science and helped popularize Newton's
-          scientific ideas among French readers. Newton's physics reinforced
-          Voltaire's confidence in rational investigation and scientific
-          explanations of nature.
-        </p>
+          <p>
+            Voltaire admired Newtonian science and helped popularize Newton's
+            scientific ideas among French readers. Newton's physics reinforced
+            Voltaire's confidence in rational investigation and scientific
+            explanations of nature.
+          </p>
 
-        <h3>Why is Voltaire important in the history of philosophy?</h3>
+          <h3>Why is Voltaire important in the history of philosophy?</h3>
 
-        <p>
-          Voltaire is important because he helped bring Enlightenment philosophy
-          into public debates about religion, politics, law, science, and
-          society. His defense of tolerance and criticism of fanaticism became
-          especially influential in modern intellectual history.
-        </p>
-      </section>
+          <p>
+            Voltaire is important because he helped bring Enlightenment
+            philosophy into public debates about religion, politics, law,
+            science, and society. His defense of tolerance and criticism of
+            fanaticism became especially influential in modern intellectual
+            history.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED THINKERS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-thinkers-title">
-        <span class="section-eyebrow"> Continue Exploring </span>
+        <section class="connection" aria-labelledby="related-thinkers-title">
+          <span class="section-eyebrow"> Continue Exploring </span>
 
-        <h2 id="related-thinkers-title">
-          Related Enlightenment and Modern Philosophers
-        </h2>
+          <h2 id="related-thinkers-title">
+            Related Enlightenment and Modern Philosophers
+          </h2>
 
-        <p>
-          Explore other major thinkers connected with Enlightenment philosophy,
-          modern philosophy, empiricism, rationalism, political thought, and
-          eighteenth-century intellectual history.
-        </p>
+          <p>
+            Explore other major thinkers connected with Enlightenment
+            philosophy, modern philosophy, empiricism, rationalism, political
+            thought, and eighteenth-century intellectual history.
+          </p>
 
-        <div class="related-links">
-          <a href="rene-descartes.html"> René Descartes </a>
+          <div class="related-links">
+            <a href="rene-descartes.html"> René Descartes </a>
 
-          ·
+            ·
 
-          <a href="john-locke.html"> John Locke </a>
+            <a href="john-locke.html"> John Locke </a>
 
-          ·
+            ·
 
-          <a href="spinoza.html"> Baruch Spinoza </a>
+            <a href="spinoza.html"> Baruch Spinoza </a>
 
-          ·
+            ·
 
-          <a href="leibniz.html"> Gottfried Wilhelm Leibniz </a>
+            <a href="leibniz.html"> Gottfried Wilhelm Leibniz </a>
 
-          ·
+            ·
 
-          <a href="george-berkeley.html"> George Berkeley </a>
+            <a href="george-berkeley.html"> George Berkeley </a>
 
-          ·
+            ·
 
-          <a href="david-hume.html"> David Hume </a>
+            <a href="david-hume.html"> David Hume </a>
 
-          ·
+            ·
 
-          <a href="immanuel-kant.html"> Immanuel Kant </a>
-        </div>
-      </section>
+            <a href="immanuel-kant.html"> Immanuel Kant </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED AREAS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-topics-title">
-        <span class="section-eyebrow"> Philosophical Connections </span>
+        <section class="connection" aria-labelledby="related-topics-title">
+          <span class="section-eyebrow"> Philosophical Connections </span>
 
-        <h2 id="related-topics-title">Related Areas of Philosophy</h2>
+          <h2 id="related-topics-title">Related Areas of Philosophy</h2>
 
-        <p>
-          Voltaire's philosophy connects Enlightenment thought with ethics,
-          political philosophy, philosophy of religion, epistemology, social
-          philosophy, freedom of expression, and the history of modern
-          philosophy.
-        </p>
+          <p>
+            Voltaire's philosophy connects Enlightenment thought with ethics,
+            political philosophy, philosophy of religion, epistemology, social
+            philosophy, freedom of expression, and the history of modern
+            philosophy.
+          </p>
 
-        <div class="related-links">
-          <a href="ethics-branch-philosophy.html"> Ethics </a>
+          <div class="related-links">
+            <a href="ethics-branch-philosophy.html"> Ethics </a>
 
-          ·
+            ·
 
-          <a href="epistemology-branch-philosophy.html"> Epistemology </a>
+            <a href="epistemology-branch-philosophy.html"> Epistemology </a>
 
-          ·
+            ·
 
-          <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
+            <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
 
-          ·
+            ·
 
-          <a href="modern-philosophy.html"> Modern Philosophy </a>
+            <a href="modern-philosophy.html"> Modern Philosophy </a>
 
-          ·
+            ·
 
-          <a href="enlightenment-philosophy.html"> Enlightenment Philosophy </a>
+            <a href="enlightenment-philosophy.html">
+              Enlightenment Philosophy
+            </a>
 
-          ·
+            ·
 
-          <a href="schools.html"> Schools of Philosophy </a>
-        </div>
-      </section>
+            <a href="schools.html"> Schools of Philosophy </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          CONCLUSION
          ===================================================== -->
 
-      <section class="narrative-block" aria-labelledby="conclusion-title">
-        <span class="section-eyebrow"> French Enlightenment </span>
+        <section class="narrative-block" aria-labelledby="conclusion-title">
+          <span class="section-eyebrow"> French Enlightenment </span>
 
-        <h2 id="conclusion-title">Why Voltaire Still Matters</h2>
+          <h2 id="conclusion-title">Why Voltaire Still Matters</h2>
 
-        <p>
-          Voltaire remains one of the most important figures in the history of
-          Enlightenment philosophy because he transformed philosophical
-          criticism into a powerful form of public intellectual activity. His
-          writings challenged religious fanaticism, censorship, arbitrary
-          authority, and intellectual dogmatism while defending reason,
-          tolerance, and civil liberty.
-        </p>
+          <p>
+            Voltaire remains one of the most important figures in the history of
+            Enlightenment philosophy because he transformed philosophical
+            criticism into a powerful form of public intellectual activity. His
+            writings challenged religious fanaticism, censorship, arbitrary
+            authority, and intellectual dogmatism while defending reason,
+            tolerance, and civil liberty.
+          </p>
 
-        <p>
-          His philosophy was not a single systematic doctrine. Instead, Voltaire
-          used history, satire, fiction, letters, and philosophical essays to
-          examine the problems of religion, politics, morality, science, and
-          society. Works such as <em>Candide</em> and the
-          <em>Treatise on Tolerance</em> demonstrate how philosophical ideas can
-          be connected with concrete questions about human suffering, justice,
-          and social life.
-        </p>
+          <p>
+            His philosophy was not a single systematic doctrine. Instead,
+            Voltaire used history, satire, fiction, letters, and philosophical
+            essays to examine the problems of religion, politics, morality,
+            science, and society. Works such as <em>Candide</em> and the
+            <em>Treatise on Tolerance</em> demonstrate how philosophical ideas
+            can be connected with concrete questions about human suffering,
+            justice, and social life.
+          </p>
 
-        <p>
-          Understanding Voltaire also helps explain the wider development of
-          modern philosophy. His engagement with Locke and Newton, his debates
-          with other Enlightenment thinkers, and his defense of religious
-          tolerance contributed to an intellectual environment in which reason,
-          criticism, freedom of thought, and reform became increasingly
-          important ideals in European thought.
-        </p>
+          <p>
+            Understanding Voltaire also helps explain the wider development of
+            modern philosophy. His engagement with Locke and Newton, his debates
+            with other Enlightenment thinkers, and his defense of religious
+            tolerance contributed to an intellectual environment in which
+            reason, criticism, freedom of thought, and reform became
+            increasingly important ideals in European thought.
+          </p>
 
-        <a class="cta-button" href="thinkers.html">
-          Explore Great Philosophers
-          <span aria-hidden="true">&rarr;</span>
-        </a>
-      </section>
-    </main>
+          <a class="cta-button" href="thinkers.html">
+            Explore Great Philosophers
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </section>
+      </main>
+    </div>
 
     <!-- =====================================================
        FOOTER
@@ -2671,8 +2764,8 @@
        SCRIPTS
        ===================================================== -->
 
-     <script src="script.js" defer></script>
-     <script src="article-toc.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="article-toc.js" defer></script>
 
     <script src="branches-enhance.js" defer></script>
 

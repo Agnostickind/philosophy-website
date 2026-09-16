@@ -22,25 +22,112 @@ document.addEventListener("DOMContentLoaded", () => {
   /* =========================================================
      FIND ARTICLE SECTIONS
      
-     IMPORTANT:
-     We use the existing section IDs as the single source
-     of truth for BOTH desktop and mobile.
+     Supports:
+     - <section id="..."><h2>...</h2></section>
+     - <section id="..."><div><h2>...</h2></div></section>
+     - sections where the anchor ID is on a heading
+     - sections such as Renaissance where the ID is on
+       an inner .era-content element
      ========================================================= */
 
   const sections = Array.from(
     mainContent.querySelectorAll(":scope > section")
-  ).filter((section) => {
-    const heading = section.querySelector(":scope > h2");
+  )
+    .map((section) => {
 
-    return (
-      section.id &&
-      heading &&
-      heading.textContent.trim()
-    );
+      /* -----------------------------------------------
+         Find the heading anywhere inside this section
+         ----------------------------------------------- */
+
+      const heading = section.querySelector("h2");
+
+      if (!heading) {
+        return null;
+      }
+
+
+      /* -----------------------------------------------
+         Determine the correct anchor ID
+         ----------------------------------------------- */
+
+      let targetId = section.id;
+
+
+      /* If section has no ID, use the heading ID */
+
+      if (!targetId && heading.id) {
+        targetId = heading.id;
+      }
+
+
+      /*
+       * Some pages place the ID on an inner element.
+       * Example:
+       *
+       * <section class="era">
+       *   <div class="era-content" id="renaissance">
+       *     <h2>Renaissance</h2>
+       *
+       * In that case find the nearest element containing
+       * the heading that has an ID.
+       */
+
+      if (!targetId) {
+
+        const anchoredElement =
+          heading.closest("[id]");
+
+        if (anchoredElement) {
+          targetId = anchoredElement.id;
+        }
+      }
+
+
+      if (!targetId) {
+        return null;
+      }
+
+
+      const text =
+        heading.textContent
+          .replace(/\s+/g, " ")
+          .trim();
+
+
+      if (!text) {
+        return null;
+      }
+
+
+      return {
+        section,
+        heading,
+        targetId,
+        text
+      };
+    })
+    .filter(Boolean);
+
+
+  /* =========================================================
+     REMOVE DUPLICATES
+     ========================================================= */
+
+  const uniqueSections = [];
+  const seenIds = new Set();
+
+  sections.forEach((item) => {
+
+    if (seenIds.has(item.targetId)) {
+      return;
+    }
+
+    seenIds.add(item.targetId);
+    uniqueSections.push(item);
   });
 
 
-  if (!sections.length) {
+  if (!uniqueSections.length) {
     return;
   }
 
@@ -55,27 +142,42 @@ document.addEventListener("DOMContentLoaded", () => {
     mobile = false,
     isTop = false
   }) {
+
     const link = document.createElement("a");
 
-    link.href = isTop ? "#" : `#${targetId}`;
+    link.href = isTop
+      ? "#"
+      : `#${targetId}`;
 
     link.textContent = text;
 
-    link.dataset.target = targetId || "";
+    link.dataset.target =
+      targetId || "";
+
 
     if (mobile) {
-      link.className = "mobile-toc-drawer__link";
+
+      link.className =
+        "mobile-toc-drawer__link";
 
       if (isTop) {
-        link.classList.add("mobile-toc-top");
+        link.classList.add(
+          "mobile-toc-top"
+        );
       }
+
     } else {
-      link.className = "article-toc__link";
+
+      link.className =
+        "article-toc__link";
 
       if (isTop) {
-        link.classList.add("article-toc__top");
+        link.classList.add(
+          "article-toc__top"
+        );
       }
     }
+
 
     return link;
   }
@@ -89,26 +191,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     desktopList.innerHTML = "";
 
+
     /* TOP */
 
     const desktopTop = createLink({
-      text: "↑ Top",
+      text: "↑ TOP",
       mobile: false,
       isTop: true
     });
 
-    desktopList.appendChild(desktopTop);
+    desktopList.appendChild(
+      desktopTop
+    );
 
 
     /* SECTIONS */
 
-    sections.forEach((section) => {
-
-      const heading = section.querySelector(":scope > h2");
+    uniqueSections.forEach((item) => {
 
       const link = createLink({
-        targetId: section.id,
-        text: heading.textContent.trim(),
+        targetId: item.targetId,
+        text: item.text,
         mobile: false
       });
 
@@ -125,26 +228,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     mobileList.innerHTML = "";
 
+
     /* TOP */
 
     const mobileTop = createLink({
-      text: "↑ Top",
+      text: "↑ TOP",
       mobile: true,
       isTop: true
     });
 
-    mobileList.appendChild(mobileTop);
+    mobileList.appendChild(
+      mobileTop
+    );
 
 
     /* SECTIONS */
 
-    sections.forEach((section) => {
-
-      const heading = section.querySelector(":scope > h2");
+    uniqueSections.forEach((item) => {
 
       const link = createLink({
-        targetId: section.id,
-        text: heading.textContent.trim(),
+        targetId: item.targetId,
+        text: item.text,
         mobile: true
       });
 
@@ -157,12 +261,13 @@ document.addEventListener("DOMContentLoaded", () => {
      ALL TOC LINKS
      ========================================================= */
 
-  const allTocLinks = () => {
+  function allTocLinks() {
+
     return document.querySelectorAll(
       ".article-toc__link[data-target], " +
       ".mobile-toc-drawer__link[data-target]"
     );
-  };
+  }
 
 
   /* =========================================================
@@ -177,10 +282,12 @@ document.addEventListener("DOMContentLoaded", () => {
       behavior: "smooth"
     });
 
+
     history.replaceState(
       null,
       "",
-      window.location.pathname + window.location.search
+      window.location.pathname +
+      window.location.search
     );
   }
 
@@ -195,15 +302,19 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+
     target.scrollIntoView({
       behavior: "smooth",
       block: "start"
     });
 
+
     history.replaceState(
       null,
       "",
-      `${window.location.pathname}${window.location.search}#${target.id}`
+      `${window.location.pathname}` +
+      `${window.location.search}` +
+      `#${target.id}`
     );
   }
 
@@ -212,141 +323,186 @@ document.addEventListener("DOMContentLoaded", () => {
      HANDLE TOC CLICKS
      ========================================================= */
 
-  document.addEventListener("click", (event) => {
+  document.addEventListener(
+    "click",
+    (event) => {
 
-    const link = event.target.closest(
-      ".article-toc__link, .mobile-toc-drawer__link"
-    );
-
-    if (!link) {
-      return;
-    }
+      const link =
+        event.target.closest(
+          ".article-toc__link, " +
+          ".mobile-toc-drawer__link"
+        );
 
 
-    /* TOP */
+      if (!link) {
+        return;
+      }
 
-    if (
-      link.classList.contains("article-toc__top") ||
-      link.classList.contains("mobile-toc-top")
-    ) {
+
+      /* -----------------------------------------------
+         TOP
+         ----------------------------------------------- */
+
+      if (
+        link.classList.contains(
+          "article-toc__top"
+        ) ||
+        link.classList.contains(
+          "mobile-toc-top"
+        )
+      ) {
+
+        event.preventDefault();
+
+        scrollToTop();
+
+        closeMobileToc();
+
+        return;
+      }
+
+
+      /* -----------------------------------------------
+         NORMAL SECTION
+         ----------------------------------------------- */
+
+      const targetId =
+        link.dataset.target;
+
+
+      if (!targetId) {
+        return;
+      }
+
+
+      const target =
+        document.getElementById(
+          targetId
+        );
+
+
+      if (!target) {
+        return;
+      }
+
 
       event.preventDefault();
 
-      scrollToTop();
+      scrollToSection(target);
 
-      closeMobileToc();
 
-      return;
+      /* Close mobile drawer */
+
+      if (
+        link.classList.contains(
+          "mobile-toc-drawer__link"
+        )
+      ) {
+
+        closeMobileToc();
+      }
     }
-
-
-    /* NORMAL SECTION */
-
-    const targetId = link.dataset.target;
-
-    if (!targetId) {
-      return;
-    }
-
-    const target = document.getElementById(targetId);
-
-    if (!target) {
-      return;
-    }
-
-    event.preventDefault();
-
-    scrollToSection(target);
-
-    /* Close mobile drawer after choosing a section */
-
-    if (
-      link.classList.contains(
-        "mobile-toc-drawer__link"
-      )
-    ) {
-      closeMobileToc();
-    }
-  });
+  );
 
 
   /* =========================================================
      ACTIVE SECTION
      ========================================================= */
 
-  const observer = new IntersectionObserver(
-    (entries) => {
+  const observer =
+    new IntersectionObserver(
+      (entries) => {
 
-      const visibleSections = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort(
-          (a, b) =>
-            a.boundingClientRect.top -
-            b.boundingClientRect.top
+        const visibleSections =
+          entries
+            .filter(
+              (entry) =>
+                entry.isIntersecting
+            )
+            .sort(
+              (a, b) =>
+                a.boundingClientRect.top -
+                b.boundingClientRect.top
+            );
+
+
+        if (!visibleSections.length) {
+          return;
+        }
+
+
+        const activeId =
+          visibleSections[0].target.id;
+
+
+        /* Remove active state */
+
+        allTocLinks().forEach(
+          (link) => {
+            link.classList.remove(
+              "is-active"
+            );
+          }
         );
 
 
-      if (!visibleSections.length) {
-        return;
+        /* Add active state to both TOCs */
+
+        document
+          .querySelectorAll(
+            `.article-toc__link[data-target="${CSS.escape(activeId)}"], ` +
+            `.mobile-toc-drawer__link[data-target="${CSS.escape(activeId)}"]`
+          )
+          .forEach((link) => {
+
+            link.classList.add(
+              "is-active"
+            );
+
+
+            /* Only scroll the desktop TOC */
+
+            if (
+              link.closest(
+                ".article-toc__list"
+              ) &&
+              desktopList
+            ) {
+
+              link.scrollIntoView({
+                block: "nearest",
+                behavior: "smooth"
+              });
+            }
+          });
+      },
+      {
+        root: null,
+
+        rootMargin:
+          "-15% 0px -70% 0px",
+
+        threshold: 0
       }
+    );
 
 
-      const activeId =
-        visibleSections[0].target.id;
+  /* Observe the actual anchor elements */
+
+  uniqueSections.forEach(
+    (item) => {
+
+      const target =
+        document.getElementById(
+          item.targetId
+        );
 
 
-      /* Remove active state everywhere */
-
-      allTocLinks().forEach((link) => {
-        link.classList.remove("is-active");
-      });
-
-
-      /* Add active state to BOTH TOCs */
-
-      document
-        .querySelectorAll(
-          `.article-toc__link[data-target="${CSS.escape(activeId)}"], ` +
-          `.mobile-toc-drawer__link[data-target="${CSS.escape(activeId)}"]`
-        )
-        .forEach((link) => {
-
-          link.classList.add("is-active");
-
-          /*
-           * Only scroll the TOC itself.
-           * Never scroll the page here.
-           */
-
-          if (
-            link.closest(".article-toc__list") &&
-            desktopList
-          ) {
-            link.scrollIntoView({
-              block: "nearest",
-              behavior: "smooth"
-            });
-          }
-        });
-    },
-    {
-      root: null,
-
-      /*
-       * Section becomes active when it reaches
-       * roughly the upper-middle portion of viewport.
-       */
-
-      rootMargin: "-15% 0px -70% 0px",
-
-      threshold: 0
+      if (target) {
+        observer.observe(target);
+      }
     }
   );
-
-
-  sections.forEach((section) => {
-    observer.observe(section);
-  });
 
 
   /* =========================================================
@@ -363,9 +519,24 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    mobileDrawer.classList.add("is-open");
 
-    mobileOverlay.classList.add("is-open");
+    mobileDrawer.classList.add(
+      "is-open"
+    );
+
+    mobileOverlay.classList.add(
+      "is-open"
+    );
+
+
+    /*
+     * IMPORTANT:
+     * Your overlay has the HTML attribute "hidden".
+     * CSS alone cannot override this reliably.
+     */
+
+    mobileOverlay.hidden = false;
+
 
     mobileDrawer.setAttribute(
       "aria-hidden",
@@ -382,16 +553,19 @@ document.addEventListener("DOMContentLoaded", () => {
       "true"
     );
 
+
     document.body.classList.add(
       "mobile-toc-lock"
     );
 
-    /* Move focus to close button */
 
     if (mobileClose) {
-      requestAnimationFrame(() => {
-        mobileClose.focus();
-      });
+
+      requestAnimationFrame(
+        () => {
+          mobileClose.focus();
+        }
+      );
     }
   }
 
@@ -410,9 +584,15 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    mobileDrawer.classList.remove("is-open");
 
-    mobileOverlay.classList.remove("is-open");
+    mobileDrawer.classList.remove(
+      "is-open"
+    );
+
+    mobileOverlay.classList.remove(
+      "is-open"
+    );
+
 
     mobileDrawer.setAttribute(
       "aria-hidden",
@@ -424,10 +604,19 @@ document.addEventListener("DOMContentLoaded", () => {
       "true"
     );
 
+
+    /*
+     * Restore hidden state.
+     */
+
+    mobileOverlay.hidden = true;
+
+
     mobileTrigger.setAttribute(
       "aria-expanded",
       "false"
     );
+
 
     document.body.classList.remove(
       "mobile-toc-lock"
@@ -449,6 +638,7 @@ document.addEventListener("DOMContentLoaded", () => {
           mobileTrigger.getAttribute(
             "aria-expanded"
           ) === "true";
+
 
         if (isOpen) {
           closeMobileToc();
@@ -494,9 +684,12 @@ document.addEventListener("DOMContentLoaded", () => {
     "keydown",
     (event) => {
 
-      if (event.key !== "Escape") {
+      if (
+        event.key !== "Escape"
+      ) {
         return;
       }
+
 
       if (
         mobileTrigger &&
@@ -504,6 +697,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "aria-expanded"
         ) === "true"
       ) {
+
         closeMobileToc();
 
         mobileTrigger.focus();
@@ -520,6 +714,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(
       ".article-toc__hide"
     );
+
 
   const articleReadingArea =
     document.querySelector(
@@ -541,6 +736,7 @@ document.addEventListener("DOMContentLoaded", () => {
           desktopToc.classList.toggle(
             "is-hidden"
           );
+
 
         articleReadingArea.classList.toggle(
           "toc-hidden",

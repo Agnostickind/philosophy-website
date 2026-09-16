@@ -110,7 +110,7 @@
 
     <!-- ================= STYLESHEETS ================= -->
 
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="article-toc.css" />
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
@@ -408,10 +408,10 @@
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link
-    rel="describedby"
-    href="https://agnostickind.github.io/philosophy-website/llms.txt"
-  >
-</head>
+      rel="describedby"
+      href="https://agnostickind.github.io/philosophy-website/llms.txt"
+    />
+  </head>
 
   <body>
     <!-- =====================================================
@@ -701,12 +701,11 @@
         </div>
 
         <a href="schools.html">Schools</a>
-       <a href="books.html">Books</a>
+        <a href="books.html">Books</a>
         <a href="world-literature.html">Literature</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </div>
-
 
       <div class="nav-tools">
         <!-- SEARCH -->
@@ -805,1863 +804,1954 @@
       </div>
     </header>
 
-    <main id="main-content" tabindex="-1">
-      <!-- =====================================================
+    <div class="article-reading-area">
+      <!-- =========================================================
+     ARTICLE TABLE OF CONTENTS
+     ========================================================= -->
+
+      <!-- Desktop TOC -->
+      <aside class="article-toc" aria-label="Article contents">
+        <div class="article-toc__header">
+          <span class="article-toc__title">Contents</span>
+
+          <button
+            type="button"
+            class="article-toc__hide"
+            aria-label="Hide article contents"
+          >
+            Hide
+          </button>
+        </div>
+
+        <nav class="article-toc__nav" aria-label="Article sections">
+          <div class="article-toc__list"></div>
+        </nav>
+      </aside>
+
+      <!-- Mobile TOC trigger -->
+      <button
+        type="button"
+        class="mobile-toc-trigger"
+        aria-expanded="false"
+        aria-controls="mobile-toc-drawer"
+      >
+        <span>Contents</span>
+        <span class="mobile-toc-trigger__chevron" aria-hidden="true">⌄</span>
+      </button>
+
+      <!-- Mobile TOC overlay -->
+      <div class="mobile-toc-overlay" hidden></div>
+
+      <!-- Mobile TOC drawer -->
+      <aside
+        id="mobile-toc-drawer"
+        class="mobile-toc-drawer"
+        aria-label="Article contents"
+        aria-hidden="true"
+      >
+        <div class="mobile-toc-drawer__header">
+          <span class="mobile-toc-drawer__title">Contents</span>
+
+          <button
+            type="button"
+            class="mobile-toc-drawer__close"
+            aria-label="Close article contents"
+          >
+            ×
+          </button>
+        </div>
+
+        <nav class="mobile-toc-drawer__nav" aria-label="Article sections">
+          <div class="mobile-toc-drawer__list"></div>
+        </nav>
+      </aside>
+
+      <main id="main-content" tabindex="-1">
+        <!-- =====================================================
          INTRODUCTION
          ===================================================== -->
 
-      <section class="about-home">
-        <h2>Who Was Ibn Tufayl?</h2>
+        <section class="about-home">
+          <h2>Who Was Ibn Tufayl?</h2>
 
-        <p>
-          <strong>Ibn Tufayl</strong> (Abū Bakr Muḥammad ibn ʿAbd al-Malik ibn
-          Muḥammad ibn Ṭufayl, c. 1110–1185) was an Andalusian philosopher,
-          physician, and writer of the twelfth-century Islamic world. He is one
-          of the major figures of <strong>Andalusian philosophy</strong> and
-          belonged to the wider intellectual tradition of medieval
-          <strong>Islamic philosophy</strong>, known in Arabic as
-          <em>falsafa</em>.
-        </p>
+          <p>
+            <strong>Ibn Tufayl</strong> (Abū Bakr Muḥammad ibn ʿAbd al-Malik ibn
+            Muḥammad ibn Ṭufayl, c. 1110–1185) was an Andalusian philosopher,
+            physician, and writer of the twelfth-century Islamic world. He is
+            one of the major figures of
+            <strong>Andalusian philosophy</strong> and belonged to the wider
+            intellectual tradition of medieval
+            <strong>Islamic philosophy</strong>, known in Arabic as
+            <em>falsafa</em>.
+          </p>
 
-        <p>
-          Active during the Almohad period, Ibn Tufayl served as a physician and
-          courtier and was closely connected with the intellectual life of the
-          Almohad court. He is also traditionally associated with the rise of
-          <strong>Ibn Rushd (Averroes)</strong>, whom he introduced to the
-          caliph Abū Yaʿqūb Yūsuf and encouraged to undertake his famous work on
-          Aristotle.
-        </p>
+          <p>
+            Active during the Almohad period, Ibn Tufayl served as a physician
+            and courtier and was closely connected with the intellectual life of
+            the Almohad court. He is also traditionally associated with the rise
+            of
+            <strong>Ibn Rushd (Averroes)</strong>, whom he introduced to the
+            caliph Abū Yaʿqūb Yūsuf and encouraged to undertake his famous work
+            on Aristotle.
+          </p>
 
-        <p>
-          Ibn Tufayl is best known for his philosophical narrative
-          <em>Hayy ibn Yaqzan</em>, his only major philosophical work to survive
-          in full. The story explores how a human being, isolated from society,
-          might gradually develop knowledge of nature, the self, and ultimately
-          God through observation, reasoning, and intellectual reflection. It
-          later became widely known in Europe through the Latin title
-          <strong>Philosophus Autodidactus</strong>, or
-          <strong>The Self-Taught Philosopher</strong>.
-        </p>
+          <p>
+            Ibn Tufayl is best known for his philosophical narrative
+            <em>Hayy ibn Yaqzan</em>, his only major philosophical work to
+            survive in full. The story explores how a human being, isolated from
+            society, might gradually develop knowledge of nature, the self, and
+            ultimately God through observation, reasoning, and intellectual
+            reflection. It later became widely known in Europe through the Latin
+            title <strong>Philosophus Autodidactus</strong>, or
+            <strong>The Self-Taught Philosopher</strong>.
+          </p>
 
-        <p>
-          Through the story of Hayy, Ibn Tufayl examines some of the central
-          questions of philosophy: How does human knowledge begin? How far can
-          reason advance without formal education or inherited social
-          conventions? Can the investigation of nature lead the human mind
-          toward knowledge of God? And how should philosophical understanding
-          relate to religious revelation and the needs of society?
-        </p>
+          <p>
+            Through the story of Hayy, Ibn Tufayl examines some of the central
+            questions of philosophy: How does human knowledge begin? How far can
+            reason advance without formal education or inherited social
+            conventions? Can the investigation of nature lead the human mind
+            toward knowledge of God? And how should philosophical understanding
+            relate to religious revelation and the needs of society?
+          </p>
 
-        <p>
-          These questions make Ibn Tufayl important not only in the history of
-          Islamic philosophy but also in the wider history of ideas. His work
-          brings together philosophical reasoning, natural investigation, and
-          spiritual reflection in an unusual narrative form, creating one of the
-          most influential and enduring works of classical Arabic literature.
-        </p>
-      </section>
+          <p>
+            These questions make Ibn Tufayl important not only in the history of
+            Islamic philosophy but also in the wider history of ideas. His work
+            brings together philosophical reasoning, natural investigation, and
+            spiritual reflection in an unusual narrative form, creating one of
+            the most influential and enduring works of classical Arabic
+            literature.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          QUICK FACTS
          ===================================================== -->
 
-      <section class="narrative-block" id="quick-facts">
-        <h2>Ibn Tufayl: Quick Facts</h2>
+        <section class="narrative-block" id="quick-facts">
+          <h2>Ibn Tufayl: Quick Facts</h2>
 
-        <ul class="plain-list">
-          <li><strong>Full name</strong> — Abū Bakr Muḥammad ibn Ṭufayl</li>
+          <ul class="plain-list">
+            <li><strong>Full name</strong> — Abū Bakr Muḥammad ibn Ṭufayl</li>
 
-          <li>
-            <strong>Also known as</strong> — Ibn Tufayl, Ibn Tufail, Abubacer,
-            and Abentofail
-          </li>
+            <li>
+              <strong>Also known as</strong> — Ibn Tufayl, Ibn Tufail, Abubacer,
+              and Abentofail
+            </li>
 
-          <li><strong>Born</strong> — c. 1105</li>
+            <li><strong>Born</strong> — c. 1105</li>
 
-          <li><strong>Died</strong> — 1185 CE</li>
+            <li><strong>Died</strong> — 1185 CE</li>
 
-          <li>
-            <strong>Region</strong> — al-Andalus and the western Islamic world
-          </li>
+            <li>
+              <strong>Region</strong> — al-Andalus and the western Islamic world
+            </li>
 
-          <li>
-            <strong>Philosophical tradition</strong> — Andalusian philosophy and
-            Islamic philosophy
-          </li>
+            <li>
+              <strong>Philosophical tradition</strong> — Andalusian philosophy
+              and Islamic philosophy
+            </li>
 
-          <li>
-            <strong>Major work</strong> —
-            <em>Hayy ibn Yaqzan</em>
-          </li>
+            <li>
+              <strong>Major work</strong> —
+              <em>Hayy ibn Yaqzan</em>
+            </li>
 
-          <li>
-            <strong>Latin title</strong> —
-            <em>Philosophus Autodidactus</em>
-          </li>
+            <li>
+              <strong>Latin title</strong> —
+              <em>Philosophus Autodidactus</em>
+            </li>
 
-          <li>
-            <strong>Major philosophical subjects</strong> — Epistemology,
-            metaphysics, philosophy of nature, psychology, ethics, religion, and
-            human knowledge
-          </li>
+            <li>
+              <strong>Major philosophical subjects</strong> — Epistemology,
+              metaphysics, philosophy of nature, psychology, ethics, religion,
+              and human knowledge
+            </li>
 
-          <li>
-            <strong>Associated thinkers</strong> — Avicenna, Ibn Bajja, and
-            Averroes
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>Associated thinkers</strong> — Avicenna, Ibn Bajja, and
+              Averroes
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          EARLY LIFE
          ===================================================== -->
 
-      <section class="narrative-block" id="early-life">
-        <h2>Ibn Tufayl's Early Life and Historical Background</h2>
+        <section class="narrative-block" id="early-life">
+          <h2>Ibn Tufayl's Early Life and Historical Background</h2>
 
-        <figure class="narrative-figure">
-          <img
-            src="images/ibn-tufayl.jpg"
-            alt="Representation of Ibn Tufayl, Andalusian philosopher of Islamic philosophy"
-            loading="lazy"
-            decoding="async"
-          />
+          <figure class="narrative-figure">
+            <img
+              src="images/ibn-tufayl.jpg"
+              alt="Representation of Ibn Tufayl, Andalusian philosopher of Islamic philosophy"
+              loading="lazy"
+              decoding="async"
+            />
 
-          <figcaption>
-            Ibn Tufayl was a major philosopher of twelfth-century Andalusian and
-            Islamic philosophy.
-          </figcaption>
-        </figure>
+            <figcaption>
+              Ibn Tufayl was a major philosopher of twelfth-century Andalusian
+              and Islamic philosophy.
+            </figcaption>
+          </figure>
 
-        <p>
-          Relatively little is known with certainty about the early life and
-          education of <strong>Ibn Tufayl</strong>. He was born in the region of
-          Guadix, northeast of Granada, probably early in the twelfth century.
-          He received an education that included medicine and philosophical
-          learning and later became active as a physician, administrator, and
-          intellectual within the expanding Almohad world.
-        </p>
+          <p>
+            Relatively little is known with certainty about the early life and
+            education of <strong>Ibn Tufayl</strong>. He was born in the region
+            of Guadix, northeast of Granada, probably early in the twelfth
+            century. He received an education that included medicine and
+            philosophical learning and later became active as a physician,
+            administrator, and intellectual within the expanding Almohad world.
+          </p>
 
-        <p>
-          Ibn Tufayl lived during an important period in the history of
-          <strong>al-Andalus</strong>. Under the Almohad dynasty, major
-          political and intellectual connections linked Muslim Spain with North
-          Africa. Courts and cities provided settings in which philosophy,
-          medicine, astronomy, religious scholarship, literature, and other
-          fields of learning could interact.
-        </p>
+          <p>
+            Ibn Tufayl lived during an important period in the history of
+            <strong>al-Andalus</strong>. Under the Almohad dynasty, major
+            political and intellectual connections linked Muslim Spain with
+            North Africa. Courts and cities provided settings in which
+            philosophy, medicine, astronomy, religious scholarship, literature,
+            and other fields of learning could interact.
+          </p>
 
-        <p>
-          He eventually became closely associated with the Almohad caliph
-          <strong>Abu Ya'qub Yusuf</strong>, serving as a physician at his
-          court. The caliph was known for his interest in learning and
-          philosophy, and Ibn Tufayl occupied an important position within this
-          intellectual environment.
-        </p>
+          <p>
+            He eventually became closely associated with the Almohad caliph
+            <strong>Abu Ya'qub Yusuf</strong>, serving as a physician at his
+            court. The caliph was known for his interest in learning and
+            philosophy, and Ibn Tufayl occupied an important position within
+            this intellectual environment.
+          </p>
 
-        <p>
-          Ibn Tufayl belonged to the philosophical world shaped by the legacy of
-          <strong>Ibn Bajja (Avempace)</strong> and was a senior contemporary of
-          <strong>Ibn Rushd (Averroes)</strong>. Historical sources associate
-          him with introducing Ibn Rushd to the Almohad court, although Ibn
-          Rushd should not simply be described as Ibn Tufayl's disciple. Their
-          relationship instead forms part of the wider development of Andalusian
-          <em>falsafa</em>.
-        </p>
-      </section>
+          <p>
+            Ibn Tufayl belonged to the philosophical world shaped by the legacy
+            of
+            <strong>Ibn Bajja (Avempace)</strong> and was a senior contemporary
+            of <strong>Ibn Rushd (Averroes)</strong>. Historical sources
+            associate him with introducing Ibn Rushd to the Almohad court,
+            although Ibn Rushd should not simply be described as Ibn Tufayl's
+            disciple. Their relationship instead forms part of the wider
+            development of Andalusian <em>falsafa</em>.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          ANDALUSIAN PHILOSOPHY
          ===================================================== -->
 
-      <section class="narrative-block" id="andalusian-philosophy">
-        <h2>Ibn Tufayl and Andalusian Philosophy</h2>
+        <section class="narrative-block" id="andalusian-philosophy">
+          <h2>Ibn Tufayl and Andalusian Philosophy</h2>
 
-        <p>
-          <strong>Andalusian philosophy</strong> developed within the
-          intellectually rich civilization of al-Andalus, where philosophy,
-          medicine, science, theology, literature, and religious scholarship
-          interacted with one another. Philosophers writing in Arabic inherited
-          and transformed ideas that had entered Islamic intellectual life
-          through the traditions associated with Aristotle, Plato, and later
-          Greek commentators.
-        </p>
+          <p>
+            <strong>Andalusian philosophy</strong> developed within the
+            intellectually rich civilization of al-Andalus, where philosophy,
+            medicine, science, theology, literature, and religious scholarship
+            interacted with one another. Philosophers writing in Arabic
+            inherited and transformed ideas that had entered Islamic
+            intellectual life through the traditions associated with Aristotle,
+            Plato, and later Greek commentators.
+          </p>
 
-        <p>
-          Ibn Tufayl belongs to the tradition of
-          <strong>Islamic falsafa</strong>, which sought rational understanding
-          of nature, the human soul, the cosmos, and ultimate reality. His
-          thought reflects the broadly Aristotelian and Platonic framework
-          characteristic of many earlier Islamic philosophers while also
-          engaging with thinkers such as
-          <strong>al-Farabi, Ibn Sina, and Ibn Bajja</strong>.
-        </p>
+          <p>
+            Ibn Tufayl belongs to the tradition of
+            <strong>Islamic falsafa</strong>, which sought rational
+            understanding of nature, the human soul, the cosmos, and ultimate
+            reality. His thought reflects the broadly Aristotelian and Platonic
+            framework characteristic of many earlier Islamic philosophers while
+            also engaging with thinkers such as
+            <strong>al-Farabi, Ibn Sina, and Ibn Bajja</strong>.
+          </p>
 
-        <p>
-          His distinctive achievement was to present philosophical problems in a
-          narrative form rather than through a conventional systematic treatise.
-          In <em>Hayy ibn Yaqzan</em>, philosophical ideas are explored through
-          the life of a single individual whose intellectual powers gradually
-          develop in isolation from ordinary human society.
-        </p>
+          <p>
+            His distinctive achievement was to present philosophical problems in
+            a narrative form rather than through a conventional systematic
+            treatise. In <em>Hayy ibn Yaqzan</em>, philosophical ideas are
+            explored through the life of a single individual whose intellectual
+            powers gradually develop in isolation from ordinary human society.
+          </p>
 
-        <p>
-          This method allows Ibn Tufayl to unite several dimensions of
-          philosophy within one work. Questions about perception, scientific
-          investigation, metaphysics, the soul, contemplation, revelation, and
-          political life are connected through Hayy's intellectual journey.
-          <em>Hayy ibn Yaqzan</em> is therefore both a philosophical narrative
-          and an unusually wide-ranging introduction to major themes of
-          classical Arabic philosophy.
-        </p>
-      </section>
+          <p>
+            This method allows Ibn Tufayl to unite several dimensions of
+            philosophy within one work. Questions about perception, scientific
+            investigation, metaphysics, the soul, contemplation, revelation, and
+            political life are connected through Hayy's intellectual journey.
+            <em>Hayy ibn Yaqzan</em> is therefore both a philosophical narrative
+            and an unusually wide-ranging introduction to major themes of
+            classical Arabic philosophy.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          HAYY IBN YAQZAN
          ===================================================== -->
 
-      <section class="narrative-block" id="hayy-ibn-yaqzan">
-        <h2>What Is Hayy ibn Yaqzan?</h2>
+        <section class="narrative-block" id="hayy-ibn-yaqzan">
+          <h2>What Is Hayy ibn Yaqzan?</h2>
 
-        <p>
-          <em>Hayy ibn Yaqzan</em> is Ibn Tufayl's most important surviving
-          philosophical work and the principal direct source for understanding
-          his philosophy. It is presented as a philosophical narrative about a
-          human being who grows up without ordinary human society and gradually
-          discovers the nature of the world through observation, reflection, and
-          intellectual inquiry.
-        </p>
+          <p>
+            <em>Hayy ibn Yaqzan</em> is Ibn Tufayl's most important surviving
+            philosophical work and the principal direct source for understanding
+            his philosophy. It is presented as a philosophical narrative about a
+            human being who grows up without ordinary human society and
+            gradually discovers the nature of the world through observation,
+            reflection, and intellectual inquiry.
+          </p>
 
-        <p>
-          The story follows <strong>Hayy</strong> from infancy through the
-          successive stages of his intellectual and spiritual development.
-          Without conventional schooling, books, or philosophical teachers, he
-          observes animals, plants, his own body, and the surrounding natural
-          world. These experiences gradually become the starting point for more
-          systematic investigation.
-        </p>
+          <p>
+            The story follows <strong>Hayy</strong> from infancy through the
+            successive stages of his intellectual and spiritual development.
+            Without conventional schooling, books, or philosophical teachers, he
+            observes animals, plants, his own body, and the surrounding natural
+            world. These experiences gradually become the starting point for
+            more systematic investigation.
+          </p>
 
-        <p>
-          Hayy's development does not remain limited to practical knowledge. He
-          begins asking increasingly general questions about life, matter,
-          movement, causation, the structure of the cosmos, and the principles
-          that explain the world. The narrative thus moves from sensory
-          experience toward scientific and philosophical reflection.
-        </p>
+          <p>
+            Hayy's development does not remain limited to practical knowledge.
+            He begins asking increasingly general questions about life, matter,
+            movement, causation, the structure of the cosmos, and the principles
+            that explain the world. The narrative thus moves from sensory
+            experience toward scientific and philosophical reflection.
+          </p>
 
-        <p>
-          The philosophical importance of <em>Hayy ibn Yaqzan</em> lies in this
-          gradual movement through different forms of understanding. Ibn Tufayl
-          uses Hayy's life to explore
-          <strong
-            >epistemology, philosophy of nature, psychology, metaphysics,
-            ethics, and the relationship between philosophy and religion</strong
-          >.
-        </p>
+          <p>
+            The philosophical importance of <em>Hayy ibn Yaqzan</em> lies in
+            this gradual movement through different forms of understanding. Ibn
+            Tufayl uses Hayy's life to explore
+            <strong
+              >epistemology, philosophy of nature, psychology, metaphysics,
+              ethics, and the relationship between philosophy and
+              religion</strong
+            >.
+          </p>
 
-        <p>
-          The work eventually introduces a second major problem: what happens
-          when the independently developed philosopher encounters human society?
-          Hayy's later meeting with Absal and his contact with a religious
-          community transform the narrative from an experiment in individual
-          knowledge into an investigation of truth, revelation, language, and
-          the limits of philosophical communication.
-        </p>
-      </section>
+          <p>
+            The work eventually introduces a second major problem: what happens
+            when the independently developed philosopher encounters human
+            society? Hayy's later meeting with Absal and his contact with a
+            religious community transform the narrative from an experiment in
+            individual knowledge into an investigation of truth, revelation,
+            language, and the limits of philosophical communication.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          SELF TAUGHT PHILOSOPHER
          ===================================================== -->
 
-      <section class="narrative-block" id="self-taught-philosopher">
-        <h2>Why Is Ibn Tufayl Called the Self-Taught Philosopher?</h2>
+        <section class="narrative-block" id="self-taught-philosopher">
+          <h2>Why Is Ibn Tufayl Called the Self-Taught Philosopher?</h2>
 
-        <p>
-          Ibn Tufayl's Hayy is often described as the
-          <strong>self-taught philosopher</strong> because he develops knowledge
-          without the normal institutions of education, social traditions, or
-          philosophical teachers. His isolation allows Ibn Tufayl to ask a
-          radical philosophical question: how much can a human mind discover
-          when it begins with its own experience of the world?
-        </p>
+          <p>
+            Ibn Tufayl's Hayy is often described as the
+            <strong>self-taught philosopher</strong> because he develops
+            knowledge without the normal institutions of education, social
+            traditions, or philosophical teachers. His isolation allows Ibn
+            Tufayl to ask a radical philosophical question: how much can a human
+            mind discover when it begins with its own experience of the world?
+          </p>
 
-        <p>
-          Hayy's education comes primarily from direct experience. He observes
-          nature, investigates physical processes, studies living organisms,
-          reflects upon his own existence, and uses reason to move from
-          particular observations toward broader explanations. His development
-          therefore combines perception, practical investigation, abstraction,
-          and philosophical contemplation.
-        </p>
+          <p>
+            Hayy's education comes primarily from direct experience. He observes
+            nature, investigates physical processes, studies living organisms,
+            reflects upon his own existence, and uses reason to move from
+            particular observations toward broader explanations. His development
+            therefore combines perception, practical investigation, abstraction,
+            and philosophical contemplation.
+          </p>
 
-        <p>
-          The expression <strong>Philosophus Autodidactus</strong>, meaning "The
-          Self-Taught Philosopher," became especially associated with the work
-          after its influential Latin translation in the seventeenth century.
-          The title emphasizes one of the work's central themes rather than
-          merely describing Hayy's unusual childhood.
-        </p>
+          <p>
+            The expression <strong>Philosophus Autodidactus</strong>, meaning
+            "The Self-Taught Philosopher," became especially associated with the
+            work after its influential Latin translation in the seventeenth
+            century. The title emphasizes one of the work's central themes
+            rather than merely describing Hayy's unusual childhood.
+          </p>
 
-        <p>
-          Ibn Tufayl is not simply arguing that formal education is unnecessary
-          for everyone. The narrative instead explores the extraordinary
-          possibilities of human intellectual development when observation and
-          reason are pursued to their furthest limits. Hayy represents a
-          philosophical experiment concerning the powers and potential of the
-          human mind.
-        </p>
-      </section>
+          <p>
+            Ibn Tufayl is not simply arguing that formal education is
+            unnecessary for everyone. The narrative instead explores the
+            extraordinary possibilities of human intellectual development when
+            observation and reason are pursued to their furthest limits. Hayy
+            represents a philosophical experiment concerning the powers and
+            potential of the human mind.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          KNOWLEDGE
          ===================================================== -->
 
-      <section class="narrative-block" id="knowledge">
-        <h2>Ibn Tufayl's Philosophy of Knowledge</h2>
+        <section class="narrative-block" id="knowledge">
+          <h2>Ibn Tufayl's Philosophy of Knowledge</h2>
 
-        <p>
-          <strong>Knowledge</strong> is one of the central themes of Ibn
-          Tufayl's philosophy. Through Hayy's intellectual development, Ibn
-          Tufayl examines how human beings move from sensory experience toward
-          rational understanding and, ultimately, toward forms of metaphysical
-          and contemplative knowledge.
-        </p>
+          <p>
+            <strong>Knowledge</strong> is one of the central themes of Ibn
+            Tufayl's philosophy. Through Hayy's intellectual development, Ibn
+            Tufayl examines how human beings move from sensory experience toward
+            rational understanding and, ultimately, toward forms of metaphysical
+            and contemplative knowledge.
+          </p>
 
-        <p>
-          Hayy's inquiry begins with the physical world. He observes differences
-          between living and non-living things, investigates bodily processes,
-          studies change and movement, and attempts to discover the causes
-          underlying what he sees. Knowledge initially grows through repeated
-          engagement with particular objects and events.
-        </p>
+          <p>
+            Hayy's inquiry begins with the physical world. He observes
+            differences between living and non-living things, investigates
+            bodily processes, studies change and movement, and attempts to
+            discover the causes underlying what he sees. Knowledge initially
+            grows through repeated engagement with particular objects and
+            events.
+          </p>
 
-        <p>
-          His investigation gradually becomes more theoretical. Instead of
-          merely observing individual things, Hayy begins asking what different
-          things have in common and what general principles might explain them.
-          The intellect therefore moves beyond isolated sensory impressions
-          toward concepts and explanations of a more universal kind.
-        </p>
+          <p>
+            His investigation gradually becomes more theoretical. Instead of
+            merely observing individual things, Hayy begins asking what
+            different things have in common and what general principles might
+            explain them. The intellect therefore moves beyond isolated sensory
+            impressions toward concepts and explanations of a more universal
+            kind.
+          </p>
 
-        <p>
-          Ibn Tufayl also presents knowledge as having a contemplative
-          dimension. The highest forms of understanding cannot be reduced simply
-          to the accumulation of information about physical objects.
-          Philosophical inquiry ultimately prepares Hayy for reflection upon
-          existence, ultimate causation, and the relation between the human
-          intellect and the highest reality.
-        </p>
-      </section>
+          <p>
+            Ibn Tufayl also presents knowledge as having a contemplative
+            dimension. The highest forms of understanding cannot be reduced
+            simply to the accumulation of information about physical objects.
+            Philosophical inquiry ultimately prepares Hayy for reflection upon
+            existence, ultimate causation, and the relation between the human
+            intellect and the highest reality.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          EPISTEMOLOGY
          ===================================================== -->
 
-      <section class="narrative-block" id="epistemology">
-        <h2>Ibn Tufayl's Epistemology and the Development of Reason</h2>
+        <section class="narrative-block" id="epistemology">
+          <h2>Ibn Tufayl's Epistemology and the Development of Reason</h2>
 
-        <p>
-          <strong>Epistemology</strong> in Ibn Tufayl's philosophy concerns the
-          origin, development, and possibilities of human knowledge.
-          <em>Hayy ibn Yaqzan</em> presents an extended philosophical experiment
-          in which a human being develops intellectually without ordinary social
-          education, inherited beliefs, or formal instruction.
-        </p>
+          <p>
+            <strong>Epistemology</strong> in Ibn Tufayl's philosophy concerns
+            the origin, development, and possibilities of human knowledge.
+            <em>Hayy ibn Yaqzan</em> presents an extended philosophical
+            experiment in which a human being develops intellectually without
+            ordinary social education, inherited beliefs, or formal instruction.
+          </p>
 
-        <p>
-          Hayy's development begins with
-          <strong>observation and sense perception</strong>. He encounters a
-          world already filled with differences, patterns, changes, and living
-          forms. Experience provides the material from which further inquiry
-          becomes possible, but Ibn Tufayl does not treat perception as the
-          final stage of knowledge.
-        </p>
+          <p>
+            Hayy's development begins with
+            <strong>observation and sense perception</strong>. He encounters a
+            world already filled with differences, patterns, changes, and living
+            forms. Experience provides the material from which further inquiry
+            becomes possible, but Ibn Tufayl does not treat perception as the
+            final stage of knowledge.
+          </p>
 
-        <p>
-          Through reflection, comparison, and investigation, Hayy moves from
-          particular experiences toward more general explanations. He seeks
-          causes rather than merely recording appearances and attempts to
-          understand the principles underlying the changing things he observes.
-          Reason thus transforms experience into philosophical inquiry.
-        </p>
+          <p>
+            Through reflection, comparison, and investigation, Hayy moves from
+            particular experiences toward more general explanations. He seeks
+            causes rather than merely recording appearances and attempts to
+            understand the principles underlying the changing things he
+            observes. Reason thus transforms experience into philosophical
+            inquiry.
+          </p>
 
-        <p>
-          Ibn Tufayl ultimately presents the human intellect as capable of
-          moving beyond immediate sensory information toward increasingly
-          universal truths about nature, causation, existence, and the order of
-          the cosmos. The work therefore gives reason a remarkably ambitious
-          role while still portraying intellectual development as gradual.
-        </p>
-      </section>
+          <p>
+            Ibn Tufayl ultimately presents the human intellect as capable of
+            moving beyond immediate sensory information toward increasingly
+            universal truths about nature, causation, existence, and the order
+            of the cosmos. The work therefore gives reason a remarkably
+            ambitious role while still portraying intellectual development as
+            gradual.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          NATURE
          ===================================================== -->
 
-      <section class="narrative-block" id="nature">
-        <h2>Ibn Tufayl's Philosophy of Nature</h2>
+        <section class="narrative-block" id="nature">
+          <h2>Ibn Tufayl's Philosophy of Nature</h2>
 
-        <p>
-          <strong>Nature</strong> plays a fundamental role in Ibn Tufayl's
-          philosophy. Hayy's philosophical education begins not with books or
-          teachers but with direct examination of the natural world. Nature is
-          therefore the first field in which his curiosity becomes systematic
-          intellectual investigation.
-        </p>
+          <p>
+            <strong>Nature</strong> plays a fundamental role in Ibn Tufayl's
+            philosophy. Hayy's philosophical education begins not with books or
+            teachers but with direct examination of the natural world. Nature is
+            therefore the first field in which his curiosity becomes systematic
+            intellectual investigation.
+          </p>
 
-        <p>
-          Hayy studies animals, plants, bodily processes, growth, decay, and
-          movement. A particularly important stage of his development follows
-          his attempt to understand the death of the gazelle that had cared for
-          him. His investigation of the body leads him to ask what distinguishes
-          a living being from a body that no longer possesses life.
-        </p>
+          <p>
+            Hayy studies animals, plants, bodily processes, growth, decay, and
+            movement. A particularly important stage of his development follows
+            his attempt to understand the death of the gazelle that had cared
+            for him. His investigation of the body leads him to ask what
+            distinguishes a living being from a body that no longer possesses
+            life.
+          </p>
 
-        <p>
-          His attention gradually expands from individual living things to the
-          larger structure of the physical world. He observes regularity and
-          order and begins asking whether natural processes can be understood
-          through general causes and principles rather than through isolated
-          descriptions.
-        </p>
+          <p>
+            His attention gradually expands from individual living things to the
+            larger structure of the physical world. He observes regularity and
+            order and begins asking whether natural processes can be understood
+            through general causes and principles rather than through isolated
+            descriptions.
+          </p>
 
-        <p>
-          Nature therefore becomes more than a collection of physical objects.
-          It becomes a path toward philosophical knowledge. By studying the
-          natural world carefully, Hayy gradually moves from questions about
-          particular things toward questions about causation, cosmic order, and
-          the ultimate explanation of reality.
-        </p>
-      </section>
+          <p>
+            Nature therefore becomes more than a collection of physical objects.
+            It becomes a path toward philosophical knowledge. By studying the
+            natural world carefully, Hayy gradually moves from questions about
+            particular things toward questions about causation, cosmic order,
+            and the ultimate explanation of reality.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          GOD
          ===================================================== -->
 
-      <section class="narrative-block" id="god">
-        <h2>How Does Ibn Tufayl's Philosophy Explain God?</h2>
+        <section class="narrative-block" id="god">
+          <h2>How Does Ibn Tufayl's Philosophy Explain God?</h2>
 
-        <p>
-          One of the most important questions in
-          <em>Hayy ibn Yaqzan</em> is how human inquiry can arrive at knowledge
-          of <strong>God</strong>. Ibn Tufayl presents Hayy's investigation of
-          nature and the cosmos as a path that gradually leads beyond the study
-          of individual physical objects.
-        </p>
+          <p>
+            One of the most important questions in
+            <em>Hayy ibn Yaqzan</em> is how human inquiry can arrive at
+            knowledge of <strong>God</strong>. Ibn Tufayl presents Hayy's
+            investigation of nature and the cosmos as a path that gradually
+            leads beyond the study of individual physical objects.
+          </p>
 
-        <p>
-          As Hayy studies the world, he becomes increasingly concerned with
-          change, dependence, causation, and the existence of the cosmos as a
-          whole. Physical things appear within an ordered world, yet they do not
-          provide a complete explanation of themselves. This leads him to seek
-          an ultimate principle capable of explaining reality more
-          fundamentally.
-        </p>
+          <p>
+            As Hayy studies the world, he becomes increasingly concerned with
+            change, dependence, causation, and the existence of the cosmos as a
+            whole. Physical things appear within an ordered world, yet they do
+            not provide a complete explanation of themselves. This leads him to
+            seek an ultimate principle capable of explaining reality more
+            fundamentally.
+          </p>
 
-        <p>
-          His philosophical development therefore connects the order of nature
-          with metaphysical reflection. Hayy seeks a source of existence that is
-          not merely one changing object among others but stands in a more
-          fundamental relation to the existence and order of the cosmos.
-        </p>
+          <p>
+            His philosophical development therefore connects the order of nature
+            with metaphysical reflection. Hayy seeks a source of existence that
+            is not merely one changing object among others but stands in a more
+            fundamental relation to the existence and order of the cosmos.
+          </p>
 
-        <p>
-          Ibn Tufayl's treatment is also connected with philosophical
-          contemplation. Knowledge of God is not presented simply as the result
-          of constructing an abstract argument. At the highest stages of Hayy's
-          development, intellectual understanding is joined to contemplation and
-          a transformation of the way he lives.
-        </p>
-      </section>
+          <p>
+            Ibn Tufayl's treatment is also connected with philosophical
+            contemplation. Knowledge of God is not presented simply as the
+            result of constructing an abstract argument. At the highest stages
+            of Hayy's development, intellectual understanding is joined to
+            contemplation and a transformation of the way he lives.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          METAPHYSICS
          ===================================================== -->
 
-      <section class="narrative-block" id="metaphysics">
-        <h2>What Was Ibn Tufayl's Philosophy of Metaphysics?</h2>
+        <section class="narrative-block" id="metaphysics">
+          <h2>What Was Ibn Tufayl's Philosophy of Metaphysics?</h2>
 
-        <p>
-          <strong>Metaphysics</strong> becomes a higher stage of Hayy's
-          intellectual development. After investigating the physical world, he
-          begins asking questions about existence, causation, the structure of
-          the cosmos, and the ultimate source of reality.
-        </p>
+          <p>
+            <strong>Metaphysics</strong> becomes a higher stage of Hayy's
+            intellectual development. After investigating the physical world, he
+            begins asking questions about existence, causation, the structure of
+            the cosmos, and the ultimate source of reality.
+          </p>
 
-        <p>
-          Ibn Tufayl's metaphysical thought reflects the wider intellectual
-          traditions of Islamic <em>falsafa</em>, particularly the interaction
-          of Aristotelian and Platonic ideas. The physical world is understood
-          as an ordered reality whose investigation can lead the intellect
-          beyond immediate appearances toward more universal principles.
-        </p>
+          <p>
+            Ibn Tufayl's metaphysical thought reflects the wider intellectual
+            traditions of Islamic <em>falsafa</em>, particularly the interaction
+            of Aristotelian and Platonic ideas. The physical world is understood
+            as an ordered reality whose investigation can lead the intellect
+            beyond immediate appearances toward more universal principles.
+          </p>
 
-        <p>
-          An important question in the philosophical background of the work
-          concerns the origin and eternity of the world. Ibn Tufayl presents
-          arguments connected with different possible explanations of the
-          cosmos, making the relationship between the eternal and the created
-          world a significant philosophical problem rather than a simple matter
-          resolved by one elementary formula.
-        </p>
+          <p>
+            An important question in the philosophical background of the work
+            concerns the origin and eternity of the world. Ibn Tufayl presents
+            arguments connected with different possible explanations of the
+            cosmos, making the relationship between the eternal and the created
+            world a significant philosophical problem rather than a simple
+            matter resolved by one elementary formula.
+          </p>
 
-        <p>
-          The movement from physics to metaphysics is essential to Ibn Tufayl's
-          philosophy. The study of nature does not end philosophical inquiry;
-          instead, it prepares the intellect for questions about realities that
-          cannot be understood through ordinary sensory experience alone.
-        </p>
-      </section>
+          <p>
+            The movement from physics to metaphysics is essential to Ibn
+            Tufayl's philosophy. The study of nature does not end philosophical
+            inquiry; instead, it prepares the intellect for questions about
+            realities that cannot be understood through ordinary sensory
+            experience alone.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          HAYY'S INTELLECTUAL DEVELOPMENT
          ===================================================== -->
 
-      <section class="narrative-block" id="intellectual-development">
-        <h2>How Does Hayy Develop His Intellect?</h2>
+        <section class="narrative-block" id="intellectual-development">
+          <h2>How Does Hayy Develop His Intellect?</h2>
 
-        <p>
-          Hayy's intellectual development is the central narrative device of Ibn
-          Tufayl's philosophy. He begins as a human infant and gradually
-          develops the abilities required to understand himself, living beings,
-          the natural world, and eventually questions that extend beyond
-          physical experience.
-        </p>
+          <p>
+            Hayy's intellectual development is the central narrative device of
+            Ibn Tufayl's philosophy. He begins as a human infant and gradually
+            develops the abilities required to understand himself, living
+            beings, the natural world, and eventually questions that extend
+            beyond physical experience.
+          </p>
 
-        <p>
-          At first, Hayy responds to immediate physical needs and learns through
-          imitation and practical adaptation. Later he becomes a more deliberate
-          observer of nature. His curiosity develops into systematic
-          investigation, and repeated experience becomes the foundation for
-          increasingly abstract forms of reflection.
-        </p>
+          <p>
+            At first, Hayy responds to immediate physical needs and learns
+            through imitation and practical adaptation. Later he becomes a more
+            deliberate observer of nature. His curiosity develops into
+            systematic investigation, and repeated experience becomes the
+            foundation for increasingly abstract forms of reflection.
+          </p>
 
-        <p>
-          He gradually moves from studying particular objects toward searching
-          for general causes and principles. Questions about life lead to
-          questions about the soul, while questions about physical change lead
-          toward reflection on the wider order of the cosmos.
-        </p>
+          <p>
+            He gradually moves from studying particular objects toward searching
+            for general causes and principles. Questions about life lead to
+            questions about the soul, while questions about physical change lead
+            toward reflection on the wider order of the cosmos.
+          </p>
 
-        <p>
-          Eventually, Hayy's intellect turns toward metaphysical and
-          contemplative questions. He considers existence, causation, the
-          structure of reality, and the ultimate source beyond the changing
-          physical world. Intellectual development thus becomes inseparable from
-          spiritual and ethical transformation.
-        </p>
-      </section>
+          <p>
+            Eventually, Hayy's intellect turns toward metaphysical and
+            contemplative questions. He considers existence, causation, the
+            structure of reality, and the ultimate source beyond the changing
+            physical world. Intellectual development thus becomes inseparable
+            from spiritual and ethical transformation.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          SOUL
          ===================================================== -->
 
-      <section class="narrative-block" id="soul">
-        <h2>Ibn Tufayl's Philosophy of the Soul</h2>
+        <section class="narrative-block" id="soul">
+          <h2>Ibn Tufayl's Philosophy of the Soul</h2>
 
-        <p>
-          The <strong>human soul</strong> is an important subject in Ibn
-          Tufayl's philosophy. Hayy's investigation of living beings leads him
-          to ask what distinguishes a living body from one that has lost the
-          principle of life. His reflections therefore connect biological
-          observation with philosophical questions about the nature of life.
-        </p>
+          <p>
+            The <strong>human soul</strong> is an important subject in Ibn
+            Tufayl's philosophy. Hayy's investigation of living beings leads him
+            to ask what distinguishes a living body from one that has lost the
+            principle of life. His reflections therefore connect biological
+            observation with philosophical questions about the nature of life.
+          </p>
 
-        <p>
-          Hayy gradually distinguishes between the physical body and the higher
-          principles associated with life, perception, and intellectual
-          activity. Understanding a human being, in this philosophical
-          framework, requires more than describing bodily structure alone.
-        </p>
+          <p>
+            Hayy gradually distinguishes between the physical body and the
+            higher principles associated with life, perception, and intellectual
+            activity. Understanding a human being, in this philosophical
+            framework, requires more than describing bodily structure alone.
+          </p>
 
-        <p>
-          Reflection upon his own existence also leads Hayy toward questions
-          about perception, consciousness, and intellect. The human being
-          possesses capacities that make it possible not only to experience the
-          world but also to understand general truths and reflect upon the
-          nature of existence itself.
-        </p>
+          <p>
+            Reflection upon his own existence also leads Hayy toward questions
+            about perception, consciousness, and intellect. The human being
+            possesses capacities that make it possible not only to experience
+            the world but also to understand general truths and reflect upon the
+            nature of existence itself.
+          </p>
 
-        <p>
-          Ibn Tufayl's treatment of the soul therefore connects
-          <strong
-            >psychology, epistemology, philosophy of mind, and
-            metaphysics</strong
-          >. The development of the soul and intellect is ultimately directed
-          toward forms of knowledge that transcend ordinary sensory experience.
-        </p>
-      </section>
+          <p>
+            Ibn Tufayl's treatment of the soul therefore connects
+            <strong
+              >psychology, epistemology, philosophy of mind, and
+              metaphysics</strong
+            >. The development of the soul and intellect is ultimately directed
+            toward forms of knowledge that transcend ordinary sensory
+            experience.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          REASON
          ===================================================== -->
 
-      <section class="narrative-block" id="reason">
-        <h2>Ibn Tufayl on Reason and Human Understanding</h2>
+        <section class="narrative-block" id="reason">
+          <h2>Ibn Tufayl on Reason and Human Understanding</h2>
 
-        <p>
-          <strong>Reason</strong> is one of the most powerful instruments in Ibn
-          Tufayl's philosophy. Hayy's story demonstrates how rational inquiry
-          can develop from ordinary experience into increasingly sophisticated
-          forms of philosophical understanding.
-        </p>
+          <p>
+            <strong>Reason</strong> is one of the most powerful instruments in
+            Ibn Tufayl's philosophy. Hayy's story demonstrates how rational
+            inquiry can develop from ordinary experience into increasingly
+            sophisticated forms of philosophical understanding.
+          </p>
 
-        <p>
-          Ibn Tufayl does not portray reason as a merely practical tool. Reason
-          allows Hayy to compare experiences, investigate causes, recognize
-          patterns, form more general concepts, and ask questions that cannot be
-          answered simply by observing one individual object.
-        </p>
+          <p>
+            Ibn Tufayl does not portray reason as a merely practical tool.
+            Reason allows Hayy to compare experiences, investigate causes,
+            recognize patterns, form more general concepts, and ask questions
+            that cannot be answered simply by observing one individual object.
+          </p>
 
-        <p>
-          At the same time, the narrative gives reason a developmental history.
-          Hayy is not born possessing complete philosophical knowledge.
-          Intellectual understanding emerges gradually through experience,
-          reflection, investigation, and the disciplined exercise of his
-          cognitive capacities.
-        </p>
+          <p>
+            At the same time, the narrative gives reason a developmental
+            history. Hayy is not born possessing complete philosophical
+            knowledge. Intellectual understanding emerges gradually through
+            experience, reflection, investigation, and the disciplined exercise
+            of his cognitive capacities.
+          </p>
 
-        <p>
-          This emphasis on reason is particularly important in the history of
-          <strong>Islamic philosophy</strong>. Ibn Tufayl explores how far human
-          intellectual ability can progress independently and how philosophical
-          knowledge may ultimately relate to truths communicated through
-          religious revelation.
-        </p>
-      </section>
+          <p>
+            This emphasis on reason is particularly important in the history of
+            <strong>Islamic philosophy</strong>. Ibn Tufayl explores how far
+            human intellectual ability can progress independently and how
+            philosophical knowledge may ultimately relate to truths communicated
+            through religious revelation.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELIGION
          ===================================================== -->
 
-      <section class="narrative-block" id="religion">
-        <h2>Ibn Tufayl's Philosophy of Religion</h2>
+        <section class="narrative-block" id="religion">
+          <h2>Ibn Tufayl's Philosophy of Religion</h2>
 
-        <p>
-          Ibn Tufayl's philosophy is deeply concerned with the relationship
-          between <strong>philosophy and religion</strong>. The later part of
-          <em>Hayy ibn Yaqzan</em> asks whether truths reached through
-          philosophical investigation can also be communicated through religious
-          revelation.
-        </p>
+          <p>
+            Ibn Tufayl's philosophy is deeply concerned with the relationship
+            between <strong>philosophy and religion</strong>. The later part of
+            <em>Hayy ibn Yaqzan</em> asks whether truths reached through
+            philosophical investigation can also be communicated through
+            religious revelation.
+          </p>
 
-        <p>
-          When Hayy eventually encounters a human religious community through
-          his meeting with Absal, he discovers important similarities between
-          truths he has reached through independent inquiry and teachings
-          communicated within the religious tradition.
-        </p>
+          <p>
+            When Hayy eventually encounters a human religious community through
+            his meeting with Absal, he discovers important similarities between
+            truths he has reached through independent inquiry and teachings
+            communicated within the religious tradition.
+          </p>
 
-        <p>
-          Ibn Tufayl therefore distinguishes between different ways in which
-          truth may be understood and communicated. Philosophical reasoning may
-          lead intellectually capable individuals toward demonstrative and
-          contemplative understanding, while religious teaching can communicate
-          fundamental truths through language, symbols, practices, and forms
-          accessible to a wider community.
-        </p>
+          <p>
+            Ibn Tufayl therefore distinguishes between different ways in which
+            truth may be understood and communicated. Philosophical reasoning
+            may lead intellectually capable individuals toward demonstrative and
+            contemplative understanding, while religious teaching can
+            communicate fundamental truths through language, symbols, practices,
+            and forms accessible to a wider community.
+          </p>
 
-        <p>
-          This does not mean that every individual is expected to become a
-          philosopher. One of the important problems raised by the narrative is
-          precisely the diversity of human intellectual capacities. The work
-          therefore examines both the power of philosophical reason and the
-          social importance of religious forms of teaching.
-           
-        </p>
-      </section>
+          <p>
+            This does not mean that every individual is expected to become a
+            philosopher. One of the important problems raised by the narrative
+            is precisely the diversity of human intellectual capacities. The
+            work therefore examines both the power of philosophical reason and
+            the social importance of religious forms of teaching.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          PHILOSOPHY AND RELIGION
          ===================================================== -->
 
-      <section class="narrative-block" id="philosophy-religion">
-        <h2>How Does Ibn Tufayl Reconcile Philosophy and Religion?</h2>
+        <section class="narrative-block" id="philosophy-religion">
+          <h2>How Does Ibn Tufayl Reconcile Philosophy and Religion?</h2>
 
-        <p>
-          One of the central questions in Ibn Tufayl's philosophy is whether
-          <strong>philosophical truth and religious truth</strong> are
-          fundamentally opposed. His treatment in
-          <em>Hayy ibn Yaqzan</em> suggests that they can concern the same
-          ultimate realities while being approached and communicated through
-          different methods.
-        </p>
+          <p>
+            One of the central questions in Ibn Tufayl's philosophy is whether
+            <strong>philosophical truth and religious truth</strong> are
+            fundamentally opposed. His treatment in
+            <em>Hayy ibn Yaqzan</em> suggests that they can concern the same
+            ultimate realities while being approached and communicated through
+            different methods.
+          </p>
 
-        <p>
-          Hayy reaches important conclusions through observation, rational
-          investigation, and philosophical contemplation. When he encounters
-          Absal and learns about revealed religion, he recognizes significant
-          correspondences between its fundamental teachings and truths he had
-          approached through his own intellectual development.
-        </p>
+          <p>
+            Hayy reaches important conclusions through observation, rational
+            investigation, and philosophical contemplation. When he encounters
+            Absal and learns about revealed religion, he recognizes significant
+            correspondences between its fundamental teachings and truths he had
+            approached through his own intellectual development.
+          </p>
 
-        <p>
-          The difference is therefore not simply between belief on one side and
-          reason on the other. Ibn Tufayl is also concerned with the difference
-          between philosophical demonstration, symbolic language, religious
-          practice, and contemplative experience.
-        </p>
+          <p>
+            The difference is therefore not simply between belief on one side
+            and reason on the other. Ibn Tufayl is also concerned with the
+            difference between philosophical demonstration, symbolic language,
+            religious practice, and contemplative experience.
+          </p>
 
-        <p>
-          The final part of the narrative introduces an important limitation:
-          philosophical insight may not be equally communicable to every person
-          or appropriate for every social situation. Reconciliation between
-          philosophy and religion is thus connected not only with abstract truth
-          but also with education, language, psychology, and political life.
-        </p>
-      </section>
+          <p>
+            The final part of the narrative introduces an important limitation:
+            philosophical insight may not be equally communicable to every
+            person or appropriate for every social situation. Reconciliation
+            between philosophy and religion is thus connected not only with
+            abstract truth but also with education, language, psychology, and
+            political life.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          HAYY AND ABSAL
          ===================================================== -->
 
-      <section class="narrative-block" id="hayy-absal">
-        <h2>Hayy ibn Yaqzan and Absal</h2>
+        <section class="narrative-block" id="hayy-absal">
+          <h2>Hayy ibn Yaqzan and Absal</h2>
 
-        <p>
-          A major turning point in Ibn Tufayl's story occurs when Hayy
-          encounters <strong>Absal</strong>, a religiously devoted man who has
-          withdrawn from society in search of a more contemplative life. Absal
-          travels to Hayy's island seeking solitude, where the two figures
-          eventually meet.
-        </p>
+          <p>
+            A major turning point in Ibn Tufayl's story occurs when Hayy
+            encounters <strong>Absal</strong>, a religiously devoted man who has
+            withdrawn from society in search of a more contemplative life. Absal
+            travels to Hayy's island seeking solitude, where the two figures
+            eventually meet.
+          </p>
 
-        <p>
-          Their meeting allows Ibn Tufayl to compare independently acquired
-          philosophical understanding with knowledge formed within a religious
-          tradition. Absal teaches Hayy language, while Hayy's extraordinary
-          intellectual development allows him to explain insights that Absal
-          recognizes as corresponding in important ways to religious truth.
-        </p>
+          <p>
+            Their meeting allows Ibn Tufayl to compare independently acquired
+            philosophical understanding with knowledge formed within a religious
+            tradition. Absal teaches Hayy language, while Hayy's extraordinary
+            intellectual development allows him to explain insights that Absal
+            recognizes as corresponding in important ways to religious truth.
+          </p>
 
-        <p>
-          Their relationship demonstrates one of the work's central ideas:
-          philosophical inquiry and revelation need not necessarily lead to
-          incompatible conclusions. Yet the two men have arrived at their
-          understanding through radically different paths—Hayy through isolated
-          investigation and contemplation, Absal through religious learning and
-          spiritual practice.
-        </p>
+          <p>
+            Their relationship demonstrates one of the work's central ideas:
+            philosophical inquiry and revelation need not necessarily lead to
+            incompatible conclusions. Yet the two men have arrived at their
+            understanding through radically different paths—Hayy through
+            isolated investigation and contemplation, Absal through religious
+            learning and spiritual practice.
+          </p>
 
-        <p>
-          The meeting also prepares the final philosophical problem of the
-          narrative. Together, Hayy and Absal must confront the question of
-          whether the highest form of philosophical understanding can be
-          successfully communicated within ordinary human society.
-        </p>
-      </section>
+          <p>
+            The meeting also prepares the final philosophical problem of the
+            narrative. Together, Hayy and Absal must confront the question of
+            whether the highest form of philosophical understanding can be
+            successfully communicated within ordinary human society.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          SOCIETY
          ===================================================== -->
 
-      <section class="narrative-block" id="society">
-        <h2>Ibn Tufayl's Philosophy of Society</h2>
+        <section class="narrative-block" id="society">
+          <h2>Ibn Tufayl's Philosophy of Society</h2>
 
-        <p>
-          Ibn Tufayl also uses <em>Hayy ibn Yaqzan</em> to examine the
-          relationship between the individual philosopher and society. Hayy's
-          isolated intellectual development differs radically from the ordinary
-          way human beings acquire beliefs through language, education, customs,
-          institutions, and religious traditions.
-        </p>
+          <p>
+            Ibn Tufayl also uses <em>Hayy ibn Yaqzan</em> to examine the
+            relationship between the individual philosopher and society. Hayy's
+            isolated intellectual development differs radically from the
+            ordinary way human beings acquire beliefs through language,
+            education, customs, institutions, and religious traditions.
+          </p>
 
-        <p>
-          When Hayy enters society with Absal, he discovers that philosophical
-          truths cannot simply be communicated to everyone in the same form.
-          People differ in their intellectual abilities, habits, attachments,
-          and willingness to abandon familiar ways of understanding the world.
-        </p>
+          <p>
+            When Hayy enters society with Absal, he discovers that philosophical
+            truths cannot simply be communicated to everyone in the same form.
+            People differ in their intellectual abilities, habits, attachments,
+            and willingness to abandon familiar ways of understanding the world.
+          </p>
 
-        <p>
-          Hayy's attempt to communicate his highest insights therefore
-          encounters resistance and misunderstanding. The narrative suggests
-          that symbolic religious teaching and established social practices may
-          serve purposes that abstract philosophical explanation cannot easily
-          replace.
-        </p>
+          <p>
+            Hayy's attempt to communicate his highest insights therefore
+            encounters resistance and misunderstanding. The narrative suggests
+            that symbolic religious teaching and established social practices
+            may serve purposes that abstract philosophical explanation cannot
+            easily replace.
+          </p>
 
-        <p>
-          Ibn Tufayl's treatment of society consequently connects
-          <strong
-            >political philosophy, religious philosophy, education, and
-            epistemology</strong
-          >. The philosopher's relationship with society becomes a central
-          problem because the discovery of truth does not automatically
-          guarantee that truth can be effectively communicated.
-        </p>
+          <p>
+            Ibn Tufayl's treatment of society consequently connects
+            <strong
+              >political philosophy, religious philosophy, education, and
+              epistemology</strong
+            >. The philosopher's relationship with society becomes a central
+            problem because the discovery of truth does not automatically
+            guarantee that truth can be effectively communicated.
+          </p>
 
-        <p>
-          The conclusion of the narrative is especially significant. After
-          recognizing the difficulty of reforming the community through direct
-          philosophical teaching, Hayy and Absal return to the island to pursue
-          the contemplative life. The ending leaves the reader with a difficult
-          question about the relationship between intellectual perfection and
-          participation in ordinary social life.
-        </p>
-      </section>
+          <p>
+            The conclusion of the narrative is especially significant. After
+            recognizing the difficulty of reforming the community through direct
+            philosophical teaching, Hayy and Absal return to the island to
+            pursue the contemplative life. The ending leaves the reader with a
+            difficult question about the relationship between intellectual
+            perfection and participation in ordinary social life.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          ETHICS
          ===================================================== -->
 
-      <section class="narrative-block" id="ethics">
-        <h2>What Was Ibn Tufayl's Philosophy of Ethics?</h2>
+        <section class="narrative-block" id="ethics">
+          <h2>What Was Ibn Tufayl's Philosophy of Ethics?</h2>
 
-        <p>
-          Ibn Tufayl's ethical philosophy is closely connected with his account
-          of intellectual and spiritual perfection. Hayy's goal is not simply to
-          accumulate information. As his understanding develops, philosophical
-          knowledge increasingly transforms the way he relates to himself, other
-          living beings, the natural world, and ultimate reality.
-        </p>
+          <p>
+            Ibn Tufayl's ethical philosophy is closely connected with his
+            account of intellectual and spiritual perfection. Hayy's goal is not
+            simply to accumulate information. As his understanding develops,
+            philosophical knowledge increasingly transforms the way he relates
+            to himself, other living beings, the natural world, and ultimate
+            reality.
+          </p>
 
-        <p>
-          Hayy's later development involves discipline and the control of
-          unnecessary attachments. He seeks to live in a way consistent with the
-          order he discovers in nature and the cosmos, cultivating moderation,
-          reflection, and practices that direct his attention away from merely
-          bodily concerns.
-        </p>
+          <p>
+            Hayy's later development involves discipline and the control of
+            unnecessary attachments. He seeks to live in a way consistent with
+            the order he discovers in nature and the cosmos, cultivating
+            moderation, reflection, and practices that direct his attention away
+            from merely bodily concerns.
+          </p>
 
-        <p>
-          Ethical development is therefore inseparable from intellectual
-          development. A person who seeks the highest form of knowledge must
-          also shape habits and desires in ways that allow the intellect to
-          pursue contemplation without being dominated by immediate appetites.
-        </p>
+          <p>
+            Ethical development is therefore inseparable from intellectual
+            development. A person who seeks the highest form of knowledge must
+            also shape habits and desires in ways that allow the intellect to
+            pursue contemplation without being dominated by immediate appetites.
+          </p>
 
-        <p>
-          Ibn Tufayl consequently presents the good life as involving the
-          cultivation of the whole human being.
-          <strong
-            >Philosophical knowledge, ethical discipline, and
-            contemplation</strong
-          >
-          become connected dimensions of a movement toward human perfection and
-          the highest form of understanding available to the individual.
-        </p>
-      </section>
+          <p>
+            Ibn Tufayl consequently presents the good life as involving the
+            cultivation of the whole human being.
+            <strong
+              >Philosophical knowledge, ethical discipline, and
+              contemplation</strong
+            >
+            become connected dimensions of a movement toward human perfection
+            and the highest form of understanding available to the individual.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      CONTEMPLATION
      ===================================================== -->
 
-      <section class="narrative-block" id="contemplation">
-        <h2>Ibn Tufayl, Contemplation, and Human Perfection</h2>
+        <section class="narrative-block" id="contemplation">
+          <h2>Ibn Tufayl, Contemplation, and Human Perfection</h2>
 
-        <p>
-          <strong>Contemplation</strong> is central to the highest stages of
-          Hayy's philosophical development. After investigating nature and
-          reflecting upon the structure of reality, Hayy's attention turns
-          increasingly toward a more direct and sustained form of intellectual
-          contemplation.
-        </p>
+          <p>
+            <strong>Contemplation</strong> is central to the highest stages of
+            Hayy's philosophical development. After investigating nature and
+            reflecting upon the structure of reality, Hayy's attention turns
+            increasingly toward a more direct and sustained form of intellectual
+            contemplation.
+          </p>
 
-        <p>
-          For Ibn Tufayl, the highest form of knowledge is not simply the
-          accumulation of facts about the external world. Philosophical
-          understanding transforms the knower as well as increasing what he
-          knows. Hayy's development therefore involves a gradual reorientation
-          away from immediate bodily concerns toward intellectual and spiritual
-          perfection.
-        </p>
+          <p>
+            For Ibn Tufayl, the highest form of knowledge is not simply the
+            accumulation of facts about the external world. Philosophical
+            understanding transforms the knower as well as increasing what he
+            knows. Hayy's development therefore involves a gradual reorientation
+            away from immediate bodily concerns toward intellectual and
+            spiritual perfection.
+          </p>
 
-        <p>
-          This aspect of the narrative reflects the wider philosophical and
-          spiritual environment of medieval Islamic thought. Ibn Tufayl's work
-          combines ideas associated with the tradition of <em>falsafa</em> with
-          forms of contemplative language that have often been discussed in
-          relation to mystical currents, although the precise nature of these
-          influences remains a matter of scholarly interpretation.
-        </p>
+          <p>
+            This aspect of the narrative reflects the wider philosophical and
+            spiritual environment of medieval Islamic thought. Ibn Tufayl's work
+            combines ideas associated with the tradition of
+            <em>falsafa</em> with forms of contemplative language that have
+            often been discussed in relation to mystical currents, although the
+            precise nature of these influences remains a matter of scholarly
+            interpretation.
+          </p>
 
-        <p>
-          Ibn Tufayl consequently presents philosophy as more than an academic
-          exercise. The human being gradually develops through observation,
-          reasoning, ethical discipline, and contemplation, seeking the highest
-          form of understanding available to the intellect.
-        </p>
-      </section>
+          <p>
+            Ibn Tufayl consequently presents philosophy as more than an academic
+            exercise. The human being gradually develops through observation,
+            reasoning, ethical discipline, and contemplation, seeking the
+            highest form of understanding available to the intellect.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          PHILOSOPHICAL ALLEGORY
          ===================================================== -->
 
-      <section class="narrative-block" id="allegory">
-        <h2>Why Is Hayy ibn Yaqzan a Philosophical Allegory?</h2>
+        <section class="narrative-block" id="allegory">
+          <h2>Why Is Hayy ibn Yaqzan a Philosophical Allegory?</h2>
 
-        <p>
-          <em>Hayy ibn Yaqzan</em> is more than a fictional adventure. It is a
-          <strong>philosophical narrative and allegorical work</strong> designed
-          to investigate how a human being might acquire knowledge and move
-          gradually from practical experience toward metaphysical and
-          contemplative understanding.
-        </p>
+          <p>
+            <em>Hayy ibn Yaqzan</em> is more than a fictional adventure. It is a
+            <strong>philosophical narrative and allegorical work</strong>
+            designed to investigate how a human being might acquire knowledge
+            and move gradually from practical experience toward metaphysical and
+            contemplative understanding.
+          </p>
 
-        <p>
-          Hayy's life functions as a model of intellectual development. His
-          observations of animals, nature, his own body, and the cosmos
-          represent successive stages in the philosophical investigation of
-          reality. The unusual situation of his isolation allows Ibn Tufayl to
-          explore what the human mind might achieve without ordinary society.
-        </p>
+          <p>
+            Hayy's life functions as a model of intellectual development. His
+            observations of animals, nature, his own body, and the cosmos
+            represent successive stages in the philosophical investigation of
+            reality. The unusual situation of his isolation allows Ibn Tufayl to
+            explore what the human mind might achieve without ordinary society.
+          </p>
 
-        <p>
-          The narrative also allows philosophical questions to be presented
-          through events rather than through abstract argument alone. Hayy's
-          investigation of the death of the gazelle, for example, becomes an
-          occasion for reflection on life, the body, and the principle that
-          distinguishes a living being from a dead one.
-        </p>
+          <p>
+            The narrative also allows philosophical questions to be presented
+            through events rather than through abstract argument alone. Hayy's
+            investigation of the death of the gazelle, for example, becomes an
+            occasion for reflection on life, the body, and the principle that
+            distinguishes a living being from a dead one.
+          </p>
 
-        <p>
-          By presenting philosophy through a story, Ibn Tufayl brings questions
-          about
-          <strong
-            >epistemology, metaphysics, religion, human nature, and
-            society</strong
-          >
-          into a single narrative. The literary form is therefore essential to
-          the work's philosophical method rather than merely an attractive way
-          of presenting ideas.
-        </p>
-      </section>
+          <p>
+            By presenting philosophy through a story, Ibn Tufayl brings
+            questions about
+            <strong
+              >epistemology, metaphysics, religion, human nature, and
+              society</strong
+            >
+            into a single narrative. The literary form is therefore essential to
+            the work's philosophical method rather than merely an attractive way
+            of presenting ideas.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          PHILOSOPHICAL IDEAS
          ===================================================== -->
 
-      <section class="narrative-block" id="key-ideas">
-        <h2>Ibn Tufayl's Main Philosophical Ideas</h2>
+        <section class="narrative-block" id="key-ideas">
+          <h2>Ibn Tufayl's Main Philosophical Ideas</h2>
 
-        <h3>1. Human Reason Can Develop Knowledge</h3>
+          <h3>1. Human Reason Can Develop Knowledge</h3>
 
-        <p>
-          Ibn Tufayl presents Hayy as an extraordinary example of a human being
-          who develops substantial knowledge through observation, experience,
-          investigation, and rational reflection without conventional formal
-          education.
-        </p>
+          <p>
+            Ibn Tufayl presents Hayy as an extraordinary example of a human
+            being who develops substantial knowledge through observation,
+            experience, investigation, and rational reflection without
+            conventional formal education.
+          </p>
 
-        <h3>2. Nature Can Lead the Mind Toward Metaphysics</h3>
+          <h3>2. Nature Can Lead the Mind Toward Metaphysics</h3>
 
-        <p>
-          Hayy's study of the natural world does not end with knowledge of
-          physical objects. It leads him toward questions about causation,
-          order, existence, and the ultimate explanation of the cosmos.
-        </p>
+          <p>
+            Hayy's study of the natural world does not end with knowledge of
+            physical objects. It leads him toward questions about causation,
+            order, existence, and the ultimate explanation of the cosmos.
+          </p>
 
-        <h3>3. Human Beings Can Seek Knowledge of Ultimate Reality</h3>
+          <h3>3. Human Beings Can Seek Knowledge of Ultimate Reality</h3>
 
-        <p>
-          Hayy's philosophical investigation eventually leads beyond changing
-          physical things toward reflection on a transcendent and ultimate
-          source of reality, which Ibn Tufayl identifies with knowledge of God.
-        </p>
+          <p>
+            Hayy's philosophical investigation eventually leads beyond changing
+            physical things toward reflection on a transcendent and ultimate
+            source of reality, which Ibn Tufayl identifies with knowledge of
+            God.
+          </p>
 
-        <h3>4. Philosophy and Religion Can Communicate Related Truths</h3>
+          <h3>4. Philosophy and Religion Can Communicate Related Truths</h3>
 
-        <p>
-          Ibn Tufayl explores the possibility that philosophical reasoning and
-          religious revelation can concern the same fundamental realities while
-          communicating them through different intellectual and social forms.
-        </p>
+          <p>
+            Ibn Tufayl explores the possibility that philosophical reasoning and
+            religious revelation can concern the same fundamental realities
+            while communicating them through different intellectual and social
+            forms.
+          </p>
 
-        <h3>5. Intellectual Perfection Requires Contemplation</h3>
+          <h3>5. Intellectual Perfection Requires Contemplation</h3>
 
-        <p>
-          The highest stage of Hayy's development involves contemplation and
-          ethical discipline rather than merely practical or theoretical
-          knowledge of the physical world.
-        </p>
-      </section>
+          <p>
+            The highest stage of Hayy's development involves contemplation and
+            ethical discipline rather than merely practical or theoretical
+            knowledge of the physical world.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          MAJOR WORK
          ===================================================== -->
 
-      <section class="narrative-block" id="works">
-        <h2>Ibn Tufayl's Major Work: Hayy ibn Yaqzan</h2>
+        <section class="narrative-block" id="works">
+          <h2>Ibn Tufayl's Major Work: Hayy ibn Yaqzan</h2>
 
-        <p>
-          Ibn Tufayl's philosophical reputation rests primarily on
-          <em>Risālat Ḥayy ibn Yaqẓān fī Asrār al-Ḥikma al-Mashriqiyya</em>,
-          commonly known as <strong><em>Hayy ibn Yaqzan</em></strong
-          >. It is the sole extant direct document of his philosophical thought
-          and remains the principal source for understanding his philosophy.
-        </p>
+          <p>
+            Ibn Tufayl's philosophical reputation rests primarily on
+            <em>Risālat Ḥayy ibn Yaqẓān fī Asrār al-Ḥikma al-Mashriqiyya</em>,
+            commonly known as <strong><em>Hayy ibn Yaqzan</em></strong
+            >. It is the sole extant direct document of his philosophical
+            thought and remains the principal source for understanding his
+            philosophy.
+          </p>
 
-        <p>
-          The work has been translated under titles such as
-          <strong>The Story of Hayy ibn Yaqzan</strong> and
-          <strong>The Self-Taught Philosopher</strong>. Its combination of
-          philosophical argument, imaginative narrative, and spiritual
-          reflection makes it unusual within the surviving literature of
-          medieval Islamic philosophy.
-        </p>
+          <p>
+            The work has been translated under titles such as
+            <strong>The Story of Hayy ibn Yaqzan</strong> and
+            <strong>The Self-Taught Philosopher</strong>. Its combination of
+            philosophical argument, imaginative narrative, and spiritual
+            reflection makes it unusual within the surviving literature of
+            medieval Islamic philosophy.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong><em>Hayy ibn Yaqzan</em></strong>
-            — Ibn Tufayl's principal surviving philosophical work, exploring
-            human knowledge, nature, reason, the soul, God, religion, society,
-            and intellectual perfection.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong><em>Hayy ibn Yaqzan</em></strong>
+              — Ibn Tufayl's principal surviving philosophical work, exploring
+              human knowledge, nature, reason, the soul, God, religion, society,
+              and intellectual perfection.
+            </li>
 
-          <li>
-            <strong><em>Philosophus Autodidactus</em></strong>
-            — The title of the influential Latin translation published in 1671,
-            through which the work became widely known in early modern Europe.
-          </li>
+            <li>
+              <strong><em>Philosophus Autodidactus</em></strong>
+              — The title of the influential Latin translation published in
+              1671, through which the work became widely known in early modern
+              Europe.
+            </li>
 
-          <li>
-            <strong>Other surviving writings</strong>
-            — Some verse compositions, including political and medical poetry,
-            are attributed to Ibn Tufayl, but <em>Hayy ibn Yaqzan</em> remains
-            the central surviving source for his philosophical thought.
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>Other surviving writings</strong>
+              — Some verse compositions, including political and medical poetry,
+              are attributed to Ibn Tufayl, but <em>Hayy ibn Yaqzan</em> remains
+              the central surviving source for his philosophical thought.
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          AVICENNA
          ===================================================== -->
 
-      <section class="narrative-block" id="avicenna">
-        <h2>Ibn Tufayl and Avicenna: What Is the Connection?</h2>
+        <section class="narrative-block" id="avicenna">
+          <h2>Ibn Tufayl and Avicenna: What Is the Connection?</h2>
 
-        <p>
-          <strong>Avicenna (Ibn Sina)</strong> was one of the most important
-          philosophical predecessors in the wider intellectual background of Ibn
-          Tufayl. Ibn Sina's discussions of the soul, intellect, knowledge,
-          metaphysics, and human self-awareness formed part of the philosophical
-          tradition with which Ibn Tufayl engaged.
-        </p>
+          <p>
+            <strong>Avicenna (Ibn Sina)</strong> was one of the most important
+            philosophical predecessors in the wider intellectual background of
+            Ibn Tufayl. Ibn Sina's discussions of the soul, intellect,
+            knowledge, metaphysics, and human self-awareness formed part of the
+            philosophical tradition with which Ibn Tufayl engaged.
+          </p>
 
-        <p>
-          The connection is especially visible in the title
-          <em>Hayy ibn Yaqzan</em>. Ibn Sina had written an earlier and much
-          shorter philosophical recital bearing the same title, and Ibn Tufayl
-          explicitly drew upon the names and literary framework associated with
-          Avicenna's philosophical narratives.
-        </p>
+          <p>
+            The connection is especially visible in the title
+            <em>Hayy ibn Yaqzan</em>. Ibn Sina had written an earlier and much
+            shorter philosophical recital bearing the same title, and Ibn Tufayl
+            explicitly drew upon the names and literary framework associated
+            with Avicenna's philosophical narratives.
+          </p>
 
-        <p>
-          The two works are nevertheless fundamentally different. In Ibn Sina's
-          narrative, Hayy is a symbolic and guiding figure encountered by the
-          soul, whereas Ibn Tufayl places the intellectual development of an
-          isolated human being at the center of his story.
-        </p>
+          <p>
+            The two works are nevertheless fundamentally different. In Ibn
+            Sina's narrative, Hayy is a symbolic and guiding figure encountered
+            by the soul, whereas Ibn Tufayl places the intellectual development
+            of an isolated human being at the center of his story.
+          </p>
 
-        <p>
-          Ibn Tufayl therefore did not simply repeat Avicenna's work. He
-          transformed an existing philosophical and literary framework into a
-          much more extensive investigation of how a human being might develop
-          knowledge through experience, rational inquiry, contemplation, and
-          eventual contact with religious society.
-        </p>
-      </section>
+          <p>
+            Ibn Tufayl therefore did not simply repeat Avicenna's work. He
+            transformed an existing philosophical and literary framework into a
+            much more extensive investigation of how a human being might develop
+            knowledge through experience, rational inquiry, contemplation, and
+            eventual contact with religious society.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          IBN BAJJA
          ===================================================== -->
 
-      <section class="narrative-block" id="ibn-bajja">
-        <h2>Ibn Tufayl and Ibn Bajja</h2>
+        <section class="narrative-block" id="ibn-bajja">
+          <h2>Ibn Tufayl and Ibn Bajja</h2>
 
-        <p>
-          <strong>Ibn Bajja (Avempace)</strong> was an earlier representative of
-          Andalusian philosophy whose work forms an important part of the
-          intellectual background of Ibn Tufayl. Both thinkers belong to the
-          wider tradition of <em>falsafa</em> that developed in the western
-          Islamic world.
-        </p>
+          <p>
+            <strong>Ibn Bajja (Avempace)</strong> was an earlier representative
+            of Andalusian philosophy whose work forms an important part of the
+            intellectual background of Ibn Tufayl. Both thinkers belong to the
+            wider tradition of <em>falsafa</em> that developed in the western
+            Islamic world.
+          </p>
 
-        <p>
-          A particularly important point of comparison is Ibn Bajja's treatment
-          of the solitary or isolated philosopher. His philosophical writings
-          consider how an intellectually developed individual might pursue
-          perfection in circumstances where society does not fully support the
-          philosophical life.
-        </p>
+          <p>
+            A particularly important point of comparison is Ibn Bajja's
+            treatment of the solitary or isolated philosopher. His philosophical
+            writings consider how an intellectually developed individual might
+            pursue perfection in circumstances where society does not fully
+            support the philosophical life.
+          </p>
 
-        <p>
-          Ibn Tufayl develops a related problem in a strikingly different way.
-          Instead of describing a philosopher living within an imperfect
-          society, he imagines Hayy developing almost entirely outside human
-          society. The contrast allows <em>Hayy ibn Yaqzan</em> to explore human
-          intellectual development from its earliest stages.
-        </p>
+          <p>
+            Ibn Tufayl develops a related problem in a strikingly different way.
+            Instead of describing a philosopher living within an imperfect
+            society, he imagines Hayy developing almost entirely outside human
+            society. The contrast allows <em>Hayy ibn Yaqzan</em> to explore
+            human intellectual development from its earliest stages.
+          </p>
 
-        <p>
-          Some older sources describe Ibn Bajja as Ibn Tufayl's teacher, but
-          this relationship cannot be established with certainty. It is more
-          accurate to regard Ibn Bajja as an important predecessor whose ideas
-          formed part of the philosophical environment in which Ibn Tufayl
-          developed his own distinctive work.
-        </p>
-      </section>
+          <p>
+            Some older sources describe Ibn Bajja as Ibn Tufayl's teacher, but
+            this relationship cannot be established with certainty. It is more
+            accurate to regard Ibn Bajja as an important predecessor whose ideas
+            formed part of the philosophical environment in which Ibn Tufayl
+            developed his own distinctive work.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          AVERROES
          ===================================================== -->
 
-      <section class="narrative-block" id="averroes">
-        <h2>Ibn Tufayl and Averroes: What Is the Connection?</h2>
+        <section class="narrative-block" id="averroes">
+          <h2>Ibn Tufayl and Averroes: What Is the Connection?</h2>
 
-        <p>
-          <strong>Ibn Tufayl and Averroes (Ibn Rushd)</strong> were major
-          philosophers associated with twelfth-century al-Andalus and the
-          Almohad intellectual world. Ibn Tufayl was the older figure and is
-          historically associated with bringing Ibn Rushd to the attention of
-          the Almohad caliph Abu Ya'qub Yusuf.
-        </p>
+          <p>
+            <strong>Ibn Tufayl and Averroes (Ibn Rushd)</strong> were major
+            philosophers associated with twelfth-century al-Andalus and the
+            Almohad intellectual world. Ibn Tufayl was the older figure and is
+            historically associated with bringing Ibn Rushd to the attention of
+            the Almohad caliph Abu Ya'qub Yusuf.
+          </p>
 
-        <p>
-          According to the famous account preserved by Ibn Rushd, Ibn Tufayl
-          helped create the circumstances in which Ibn Rushd became involved in
-          the project of explaining Aristotle's difficult works. Ibn Rushd later
-          became the most famous commentator on Aristotle in the Islamic world
-          and medieval Latin Europe.
-        </p>
+          <p>
+            According to the famous account preserved by Ibn Rushd, Ibn Tufayl
+            helped create the circumstances in which Ibn Rushd became involved
+            in the project of explaining Aristotle's difficult works. Ibn Rushd
+            later became the most famous commentator on Aristotle in the Islamic
+            world and medieval Latin Europe.
+          </p>
 
-        <p>
-          Their connection is therefore important for understanding the
-          intellectual continuity of Andalusian <em>falsafa</em>. Ibn Tufayl's
-          philosophical narrative and Ibn Rushd's extensive commentaries
-          represent different literary and philosophical approaches within the
-          same broad intellectual tradition.
-        </p>
+          <p>
+            Their connection is therefore important for understanding the
+            intellectual continuity of Andalusian <em>falsafa</em>. Ibn Tufayl's
+            philosophical narrative and Ibn Rushd's extensive commentaries
+            represent different literary and philosophical approaches within the
+            same broad intellectual tradition.
+          </p>
 
-        <p>
-          Ibn Rushd should not, however, simply be described as Ibn Tufayl's
-          disciple. The historical evidence establishes their connection and Ibn
-          Tufayl's role at court, but not a straightforward teacher-student
-          relationship between the two philosophers.
-        </p>
-      </section>
+          <p>
+            Ibn Rushd should not, however, simply be described as Ibn Tufayl's
+            disciple. The historical evidence establishes their connection and
+            Ibn Tufayl's role at court, but not a straightforward
+            teacher-student relationship between the two philosophers.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          EUROPEAN INFLUENCE
          ===================================================== -->
 
-      <section class="narrative-block" id="influence">
-        <h2>Ibn Tufayl's Influence on Western Philosophy</h2>
+        <section class="narrative-block" id="influence">
+          <h2>Ibn Tufayl's Influence on Western Philosophy</h2>
 
-        <p>
-          The influence of <em>Hayy ibn Yaqzan</em> extended far beyond the
-          medieval Islamic world. The work was translated into Hebrew in the
-          medieval period and later circulated in Latin and several European
-          vernacular languages, allowing new philosophical and literary
-          audiences to encounter Ibn Tufayl's unusual thought experiment.
-        </p>
+          <p>
+            The influence of <em>Hayy ibn Yaqzan</em> extended far beyond the
+            medieval Islamic world. The work was translated into Hebrew in the
+            medieval period and later circulated in Latin and several European
+            vernacular languages, allowing new philosophical and literary
+            audiences to encounter Ibn Tufayl's unusual thought experiment.
+          </p>
 
-        <p>
-          A particularly important moment came in 1671, when
-          <strong>Edward Pococke the Younger</strong> published a Latin
-          translation directly from the Arabic under the title
-          <strong><em>Philosophus Autodidactus</em></strong
-          >. The work became widely known in early modern European intellectual
-          culture and was subsequently translated into other languages.
-        </p>
+          <p>
+            A particularly important moment came in 1671, when
+            <strong>Edward Pococke the Younger</strong> published a Latin
+            translation directly from the Arabic under the title
+            <strong><em>Philosophus Autodidactus</em></strong
+            >. The work became widely known in early modern European
+            intellectual culture and was subsequently translated into other
+            languages.
+          </p>
 
-        <p>
-          European readers were especially interested in the central experiment
-          of the narrative: what might a human being discover when developing
-          without conventional education or inherited intellectual traditions?
-          The work consequently became relevant to debates about experience,
-          reason, education, natural religion, and the development of the human
-          mind.
-        </p>
+          <p>
+            European readers were especially interested in the central
+            experiment of the narrative: what might a human being discover when
+            developing without conventional education or inherited intellectual
+            traditions? The work consequently became relevant to debates about
+            experience, reason, education, natural religion, and the development
+            of the human mind.
+          </p>
 
-        <p>
-          <em>Hayy ibn Yaqzan</em> has often been discussed in connection with
-          thinkers such as <strong>John Locke</strong> and with
-          <strong>Daniel Defoe's <em>Robinson Crusoe</em></strong
-          >. These comparisons are historically important, but the precise
-          extent of direct influence remains debated in several cases and should
-          not be presented as certain without qualification.
-        </p>
-      </section>
+          <p>
+            <em>Hayy ibn Yaqzan</em> has often been discussed in connection with
+            thinkers such as <strong>John Locke</strong> and with
+            <strong>Daniel Defoe's <em>Robinson Crusoe</em></strong
+            >. These comparisons are historically important, but the precise
+            extent of direct influence remains debated in several cases and
+            should not be presented as certain without qualification.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          PHILOSOPHUS AUTODIDACTUS
          ===================================================== -->
 
-      <section class="narrative-block" id="philosophus-autodidactus">
-        <h2>What Does Philosophus Autodidactus Mean?</h2>
+        <section class="narrative-block" id="philosophus-autodidactus">
+          <h2>What Does Philosophus Autodidactus Mean?</h2>
 
-        <p>
-          <strong><em>Philosophus Autodidactus</em></strong> is the Latin title
-          given to Edward Pococke the Younger's 1671 translation of Ibn Tufayl's
-          <em>Hayy ibn Yaqzan</em>. The phrase is commonly translated as
-          <strong>"The Self-Taught Philosopher."</strong>
-        </p>
+          <p>
+            <strong><em>Philosophus Autodidactus</em></strong> is the Latin
+            title given to Edward Pococke the Younger's 1671 translation of Ibn
+            Tufayl's <em>Hayy ibn Yaqzan</em>. The phrase is commonly translated
+            as
+            <strong>"The Self-Taught Philosopher."</strong>
+          </p>
 
-        <p>
-          The title captures the central philosophical experiment of the story:
-          a human being develops knowledge without conventional teachers,
-          inherited social traditions, or formal philosophical education. Hayy's
-          intellectual life begins instead with direct experience of the natural
-          world.
-        </p>
+          <p>
+            The title captures the central philosophical experiment of the
+            story: a human being develops knowledge without conventional
+            teachers, inherited social traditions, or formal philosophical
+            education. Hayy's intellectual life begins instead with direct
+            experience of the natural world.
+          </p>
 
-        <p>
-          The Latin translation played a major role in bringing Ibn Tufayl's
-          work into early modern European intellectual culture. Through
-          translation, the story became part of wider debates concerning reason,
-          experience, education, natural knowledge, and the capacities of the
-          human mind.
-        </p>
-      </section>
+          <p>
+            The Latin translation played a major role in bringing Ibn Tufayl's
+            work into early modern European intellectual culture. Through
+            translation, the story became part of wider debates concerning
+            reason, experience, education, natural knowledge, and the capacities
+            of the human mind.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          HAYY SUMMARY
          ===================================================== -->
 
-      <section class="narrative-block" id="summary">
-        <h2>Hayy ibn Yaqzan Summary: The Philosophy of the Story</h2>
+        <section class="narrative-block" id="summary">
+          <h2>Hayy ibn Yaqzan Summary: The Philosophy of the Story</h2>
 
-        <p>
-          <em>Hayy ibn Yaqzan</em> follows the development of Hayy from infancy
-          to philosophical maturity on an isolated island. He learns first
-          through sensation, imitation, and practical experience and gradually
-          becomes a systematic investigator of nature.
-        </p>
+          <p>
+            <em>Hayy ibn Yaqzan</em> follows the development of Hayy from
+            infancy to philosophical maturity on an isolated island. He learns
+            first through sensation, imitation, and practical experience and
+            gradually becomes a systematic investigator of nature.
+          </p>
 
-        <p>
-          Hayy's observations lead him to investigate life, death, bodily
-          processes, causation, the natural world, and the structure of the
-          cosmos. His intellectual development gradually moves from particular
-          physical questions toward more general metaphysical problems.
-        </p>
+          <p>
+            Hayy's observations lead him to investigate life, death, bodily
+            processes, causation, the natural world, and the structure of the
+            cosmos. His intellectual development gradually moves from particular
+            physical questions toward more general metaphysical problems.
+          </p>
 
-        <p>
-          Through continued reflection and contemplation, Hayy seeks knowledge
-          of ultimate reality and transforms his way of life accordingly. The
-          narrative therefore connects intellectual development with ethical and
-          spiritual perfection.
-        </p>
+          <p>
+            Through continued reflection and contemplation, Hayy seeks knowledge
+            of ultimate reality and transforms his way of life accordingly. The
+            narrative therefore connects intellectual development with ethical
+            and spiritual perfection.
+          </p>
 
-        <p>
-          Later, Hayy encounters Absal and eventually comes into contact with a
-          human religious community. This allows Ibn Tufayl to explore the
-          relationship between
-          <strong>independent philosophical reason and revealed religion</strong
-          >.
-        </p>
+          <p>
+            Later, Hayy encounters Absal and eventually comes into contact with
+            a human religious community. This allows Ibn Tufayl to explore the
+            relationship between
+            <strong
+              >independent philosophical reason and revealed religion</strong
+            >.
+          </p>
 
-        <p>
-          The story ultimately investigates both the possibilities and the
-          limitations of human knowledge. Hayy can discover remarkable truths in
-          isolation, but his later encounter with society raises the further
-          question of whether the highest forms of philosophical understanding
-          can be communicated equally to everyone.
-        </p>
-      </section>
+          <p>
+            The story ultimately investigates both the possibilities and the
+            limitations of human knowledge. Hayy can discover remarkable truths
+            in isolation, but his later encounter with society raises the
+            further question of whether the highest forms of philosophical
+            understanding can be communicated equally to everyone.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          REASON AND EXPERIENCE
          ===================================================== -->
 
-      <section class="narrative-block" id="reason-experience">
-        <h2>Can Human Beings Discover Truth Through Reason Alone?</h2>
+        <section class="narrative-block" id="reason-experience">
+          <h2>Can Human Beings Discover Truth Through Reason Alone?</h2>
 
-        <p>
-          Ibn Tufayl uses Hayy's life to investigate whether a human being can
-          reach significant philosophical knowledge without formal education or
-          inherited intellectual traditions. The question is deliberately
-          radical because Hayy begins without teachers, books, or even ordinary
-          human language.
-        </p>
+          <p>
+            Ibn Tufayl uses Hayy's life to investigate whether a human being can
+            reach significant philosophical knowledge without formal education
+            or inherited intellectual traditions. The question is deliberately
+            radical because Hayy begins without teachers, books, or even
+            ordinary human language.
+          </p>
 
-        <p>
-          Hayy does not begin with pure abstract reasoning detached from the
-          world. His development begins with experience. He observes physical
-          things, investigates natural processes, and gradually constructs
-          explanations for what he encounters. His intellectual development
-          therefore combines
-          <strong>empirical observation and rational inquiry</strong>.
-        </p>
+          <p>
+            Hayy does not begin with pure abstract reasoning detached from the
+            world. His development begins with experience. He observes physical
+            things, investigates natural processes, and gradually constructs
+            explanations for what he encounters. His intellectual development
+            therefore combines
+            <strong>empirical observation and rational inquiry</strong>.
+          </p>
 
-        <p>
-          Reason then allows Hayy to move beyond particular observations toward
-          questions about general causes, the nature of existence, and the
-          structure of the cosmos. The narrative thus gives experience an
-          essential role while also presenting the intellect as capable of
-          reaching beyond immediate sensory information.
-        </p>
+          <p>
+            Reason then allows Hayy to move beyond particular observations
+            toward questions about general causes, the nature of existence, and
+            the structure of the cosmos. The narrative thus gives experience an
+            essential role while also presenting the intellect as capable of
+            reaching beyond immediate sensory information.
+          </p>
 
-        <p>
-          Ibn Tufayl's answer is not that every human being will automatically
-          achieve the same level of philosophical understanding. Hayy is an
-          idealized philosophical figure whose life explores the remarkable
-          possibilities of human reason when sustained investigation,
-          intellectual discipline, and contemplation are pursued to their
-          highest level.
-        </p>
-      </section>
+          <p>
+            Ibn Tufayl's answer is not that every human being will automatically
+            achieve the same level of philosophical understanding. Hayy is an
+            idealized philosophical figure whose life explores the remarkable
+            possibilities of human reason when sustained investigation,
+            intellectual discipline, and contemplation are pursued to their
+            highest level.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          SCIENCE AND PHILOSOPHY
          ===================================================== -->
 
-      <section class="narrative-block" id="science">
-        <h2>Ibn Tufayl, Science, Nature, and Philosophy</h2>
+        <section class="narrative-block" id="science">
+          <h2>Ibn Tufayl, Science, Nature, and Philosophy</h2>
 
-        <p>
-          Ibn Tufayl's philosophy gives an important role to the investigation
-          of the natural world. Hayy's intellectual development follows a broad
-          movement from observation and practical inquiry toward increasingly
-          theoretical and philosophical forms of understanding.
-        </p>
+          <p>
+            Ibn Tufayl's philosophy gives an important role to the investigation
+            of the natural world. Hayy's intellectual development follows a
+            broad movement from observation and practical inquiry toward
+            increasingly theoretical and philosophical forms of understanding.
+          </p>
 
-        <p>
-          Hayy investigates living organisms, bodily processes, physical change,
-          movement, and the larger structure of the cosmos. These investigations
-          reflect the close relationship between
-          <strong>natural philosophy, medicine, and metaphysics</strong> within
-          medieval Islamic intellectual culture.
-        </p>
+          <p>
+            Hayy investigates living organisms, bodily processes, physical
+            change, movement, and the larger structure of the cosmos. These
+            investigations reflect the close relationship between
+            <strong>natural philosophy, medicine, and metaphysics</strong>
+            within medieval Islamic intellectual culture.
+          </p>
 
-        <p>
-          It is important not to describe Hayy as a modern scientist in the
-          contemporary sense. His investigations belong to the philosophical and
-          scientific traditions of the twelfth century, in which questions about
-          nature were closely connected with broader questions about causation,
-          cosmology, and metaphysics.
-        </p>
+          <p>
+            It is important not to describe Hayy as a modern scientist in the
+            contemporary sense. His investigations belong to the philosophical
+            and scientific traditions of the twelfth century, in which questions
+            about nature were closely connected with broader questions about
+            causation, cosmology, and metaphysics.
+          </p>
 
-        <p>
-          For Ibn Tufayl, the study of nature can therefore become a route
-          toward metaphysics. The order and intelligibility of the natural world
-          raise questions about its causes and ultimate explanation, allowing
-          inquiry to move from physical phenomena toward philosophical
-          reflection on reality as a whole.
-        </p>
-      </section>
+          <p>
+            For Ibn Tufayl, the study of nature can therefore become a route
+            toward metaphysics. The order and intelligibility of the natural
+            world raise questions about its causes and ultimate explanation,
+            allowing inquiry to move from physical phenomena toward
+            philosophical reflection on reality as a whole.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          MAIN IDEAS
          ===================================================== -->
 
-      <section class="narrative-block" id="main-ideas">
-        <h2>Five Central Ideas in Ibn Tufayl's Philosophy</h2>
+        <section class="narrative-block" id="main-ideas">
+          <h2>Five Central Ideas in Ibn Tufayl's Philosophy</h2>
 
-        <h3>1. Knowledge Begins With Experience</h3>
+          <h3>1. Knowledge Begins With Experience</h3>
 
-        <p>
-          Human knowledge develops through contact with the world. Observation,
-          perception, and practical investigation provide the starting point
-          from which more advanced intellectual understanding can gradually
-          emerge.
-        </p>
+          <p>
+            Human knowledge develops through contact with the world.
+            Observation, perception, and practical investigation provide the
+            starting point from which more advanced intellectual understanding
+            can gradually emerge.
+          </p>
 
-        <h3>2. Reason Can Move Beyond Immediate Experience</h3>
+          <h3>2. Reason Can Move Beyond Immediate Experience</h3>
 
-        <p>
-          Rational reflection allows the human mind to move from particular
-          observations toward more general questions about causes, principles,
-          existence, and the structure of reality.
-        </p>
+          <p>
+            Rational reflection allows the human mind to move from particular
+            observations toward more general questions about causes, principles,
+            existence, and the structure of reality.
+          </p>
 
-        <h3>3. Nature Can Lead Toward Metaphysics</h3>
+          <h3>3. Nature Can Lead Toward Metaphysics</h3>
 
-        <p>
-          The investigation of nature raises questions that cannot be answered
-          merely by describing physical objects. It leads Hayy toward reflection
-          on causation, cosmic order, existence, and ultimate reality.
-        </p>
+          <p>
+            The investigation of nature raises questions that cannot be answered
+            merely by describing physical objects. It leads Hayy toward
+            reflection on causation, cosmic order, existence, and ultimate
+            reality.
+          </p>
 
-        <h3>4. Philosophy and Religion Can Point Toward Related Truths</h3>
+          <h3>4. Philosophy and Religion Can Point Toward Related Truths</h3>
 
-        <p>
-          Ibn Tufayl explores the possibility that philosophical reasoning and
-          religious revelation can concern the same fundamental realities while
-          communicating them through different intellectual, symbolic, and
-          social forms.
-        </p>
+          <p>
+            Ibn Tufayl explores the possibility that philosophical reasoning and
+            religious revelation can concern the same fundamental realities
+            while communicating them through different intellectual, symbolic,
+            and social forms.
+          </p>
 
-        <h3>5. Human Perfection Involves Contemplation</h3>
+          <h3>5. Human Perfection Involves Contemplation</h3>
 
-        <p>
-          The highest development of the human being involves intellectual and
-          contemplative transformation rather than the simple accumulation of
-          practical information or theoretical facts.
-        </p>
-      </section>
+          <p>
+            The highest development of the human being involves intellectual and
+            contemplative transformation rather than the simple accumulation of
+            practical information or theoretical facts.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          IMPORTANCE
          ===================================================== -->
 
-      <section class="narrative-block" id="importance">
-        <h2>Why Is Ibn Tufayl Important in the History of Philosophy?</h2>
+        <section class="narrative-block" id="importance">
+          <h2>Why Is Ibn Tufayl Important in the History of Philosophy?</h2>
 
-        <p>
-          Ibn Tufayl is important because he created one of the most distinctive
-          philosophical narratives in the history of
-          <strong>Islamic philosophy</strong>. Through <em>Hayy ibn Yaqzan</em>,
-          he transformed complex philosophical questions into the story of the
-          gradual development of a human intellect.
-        </p>
+          <p>
+            Ibn Tufayl is important because he created one of the most
+            distinctive philosophical narratives in the history of
+            <strong>Islamic philosophy</strong>. Through
+            <em>Hayy ibn Yaqzan</em>, he transformed complex philosophical
+            questions into the story of the gradual development of a human
+            intellect.
+          </p>
 
-        <p>
-          His work is especially significant for the history of
-          <strong>epistemology</strong>. Hayy's development functions as a
-          philosophical thought experiment concerning what human beings might
-          know through perception, experience, rational inquiry, and
-          contemplation without conventional education.
-        </p>
+          <p>
+            His work is especially significant for the history of
+            <strong>epistemology</strong>. Hayy's development functions as a
+            philosophical thought experiment concerning what human beings might
+            know through perception, experience, rational inquiry, and
+            contemplation without conventional education.
+          </p>
 
-        <p>
-          Ibn Tufayl is also important for the history of
-          <strong>Andalusian philosophy</strong>. His work belongs to the
-          remarkable intellectual tradition associated with figures such as Ibn
-          Bajja and Ibn Rushd, while his literary approach remains distinctive
-          within that tradition.
-        </p>
+          <p>
+            Ibn Tufayl is also important for the history of
+            <strong>Andalusian philosophy</strong>. His work belongs to the
+            remarkable intellectual tradition associated with figures such as
+            Ibn Bajja and Ibn Rushd, while his literary approach remains
+            distinctive within that tradition.
+          </p>
 
-        <p>
-          Finally, the later translation and circulation of
-          <em>Hayy ibn Yaqzan</em> gave Ibn Tufayl an important place in the
-          history of intellectual exchange between the Arabic-speaking world and
-          Europe. The work continued to attract philosophical and literary
-          interest long after the period in which it was written.
-        </p>
-      </section>
+          <p>
+            Finally, the later translation and circulation of
+            <em>Hayy ibn Yaqzan</em> gave Ibn Tufayl an important place in the
+            history of intellectual exchange between the Arabic-speaking world
+            and Europe. The work continued to attract philosophical and literary
+            interest long after the period in which it was written.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          SIMPLE EXPLANATION
          ===================================================== -->
 
-      <section class="narrative-block" id="explained-simply">
-        <h2>Ibn Tufayl's Philosophy Explained Simply</h2>
+        <section class="narrative-block" id="explained-simply">
+          <h2>Ibn Tufayl's Philosophy Explained Simply</h2>
 
-        <p>
-          Ibn Tufayl's philosophy can be understood through one central
-          question:
-          <strong
-            >What could a human being discover about reality through experience,
-            reason, and contemplation without conventional education?</strong
-          >
-        </p>
-
-        <ul class="plain-list">
-          <li>
-            <strong>How does knowledge begin?</strong>
-            Through perception, observation, experience, and investigation of
-            the natural world.
-          </li>
-
-          <li>
-            <strong>Can reason discover deeper truths?</strong>
-            Hayy's development suggests that rational reflection can move beyond
-            particular physical observations toward general and metaphysical
-            questions.
-          </li>
-
-          <li>
-            <strong>Can nature lead to knowledge of God?</strong>
-            Ibn Tufayl presents Hayy's investigation of nature and the cosmos as
-            a path toward metaphysical reflection on ultimate reality and God.
-          </li>
-
-          <li>
-            <strong>What is philosophy?</strong>
-            Philosophy is presented as a disciplined search for understanding
-            through observation, rational inquiry, ethical development, and
-            contemplation.
-          </li>
-
-          <li>
+          <p>
+            Ibn Tufayl's philosophy can be understood through one central
+            question:
             <strong
-              >What is the relationship between philosophy and religion?</strong
+              >What could a human being discover about reality through
+              experience, reason, and contemplation without conventional
+              education?</strong
             >
-            Ibn Tufayl explores how philosophical reasoning and religious
-            revelation can communicate related truths through different methods
-            and forms of understanding.
-          </li>
-        </ul>
-      </section>
-      <div class="philosophy-divider"></div>
+          </p>
 
-      <!-- =====================================================
+          <ul class="plain-list">
+            <li>
+              <strong>How does knowledge begin?</strong>
+              Through perception, observation, experience, and investigation of
+              the natural world.
+            </li>
+
+            <li>
+              <strong>Can reason discover deeper truths?</strong>
+              Hayy's development suggests that rational reflection can move
+              beyond particular physical observations toward general and
+              metaphysical questions.
+            </li>
+
+            <li>
+              <strong>Can nature lead to knowledge of God?</strong>
+              Ibn Tufayl presents Hayy's investigation of nature and the cosmos
+              as a path toward metaphysical reflection on ultimate reality and
+              God.
+            </li>
+
+            <li>
+              <strong>What is philosophy?</strong>
+              Philosophy is presented as a disciplined search for understanding
+              through observation, rational inquiry, ethical development, and
+              contemplation.
+            </li>
+
+            <li>
+              <strong
+                >What is the relationship between philosophy and
+                religion?</strong
+              >
+              Ibn Tufayl explores how philosophical reasoning and religious
+              revelation can communicate related truths through different
+              methods and forms of understanding.
+            </li>
+          </ul>
+        </section>
+        <div class="philosophy-divider"></div>
+
+        <!-- =====================================================
          FAQ
          ===================================================== -->
 
-      <section class="narrative-block" id="faq">
-        <h2>Frequently Asked Questions About Ibn Tufayl</h2>
+        <section class="narrative-block" id="faq">
+          <h2>Frequently Asked Questions About Ibn Tufayl</h2>
 
-        <h3>Who was Ibn Tufayl?</h3>
+          <h3>Who was Ibn Tufayl?</h3>
 
-        <p>
-          Ibn Tufayl was a twelfth-century Andalusian philosopher, physician,
-          and intellectual associated with Islamic philosophy. He is best known
-          for his philosophical work
-          <em>Hayy ibn Yaqzan</em>.
-        </p>
+          <p>
+            Ibn Tufayl was a twelfth-century Andalusian philosopher, physician,
+            and intellectual associated with Islamic philosophy. He is best
+            known for his philosophical work
+            <em>Hayy ibn Yaqzan</em>.
+          </p>
 
-        <h3>What is Ibn Tufayl famous for?</h3>
+          <h3>What is Ibn Tufayl famous for?</h3>
 
-        <p>
-          Ibn Tufayl is famous primarily for
-          <em>Hayy ibn Yaqzan</em>, a philosophical narrative about a
-          self-taught human being who discovers knowledge of nature, himself,
-          and God through experience and reason.
-        </p>
+          <p>
+            Ibn Tufayl is famous primarily for
+            <em>Hayy ibn Yaqzan</em>, a philosophical narrative about a
+            self-taught human being who discovers knowledge of nature, himself,
+            and God through experience and reason.
+          </p>
 
-        <h3>What was Ibn Tufayl's philosophy?</h3>
+          <h3>What was Ibn Tufayl's philosophy?</h3>
 
-        <p>
-          Ibn Tufayl's philosophy explores knowledge, reason, nature,
-          metaphysics, God, the soul, human perfection, religion, and society.
-          His ideas are presented primarily through the philosophical narrative
-          <em>Hayy ibn Yaqzan</em>.
-        </p>
+          <p>
+            Ibn Tufayl's philosophy explores knowledge, reason, nature,
+            metaphysics, God, the soul, human perfection, religion, and society.
+            His ideas are presented primarily through the philosophical
+            narrative
+            <em>Hayy ibn Yaqzan</em>.
+          </p>
 
-        <h3>What is Hayy ibn Yaqzan?</h3>
+          <h3>What is Hayy ibn Yaqzan?</h3>
 
-        <p>
-          <em>Hayy ibn Yaqzan</em> is Ibn Tufayl's major surviving philosophical
-          work. It tells the story of a human being raised in isolation who
-          develops knowledge through observation, experience, rational inquiry,
-          and contemplation.
-        </p>
+          <p>
+            <em>Hayy ibn Yaqzan</em> is Ibn Tufayl's major surviving
+            philosophical work. It tells the story of a human being raised in
+            isolation who develops knowledge through observation, experience,
+            rational inquiry, and contemplation.
+          </p>
 
-        <h3>What does Hayy ibn Yaqzan mean?</h3>
+          <h3>What does Hayy ibn Yaqzan mean?</h3>
 
-        <p>
-          The Arabic name <em>Hayy ibn Yaqzan</em> can be understood roughly as
-          "Living Son of the Vigilant" or "Alive, Son of the Awake." The title
-          reflects the philosophical character of the work and its concern with
-          intellectual awakening.
-        </p>
+          <p>
+            The Arabic name <em>Hayy ibn Yaqzan</em> can be understood roughly
+            as "Living Son of the Vigilant" or "Alive, Son of the Awake." The
+            title reflects the philosophical character of the work and its
+            concern with intellectual awakening.
+          </p>
 
-        <h3>What is The Self-Taught Philosopher?</h3>
+          <h3>What is The Self-Taught Philosopher?</h3>
 
-        <p>
-          <strong>The Self-Taught Philosopher</strong> is a common English
-          description of Ibn Tufayl's <em>Hayy ibn Yaqzan</em>. Its Latin title,
-          <em>Philosophus Autodidactus</em>, emphasizes the story's central
-          theme of independent intellectual development.
-        </p>
+          <p>
+            <strong>The Self-Taught Philosopher</strong> is a common English
+            description of Ibn Tufayl's <em>Hayy ibn Yaqzan</em>. Its Latin
+            title, <em>Philosophus Autodidactus</em>, emphasizes the story's
+            central theme of independent intellectual development.
+          </p>
 
-        <h3>What does Philosophus Autodidactus mean?</h3>
+          <h3>What does Philosophus Autodidactus mean?</h3>
 
-        <p>
-          <em>Philosophus Autodidactus</em> is Latin for "The Self-Taught
-          Philosopher." It became the well-known Latin title of Ibn Tufayl's
-          <em>Hayy ibn Yaqzan</em>.
-        </p>
+          <p>
+            <em>Philosophus Autodidactus</em> is Latin for "The Self-Taught
+            Philosopher." It became the well-known Latin title of Ibn Tufayl's
+            <em>Hayy ibn Yaqzan</em>.
+          </p>
 
-        <h3>What is Ibn Tufayl's philosophy of knowledge?</h3>
+          <h3>What is Ibn Tufayl's philosophy of knowledge?</h3>
 
-        <p>
-          Ibn Tufayl presents knowledge as developing from experience and
-          observation toward rational and metaphysical understanding. Hayy's
-          intellectual development demonstrates how human reason can investigate
-          increasingly abstract questions.
-        </p>
+          <p>
+            Ibn Tufayl presents knowledge as developing from experience and
+            observation toward rational and metaphysical understanding. Hayy's
+            intellectual development demonstrates how human reason can
+            investigate increasingly abstract questions.
+          </p>
 
-        <h3>What did Ibn Tufayl believe about reason?</h3>
+          <h3>What did Ibn Tufayl believe about reason?</h3>
 
-        <p>
-          Ibn Tufayl gives human reason a powerful role in the discovery of
-          truth. Through Hayy, he explores how observation and rational inquiry
-          can lead from knowledge of nature toward metaphysical understanding.
-        </p>
+          <p>
+            Ibn Tufayl gives human reason a powerful role in the discovery of
+            truth. Through Hayy, he explores how observation and rational
+            inquiry can lead from knowledge of nature toward metaphysical
+            understanding.
+          </p>
 
-        <h3>How does Ibn Tufayl explain God?</h3>
+          <h3>How does Ibn Tufayl explain God?</h3>
 
-        <p>
-          Ibn Tufayl presents Hayy's investigation of nature as a path toward
-          recognition of a higher and necessary source of the order found in the
-          cosmos. Knowledge of nature therefore becomes connected with
-          metaphysical knowledge of God.
-        </p>
+          <p>
+            Ibn Tufayl presents Hayy's investigation of nature as a path toward
+            recognition of a higher and necessary source of the order found in
+            the cosmos. Knowledge of nature therefore becomes connected with
+            metaphysical knowledge of God.
+          </p>
 
-        <h3>What is Ibn Tufayl's view of nature?</h3>
+          <h3>What is Ibn Tufayl's view of nature?</h3>
 
-        <p>
-          Nature is a major source of philosophical knowledge in Ibn Tufayl's
-          thought. Hayy studies the natural world through observation and
-          gradually moves from physical investigation toward metaphysical
-          questions.
-        </p>
+          <p>
+            Nature is a major source of philosophical knowledge in Ibn Tufayl's
+            thought. Hayy studies the natural world through observation and
+            gradually moves from physical investigation toward metaphysical
+            questions.
+          </p>
 
-        <h3>Did Ibn Tufayl believe reason and religion were compatible?</h3>
+          <h3>Did Ibn Tufayl believe reason and religion were compatible?</h3>
 
-        <p>
-          Ibn Tufayl explores the possibility that reason and religious
-          revelation can lead toward the same ultimate truths, although they may
-          communicate those truths through different methods and forms.
-        </p>
+          <p>
+            Ibn Tufayl explores the possibility that reason and religious
+            revelation can lead toward the same ultimate truths, although they
+            may communicate those truths through different methods and forms.
+          </p>
 
-        <h3>Who is Absal in Hayy ibn Yaqzan?</h3>
+          <h3>Who is Absal in Hayy ibn Yaqzan?</h3>
 
-        <p>
-          Absal is a religious man whom Hayy encounters after developing his
-          philosophical understanding in isolation. Their meeting allows Ibn
-          Tufayl to explore the relationship between philosophical knowledge and
-          religious belief.
-        </p>
+          <p>
+            Absal is a religious man whom Hayy encounters after developing his
+            philosophical understanding in isolation. Their meeting allows Ibn
+            Tufayl to explore the relationship between philosophical knowledge
+            and religious belief.
+          </p>
 
-        <h3>Was Ibn Tufayl influenced by Avicenna?</h3>
+          <h3>Was Ibn Tufayl influenced by Avicenna?</h3>
 
-        <p>
-          Ibn Tufayl's philosophical environment reflects the influence of
-          earlier Islamic philosophers including Avicenna. His
-          <em>Hayy ibn Yaqzan</em> also shares its title with an earlier work
-          associated with Avicenna, although the two works are distinct.
-        </p>
+          <p>
+            Ibn Tufayl's philosophical environment reflects the influence of
+            earlier Islamic philosophers including Avicenna. His
+            <em>Hayy ibn Yaqzan</em> also shares its title with an earlier work
+            associated with Avicenna, although the two works are distinct.
+          </p>
 
-        <h3>What is the connection between Ibn Tufayl and Averroes?</h3>
+          <h3>What is the connection between Ibn Tufayl and Averroes?</h3>
 
-        <p>
-          Ibn Tufayl and Averroes were major philosophers of twelfth-century
-          al-Andalus. Ibn Tufayl is traditionally associated with introducing
-          Ibn Rushd to the Almohad ruler Abu Ya'qub Yusuf.
-        </p>
+          <p>
+            Ibn Tufayl and Averroes were major philosophers of twelfth-century
+            al-Andalus. Ibn Tufayl is traditionally associated with introducing
+            Ibn Rushd to the Almohad ruler Abu Ya'qub Yusuf.
+          </p>
 
-        <h3>Did Ibn Tufayl influence Western philosophy?</h3>
+          <h3>Did Ibn Tufayl influence Western philosophy?</h3>
 
-        <p>
-          Ibn Tufayl's <em>Hayy ibn Yaqzan</em> became known in Europe through
-          Hebrew and Latin translations. Its Latin form,
-          <em>Philosophus Autodidactus</em>, attracted significant attention in
-          early modern European intellectual culture.
-        </p>
+          <p>
+            Ibn Tufayl's <em>Hayy ibn Yaqzan</em> became known in Europe through
+            Hebrew and Latin translations. Its Latin form,
+            <em>Philosophus Autodidactus</em>, attracted significant attention
+            in early modern European intellectual culture.
+          </p>
 
-        <h3>Did Ibn Tufayl influence Robinson Crusoe?</h3>
+          <h3>Did Ibn Tufayl influence Robinson Crusoe?</h3>
 
-        <p>
-          Scholars have frequently compared
-          <em>Hayy ibn Yaqzan</em> with Daniel Defoe's
-          <em>Robinson Crusoe</em> because both involve an individual developing
-          knowledge while isolated from ordinary society. The precise historical
-          extent of Ibn Tufayl's influence on Defoe remains a matter of
-          scholarly discussion.
-        </p>
+          <p>
+            Scholars have frequently compared
+            <em>Hayy ibn Yaqzan</em> with Daniel Defoe's
+            <em>Robinson Crusoe</em> because both involve an individual
+            developing knowledge while isolated from ordinary society. The
+            precise historical extent of Ibn Tufayl's influence on Defoe remains
+            a matter of scholarly discussion.
+          </p>
 
-        <h3>Why is Ibn Tufayl important in Islamic philosophy?</h3>
+          <h3>Why is Ibn Tufayl important in Islamic philosophy?</h3>
 
-        <p>
-          Ibn Tufayl is important because he developed an original account of
-          human intellectual development and explored the relationship between
-          reason, nature, metaphysics, and religious truth within the tradition
-          of Islamic philosophy.
-        </p>
+          <p>
+            Ibn Tufayl is important because he developed an original account of
+            human intellectual development and explored the relationship between
+            reason, nature, metaphysics, and religious truth within the
+            tradition of Islamic philosophy.
+          </p>
 
-        <h3>Why is Hayy ibn Yaqzan important?</h3>
+          <h3>Why is Hayy ibn Yaqzan important?</h3>
 
-        <p>
-          <em>Hayy ibn Yaqzan</em> is important because it combines philosophy
-          and literature to investigate fundamental questions about human
-          knowledge, reason, nature, God, religion, society, and intellectual
-          perfection.
-        </p>
-      </section>
+          <p>
+            <em>Hayy ibn Yaqzan</em> is important because it combines philosophy
+            and literature to investigate fundamental questions about human
+            knowledge, reason, nature, God, religion, society, and intellectual
+            perfection.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED THINKERS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-thinkers-title">
-        <span class="section-eyebrow"> Continue Exploring </span>
+        <section class="connection" aria-labelledby="related-thinkers-title">
+          <span class="section-eyebrow"> Continue Exploring </span>
 
-        <h2 id="related-thinkers-title">
-          Related Islamic and Andalusian Philosophers
-        </h2>
+          <h2 id="related-thinkers-title">
+            Related Islamic and Andalusian Philosophers
+          </h2>
 
-        <p>
-          Explore other major thinkers in the development of Islamic philosophy,
-          Arabic philosophy, Persian philosophy, Andalusian philosophy, and
-          medieval intellectual history.
-        </p>
+          <p>
+            Explore other major thinkers in the development of Islamic
+            philosophy, Arabic philosophy, Persian philosophy, Andalusian
+            philosophy, and medieval intellectual history.
+          </p>
 
-        <div class="related-links">
-          <a href="al-kindi.html"> Al-Kindi </a>
+          <div class="related-links">
+            <a href="al-kindi.html"> Al-Kindi </a>
 
-          ·
+            ·
 
-          <a href="al-farabi.html"> Al-Farabi </a>
+            <a href="al-farabi.html"> Al-Farabi </a>
 
-          ·
+            ·
 
-          <a href="avicenna.html"> Avicenna (Ibn Sina) </a>
+            <a href="avicenna.html"> Avicenna (Ibn Sina) </a>
 
-          ·
+            ·
 
-          <a href="al-ghazali.html"> Al-Ghazali </a>
+            <a href="al-ghazali.html"> Al-Ghazali </a>
 
-          ·
+            ·
 
-          <a href="averroes.html"> Averroes (Ibn Rushd) </a>
+            <a href="averroes.html"> Averroes (Ibn Rushd) </a>
 
-          ·
+            ·
 
-          <a href="ibn-arabi.html"> Ibn Arabi </a>
-        </div>
-      </section>
+            <a href="ibn-arabi.html"> Ibn Arabi </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED AREAS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-topics-title">
-        <span class="section-eyebrow"> Philosophical Connections </span>
+        <section class="connection" aria-labelledby="related-topics-title">
+          <span class="section-eyebrow"> Philosophical Connections </span>
 
-        <h2 id="related-topics-title">Related Areas of Philosophy</h2>
+          <h2 id="related-topics-title">Related Areas of Philosophy</h2>
 
-        <p>
-          Ibn Tufayl's philosophy connects Islamic philosophy with epistemology,
-          metaphysics, philosophy of mind, ethics, philosophy of nature,
-          religion, and the history of Andalusian philosophy.
-        </p>
+          <p>
+            Ibn Tufayl's philosophy connects Islamic philosophy with
+            epistemology, metaphysics, philosophy of mind, ethics, philosophy of
+            nature, religion, and the history of Andalusian philosophy.
+          </p>
 
-        <div class="related-links">
-          <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
+          <div class="related-links">
+            <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
 
-          ·
+            ·
 
-          <a href="epistemology-branch-philosophy.html"> Epistemology </a>
+            <a href="epistemology-branch-philosophy.html"> Epistemology </a>
 
-          ·
+            ·
 
-          <a href="ethics-branch-philosophy.html"> Ethics </a>
+            <a href="ethics-branch-philosophy.html"> Ethics </a>
 
-          ·
+            ·
 
-          <a href="islamic-philosophy.html"> Islamic Philosophy </a>
+            <a href="islamic-philosophy.html"> Islamic Philosophy </a>
 
-          ·
+            ·
 
-          <a href="medieval-philosophy.html"> Medieval Philosophy </a>
+            <a href="medieval-philosophy.html"> Medieval Philosophy </a>
 
-          ·
+            ·
 
-          <a href="world-literature.html"> World Literature </a>
-        </div>
-      </section>
+            <a href="world-literature.html"> World Literature </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          CONCLUSION
          ===================================================== -->
 
-      <section class="narrative-block" aria-labelledby="conclusion-title">
-        <span class="section-eyebrow"> Andalusian Islamic Philosophy </span>
+        <section class="narrative-block" aria-labelledby="conclusion-title">
+          <span class="section-eyebrow"> Andalusian Islamic Philosophy </span>
 
-        <h2 id="conclusion-title">Why Ibn Tufayl Still Matters</h2>
+          <h2 id="conclusion-title">Why Ibn Tufayl Still Matters</h2>
 
-        <p>
-          Ibn Tufayl occupies a distinctive position in the history of
-          <strong>Islamic philosophy</strong> because he presented difficult
-          philosophical questions through the story of a human being who
-          discovers the world through experience and reason.
-        </p>
+          <p>
+            Ibn Tufayl occupies a distinctive position in the history of
+            <strong>Islamic philosophy</strong> because he presented difficult
+            philosophical questions through the story of a human being who
+            discovers the world through experience and reason.
+          </p>
 
-        <p>
-          Through <em>Hayy ibn Yaqzan</em>, Ibn Tufayl examines knowledge,
-          nature, the intellect, God, metaphysics, religion, society, and human
-          perfection. His philosophical narrative asks how far human reason can
-          progress without conventional education and how philosophical
-          knowledge relates to revealed religion.
-        </p>
+          <p>
+            Through <em>Hayy ibn Yaqzan</em>, Ibn Tufayl examines knowledge,
+            nature, the intellect, God, metaphysics, religion, society, and
+            human perfection. His philosophical narrative asks how far human
+            reason can progress without conventional education and how
+            philosophical knowledge relates to revealed religion.
+          </p>
 
-        <p>
-          His work also represents the intellectual richness of
-          <strong>Andalusian philosophy</strong> and provides an important
-          connection between earlier Islamic philosophers such as Avicenna and
-          Ibn Bajja and later thinkers such as Averroes.
-        </p>
+          <p>
+            His work also represents the intellectual richness of
+            <strong>Andalusian philosophy</strong> and provides an important
+            connection between earlier Islamic philosophers such as Avicenna and
+            Ibn Bajja and later thinkers such as Averroes.
+          </p>
 
-        <p>
-          The later translation of <em>Hayy ibn Yaqzan</em> into Hebrew and
-          Latin ensured that Ibn Tufayl's philosophical experiment continued to
-          influence discussions of reason, knowledge, education, religion, and
-          human nature far beyond medieval al-Andalus.
-        </p>
+          <p>
+            The later translation of <em>Hayy ibn Yaqzan</em> into Hebrew and
+            Latin ensured that Ibn Tufayl's philosophical experiment continued
+            to influence discussions of reason, knowledge, education, religion,
+            and human nature far beyond medieval al-Andalus.
+          </p>
 
-        <a class="cta-button" href="thinkers.html">
-          Explore Great Philosophers
-          <span aria-hidden="true">&rarr;</span>
-        </a>
-      </section>
-    </main>
+          <a class="cta-button" href="thinkers.html">
+            Explore Great Philosophers
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </section>
+      </main>
+    </div>
 
     <!-- =====================================================
        FOOTER
@@ -2776,8 +2866,8 @@
        SCRIPTS
        ===================================================== -->
 
-     <script src="script.js" defer></script>
-     <script src="article-toc.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="article-toc.js" defer></script>
 
     <script src="branches-enhance.js" defer></script>
 

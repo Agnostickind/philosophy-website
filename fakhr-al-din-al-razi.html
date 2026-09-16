@@ -113,7 +113,7 @@
 
     <!-- ================= STYLESHEETS ================= -->
 
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="article-toc.css" />
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
@@ -314,10 +314,10 @@
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link
-    rel="describedby"
-    href="https://agnostickind.github.io/philosophy-website/llms.txt"
-  >
-</head>
+      rel="describedby"
+      href="https://agnostickind.github.io/philosophy-website/llms.txt"
+    />
+  </head>
 
   <body>
     <!-- =====================================================
@@ -607,12 +607,11 @@
         </div>
 
         <a href="schools.html">Schools</a>
-       <a href="books.html">Books</a>
+        <a href="books.html">Books</a>
         <a href="world-literature.html">Literature</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </div>
-
 
       <div class="nav-tools">
         <div class="search-container">
@@ -705,1137 +704,1209 @@
       </div>
     </header>
 
-    <main id="main-content" tabindex="-1">
-      <!-- =====================================================
+    <div class="article-reading-area">
+      <!-- =========================================================
+     ARTICLE TABLE OF CONTENTS
+     ========================================================= -->
+
+      <!-- Desktop TOC -->
+      <aside class="article-toc" aria-label="Article contents">
+        <div class="article-toc__header">
+          <span class="article-toc__title">Contents</span>
+
+          <button
+            type="button"
+            class="article-toc__hide"
+            aria-label="Hide article contents"
+          >
+            Hide
+          </button>
+        </div>
+
+        <nav class="article-toc__nav" aria-label="Article sections">
+          <div class="article-toc__list"></div>
+        </nav>
+      </aside>
+
+      <!-- Mobile TOC trigger -->
+      <button
+        type="button"
+        class="mobile-toc-trigger"
+        aria-expanded="false"
+        aria-controls="mobile-toc-drawer"
+      >
+        <span>Contents</span>
+        <span class="mobile-toc-trigger__chevron" aria-hidden="true">⌄</span>
+      </button>
+
+      <!-- Mobile TOC overlay -->
+      <div class="mobile-toc-overlay" hidden></div>
+
+      <!-- Mobile TOC drawer -->
+      <aside
+        id="mobile-toc-drawer"
+        class="mobile-toc-drawer"
+        aria-label="Article contents"
+        aria-hidden="true"
+      >
+        <div class="mobile-toc-drawer__header">
+          <span class="mobile-toc-drawer__title">Contents</span>
+
+          <button
+            type="button"
+            class="mobile-toc-drawer__close"
+            aria-label="Close article contents"
+          >
+            ×
+          </button>
+        </div>
+
+        <nav class="mobile-toc-drawer__nav" aria-label="Article sections">
+          <div class="mobile-toc-drawer__list"></div>
+        </nav>
+      </aside>
+
+      <main id="main-content" tabindex="-1">
+        <!-- =====================================================
          INTRODUCTION
          ===================================================== -->
 
-      <section class="about-home">
-        <h2>Who Was Fakhr al-Din al-Razi?</h2>
+        <section class="about-home">
+          <h2>Who Was Fakhr al-Din al-Razi?</h2>
 
-        <p>
-          <strong>Fakhr al-Din al-Razi</strong> (Abū ʿAbdillāh Muḥammad ibn
-          ʿUmar al-Rāzī, 1149–1210 CE) was one of the most influential and
-          intellectually innovative theologians, philosophers, and scholars of
-          the medieval Islamic world. He is especially known for his rigorous
-          and often critical engagement with
-          <strong>Avicenna's philosophy</strong>, his major role in the later
-          development of <strong>Ash'ari theology</strong>
-          (<em>kalam</em>), and his monumental Quranic commentary,
-          <em>Mafatih al-Ghayb</em>, commonly known as the
-          <strong>Tafsir al-Kabir</strong>.
-           
-        </p>
+          <p>
+            <strong>Fakhr al-Din al-Razi</strong> (Abū ʿAbdillāh Muḥammad ibn
+            ʿUmar al-Rāzī, 1149–1210 CE) was one of the most influential and
+            intellectually innovative theologians, philosophers, and scholars of
+            the medieval Islamic world. He is especially known for his rigorous
+            and often critical engagement with
+            <strong>Avicenna's philosophy</strong>, his major role in the later
+            development of <strong>Ash'ari theology</strong>
+            (<em>kalam</em>), and his monumental Quranic commentary,
+            <em>Mafatih al-Ghayb</em>, commonly known as the
+            <strong>Tafsir al-Kabir</strong>.
+          </p>
 
-        <p>
-          Al-Razi was trained from an early age in Islamic theology and law and
-          became deeply familiar with the philosophical tradition associated
-          with
-          <strong>Avicenna (Ibn Sina)</strong>. Rather than simply accepting or
-          rejecting Avicennian philosophy, he examined its arguments critically
-          and contributed to debates concerning metaphysics, logic, physics, the
-          human soul, knowledge, ethics, and the relationship between essence
-          and existence. His philosophical writings helped shape what later
-          scholars describe as the post-classical development of Islamic
-          thought.   
-        </p>
+          <p>
+            Al-Razi was trained from an early age in Islamic theology and law
+            and became deeply familiar with the philosophical tradition
+            associated with
+            <strong>Avicenna (Ibn Sina)</strong>. Rather than simply accepting
+            or rejecting Avicennian philosophy, he examined its arguments
+            critically and contributed to debates concerning metaphysics, logic,
+            physics, the human soul, knowledge, ethics, and the relationship
+            between essence and existence. His philosophical writings helped
+            shape what later scholars describe as the post-classical development
+            of Islamic thought.
+          </p>
 
-        <p>
-          Much of Al-Razi's intellectual importance lies in his willingness to
-          bring different traditions into sustained debate. He used
-          philosophical methods in theological argument while also subjecting
-          philosophical claims to rigorous criticism. This approach helped
-          transform <strong>kalam</strong>
-          during the centuries after Al-Ghazali and contributed to the
-          increasingly close interaction between philosophy, logic, and theology
-          in the eastern Islamic world.    
-        </p>
+          <p>
+            Much of Al-Razi's intellectual importance lies in his willingness to
+            bring different traditions into sustained debate. He used
+            philosophical methods in theological argument while also subjecting
+            philosophical claims to rigorous criticism. This approach helped
+            transform <strong>kalam</strong>
+            during the centuries after Al-Ghazali and contributed to the
+            increasingly close interaction between philosophy, logic, and
+            theology in the eastern Islamic world.
+          </p>
 
-        <p>
-          Al-Razi was also an extraordinarily prolific author whose interests
-          extended beyond theology and philosophy. His surviving works address
-          Quranic interpretation, Islamic law, logic, natural philosophy,
-          medicine, astronomy, and other fields. His writings were widely
-          studied and debated, and his influence continued through later
-          traditions of Islamic theology and philosophy long after his death in
-          Herat in 1210 CE.     
-        </p>
+          <p>
+            Al-Razi was also an extraordinarily prolific author whose interests
+            extended beyond theology and philosophy. His surviving works address
+            Quranic interpretation, Islamic law, logic, natural philosophy,
+            medicine, astronomy, and other fields. His writings were widely
+            studied and debated, and his influence continued through later
+            traditions of Islamic theology and philosophy long after his death
+            in Herat in 1210 CE.
+          </p>
 
-        <p>
-          <strong>Note:</strong> Fakhr al-Din al-Razi should not be confused
-          with the earlier physician and philosopher
-          <strong>Abu Bakr al-Razi</strong>, known in Latin as
-          <strong>Rhazes</strong>, who died in the early tenth century. The two
-          were distinct thinkers from different historical periods, although
-          both were associated through their names with the Persian city of
-          Rayy.     
-        </p>
-      </section>
+          <p>
+            <strong>Note:</strong> Fakhr al-Din al-Razi should not be confused
+            with the earlier physician and philosopher
+            <strong>Abu Bakr al-Razi</strong>, known in Latin as
+            <strong>Rhazes</strong>, who died in the early tenth century. The
+            two were distinct thinkers from different historical periods,
+            although both were associated through their names with the Persian
+            city of Rayy.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          QUICK FACTS
          ===================================================== -->
 
-      <section class="narrative-block" id="quick-facts">
-        <h2>Fakhr al-Din al-Razi: Quick Facts</h2>
+        <section class="narrative-block" id="quick-facts">
+          <h2>Fakhr al-Din al-Razi: Quick Facts</h2>
 
-        <ul class="plain-list">
-          <li>
-            <strong>Full name</strong> — Abū ʿAbdillāh Muḥammad ibn ʿUmar
-            al-Rāzī
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>Full name</strong> — Abū ʿAbdillāh Muḥammad ibn ʿUmar
+              al-Rāzī
+            </li>
 
-          <li>
-            <strong>Known as</strong> — Fakhr al-Din al-Razi, or Ibn al-Khatib
-          </li>
+            <li>
+              <strong>Known as</strong> — Fakhr al-Din al-Razi, or Ibn al-Khatib
+            </li>
 
-          <li><strong>Born</strong> — 1149 CE, Rayy, in present-day Iran</li>
+            <li><strong>Born</strong> — 1149 CE, Rayy, in present-day Iran</li>
 
-          <li>
-            <strong>Died</strong> — 1210 CE, Herat, in present-day Afghanistan
-          </li>
+            <li>
+              <strong>Died</strong> — 1210 CE, Herat, in present-day Afghanistan
+            </li>
 
-          <li>
-            <strong>Associated with</strong> — Rayy, Khwarazm, Transoxiana, and
-            Herat
-          </li>
+            <li>
+              <strong>Associated with</strong> — Rayy, Khwarazm, Transoxiana,
+              and Herat
+            </li>
 
-          <li>
-            <strong>Philosophical tradition</strong> — Ash'ari theology (kalam),
-            critical engagement with Avicennan Peripatetic philosophy
-          </li>
+            <li>
+              <strong>Philosophical tradition</strong> — Ash'ari theology
+              (kalam), critical engagement with Avicennan Peripatetic philosophy
+            </li>
 
-          <li><strong>Legal school</strong> — Shafi'i jurisprudence</li>
+            <li><strong>Legal school</strong> — Shafi'i jurisprudence</li>
 
-          <li>
-            <strong>Major philosophical subjects</strong> — Theology,
-            metaphysics, logic, epistemology, atomism, and Quranic exegesis
-          </li>
+            <li>
+              <strong>Major philosophical subjects</strong> — Theology,
+              metaphysics, logic, epistemology, atomism, and Quranic exegesis
+            </li>
 
-          <li>
-            <strong>Famous exegetical work</strong> —
-            <em>Tafsir al-Kabir</em> (Mafatih al-Ghayb)
-          </li>
+            <li>
+              <strong>Famous exegetical work</strong> —
+              <em>Tafsir al-Kabir</em> (Mafatih al-Ghayb)
+            </li>
 
-          <li>
-            <strong>Famous critical work</strong> — Commentary on Avicenna's
-            <em>Remarks and Admonitions</em>
-          </li>
+            <li>
+              <strong>Famous critical work</strong> — Commentary on Avicenna's
+              <em>Remarks and Admonitions</em>
+            </li>
 
-          <li>
-            <strong>Not to be confused with</strong> — Abu Bakr al-Razi
-            (Rhazes), an earlier physician-philosopher
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>Not to be confused with</strong> — Abu Bakr al-Razi
+              (Rhazes), an earlier physician-philosopher
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      EARLY LIFE 
      ===================================================== -->
 
-      <section class="narrative-block" id="early-life">
-        <h2>Al-Razi's Early Life and Historical Background</h2>
+        <section class="narrative-block" id="early-life">
+          <h2>Al-Razi's Early Life and Historical Background</h2>
 
-        <figure class="narrative-figure">
-          <img
-            src="images/fakhr-al-din-al-razi.jpg"
-            alt="Representation of Fakhr al-Din al-Razi, Islamic theologian and philosopher"
-            loading="lazy"
-            decoding="async"
-          />
+          <figure class="narrative-figure">
+            <img
+              src="images/fakhr-al-din-al-razi.jpg"
+              alt="Representation of Fakhr al-Din al-Razi, Islamic theologian and philosopher"
+              loading="lazy"
+              decoding="async"
+            />
 
-          <figcaption>
-            Fakhr al-Din al-Razi became one of the most encyclopedic and
-            influential scholars of the medieval Islamic world.
-          </figcaption>
-        </figure>
+            <figcaption>
+              Fakhr al-Din al-Razi became one of the most encyclopedic and
+              influential scholars of the medieval Islamic world.
+            </figcaption>
+          </figure>
 
-        <p>
-          Fakhr al-Din al-Razi was born in 1149 CE in <strong>Rayy</strong>, the
-          important Persian city near modern Tehran from which his name
-          <em>al-Razi</em> was derived. He was born into a family deeply
-          involved in religious scholarship. His father, Diya al-Din Umar, was
-          associated with Ash'ari theology and Shafi'i jurisprudence, and
-          Al-Razi therefore received an early education in Islamic law, rational
-          theology, Arabic, and the methods of religious argument.
-        </p>
+          <p>
+            Fakhr al-Din al-Razi was born in 1149 CE in <strong>Rayy</strong>,
+            the important Persian city near modern Tehran from which his name
+            <em>al-Razi</em> was derived. He was born into a family deeply
+            involved in religious scholarship. His father, Diya al-Din Umar, was
+            associated with Ash'ari theology and Shafi'i jurisprudence, and
+            Al-Razi therefore received an early education in Islamic law,
+            rational theology, Arabic, and the methods of religious argument.
+          </p>
 
-        <p>
-          His education later expanded beyond his family's scholarly tradition.
-          Al-Razi studied at <strong>Nishapur</strong>, where he encountered the
-          philosophical works of thinkers such as Al-Farabi and
-          <strong>Avicenna (Ibn Sina)</strong>, whose philosophy would become
-          the central object of his critical engagement. He also studied with
-          Majd al-Din al-Jili at Maragha, entering an intellectual environment
-          in which philosophy and theology were increasingly studied alongside
-          one another.
-        </p>
+          <p>
+            His education later expanded beyond his family's scholarly
+            tradition. Al-Razi studied at <strong>Nishapur</strong>, where he
+            encountered the philosophical works of thinkers such as Al-Farabi
+            and <strong>Avicenna (Ibn Sina)</strong>, whose philosophy would
+            become the central object of his critical engagement. He also
+            studied with Majd al-Din al-Jili at Maragha, entering an
+            intellectual environment in which philosophy and theology were
+            increasingly studied alongside one another.
+          </p>
 
-        <p>
-          Al-Razi subsequently traveled widely through Persia and Central Asia
-          in search of education, patronage, and intellectual opponents. His
-          career was shaped by the political rivalry between the Khwarazm-Shahs
-          and the Ghurids, and he gained a reputation as an exceptionally
-          formidable teacher and debater. These travels brought him into contact
-          with different theological, philosophical, and political communities
-          across the eastern Islamic world.
-        </p>
+          <p>
+            Al-Razi subsequently traveled widely through Persia and Central Asia
+            in search of education, patronage, and intellectual opponents. His
+            career was shaped by the political rivalry between the
+            Khwarazm-Shahs and the Ghurids, and he gained a reputation as an
+            exceptionally formidable teacher and debater. These travels brought
+            him into contact with different theological, philosophical, and
+            political communities across the eastern Islamic world.
+          </p>
 
-        <p>
-          During his mature career, Al-Razi enjoyed important patronage and
-          eventually became associated with the Ghurid court. Despite his
-          political and intellectual travels, he produced an extraordinarily
-          large body of writing covering philosophy, theology, logic, Islamic
-          law, Quranic interpretation, natural philosophy, medicine, and
-          subjects such as astrology. He died in
-          <strong>Herat in 1210 CE</strong>, leaving behind one of the most
-          extensive intellectual legacies of the post-classical Islamic world.
-        </p>
-      </section>
+          <p>
+            During his mature career, Al-Razi enjoyed important patronage and
+            eventually became associated with the Ghurid court. Despite his
+            political and intellectual travels, he produced an extraordinarily
+            large body of writing covering philosophy, theology, logic, Islamic
+            law, Quranic interpretation, natural philosophy, medicine, and
+            subjects such as astrology. He died in
+            <strong>Herat in 1210 CE</strong>, leaving behind one of the most
+            extensive intellectual legacies of the post-classical Islamic world.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      AL-RAZI AND ASH'ARI THEOLOGY 
      ===================================================== -->
 
-      <section class="narrative-block" id="ashari-theology">
-        <h2>Al-Razi and Ash'ari Theology (Kalam)</h2>
+        <section class="narrative-block" id="ashari-theology">
+          <h2>Al-Razi and Ash'ari Theology (Kalam)</h2>
 
-        <p>
-          Al-Razi is one of the major figures in the history of
-          <strong>Ash'ari theology</strong>, the influential tradition of Sunni
-          rational theology known as <strong>kalam</strong>. He inherited an
-          Ash'ari intellectual background through his father and through the
-          scholarly tradition associated with the earlier theologian Imam
-          al-Juwayni. Yet his own theological writings developed in an age when
-          Ash'ari scholars were engaging increasingly closely with the
-          philosophical tradition of Avicenna.
-        </p>
+          <p>
+            Al-Razi is one of the major figures in the history of
+            <strong>Ash'ari theology</strong>, the influential tradition of
+            Sunni rational theology known as <strong>kalam</strong>. He
+            inherited an Ash'ari intellectual background through his father and
+            through the scholarly tradition associated with the earlier
+            theologian Imam al-Juwayni. Yet his own theological writings
+            developed in an age when Ash'ari scholars were engaging increasingly
+            closely with the philosophical tradition of Avicenna.
+          </p>
 
-        <p>
-          Al-Razi did not treat theology and philosophy as completely isolated
-          disciplines. He incorporated philosophical distinctions, logical
-          methods, and technical forms of argument into theological discussion,
-          while also challenging philosophical conclusions that he regarded as
-          insufficiently demonstrated. This helped produce a more
-          philosophically sophisticated form of kalam, often associated by
-          modern scholars with the development of
-          <strong>later kalam</strong>.
-        </p>
+          <p>
+            Al-Razi did not treat theology and philosophy as completely isolated
+            disciplines. He incorporated philosophical distinctions, logical
+            methods, and technical forms of argument into theological
+            discussion, while also challenging philosophical conclusions that he
+            regarded as insufficiently demonstrated. This helped produce a more
+            philosophically sophisticated form of kalam, often associated by
+            modern scholars with the development of
+            <strong>later kalam</strong>.
+          </p>
 
-        <p>
-          His theological works examine questions concerning God's existence and
-          attributes, creation, causation, prophecy, the human soul, knowledge,
-          and the physical structure of the world. Al-Razi frequently presented
-          multiple competing arguments before examining their strengths and
-          weaknesses, which means that his writings cannot always be reduced to
-          a single simple doctrinal position.
-        </p>
+          <p>
+            His theological works examine questions concerning God's existence
+            and attributes, creation, causation, prophecy, the human soul,
+            knowledge, and the physical structure of the world. Al-Razi
+            frequently presented multiple competing arguments before examining
+            their strengths and weaknesses, which means that his writings cannot
+            always be reduced to a single simple doctrinal position.
+          </p>
 
-        <p>
-          The long-term importance of Al-Razi lies partly in this transformation
-          of theological method. After him, later Islamic theologians
-          increasingly worked with philosophical vocabulary and argumentative
-          techniques that had previously been associated primarily with
-          <strong>falsafa</strong>. His writings therefore became a major
-          meeting point between Ash'ari theology and the philosophical
-          traditions inherited from Aristotle and Avicenna.
-        </p>
-      </section>
+          <p>
+            The long-term importance of Al-Razi lies partly in this
+            transformation of theological method. After him, later Islamic
+            theologians increasingly worked with philosophical vocabulary and
+            argumentative techniques that had previously been associated
+            primarily with
+            <strong>falsafa</strong>. His writings therefore became a major
+            meeting point between Ash'ari theology and the philosophical
+            traditions inherited from Aristotle and Avicenna.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      CRITIQUE OF AVICENNA 
      ===================================================== -->
 
-      <section class="narrative-block" id="critique-of-avicenna">
-        <h2>Al-Razi's Critique of Avicenna</h2>
+        <section class="narrative-block" id="critique-of-avicenna">
+          <h2>Al-Razi's Critique of Avicenna</h2>
 
-        <p>
-          One of Al-Razi's most important philosophical activities was his
-          sustained engagement with the thought of <strong>Avicenna</strong>. He
-          wrote an influential commentary on Avicenna's
-          <em>Remarks and Admonitions</em> (<em>al-Isharat wa al-Tanbihat</em>),
-          one of the great philosophical texts of the Islamic intellectual
-          tradition. His engagement with Avicenna was unusually detailed and
-          helped make Avicennan philosophy the subject of a new generation of
-          critical philosophical debate.
-        </p>
+          <p>
+            One of Al-Razi's most important philosophical activities was his
+            sustained engagement with the thought of <strong>Avicenna</strong>.
+            He wrote an influential commentary on Avicenna's
+            <em>Remarks and Admonitions</em> (<em>al-Isharat wa al-Tanbihat</em
+            >), one of the great philosophical texts of the Islamic intellectual
+            tradition. His engagement with Avicenna was unusually detailed and
+            helped make Avicennan philosophy the subject of a new generation of
+            critical philosophical debate.
+          </p>
 
-        <p>
-          Al-Razi did not simply reject Avicenna from the standpoint of
-          theology. Instead, he often examined Avicennan arguments on their own
-          philosophical terms. His writings raise objections concerning
-          metaphysics, the possibility of real definitions, the distinction
-          between essence and existence, the principles of natural philosophy,
-          the nature and unity of the human soul, and other central elements of
-          the Avicennan system.
-        </p>
+          <p>
+            Al-Razi did not simply reject Avicenna from the standpoint of
+            theology. Instead, he often examined Avicennan arguments on their
+            own philosophical terms. His writings raise objections concerning
+            metaphysics, the possibility of real definitions, the distinction
+            between essence and existence, the principles of natural philosophy,
+            the nature and unity of the human soul, and other central elements
+            of the Avicennan system.
+          </p>
 
-        <p>
-          This critical method is one reason why Al-Razi occupies such an
-          important place in the history of post-classical Islamic philosophy.
-          He treated Avicenna as an intellectual opponent whose arguments
-          required serious and technical answers rather than rhetorical
-          dismissal. At the same time, his enormous corpus contains substantial
-          engagement with Avicennan concepts, and his own positions sometimes
-          developed over the course of his career.
-        </p>
+          <p>
+            This critical method is one reason why Al-Razi occupies such an
+            important place in the history of post-classical Islamic philosophy.
+            He treated Avicenna as an intellectual opponent whose arguments
+            required serious and technical answers rather than rhetorical
+            dismissal. At the same time, his enormous corpus contains
+            substantial engagement with Avicennan concepts, and his own
+            positions sometimes developed over the course of his career.
+          </p>
 
-        <p>
-          Al-Razi's relationship to Avicenna should therefore not be described
-          simply as rejection or acceptance. His philosophical career helped
-          transform the Avicennan tradition by forcing later thinkers to
-          confront objections that were formulated from within the highly
-          technical language of philosophy itself. Later commentators, including
-          Nasir al-Din al-Tusi, would continue this debate and respond directly
-          to Al-Razi's criticisms.
-        </p>
-      </section>
+          <p>
+            Al-Razi's relationship to Avicenna should therefore not be described
+            simply as rejection or acceptance. His philosophical career helped
+            transform the Avicennan tradition by forcing later thinkers to
+            confront objections that were formulated from within the highly
+            technical language of philosophy itself. Later commentators,
+            including Nasir al-Din al-Tusi, would continue this debate and
+            respond directly to Al-Razi's criticisms.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      PROOFS FOR THE EXISTENCE OF GOD 
      ===================================================== -->
 
-      <section class="narrative-block" id="proofs-for-god">
-        <h2>Al-Razi's Arguments for the Existence of God</h2>
+        <section class="narrative-block" id="proofs-for-god">
+          <h2>Al-Razi's Arguments for the Existence of God</h2>
 
-        <p>
-          Al-Razi devoted extensive attention to arguments concerning the
-          existence of God. He inherited both the philosophical tradition of
-          Avicenna and the theological arguments developed within kalam, and his
-          writings frequently compare different methods rather than presenting
-          only one unquestioned proof as sufficient for every philosophical
-          purpose.
-        </p>
+          <p>
+            Al-Razi devoted extensive attention to arguments concerning the
+            existence of God. He inherited both the philosophical tradition of
+            Avicenna and the theological arguments developed within kalam, and
+            his writings frequently compare different methods rather than
+            presenting only one unquestioned proof as sufficient for every
+            philosophical purpose.
+          </p>
 
-        <p>
-          A central philosophical argument available to Al-Razi was Avicenna's
-          analysis of <strong>necessary and contingent existence</strong>.
-          According to this general framework, contingent beings do not contain
-          within themselves the complete explanation of their existence and
-          therefore depend ultimately upon a being whose existence is necessary
-          rather than contingent. Al-Razi examined this tradition closely while
-          raising objections to aspects of Avicennan metaphysics.
-        </p>
+          <p>
+            A central philosophical argument available to Al-Razi was Avicenna's
+            analysis of <strong>necessary and contingent existence</strong>.
+            According to this general framework, contingent beings do not
+            contain within themselves the complete explanation of their
+            existence and therefore depend ultimately upon a being whose
+            existence is necessary rather than contingent. Al-Razi examined this
+            tradition closely while raising objections to aspects of Avicennan
+            metaphysics.
+          </p>
 
-        <p>
-          He also considered arguments associated with kalam, particularly
-          arguments based on the dependence or created character of the world
-          and the need for an explanatory cause beyond contingent physical
-          reality. Discussions of infinite causal regress, temporal beginning,
-          motion, and the composition of bodies all formed part of the broader
-          medieval debate about how philosophical reasoning could establish the
-          existence of a Creator.
-        </p>
+          <p>
+            He also considered arguments associated with kalam, particularly
+            arguments based on the dependence or created character of the world
+            and the need for an explanatory cause beyond contingent physical
+            reality. Discussions of infinite causal regress, temporal beginning,
+            motion, and the composition of bodies all formed part of the broader
+            medieval debate about how philosophical reasoning could establish
+            the existence of a Creator.
+          </p>
 
-        <p>
-          Al-Razi's importance in this field lies less in the invention of a
-          single universally named proof than in his comparative and critical
-          treatment of several competing arguments. His discussions became an
-          important resource for later theologians and philosophers seeking to
-          determine which forms of reasoning could provide the strongest
-          demonstration of God's existence.
-        </p>
-      </section>
+          <p>
+            Al-Razi's importance in this field lies less in the invention of a
+            single universally named proof than in his comparative and critical
+            treatment of several competing arguments. His discussions became an
+            important resource for later theologians and philosophers seeking to
+            determine which forms of reasoning could provide the strongest
+            demonstration of God's existence.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      ATOMISM 
      ===================================================== -->
 
-      <section class="narrative-block" id="atomism">
-        <figure class="narrative-figure left">
-          <img
-            src="images/democritus-atoms.jpg"
-            alt="Conceptual illustration of atomism in medieval Islamic theology and philosophy"
-            loading="lazy"
-            decoding="async"
-          />
+        <section class="narrative-block" id="atomism">
+          <figure class="narrative-figure left">
+            <img
+              src="images/democritus-atoms.jpg"
+              alt="Conceptual illustration of atomism in medieval Islamic theology and philosophy"
+              loading="lazy"
+              decoding="async"
+            />
 
-          <figcaption>
-            Al-Razi engaged closely with debates over atomism, continuity, and
-            the physical structure of the world.
-          </figcaption>
-        </figure>
+            <figcaption>
+              Al-Razi engaged closely with debates over atomism, continuity, and
+              the physical structure of the world.
+            </figcaption>
+          </figure>
 
-        <h2>Al-Razi's Philosophy of Atomism</h2>
+          <h2>Al-Razi's Philosophy of Atomism</h2>
 
-        <p>
-          Atomism was an important subject within medieval
-          <strong>kalam</strong>. Many theologians defended the view that
-          physical bodies are ultimately composed of indivisible units or atoms
-          together with changing properties often described as accidents. This
-          account differed sharply from the Aristotelian and Avicennan
-          understanding of bodies in terms of matter, form, continuity, and
-          potentially infinite divisibility.
-        </p>
+          <p>
+            Atomism was an important subject within medieval
+            <strong>kalam</strong>. Many theologians defended the view that
+            physical bodies are ultimately composed of indivisible units or
+            atoms together with changing properties often described as
+            accidents. This account differed sharply from the Aristotelian and
+            Avicennan understanding of bodies in terms of matter, form,
+            continuity, and potentially infinite divisibility.
+          </p>
 
-        <p>
-          Al-Razi examined these competing theories in considerable technical
-          detail. He engaged with Avicenna's criticisms of kalam atomism and
-          considered questions concerning magnitude, divisibility, motion,
-          continuity, and the actual structure of physical bodies. His work
-          therefore belongs to a major medieval debate about whether
-          mathematical continuity accurately represents the structure of
-          reality.
-        </p>
+          <p>
+            Al-Razi examined these competing theories in considerable technical
+            detail. He engaged with Avicenna's criticisms of kalam atomism and
+            considered questions concerning magnitude, divisibility, motion,
+            continuity, and the actual structure of physical bodies. His work
+            therefore belongs to a major medieval debate about whether
+            mathematical continuity accurately represents the structure of
+            reality.
+          </p>
 
-        <p>
-          His position also appears to have developed across his writings.
-          Modern scholarship has emphasized that Al-Razi's views cannot always
-          be represented by a single unchanging doctrine, and his later works
-          show stronger engagement with physical atomism and arguments
-          concerning limits to divisibility. This makes his treatment more
-          complex than a simple repetition of earlier Ash'ari positions.
-        </p>
+          <p>
+            His position also appears to have developed across his writings.
+            Modern scholarship has emphasized that Al-Razi's views cannot always
+            be represented by a single unchanging doctrine, and his later works
+            show stronger engagement with physical atomism and arguments
+            concerning limits to divisibility. This makes his treatment more
+            complex than a simple repetition of earlier Ash'ari positions.
+          </p>
 
-        <p>
-          Al-Razi's discussions of atomism are historically important because
-          they helped transmit and transform debates between
-          <strong>kalam</strong> and <strong>falsafa</strong>. They show him
-          working at the boundary between theological conceptions of creation
-          and sophisticated philosophical questions concerning mathematics,
-          physical extension, and the nature of material reality.
-        </p>
-      </section>
+          <p>
+            Al-Razi's discussions of atomism are historically important because
+            they helped transmit and transform debates between
+            <strong>kalam</strong> and <strong>falsafa</strong>. They show him
+            working at the boundary between theological conceptions of creation
+            and sophisticated philosophical questions concerning mathematics,
+            physical extension, and the nature of material reality.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      TAFSIR AL-KABIR 
      ===================================================== -->
 
-      <section class="narrative-block" id="tafsir-al-kabir">
-        <h2>Al-Razi's Tafsir al-Kabir (Mafatih al-Ghayb)</h2>
+        <section class="narrative-block" id="tafsir-al-kabir">
+          <h2>Al-Razi's Tafsir al-Kabir (Mafatih al-Ghayb)</h2>
 
-        <p>
-          Al-Razi's most famous work is his monumental Quranic commentary,
-          <strong><em>Mafatih al-Ghayb</em></strong
-          >, usually translated as <em>Keys to the Unseen</em>. It later became
-          widely known as the <strong><em>Tafsir al-Kabir</em></strong
-          >, or <em>The Great Commentary</em>. Its extraordinary size and
-          intellectual range made it one of the most important works of Quranic
-          interpretation in the Islamic tradition.
-        </p>
+          <p>
+            Al-Razi's most famous work is his monumental Quranic commentary,
+            <strong><em>Mafatih al-Ghayb</em></strong
+            >, usually translated as <em>Keys to the Unseen</em>. It later
+            became widely known as the <strong><em>Tafsir al-Kabir</em></strong
+            >, or <em>The Great Commentary</em>. Its extraordinary size and
+            intellectual range made it one of the most important works of
+            Quranic interpretation in the Islamic tradition.
+          </p>
 
-        <p>
-          The commentary is remarkable for the range of questions it
-          incorporates into the interpretation of Quranic passages. Al-Razi
-          discusses theology, metaphysics, logic, natural philosophy, cosmology,
-          ethics, language, and legal questions alongside more conventional
-          forms of Quranic exegesis. Individual verses often become starting
-          points for extended philosophical and theological investigations.
-        </p>
+          <p>
+            The commentary is remarkable for the range of questions it
+            incorporates into the interpretation of Quranic passages. Al-Razi
+            discusses theology, metaphysics, logic, natural philosophy,
+            cosmology, ethics, language, and legal questions alongside more
+            conventional forms of Quranic exegesis. Individual verses often
+            become starting points for extended philosophical and theological
+            investigations.
+          </p>
 
-        <p>
-          This does not mean that Al-Razi abandoned the traditional concerns of
-          exegesis. Linguistic interpretation, theological tradition, and the
-          relationship between verses remain important throughout the work. What
-          makes his commentary distinctive is the way these concerns are
-          combined with the intellectual debates of his own age, producing an
-          encyclopedic form of scriptural interpretation.
-        </p>
+          <p>
+            This does not mean that Al-Razi abandoned the traditional concerns
+            of exegesis. Linguistic interpretation, theological tradition, and
+            the relationship between verses remain important throughout the
+            work. What makes his commentary distinctive is the way these
+            concerns are combined with the intellectual debates of his own age,
+            producing an encyclopedic form of scriptural interpretation.
+          </p>
 
-        <p>
-          <em>Mafatih al-Ghayb</em> became enormously influential and was
-          studied by later scholars across different regions of the Islamic
-          world. It remains essential for understanding how philosophy and
-          rational theology could be incorporated into Quranic commentary and
-          demonstrates the unusually broad intellectual range of Al-Razi's
-          scholarship.
-        </p>
-      </section>
+          <p>
+            <em>Mafatih al-Ghayb</em> became enormously influential and was
+            studied by later scholars across different regions of the Islamic
+            world. It remains essential for understanding how philosophy and
+            rational theology could be incorporated into Quranic commentary and
+            demonstrates the unusually broad intellectual range of Al-Razi's
+            scholarship.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      LOGIC AND EPISTEMOLOGY 
      ===================================================== -->
 
-      <section class="narrative-block" id="logic-and-epistemology">
-        <h2>Al-Razi's Logic and Epistemology</h2>
+        <section class="narrative-block" id="logic-and-epistemology">
+          <h2>Al-Razi's Logic and Epistemology</h2>
 
-        <p>
-          Logic played a central role in Al-Razi's intellectual method. Like
-          many post-Avicennan thinkers, he treated logical analysis as an
-          essential tool for testing arguments in philosophy and theology. Yet
-          he was not satisfied simply to repeat the inherited Aristotelian and
-          Avicennan tradition, and his writings contain important criticisms
-          concerning definition, conceptual knowledge, and the conditions
-          required for genuine demonstration.
-        </p>
+          <p>
+            Logic played a central role in Al-Razi's intellectual method. Like
+            many post-Avicennan thinkers, he treated logical analysis as an
+            essential tool for testing arguments in philosophy and theology. Yet
+            he was not satisfied simply to repeat the inherited Aristotelian and
+            Avicennan tradition, and his writings contain important criticisms
+            concerning definition, conceptual knowledge, and the conditions
+            required for genuine demonstration.
+          </p>
 
-        <p>
-          One of his significant philosophical concerns was the problem of
-          <strong>real definitions</strong>. Al-Razi questioned whether human
-          beings can always grasp the essential nature of things through the
-          kinds of definitions demanded by traditional Aristotelian logic. This
-          criticism raised wider epistemological questions about the limits of
-          conceptual analysis and the relationship between words, concepts, and
-          reality.
-        </p>
+          <p>
+            One of his significant philosophical concerns was the problem of
+            <strong>real definitions</strong>. Al-Razi questioned whether human
+            beings can always grasp the essential nature of things through the
+            kinds of definitions demanded by traditional Aristotelian logic.
+            This criticism raised wider epistemological questions about the
+            limits of conceptual analysis and the relationship between words,
+            concepts, and reality.
+          </p>
 
-        <p>
-          His epistemological discussions also reflect a broader intellectual
-          habit: he frequently presents several possible arguments, objections,
-          and replies before reaching a conclusion—or, in some cases, leaving
-          the question open. This method can make his writings demanding, but it
-          also reveals his commitment to examining the strength of an argument
-          rather than merely defending inherited authority.
-        </p>
+          <p>
+            His epistemological discussions also reflect a broader intellectual
+            habit: he frequently presents several possible arguments,
+            objections, and replies before reaching a conclusion—or, in some
+            cases, leaving the question open. This method can make his writings
+            demanding, but it also reveals his commitment to examining the
+            strength of an argument rather than merely defending inherited
+            authority.
+          </p>
 
-        <p>
-          Al-Razi's influence on later logic and epistemology was therefore
-          closely connected with his critical method. He helped establish an
-          intellectual environment in which Avicennan logical concepts continued
-          to dominate scholarly debate while also becoming subjects of
-          increasingly sophisticated criticism and revision.
-        </p>
-      </section>
+          <p>
+            Al-Razi's influence on later logic and epistemology was therefore
+            closely connected with his critical method. He helped establish an
+            intellectual environment in which Avicennan logical concepts
+            continued to dominate scholarly debate while also becoming subjects
+            of increasingly sophisticated criticism and revision.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      PHILOSOPHY OF ETHICS 
      ===================================================== -->
 
-      <section class="narrative-block" id="ethics">
-        <h2>Al-Razi's Philosophy of Ethics and Human Nature</h2>
+        <section class="narrative-block" id="ethics">
+          <h2>Al-Razi's Philosophy of Ethics and Human Nature</h2>
 
-        <p>
-          Al-Razi did not construct a single ethical system comparable in form
-          to Aristotle's <em>Nicomachean Ethics</em> or Miskawayh's
-          <em>Tahdhib al-Akhlaq</em>. Nevertheless, ethical questions appear
-          throughout his philosophical, theological, and exegetical writings,
-          particularly in his discussions of human action, moral responsibility,
-          happiness, suffering, divine justice, and the foundations of ethical
-          norms.
-        </p>
+          <p>
+            Al-Razi did not construct a single ethical system comparable in form
+            to Aristotle's <em>Nicomachean Ethics</em> or Miskawayh's
+            <em>Tahdhib al-Akhlaq</em>. Nevertheless, ethical questions appear
+            throughout his philosophical, theological, and exegetical writings,
+            particularly in his discussions of human action, moral
+            responsibility, happiness, suffering, divine justice, and the
+            foundations of ethical norms.
+          </p>
 
-        <p>
-          One of the major questions connected with his ethical thought concerns
-          the source of moral value. Medieval Islamic theologians and
-          philosophers debated whether reason could independently know that
-          actions were good or bad, or whether moral obligation depended
-          fundamentally upon divine command. Al-Razi engaged with these debates
-          while also examining philosophical arguments concerning human nature
-          and rational judgment.
-        </p>
+          <p>
+            One of the major questions connected with his ethical thought
+            concerns the source of moral value. Medieval Islamic theologians and
+            philosophers debated whether reason could independently know that
+            actions were good or bad, or whether moral obligation depended
+            fundamentally upon divine command. Al-Razi engaged with these
+            debates while also examining philosophical arguments concerning
+            human nature and rational judgment.
+          </p>
 
-        <p>
-          Questions concerning human freedom were equally important. As an
-          Ash'ari theologian, Al-Razi worked within a tradition strongly
-          concerned with the relationship between divine omnipotence and human
-          responsibility. His discussions explore how human actions can be
-          attributed to individuals while remaining within a world understood as
-          dependent upon divine power and causation.
-        </p>
+          <p>
+            Questions concerning human freedom were equally important. As an
+            Ash'ari theologian, Al-Razi worked within a tradition strongly
+            concerned with the relationship between divine omnipotence and human
+            responsibility. His discussions explore how human actions can be
+            attributed to individuals while remaining within a world understood
+            as dependent upon divine power and causation.
+          </p>
 
-        <p>
-          Al-Razi's ethical thought is therefore best understood as distributed
-          throughout a larger intellectual project rather than confined to one
-          independent ethical treatise. His writings connect morality with
-          metaphysics, theology, psychology, and Quranic interpretation,
-          reflecting the integrated character of medieval Islamic philosophy and
-          theology.
-        </p>
-      </section>
+          <p>
+            Al-Razi's ethical thought is therefore best understood as
+            distributed throughout a larger intellectual project rather than
+            confined to one independent ethical treatise. His writings connect
+            morality with metaphysics, theology, psychology, and Quranic
+            interpretation, reflecting the integrated character of medieval
+            Islamic philosophy and theology.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      MAJOR WORKS 
      ===================================================== -->
 
-      <section class="narrative-block" id="works">
-        <h2>Major Works of Fakhr al-Din al-Razi</h2>
+        <section class="narrative-block" id="works">
+          <h2>Major Works of Fakhr al-Din al-Razi</h2>
 
-        <p>
-          Al-Razi was an exceptionally prolific author. His works range across
-          theology, philosophy, logic, Islamic law, Quranic interpretation,
-          natural philosophy, and other disciplines, although the enormous size
-          of his corpus and the history of manuscript transmission make the
-          precise classification and chronology of some works a subject of
-          scholarly research.
-        </p>
+          <p>
+            Al-Razi was an exceptionally prolific author. His works range across
+            theology, philosophy, logic, Islamic law, Quranic interpretation,
+            natural philosophy, and other disciplines, although the enormous
+            size of his corpus and the history of manuscript transmission make
+            the precise classification and chronology of some works a subject of
+            scholarly research.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong> <em>Mafatih al-Ghayb</em> (Tafsir al-Kabir) </strong>
-            — Al-Razi's monumental Quranic commentary, integrating exegesis with
-            theology, philosophy, natural inquiry, language, and other
-            intellectual disciplines.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong> <em>Mafatih al-Ghayb</em> (Tafsir al-Kabir) </strong>
+              — Al-Razi's monumental Quranic commentary, integrating exegesis
+              with theology, philosophy, natural inquiry, language, and other
+              intellectual disciplines.
+            </li>
 
-          <li>
-            <strong>
-              Commentary on Avicenna's <em>Remarks and Admonitions</em> (<em
-                >Sharh al-Isharat wa al-Tanbihat</em
-              >)
-            </strong>
-            — A major and highly influential critical engagement with Avicenna's
-            philosophical arguments.
-          </li>
+            <li>
+              <strong>
+                Commentary on Avicenna's <em>Remarks and Admonitions</em> (<em
+                  >Sharh al-Isharat wa al-Tanbihat</em
+                >)
+              </strong>
+              — A major and highly influential critical engagement with
+              Avicenna's philosophical arguments.
+            </li>
 
-          <li>
-            <strong>
-              <em>al-Mabahith al-Mashriqiyya</em> ("Eastern Investigations")
-            </strong>
-            — An extensive philosophical work addressing questions in
-            metaphysics and natural philosophy.
-          </li>
+            <li>
+              <strong>
+                <em>al-Mabahith al-Mashriqiyya</em> ("Eastern Investigations")
+              </strong>
+              — An extensive philosophical work addressing questions in
+              metaphysics and natural philosophy.
+            </li>
 
-          <li>
-            <strong>
-              <em>al-Muhassal</em>
-            </strong>
-            — A systematic work surveying important theological and
-            philosophical positions and arguments.
-          </li>
+            <li>
+              <strong>
+                <em>al-Muhassal</em>
+              </strong>
+              — A systematic work surveying important theological and
+              philosophical positions and arguments.
+            </li>
 
-          <li>
-            <strong>
-              <em>al-Mahsul</em>
-            </strong>
-            — A major contribution to the principles and methodology of Islamic
-            jurisprudence (<em>usul al-fiqh</em>).
-          </li>
+            <li>
+              <strong>
+                <em>al-Mahsul</em>
+              </strong>
+              — A major contribution to the principles and methodology of
+              Islamic jurisprudence (<em>usul al-fiqh</em>).
+            </li>
 
-          <li>
-            <strong>
-              <em>al-Arba'in fi Usul al-Din</em> ("Forty Issues in Theology")
-            </strong>
-            — A substantial theological work examining central questions
-            concerning God, theology, and religious doctrine.
-          </li>
+            <li>
+              <strong>
+                <em>al-Arba'in fi Usul al-Din</em> ("Forty Issues in Theology")
+              </strong>
+              — A substantial theological work examining central questions
+              concerning God, theology, and religious doctrine.
+            </li>
 
-          <li>
-            <strong>
-              <em>Asas al-Taqdis</em>
-            </strong>
-            — An important theological work associated with debates concerning
-            the divine attributes and the interpretation of anthropomorphic
-            language.
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>
+                <em>Asas al-Taqdis</em>
+              </strong>
+              — An important theological work associated with debates concerning
+              the divine attributes and the interpretation of anthropomorphic
+              language.
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      MAIN IDEAS 
      ===================================================== -->
 
-      <section class="narrative-block" id="key-ideas">
-        <h2>Fakhr al-Din al-Razi's Main Philosophical Ideas</h2>
+        <section class="narrative-block" id="key-ideas">
+          <h2>Fakhr al-Din al-Razi's Main Philosophical Ideas</h2>
 
-        <h3>1. Rigorous Testing of Philosophical Claims</h3>
+          <h3>1. Rigorous Testing of Philosophical Claims</h3>
 
-        <p>
-          Al-Razi subjected even highly authoritative philosophical arguments,
-          especially those associated with Avicenna, to detailed critical
-          examination. His method frequently involved presenting an argument,
-          raising objections, considering possible replies, and testing whether
-          the conclusion genuinely followed from its premises.
-        </p>
+          <p>
+            Al-Razi subjected even highly authoritative philosophical arguments,
+            especially those associated with Avicenna, to detailed critical
+            examination. His method frequently involved presenting an argument,
+            raising objections, considering possible replies, and testing
+            whether the conclusion genuinely followed from its premises.
+          </p>
 
-        <h3>2. The Meeting of Kalam and Falsafa</h3>
+          <h3>2. The Meeting of Kalam and Falsafa</h3>
 
-        <p>
-          Al-Razi helped bring rational theology and philosophical argument into
-          increasingly close contact. He used philosophical concepts within
-          kalam while also challenging philosophical doctrines through
-          theological and logical criticism, helping shape the intellectual
-          style of later Islamic thought.
-        </p>
+          <p>
+            Al-Razi helped bring rational theology and philosophical argument
+            into increasingly close contact. He used philosophical concepts
+            within kalam while also challenging philosophical doctrines through
+            theological and logical criticism, helping shape the intellectual
+            style of later Islamic thought.
+          </p>
 
-        <h3>3. The Limits of Definition and Conceptual Knowledge</h3>
+          <h3>3. The Limits of Definition and Conceptual Knowledge</h3>
 
-        <p>
-          A distinctive part of Al-Razi's philosophical criticism concerns the
-          possibility of defining things by their essential nature. His doubts
-          about traditional theories of definition raised broader questions
-          about how far conceptual analysis can provide certain knowledge of
-          reality.
-        </p>
+          <p>
+            A distinctive part of Al-Razi's philosophical criticism concerns the
+            possibility of defining things by their essential nature. His doubts
+            about traditional theories of definition raised broader questions
+            about how far conceptual analysis can provide certain knowledge of
+            reality.
+          </p>
 
-        <h3>4. Competing Arguments for God's Existence</h3>
+          <h3>4. Competing Arguments for God's Existence</h3>
 
-        <p>
-          Al-Razi compared philosophical and theological approaches to
-          demonstrating God's existence. Rather than relying exclusively on one
-          method, he examined arguments based on contingency, causation,
-          creation, the structure of the world, and the dependence of contingent
-          beings.
-        </p>
+          <p>
+            Al-Razi compared philosophical and theological approaches to
+            demonstrating God's existence. Rather than relying exclusively on
+            one method, he examined arguments based on contingency, causation,
+            creation, the structure of the world, and the dependence of
+            contingent beings.
+          </p>
 
-        <h3>5. Critical Engagement with Atomism and Physics</h3>
+          <h3>5. Critical Engagement with Atomism and Physics</h3>
 
-        <p>
-          Al-Razi investigated competing accounts of physical reality, including
-          atomism and Aristotelian theories of matter and form. His discussions
-          of divisibility and continuity illustrate his willingness to connect
-          theological questions with technical problems in mathematics and
-          natural philosophy.
-        </p>
+          <p>
+            Al-Razi investigated competing accounts of physical reality,
+            including atomism and Aristotelian theories of matter and form. His
+            discussions of divisibility and continuity illustrate his
+            willingness to connect theological questions with technical problems
+            in mathematics and natural philosophy.
+          </p>
 
-        <h3>6. Philosophy Within Quranic Interpretation</h3>
+          <h3>6. Philosophy Within Quranic Interpretation</h3>
 
-        <p>
-          Through <em>Mafatih al-Ghayb</em>, Al-Razi demonstrated how
-          philosophical and theological debate could become part of Quranic
-          exegesis. His commentary treats scripture not only as a religious text
-          to be explained, but also as a starting point for broad intellectual
-          investigation.
-        </p>
-      </section>
+          <p>
+            Through <em>Mafatih al-Ghayb</em>, Al-Razi demonstrated how
+            philosophical and theological debate could become part of Quranic
+            exegesis. His commentary treats scripture not only as a religious
+            text to be explained, but also as a starting point for broad
+            intellectual investigation.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      LATE-LIFE DOUBT 
      ===================================================== -->
 
-      <section class="narrative-block" id="late-life-doubt">
-        <h2>Al-Razi's Late-Life Doubt and Intellectual Humility</h2>
+        <section class="narrative-block" id="late-life-doubt">
+          <h2>Al-Razi's Late-Life Doubt and Intellectual Humility</h2>
 
-        <p>
-          Al-Razi is traditionally associated with passages expressing deep
-          intellectual frustration about the limits of speculative reasoning.
-          Later readers have often connected these statements with the idea
-          that, near the end of his life, he became increasingly aware of the
-          difficulty of reaching complete certainty through philosophical and
-          theological argument alone.
-        </p>
+          <p>
+            Al-Razi is traditionally associated with passages expressing deep
+            intellectual frustration about the limits of speculative reasoning.
+            Later readers have often connected these statements with the idea
+            that, near the end of his life, he became increasingly aware of the
+            difficulty of reaching complete certainty through philosophical and
+            theological argument alone.
+          </p>
 
-        <p>
-          One famous sentiment attributed to him expresses disappointment with
-          the results of extensive intellectual investigation and is often
-          translated in ways suggesting that the efforts of great thinkers had
-          led largely to perplexity or uncertainty. Such passages became
-          important in later discussions of Al-Razi's intellectual development
-          and his attitude toward philosophical speculation.
-        </p>
+          <p>
+            One famous sentiment attributed to him expresses disappointment with
+            the results of extensive intellectual investigation and is often
+            translated in ways suggesting that the efforts of great thinkers had
+            led largely to perplexity or uncertainty. Such passages became
+            important in later discussions of Al-Razi's intellectual development
+            and his attitude toward philosophical speculation.
+          </p>
 
-        <p>
-          These statements should, however, be interpreted cautiously. Medieval
-          biographical reports and later quotations do not automatically provide
-          a simple account of a final conversion away from philosophy or a
-          complete rejection of rational inquiry. Al-Razi continued to be
-          remembered precisely as one of the most technically sophisticated
-          philosophical theologians of his age.
-        </p>
+          <p>
+            These statements should, however, be interpreted cautiously.
+            Medieval biographical reports and later quotations do not
+            automatically provide a simple account of a final conversion away
+            from philosophy or a complete rejection of rational inquiry. Al-Razi
+            continued to be remembered precisely as one of the most technically
+            sophisticated philosophical theologians of his age.
+          </p>
 
-        <p>
-          The most defensible interpretation is therefore one of
-          <strong>intellectual humility</strong> rather than a simple
-          abandonment of philosophy. Throughout his writings, Al-Razi repeatedly
-          exposes weaknesses in arguments that others considered decisive, and
-          his awareness of the limits of human certainty forms part of the same
-          critical intellectual temperament that made his work so influential.
-        </p>
-      </section>
+          <p>
+            The most defensible interpretation is therefore one of
+            <strong>intellectual humility</strong> rather than a simple
+            abandonment of philosophy. Throughout his writings, Al-Razi
+            repeatedly exposes weaknesses in arguments that others considered
+            decisive, and his awareness of the limits of human certainty forms
+            part of the same critical intellectual temperament that made his
+            work so influential.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      AL-RAZI AND AL-GHAZALI 
      ===================================================== -->
 
-      <section class="narrative-block" id="al-razi-al-ghazali">
-        <h2>Al-Razi and Al-Ghazali: Two Approaches to Critiquing Philosophy</h2>
+        <section class="narrative-block" id="al-razi-al-ghazali">
+          <h2>
+            Al-Razi and Al-Ghazali: Two Approaches to Critiquing Philosophy
+          </h2>
 
-        <p>
-          <strong>Al-Razi and Al-Ghazali</strong> were both major Sunni
-          theologians who engaged critically with philosophical traditions,
-          especially the philosophical legacy associated with Avicenna. Both
-          questioned whether particular metaphysical claims had been
-          successfully demonstrated and both considered the relationship between
-          philosophical reasoning and religious doctrine to be a central
-          intellectual problem.
-        </p>
+          <p>
+            <strong>Al-Razi and Al-Ghazali</strong> were both major Sunni
+            theologians who engaged critically with philosophical traditions,
+            especially the philosophical legacy associated with Avicenna. Both
+            questioned whether particular metaphysical claims had been
+            successfully demonstrated and both considered the relationship
+            between philosophical reasoning and religious doctrine to be a
+            central intellectual problem.
+          </p>
 
-        <p>
-          Their methods, however, should not be reduced to a simple opposition
-          between rejection and acceptance. Al-Ghazali's
-          <em>Incoherence of the Philosophers</em>
-          is a sustained philosophical critique that often uses the conceptual
-          tools of the philosophers against their own conclusions. Al-Razi
-          inherited a later intellectual environment in which Avicennan
-          philosophy had become even more deeply integrated into scholarly
-          debate.
-        </p>
+          <p>
+            Their methods, however, should not be reduced to a simple opposition
+            between rejection and acceptance. Al-Ghazali's
+            <em>Incoherence of the Philosophers</em>
+            is a sustained philosophical critique that often uses the conceptual
+            tools of the philosophers against their own conclusions. Al-Razi
+            inherited a later intellectual environment in which Avicennan
+            philosophy had become even more deeply integrated into scholarly
+            debate.
+          </p>
 
-        <p>
-          Al-Razi therefore engaged with Avicenna at an exceptionally technical
-          level, particularly through detailed commentaries and philosophical
-          summae. He examined individual arguments concerning metaphysics,
-          psychology, physics, logic, and epistemology rather than limiting his
-          attention to a small number of famous theological controversies.
-        </p>
+          <p>
+            Al-Razi therefore engaged with Avicenna at an exceptionally
+            technical level, particularly through detailed commentaries and
+            philosophical summae. He examined individual arguments concerning
+            metaphysics, psychology, physics, logic, and epistemology rather
+            than limiting his attention to a small number of famous theological
+            controversies.
+          </p>
 
-        <p>
-          The difference between the two thinkers is consequently best
-          understood as partly historical and methodological. Al-Ghazali was
-          crucial in reshaping the debate over philosophy, while Al-Razi became
-          one of the major figures who developed the intensely philosophical
-          form of kalam characteristic of later medieval Islamic intellectual
-          life.
-        </p>
-      </section>
+          <p>
+            The difference between the two thinkers is consequently best
+            understood as partly historical and methodological. Al-Ghazali was
+            crucial in reshaping the debate over philosophy, while Al-Razi
+            became one of the major figures who developed the intensely
+            philosophical form of kalam characteristic of later medieval Islamic
+            intellectual life.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      LEGACY 
      ===================================================== -->
 
-      <section class="narrative-block" id="legacy">
-        <h2>Al-Razi's Influence and Legacy</h2>
+        <section class="narrative-block" id="legacy">
+          <h2>Al-Razi's Influence and Legacy</h2>
 
-        <p>
-          Al-Razi's influence on later Islamic theology and philosophy was
-          immense. His writings became major reference points for scholars
-          working in the intellectual traditions that developed after the
-          classical age of Avicenna. His combination of philosophical
-          sophistication, theological argument, and critical analysis helped
-          define important features of post-classical Islamic thought.
-        </p>
+          <p>
+            Al-Razi's influence on later Islamic theology and philosophy was
+            immense. His writings became major reference points for scholars
+            working in the intellectual traditions that developed after the
+            classical age of Avicenna. His combination of philosophical
+            sophistication, theological argument, and critical analysis helped
+            define important features of post-classical Islamic thought.
+          </p>
 
-        <p>
-          His engagement with Avicenna was especially consequential. Later
-          thinkers did not simply inherit Avicennan philosophy unchanged; they
-          also inherited the objections raised by Al-Razi. Philosophers such as
-          Nasir al-Din al-Tusi responded to his criticisms, ensuring that the
-          debate between Avicennan philosophy and its critics continued across
-          later centuries.
-        </p>
+          <p>
+            His engagement with Avicenna was especially consequential. Later
+            thinkers did not simply inherit Avicennan philosophy unchanged; they
+            also inherited the objections raised by Al-Razi. Philosophers such
+            as Nasir al-Din al-Tusi responded to his criticisms, ensuring that
+            the debate between Avicennan philosophy and its critics continued
+            across later centuries.
+          </p>
 
-        <p>
-          The influence of <em>Mafatih al-Ghayb</em> was equally extensive. Its
-          integration of theology, philosophy, natural inquiry, language, and
-          Quranic interpretation made it one of the great encyclopedic works of
-          the Islamic exegetical tradition and ensured Al-Razi's continuing
-          importance beyond specialist philosophical circles.
-        </p>
+          <p>
+            The influence of <em>Mafatih al-Ghayb</em> was equally extensive.
+            Its integration of theology, philosophy, natural inquiry, language,
+            and Quranic interpretation made it one of the great encyclopedic
+            works of the Islamic exegetical tradition and ensured Al-Razi's
+            continuing importance beyond specialist philosophical circles.
+          </p>
 
-        <p>
-          Al-Razi's legacy therefore cannot be confined to one discipline. He
-          was simultaneously a theologian, philosopher, logician, jurist,
-          commentator, and participant in debates about the natural world. His
-          work represents a crucial stage in the increasingly close interaction
-          between
-          <strong>kalam, falsafa, logic, and Quranic scholarship</strong>.
-        </p>
-      </section>
+          <p>
+            Al-Razi's legacy therefore cannot be confined to one discipline. He
+            was simultaneously a theologian, philosopher, logician, jurist,
+            commentator, and participant in debates about the natural world. His
+            work represents a crucial stage in the increasingly close
+            interaction between
+            <strong>kalam, falsafa, logic, and Quranic scholarship</strong>.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      SIMPLE EXPLANATION 
      ===================================================== -->
 
-      <section class="narrative-block" id="explained-simply">
-        <h2>Fakhr al-Din al-Razi's Philosophy Explained Simply</h2>
+        <section class="narrative-block" id="explained-simply">
+          <h2>Fakhr al-Din al-Razi's Philosophy Explained Simply</h2>
 
-        <p>
-          Al-Razi can be understood as a thinker who refused to accept an
-          argument simply because it came from a famous philosopher or an
-          established theological tradition. He studied both philosophy and
-          theology at the highest technical level and repeatedly asked whether
-          their arguments genuinely proved what they claimed to prove.
-        </p>
+          <p>
+            Al-Razi can be understood as a thinker who refused to accept an
+            argument simply because it came from a famous philosopher or an
+            established theological tradition. He studied both philosophy and
+            theology at the highest technical level and repeatedly asked whether
+            their arguments genuinely proved what they claimed to prove.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong>Was he a philosopher or a theologian?</strong>
-            Both. He was a major Ash'ari theologian who also became one of the
-            most important philosophical critics and interpreters of the
-            Avicennan tradition.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>Was he a philosopher or a theologian?</strong>
+              Both. He was a major Ash'ari theologian who also became one of the
+              most important philosophical critics and interpreters of the
+              Avicennan tradition.
+            </li>
 
-          <li>
-            <strong>What did he think of Avicenna?</strong>
-            He took Avicenna extremely seriously but criticized many of his
-            arguments in detail. His relationship to Avicennan philosophy was
-            one of sustained engagement rather than simple acceptance or
-            rejection.
-          </li>
+            <li>
+              <strong>What did he think of Avicenna?</strong>
+              He took Avicenna extremely seriously but criticized many of his
+              arguments in detail. His relationship to Avicennan philosophy was
+              one of sustained engagement rather than simple acceptance or
+              rejection.
+            </li>
 
-          <li>
-            <strong>What is he most famous for?</strong>
-            His enormous Quranic commentary, <em>Mafatih al-Ghayb</em>, also
-            known as the <em>Tafsir al-Kabir</em>, and his influential
-            philosophical and theological writings.
-          </li>
+            <li>
+              <strong>What is he most famous for?</strong>
+              His enormous Quranic commentary, <em>Mafatih al-Ghayb</em>, also
+              known as the <em>Tafsir al-Kabir</em>, and his influential
+              philosophical and theological writings.
+            </li>
 
-          <li>
-            <strong>Did he discuss atomism?</strong>
-            Yes. He examined major debates about atoms, continuity,
-            divisibility, and the physical structure of the world, especially in
-            relation to criticisms of kalam atomism.
-          </li>
+            <li>
+              <strong>Did he discuss atomism?</strong>
+              Yes. He examined major debates about atoms, continuity,
+              divisibility, and the physical structure of the world, especially
+              in relation to criticisms of kalam atomism.
+            </li>
 
-          <li>
-            <strong>Why was his method important?</strong>
-            Because he compared arguments from different intellectual traditions
-            and exposed their weaknesses with unusual technical rigor, helping
-            reshape later Islamic philosophy and theology.
-          </li>
+            <li>
+              <strong>Why was his method important?</strong>
+              Because he compared arguments from different intellectual
+              traditions and exposed their weaknesses with unusual technical
+              rigor, helping reshape later Islamic philosophy and theology.
+            </li>
 
-          <li>
-            <strong>Was he completely certain about everything?</strong>
-            No simple answer is possible. Some passages associated with his
-            later life express deep awareness of the limits of human certainty,
-            but they should not automatically be interpreted as a complete
-            rejection of philosophy.
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>Was he completely certain about everything?</strong>
+              No simple answer is possible. Some passages associated with his
+              later life express deep awareness of the limits of human
+              certainty, but they should not automatically be interpreted as a
+              complete rejection of philosophy.
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
      IMPORTANCE 
      ===================================================== -->
 
-      <section class="narrative-block" id="importance">
-        <h2>
-          Why Is Fakhr al-Din al-Razi Important in the History of Philosophy?
-        </h2>
+        <section class="narrative-block" id="importance">
+          <h2>
+            Why Is Fakhr al-Din al-Razi Important in the History of Philosophy?
+          </h2>
 
-        <p>
-          Al-Razi is important because he was one of the most innovative
-          thinkers of the post-classical Islamic world. He subjected Avicennan
-          philosophy to sustained technical criticism while also transforming
-          the methods of Ash'ari theology through increasingly sophisticated
-          engagement with logic and philosophical argument.
-        </p>
+          <p>
+            Al-Razi is important because he was one of the most innovative
+            thinkers of the post-classical Islamic world. He subjected Avicennan
+            philosophy to sustained technical criticism while also transforming
+            the methods of Ash'ari theology through increasingly sophisticated
+            engagement with logic and philosophical argument.
+          </p>
 
-        <p>
-          His importance extends beyond criticism. Al-Razi developed distinctive
-          positions on questions concerning definition, essence and existence,
-          the principles of physics, the human soul, and the foundations of
-          ethical norms. His writings demonstrate that medieval Islamic
-          philosophy continued to develop creatively after Avicenna rather than
-          merely repeating earlier systems.
-        </p>
+          <p>
+            His importance extends beyond criticism. Al-Razi developed
+            distinctive positions on questions concerning definition, essence
+            and existence, the principles of physics, the human soul, and the
+            foundations of ethical norms. His writings demonstrate that medieval
+            Islamic philosophy continued to develop creatively after Avicenna
+            rather than merely repeating earlier systems.
+          </p>
 
-        <p>
-          His work in Quranic exegesis was equally significant. Through
-          <em>Mafatih al-Ghayb</em>, he brought theology, philosophy, logic, and
-          natural inquiry into sustained conversation with scripture, creating
-          one of the most ambitious intellectual works in the history of Quranic
-          interpretation.
-        </p>
+          <p>
+            His work in Quranic exegesis was equally significant. Through
+            <em>Mafatih al-Ghayb</em>, he brought theology, philosophy, logic,
+            and natural inquiry into sustained conversation with scripture,
+            creating one of the most ambitious intellectual works in the history
+            of Quranic interpretation.
+          </p>
 
-        <p>
-          Fakhr al-Din al-Razi is therefore important both historically and
-          philosophically. He stands at a crucial point in the development of
-          Islamic intellectual history, where the boundaries between
-          <strong>kalam and falsafa</strong> became increasingly permeable and
-          where philosophical reasoning was not merely preserved, but critically
-          examined, transformed, and carried into new theological and
-          intellectual contexts.
-        </p>
-      </section>
+          <p>
+            Fakhr al-Din al-Razi is therefore important both historically and
+            philosophically. He stands at a crucial point in the development of
+            Islamic intellectual history, where the boundaries between
+            <strong>kalam and falsafa</strong> became increasingly permeable and
+            where philosophical reasoning was not merely preserved, but
+            critically examined, transformed, and carried into new theological
+            and intellectual contexts.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          FAQ
          (Mirrors the FAQPage JSON-LD in <head> — keep both in sync)
          ===================================================== -->
 
-      <section class="narrative-block" id="faq">
-        <h2>Frequently Asked Questions About Fakhr al-Din al-Razi</h2>
+        <section class="narrative-block" id="faq">
+          <h2>Frequently Asked Questions About Fakhr al-Din al-Razi</h2>
 
-        <h3>Who was Fakhr al-Din al-Razi?</h3>
+          <h3>Who was Fakhr al-Din al-Razi?</h3>
 
-        <p>
-          Fakhr al-Din al-Razi was a twelfth-century Islamic theologian,
-          philosopher, and Quranic exegete known for his critical engagement
-          with Avicenna's philosophy and for his monumental Quranic commentary,
-          the <em>Tafsir al-Kabir</em>.
-        </p>
+          <p>
+            Fakhr al-Din al-Razi was a twelfth-century Islamic theologian,
+            philosopher, and Quranic exegete known for his critical engagement
+            with Avicenna's philosophy and for his monumental Quranic
+            commentary, the <em>Tafsir al-Kabir</em>.
+          </p>
 
-        <h3>
-          Is Fakhr al-Din al-Razi the same person as Rhazes (Abu Bakr al-Razi)?
-        </h3>
+          <h3>
+            Is Fakhr al-Din al-Razi the same person as Rhazes (Abu Bakr
+            al-Razi)?
+          </h3>
 
-        <p>
-          No. Fakhr al-Din al-Razi, the Ash'ari theologian-philosopher, is a
-          different person from Abu Bakr Muhammad ibn Zakariya al-Razi, known in
-          Latin as Rhazes, an earlier physician-philosopher. The two are
-          frequently confused because they share the name al-Razi but lived
-          roughly three centuries apart and held very different philosophical
-          positions.
-        </p>
+          <p>
+            No. Fakhr al-Din al-Razi, the Ash'ari theologian-philosopher, is a
+            different person from Abu Bakr Muhammad ibn Zakariya al-Razi, known
+            in Latin as Rhazes, an earlier physician-philosopher. The two are
+            frequently confused because they share the name al-Razi but lived
+            roughly three centuries apart and held very different philosophical
+            positions.
+          </p>
 
-        <h3>What is the Tafsir al-Kabir?</h3>
+          <h3>What is the Tafsir al-Kabir?</h3>
 
-        <p>
-          The <em>Tafsir al-Kabir</em>, also known as <em>Mafatih al-Ghayb</em>,
-          is Fakhr al-Din al-Razi's massive commentary on the Quran, notable for
-          incorporating extensive philosophical, theological, and scientific
-          discussion alongside traditional exegesis.
-        </p>
+          <p>
+            The <em>Tafsir al-Kabir</em>, also known as
+            <em>Mafatih al-Ghayb</em>, is Fakhr al-Din al-Razi's massive
+            commentary on the Quran, notable for incorporating extensive
+            philosophical, theological, and scientific discussion alongside
+            traditional exegesis.
+          </p>
 
-        <h3>How did al-Razi critique Avicenna?</h3>
+          <h3>How did al-Razi critique Avicenna?</h3>
 
-        <p>
-          Al-Razi wrote a detailed critical commentary on Avicenna's
-          <em>Remarks and Admonitions</em>, questioning specific arguments in
-          Avicenna's metaphysics and psychology, including aspects of his proof
-          for the Necessary Existent, while still engaging seriously with
-          Avicennan philosophical method.
-        </p>
+          <p>
+            Al-Razi wrote a detailed critical commentary on Avicenna's
+            <em>Remarks and Admonitions</em>, questioning specific arguments in
+            Avicenna's metaphysics and psychology, including aspects of his
+            proof for the Necessary Existent, while still engaging seriously
+            with Avicennan philosophical method.
+          </p>
 
-        <h3>What is al-Razi's philosophy of atomism?</h3>
+          <h3>What is al-Razi's philosophy of atomism?</h3>
 
-        <p>
-          Al-Razi worked within the Ash'ari theological tradition of atomism,
-          which holds that the physical world is composed of indivisible atoms
-          and momentary accidents continuously recreated by God, an alternative
-          to the Aristotelian hylomorphic account of matter and form defended by
-          philosophers such as Avicenna.
-        </p>
+          <p>
+            Al-Razi worked within the Ash'ari theological tradition of atomism,
+            which holds that the physical world is composed of indivisible atoms
+            and momentary accidents continuously recreated by God, an
+            alternative to the Aristotelian hylomorphic account of matter and
+            form defended by philosophers such as Avicenna.
+          </p>
 
-        <h3>Did al-Razi express doubt about his own beliefs?</h3>
+          <h3>Did al-Razi express doubt about his own beliefs?</h3>
 
-        <p>
-          Yes. Toward the end of his life, al-Razi is widely reported to have
-          expressed philosophical and theological uncertainty, most famously in
-          verses lamenting that a lifetime of study in theology and philosophy
-          had not produced full and final certainty.
-        </p>
-      </section>
+          <p>
+            Yes. Toward the end of his life, al-Razi is widely reported to have
+            expressed philosophical and theological uncertainty, most famously
+            in verses lamenting that a lifetime of study in theology and
+            philosophy had not produced full and final certainty.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED THINKERS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-thinkers-title">
-        <span class="section-eyebrow"> Continue Exploring </span>
+        <section class="connection" aria-labelledby="related-thinkers-title">
+          <span class="section-eyebrow"> Continue Exploring </span>
 
-        <h2 id="related-thinkers-title">
-          Related Islamic and Arabic Philosophers
-        </h2>
+          <h2 id="related-thinkers-title">
+            Related Islamic and Arabic Philosophers
+          </h2>
 
-        <p>
-          Explore other major thinkers in the development of Islamic philosophy,
-          Arabic philosophy, Persian philosophy, and medieval intellectual
-          history.
-        </p>
+          <p>
+            Explore other major thinkers in the development of Islamic
+            philosophy, Arabic philosophy, Persian philosophy, and medieval
+            intellectual history.
+          </p>
 
-        <div class="related-links">
-          <a href="al-kindi.html"> Al-Kindi </a>
-          ·
+          <div class="related-links">
+            <a href="al-kindi.html"> Al-Kindi </a>
+            ·
 
-          <a href="al-farabi.html"> Al-Farabi </a>
-          ·
+            <a href="al-farabi.html"> Al-Farabi </a>
+            ·
 
-          <a href="avicenna.html"> Avicenna (Ibn Sina) </a>
-          ·
+            <a href="avicenna.html"> Avicenna (Ibn Sina) </a>
+            ·
 
-          <a href="al-ghazali.html"> Al-Ghazali </a>
-          ·
+            <a href="al-ghazali.html"> Al-Ghazali </a>
+            ·
 
-          <a href="averroes.html"> Averroes (Ibn Rushd) </a>
-          ·
+            <a href="averroes.html"> Averroes (Ibn Rushd) </a>
+            ·
 
-          <a href="suhrawardi.html"> Suhrawardi </a>
-        </div>
-      </section>
+            <a href="suhrawardi.html"> Suhrawardi </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED AREAS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-topics-title">
-        <span class="section-eyebrow"> Philosophical Connections </span>
+        <section class="connection" aria-labelledby="related-topics-title">
+          <span class="section-eyebrow"> Philosophical Connections </span>
 
-        <h2 id="related-topics-title">Related Areas of Philosophy</h2>
+          <h2 id="related-topics-title">Related Areas of Philosophy</h2>
 
-        <p>
-          Al-Razi's work connects the history of Islamic philosophy with
-          theology, metaphysics, epistemology, logic, ethics, and the
-          interpretation of scripture.
-        </p>
+          <p>
+            Al-Razi's work connects the history of Islamic philosophy with
+            theology, metaphysics, epistemology, logic, ethics, and the
+            interpretation of scripture.
+          </p>
 
-        <div class="related-links">
-          <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
-          ·
+          <div class="related-links">
+            <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
+            ·
 
-          <a href="epistemology-branch-philosophy.html"> Epistemology </a>
-          ·
+            <a href="epistemology-branch-philosophy.html"> Epistemology </a>
+            ·
 
-          <a href="ethics-branch-philosophy.html"> Ethics </a>
-          ·
+            <a href="ethics-branch-philosophy.html"> Ethics </a>
+            ·
 
-          <a href="islamic-philosophy.html"> Islamic Philosophy </a>
-          ·
+            <a href="islamic-philosophy.html"> Islamic Philosophy </a>
+            ·
 
-          <a href="logic-branch-philosophy.html"> Logic </a>
-          ·
+            <a href="logic-branch-philosophy.html"> Logic </a>
+            ·
 
-          <a href="schools.html"> Schools of Philosophy </a>
-        </div>
-      </section>
+            <a href="schools.html"> Schools of Philosophy </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          CONCLUSION
          ===================================================== -->
 
-      <section class="narrative-block" aria-labelledby="conclusion-title">
-        <span class="section-eyebrow"> Classical Islamic Philosophy </span>
+        <section class="narrative-block" aria-labelledby="conclusion-title">
+          <span class="section-eyebrow"> Classical Islamic Philosophy </span>
 
-        <h2 id="conclusion-title">Why Fakhr al-Din al-Razi Still Matters</h2>
+          <h2 id="conclusion-title">Why Fakhr al-Din al-Razi Still Matters</h2>
 
-        <p>
-          Fakhr al-Din al-Razi occupies a central place in the history of
-          Islamic theology and philosophy as the thinker who most thoroughly
-          fused the methods of Ash'ari kalam with the philosophical rigor of the
-          Avicennan tradition, testing both against each other with
-          extraordinary technical precision.
-        </p>
+          <p>
+            Fakhr al-Din al-Razi occupies a central place in the history of
+            Islamic theology and philosophy as the thinker who most thoroughly
+            fused the methods of Ash'ari kalam with the philosophical rigor of
+            the Avicennan tradition, testing both against each other with
+            extraordinary technical precision.
+          </p>
 
-        <p>
-          His detailed critique of Avicenna, his careful treatment of atomism
-          and the proofs for God's existence, and his monumental
-          <em>Tafsir al-Kabir</em> together represent one of the most
-          comprehensive intellectual projects of the medieval Islamic world.
-        </p>
+          <p>
+            His detailed critique of Avicenna, his careful treatment of atomism
+            and the proofs for God's existence, and his monumental
+            <em>Tafsir al-Kabir</em> together represent one of the most
+            comprehensive intellectual projects of the medieval Islamic world.
+          </p>
 
-        <p>
-          Understanding al-Razi also helps explain how later Islamic theology
-          absorbed and transformed the philosophical legacy of Avicenna,
-          Al-Ghazali, and the broader Peripatetic tradition into a distinct and
-          highly technical theological method.
-        </p>
+          <p>
+            Understanding al-Razi also helps explain how later Islamic theology
+            absorbed and transformed the philosophical legacy of Avicenna,
+            Al-Ghazali, and the broader Peripatetic tradition into a distinct
+            and highly technical theological method.
+          </p>
 
-        <a class="cta-button" href="thinkers.html">
-          Explore Great Philosophers
-          <span aria-hidden="true">&rarr;</span>
-        </a>
-      </section>
-    </main>
+          <a class="cta-button" href="thinkers.html">
+            Explore Great Philosophers
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </section>
+      </main>
+    </div>
 
     <!-- =====================================================
        FOOTER
@@ -1948,8 +2019,8 @@
        SCRIPTS
        ===================================================== -->
 
-     <script src="script.js" defer></script>
-     <script src="article-toc.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="article-toc.js" defer></script>
 
     <script src="branches-enhance.js" defer></script>
 

@@ -696,8 +696,71 @@
           live together, and how should a fractured world be governed?
         </p>
       </div>
-    </header>
+        </header>
 
+    <div class="article-reading-area">
+      <!-- =========================================================
+     ARTICLE TABLE OF CONTENTS
+     ========================================================= -->
+
+      <!-- Desktop TOC -->
+      <aside class="article-toc" aria-label="Article contents">
+        <div class="article-toc__header">
+          <span class="article-toc__title">Contents</span>
+
+          <button
+            type="button"
+            class="article-toc__hide"
+            aria-label="Hide article contents"
+          >
+            Hide
+          </button>
+        </div>
+
+        <nav class="article-toc__nav" aria-label="Article sections">
+          <div class="article-toc__list"></div>
+        </nav>
+      </aside>
+
+      <!-- Mobile TOC trigger -->
+      <button
+        type="button"
+        class="mobile-toc-trigger"
+        aria-expanded="false"
+        aria-controls="mobile-toc-drawer"
+      >
+        <span>Contents</span>
+        <span class="mobile-toc-trigger__chevron" aria-hidden="true">⌄</span>
+      </button>
+
+      <!-- Mobile TOC overlay -->
+      <div class="mobile-toc-overlay" hidden></div>
+
+      <!-- Mobile TOC drawer -->
+      <aside
+        id="mobile-toc-drawer"
+        class="mobile-toc-drawer"
+        aria-label="Article contents"
+        aria-hidden="true"
+      >
+        <div class="mobile-toc-drawer__header">
+          <span class="mobile-toc-drawer__title">Contents</span>
+
+          <button
+            type="button"
+            class="mobile-toc-drawer__close"
+            aria-label="Close article contents"
+          >
+            ×
+          </button>
+        </div>
+
+        <nav class="mobile-toc-drawer__nav" aria-label="Article sections">
+          <div class="mobile-toc-drawer__list"></div>
+        </nav>
+      </aside>
+
+      <main id="main-content" tabindex="-1">
     <!-- ================= INTRODUCTION ================= -->
 
     <section class="about-home">
@@ -766,7 +829,7 @@
 
     <!-- ================= TIMELINE ================= -->
 
-    <section class="era-timeline-section">
+    <section class="era-timeline-section" id="timeline">
       <h2>Timeline at a Glance</h2>
 
       <div class="era-timeline">
@@ -833,7 +896,7 @@
 
     <!-- ================= HISTORICAL BACKGROUND ================= -->
 
-    <section class="narrative-block">
+    <section class="narrative-block" id="china before">
       <h2>🏺 China Before the Hundred Schools</h2>
 
       <figure class="narrative-figure">
@@ -909,7 +972,7 @@
       <span>1️⃣ Confucianism</span>
     </div>
 
-    <section class="narrative-block">
+    <section class="narrative-block" id="chapter">
       <h2>Confucius and the Cultivation of Virtue</h2>
 
       <figure class="narrative-figure left">
@@ -1031,7 +1094,7 @@
       <span>2️⃣ Daoism</span>
     </div>
 
-    <section class="narrative-block">
+    <section class="narrative-block" id="chapter">
       <h2>Laozi, Zhuangzi, and the Way of Nature</h2>
 
       <figure class="narrative-figure">
@@ -1152,7 +1215,7 @@
       <span>3️⃣ Legalism</span>
     </div>
 
-    <section class="narrative-block">
+    <section class="narrative-block" id="3">
       <h2>Han Feizi and the Philosophy of Strict Law</h2>
 
       <figure class="narrative-figure left">
@@ -1265,7 +1328,7 @@
       <span>4️⃣ Mohism</span>
     </div>
 
-    <section class="narrative-block">
+    <section class="narrative-block" id="4">
       <h2>Mozi and the Search for Universal Standards</h2>
 
       <p>
@@ -1355,7 +1418,7 @@
       <span>5️⃣ The School of Names and Chinese Logic</span>
     </div>
 
-    <section class="narrative-block">
+    <section class="narrative-block" id="5">
       <h2>Language, Paradox, and the Problem of Names</h2>
 
       <p>
@@ -1428,7 +1491,7 @@
       <span>6️⃣ Yin, Yang, and the Five Phases</span>
     </div>
 
-    <section class="narrative-block">
+    <section class="narrative-block" id="6">
       <h2>Cosmology and the Patterns of Change</h2>
 
       <p>
@@ -1494,7 +1557,7 @@
 
     <!-- ================= CHAPTER 7 ================= -->
 
-    <div class="era-divider" id="chapter-7">
+    <div class="era-divider" id="chapter-7" itemid="7">
       <span>7️⃣ The Hundred Schools of Thought</span>
     </div>
 
@@ -1569,7 +1632,7 @@
       <span>8️⃣ Qin Unification and the End of the Classical Age</span>
     </div>
 
-    <section class="narrative-block">
+    <section class="narrative-block" id="8">
       <h2>When Philosophy Met Empire</h2>
 
       <p>
@@ -1629,7 +1692,7 @@
       <span>9️⃣ The Han Synthesis and the Legacy of Ancient China</span>
     </div>
 
-    <section class="narrative-block">
+    <section class="narrative-block" id="9">
       <h2>From Competing Schools to a Lasting Intellectual Tradition</h2>
 
       <p>
@@ -2265,6 +2328,8 @@
         <button>Explore Islamic Philosophy →</button>
       </a>
     </section>
+      </main>
+    </div>
     <!-- ================= FOOTER ================= -->
 
     <footer class="footer">

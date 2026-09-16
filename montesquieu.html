@@ -113,7 +113,7 @@
 
     <!-- ================= STYLESHEETS ================= -->
 
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="article-toc.css" />
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
@@ -416,10 +416,10 @@
       }
     </script>
     <link
-    rel="describedby"
-    href="https://agnostickind.github.io/philosophy-website/llms.txt"
-  >
-</head>
+      rel="describedby"
+      href="https://agnostickind.github.io/philosophy-website/llms.txt"
+    />
+  </head>
 
   <body>
     <!-- =====================================================
@@ -709,12 +709,11 @@
         </div>
 
         <a href="schools.html">Schools</a>
-       <a href="books.html">Books</a>
+        <a href="books.html">Books</a>
         <a href="world-literature.html">Literature</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </div>
-
 
       <div class="nav-tools">
         <!-- SEARCH -->
@@ -810,1687 +809,1784 @@
       </div>
     </header>
 
-    <main id="main-content" tabindex="-1">
-      <!-- =====================================================
+    <div class="article-reading-area">
+      <!-- =========================================================
+     ARTICLE TABLE OF CONTENTS
+     ========================================================= -->
+
+      <!-- Desktop TOC -->
+      <aside class="article-toc" aria-label="Article contents">
+        <div class="article-toc__header">
+          <span class="article-toc__title">Contents</span>
+
+          <button
+            type="button"
+            class="article-toc__hide"
+            aria-label="Hide article contents"
+          >
+            Hide
+          </button>
+        </div>
+
+        <nav class="article-toc__nav" aria-label="Article sections">
+          <div class="article-toc__list"></div>
+        </nav>
+      </aside>
+
+      <!-- Mobile TOC trigger -->
+      <button
+        type="button"
+        class="mobile-toc-trigger"
+        aria-expanded="false"
+        aria-controls="mobile-toc-drawer"
+      >
+        <span>Contents</span>
+        <span class="mobile-toc-trigger__chevron" aria-hidden="true">⌄</span>
+      </button>
+
+      <!-- Mobile TOC overlay -->
+      <div class="mobile-toc-overlay" hidden></div>
+
+      <!-- Mobile TOC drawer -->
+      <aside
+        id="mobile-toc-drawer"
+        class="mobile-toc-drawer"
+        aria-label="Article contents"
+        aria-hidden="true"
+      >
+        <div class="mobile-toc-drawer__header">
+          <span class="mobile-toc-drawer__title">Contents</span>
+
+          <button
+            type="button"
+            class="mobile-toc-drawer__close"
+            aria-label="Close article contents"
+          >
+            ×
+          </button>
+        </div>
+
+        <nav class="mobile-toc-drawer__nav" aria-label="Article sections">
+          <div class="mobile-toc-drawer__list"></div>
+        </nav>
+      </aside>
+
+      <main id="main-content" tabindex="-1">
+        <!-- =====================================================
          INTRODUCTION
          ===================================================== -->
 
-      <section class="about-home">
-        <h2>Who Was Montesquieu?</h2>
+        <section class="about-home">
+          <h2>Who Was Montesquieu?</h2>
 
-        <p>
-          <strong>Montesquieu</strong>, formally Charles-Louis de Secondat,
-          Baron de La Brède et de Montesquieu (1689–1755), was a French
-          philosopher, political thinker, jurist, historian, and one of the most
-          influential figures of the <strong>Enlightenment</strong>. His
-          philosophy focused especially on government, political liberty, law,
-          institutions, and the conditions that allow societies to preserve
-          freedom. Unlike political thinkers who searched primarily for a single
-          ideal system of government, Montesquieu examined the different
-          circumstances in which political institutions arise and operate.
-        </p>
+          <p>
+            <strong>Montesquieu</strong>, formally Charles-Louis de Secondat,
+            Baron de La Brède et de Montesquieu (1689–1755), was a French
+            philosopher, political thinker, jurist, historian, and one of the
+            most influential figures of the <strong>Enlightenment</strong>. His
+            philosophy focused especially on government, political liberty, law,
+            institutions, and the conditions that allow societies to preserve
+            freedom. Unlike political thinkers who searched primarily for a
+            single ideal system of government, Montesquieu examined the
+            different circumstances in which political institutions arise and
+            operate.
+          </p>
 
-        <p>
-          Montesquieu is best known for his theory of the
-          <strong>separation of powers</strong>, which argued against
-          concentrating political authority within a single institution or
-          individual. His analysis distinguished legislative, executive, and
-          judicial functions and emphasized the importance of institutional
-          arrangements capable of preventing the abuse of power. The central
-          purpose of this political structure was the preservation of liberty
-          through a system in which power could restrain and balance other
-          power.
-        </p>
+          <p>
+            Montesquieu is best known for his theory of the
+            <strong>separation of powers</strong>, which argued against
+            concentrating political authority within a single institution or
+            individual. His analysis distinguished legislative, executive, and
+            judicial functions and emphasized the importance of institutional
+            arrangements capable of preventing the abuse of power. The central
+            purpose of this political structure was the preservation of liberty
+            through a system in which power could restrain and balance other
+            power.
+          </p>
 
-        <p>
-          His most famous work, <em>The Spirit of the Laws</em>, published in
-          1748, examined how laws and political institutions relate to different
-          societies, histories, economies, religions, customs, and geographical
-          conditions. Montesquieu therefore treated political philosophy partly
-          as a comparative investigation of how institutions actually function
-          rather than simply as an abstract search for one universally ideal
-          form of government. He sought to understand the relationships between
-          laws and the particular conditions of the societies in which they
-          exist.
-        </p>
+          <p>
+            His most famous work, <em>The Spirit of the Laws</em>, published in
+            1748, examined how laws and political institutions relate to
+            different societies, histories, economies, religions, customs, and
+            geographical conditions. Montesquieu therefore treated political
+            philosophy partly as a comparative investigation of how institutions
+            actually function rather than simply as an abstract search for one
+            universally ideal form of government. He sought to understand the
+            relationships between laws and the particular conditions of the
+            societies in which they exist.
+          </p>
 
-        <p>
-          Montesquieu's intellectual importance extends beyond the famous
-          formula of the separation of powers. He developed influential analyses
-          of republics, monarchies, and despotism; explored the relationship
-          between political liberty and the rule of law; and examined the
-          effects of commerce, social customs, religion, and historical
-          circumstances on political life. His approach helped establish
-          important foundations for later political science, comparative
-          politics, sociology, and the philosophy of history.
-        </p>
+          <p>
+            Montesquieu's intellectual importance extends beyond the famous
+            formula of the separation of powers. He developed influential
+            analyses of republics, monarchies, and despotism; explored the
+            relationship between political liberty and the rule of law; and
+            examined the effects of commerce, social customs, religion, and
+            historical circumstances on political life. His approach helped
+            establish important foundations for later political science,
+            comparative politics, sociology, and the philosophy of history.
+          </p>
 
-        <p>
-          Through works such as <em>Persian Letters</em> and
-          <em>The Spirit of the Laws</em>, Montesquieu became one of the
-          Enlightenment's most important critics of arbitrary power and
-          despotism. His ideas had a profound influence on later constitutional
-          thought, particularly debates about limited government and the
-          institutional protection of liberty. Although modern political systems
-          do not simply reproduce his theories, Montesquieu remains one of the
-          essential thinkers for understanding the historical development of
-          constitutional government and political freedom.
-        </p>
-      </section>
+          <p>
+            Through works such as <em>Persian Letters</em> and
+            <em>The Spirit of the Laws</em>, Montesquieu became one of the
+            Enlightenment's most important critics of arbitrary power and
+            despotism. His ideas had a profound influence on later
+            constitutional thought, particularly debates about limited
+            government and the institutional protection of liberty. Although
+            modern political systems do not simply reproduce his theories,
+            Montesquieu remains one of the essential thinkers for understanding
+            the historical development of constitutional government and
+            political freedom.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
    QUICK FACTS
    ===================================================== -->
 
-      <section class="narrative-block" id="quick-facts">
-        <h2>Montesquieu: Quick Facts</h2>
+        <section class="narrative-block" id="quick-facts">
+          <h2>Montesquieu: Quick Facts</h2>
 
-        <ul class="plain-list">
-          <li>
-            <strong>Full name</strong> — Charles-Louis de Secondat, Baron de La
-            Brède et de Montesquieu
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>Full name</strong> — Charles-Louis de Secondat, Baron de
+              La Brède et de Montesquieu
+            </li>
 
-          <li><strong>Born</strong> — 1689</li>
+            <li><strong>Born</strong> — 1689</li>
 
-          <li><strong>Died</strong> — 1755</li>
+            <li><strong>Died</strong> — 1755</li>
 
-          <li><strong>Nationality</strong> — French</li>
+            <li><strong>Nationality</strong> — French</li>
 
-          <li><strong>Period</strong> — Early and High Enlightenment</li>
+            <li><strong>Period</strong> — Early and High Enlightenment</li>
 
-          <li>
-            <strong>Fields</strong> — Political philosophy, law, history,
-            sociology, and philosophy of government
-          </li>
+            <li>
+              <strong>Fields</strong> — Political philosophy, law, history,
+              sociology, and philosophy of government
+            </li>
 
-          <li>
-            <strong>Best known for</strong> — Separation of powers and political
-            liberty
-          </li>
+            <li>
+              <strong>Best known for</strong> — Separation of powers and
+              political liberty
+            </li>
 
-          <li><strong>Major work</strong> — <em>The Spirit of the Laws</em></li>
+            <li>
+              <strong>Major work</strong> — <em>The Spirit of the Laws</em>
+            </li>
 
-          <li><strong>Other major work</strong> — <em>Persian Letters</em></li>
+            <li>
+              <strong>Other major work</strong> — <em>Persian Letters</em>
+            </li>
 
-          <li>
-            <strong>Political concerns</strong> — Liberty, law, government,
-            institutions, despotism, and constitutionalism
-          </li>
+            <li>
+              <strong>Political concerns</strong> — Liberty, law, government,
+              institutions, despotism, and constitutionalism
+            </li>
 
-          <li>
-            <strong>Major influence</strong> — Modern constitutional and
-            political thought
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>Major influence</strong> — Modern constitutional and
+              political thought
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          EARLY LIFE
          ===================================================== -->
-      <section class="narrative-block" id="early-life">
-        <h2>Montesquieu's Early Life and Historical Background</h2>
+        <section class="narrative-block" id="early-life">
+          <h2>Montesquieu's Early Life and Historical Background</h2>
 
-        <figure class="narrative-figure">
-          <img
-            src="images/montesquieu.jpg"
-            alt="Portrait representation of Montesquieu, French Enlightenment philosopher and political thinker"
-            loading="lazy"
-            decoding="async"
-          />
+          <figure class="narrative-figure">
+            <img
+              src="images/montesquieu.jpg"
+              alt="Portrait representation of Montesquieu, French Enlightenment philosopher and political thinker"
+              loading="lazy"
+              decoding="async"
+            />
 
-          <figcaption>
-            Montesquieu was a major French Enlightenment philosopher known for
-            his political theory and analysis of government.
-          </figcaption>
-        </figure>
+            <figcaption>
+              Montesquieu was a major French Enlightenment philosopher known for
+              his political theory and analysis of government.
+            </figcaption>
+          </figure>
 
-        <p>
-          Charles-Louis de Secondat, Baron de La Brède et de Montesquieu, was
-          born in 1689 at the Château de La Brède near Bordeaux, France, into a
-          noble family. His social position gave him direct experience of the
-          institutions and traditions of the French ancien régime, while his
-          education introduced him to classical literature, history, law, and
-          philosophy.
-        </p>
+          <p>
+            Charles-Louis de Secondat, Baron de La Brède et de Montesquieu, was
+            born in 1689 at the Château de La Brède near Bordeaux, France, into
+            a noble family. His social position gave him direct experience of
+            the institutions and traditions of the French ancien régime, while
+            his education introduced him to classical literature, history, law,
+            and philosophy.
+          </p>
 
-        <p>
-          Montesquieu studied law and later inherited an important judicial
-          office in the Parlement of Bordeaux. This experience gave him
-          practical knowledge of legal institutions and political
-          administration. It also helped shape his conviction that laws cannot
-          be understood as isolated commands, but must be examined in relation
-          to institutions, customs, historical circumstances, and social life.
-        </p>
+          <p>
+            Montesquieu studied law and later inherited an important judicial
+            office in the Parlement of Bordeaux. This experience gave him
+            practical knowledge of legal institutions and political
+            administration. It also helped shape his conviction that laws cannot
+            be understood as isolated commands, but must be examined in relation
+            to institutions, customs, historical circumstances, and social life.
+          </p>
 
-        <p>
-          He lived during the reign of Louis XIV and the period that followed
-          it, when debates about monarchy, religious authority, commerce, and
-          political liberty were becoming increasingly important. European
-          intellectual life was beginning to question inherited forms of
-          authority and to seek broader explanations of human societies through
-          reason, observation, history, and comparison.
-        </p>
+          <p>
+            He lived during the reign of Louis XIV and the period that followed
+            it, when debates about monarchy, religious authority, commerce, and
+            political liberty were becoming increasingly important. European
+            intellectual life was beginning to question inherited forms of
+            authority and to seek broader explanations of human societies
+            through reason, observation, history, and comparison.
+          </p>
 
-        <p>
-          Montesquieu's later travels also broadened his perspective. His
-          extended stay in England was especially important because it exposed
-          him to English political institutions and constitutional debates.
-          Rather than constructing his philosophy entirely from abstract
-          principles, he increasingly sought to understand how different
-          political arrangements operated in actual historical societies.
-        </p>
-      </section>
+          <p>
+            Montesquieu's later travels also broadened his perspective. His
+            extended stay in England was especially important because it exposed
+            him to English political institutions and constitutional debates.
+            Rather than constructing his philosophy entirely from abstract
+            principles, he increasingly sought to understand how different
+            political arrangements operated in actual historical societies.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          ENLIGHTENMENT
          ===================================================== -->
 
-      <section class="narrative-block" id="enlightenment">
-        <h2>Montesquieu and the Enlightenment</h2>
+        <section class="narrative-block" id="enlightenment">
+          <h2>Montesquieu and the Enlightenment</h2>
 
-        <p>
-          Montesquieu was one of the major thinkers of the
-          <strong>European Enlightenment</strong>, an intellectual movement
-          associated with critical inquiry, reason, scientific curiosity, and
-          criticism of arbitrary authority. His contribution to the
-          Enlightenment was especially important in political philosophy, where
-          he investigated how institutions could protect people from the abuse
-          of power.
-        </p>
+          <p>
+            Montesquieu was one of the major thinkers of the
+            <strong>European Enlightenment</strong>, an intellectual movement
+            associated with critical inquiry, reason, scientific curiosity, and
+            criticism of arbitrary authority. His contribution to the
+            Enlightenment was especially important in political philosophy,
+            where he investigated how institutions could protect people from the
+            abuse of power.
+          </p>
 
-        <p>
-          Unlike philosophers whose work concentrated primarily on metaphysics
-          or the theory of knowledge, Montesquieu focused heavily on laws,
-          political institutions, and social structures. He asked why
-          governments differ from one another and why the same laws may not be
-          equally suitable for every society. Political thought, in his view,
-          required careful attention to historical and social circumstances.
-        </p>
+          <p>
+            Unlike philosophers whose work concentrated primarily on metaphysics
+            or the theory of knowledge, Montesquieu focused heavily on laws,
+            political institutions, and social structures. He asked why
+            governments differ from one another and why the same laws may not be
+            equally suitable for every society. Political thought, in his view,
+            required careful attention to historical and social circumstances.
+          </p>
 
-        <p>
-          His Enlightenment philosophy therefore combined normative questions
-          about liberty and good government with a comparative investigation of
-          existing societies. Montesquieu did not believe that political
-          thinkers should simply design one ideal constitution and impose it
-          conceptually upon every nation without considering differences in
-          history, customs, economy, geography, and political tradition.
-        </p>
+          <p>
+            His Enlightenment philosophy therefore combined normative questions
+            about liberty and good government with a comparative investigation
+            of existing societies. Montesquieu did not believe that political
+            thinkers should simply design one ideal constitution and impose it
+            conceptually upon every nation without considering differences in
+            history, customs, economy, geography, and political tradition.
+          </p>
 
-        <p>
-          This approach made him distinctive among Enlightenment thinkers.
-          Montesquieu sought to explain political diversity while remaining
-          firmly opposed to arbitrary and despotic government. His work helped
-          establish the idea that liberty depends not merely upon the good
-          intentions of rulers, but upon institutions capable of limiting and
-          organizing political power.
-        </p>
-      </section>
+          <p>
+            This approach made him distinctive among Enlightenment thinkers.
+            Montesquieu sought to explain political diversity while remaining
+            firmly opposed to arbitrary and despotic government. His work helped
+            establish the idea that liberty depends not merely upon the good
+            intentions of rulers, but upon institutions capable of limiting and
+            organizing political power.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          METHOD
          ===================================================== -->
 
-      <section class="narrative-block" id="method">
-        <h2>Montesquieu's Philosophical Method</h2>
+        <section class="narrative-block" id="method">
+          <h2>Montesquieu's Philosophical Method</h2>
 
-        <p>
-          Montesquieu's philosophical method was strongly
-          <strong>comparative</strong>. Rather than studying one political
-          system in isolation, he compared different societies, historical
-          periods, laws, customs, religions, economies, and forms of government.
-          Through comparison, he attempted to discover the relationships that
-          help explain why institutions develop and function differently under
-          different conditions.
-        </p>
+          <p>
+            Montesquieu's philosophical method was strongly
+            <strong>comparative</strong>. Rather than studying one political
+            system in isolation, he compared different societies, historical
+            periods, laws, customs, religions, economies, and forms of
+            government. Through comparison, he attempted to discover the
+            relationships that help explain why institutions develop and
+            function differently under different conditions.
+          </p>
 
-        <p>
-          His approach was also deeply historical. Montesquieu believed that
-          political institutions emerge within particular circumstances and
-          cannot always be understood independently of the societies that
-          created them. Laws are shaped by traditions, historical events,
-          patterns of social organization, economic activity, and relationships
-          between different groups within a political community.
-        </p>
+          <p>
+            His approach was also deeply historical. Montesquieu believed that
+            political institutions emerge within particular circumstances and
+            cannot always be understood independently of the societies that
+            created them. Laws are shaped by traditions, historical events,
+            patterns of social organization, economic activity, and
+            relationships between different groups within a political community.
+          </p>
 
-        <p>
-          In <em>The Spirit of the Laws</em>, Montesquieu extended this method
-          by examining the many factors to which laws may be related. These
-          included the nature and principle of government, the size and
-          situation of a country, economic life, customs, religion, and what he
-          believed to be the effects of climate and geography.
-        </p>
+          <p>
+            In <em>The Spirit of the Laws</em>, Montesquieu extended this method
+            by examining the many factors to which laws may be related. These
+            included the nature and principle of government, the size and
+            situation of a country, economic life, customs, religion, and what
+            he believed to be the effects of climate and geography.
+          </p>
 
-        <p>
-          His method was not identical to modern social science, and some of his
-          empirical assumptions are now rejected. Nevertheless, his effort to
-          explain political institutions through systematic comparison made him
-          an important predecessor of comparative political science, political
-          sociology, and the historical study of law.
-        </p>
-      </section>
+          <p>
+            His method was not identical to modern social science, and some of
+            his empirical assumptions are now rejected. Nevertheless, his effort
+            to explain political institutions through systematic comparison made
+            him an important predecessor of comparative political science,
+            political sociology, and the historical study of law.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          POLITICAL PHILOSOPHY
          ===================================================== -->
 
-      <section class="narrative-block" id="political-philosophy">
-        <h2>What Was Montesquieu's Political Philosophy?</h2>
+        <section class="narrative-block" id="political-philosophy">
+          <h2>What Was Montesquieu's Political Philosophy?</h2>
 
-        <p>
-          <strong>Montesquieu's political philosophy</strong> centers on the
-          relationship between law, liberty, institutions, and political power.
-          He was deeply concerned with the danger that authority could become
-          oppressive when it was concentrated without effective restraint.
-          Political freedom therefore required more than virtuous rulers; it
-          required a constitutional structure capable of limiting power.
-        </p>
+          <p>
+            <strong>Montesquieu's political philosophy</strong> centers on the
+            relationship between law, liberty, institutions, and political
+            power. He was deeply concerned with the danger that authority could
+            become oppressive when it was concentrated without effective
+            restraint. Political freedom therefore required more than virtuous
+            rulers; it required a constitutional structure capable of limiting
+            power.
+          </p>
 
-        <p>
-          Montesquieu did not define political liberty as the unlimited freedom
-          to do whatever one wishes. Liberty existed when citizens possessed
-          security under a system of laws and were not constantly exposed to
-          arbitrary political interference. His conception of freedom was thus
-          closely connected to constitutional restraint and the rule of law.
-        </p>
+          <p>
+            Montesquieu did not define political liberty as the unlimited
+            freedom to do whatever one wishes. Liberty existed when citizens
+            possessed security under a system of laws and were not constantly
+            exposed to arbitrary political interference. His conception of
+            freedom was thus closely connected to constitutional restraint and
+            the rule of law.
+          </p>
 
-        <p>
-          A central principle of his political thought was that
-          <strong>power should restrain power</strong>. When major governmental
-          powers become concentrated in the same hands, the possibility of abuse
-          increases. Political institutions should therefore be arranged so that
-          authority is distributed and no single person or body can easily
-          exercise unchecked control.
-        </p>
+          <p>
+            A central principle of his political thought was that
+            <strong>power should restrain power</strong>. When major
+            governmental powers become concentrated in the same hands, the
+            possibility of abuse increases. Political institutions should
+            therefore be arranged so that authority is distributed and no single
+            person or body can easily exercise unchecked control.
+          </p>
 
-        <p>
-          Montesquieu's philosophy also emphasized the importance of political
-          moderation. He did not reduce good government to one universal
-          institutional formula. Instead, he investigated the conditions under
-          which different forms of government could remain stable while avoiding
-          the continual danger of arbitrary and despotic power.
-        </p>
-      </section>
+          <p>
+            Montesquieu's philosophy also emphasized the importance of political
+            moderation. He did not reduce good government to one universal
+            institutional formula. Instead, he investigated the conditions under
+            which different forms of government could remain stable while
+            avoiding the continual danger of arbitrary and despotic power.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          SPIRIT OF LAWS
          ===================================================== -->
 
-      <section class="narrative-block" id="spirit-of-laws">
-        <h2>Montesquieu and The Spirit of the Laws</h2>
+        <section class="narrative-block" id="spirit-of-laws">
+          <h2>Montesquieu and The Spirit of the Laws</h2>
 
-        <p>
-          <em>The Spirit of the Laws</em>, published in 1748, is Montesquieu's
-          most important work of political philosophy. Its French title,
-          <em>De l'esprit des lois</em>, reflects his attempt to investigate the
-          underlying relationships and principles that explain laws rather than
-          merely describing individual legal rules.
-        </p>
+          <p>
+            <em>The Spirit of the Laws</em>, published in 1748, is Montesquieu's
+            most important work of political philosophy. Its French title,
+            <em>De l'esprit des lois</em>, reflects his attempt to investigate
+            the underlying relationships and principles that explain laws rather
+            than merely describing individual legal rules.
+          </p>
 
-        <p>
-          The work examines forms of government, political liberty, law,
-          commerce, religion, customs, geography, climate, and historical
-          circumstances. Montesquieu attempted to show that laws exist within
-          wider systems of social relationships and that institutions must be
-          understood in relation to the particular conditions of the societies
-          in which they operate.
-        </p>
+          <p>
+            The work examines forms of government, political liberty, law,
+            commerce, religion, customs, geography, climate, and historical
+            circumstances. Montesquieu attempted to show that laws exist within
+            wider systems of social relationships and that institutions must be
+            understood in relation to the particular conditions of the societies
+            in which they operate.
+          </p>
 
-        <p>
-          One of the book's most influential arguments concerns the distribution
-          of political power. Montesquieu analyzed legislative, executive, and
-          judicial functions and argued that liberty is endangered when these
-          powers are concentrated without effective institutional restraint.
-        </p>
+          <p>
+            One of the book's most influential arguments concerns the
+            distribution of political power. Montesquieu analyzed legislative,
+            executive, and judicial functions and argued that liberty is
+            endangered when these powers are concentrated without effective
+            institutional restraint.
+          </p>
 
-        <p>
-          <em>The Spirit of the Laws</em> was controversial as well as
-          enormously influential. It provoked criticism and was later placed on
-          the Roman Catholic Church's Index of Forbidden Books. Yet its analysis
-          of constitutional government became central to later debates about
-          limited government, political liberty, and the institutional design of
-          modern states.
-        </p>
+          <p>
+            <em>The Spirit of the Laws</em> was controversial as well as
+            enormously influential. It provoked criticism and was later placed
+            on the Roman Catholic Church's Index of Forbidden Books. Yet its
+            analysis of constitutional government became central to later
+            debates about limited government, political liberty, and the
+            institutional design of modern states.
+          </p>
 
-        <p>
-          The book's lasting importance lies partly in its ambition to combine
-          philosophy with comparative analysis. Montesquieu attempted not only
-          to say what political institutions ought to achieve, but also to
-          explain why institutions take different forms and what conditions
-          contribute to their preservation or corruption.
-        </p>
-      </section>
+          <p>
+            The book's lasting importance lies partly in its ambition to combine
+            philosophy with comparative analysis. Montesquieu attempted not only
+            to say what political institutions ought to achieve, but also to
+            explain why institutions take different forms and what conditions
+            contribute to their preservation or corruption.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          SEPARATION OF POWERS
          ===================================================== -->
 
-      <section class="narrative-block" id="separation-of-powers">
-        <h2>What Was Montesquieu's Theory of Separation of Powers?</h2>
+        <section class="narrative-block" id="separation-of-powers">
+          <h2>What Was Montesquieu's Theory of Separation of Powers?</h2>
 
-        <p>
-          <strong>Montesquieu's theory of separation of powers</strong> is his
-          most famous contribution to political philosophy. He argued that
-          political liberty is endangered when the major powers of government
-          are concentrated in the same person or governing body. Authority
-          should therefore be distributed in ways that make arbitrary rule more
-          difficult.
-        </p>
+          <p>
+            <strong>Montesquieu's theory of separation of powers</strong> is his
+            most famous contribution to political philosophy. He argued that
+            political liberty is endangered when the major powers of government
+            are concentrated in the same person or governing body. Authority
+            should therefore be distributed in ways that make arbitrary rule
+            more difficult.
+          </p>
 
-        <p>
-          Montesquieu distinguished three major kinds of governmental power:
-          legislative power, executive power in matters depending on the law of
-          nations, and executive power in matters depending on civil law, the
-          last of which is associated with judicial power. Later constitutional
-          thought commonly expressed this framework as legislative, executive,
-          and judicial branches.
-        </p>
+          <p>
+            Montesquieu distinguished three major kinds of governmental power:
+            legislative power, executive power in matters depending on the law
+            of nations, and executive power in matters depending on civil law,
+            the last of which is associated with judicial power. Later
+            constitutional thought commonly expressed this framework as
+            legislative, executive, and judicial branches.
+          </p>
 
-        <p>
-          His central concern was not merely administrative efficiency. If one
-          authority can make laws, execute them, and determine legal judgments,
-          citizens may be exposed to a dangerous concentration of political
-          force. The division of governmental powers was therefore intended to
-          create constitutional conditions in which power could encounter
-          resistance from other powers.
-        </p>
+          <p>
+            His central concern was not merely administrative efficiency. If one
+            authority can make laws, execute them, and determine legal
+            judgments, citizens may be exposed to a dangerous concentration of
+            political force. The division of governmental powers was therefore
+            intended to create constitutional conditions in which power could
+            encounter resistance from other powers.
+          </p>
 
-        <p>
-          Montesquieu's theory should not be understood as requiring every
-          governmental institution to operate in complete isolation. His broader
-          concern was the prevention of excessive concentration and the
-          preservation of political moderation. The relationships among
-          institutions mattered as much as their formal separation.
-        </p>
+          <p>
+            Montesquieu's theory should not be understood as requiring every
+            governmental institution to operate in complete isolation. His
+            broader concern was the prevention of excessive concentration and
+            the preservation of political moderation. The relationships among
+            institutions mattered as much as their formal separation.
+          </p>
 
-        <p>
-          His analysis became enormously influential in later constitutional
-          thought, especially in discussions surrounding the American
-          Constitution and modern theories of limited government. However,
-          modern constitutional systems developed the doctrine in different ways
-          and should not be treated as exact copies of Montesquieu's own
-          eighteenth-century model.
-        </p>
-      </section>
+          <p>
+            His analysis became enormously influential in later constitutional
+            thought, especially in discussions surrounding the American
+            Constitution and modern theories of limited government. However,
+            modern constitutional systems developed the doctrine in different
+            ways and should not be treated as exact copies of Montesquieu's own
+            eighteenth-century model.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          THREE BRANCHES
          ===================================================== -->
 
-      <section class="narrative-block" id="three-branches">
-        <h2>Montesquieu's Three Branches of Government</h2>
+        <section class="narrative-block" id="three-branches">
+          <h2>Montesquieu's Three Branches of Government</h2>
 
-        <h3>Legislative Power</h3>
+          <h3>Legislative Power</h3>
 
-        <p>
-          The <strong>legislative power</strong> concerns the authority to make
-          laws. Montesquieu regarded legislation as a fundamental political
-          power because laws establish the general framework within which a
-          society is governed. Yet legislative authority, like every other
-          political power, could threaten liberty if exercised without
-          constitutional restraint.
-        </p>
+          <p>
+            The <strong>legislative power</strong> concerns the authority to
+            make laws. Montesquieu regarded legislation as a fundamental
+            political power because laws establish the general framework within
+            which a society is governed. Yet legislative authority, like every
+            other political power, could threaten liberty if exercised without
+            constitutional restraint.
+          </p>
 
-        <h3>Executive Power</h3>
+          <h3>Executive Power</h3>
 
-        <p>
-          The <strong>executive power</strong> concerns the conduct of public
-          affairs and the implementation of governmental decisions. In
-          Montesquieu's analysis, executive authority was particularly connected
-          with matters such as foreign relations, security, and the practical
-          direction of government. It had to remain distinct from unlimited
-          control over legislation and judgment.
-        </p>
+          <p>
+            The <strong>executive power</strong> concerns the conduct of public
+            affairs and the implementation of governmental decisions. In
+            Montesquieu's analysis, executive authority was particularly
+            connected with matters such as foreign relations, security, and the
+            practical direction of government. It had to remain distinct from
+            unlimited control over legislation and judgment.
+          </p>
 
-        <h3>Judicial Power</h3>
+          <h3>Judicial Power</h3>
 
-        <p>
-          The <strong>judicial power</strong> concerns the application of law
-          and the judgment of particular cases. Montesquieu considered this
-          distinction important because citizens should not face a situation in
-          which the same unchecked authority makes laws, enforces them, and
-          determines guilt or innocence according to its own unrestricted will.
-        </p>
+          <p>
+            The <strong>judicial power</strong> concerns the application of law
+            and the judgment of particular cases. Montesquieu considered this
+            distinction important because citizens should not face a situation
+            in which the same unchecked authority makes laws, enforces them, and
+            determines guilt or innocence according to its own unrestricted
+            will.
+          </p>
 
-        <p>
-          The three-part framework became highly influential in later
-          constitutional thinking. Modern states do not always reproduce
-          Montesquieu's model exactly, and the institutional meaning of
-          legislative, executive, and judicial power has evolved considerably.
-          Nevertheless, his analysis helped establish the enduring principle
-          that governmental functions should not be dangerously concentrated.
-        </p>
-      </section>
+          <p>
+            The three-part framework became highly influential in later
+            constitutional thinking. Modern states do not always reproduce
+            Montesquieu's model exactly, and the institutional meaning of
+            legislative, executive, and judicial power has evolved considerably.
+            Nevertheless, his analysis helped establish the enduring principle
+            that governmental functions should not be dangerously concentrated.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          CHECKS
          ===================================================== -->
 
-      <section class="narrative-block" id="checks-and-balances">
-        <h2>Montesquieu and Checks and Balances</h2>
+        <section class="narrative-block" id="checks-and-balances">
+          <h2>Montesquieu and Checks and Balances</h2>
 
-        <p>
-          Montesquieu's political philosophy is closely associated with the
-          principle that <strong>power should restrain power</strong>. A
-          constitutional system should not assume that every ruler or political
-          institution will consistently act wisely and virtuously. Instead, its
-          structure should recognize the possibility of ambition, conflict, and
-          abuse.
-        </p>
+          <p>
+            Montesquieu's political philosophy is closely associated with the
+            principle that <strong>power should restrain power</strong>. A
+            constitutional system should not assume that every ruler or
+            political institution will consistently act wisely and virtuously.
+            Instead, its structure should recognize the possibility of ambition,
+            conflict, and abuse.
+          </p>
 
-        <p>
-          This principle later became closely connected with what modern
-          constitutional theory calls <strong>checks and balances</strong>. The
-          exact terminology and institutional mechanisms used in modern
-          political systems were not simply copied from Montesquieu. Later
-          constitutional thinkers developed and adapted his ideas to different
-          political circumstances.
-        </p>
+          <p>
+            This principle later became closely connected with what modern
+            constitutional theory calls <strong>checks and balances</strong>.
+            The exact terminology and institutional mechanisms used in modern
+            political systems were not simply copied from Montesquieu. Later
+            constitutional thinkers developed and adapted his ideas to different
+            political circumstances.
+          </p>
 
-        <p>
-          The purpose of institutional restraint is not necessarily to make
-          government powerless or permanently ineffective. Montesquieu was
-          concerned with political moderation: government must possess enough
-          authority to maintain law and public order while remaining unable to
-          transform its power easily into arbitrary domination.
-        </p>
+          <p>
+            The purpose of institutional restraint is not necessarily to make
+            government powerless or permanently ineffective. Montesquieu was
+            concerned with political moderation: government must possess enough
+            authority to maintain law and public order while remaining unable to
+            transform its power easily into arbitrary domination.
+          </p>
 
-        <p>
-          His lasting contribution was to shift attention toward institutional
-          design. Liberty could not depend entirely upon declarations of good
-          intentions or the personal virtue of rulers. Political freedom
-          required arrangements in which authority itself encountered legal and
-          institutional limits.
-        </p>
-      </section>
+          <p>
+            His lasting contribution was to shift attention toward institutional
+            design. Liberty could not depend entirely upon declarations of good
+            intentions or the personal virtue of rulers. Political freedom
+            required arrangements in which authority itself encountered legal
+            and institutional limits.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          LIBERTY
          ===================================================== -->
 
-      <section class="narrative-block" id="liberty">
-        <h2>Montesquieu's Philosophy of Liberty</h2>
+        <section class="narrative-block" id="liberty">
+          <h2>Montesquieu's Philosophy of Liberty</h2>
 
-        <p>
-          <strong>Liberty</strong> is one of the central concepts in
-          Montesquieu's political philosophy. He did not define political
-          freedom simply as the absence of every restriction. Instead, liberty
-          required political security and protection from the arbitrary exercise
-          of governmental power.
-        </p>
+          <p>
+            <strong>Liberty</strong> is one of the central concepts in
+            Montesquieu's political philosophy. He did not define political
+            freedom simply as the absence of every restriction. Instead, liberty
+            required political security and protection from the arbitrary
+            exercise of governmental power.
+          </p>
 
-        <p>
-          For Montesquieu, laws could protect freedom when they established
-          predictable limits upon both rulers and citizens. A person living
-          under stable laws may possess greater security than someone whose
-          political fate depends entirely upon the changing personal will of an
-          individual ruler.
-        </p>
+          <p>
+            For Montesquieu, laws could protect freedom when they established
+            predictable limits upon both rulers and citizens. A person living
+            under stable laws may possess greater security than someone whose
+            political fate depends entirely upon the changing personal will of
+            an individual ruler.
+          </p>
 
-        <p>
-          Political liberty therefore depended upon constitutional arrangements
-          capable of preventing excessive concentrations of authority. The
-          separation and distribution of governmental powers, together with
-          legal restraints, were important because they made arbitrary
-          domination more difficult.
-        </p>
+          <p>
+            Political liberty therefore depended upon constitutional
+            arrangements capable of preventing excessive concentrations of
+            authority. The separation and distribution of governmental powers,
+            together with legal restraints, were important because they made
+            arbitrary domination more difficult.
+          </p>
 
-        <p>
-          Montesquieu's conception of liberty was consequently institutional as
-          well as personal. He asked not only whether individuals possessed
-          abstract rights, but also whether the actual structure of government
-          created conditions in which citizens could live with reasonable
-          security under the law.
-        </p>
-      </section>
+          <p>
+            Montesquieu's conception of liberty was consequently institutional
+            as well as personal. He asked not only whether individuals possessed
+            abstract rights, but also whether the actual structure of government
+            created conditions in which citizens could live with reasonable
+            security under the law.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          CONSTITUTIONAL GOVERNMENT
          ===================================================== -->
 
-      <section class="narrative-block" id="constitutional-government">
-        <h2>Montesquieu on Political Freedom and Constitutional Government</h2>
+        <section class="narrative-block" id="constitutional-government">
+          <h2>
+            Montesquieu on Political Freedom and Constitutional Government
+          </h2>
 
-        <p>
-          Montesquieu believed that political freedom depends heavily upon the
-          structure of government. A constitution should not merely identify
-          rulers and establish procedures. It should organize relationships
-          among political institutions in ways that make the excessive
-          concentration of authority difficult.
-        </p>
+          <p>
+            Montesquieu believed that political freedom depends heavily upon the
+            structure of government. A constitution should not merely identify
+            rulers and establish procedures. It should organize relationships
+            among political institutions in ways that make the excessive
+            concentration of authority difficult.
+          </p>
 
-        <p>
-          Constitutional government, in this sense, is government constrained by
-          established laws, institutions, and political arrangements. Leaders
-          cannot legitimately exercise unlimited authority simply because they
-          possess military force, wealth, popularity, or formal political
-          office.
-        </p>
+          <p>
+            Constitutional government, in this sense, is government constrained
+            by established laws, institutions, and political arrangements.
+            Leaders cannot legitimately exercise unlimited authority simply
+            because they possess military force, wealth, popularity, or formal
+            political office.
+          </p>
 
-        <p>
-          Montesquieu's political philosophy therefore placed institutional
-          design at the center of the problem of liberty. Political freedom
-          could not depend entirely upon the goodwill of individual rulers,
-          because rulers change and even well-designed political systems may be
-          corrupted when power is left without meaningful restraint.
-        </p>
+          <p>
+            Montesquieu's political philosophy therefore placed institutional
+            design at the center of the problem of liberty. Political freedom
+            could not depend entirely upon the goodwill of individual rulers,
+            because rulers change and even well-designed political systems may
+            be corrupted when power is left without meaningful restraint.
+          </p>
 
-        <p>
-          He was especially interested in political moderation. The best
-          constitutional arrangements were not necessarily those that promised
-          unlimited popular power or unlimited executive authority, but those
-          capable of preventing any political force from becoming sufficiently
-          dominant to threaten the security of everyone else.
-        </p>
-      </section>
+          <p>
+            He was especially interested in political moderation. The best
+            constitutional arrangements were not necessarily those that promised
+            unlimited popular power or unlimited executive authority, but those
+            capable of preventing any political force from becoming sufficiently
+            dominant to threaten the security of everyone else.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          GOVERNMENTS
          ===================================================== -->
 
-      <section class="narrative-block" id="classification">
-        <h2>Montesquieu's Classification of Governments</h2>
+        <section class="narrative-block" id="classification">
+          <h2>Montesquieu's Classification of Governments</h2>
 
-        <p>
-          Montesquieu classified governments into three broad forms:
-          <strong>republics, monarchies, and despotisms</strong>. His
-          classification did not depend only upon the number of people who
-          ruled. He also examined the principles, institutions, and passions
-          that sustained each form of political order.
-        </p>
+          <p>
+            Montesquieu classified governments into three broad forms:
+            <strong>republics, monarchies, and despotisms</strong>. His
+            classification did not depend only upon the number of people who
+            ruled. He also examined the principles, institutions, and passions
+            that sustained each form of political order.
+          </p>
 
-        <p>
-          A <strong>republic</strong> is a government in which the people as a
-          whole, or a portion of the people, possess sovereign power.
-          Montesquieu distinguished democratic republics from aristocratic
-          republics according to whether political authority belongs broadly to
-          the people or to a limited part of the population.
-        </p>
+          <p>
+            A <strong>republic</strong> is a government in which the people as a
+            whole, or a portion of the people, possess sovereign power.
+            Montesquieu distinguished democratic republics from aristocratic
+            republics according to whether political authority belongs broadly
+            to the people or to a limited part of the population.
+          </p>
 
-        <p>
-          A <strong>monarchy</strong> is government by a single ruler who
-          governs according to established and fixed laws. Montesquieu therefore
-          did not simply treat monarchy as identical with arbitrary rule.
-          Monarchical government could contain laws, traditions, and
-          intermediate institutions that structured and restrained authority.
-        </p>
+          <p>
+            A <strong>monarchy</strong> is government by a single ruler who
+            governs according to established and fixed laws. Montesquieu
+            therefore did not simply treat monarchy as identical with arbitrary
+            rule. Monarchical government could contain laws, traditions, and
+            intermediate institutions that structured and restrained authority.
+          </p>
 
-        <p>
-          <strong>Despotism</strong>, by contrast, is characterized by rule
-          according to the will of a single ruler without the stable legal and
-          institutional restraints that distinguish lawful government.
-          Montesquieu regarded despotism as a continual danger because it
-          subjects political life to arbitrary and insecure power.
-        </p>
+          <p>
+            <strong>Despotism</strong>, by contrast, is characterized by rule
+            according to the will of a single ruler without the stable legal and
+            institutional restraints that distinguish lawful government.
+            Montesquieu regarded despotism as a continual danger because it
+            subjects political life to arbitrary and insecure power.
+          </p>
 
-        <p>
-          Each form of government also possessed what Montesquieu called a
-          <strong>principle</strong>: a dominant political passion or motive
-          that helps sustain it. Political systems could become corrupted when
-          the principles necessary to their preservation were weakened or
-          destroyed.
-        </p>
-      </section>
+          <p>
+            Each form of government also possessed what Montesquieu called a
+            <strong>principle</strong>: a dominant political passion or motive
+            that helps sustain it. Political systems could become corrupted when
+            the principles necessary to their preservation were weakened or
+            destroyed.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          DEMOCRACY
          ===================================================== -->
 
-      <section class="narrative-block" id="democracy">
-        <h2>Montesquieu on Democracy and Republican Government</h2>
+        <section class="narrative-block" id="democracy">
+          <h2>Montesquieu on Democracy and Republican Government</h2>
 
-        <p>
-          Montesquieu regarded republican government as one of the major forms
-          of political organization. In a democratic republic, the people
-          possess sovereign authority, while in an aristocratic republic
-          political power is exercised by only a portion of the population. Both
-          forms therefore belong to the broader category of republican
-          government.
-        </p>
+          <p>
+            Montesquieu regarded republican government as one of the major forms
+            of political organization. In a democratic republic, the people
+            possess sovereign authority, while in an aristocratic republic
+            political power is exercised by only a portion of the population.
+            Both forms therefore belong to the broader category of republican
+            government.
+          </p>
 
-        <p>
-          He believed that democratic republics depended upon a particular
-          political principle that he called <strong>virtue</strong>. By this he
-          did not primarily mean exceptional personal morality. He associated
-          political virtue with a love of the laws, the political community, and
-          the equality necessary to sustain republican government.
-        </p>
+          <p>
+            He believed that democratic republics depended upon a particular
+            political principle that he called <strong>virtue</strong>. By this
+            he did not primarily mean exceptional personal morality. He
+            associated political virtue with a love of the laws, the political
+            community, and the equality necessary to sustain republican
+            government.
+          </p>
 
-        <p>
-          Montesquieu's analysis of democracy was therefore more complicated
-          than a simple endorsement of majority rule. A political system could
-          formally give authority to the people and still become unstable or
-          corrupt if the social and political conditions required to sustain the
-          system gradually disappeared.
-        </p>
+          <p>
+            Montesquieu's analysis of democracy was therefore more complicated
+            than a simple endorsement of majority rule. A political system could
+            formally give authority to the people and still become unstable or
+            corrupt if the social and political conditions required to sustain
+            the system gradually disappeared.
+          </p>
 
-        <p>
-          His discussion also reflected the historical circumstances of the
-          eighteenth century and his concern with relatively small republics.
-          Modern representative democracies differ greatly from the political
-          communities he analyzed, but his questions about civic commitment,
-          institutional stability, equality, and political corruption remain
-          important to democratic theory.
-        </p>
-      </section>
+          <p>
+            His discussion also reflected the historical circumstances of the
+            eighteenth century and his concern with relatively small republics.
+            Modern representative democracies differ greatly from the political
+            communities he analyzed, but his questions about civic commitment,
+            institutional stability, equality, and political corruption remain
+            important to democratic theory.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          MONARCHY AND DESPOTISM
          ===================================================== -->
 
-      <section class="narrative-block" id="monarchy-despotism">
-        <h2>Montesquieu on Monarchy and Despotism</h2>
+        <section class="narrative-block" id="monarchy-despotism">
+          <h2>Montesquieu on Monarchy and Despotism</h2>
 
-        <p>
-          Montesquieu sharply distinguished <strong>monarchy</strong> from
-          <strong>despotism</strong>. In a monarchy, a single ruler governs
-          according to established and fixed laws. In despotism, political
-          authority is exercised according to the unrestricted will of the
-          ruler, without comparable legal and institutional limitations.
-        </p>
+          <p>
+            Montesquieu sharply distinguished <strong>monarchy</strong> from
+            <strong>despotism</strong>. In a monarchy, a single ruler governs
+            according to established and fixed laws. In despotism, political
+            authority is exercised according to the unrestricted will of the
+            ruler, without comparable legal and institutional limitations.
+          </p>
 
-        <p>
-          The principle associated with monarchy was
-          <strong>honor</strong>. Montesquieu believed that monarchical society
-          operated through distinctions of rank, ambition, and social
-          expectations that encouraged individuals to pursue status while still
-          acting within an established political order.
-        </p>
+          <p>
+            The principle associated with monarchy was
+            <strong>honor</strong>. Montesquieu believed that monarchical
+            society operated through distinctions of rank, ambition, and social
+            expectations that encouraged individuals to pursue status while
+            still acting within an established political order.
+          </p>
 
-        <p>
-          The principle associated with despotism was
-          <strong>fear</strong>. Where stable laws and independent institutions
-          are absent, obedience may depend increasingly upon the ruler's
-          capacity to create insecurity and fear. Despotism therefore
-          represented for Montesquieu one of the clearest forms of political
-          corruption and domination.
-        </p>
+          <p>
+            The principle associated with despotism was
+            <strong>fear</strong>. Where stable laws and independent
+            institutions are absent, obedience may depend increasingly upon the
+            ruler's capacity to create insecurity and fear. Despotism therefore
+            represented for Montesquieu one of the clearest forms of political
+            corruption and domination.
+          </p>
 
-        <p>
-          This distinction demonstrates why Montesquieu's philosophy cannot be
-          reduced to a simple preference for one governmental label. His deeper
-          concern was how political power is organized, what principles sustain
-          different institutions, and whether authority is exercised within
-          stable limits capable of protecting people from arbitrary rule.
-        </p>
-      </section>
+          <p>
+            This distinction demonstrates why Montesquieu's philosophy cannot be
+            reduced to a simple preference for one governmental label. His
+            deeper concern was how political power is organized, what principles
+            sustain different institutions, and whether authority is exercised
+            within stable limits capable of protecting people from arbitrary
+            rule.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          PERSIAN LETTERS
          ===================================================== -->
 
-      <section class="narrative-block" id="persian-letters">
-        <h2>Montesquieu and The Persian Letters</h2>
+        <section class="narrative-block" id="persian-letters">
+          <h2>Montesquieu and The Persian Letters</h2>
 
-        <p>
-          <em>The Persian Letters</em>, published anonymously in 1721, was the
-          work that first made Montesquieu famous. Written as an epistolary
-          novel, it presents fictional Persian travellers who observe European
-          society and describe its customs, institutions, religious practices,
-          and political behavior from an unfamiliar perspective.
-        </p>
+          <p>
+            <em>The Persian Letters</em>, published anonymously in 1721, was the
+            work that first made Montesquieu famous. Written as an epistolary
+            novel, it presents fictional Persian travellers who observe European
+            society and describe its customs, institutions, religious practices,
+            and political behavior from an unfamiliar perspective.
+          </p>
 
-        <p>
-          The device of the foreign observer allowed Montesquieu to make
-          European society appear strange to itself. Customs that seemed natural
-          to Europeans could be questioned when viewed through the eyes of
-          outsiders. The work uses satire and irony to examine vanity, religious
-          intolerance, political authority, social conventions, and intellectual
-          pretension.
-        </p>
+          <p>
+            The device of the foreign observer allowed Montesquieu to make
+            European society appear strange to itself. Customs that seemed
+            natural to Europeans could be questioned when viewed through the
+            eyes of outsiders. The work uses satire and irony to examine vanity,
+            religious intolerance, political authority, social conventions, and
+            intellectual pretension.
+          </p>
 
-        <p>
-          The book also contains an important criticism of despotism. Its
-          narrative moves between observations of European society and the
-          increasingly oppressive world of Usbek's household in Persia. This
-          contrast raises difficult questions about domination, freedom,
-          self-knowledge, and the contradictions between enlightened political
-          ideals and the exercise of personal power.
-        </p>
+          <p>
+            The book also contains an important criticism of despotism. Its
+            narrative moves between observations of European society and the
+            increasingly oppressive world of Usbek's household in Persia. This
+            contrast raises difficult questions about domination, freedom,
+            self-knowledge, and the contradictions between enlightened political
+            ideals and the exercise of personal power.
+          </p>
 
-        <p>
-          <em>The Persian Letters</em> was therefore far more than a literary
-          satire. It introduced themes that remained central to Montesquieu's
-          later philosophy: the comparison of societies, the diversity of
-          customs, the danger of despotism, and the difficulty of understanding
-          one's own society from within its assumptions.
-        </p>
-      </section>
+          <p>
+            <em>The Persian Letters</em> was therefore far more than a literary
+            satire. It introduced themes that remained central to Montesquieu's
+            later philosophy: the comparison of societies, the diversity of
+            customs, the danger of despotism, and the difficulty of
+            understanding one's own society from within its assumptions.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          PRINCIPLES OF GOVERNMENT
          ===================================================== -->
 
-      <section class="narrative-block" id="principles-government">
-        <h2>The Principles of Government: Virtue, Honor, and Fear</h2>
+        <section class="narrative-block" id="principles-government">
+          <h2>The Principles of Government: Virtue, Honor, and Fear</h2>
 
-        <p>
-          Montesquieu distinguished between the <strong>nature</strong> of a
-          government and its <strong>principle</strong>. The nature of a
-          government concerns its basic institutional structure and the way
-          political authority is organized. Its principle concerns the dominant
-          passion or motive that helps set the government in motion and sustain
-          its operation.
-        </p>
+          <p>
+            Montesquieu distinguished between the <strong>nature</strong> of a
+            government and its <strong>principle</strong>. The nature of a
+            government concerns its basic institutional structure and the way
+            political authority is organized. Its principle concerns the
+            dominant passion or motive that helps set the government in motion
+            and sustain its operation.
+          </p>
 
-        <p>
-          The principle of republican government was
-          <strong>virtue</strong>, especially political virtue. Montesquieu
-          associated this with a love of the laws and of one's country. In a
-          democratic republic, this also involved a commitment to the political
-          equality required for citizens to sustain their common institutions.
-        </p>
+          <p>
+            The principle of republican government was
+            <strong>virtue</strong>, especially political virtue. Montesquieu
+            associated this with a love of the laws and of one's country. In a
+            democratic republic, this also involved a commitment to the
+            political equality required for citizens to sustain their common
+            institutions.
+          </p>
 
-        <p>
-          The principle of monarchy was <strong>honor</strong>. Montesquieu
-          believed that monarchical societies could channel ambition and the
-          desire for distinction through systems of rank and established rules.
-          Individuals might pursue personal status while remaining connected to
-          a larger political structure.
-        </p>
+          <p>
+            The principle of monarchy was <strong>honor</strong>. Montesquieu
+            believed that monarchical societies could channel ambition and the
+            desire for distinction through systems of rank and established
+            rules. Individuals might pursue personal status while remaining
+            connected to a larger political structure.
+          </p>
 
-        <p>
-          The principle of despotism was <strong>fear</strong>. Because despotic
-          government lacks the stable restraints and independent institutions
-          that characterize more moderate political systems, obedience can
-          depend upon insecurity and the continual threat of punishment.
-        </p>
+          <p>
+            The principle of despotism was <strong>fear</strong>. Because
+            despotic government lacks the stable restraints and independent
+            institutions that characterize more moderate political systems,
+            obedience can depend upon insecurity and the continual threat of
+            punishment.
+          </p>
 
-        <p>
-          Montesquieu used these principles to explain political stability and
-          corruption. Governments are not preserved simply by their formal
-          constitutions. They also depend upon the social and psychological
-          conditions that make their institutions function. When those
-          conditions collapse, the political system itself may gradually become
-          corrupted.
-        </p>
-      </section>
+          <p>
+            Montesquieu used these principles to explain political stability and
+            corruption. Governments are not preserved simply by their formal
+            constitutions. They also depend upon the social and psychological
+            conditions that make their institutions function. When those
+            conditions collapse, the political system itself may gradually
+            become corrupted.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          INTERMEDIATE BODIES
          ===================================================== -->
 
-      <section class="narrative-block" id="intermediate-bodies">
-        <h2>Montesquieu and Intermediate Bodies</h2>
+        <section class="narrative-block" id="intermediate-bodies">
+          <h2>Montesquieu and Intermediate Bodies</h2>
 
-        <p>
-          Montesquieu believed that political liberty could be strengthened when
-          power was not concentrated entirely between an isolated ruler and an
-          undifferentiated population. He therefore paid considerable attention
-          to what are often called <strong>intermediate bodies</strong>:
-          institutions and social groups situated between the central government
-          and individual citizens.
-        </p>
+          <p>
+            Montesquieu believed that political liberty could be strengthened
+            when power was not concentrated entirely between an isolated ruler
+            and an undifferentiated population. He therefore paid considerable
+            attention to what are often called
+            <strong>intermediate bodies</strong>: institutions and social groups
+            situated between the central government and individual citizens.
+          </p>
 
-        <p>
-          In his discussion of monarchy, established institutions, legal bodies,
-          and social orders could help prevent authority from becoming entirely
-          arbitrary. These bodies did not necessarily represent democratic
-          equality in the modern sense, and Montesquieu's views were shaped by
-          the hierarchical society of his own time.
-        </p>
+          <p>
+            In his discussion of monarchy, established institutions, legal
+            bodies, and social orders could help prevent authority from becoming
+            entirely arbitrary. These bodies did not necessarily represent
+            democratic equality in the modern sense, and Montesquieu's views
+            were shaped by the hierarchical society of his own time.
+          </p>
 
-        <p>
-          Their political importance lay in the dispersal of authority. When
-          every form of social and political power is absorbed by one central
-          authority, resistance to arbitrary government becomes more difficult.
-          Independent institutions can therefore contribute to political
-          moderation by creating additional centers of authority.
-        </p>
+          <p>
+            Their political importance lay in the dispersal of authority. When
+            every form of social and political power is absorbed by one central
+            authority, resistance to arbitrary government becomes more
+            difficult. Independent institutions can therefore contribute to
+            political moderation by creating additional centers of authority.
+          </p>
 
-        <p>
-          This aspect of Montesquieu's thought influenced later discussions of
-          constitutionalism and civil society. Although modern democracies do
-          not reproduce the social hierarchy of eighteenth-century France, the
-          broader question of whether independent institutions can limit
-          excessive state power remains central to political theory.
-        </p>
-      </section>
+          <p>
+            This aspect of Montesquieu's thought influenced later discussions of
+            constitutionalism and civil society. Although modern democracies do
+            not reproduce the social hierarchy of eighteenth-century France, the
+            broader question of whether independent institutions can limit
+            excessive state power remains central to political theory.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          COMMERCE
          ===================================================== -->
 
-      <section class="narrative-block" id="commerce">
-        <h2>Montesquieu on Commerce and Society</h2>
+        <section class="narrative-block" id="commerce">
+          <h2>Montesquieu on Commerce and Society</h2>
 
-        <p>
-          Commerce occupies an important place in Montesquieu's political
-          thought. He believed that economic activity could influence the
-          character of societies and alter relationships between peoples.
-          Commercial exchange connected communities that might otherwise remain
-          politically and culturally isolated from one another.
-        </p>
+          <p>
+            Commerce occupies an important place in Montesquieu's political
+            thought. He believed that economic activity could influence the
+            character of societies and alter relationships between peoples.
+            Commercial exchange connected communities that might otherwise
+            remain politically and culturally isolated from one another.
+          </p>
 
-        <p>
-          Montesquieu is often associated with the idea that commerce can
-          encourage more peaceful and moderate relations. The pursuit of trade
-          creates interests in stability and exchange, making conflict
-          potentially costly for those whose prosperity depends upon continued
-          cooperation.
-        </p>
+          <p>
+            Montesquieu is often associated with the idea that commerce can
+            encourage more peaceful and moderate relations. The pursuit of trade
+            creates interests in stability and exchange, making conflict
+            potentially costly for those whose prosperity depends upon continued
+            cooperation.
+          </p>
 
-        <p>
-          He did not, however, present commerce as a simple solution to every
-          political problem. Economic life existed within wider systems of law,
-          custom, and political institutions. Commerce could influence society,
-          but its effects depended upon the circumstances in which commercial
-          relationships developed.
-        </p>
+          <p>
+            He did not, however, present commerce as a simple solution to every
+            political problem. Economic life existed within wider systems of
+            law, custom, and political institutions. Commerce could influence
+            society, but its effects depended upon the circumstances in which
+            commercial relationships developed.
+          </p>
 
-        <p>
-          His attention to commerce was significant because it connected
-          political philosophy with changing forms of economic life. Montesquieu
-          recognized that governments could not be understood solely through
-          constitutions and rulers; social habits, wealth, occupation, and
-          economic relationships also shaped political institutions.
-        </p>
-      </section>
+          <p>
+            His attention to commerce was significant because it connected
+            political philosophy with changing forms of economic life.
+            Montesquieu recognized that governments could not be understood
+            solely through constitutions and rulers; social habits, wealth,
+            occupation, and economic relationships also shaped political
+            institutions.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELIGION
          ===================================================== -->
 
-      <section class="narrative-block" id="religion">
-        <h2>Montesquieu on Religion and Toleration</h2>
+        <section class="narrative-block" id="religion">
+          <h2>Montesquieu on Religion and Toleration</h2>
 
-        <p>
-          Montesquieu examined religion primarily in relation to its social and
-          political effects. In <em>The Spirit of the Laws</em>, he often asked
-          how religious beliefs and institutions interact with laws, customs,
-          forms of government, and civil society rather than attempting to
-          construct his political philosophy directly from theological doctrine.
-        </p>
+          <p>
+            Montesquieu examined religion primarily in relation to its social
+            and political effects. In <em>The Spirit of the Laws</em>, he often
+            asked how religious beliefs and institutions interact with laws,
+            customs, forms of government, and civil society rather than
+            attempting to construct his political philosophy directly from
+            theological doctrine.
+          </p>
 
-        <p>
-          He was strongly critical of religious persecution and coercion.
-          Montesquieu regarded attempts to force belief as politically and
-          morally dangerous. His earlier writings, particularly
-          <em>The Persian Letters</em>, used satire to challenge religious
-          intolerance and the abuse of religious authority.
-        </p>
+          <p>
+            He was strongly critical of religious persecution and coercion.
+            Montesquieu regarded attempts to force belief as politically and
+            morally dangerous. His earlier writings, particularly
+            <em>The Persian Letters</em>, used satire to challenge religious
+            intolerance and the abuse of religious authority.
+          </p>
 
-        <p>
-          At the same time, some of his comparative judgments about particular
-          religions reflected the assumptions and limitations of eighteenth-
-          century European scholarship. His classifications should therefore be
-          read historically and critically rather than treated as timeless
-          sociological conclusions.
-        </p>
+          <p>
+            At the same time, some of his comparative judgments about particular
+            religions reflected the assumptions and limitations of eighteenth-
+            century European scholarship. His classifications should therefore
+            be read historically and critically rather than treated as timeless
+            sociological conclusions.
+          </p>
 
-        <p>
-          Montesquieu's enduring importance in this area lies in his defense of
-          moderation and toleration. He contributed to the Enlightenment
-          argument that political authority should not simply assume unlimited
-          power over conscience and that religious diversity must be considered
-          within the wider problem of maintaining civil peace.
-        </p>
-      </section>
+          <p>
+            Montesquieu's enduring importance in this area lies in his defense
+            of moderation and toleration. He contributed to the Enlightenment
+            argument that political authority should not simply assume unlimited
+            power over conscience and that religious diversity must be
+            considered within the wider problem of maintaining civil peace.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          CLIMATE
          ===================================================== -->
 
-      <section class="narrative-block" id="climate">
-        <h2>Montesquieu's Theory of Climate and Geography</h2>
+        <section class="narrative-block" id="climate">
+          <h2>Montesquieu's Theory of Climate and Geography</h2>
 
-        <p>
-          Montesquieu argued that climate and geography could influence human
-          temperament, customs, and political institutions. In
-          <em>The Spirit of the Laws</em>, he attempted to explain how physical
-          conditions might form part of the wider circumstances to which laws
-          should be adapted.
-        </p>
+          <p>
+            Montesquieu argued that climate and geography could influence human
+            temperament, customs, and political institutions. In
+            <em>The Spirit of the Laws</em>, he attempted to explain how
+            physical conditions might form part of the wider circumstances to
+            which laws should be adapted.
+          </p>
 
-        <p>
-          His climate theory was not intended as a completely simple claim that
-          geography mechanically determines every political outcome. Montesquieu
-          also emphasized the importance of laws, customs, religion, commerce,
-          and political institutions. Nevertheless, he assigned climate a much
-          greater explanatory role than modern political and social science
-          generally accepts.
-        </p>
+          <p>
+            His climate theory was not intended as a completely simple claim
+            that geography mechanically determines every political outcome.
+            Montesquieu also emphasized the importance of laws, customs,
+            religion, commerce, and political institutions. Nevertheless, he
+            assigned climate a much greater explanatory role than modern
+            political and social science generally accepts.
+          </p>
 
-        <p>
-          Many of his specific claims about the physical and psychological
-          effects of climate are scientifically unsupported and reflect the
-          limited empirical knowledge and cultural assumptions of the eighteenth
-          century. For this reason, his theory must be studied critically rather
-          than accepted as a valid scientific explanation of human differences.
-        </p>
+          <p>
+            Many of his specific claims about the physical and psychological
+            effects of climate are scientifically unsupported and reflect the
+            limited empirical knowledge and cultural assumptions of the
+            eighteenth century. For this reason, his theory must be studied
+            critically rather than accepted as a valid scientific explanation of
+            human differences.
+          </p>
 
-        <p>
-          Its philosophical significance lies partly in Montesquieu's broader
-          attempt to understand political life contextually. Laws, in his view,
-          should not always be treated as abstract rules floating above social
-          reality. Political institutions operate within particular material,
-          historical, and cultural environments.
-        </p>
-      </section>
+          <p>
+            Its philosophical significance lies partly in Montesquieu's broader
+            attempt to understand political life contextually. Laws, in his
+            view, should not always be treated as abstract rules floating above
+            social reality. Political institutions operate within particular
+            material, historical, and cultural environments.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          LEGACY
          ===================================================== -->
 
-      <section class="narrative-block" id="legacy">
-        <h2>Montesquieu's Influence and Philosophical Legacy</h2>
+        <section class="narrative-block" id="legacy">
+          <h2>Montesquieu's Influence and Philosophical Legacy</h2>
 
-        <p>
-          Montesquieu became one of the most influential political philosophers
-          of the modern era. His analysis of the separation and distribution of
-          governmental power profoundly influenced later constitutional thought
-          and contributed to debates surrounding the design of modern political
-          institutions.
-        </p>
+          <p>
+            Montesquieu became one of the most influential political
+            philosophers of the modern era. His analysis of the separation and
+            distribution of governmental power profoundly influenced later
+            constitutional thought and contributed to debates surrounding the
+            design of modern political institutions.
+          </p>
 
-        <p>
-          His ideas were especially important to constitutional thinkers in the
-          eighteenth century, including those involved in debates about the
-          political structure of the United States. Later political systems
-          adapted his principles in different ways, developing doctrines of
-          separated powers, judicial independence, and institutional checks.
-        </p>
+          <p>
+            His ideas were especially important to constitutional thinkers in
+            the eighteenth century, including those involved in debates about
+            the political structure of the United States. Later political
+            systems adapted his principles in different ways, developing
+            doctrines of separated powers, judicial independence, and
+            institutional checks.
+          </p>
 
-        <p>
-          Montesquieu also influenced the development of comparative political
-          analysis. His attempt to understand laws in relation to history,
-          customs, economic life, geography, and political institutions
-          encouraged later thinkers to examine political systems as complex
-          social arrangements rather than merely as abstract constitutional
-          diagrams.
-        </p>
+          <p>
+            Montesquieu also influenced the development of comparative political
+            analysis. His attempt to understand laws in relation to history,
+            customs, economic life, geography, and political institutions
+            encouraged later thinkers to examine political systems as complex
+            social arrangements rather than merely as abstract constitutional
+            diagrams.
+          </p>
 
-        <p>
-          Some parts of his thought, particularly aspects of his climate theory
-          and his judgments about different societies, have been strongly
-          criticized and rejected. His legacy must therefore be understood
-          critically rather than treated as a collection of unquestionable
-          doctrines.
-        </p>
+          <p>
+            Some parts of his thought, particularly aspects of his climate
+            theory and his judgments about different societies, have been
+            strongly criticized and rejected. His legacy must therefore be
+            understood critically rather than treated as a collection of
+            unquestionable doctrines.
+          </p>
 
-        <p>
-          Yet his central insight remains profoundly influential: political
-          liberty cannot safely depend upon the permanent virtue of those who
-          govern. A free political order requires institutions in which power is
-          limited, distributed, and confronted by other powers. This principle
-          remains one of the foundations of modern constitutional philosophy.
-        </p>
-      </section>
-      <div class="philosophy-divider"></div>
+          <p>
+            Yet his central insight remains profoundly influential: political
+            liberty cannot safely depend upon the permanent virtue of those who
+            govern. A free political order requires institutions in which power
+            is limited, distributed, and confronted by other powers. This
+            principle remains one of the foundations of modern constitutional
+            philosophy.
+          </p>
+        </section>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      NATURAL LAW
      ===================================================== -->
 
-      <section class="narrative-block" id="natural-law">
-        <h2>Montesquieu and Natural Law</h2>
+        <section class="narrative-block" id="natural-law">
+          <h2>Montesquieu and Natural Law</h2>
 
-        <p>
-          Montesquieu's discussion of law begins with a broad conception of
-          <strong
-            >laws as necessary relations arising from the nature of
-            things</strong
-          >. In this sense, the universe is governed by different kinds of laws:
-          physical laws governing the material world and laws connected with the
-          nature and condition of human beings. His starting point therefore
-          gave political and civil laws a place within a wider philosophical
-          account of order.
-        </p>
+          <p>
+            Montesquieu's discussion of law begins with a broad conception of
+            <strong
+              >laws as necessary relations arising from the nature of
+              things</strong
+            >. In this sense, the universe is governed by different kinds of
+            laws: physical laws governing the material world and laws connected
+            with the nature and condition of human beings. His starting point
+            therefore gave political and civil laws a place within a wider
+            philosophical account of order.
+          </p>
 
-        <p>
-          Montesquieu distinguished these broader relationships from the
-          particular <strong>positive laws</strong> created by human political
-          communities. Human beings, unlike physical objects, are capable of
-          error and are influenced by passion, ignorance, and changing social
-          circumstances. For this reason, the laws created by different nations
-          display considerable diversity.
-        </p>
+          <p>
+            Montesquieu distinguished these broader relationships from the
+            particular <strong>positive laws</strong> created by human political
+            communities. Human beings, unlike physical objects, are capable of
+            error and are influenced by passion, ignorance, and changing social
+            circumstances. For this reason, the laws created by different
+            nations display considerable diversity.
+          </p>
 
-        <p>
-          His approach differed from theories that attempted to derive an entire
-          political system directly from a small number of abstract principles
-          of natural law. Montesquieu believed that political and civil laws
-          must be understood in relation to the people for whom they are made,
-          the nature of their government, their customs, religion, commerce,
-          history, and other social conditions.
-        </p>
+          <p>
+            His approach differed from theories that attempted to derive an
+            entire political system directly from a small number of abstract
+            principles of natural law. Montesquieu believed that political and
+            civil laws must be understood in relation to the people for whom
+            they are made, the nature of their government, their customs,
+            religion, commerce, history, and other social conditions.
+          </p>
 
-        <p>
-          This does not mean that Montesquieu regarded every existing law as
-          equally just or beyond criticism. His comparative philosophy allowed
-          him to criticize arbitrary punishment, persecution, slavery, and
-          oppressive forms of government while also insisting that successful
-          political reform must take account of the circumstances of the society
-          in which laws operate.
-        </p>
+          <p>
+            This does not mean that Montesquieu regarded every existing law as
+            equally just or beyond criticism. His comparative philosophy allowed
+            him to criticize arbitrary punishment, persecution, slavery, and
+            oppressive forms of government while also insisting that successful
+            political reform must take account of the circumstances of the
+            society in which laws operate.
+          </p>
 
-        <p>
-          Montesquieu's philosophy of law therefore combines general questions
-          about human reason, justice, and political order with an empirical
-          investigation of particular societies. This combination is one of the
-          reasons he is regarded as an important predecessor to modern
-          comparative political science and the historical study of legal
-          institutions.
-        </p>
-      </section>
+          <p>
+            Montesquieu's philosophy of law therefore combines general questions
+            about human reason, justice, and political order with an empirical
+            investigation of particular societies. This combination is one of
+            the reasons he is regarded as an important predecessor to modern
+            comparative political science and the historical study of legal
+            institutions.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      WAR AND PEACE
      ===================================================== -->
 
-      <section class="narrative-block" id="war">
-        <h2>Montesquieu on War, Peace, and International Relations</h2>
+        <section class="narrative-block" id="war">
+          <h2>Montesquieu on War, Peace, and International Relations</h2>
 
-        <p>
-          Montesquieu examined political communities not only as independent
-          states but also as members of a wider international order. He
-          distinguished laws governing relations among nations from political
-          laws governing rulers and citizens within a state and civil laws
-          governing relationships among individuals.
-        </p>
+          <p>
+            Montesquieu examined political communities not only as independent
+            states but also as members of a wider international order. He
+            distinguished laws governing relations among nations from political
+            laws governing rulers and citizens within a state and civil laws
+            governing relationships among individuals.
+          </p>
 
-        <p>
-          In his discussion of the <strong>law of nations</strong>, Montesquieu
-          argued that states should seek to do one another as much good as
-          possible in times of peace and as little injury as possible in war
-          without sacrificing their genuine interests. His approach attempted to
-          place international conflict within principles capable of limiting
-          unnecessary destruction.
-        </p>
+          <p>
+            In his discussion of the <strong>law of nations</strong>,
+            Montesquieu argued that states should seek to do one another as much
+            good as possible in times of peace and as little injury as possible
+            in war without sacrificing their genuine interests. His approach
+            attempted to place international conflict within principles capable
+            of limiting unnecessary destruction.
+          </p>
 
-        <p>
-          Montesquieu also examined the problem of political size and security.
-          Small states may be vulnerable to external conquest, while excessively
-          large states may face dangers created by their own internal
-          administration and concentration of power. His discussion of
-          federations explored one possible way in which smaller political
-          communities might combine their strength without entirely losing their
-          separate political existence.
-        </p>
+          <p>
+            Montesquieu also examined the problem of political size and
+            security. Small states may be vulnerable to external conquest, while
+            excessively large states may face dangers created by their own
+            internal administration and concentration of power. His discussion
+            of federations explored one possible way in which smaller political
+            communities might combine their strength without entirely losing
+            their separate political existence.
+          </p>
 
-        <p>
-          He criticized conquest when it became an unlimited pursuit of
-          domination and examined the relationship between war, victory, and
-          political preservation. His analysis did not eliminate the possibility
-          of defensive force, but it questioned the assumption that territorial
-          expansion and military power were the highest purposes of political
-          life.
-        </p>
+          <p>
+            He criticized conquest when it became an unlimited pursuit of
+            domination and examined the relationship between war, victory, and
+            political preservation. His analysis did not eliminate the
+            possibility of defensive force, but it questioned the assumption
+            that territorial expansion and military power were the highest
+            purposes of political life.
+          </p>
 
-        <p>
-          Montesquieu's reflections on war and peace were closely connected with
-          his views on commerce. Exchange between societies could create forms
-          of mutual interest that differed from relationships based entirely on
-          conquest. For this reason, his political philosophy contributed to
-          later Enlightenment discussions about international order, trade, and
-          the possibility of more peaceful relations among states.
-        </p>
-      </section>
+          <p>
+            Montesquieu's reflections on war and peace were closely connected
+            with his views on commerce. Exchange between societies could create
+            forms of mutual interest that differed from relationships based
+            entirely on conquest. For this reason, his political philosophy
+            contributed to later Enlightenment discussions about international
+            order, trade, and the possibility of more peaceful relations among
+            states.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      MAJOR WORKS
      ===================================================== -->
 
-      <section class="narrative-block" id="works">
-        <h2>Major Works of Montesquieu</h2>
+        <section class="narrative-block" id="works">
+          <h2>Major Works of Montesquieu</h2>
 
-        <p>
-          Montesquieu wrote across political philosophy, history, literature,
-          legal theory, and social analysis. His major works demonstrate the
-          development of a distinctive comparative method that combined
-          philosophical reasoning with historical observation and the study of
-          political institutions.
-        </p>
+          <p>
+            Montesquieu wrote across political philosophy, history, literature,
+            legal theory, and social analysis. His major works demonstrate the
+            development of a distinctive comparative method that combined
+            philosophical reasoning with historical observation and the study of
+            political institutions.
+          </p>
 
-        <p>
-          Although <em>The Spirit of the Laws</em> remains his most influential
-          work, Montesquieu's earlier writings are essential for understanding
-          the development of his political thought. His satire, historical
-          analysis, and later philosophical defense of his arguments reveal the
-          breadth of his intellectual interests.
-        </p>
+          <p>
+            Although <em>The Spirit of the Laws</em> remains his most
+            influential work, Montesquieu's earlier writings are essential for
+            understanding the development of his political thought. His satire,
+            historical analysis, and later philosophical defense of his
+            arguments reveal the breadth of his intellectual interests.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong><em>Persian Letters</em> (1721)</strong> — A satirical
-            epistolary work that uses fictional Persian travellers to examine
-            French and European society, religion, political authority, social
-            customs, and cultural assumptions from the perspective of outsiders.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong><em>Persian Letters</em> (1721)</strong> — A satirical
+              epistolary work that uses fictional Persian travellers to examine
+              French and European society, religion, political authority, social
+              customs, and cultural assumptions from the perspective of
+              outsiders.
+            </li>
 
-          <li>
-            <strong
-              ><em
-                >Considerations on the Causes of the Greatness of the Romans and
-                Their Decline</em
+            <li>
+              <strong
+                ><em
+                  >Considerations on the Causes of the Greatness of the Romans
+                  and Their Decline</em
+                >
+                (1734)</strong
               >
-              (1734)</strong
-            >
-            — A historical and political analysis of the forces that contributed
-            to the expansion of Roman power and the conditions that contributed
-            to its transformation and decline.
-          </li>
+              — A historical and political analysis of the forces that
+              contributed to the expansion of Roman power and the conditions
+              that contributed to its transformation and decline.
+            </li>
 
-          <li>
-            <strong><em>The Spirit of the Laws</em> (1748)</strong> —
-            Montesquieu's major work on laws, forms of government, political
-            liberty, the distribution of governmental powers, commerce,
-            religion, customs, climate, geography, and the historical
-            circumstances shaping political institutions.
-          </li>
+            <li>
+              <strong><em>The Spirit of the Laws</em> (1748)</strong> —
+              Montesquieu's major work on laws, forms of government, political
+              liberty, the distribution of governmental powers, commerce,
+              religion, customs, climate, geography, and the historical
+              circumstances shaping political institutions.
+            </li>
 
-          <li>
-            <strong><em>Defence of The Spirit of the Laws</em> (1750)</strong> —
-            Montesquieu's response to criticisms of his major political and
-            philosophical work, written to clarify and defend aspects of the
-            arguments developed in <em>The Spirit of the Laws</em>.
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong><em>Defence of The Spirit of the Laws</em> (1750)</strong>
+              — Montesquieu's response to criticisms of his major political and
+              philosophical work, written to clarify and defend aspects of the
+              arguments developed in <em>The Spirit of the Laws</em>.
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          MAIN IDEAS
          ===================================================== -->
 
-      <section class="narrative-block" id="key-ideas">
-        <h2>Montesquieu's Main Philosophical and Political Ideas</h2>
+        <section class="narrative-block" id="key-ideas">
+          <h2>Montesquieu's Main Philosophical and Political Ideas</h2>
 
-        <h3>1. Separation of Powers</h3>
+          <h3>1. Separation of Powers</h3>
 
-        <p>
-          Montesquieu argued that legislative, executive, and judicial powers
-          should not become concentrated within the same authority. Dividing
-          governmental functions helps protect political liberty and reduces the
-          possibility of arbitrary rule.
-        </p>
+          <p>
+            Montesquieu argued that legislative, executive, and judicial powers
+            should not become concentrated within the same authority. Dividing
+            governmental functions helps protect political liberty and reduces
+            the possibility of arbitrary rule.
+          </p>
 
-        <h3>2. Political Liberty</h3>
+          <h3>2. Political Liberty</h3>
 
-        <p>
-          Political liberty requires security from arbitrary power. For
-          Montesquieu, stable laws and constitutional institutions can provide
-          citizens with greater freedom than government based solely on the
-          personal will of rulers.
-        </p>
+          <p>
+            Political liberty requires security from arbitrary power. For
+            Montesquieu, stable laws and constitutional institutions can provide
+            citizens with greater freedom than government based solely on the
+            personal will of rulers.
+          </p>
 
-        <h3>3. Rule of Law</h3>
+          <h3>3. Rule of Law</h3>
 
-        <p>
-          Government should operate through established laws rather than
-          unrestricted personal authority. Law provides a framework within which
-          political power can be exercised and limited.
-        </p>
+          <p>
+            Government should operate through established laws rather than
+            unrestricted personal authority. Law provides a framework within
+            which political power can be exercised and limited.
+          </p>
 
-        <h3>4. Comparative Political Analysis</h3>
+          <h3>4. Comparative Political Analysis</h3>
 
-        <p>
-          Montesquieu compared different governments and societies in order to
-          understand how political institutions develop. He emphasized that laws
-          must be considered in relation to history, customs, geography,
-          religion, and economic conditions.
-        </p>
+          <p>
+            Montesquieu compared different governments and societies in order to
+            understand how political institutions develop. He emphasized that
+            laws must be considered in relation to history, customs, geography,
+            religion, and economic conditions.
+          </p>
 
-        <h3>5. Opposition to Despotism</h3>
+          <h3>5. Opposition to Despotism</h3>
 
-        <p>
-          Montesquieu regarded arbitrary concentrated power as one of the
-          greatest threats to political freedom. His institutional theory was
-          designed in large part to make such domination more difficult.
-        </p>
-      </section>
+          <p>
+            Montesquieu regarded arbitrary concentrated power as one of the
+            greatest threats to political freedom. His institutional theory was
+            designed in large part to make such domination more difficult.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          AMERICAN CONSTITUTION
          ===================================================== -->
 
-      <section class="narrative-block" id="american-constitution">
-        <h2>Montesquieu's Influence on the American Constitution</h2>
+        <section class="narrative-block" id="american-constitution">
+          <h2>Montesquieu's Influence on the American Constitution</h2>
 
-        <p>
-          Montesquieu became highly influential in eighteenth-century
-          discussions of constitutional government, particularly among American
-          political thinkers. His analysis of separation of powers provided an
-          important intellectual resource for those concerned with preventing
-          excessive concentration of governmental authority.
-        </p>
+          <p>
+            Montesquieu became highly influential in eighteenth-century
+            discussions of constitutional government, particularly among
+            American political thinkers. His analysis of separation of powers
+            provided an important intellectual resource for those concerned with
+            preventing excessive concentration of governmental authority.
+          </p>
 
-        <p>
-          The United States Constitution established separate legislative,
-          executive, and judicial branches, although the American system
-          developed its own institutional arrangements rather than simply
-          copying Montesquieu's model. The resulting system also incorporated
-          mechanisms through which the branches could limit one another.
-        </p>
+          <p>
+            The United States Constitution established separate legislative,
+            executive, and judicial branches, although the American system
+            developed its own institutional arrangements rather than simply
+            copying Montesquieu's model. The resulting system also incorporated
+            mechanisms through which the branches could limit one another.
+          </p>
 
-        <p>
-          Montesquieu's influence can therefore be seen in the broader
-          constitutional principle that political power should be divided and
-          constrained. His ideas became part of the intellectual background
-          against which American constitutional government was designed.
-        </p>
+          <p>
+            Montesquieu's influence can therefore be seen in the broader
+            constitutional principle that political power should be divided and
+            constrained. His ideas became part of the intellectual background
+            against which American constitutional government was designed.
+          </p>
 
-        <p>
-          His influence on American political thought helped make the separation
-          of powers one of the most recognizable concepts in modern
-          constitutional theory. The relationship between Montesquieu and the
-          American Constitution remains an important topic in the history of
-          political philosophy.
-        </p>
-      </section>
+          <p>
+            His influence on American political thought helped make the
+            separation of powers one of the most recognizable concepts in modern
+            constitutional theory. The relationship between Montesquieu and the
+            American Constitution remains an important topic in the history of
+            political philosophy.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          MODERN DEMOCRACY
          ===================================================== -->
 
-      <section class="narrative-block" id="modern-democracy">
-        <h2>
-          Montesquieu's Influence on Modern Democracy and Political Philosophy
-        </h2>
+        <section class="narrative-block" id="modern-democracy">
+          <h2>
+            Montesquieu's Influence on Modern Democracy and Political Philosophy
+          </h2>
 
-        <p>
-          Montesquieu's political thought continues to influence modern
-          constitutional democracies because the problem he examined remains
-          fundamental: how can governments possess enough authority to function
-          while preventing that authority from becoming arbitrary?
-        </p>
+          <p>
+            Montesquieu's political thought continues to influence modern
+            constitutional democracies because the problem he examined remains
+            fundamental: how can governments possess enough authority to
+            function while preventing that authority from becoming arbitrary?
+          </p>
 
-        <p>
-          His theory of separated governmental powers influenced constitutional
-          discussions across Europe, North America, and other parts of the
-          modern political world. The specific institutions vary between
-          countries, but the principle of limiting concentrated political power
-          remains widely important.
-        </p>
+          <p>
+            His theory of separated governmental powers influenced
+            constitutional discussions across Europe, North America, and other
+            parts of the modern political world. The specific institutions vary
+            between countries, but the principle of limiting concentrated
+            political power remains widely important.
+          </p>
 
-        <p>
-          Montesquieu also contributed to the development of comparative
-          political analysis. His attempt to explain political institutions
-          through relationships among law, history, society, economy, religion,
-          and geography anticipated later approaches in political science and
-          sociology.
-        </p>
+          <p>
+            Montesquieu also contributed to the development of comparative
+            political analysis. His attempt to explain political institutions
+            through relationships among law, history, society, economy,
+            religion, and geography anticipated later approaches in political
+            science and sociology.
+          </p>
 
-        <p>
-          His legacy therefore extends beyond the separation of powers.
-          Montesquieu helped establish a broader tradition of studying
-          government as an institutional and social phenomenon rather than
-          simply as an expression of political authority.
-        </p>
-      </section>
+          <p>
+            His legacy therefore extends beyond the separation of powers.
+            Montesquieu helped establish a broader tradition of studying
+            government as an institutional and social phenomenon rather than
+            simply as an expression of political authority.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          LEGACY
          ===================================================== -->
 
-      <section class="narrative-block" id="legacy">
-        <h2>Montesquieu's Legacy and Criticisms</h2>
+        <section class="narrative-block" id="legacy">
+          <h2>Montesquieu's Legacy and Criticisms</h2>
 
-        <p>
-          Montesquieu's influence on political philosophy has been enormous,
-          particularly in discussions of constitutional government, liberty,
-          institutional checks, and the separation of powers. His work became a
-          central reference point for later thinkers concerned with limiting
-          arbitrary political authority.
-        </p>
+          <p>
+            Montesquieu's influence on political philosophy has been enormous,
+            particularly in discussions of constitutional government, liberty,
+            institutional checks, and the separation of powers. His work became
+            a central reference point for later thinkers concerned with limiting
+            arbitrary political authority.
+          </p>
 
-        <p>
-          At the same time, modern scholars have criticized or questioned some
-          aspects of his thought. His climate theory, for example, reflects
-          assumptions of eighteenth-century European intellectual culture that
-          do not correspond to contemporary scientific understandings of human
-          societies.
-        </p>
+          <p>
+            At the same time, modern scholars have criticized or questioned some
+            aspects of his thought. His climate theory, for example, reflects
+            assumptions of eighteenth-century European intellectual culture that
+            do not correspond to contemporary scientific understandings of human
+            societies.
+          </p>
 
-        <p>
-          His descriptions of different civilizations and political systems also
-          contain historical limitations and assumptions that require careful
-          interpretation. Montesquieu should therefore be read within the
-          context of his period rather than treated as a completely contemporary
-          political theorist.
-        </p>
+          <p>
+            His descriptions of different civilizations and political systems
+            also contain historical limitations and assumptions that require
+            careful interpretation. Montesquieu should therefore be read within
+            the context of his period rather than treated as a completely
+            contemporary political theorist.
+          </p>
 
-        <p>
-          Nevertheless, his central insight concerning the institutional
-          limitation of political power remains one of the most influential
-          contributions to modern political philosophy. His work continues to
-          shape discussions of constitutionalism, liberty, law, and government.
-        </p>
-      </section>
+          <p>
+            Nevertheless, his central insight concerning the institutional
+            limitation of political power remains one of the most influential
+            contributions to modern political philosophy. His work continues to
+            shape discussions of constitutionalism, liberty, law, and
+            government.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          FAQ
          ===================================================== -->
 
-      <section class="narrative-block" id="faq">
-        <h2>Frequently Asked Questions About Montesquieu</h2>
+        <section class="narrative-block" id="faq">
+          <h2>Frequently Asked Questions About Montesquieu</h2>
 
-        <h3>Who was Montesquieu?</h3>
+          <h3>Who was Montesquieu?</h3>
 
-        <p>
-          Montesquieu was an eighteenth-century French philosopher, political
-          thinker, jurist, and major figure of the Enlightenment. He is best
-          known for his analysis of government, political liberty, law, and
-          separation of powers.
-        </p>
+          <p>
+            Montesquieu was an eighteenth-century French philosopher, political
+            thinker, jurist, and major figure of the Enlightenment. He is best
+            known for his analysis of government, political liberty, law, and
+            separation of powers.
+          </p>
 
-        <h3>What was Montesquieu famous for?</h3>
+          <h3>What was Montesquieu famous for?</h3>
 
-        <p>
-          Montesquieu is most famous for his theory of the separation of powers.
-          He argued that legislative, executive, and judicial powers should not
-          become concentrated within the same authority because concentrated
-          political power can threaten liberty.
-        </p>
+          <p>
+            Montesquieu is most famous for his theory of the separation of
+            powers. He argued that legislative, executive, and judicial powers
+            should not become concentrated within the same authority because
+            concentrated political power can threaten liberty.
+          </p>
 
-        <h3>What was Montesquieu's philosophy?</h3>
+          <h3>What was Montesquieu's philosophy?</h3>
 
-        <p>
-          Montesquieu's philosophy focused primarily on political institutions,
-          law, liberty, government, and the conditions that prevent arbitrary
-          rule. His political thought emphasized constitutional limits and the
-          relationship between different forms of government and social
-          circumstances.
-        </p>
+          <p>
+            Montesquieu's philosophy focused primarily on political
+            institutions, law, liberty, government, and the conditions that
+            prevent arbitrary rule. His political thought emphasized
+            constitutional limits and the relationship between different forms
+            of government and social circumstances.
+          </p>
 
-        <h3>What is Montesquieu's separation of powers?</h3>
+          <h3>What is Montesquieu's separation of powers?</h3>
 
-        <p>
-          Montesquieu's separation of powers is the principle that governmental
-          authority should be divided among legislative, executive, and judicial
-          functions. The purpose is to prevent excessive concentration of
-          political power and protect political liberty.
-        </p>
+          <p>
+            Montesquieu's separation of powers is the principle that
+            governmental authority should be divided among legislative,
+            executive, and judicial functions. The purpose is to prevent
+            excessive concentration of political power and protect political
+            liberty.
+          </p>
 
-        <h3>
-          What are the three branches of government according to Montesquieu?
-        </h3>
+          <h3>
+            What are the three branches of government according to Montesquieu?
+          </h3>
 
-        <p>
-          Montesquieu identified legislative, executive, and judicial powers as
-          distinct governmental functions. Modern constitutional systems often
-          describe these as the legislative, executive, and judicial branches,
-          although their precise institutional arrangements differ.
-        </p>
+          <p>
+            Montesquieu identified legislative, executive, and judicial powers
+            as distinct governmental functions. Modern constitutional systems
+            often describe these as the legislative, executive, and judicial
+            branches, although their precise institutional arrangements differ.
+          </p>
 
-        <h3>Did Montesquieu invent separation of powers?</h3>
+          <h3>Did Montesquieu invent separation of powers?</h3>
 
-        <p>
-          Montesquieu did not create the idea of dividing governmental authority
-          from nothing, since earlier political thinkers had discussed forms of
-          mixed or divided government. His major contribution was developing a
-          systematic analysis of separated governmental functions and connecting
-          institutional division directly with political liberty.
-        </p>
+          <p>
+            Montesquieu did not create the idea of dividing governmental
+            authority from nothing, since earlier political thinkers had
+            discussed forms of mixed or divided government. His major
+            contribution was developing a systematic analysis of separated
+            governmental functions and connecting institutional division
+            directly with political liberty.
+          </p>
 
-        <h3>What did Montesquieu mean by political liberty?</h3>
+          <h3>What did Montesquieu mean by political liberty?</h3>
 
-        <p>
-          Montesquieu understood political liberty primarily as security from
-          arbitrary government. Liberty requires laws and institutions that
-          prevent rulers from exercising unrestricted personal authority over
-          citizens.
-        </p>
+          <p>
+            Montesquieu understood political liberty primarily as security from
+            arbitrary government. Liberty requires laws and institutions that
+            prevent rulers from exercising unrestricted personal authority over
+            citizens.
+          </p>
 
-        <h3>What is The Spirit of the Laws by Montesquieu?</h3>
+          <h3>What is The Spirit of the Laws by Montesquieu?</h3>
 
-        <p>
-          <em>The Spirit of the Laws</em>, published in 1748, is Montesquieu's
-          major work on law, government, political liberty, separation of
-          powers, society, commerce, religion, climate, and history. It is one
-          of the foundational texts of modern political philosophy.
-        </p>
+          <p>
+            <em>The Spirit of the Laws</em>, published in 1748, is Montesquieu's
+            major work on law, government, political liberty, separation of
+            powers, society, commerce, religion, climate, and history. It is one
+            of the foundational texts of modern political philosophy.
+          </p>
 
-        <h3>How did Montesquieu influence democracy?</h3>
+          <h3>How did Montesquieu influence democracy?</h3>
 
-        <p>
-          Montesquieu influenced modern democratic and constitutional thought by
-          emphasizing divided governmental authority, institutional restraints,
-          political liberty, and the rule of law. His ideas became particularly
-          influential in constitutional debates in the eighteenth century.
-        </p>
+          <p>
+            Montesquieu influenced modern democratic and constitutional thought
+            by emphasizing divided governmental authority, institutional
+            restraints, political liberty, and the rule of law. His ideas became
+            particularly influential in constitutional debates in the eighteenth
+            century.
+          </p>
 
-        <h3>How did Montesquieu influence the American Constitution?</h3>
+          <h3>How did Montesquieu influence the American Constitution?</h3>
 
-        <p>
-          Montesquieu's writings provided an important intellectual influence on
-          American constitutional thought, especially concerning the separation
-          of governmental powers. The United States Constitution established
-          separate legislative, executive, and judicial branches with mechanisms
-          that allow each part of government to constrain others.
-        </p>
+          <p>
+            Montesquieu's writings provided an important intellectual influence
+            on American constitutional thought, especially concerning the
+            separation of governmental powers. The United States Constitution
+            established separate legislative, executive, and judicial branches
+            with mechanisms that allow each part of government to constrain
+            others.
+          </p>
 
-        <h3>What did Montesquieu believe about government?</h3>
+          <h3>What did Montesquieu believe about government?</h3>
 
-        <p>
-          Montesquieu believed that different forms of government operate
-          according to different principles and social conditions. He was
-          particularly concerned with preventing arbitrary power and argued that
-          constitutional institutions could help preserve political liberty.
-        </p>
+          <p>
+            Montesquieu believed that different forms of government operate
+            according to different principles and social conditions. He was
+            particularly concerned with preventing arbitrary power and argued
+            that constitutional institutions could help preserve political
+            liberty.
+          </p>
 
-        <h3>What did Montesquieu think about despotism?</h3>
+          <h3>What did Montesquieu think about despotism?</h3>
 
-        <p>
-          Montesquieu regarded despotism as a form of government in which
-          political authority is concentrated and exercised according to the
-          ruler's will rather than meaningful institutional restraints. He
-          considered arbitrary power a major threat to political freedom.
-        </p>
+          <p>
+            Montesquieu regarded despotism as a form of government in which
+            political authority is concentrated and exercised according to the
+            ruler's will rather than meaningful institutional restraints. He
+            considered arbitrary power a major threat to political freedom.
+          </p>
 
-        <h3>What was Montesquieu's theory of climate?</h3>
+          <h3>What was Montesquieu's theory of climate?</h3>
 
-        <p>
-          Montesquieu argued that climate and geographical conditions could
-          influence human behavior, customs, laws, and political institutions.
-          His climate theory reflects eighteenth-century thought and should be
-          interpreted historically rather than as a modern scientific theory.
-        </p>
+          <p>
+            Montesquieu argued that climate and geographical conditions could
+            influence human behavior, customs, laws, and political institutions.
+            His climate theory reflects eighteenth-century thought and should be
+            interpreted historically rather than as a modern scientific theory.
+          </p>
 
-        <h3>Was Montesquieu an Enlightenment philosopher?</h3>
+          <h3>Was Montesquieu an Enlightenment philosopher?</h3>
 
-        <p>
-          Yes. Montesquieu was one of the major philosophers of the European
-          Enlightenment. His emphasis on reason, political liberty, historical
-          comparison, institutional limits, and criticism of arbitrary authority
-          made him an important Enlightenment thinker.
-        </p>
+          <p>
+            Yes. Montesquieu was one of the major philosophers of the European
+            Enlightenment. His emphasis on reason, political liberty, historical
+            comparison, institutional limits, and criticism of arbitrary
+            authority made him an important Enlightenment thinker.
+          </p>
 
-        <h3>What were Montesquieu's major works?</h3>
+          <h3>What were Montesquieu's major works?</h3>
 
-        <p>
-          Montesquieu's major works include <em>Persian Letters</em>,
-          <em
-            >Considerations on the Causes of the Greatness of the Romans and
-            Their Decline</em
-          >, and <em>The Spirit of the Laws</em>. The latter is his most
-          influential work in political philosophy.
-        </p>
+          <p>
+            Montesquieu's major works include <em>Persian Letters</em>,
+            <em
+              >Considerations on the Causes of the Greatness of the Romans and
+              Their Decline</em
+            >, and <em>The Spirit of the Laws</em>. The latter is his most
+            influential work in political philosophy.
+          </p>
 
-        <h3>Why is Montesquieu important in political philosophy?</h3>
+          <h3>Why is Montesquieu important in political philosophy?</h3>
 
-        <p>
-          Montesquieu is important because he developed a powerful theory of
-          constitutional government in which political liberty depends partly
-          upon the institutional distribution and limitation of power. His
-          analysis remains influential in modern political and constitutional
-          thought.
-        </p>
-      </section>
+          <p>
+            Montesquieu is important because he developed a powerful theory of
+            constitutional government in which political liberty depends partly
+            upon the institutional distribution and limitation of power. His
+            analysis remains influential in modern political and constitutional
+            thought.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED THINKERS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-thinkers-title">
-        <span class="section-eyebrow">Continue Exploring</span>
+        <section class="connection" aria-labelledby="related-thinkers-title">
+          <span class="section-eyebrow">Continue Exploring</span>
 
-        <h2 id="related-thinkers-title">Related Enlightenment Philosophers</h2>
+          <h2 id="related-thinkers-title">
+            Related Enlightenment Philosophers
+          </h2>
 
-        <p>
-          Explore other major thinkers who shaped modern philosophy,
-          Enlightenment political thought, theories of knowledge, liberty,
-          government, and constitutionalism.
-        </p>
+          <p>
+            Explore other major thinkers who shaped modern philosophy,
+            Enlightenment political thought, theories of knowledge, liberty,
+            government, and constitutionalism.
+          </p>
 
-        <div class="related-links">
-          <a href="rene-descartes.html">René Descartes</a>
-          ·
-          <a href="john-locke.html">John Locke</a>
-          ·
-          <a href="baruch-spinoza.html">Baruch Spinoza</a>
-          ·
+          <div class="related-links">
+            <a href="rene-descartes.html">René Descartes</a>
+            ·
+            <a href="john-locke.html">John Locke</a>
+            ·
+            <a href="baruch-spinoza.html">Baruch Spinoza</a>
+            ·
 
-          <a href="george-berkeley.html">George Berkeley</a>
-          ·
-          <a href="david-hume.html">David Hume</a>
-          ·
+            <a href="george-berkeley.html">George Berkeley</a>
+            ·
+            <a href="david-hume.html">David Hume</a>
+            ·
 
-          <a href="immanuel-kant.html">Immanuel Kant</a>
-          ·
-          <a href="voltaire.html">Voltaire</a>
-        </div>
-      </section>
+            <a href="immanuel-kant.html">Immanuel Kant</a>
+            ·
+            <a href="voltaire.html">Voltaire</a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED AREAS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-topics-title">
-        <span class="section-eyebrow">Philosophical Connections</span>
+        <section class="connection" aria-labelledby="related-topics-title">
+          <span class="section-eyebrow">Philosophical Connections</span>
 
-        <h2 id="related-topics-title">Related Areas of Philosophy</h2>
+          <h2 id="related-topics-title">Related Areas of Philosophy</h2>
 
-        <p>
-          Montesquieu's philosophy connects political philosophy with ethics,
-          law, history, liberty, government, social philosophy, Enlightenment
-          thought, and the study of political institutions.
-        </p>
+          <p>
+            Montesquieu's philosophy connects political philosophy with ethics,
+            law, history, liberty, government, social philosophy, Enlightenment
+            thought, and the study of political institutions.
+          </p>
 
-        <div class="related-links">
-          <a href="ethics-branch-philosophy.html">Ethics</a>
-          ·
-          <a href="metaphysics-branch-philosophy.html">Metaphysics</a>
-          ·
-          <a href="epistemology-branch-philosophy.html">Epistemology</a>
-          ·
-          <a href="modern-philosophy.html">Modern Philosophy</a>
-          ·
-          <a href="enlightenment-philosophy.html">Enlightenment Philosophy</a>
-          ·
-          <a href="schools.html">Schools of Philosophy</a>
-        </div>
-      </section>
+          <div class="related-links">
+            <a href="ethics-branch-philosophy.html">Ethics</a>
+            ·
+            <a href="metaphysics-branch-philosophy.html">Metaphysics</a>
+            ·
+            <a href="epistemology-branch-philosophy.html">Epistemology</a>
+            ·
+            <a href="modern-philosophy.html">Modern Philosophy</a>
+            ·
+            <a href="enlightenment-philosophy.html">Enlightenment Philosophy</a>
+            ·
+            <a href="schools.html">Schools of Philosophy</a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          CONCLUSION
          ===================================================== -->
 
-      <section class="narrative-block" aria-labelledby="conclusion-title">
-        <span class="section-eyebrow">Enlightenment Political Philosophy</span>
+        <section class="narrative-block" aria-labelledby="conclusion-title">
+          <span class="section-eyebrow"
+            >Enlightenment Political Philosophy</span
+          >
 
-        <h2 id="conclusion-title">Why Montesquieu Still Matters</h2>
+          <h2 id="conclusion-title">Why Montesquieu Still Matters</h2>
 
-        <p>
-          Montesquieu remains one of the most important figures in the history
-          of political philosophy because he transformed the question of
-          political liberty into a question of institutional design. Instead of
-          relying entirely upon the character of rulers, he asked how political
-          systems could be structured so that power itself would be limited.
-        </p>
+          <p>
+            Montesquieu remains one of the most important figures in the history
+            of political philosophy because he transformed the question of
+            political liberty into a question of institutional design. Instead
+            of relying entirely upon the character of rulers, he asked how
+            political systems could be structured so that power itself would be
+            limited.
+          </p>
 
-        <p>
-          His theory of separation of powers became a foundational idea in
-          modern constitutional thought. By distinguishing legislative,
-          executive, and judicial functions and emphasizing institutional
-          restraints, Montesquieu provided one of the most influential
-          philosophical arguments against concentrated political authority.
-        </p>
+          <p>
+            His theory of separation of powers became a foundational idea in
+            modern constitutional thought. By distinguishing legislative,
+            executive, and judicial functions and emphasizing institutional
+            restraints, Montesquieu provided one of the most influential
+            philosophical arguments against concentrated political authority.
+          </p>
 
-        <p>
-          His broader philosophy was equally significant. Through
-          <em>The Spirit of the Laws</em>, Montesquieu examined the relationship
-          among law, history, society, commerce, religion, geography, and forms
-          of government. His comparative approach helped establish a lasting
-          tradition of studying political institutions within their social and
-          historical contexts.
-        </p>
+          <p>
+            His broader philosophy was equally significant. Through
+            <em>The Spirit of the Laws</em>, Montesquieu examined the
+            relationship among law, history, society, commerce, religion,
+            geography, and forms of government. His comparative approach helped
+            establish a lasting tradition of studying political institutions
+            within their social and historical contexts.
+          </p>
 
-        <p>
-          Understanding Montesquieu therefore helps explain the intellectual
-          development of modern constitutionalism, political liberty, and
-          democratic government. His central question remains relevant today:
-          how can political power be made effective enough to govern while being
-          limited enough to protect freedom?
-        </p>
+          <p>
+            Understanding Montesquieu therefore helps explain the intellectual
+            development of modern constitutionalism, political liberty, and
+            democratic government. His central question remains relevant today:
+            how can political power be made effective enough to govern while
+            being limited enough to protect freedom?
+          </p>
 
-        <a class="cta-button" href="thinkers.html">
-          Explore Great Philosophers
-          <span aria-hidden="true">&rarr;</span>
-        </a>
-      </section>
-    </main>
+          <a class="cta-button" href="thinkers.html">
+            Explore Great Philosophers
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </section>
+      </main>
+    </div>
 
     <!-- =====================================================
        FOOTER
@@ -2588,8 +2684,8 @@
        SCRIPTS
        ===================================================== -->
 
-     <script src="script.js" defer></script>
-     <script src="article-toc.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="article-toc.js" defer></script>
 
     <script src="branches-enhance.js" defer></script>
 

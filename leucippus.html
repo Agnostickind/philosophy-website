@@ -231,7 +231,7 @@
 
     <!-- ================= STYLES ================= -->
 
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="article-toc.css" />
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
@@ -255,10 +255,10 @@
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link
-    rel="describedby"
-    href="https://agnostickind.github.io/philosophy-website/llms.txt"
-  >
-</head>
+      rel="describedby"
+      href="https://agnostickind.github.io/philosophy-website/llms.txt"
+    />
+  </head>
 
   <body>
     <!-- ================= NAVBAR ================= -->
@@ -546,12 +546,11 @@
         </div>
 
         <a href="schools.html">Schools</a>
-       <a href="books.html">Books</a>
+        <a href="books.html">Books</a>
         <a href="world-literature.html">Literature</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </div>
-
 
       <div class="nav-tools">
         <div class="search-container">
@@ -633,797 +632,870 @@
       </div>
     </header>
 
-    <main id="main-content" tabindex="-1">
-      <!-- ================= INTRODUCTION ================= -->
+    <div class="article-reading-area">
+      <!-- =========================================================
+     ARTICLE TABLE OF CONTENTS
+     ========================================================= -->
 
-      <section class="about-home">
-        <h2>Who Was Leucippus?</h2>
+      <!-- Desktop TOC -->
+      <aside class="article-toc" aria-label="Article contents">
+        <div class="article-toc__header">
+          <span class="article-toc__title">Contents</span>
 
-        <p>
-          Leucippus was an ancient Greek philosopher traditionally placed in the
-          fifth century BCE and widely regarded as one of the founders of
-          <strong>Greek atomism</strong>. Very little is known with certainty
-          about his life, and even his birthplace, teachers, and exact dates
-          remain uncertain. Ancient sources frequently discuss his philosophy
-          alongside that of his associate and successor, Democritus.
-        </p>
+          <button
+            type="button"
+            class="article-toc__hide"
+            aria-label="Hide article contents"
+          >
+            Hide
+          </button>
+        </div>
 
-        <p>
-          Leucippus is especially important for the development of the theory
-          that reality consists of indivisible bodies, or
-          <strong>atoms</strong>, moving through empty space, or the
-          <strong>void</strong>. This theory attempted to explain how motion,
-          change, and the apparent diversity of the world are possible without
-          requiring anything to arise from absolute nothing or pass completely
-          into non-being.
-        </p>
+        <nav class="article-toc__nav" aria-label="Article sections">
+          <div class="article-toc__list"></div>
+        </nav>
+      </aside>
 
-        <p>
-          According to the atomist approach traditionally associated with
-          Leucippus, the fundamental constituents of reality are not created or
-          destroyed. Instead, visible changes occur through the movement,
-          combination, and separation of these basic bodies. Different objects
-          and qualities can therefore emerge from different arrangements and
-          interactions of the same underlying material elements.
-        </p>
+      <!-- Mobile TOC trigger -->
+      <button
+        type="button"
+        class="mobile-toc-trigger"
+        aria-expanded="false"
+        aria-controls="mobile-toc-drawer"
+      >
+        <span>Contents</span>
+        <span class="mobile-toc-trigger__chevron" aria-hidden="true">⌄</span>
+      </button>
 
-        <p>
-          This philosophy was particularly significant because it responded to
-          earlier Greek debates about
-          <strong>being, non-being, motion, and change</strong>, especially
-          those associated with Eleatic philosophy. By proposing both atoms and
-          the void, Leucippus offered a new way of explaining how genuine motion
-          and transformation could occur within an intelligible account of
-          reality.
-        </p>
+      <!-- Mobile TOC overlay -->
+      <div class="mobile-toc-overlay" hidden></div>
 
-        <p>
-          Because the evidence about Leucippus is fragmentary, historians must
-          be careful when separating his own ideas from the more fully developed
-          atomism associated with <strong>Democritus</strong>. Nevertheless, the
-          ancient tradition consistently connects Leucippus with the earliest
-          formulation of atomism, making him an important figure in the history
-          of metaphysics, natural philosophy, and early scientific thought.
-        </p>
-      </section>
-      <div class="philosophy-divider"></div>
+      <!-- Mobile TOC drawer -->
+      <aside
+        id="mobile-toc-drawer"
+        class="mobile-toc-drawer"
+        aria-label="Article contents"
+        aria-hidden="true"
+      >
+        <div class="mobile-toc-drawer__header">
+          <span class="mobile-toc-drawer__title">Contents</span>
 
-      <!-- ================= QUICK FACTS ================= -->
+          <button
+            type="button"
+            class="mobile-toc-drawer__close"
+            aria-label="Close article contents"
+          >
+            ×
+          </button>
+        </div>
 
-      <section class="narrative-block" id="quick-facts">
-        <h2>Leucippus: Quick Facts</h2>
+        <nav class="mobile-toc-drawer__nav" aria-label="Article sections">
+          <div class="mobile-toc-drawer__list"></div>
+        </nav>
+      </aside>
 
-        <ul class="plain-list">
-          <li><strong>Name</strong> — Leucippus</li>
+      <main id="main-content" tabindex="-1">
+        <!-- ================= INTRODUCTION ================= -->
 
-          <li><strong>Period</strong> — Fifth century BCE</li>
+        <section class="about-home">
+          <h2>Who Was Leucippus?</h2>
 
-          <li>
-            <strong>Philosophical tradition</strong> — Pre-Socratic philosophy
-            and ancient Greek atomism
-          </li>
+          <p>
+            Leucippus was an ancient Greek philosopher traditionally placed in
+            the fifth century BCE and widely regarded as one of the founders of
+            <strong>Greek atomism</strong>. Very little is known with certainty
+            about his life, and even his birthplace, teachers, and exact dates
+            remain uncertain. Ancient sources frequently discuss his philosophy
+            alongside that of his associate and successor, Democritus.
+          </p>
 
-          <li><strong>Known for</strong> — The theory of atoms and void</li>
-
-          <li><strong>Associated thinker</strong> — Democritus</li>
-
-          <li>
-            <strong>Major philosophical concern</strong> — Explaining change,
-            motion, plurality, and the nature of reality
-          </li>
-
-          <li>
-            <strong>Surviving writings</strong> — Only fragments and reports
-            attributed to him survive
-          </li>
-
-          <li>
-            <strong>Historical importance</strong> — Traditionally regarded as
-            the founder of Greek atomism
-          </li>
-        </ul>
-      </section>
-
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= HISTORICAL CONTEXT ================= -->
-
-      <section class="narrative-block" id="historical-context">
-        <h2>Leucippus and the Rise of Ancient Greek Atomism</h2>
-
-        <figure class="narrative-figure">
-          <img
-            src="images/leucippus.jpg"
-            alt="Leucippus: Greek Philosopher and Founder of Atomism"
-            loading="lazy"
-            decoding="async"
-          />
-
-          <figcaption>
+          <p>
             Leucippus is especially important for the development of the theory
-            that reality consists of indivisible bodies, or atoms, moving
-            through the void.
-          </figcaption>
-        </figure>
-
-        <p>
-          Leucippus belongs to the generation of Greek philosophers who
-          confronted difficult questions about change, plurality, and reality
-          raised by earlier thinkers, particularly Parmenides and the wider
-          Eleatic tradition. These debates forced philosophers to ask how the
-          changing world experienced by human beings could be reconciled with
-          arguments claiming that genuine reality could not simply come into
-          being or pass away.
-        </p>
-
-        <p>
-          Parmenidean arguments were understood to create a serious
-          philosophical problem: if coming into being from what does not exist
-          is impossible, how can the changing world we experience exist at all?
-          Ordinary experience appears to show things being formed, altered,
-          divided, and destroyed, while Eleatic reasoning challenged whether
-          such processes could describe ultimate reality in a straightforward
-          way.
-        </p>
-
-        <p>
-          Leucippus' atomism offered one influential response. Instead of
-          treating the visible world as composed of substances that literally
-          come into and pass out of existence, the atomists proposed permanent,
-          indivisible bodies whose combinations, separations, and movements
-          produce the changing appearances of the world. Change could therefore
-          occur without the fundamental constituents of reality being created or
-          destroyed.
-        </p>
-
-        <p>
-          This approach introduced a distinction between the enduring elements
-          of reality and the temporary objects formed from their arrangements.
-          What appears to human beings as generation and destruction can be
-          understood, in atomist terms, as the coming together and breaking
-          apart of more fundamental bodies. The theory would become one of the
-          most important attempts in early Greek philosophy to explain both
-          permanence and change.
-        </p>
-      </section>
-
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= ATOMS AND VOID ================= -->
-
-      <section class="narrative-block" id="atoms-and-void">
-        <h2>What Did Leucippus Believe About Atoms and Void?</h2>
-
-        <p>
-          The central idea associated with Leucippus is that reality consists
-          fundamentally of <strong>atoms and void</strong>. Atoms are
-          indivisible, solid bodies, while the void provides the empty space
-          through which atoms can move. Together, these two principles allowed
-          the atomists to explain a world containing both permanent material
-          constituents and genuine motion.
-        </p>
-
-        <p>
-          According to the atomist theory, atoms themselves do not undergo the
-          kinds of generation, destruction, and qualitative transformation
-          experienced by ordinary objects. Instead, visible things arise from
-          different arrangements, positions, combinations, and movements of
-          atoms. The diversity of the experienced world can therefore be
-          explained without assuming that entirely new fundamental substances
-          must constantly come into existence.
-        </p>
-
-        <p>
-          The <strong>void</strong> was equally important to the theory. Without
-          empty space, the atomists argued, it would be difficult to explain how
-          distinct bodies could move, separate, or change their relative
-          positions. The recognition of void therefore represented a direct and
-          important response to philosophical arguments about whether what is
-          called "non-being" could have any role in an explanation of reality.
-        </p>
-
-        <p>
-          This distinction allowed the atomists to explain apparent change
-          without requiring the fundamental constituents of reality themselves
-          to be generated or destroyed. Atoms remain permanent, while the
-          temporary compounds formed from them continually change. In this way,
-          atomism joined permanence and transformation within a single account
-          of the natural world.
-        </p>
-      </section>
-
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= MOTION ================= -->
-
-      <section class="narrative-block" id="motion">
-        <h2>How Did Leucippus Explain Motion and Change?</h2>
-
-        <p>
-          Leucippus' theory was designed to make sense of motion and change in a
-          world ultimately composed of permanent constituents. The fundamental
-          elements do not need to be created or destroyed for visible objects to
-          appear, disappear, grow, decay, or transform. Instead, these changes
-          result from the movements and changing relationships of atoms.
-        </p>
-
-        <p>
-          Atoms move through the void and can combine into different
-          configurations. When their arrangements change, the larger objects
-          formed from them also change. A compound may come into existence when
-          atoms join together and cease to exist as that particular compound
-          when its constituent atoms separate and enter new arrangements.
-        </p>
-
-        <p>
-          In this way, the atomists could distinguish between
-          <strong>fundamental reality and ordinary appearance</strong>. The
-          atoms remain, while their arrangements change. What human beings
-          describe as birth or destruction therefore does not necessarily mean
-          the absolute beginning or annihilation of matter, but a transformation
-          in the organization of its permanent constituents.
-        </p>
-
-        <p>
-          Motion was consequently essential rather than accidental to atomist
-          philosophy. Without movement through the void, atoms could not
-          encounter, combine, separate, or form the complex structures of the
-          visible world. Leucippus' theory thus provided a naturalistic
-          explanation of change based on matter, motion, and spatial
-          relationships rather than on the continuous creation of entirely new
-          substances.
-        </p>
-      </section>
-
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= ELEATIC PROBLEM ================= -->
-
-      <section class="narrative-block" id="eleatic-problem">
-        <h2>Why Did Leucippus Develop Atomism?</h2>
-
-        <p>
-          Ancient sources and modern scholarship commonly connect the rise of
-          atomism with the philosophical problems posed by Parmenides and Zeno.
-          Earlier debates had raised profound questions about whether plurality,
-          motion, and change could be coherently explained if genuine reality
-          had to be completely unified, permanent, and free from generation and
-          destruction.
-        </p>
-
-        <p>
-          If reality is completely indivisible and unchanging, as some ancient
-          interpretations of Parmenides suggested, then motion and plurality
-          become difficult to explain. Leucippus attempted to preserve the
-          insight that fundamental reality should not arise from absolute
-          non-being while also accounting for the undeniable appearance of
-          movement, diversity, and transformation in the world.
-        </p>
-
-        <p>
-          His solution was to propose many indivisible atoms together with the
-          void. The atoms remain unchanged in their fundamental nature, while
-          their movement and rearrangement produce the changing world. Plurality
-          becomes possible because reality contains many atoms, and motion
-          becomes possible because there is void through which those atoms can
-          move.
-        </p>
-
-        <p>
-          Atomism can therefore be understood as a philosophical attempt to
-          solve the problem of <strong>permanence and change</strong>. Rather
-          than choosing between an entirely unchanging reality and a world in
-          which everything fundamentally comes into existence and disappears,
-          Leucippus' theory proposed permanent elements whose changing
-          combinations account for the diversity of ordinary experience.
-        </p>
-      </section>
-
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= COSMOLOGY ================= -->
-
-      <section class="narrative-block" id="cosmology">
-        <h2>Leucippus' Theory of the Universe</h2>
-
-        <p>
-          Ancient reports attribute to Leucippus a cosmology in which worlds can
-          form through the movements and combinations of atoms. The universe was
-          not explained primarily through the deliberate construction of a
-          divine artisan; instead, cosmological structures could emerge from the
-          interactions of material bodies moving according to their own nature.
-        </p>
-
-        <p>
-          According to reports preserved by later writers, atoms moving in the
-          void could form a <strong>vortex-like motion</strong>. Through such
-          movements, groups of atoms could separate, collide, and combine into
-          increasingly complex structures. This atomist account attempted to
-          explain the formation of the cosmos through natural processes
-          involving matter and motion.
-        </p>
-
-        <p>
-          The wider atomist tradition associated with Leucippus and Democritus
-          also allowed for the possibility of multiple worlds. Different
-          configurations of atoms could produce different cosmic structures,
-          extending the basic principles of atoms and void beyond individual
-          objects to the explanation of the universe itself.
-        </p>
-
-        <p>
-          These cosmological reports are considerably less secure than the basic
-          association between Leucippus and atomism. Because his own writings
-          have not survived in complete form, many details are known only
-          through later testimony and are difficult to separate from the more
-          developed philosophy of Democritus. They should therefore be
-          understood as ancient evidence about the atomist tradition rather than
-          as a complete surviving cosmological text written directly by
-          Leucippus.
-        </p>
-      </section>
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= NECESSITY ================= -->
-      <section class="narrative-block" id="necessity">
-        <h2>Leucippus, Necessity, and Natural Explanation</h2>
-
-        <p>
-          Leucippus is associated with a strongly naturalistic explanation of
-          the world. Events were understood through the movements, collisions,
-          and interactions of atoms rather than through divine intervention
-          directing every individual natural event. This approach sought to
-          explain the order of nature by referring to the properties and
-          behavior of the material constituents within nature itself.
-        </p>
-
-        <p>
-          One surviving statement attributed to Leucippus says that nothing
-          happens in vain but everything occurs according to reason and
-          <strong>necessity</strong>. The precise interpretation of this
-          fragment remains a matter of philosophical discussion, particularly
-          because the original context in which the statement appeared has not
-          survived.
-        </p>
-
-        <p>
-          The idea of necessity suggests that natural events are not simply
-          arbitrary occurrences. Within the atomist framework, what happens
-          results from the conditions, movements, and interactions of material
-          bodies. This provided an important alternative to explanations that
-          interpreted every feature of the natural world primarily through the
-          intentions or purposes of divine agents.
-        </p>
-
-        <p>
-          The broader atomist approach therefore attempted to explain the
-          apparent order of nature through the behavior of material constituents
-          rather than through a purpose imposed from outside the natural world.
-          Although the exact scope of Leucippus' own doctrine remains uncertain,
-          the association between early atomism and explanations based on
-          necessity became an important development in the history of natural
-          philosophy.
-        </p>
-      </section>
-
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= DEMOCRITUS ================= -->
-
-      <section class="narrative-block" id="democritus">
-        <h2>Leucippus and Democritus</h2>
-
-        <p>
-          Leucippus is closely connected with <strong>Democritus</strong>, who
-          is generally regarded as the philosopher who developed and
-          systematized the atomist theory in greater detail. The two names
-          became so closely associated in ancient discussions that later writers
-          frequently presented atomism as a shared philosophical tradition
-          rather than clearly separating every doctrine between its two
-          principal figures.
-        </p>
-
-        <p>
-          The historical evidence makes it difficult to determine exactly which
-          ideas belong specifically to Leucippus and which belong to Democritus.
-          Democritus' philosophical legacy is considerably better documented,
-          while Leucippus' own writings and biographical details survive only in
-          a highly fragmentary form. As a result, modern reconstructions must
-          avoid confidently assigning every feature of classical atomism to
-          Leucippus alone.
-        </p>
-
-        <p>
-          Ancient tradition nevertheless presents Leucippus as an important
-          predecessor and associate of Democritus in the development of atomism.
-          The fundamental theory of permanent atoms moving through the void is
-          strongly associated with both thinkers, even where the precise
-          contribution of each philosopher cannot be established with complete
-          certainty.
-        </p>
-
-        <p>
-          Leucippus is therefore important not only as an individual thinker but
-          also as the earliest figure traditionally associated with the Greek
-          atomist system that Democritus later developed. Their relationship
-          illustrates one of the central difficulties of Presocratic
-          scholarship: influential philosophical traditions sometimes survive
-          more clearly through later representatives than through the writings
-          of their original founders.
-        </p>
-      </section>
-
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= WRITINGS ================= -->
-
-      <section class="narrative-block" id="writings">
-        <h2>Did Leucippus Write Any Books?</h2>
-
-        <p>
-          Very little of Leucippus' written work survives. Ancient sources
-          sometimes attribute works to him, including a work known as the
-          <em>Great World-System</em>, but the evidence surrounding his writings
-          is limited and questions of authorship remain difficult to resolve. No
-          complete work that can be securely studied as Leucippus' own writing
-          survives today.
-        </p>
-
-        <p>
-          One quotation is also attributed to a work concerning the mind.
-          Because the surviving evidence is fragmentary, however, it is
-          difficult to reconstruct a complete philosophical system directly from
-          Leucippus' own writings. Individual reports may preserve genuine
-          aspects of his thought while still leaving the original argument and
-          context unknown.
-        </p>
-
-        <p>
-          Much of what we know about his philosophy therefore comes from later
-          ancient authors who reported, interpreted, or criticized early atomist
-          ideas. Aristotle and other ancient writers are particularly important
-          witnesses to the atomist tradition, although their accounts were
-          written from perspectives shaped by their own philosophical interests
-          and arguments.
-        </p>
-
-        <p>
-          This dependence on later testimony makes Leucippus one of the more
-          difficult figures to study in early Greek philosophy. Historians must
-          distinguish, where possible, between direct fragments, ancient
-          reports, and doctrines that may belong more specifically to Democritus
-          or to the later development of atomism.
-        </p>
-      </section>
-
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= HISTORICAL CERTAINTY ================= -->
-
-      <section class="narrative-block" id="historical-certainty">
-        <h2>What Do We Actually Know About Leucippus?</h2>
-
-        <p>
-          Leucippus is an important example of the difficulty of studying
-          Presocratic philosophy. His historical importance is widely
-          recognized, but the surviving evidence about his life and individual
-          doctrines is extremely limited. For this reason, a distinction must be
-          maintained between what is strongly supported by ancient testimony and
-          what remains uncertain or disputed.
-        </p>
-
-        <h3>Relatively Well-Attested</h3>
-
-        <ul class="plain-list">
-          <li>
-            Leucippus is traditionally regarded as an early Greek atomist and a
-            foundational figure in the atomist tradition.
-          </li>
-
-          <li>
-            He is strongly associated with the theory that reality involves
-            atoms and void.
-          </li>
-
-          <li>
-            He is closely connected with Democritus and the development of
-            ancient Greek atomism.
-          </li>
-
-          <li>
-            Ancient philosophical sources preserve reports connecting atomism
-            with explanations of motion, plurality, and natural change.
-          </li>
-        </ul>
-
-        <h3>Uncertain or Disputed</h3>
-
-        <ul class="plain-list">
-          <li>The exact details of his life, dates, and place of birth.</li>
-
-          <li>The precise nature and extent of his influence on Democritus.</li>
-
-          <li>
-            Which specific doctrines attributed to the atomists originated with
-            Leucippus himself.
-          </li>
-
-          <li>
-            The exact content, authorship, and historical status of works
-            attributed to him.
-          </li>
-
-          <li>
-            How much of the detailed atomist cosmology preserved by later
-            authors can be confidently assigned to Leucippus rather than to
-            Democritus or the broader atomist tradition.
-          </li>
-        </ul>
-      </section>
-
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= IMPORTANCE ================= -->
-
-      <section class="narrative-block" id="importance">
-        <h2>Why Is Leucippus Important in Philosophy?</h2>
-
-        <p>
-          Leucippus is important because the atomist theory associated with him
-          offered one of the earliest systematic attempts to explain the
-          physical world in terms of indivisible material constituents and empty
-          space. The theory proposed that the immense diversity of visible
-          reality could arise from the movement and arrangement of a limited set
-          of fundamental elements.
-        </p>
-
-        <p>
-          His philosophy addressed fundamental metaphysical questions about
-          <strong
-            >being, change, motion, plurality, and the structure of
-            reality</strong
-          >. By proposing permanent atoms together with the void, atomism
-          attempted to explain how genuine change could occur without requiring
-          the ultimate constituents of the world to come into existence or
-          disappear into absolute nothingness.
-        </p>
-
-        <p>
-          The atomist tradition continued through Democritus and later became
-          important to <strong>Epicurean philosophy</strong> and the Roman
-          poet-philosopher <strong>Lucretius</strong>. Although these later
-          thinkers modified and developed atomist ideas in their own ways, they
-          helped preserve and extend the broader tradition with which Leucippus
-          was associated.
-        </p>
-
-        <p>
-          Leucippus' historical importance also lies in the long-term influence
-          of the questions raised by atomism. The attempt to explain complex
-          phenomena through the movement and arrangement of fundamental material
-          constituents became a major theme in later natural philosophy. While
-          ancient atoms should not be simply equated with atoms in modern
-          physics, the philosophical importance of ancient atomism remains
-          substantial.
-        </p>
-      </section>
-
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= EXPLAINED SIMPLY ================= -->
-
-      <section class="narrative-block" id="explained-simply">
-        <h2>Leucippus Explained Simply</h2>
-
-        <p>
-          Leucippus was an ancient Greek philosopher who tried to explain how a
-          changing world could exist if reality had permanent foundations. His
-          answer, as preserved in the atomist tradition, was that the visible
-          world is made from countless tiny, indivisible bodies moving through
-          empty space.
-        </p>
-
-        <p>
-          The basic idea is that things do not need to be created from nothing
-          in order for change to occur. Atoms can move, join together, separate,
-          and form new arrangements. A visible object changes when the atoms
-          associated with it change their arrangement, while the fundamental
-          atoms themselves remain.
-        </p>
-
-        <ul class="plain-list">
-          <li><strong>Basic reality:</strong> Atoms and void.</li>
-
-          <li>
-            <strong>Atoms:</strong> Indivisible and permanent material bodies.
-          </li>
-
-          <li><strong>Void:</strong> Empty space through which atoms move.</li>
-
-          <li>
-            <strong>Change:</strong> Produced by changes in the arrangements,
-            combinations, and movements of atoms.
-          </li>
-
-          <li>
-            <strong>Natural explanation:</strong> Events are explained through
-            the interactions and movements of material bodies.
-          </li>
-
-          <li>
-            <strong>Historical importance:</strong> Traditionally regarded as a
-            foundational figure in Greek atomism.
-          </li>
-        </ul>
-      </section>
-
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= FAQ ================= -->
-
-      <section class="narrative-block" id="faq">
-        <h2>Frequently Asked Questions About Leucippus</h2>
-
-        <h3>Who was Leucippus?</h3>
-
-        <p>
-          Leucippus was an ancient Greek philosopher active during the fifth
-          century BCE who is traditionally regarded as the founder or earliest
-          major figure of Greek atomism. Very little is known with certainty
-          about his life, and many ancient sources discuss his ideas together
-          with those of Democritus, making it difficult to reconstruct his
-          individual biography and philosophical contribution in detail.
-        </p>
-
-        <h3>What is Leucippus famous for?</h3>
-
-        <p>
-          Leucippus is famous primarily for his association with the theory that
-          reality consists fundamentally of atoms and void. This atomist
-          approach attempted to explain how motion, change, and the diversity of
-          visible objects are possible while maintaining that the basic
-          constituents of reality remain permanent and indivisible.
-        </p>
-
-        <h3>What did Leucippus believe?</h3>
-
-        <p>
-          Leucippus is traditionally associated with the belief that indivisible
-          atoms move through the void and combine into different arrangements
-          that produce the changing world of ordinary experience. According to
-          the atomist approach, objects are generated and destroyed not because
-          atoms themselves come into or pass out of existence, but because atoms
-          separate, combine, and form new configurations.
-        </p>
-
-        <h3>What are atoms and void in Leucippus' philosophy?</h3>
-
-        <p>
-          Atoms are understood as indivisible, solid, and permanent constituents
-          of reality, while the void provides the empty space necessary for
-          their movement. The distinction between atoms and void was
-          philosophically important because it allowed the atomists to explain
-          both the permanence of fundamental reality and the observable
-          existence of motion, plurality, and change.
-        </p>
-
-        <h3>Was Leucippus the first atomist?</h3>
-
-        <p>
-          Leucippus is generally regarded as the earliest well-attested figure
-          associated with atomism in the Greek philosophical tradition and is
-          traditionally described as its founder. However, because the surviving
-          evidence is extremely limited, historians must be cautious about
-          determining exactly which features of the later atomist system
-          originated with Leucippus himself.
-        </p>
-
-        <h3>What is the connection between Leucippus and Democritus?</h3>
-
-        <p>
-          Leucippus is traditionally regarded as the founder of the atomist
-          theory, while Democritus developed and systematized the theory in much
-          greater detail. Ancient writers frequently treat the two philosophers
-          together, and the exact relationship between their ideas remains
-          uncertain, making it difficult to separate Leucippus' original
-          contributions from the more extensive philosophical system associated
-          with Democritus.
-        </p>
-
-        <h3>Did Leucippus write books?</h3>
-
-        <p>
-          Ancient sources attribute writings to Leucippus, including works
-          traditionally associated with cosmology and the nature of the world,
-          but very little of his work survives directly. Most knowledge of his
-          philosophy therefore comes from later ancient authors who reported,
-          interpreted, or criticized the ideas of the early Greek atomists,
-          rather than from complete texts written by Leucippus himself.
-        </p>
-      </section>
-
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= RELATED THINKERS ================= -->
-
-      <section class="connection" aria-labelledby="related-thinkers-title">
-        <span class="section-eyebrow">Continue Exploring</span>
-
-        <h2 id="related-thinkers-title">Related Pre-Socratic Philosophers</h2>
-
-        <p>
-          Leucippus belongs to the wider tradition of Pre-Socratic philosophy.
-          Explore thinkers who developed different explanations of nature,
-          reality, change, and the structure of the cosmos.
-        </p>
-
-        <div class="related-links">
-          <a href="democritus.html">Democritus</a> ·
-          <a href="anaximander.html">Anaximander</a> ·
-          <a href="anaximenes.html">Anaximenes</a> ·
-          <a href="heraclitus.html">Heraclitus</a> ·
-          <a href="parmenides.html">Parmenides</a> ·
-          <a href="zeno.html">Zeno of Elea</a>
-        </div>
-      </section>
-
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= RELATED BRANCHES ================= -->
-
-      <section class="connection" aria-labelledby="related-branches-title">
-        <span class="section-eyebrow">Philosophical Connections</span>
-
-        <h2 id="related-branches-title">
-          Philosophy Branches Connected to Leucippus
-        </h2>
-
-        <p>
-          Leucippus' atomism is especially important for metaphysics and the
-          philosophical study of nature. His theory raises questions about the
-          ultimate structure of reality, matter, change, space, and motion.
-        </p>
-
-        <div class="related-links">
-          <a href="metaphysics-branch-philosophy.html">Metaphysics</a> ·
-          <a href="epistemology-branch-philosophy.html">Epistemology</a> ·
-          <a href="logic-branch-philosophy.html">Logic</a>
-        </div>
-      </section>
-
-      <div class="philosophy-divider"></div>
-
-      <!-- ================= CONCLUSION ================= -->
-
-      <section class="narrative-block" aria-labelledby="conclusion-title">
-        <span class="section-eyebrow">Ancient Greek Atomism</span>
-
-        <h2 id="conclusion-title">Why Leucippus Still Matters</h2>
-
-        <p>
-          Leucippus occupies an important place in the history of philosophy
-          because he is traditionally associated with one of the earliest Greek
-          theories explaining the physical world through atoms and void.
-        </p>
-
-        <p>
-          Although the evidence about his individual ideas is limited, the
-          atomist tradition that bears his name became one of the most important
-          materialist approaches in ancient philosophy.
-        </p>
-
-        <p>
-          His ideas helped establish a philosophical problem that continued long
-          after antiquity: what is reality ultimately made of, and how can
-          change arise from its fundamental constituents?
-        </p>
-
-        <a class="cta-button" href="thinkers.html">
-          Explore Great Philosophers
-          <span aria-hidden="true">&rarr;</span>
-        </a>
-      </section>
-    </main>
+            that reality consists of indivisible bodies, or
+            <strong>atoms</strong>, moving through empty space, or the
+            <strong>void</strong>. This theory attempted to explain how motion,
+            change, and the apparent diversity of the world are possible without
+            requiring anything to arise from absolute nothing or pass completely
+            into non-being.
+          </p>
+
+          <p>
+            According to the atomist approach traditionally associated with
+            Leucippus, the fundamental constituents of reality are not created
+            or destroyed. Instead, visible changes occur through the movement,
+            combination, and separation of these basic bodies. Different objects
+            and qualities can therefore emerge from different arrangements and
+            interactions of the same underlying material elements.
+          </p>
+
+          <p>
+            This philosophy was particularly significant because it responded to
+            earlier Greek debates about
+            <strong>being, non-being, motion, and change</strong>, especially
+            those associated with Eleatic philosophy. By proposing both atoms
+            and the void, Leucippus offered a new way of explaining how genuine
+            motion and transformation could occur within an intelligible account
+            of reality.
+          </p>
+
+          <p>
+            Because the evidence about Leucippus is fragmentary, historians must
+            be careful when separating his own ideas from the more fully
+            developed atomism associated with <strong>Democritus</strong>.
+            Nevertheless, the ancient tradition consistently connects Leucippus
+            with the earliest formulation of atomism, making him an important
+            figure in the history of metaphysics, natural philosophy, and early
+            scientific thought.
+          </p>
+        </section>
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= QUICK FACTS ================= -->
+
+        <section class="narrative-block" id="quick-facts">
+          <h2>Leucippus: Quick Facts</h2>
+
+          <ul class="plain-list">
+            <li><strong>Name</strong> — Leucippus</li>
+
+            <li><strong>Period</strong> — Fifth century BCE</li>
+
+            <li>
+              <strong>Philosophical tradition</strong> — Pre-Socratic philosophy
+              and ancient Greek atomism
+            </li>
+
+            <li><strong>Known for</strong> — The theory of atoms and void</li>
+
+            <li><strong>Associated thinker</strong> — Democritus</li>
+
+            <li>
+              <strong>Major philosophical concern</strong> — Explaining change,
+              motion, plurality, and the nature of reality
+            </li>
+
+            <li>
+              <strong>Surviving writings</strong> — Only fragments and reports
+              attributed to him survive
+            </li>
+
+            <li>
+              <strong>Historical importance</strong> — Traditionally regarded as
+              the founder of Greek atomism
+            </li>
+          </ul>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= HISTORICAL CONTEXT ================= -->
+
+        <section class="narrative-block" id="historical-context">
+          <h2>Leucippus and the Rise of Ancient Greek Atomism</h2>
+
+          <figure class="narrative-figure">
+            <img
+              src="images/leucippus.jpg"
+              alt="Leucippus: Greek Philosopher and Founder of Atomism"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <figcaption>
+              Leucippus is especially important for the development of the
+              theory that reality consists of indivisible bodies, or atoms,
+              moving through the void.
+            </figcaption>
+          </figure>
+
+          <p>
+            Leucippus belongs to the generation of Greek philosophers who
+            confronted difficult questions about change, plurality, and reality
+            raised by earlier thinkers, particularly Parmenides and the wider
+            Eleatic tradition. These debates forced philosophers to ask how the
+            changing world experienced by human beings could be reconciled with
+            arguments claiming that genuine reality could not simply come into
+            being or pass away.
+          </p>
+
+          <p>
+            Parmenidean arguments were understood to create a serious
+            philosophical problem: if coming into being from what does not exist
+            is impossible, how can the changing world we experience exist at
+            all? Ordinary experience appears to show things being formed,
+            altered, divided, and destroyed, while Eleatic reasoning challenged
+            whether such processes could describe ultimate reality in a
+            straightforward way.
+          </p>
+
+          <p>
+            Leucippus' atomism offered one influential response. Instead of
+            treating the visible world as composed of substances that literally
+            come into and pass out of existence, the atomists proposed
+            permanent, indivisible bodies whose combinations, separations, and
+            movements produce the changing appearances of the world. Change
+            could therefore occur without the fundamental constituents of
+            reality being created or destroyed.
+          </p>
+
+          <p>
+            This approach introduced a distinction between the enduring elements
+            of reality and the temporary objects formed from their arrangements.
+            What appears to human beings as generation and destruction can be
+            understood, in atomist terms, as the coming together and breaking
+            apart of more fundamental bodies. The theory would become one of the
+            most important attempts in early Greek philosophy to explain both
+            permanence and change.
+          </p>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= ATOMS AND VOID ================= -->
+
+        <section class="narrative-block" id="atoms-and-void">
+          <h2>What Did Leucippus Believe About Atoms and Void?</h2>
+
+          <p>
+            The central idea associated with Leucippus is that reality consists
+            fundamentally of <strong>atoms and void</strong>. Atoms are
+            indivisible, solid bodies, while the void provides the empty space
+            through which atoms can move. Together, these two principles allowed
+            the atomists to explain a world containing both permanent material
+            constituents and genuine motion.
+          </p>
+
+          <p>
+            According to the atomist theory, atoms themselves do not undergo the
+            kinds of generation, destruction, and qualitative transformation
+            experienced by ordinary objects. Instead, visible things arise from
+            different arrangements, positions, combinations, and movements of
+            atoms. The diversity of the experienced world can therefore be
+            explained without assuming that entirely new fundamental substances
+            must constantly come into existence.
+          </p>
+
+          <p>
+            The <strong>void</strong> was equally important to the theory.
+            Without empty space, the atomists argued, it would be difficult to
+            explain how distinct bodies could move, separate, or change their
+            relative positions. The recognition of void therefore represented a
+            direct and important response to philosophical arguments about
+            whether what is called "non-being" could have any role in an
+            explanation of reality.
+          </p>
+
+          <p>
+            This distinction allowed the atomists to explain apparent change
+            without requiring the fundamental constituents of reality themselves
+            to be generated or destroyed. Atoms remain permanent, while the
+            temporary compounds formed from them continually change. In this
+            way, atomism joined permanence and transformation within a single
+            account of the natural world.
+          </p>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= MOTION ================= -->
+
+        <section class="narrative-block" id="motion">
+          <h2>How Did Leucippus Explain Motion and Change?</h2>
+
+          <p>
+            Leucippus' theory was designed to make sense of motion and change in
+            a world ultimately composed of permanent constituents. The
+            fundamental elements do not need to be created or destroyed for
+            visible objects to appear, disappear, grow, decay, or transform.
+            Instead, these changes result from the movements and changing
+            relationships of atoms.
+          </p>
+
+          <p>
+            Atoms move through the void and can combine into different
+            configurations. When their arrangements change, the larger objects
+            formed from them also change. A compound may come into existence
+            when atoms join together and cease to exist as that particular
+            compound when its constituent atoms separate and enter new
+            arrangements.
+          </p>
+
+          <p>
+            In this way, the atomists could distinguish between
+            <strong>fundamental reality and ordinary appearance</strong>. The
+            atoms remain, while their arrangements change. What human beings
+            describe as birth or destruction therefore does not necessarily mean
+            the absolute beginning or annihilation of matter, but a
+            transformation in the organization of its permanent constituents.
+          </p>
+
+          <p>
+            Motion was consequently essential rather than accidental to atomist
+            philosophy. Without movement through the void, atoms could not
+            encounter, combine, separate, or form the complex structures of the
+            visible world. Leucippus' theory thus provided a naturalistic
+            explanation of change based on matter, motion, and spatial
+            relationships rather than on the continuous creation of entirely new
+            substances.
+          </p>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= ELEATIC PROBLEM ================= -->
+
+        <section class="narrative-block" id="eleatic-problem">
+          <h2>Why Did Leucippus Develop Atomism?</h2>
+
+          <p>
+            Ancient sources and modern scholarship commonly connect the rise of
+            atomism with the philosophical problems posed by Parmenides and
+            Zeno. Earlier debates had raised profound questions about whether
+            plurality, motion, and change could be coherently explained if
+            genuine reality had to be completely unified, permanent, and free
+            from generation and destruction.
+          </p>
+
+          <p>
+            If reality is completely indivisible and unchanging, as some ancient
+            interpretations of Parmenides suggested, then motion and plurality
+            become difficult to explain. Leucippus attempted to preserve the
+            insight that fundamental reality should not arise from absolute
+            non-being while also accounting for the undeniable appearance of
+            movement, diversity, and transformation in the world.
+          </p>
+
+          <p>
+            His solution was to propose many indivisible atoms together with the
+            void. The atoms remain unchanged in their fundamental nature, while
+            their movement and rearrangement produce the changing world.
+            Plurality becomes possible because reality contains many atoms, and
+            motion becomes possible because there is void through which those
+            atoms can move.
+          </p>
+
+          <p>
+            Atomism can therefore be understood as a philosophical attempt to
+            solve the problem of <strong>permanence and change</strong>. Rather
+            than choosing between an entirely unchanging reality and a world in
+            which everything fundamentally comes into existence and disappears,
+            Leucippus' theory proposed permanent elements whose changing
+            combinations account for the diversity of ordinary experience.
+          </p>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= COSMOLOGY ================= -->
+
+        <section class="narrative-block" id="cosmology">
+          <h2>Leucippus' Theory of the Universe</h2>
+
+          <p>
+            Ancient reports attribute to Leucippus a cosmology in which worlds
+            can form through the movements and combinations of atoms. The
+            universe was not explained primarily through the deliberate
+            construction of a divine artisan; instead, cosmological structures
+            could emerge from the interactions of material bodies moving
+            according to their own nature.
+          </p>
+
+          <p>
+            According to reports preserved by later writers, atoms moving in the
+            void could form a <strong>vortex-like motion</strong>. Through such
+            movements, groups of atoms could separate, collide, and combine into
+            increasingly complex structures. This atomist account attempted to
+            explain the formation of the cosmos through natural processes
+            involving matter and motion.
+          </p>
+
+          <p>
+            The wider atomist tradition associated with Leucippus and Democritus
+            also allowed for the possibility of multiple worlds. Different
+            configurations of atoms could produce different cosmic structures,
+            extending the basic principles of atoms and void beyond individual
+            objects to the explanation of the universe itself.
+          </p>
+
+          <p>
+            These cosmological reports are considerably less secure than the
+            basic association between Leucippus and atomism. Because his own
+            writings have not survived in complete form, many details are known
+            only through later testimony and are difficult to separate from the
+            more developed philosophy of Democritus. They should therefore be
+            understood as ancient evidence about the atomist tradition rather
+            than as a complete surviving cosmological text written directly by
+            Leucippus.
+          </p>
+        </section>
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= NECESSITY ================= -->
+        <section class="narrative-block" id="necessity">
+          <h2>Leucippus, Necessity, and Natural Explanation</h2>
+
+          <p>
+            Leucippus is associated with a strongly naturalistic explanation of
+            the world. Events were understood through the movements, collisions,
+            and interactions of atoms rather than through divine intervention
+            directing every individual natural event. This approach sought to
+            explain the order of nature by referring to the properties and
+            behavior of the material constituents within nature itself.
+          </p>
+
+          <p>
+            One surviving statement attributed to Leucippus says that nothing
+            happens in vain but everything occurs according to reason and
+            <strong>necessity</strong>. The precise interpretation of this
+            fragment remains a matter of philosophical discussion, particularly
+            because the original context in which the statement appeared has not
+            survived.
+          </p>
+
+          <p>
+            The idea of necessity suggests that natural events are not simply
+            arbitrary occurrences. Within the atomist framework, what happens
+            results from the conditions, movements, and interactions of material
+            bodies. This provided an important alternative to explanations that
+            interpreted every feature of the natural world primarily through the
+            intentions or purposes of divine agents.
+          </p>
+
+          <p>
+            The broader atomist approach therefore attempted to explain the
+            apparent order of nature through the behavior of material
+            constituents rather than through a purpose imposed from outside the
+            natural world. Although the exact scope of Leucippus' own doctrine
+            remains uncertain, the association between early atomism and
+            explanations based on necessity became an important development in
+            the history of natural philosophy.
+          </p>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= DEMOCRITUS ================= -->
+
+        <section class="narrative-block" id="democritus">
+          <h2>Leucippus and Democritus</h2>
+
+          <p>
+            Leucippus is closely connected with <strong>Democritus</strong>, who
+            is generally regarded as the philosopher who developed and
+            systematized the atomist theory in greater detail. The two names
+            became so closely associated in ancient discussions that later
+            writers frequently presented atomism as a shared philosophical
+            tradition rather than clearly separating every doctrine between its
+            two principal figures.
+          </p>
+
+          <p>
+            The historical evidence makes it difficult to determine exactly
+            which ideas belong specifically to Leucippus and which belong to
+            Democritus. Democritus' philosophical legacy is considerably better
+            documented, while Leucippus' own writings and biographical details
+            survive only in a highly fragmentary form. As a result, modern
+            reconstructions must avoid confidently assigning every feature of
+            classical atomism to Leucippus alone.
+          </p>
+
+          <p>
+            Ancient tradition nevertheless presents Leucippus as an important
+            predecessor and associate of Democritus in the development of
+            atomism. The fundamental theory of permanent atoms moving through
+            the void is strongly associated with both thinkers, even where the
+            precise contribution of each philosopher cannot be established with
+            complete certainty.
+          </p>
+
+          <p>
+            Leucippus is therefore important not only as an individual thinker
+            but also as the earliest figure traditionally associated with the
+            Greek atomist system that Democritus later developed. Their
+            relationship illustrates one of the central difficulties of
+            Presocratic scholarship: influential philosophical traditions
+            sometimes survive more clearly through later representatives than
+            through the writings of their original founders.
+          </p>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= WRITINGS ================= -->
+
+        <section class="narrative-block" id="writings">
+          <h2>Did Leucippus Write Any Books?</h2>
+
+          <p>
+            Very little of Leucippus' written work survives. Ancient sources
+            sometimes attribute works to him, including a work known as the
+            <em>Great World-System</em>, but the evidence surrounding his
+            writings is limited and questions of authorship remain difficult to
+            resolve. No complete work that can be securely studied as Leucippus'
+            own writing survives today.
+          </p>
+
+          <p>
+            One quotation is also attributed to a work concerning the mind.
+            Because the surviving evidence is fragmentary, however, it is
+            difficult to reconstruct a complete philosophical system directly
+            from Leucippus' own writings. Individual reports may preserve
+            genuine aspects of his thought while still leaving the original
+            argument and context unknown.
+          </p>
+
+          <p>
+            Much of what we know about his philosophy therefore comes from later
+            ancient authors who reported, interpreted, or criticized early
+            atomist ideas. Aristotle and other ancient writers are particularly
+            important witnesses to the atomist tradition, although their
+            accounts were written from perspectives shaped by their own
+            philosophical interests and arguments.
+          </p>
+
+          <p>
+            This dependence on later testimony makes Leucippus one of the more
+            difficult figures to study in early Greek philosophy. Historians
+            must distinguish, where possible, between direct fragments, ancient
+            reports, and doctrines that may belong more specifically to
+            Democritus or to the later development of atomism.
+          </p>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= HISTORICAL CERTAINTY ================= -->
+
+        <section class="narrative-block" id="historical-certainty">
+          <h2>What Do We Actually Know About Leucippus?</h2>
+
+          <p>
+            Leucippus is an important example of the difficulty of studying
+            Presocratic philosophy. His historical importance is widely
+            recognized, but the surviving evidence about his life and individual
+            doctrines is extremely limited. For this reason, a distinction must
+            be maintained between what is strongly supported by ancient
+            testimony and what remains uncertain or disputed.
+          </p>
+
+          <h3>Relatively Well-Attested</h3>
+
+          <ul class="plain-list">
+            <li>
+              Leucippus is traditionally regarded as an early Greek atomist and
+              a foundational figure in the atomist tradition.
+            </li>
+
+            <li>
+              He is strongly associated with the theory that reality involves
+              atoms and void.
+            </li>
+
+            <li>
+              He is closely connected with Democritus and the development of
+              ancient Greek atomism.
+            </li>
+
+            <li>
+              Ancient philosophical sources preserve reports connecting atomism
+              with explanations of motion, plurality, and natural change.
+            </li>
+          </ul>
+
+          <h3>Uncertain or Disputed</h3>
+
+          <ul class="plain-list">
+            <li>The exact details of his life, dates, and place of birth.</li>
+
+            <li>
+              The precise nature and extent of his influence on Democritus.
+            </li>
+
+            <li>
+              Which specific doctrines attributed to the atomists originated
+              with Leucippus himself.
+            </li>
+
+            <li>
+              The exact content, authorship, and historical status of works
+              attributed to him.
+            </li>
+
+            <li>
+              How much of the detailed atomist cosmology preserved by later
+              authors can be confidently assigned to Leucippus rather than to
+              Democritus or the broader atomist tradition.
+            </li>
+          </ul>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= IMPORTANCE ================= -->
+
+        <section class="narrative-block" id="importance">
+          <h2>Why Is Leucippus Important in Philosophy?</h2>
+
+          <p>
+            Leucippus is important because the atomist theory associated with
+            him offered one of the earliest systematic attempts to explain the
+            physical world in terms of indivisible material constituents and
+            empty space. The theory proposed that the immense diversity of
+            visible reality could arise from the movement and arrangement of a
+            limited set of fundamental elements.
+          </p>
+
+          <p>
+            His philosophy addressed fundamental metaphysical questions about
+            <strong
+              >being, change, motion, plurality, and the structure of
+              reality</strong
+            >. By proposing permanent atoms together with the void, atomism
+            attempted to explain how genuine change could occur without
+            requiring the ultimate constituents of the world to come into
+            existence or disappear into absolute nothingness.
+          </p>
+
+          <p>
+            The atomist tradition continued through Democritus and later became
+            important to <strong>Epicurean philosophy</strong> and the Roman
+            poet-philosopher <strong>Lucretius</strong>. Although these later
+            thinkers modified and developed atomist ideas in their own ways,
+            they helped preserve and extend the broader tradition with which
+            Leucippus was associated.
+          </p>
+
+          <p>
+            Leucippus' historical importance also lies in the long-term
+            influence of the questions raised by atomism. The attempt to explain
+            complex phenomena through the movement and arrangement of
+            fundamental material constituents became a major theme in later
+            natural philosophy. While ancient atoms should not be simply equated
+            with atoms in modern physics, the philosophical importance of
+            ancient atomism remains substantial.
+          </p>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= EXPLAINED SIMPLY ================= -->
+
+        <section class="narrative-block" id="explained-simply">
+          <h2>Leucippus Explained Simply</h2>
+
+          <p>
+            Leucippus was an ancient Greek philosopher who tried to explain how
+            a changing world could exist if reality had permanent foundations.
+            His answer, as preserved in the atomist tradition, was that the
+            visible world is made from countless tiny, indivisible bodies moving
+            through empty space.
+          </p>
+
+          <p>
+            The basic idea is that things do not need to be created from nothing
+            in order for change to occur. Atoms can move, join together,
+            separate, and form new arrangements. A visible object changes when
+            the atoms associated with it change their arrangement, while the
+            fundamental atoms themselves remain.
+          </p>
+
+          <ul class="plain-list">
+            <li><strong>Basic reality:</strong> Atoms and void.</li>
+
+            <li>
+              <strong>Atoms:</strong> Indivisible and permanent material bodies.
+            </li>
+
+            <li>
+              <strong>Void:</strong> Empty space through which atoms move.
+            </li>
+
+            <li>
+              <strong>Change:</strong> Produced by changes in the arrangements,
+              combinations, and movements of atoms.
+            </li>
+
+            <li>
+              <strong>Natural explanation:</strong> Events are explained through
+              the interactions and movements of material bodies.
+            </li>
+
+            <li>
+              <strong>Historical importance:</strong> Traditionally regarded as
+              a foundational figure in Greek atomism.
+            </li>
+          </ul>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= FAQ ================= -->
+
+        <section class="narrative-block" id="faq">
+          <h2>Frequently Asked Questions About Leucippus</h2>
+
+          <h3>Who was Leucippus?</h3>
+
+          <p>
+            Leucippus was an ancient Greek philosopher active during the fifth
+            century BCE who is traditionally regarded as the founder or earliest
+            major figure of Greek atomism. Very little is known with certainty
+            about his life, and many ancient sources discuss his ideas together
+            with those of Democritus, making it difficult to reconstruct his
+            individual biography and philosophical contribution in detail.
+          </p>
+
+          <h3>What is Leucippus famous for?</h3>
+
+          <p>
+            Leucippus is famous primarily for his association with the theory
+            that reality consists fundamentally of atoms and void. This atomist
+            approach attempted to explain how motion, change, and the diversity
+            of visible objects are possible while maintaining that the basic
+            constituents of reality remain permanent and indivisible.
+          </p>
+
+          <h3>What did Leucippus believe?</h3>
+
+          <p>
+            Leucippus is traditionally associated with the belief that
+            indivisible atoms move through the void and combine into different
+            arrangements that produce the changing world of ordinary experience.
+            According to the atomist approach, objects are generated and
+            destroyed not because atoms themselves come into or pass out of
+            existence, but because atoms separate, combine, and form new
+            configurations.
+          </p>
+
+          <h3>What are atoms and void in Leucippus' philosophy?</h3>
+
+          <p>
+            Atoms are understood as indivisible, solid, and permanent
+            constituents of reality, while the void provides the empty space
+            necessary for their movement. The distinction between atoms and void
+            was philosophically important because it allowed the atomists to
+            explain both the permanence of fundamental reality and the
+            observable existence of motion, plurality, and change.
+          </p>
+
+          <h3>Was Leucippus the first atomist?</h3>
+
+          <p>
+            Leucippus is generally regarded as the earliest well-attested figure
+            associated with atomism in the Greek philosophical tradition and is
+            traditionally described as its founder. However, because the
+            surviving evidence is extremely limited, historians must be cautious
+            about determining exactly which features of the later atomist system
+            originated with Leucippus himself.
+          </p>
+
+          <h3>What is the connection between Leucippus and Democritus?</h3>
+
+          <p>
+            Leucippus is traditionally regarded as the founder of the atomist
+            theory, while Democritus developed and systematized the theory in
+            much greater detail. Ancient writers frequently treat the two
+            philosophers together, and the exact relationship between their
+            ideas remains uncertain, making it difficult to separate Leucippus'
+            original contributions from the more extensive philosophical system
+            associated with Democritus.
+          </p>
+
+          <h3>Did Leucippus write books?</h3>
+
+          <p>
+            Ancient sources attribute writings to Leucippus, including works
+            traditionally associated with cosmology and the nature of the world,
+            but very little of his work survives directly. Most knowledge of his
+            philosophy therefore comes from later ancient authors who reported,
+            interpreted, or criticized the ideas of the early Greek atomists,
+            rather than from complete texts written by Leucippus himself.
+          </p>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= RELATED THINKERS ================= -->
+
+        <section class="connection" aria-labelledby="related-thinkers-title">
+          <span class="section-eyebrow">Continue Exploring</span>
+
+          <h2 id="related-thinkers-title">Related Pre-Socratic Philosophers</h2>
+
+          <p>
+            Leucippus belongs to the wider tradition of Pre-Socratic philosophy.
+            Explore thinkers who developed different explanations of nature,
+            reality, change, and the structure of the cosmos.
+          </p>
+
+          <div class="related-links">
+            <a href="democritus.html">Democritus</a> ·
+            <a href="anaximander.html">Anaximander</a> ·
+            <a href="anaximenes.html">Anaximenes</a> ·
+            <a href="heraclitus.html">Heraclitus</a> ·
+            <a href="parmenides.html">Parmenides</a> ·
+            <a href="zeno.html">Zeno of Elea</a>
+          </div>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= RELATED BRANCHES ================= -->
+
+        <section class="connection" aria-labelledby="related-branches-title">
+          <span class="section-eyebrow">Philosophical Connections</span>
+
+          <h2 id="related-branches-title">
+            Philosophy Branches Connected to Leucippus
+          </h2>
+
+          <p>
+            Leucippus' atomism is especially important for metaphysics and the
+            philosophical study of nature. His theory raises questions about the
+            ultimate structure of reality, matter, change, space, and motion.
+          </p>
+
+          <div class="related-links">
+            <a href="metaphysics-branch-philosophy.html">Metaphysics</a> ·
+            <a href="epistemology-branch-philosophy.html">Epistemology</a> ·
+            <a href="logic-branch-philosophy.html">Logic</a>
+          </div>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- ================= CONCLUSION ================= -->
+
+        <section class="narrative-block" aria-labelledby="conclusion-title">
+          <span class="section-eyebrow">Ancient Greek Atomism</span>
+
+          <h2 id="conclusion-title">Why Leucippus Still Matters</h2>
+
+          <p>
+            Leucippus occupies an important place in the history of philosophy
+            because he is traditionally associated with one of the earliest
+            Greek theories explaining the physical world through atoms and void.
+          </p>
+
+          <p>
+            Although the evidence about his individual ideas is limited, the
+            atomist tradition that bears his name became one of the most
+            important materialist approaches in ancient philosophy.
+          </p>
+
+          <p>
+            His ideas helped establish a philosophical problem that continued
+            long after antiquity: what is reality ultimately made of, and how
+            can change arise from its fundamental constituents?
+          </p>
+
+          <a class="cta-button" href="thinkers.html">
+            Explore Great Philosophers
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </section>
+      </main>
+    </div>
 
     <!-- ================= FOOTER ================= -->
 
@@ -1513,8 +1585,8 @@
       </div>
     </footer>
 
-     <script src="script.js" defer></script>
-     <script src="article-toc.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="article-toc.js" defer></script>
     <script src="branches-enhance.js"></script>
 
     <!-- ================= APPEARANCE PANEL ================= -->

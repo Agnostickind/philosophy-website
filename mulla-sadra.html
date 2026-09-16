@@ -110,7 +110,7 @@
 
     <!-- ================= STYLESHEETS ================= -->
 
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="article-toc.css" />
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
@@ -380,10 +380,10 @@
       }
     </script>
     <link
-    rel="describedby"
-    href="https://agnostickind.github.io/philosophy-website/llms.txt"
-  >
-</head>
+      rel="describedby"
+      href="https://agnostickind.github.io/philosophy-website/llms.txt"
+    />
+  </head>
 
   <body>
     <!-- =====================================================
@@ -673,12 +673,11 @@
         </div>
 
         <a href="schools.html">Schools</a>
-       <a href="books.html">Books</a>
+        <a href="books.html">Books</a>
         <a href="world-literature.html">Literature</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </div>
-
 
       <div class="nav-tools">
         <!-- SEARCH -->
@@ -773,1323 +772,1397 @@
       </div>
     </header>
 
-    <main id="main-content" tabindex="-1">
-      <!-- =====================================================
+    <div class="article-reading-area">
+      <!-- =========================================================
+     ARTICLE TABLE OF CONTENTS
+     ========================================================= -->
+
+      <!-- Desktop TOC -->
+      <aside class="article-toc" aria-label="Article contents">
+        <div class="article-toc__header">
+          <span class="article-toc__title">Contents</span>
+
+          <button
+            type="button"
+            class="article-toc__hide"
+            aria-label="Hide article contents"
+          >
+            Hide
+          </button>
+        </div>
+
+        <nav class="article-toc__nav" aria-label="Article sections">
+          <div class="article-toc__list"></div>
+        </nav>
+      </aside>
+
+      <!-- Mobile TOC trigger -->
+      <button
+        type="button"
+        class="mobile-toc-trigger"
+        aria-expanded="false"
+        aria-controls="mobile-toc-drawer"
+      >
+        <span>Contents</span>
+        <span class="mobile-toc-trigger__chevron" aria-hidden="true">⌄</span>
+      </button>
+
+      <!-- Mobile TOC overlay -->
+      <div class="mobile-toc-overlay" hidden></div>
+
+      <!-- Mobile TOC drawer -->
+      <aside
+        id="mobile-toc-drawer"
+        class="mobile-toc-drawer"
+        aria-label="Article contents"
+        aria-hidden="true"
+      >
+        <div class="mobile-toc-drawer__header">
+          <span class="mobile-toc-drawer__title">Contents</span>
+
+          <button
+            type="button"
+            class="mobile-toc-drawer__close"
+            aria-label="Close article contents"
+          >
+            ×
+          </button>
+        </div>
+
+        <nav class="mobile-toc-drawer__nav" aria-label="Article sections">
+          <div class="mobile-toc-drawer__list"></div>
+        </nav>
+      </aside>
+
+      <main id="main-content" tabindex="-1">
+        <!-- =====================================================
          INTRODUCTION
          ===================================================== -->
 
-      <section class="about-home">
-        <h2>Who Was Mulla Sadra?</h2>
+        <section class="about-home">
+          <h2>Who Was Mulla Sadra?</h2>
 
-        <p>
-          <strong>Mulla Sadra</strong> (Sadr al-Din Muhammad ibn Ibrahim
-          Shirazi, c. 1571–1640) was one of the most influential philosophers of
-          the later Islamic philosophical tradition. A Persian philosopher of
-          the Safavid period, he developed a distinctive philosophical system
-          commonly known as <strong>Transcendent Theosophy</strong>, or
-          <em>al-Hikmah al-Muta'aliyah</em>.
-        </p>
+          <p>
+            <strong>Mulla Sadra</strong> (Sadr al-Din Muhammad ibn Ibrahim
+            Shirazi, c. 1571–1640) was one of the most influential philosophers
+            of the later Islamic philosophical tradition. A Persian philosopher
+            of the Safavid period, he developed a distinctive philosophical
+            system commonly known as <strong>Transcendent Theosophy</strong>, or
+            <em>al-Hikmah al-Muta'aliyah</em>.
+          </p>
 
-        <p>
-          Mulla Sadra developed his thought through a creative engagement with
-          several major currents of Islamic intellectual life, including
-          Avicennan philosophy, Illuminationist philosophy, Islamic theology,
-          philosophical mysticism, and Shi'i intellectual traditions. Rather
-          than simply combining these traditions, he sought to develop a new
-          metaphysical framework in which the concept of
-          <strong>existence</strong> occupied a central position.
-        </p>
+          <p>
+            Mulla Sadra developed his thought through a creative engagement with
+            several major currents of Islamic intellectual life, including
+            Avicennan philosophy, Illuminationist philosophy, Islamic theology,
+            philosophical mysticism, and Shi'i intellectual traditions. Rather
+            than simply combining these traditions, he sought to develop a new
+            metaphysical framework in which the concept of
+            <strong>existence</strong> occupied a central position.
+          </p>
 
-        <p>
-          His philosophy is particularly famous for the
-          <strong>primacy of existence</strong>, the gradation of existence,
-          <strong>substantial motion</strong>, and his theories of knowledge,
-          the soul, and resurrection. His magnum opus,
-          <em>al-Hikmah al-Muta'aliyah fi al-Asfar al-'Aqliyyah al-Arba'ah</em>,
-          commonly known as <em>Asfar al-Arba'a</em> or
-          <em>The Four Journeys</em>, presents these ideas within a vast
-          philosophical, theological, and spiritual framework.
-        </p>
+          <p>
+            His philosophy is particularly famous for the
+            <strong>primacy of existence</strong>, the gradation of existence,
+            <strong>substantial motion</strong>, and his theories of knowledge,
+            the soul, and resurrection. His magnum opus,
+            <em>al-Hikmah al-Muta'aliyah fi al-Asfar al-'Aqliyyah al-Arba'ah</em
+            >, commonly known as <em>Asfar al-Arba'a</em> or
+            <em>The Four Journeys</em>, presents these ideas within a vast
+            philosophical, theological, and spiritual framework.
+          </p>
 
-        <p>
-          Mulla Sadra's importance lies partly in his attempt to rethink some of
-          the most fundamental questions of metaphysics: What does it mean to
-          exist? How are different beings related to one another? How does the
-          soul develop? And how can philosophical reasoning be related to
-          revelation and spiritual experience? His answers helped shape the
-          subsequent development of philosophy in Iran and the wider Islamic
-          world.
-        </p>
-      </section>
+          <p>
+            Mulla Sadra's importance lies partly in his attempt to rethink some
+            of the most fundamental questions of metaphysics: What does it mean
+            to exist? How are different beings related to one another? How does
+            the soul develop? And how can philosophical reasoning be related to
+            revelation and spiritual experience? His answers helped shape the
+            subsequent development of philosophy in Iran and the wider Islamic
+            world.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          QUICK FACTS
          ===================================================== -->
 
-      <section class="narrative-block" id="quick-facts">
-        <h2>Mulla Sadra: Quick Facts</h2>
+        <section class="narrative-block" id="quick-facts">
+          <h2>Mulla Sadra: Quick Facts</h2>
 
-        <ul class="plain-list">
-          <li>
-            <strong>Full name</strong> — Sadr al-Din Muhammad ibn Ibrahim
-            Shirazi
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>Full name</strong> — Sadr al-Din Muhammad ibn Ibrahim
+              Shirazi
+            </li>
 
-          <li>
-            <strong>Known as</strong> — Mulla Sadra or Sadr al-Muta'allihin
-          </li>
+            <li>
+              <strong>Known as</strong> — Mulla Sadra or Sadr al-Muta'allihin
+            </li>
 
-          <li><strong>Born</strong> — c. 1571–1572 CE</li>
+            <li><strong>Born</strong> — c. 1571–1572 CE</li>
 
-          <li>
-            <strong>Died</strong> — 17th century, traditionally dated around
-            1640 CE
-          </li>
+            <li>
+              <strong>Died</strong> — 17th century, traditionally dated around
+              1640 CE
+            </li>
 
-          <li>
-            <strong>Associated with</strong> — Shiraz, Qazvin, Isfahan, and
-            Kahak
-          </li>
+            <li>
+              <strong>Associated with</strong> — Shiraz, Qazvin, Isfahan, and
+              Kahak
+            </li>
 
-          <li><strong>Period</strong> — Safavid Iran</li>
+            <li><strong>Period</strong> — Safavid Iran</li>
 
-          <li>
-            <strong>Philosophical tradition</strong> — Islamic and Persian
-            philosophy
-          </li>
+            <li>
+              <strong>Philosophical tradition</strong> — Islamic and Persian
+              philosophy
+            </li>
 
-          <li><strong>Major school</strong> — School of Isfahan</li>
+            <li><strong>Major school</strong> — School of Isfahan</li>
 
-          <li>
-            <strong>Philosophical system</strong> — Transcendent Theosophy (<em
-              >al-Hikmah al-Muta'aliyah</em
-            >)
-          </li>
+            <li>
+              <strong>Philosophical system</strong> — Transcendent Theosophy
+              (<em>al-Hikmah al-Muta'aliyah</em>)
+            </li>
 
-          <li><strong>Central concept</strong> — Primacy of existence</li>
+            <li><strong>Central concept</strong> — Primacy of existence</li>
 
-          <li><strong>Major doctrine</strong> — Substantial motion</li>
+            <li><strong>Major doctrine</strong> — Substantial motion</li>
 
-          <li><strong>Major work</strong> — <em>Asfar al-Arba'a</em></li>
-        </ul>
-      </section>
+            <li><strong>Major work</strong> — <em>Asfar al-Arba'a</em></li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          EARLY LIFE
          ===================================================== -->
 
-      <section class="narrative-block" id="early-life">
-        <h2>Mulla Sadra's Early Life and Historical Background</h2>
+        <section class="narrative-block" id="early-life">
+          <h2>Mulla Sadra's Early Life and Historical Background</h2>
 
-        <figure class="narrative-figure">
-          <img
-            src="images/mulla-sadra.jpg"
-            alt="Representation of Mulla Sadra, Persian Islamic philosopher"
-            loading="lazy"
-            decoding="async"
-          />
+          <figure class="narrative-figure">
+            <img
+              src="images/mulla-sadra.jpg"
+              alt="Representation of Mulla Sadra, Persian Islamic philosopher"
+              loading="lazy"
+              decoding="async"
+            />
 
-          <figcaption>
-            Mulla Sadra became one of the most influential philosophers of
-            Safavid-era Iran.
-          </figcaption>
-        </figure>
+            <figcaption>
+              Mulla Sadra became one of the most influential philosophers of
+              Safavid-era Iran.
+            </figcaption>
+          </figure>
 
-        <p>
-          Mulla Sadra, whose full name was Sadr al-Din Muhammad ibn Ibrahim
-          Shirazi, was born in Shiraz around 1571–1572 into a prominent family
-          during the Safavid period. Seeking advanced intellectual training, he
-          later moved first to Qazvin and then to Isfahan, the successive
-          capitals of the Safavid Empire and major centers of philosophical and
-          religious learning.
-        </p>
+          <p>
+            Mulla Sadra, whose full name was Sadr al-Din Muhammad ibn Ibrahim
+            Shirazi, was born in Shiraz around 1571–1572 into a prominent family
+            during the Safavid period. Seeking advanced intellectual training,
+            he later moved first to Qazvin and then to Isfahan, the successive
+            capitals of the Safavid Empire and major centers of philosophical
+            and religious learning.
+          </p>
 
-        <p>
-          In these intellectual centers, Mulla Sadra studied philosophy,
-          theology, Hadith, Qur'anic interpretation, and other branches of
-          Islamic learning. His two most important teachers were
-          <strong>Mir Damad</strong>, a major philosopher of the period, and
-          <strong>Shaykh Baha'i</strong>, an influential scholar whose interests
-          extended across religious and intellectual disciplines.
-        </p>
+          <p>
+            In these intellectual centers, Mulla Sadra studied philosophy,
+            theology, Hadith, Qur'anic interpretation, and other branches of
+            Islamic learning. His two most important teachers were
+            <strong>Mir Damad</strong>, a major philosopher of the period, and
+            <strong>Shaykh Baha'i</strong>, an influential scholar whose
+            interests extended across religious and intellectual disciplines.
+          </p>
 
-        <p>
-          The world in which Mulla Sadra developed was shaped by the continuing
-          interaction of Avicennan philosophy, Illuminationism, Islamic
-          theology, mystical thought, and Shi'i scholarship. Rather than
-          remaining within a single intellectual tradition, he eventually
-          developed a philosophical synthesis that drew critically upon several
-          of these currents.
-        </p>
-      </section>
+          <p>
+            The world in which Mulla Sadra developed was shaped by the
+            continuing interaction of Avicennan philosophy, Illuminationism,
+            Islamic theology, mystical thought, and Shi'i scholarship. Rather
+            than remaining within a single intellectual tradition, he eventually
+            developed a philosophical synthesis that drew critically upon
+            several of these currents.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      EDUCATION
      ===================================================== -->
 
-      <section class="narrative-block" id="education">
-        <h2>Mulla Sadra's Education and Philosophical Influences</h2>
+        <section class="narrative-block" id="education">
+          <h2>Mulla Sadra's Education and Philosophical Influences</h2>
 
-        <p>
-          Mulla Sadra's philosophical education brought him into contact with
-          several major traditions of Islamic intellectual history. He engaged
-          deeply with the philosophy of <strong>Avicenna (Ibn Sina)</strong>,
-          the Illuminationist thought of <strong>Suhrawardi</strong>, Islamic
-          theology, Qur'anic interpretation, and forms of mystical metaphysics
-          associated with thinkers such as <strong>Ibn Arabi</strong>.
-        </p>
+          <p>
+            Mulla Sadra's philosophical education brought him into contact with
+            several major traditions of Islamic intellectual history. He engaged
+            deeply with the philosophy of <strong>Avicenna (Ibn Sina)</strong>,
+            the Illuminationist thought of <strong>Suhrawardi</strong>, Islamic
+            theology, Qur'anic interpretation, and forms of mystical metaphysics
+            associated with thinkers such as <strong>Ibn Arabi</strong>.
+          </p>
 
-        <p>
-          His education was not simply an accumulation of different doctrines.
-          Mulla Sadra examined the agreements and tensions between philosophical
-          reasoning, mystical knowledge, and religious teaching. Avicennan
-          logical and metaphysical methods remained fundamental to his work, but
-          he also gave an important place to intellectual intuition and
-          spiritual transformation.
-        </p>
+          <p>
+            His education was not simply an accumulation of different doctrines.
+            Mulla Sadra examined the agreements and tensions between
+            philosophical reasoning, mystical knowledge, and religious teaching.
+            Avicennan logical and metaphysical methods remained fundamental to
+            his work, but he also gave an important place to intellectual
+            intuition and spiritual transformation.
+          </p>
 
-        <p>
-          This attempt to bring different forms of knowledge into a coherent
-          philosophical framework became one of the defining characteristics of
-          <strong>Mulla Sadra's philosophy</strong>. His mature synthesis came
-          to be known as <strong>Transcendent Theosophy</strong>, or
-          <em>al-Hikmah al-Muta'aliyah</em>.
-        </p>
-      </section>
+          <p>
+            This attempt to bring different forms of knowledge into a coherent
+            philosophical framework became one of the defining characteristics
+            of
+            <strong>Mulla Sadra's philosophy</strong>. His mature synthesis came
+            to be known as <strong>Transcendent Theosophy</strong>, or
+            <em>al-Hikmah al-Muta'aliyah</em>.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      SCHOOL OF ISFAHAN
      ===================================================== -->
 
-      <section class="narrative-block" id="school-of-isfahan">
-        <h2>Mulla Sadra and the School of Isfahan</h2>
+        <section class="narrative-block" id="school-of-isfahan">
+          <h2>Mulla Sadra and the School of Isfahan</h2>
 
-        <p>
-          Mulla Sadra is closely associated with what modern scholars commonly
-          call the <strong>School of Isfahan</strong>, an important intellectual
-          movement connected with Safavid Iran. Isfahan became a major center of
-          philosophical, theological, legal, mystical, and scientific learning,
-          particularly during the period in which the city served as the Safavid
-          capital.
-        </p>
+          <p>
+            Mulla Sadra is closely associated with what modern scholars commonly
+            call the <strong>School of Isfahan</strong>, an important
+            intellectual movement connected with Safavid Iran. Isfahan became a
+            major center of philosophical, theological, legal, mystical, and
+            scientific learning, particularly during the period in which the
+            city served as the Safavid capital.
+          </p>
 
-        <p>
-          Thinkers associated with this intellectual environment explored the
-          relationship between rational philosophy, religious knowledge, and
-          mystical insight. Important figures included Mir Damad and Shaykh
-          Baha'i, both of whom played significant roles in Mulla Sadra's
-          intellectual development.
-        </p>
+          <p>
+            Thinkers associated with this intellectual environment explored the
+            relationship between rational philosophy, religious knowledge, and
+            mystical insight. Important figures included Mir Damad and Shaykh
+            Baha'i, both of whom played significant roles in Mulla Sadra's
+            intellectual development.
+          </p>
 
-        <p>
-          Mulla Sadra eventually developed a philosophical position distinct
-          enough to become a major tradition in its own right. His influence
-          later extended throughout the eastern Islamic world, particularly in
-          Iran, where the study and commentary of his major works became central
-          to later traditions of Islamic philosophy.
-        </p>
-      </section>
+          <p>
+            Mulla Sadra eventually developed a philosophical position distinct
+            enough to become a major tradition in its own right. His influence
+            later extended throughout the eastern Islamic world, particularly in
+            Iran, where the study and commentary of his major works became
+            central to later traditions of Islamic philosophy.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      WHAT IS HIS PHILOSOPHY
      ===================================================== -->
 
-      <section class="narrative-block" id="philosophy">
-        <h2>What Was Mulla Sadra's Philosophy?</h2>
+        <section class="narrative-block" id="philosophy">
+          <h2>What Was Mulla Sadra's Philosophy?</h2>
 
-        <p>
-          <strong>Mulla Sadra's philosophy</strong> is a comprehensive
-          philosophical system centered on the nature of existence, the
-          structure of reality, knowledge, and the transformation of the human
-          soul. His mature approach became known as
-          <strong>Transcendent Theosophy</strong>, or
-          <em>al-Hikmah al-Muta'aliyah</em>.
-        </p>
+          <p>
+            <strong>Mulla Sadra's philosophy</strong> is a comprehensive
+            philosophical system centered on the nature of existence, the
+            structure of reality, knowledge, and the transformation of the human
+            soul. His mature approach became known as
+            <strong>Transcendent Theosophy</strong>, or
+            <em>al-Hikmah al-Muta'aliyah</em>.
+          </p>
 
-        <p>
-          His philosophy attempts to bring together rational demonstration,
-          metaphysical inquiry, intellectual intuition, and religious
-          revelation. Mulla Sadra did not regard these as necessarily competing
-          paths to truth. Instead, he argued that a complete philosophical
-          understanding of reality required both rigorous reasoning and the
-          transformation of the person seeking wisdom.
-        </p>
+          <p>
+            His philosophy attempts to bring together rational demonstration,
+            metaphysical inquiry, intellectual intuition, and religious
+            revelation. Mulla Sadra did not regard these as necessarily
+            competing paths to truth. Instead, he argued that a complete
+            philosophical understanding of reality required both rigorous
+            reasoning and the transformation of the person seeking wisdom.
+          </p>
 
-        <p>
-          Philosophy was therefore more than abstract speculation for Mulla
-          Sadra. The pursuit of knowledge was connected with the perfection of
-          the human soul and with a way of life directed toward a deeper
-          understanding of reality.
-        </p>
-      </section>
+          <p>
+            Philosophy was therefore more than abstract speculation for Mulla
+            Sadra. The pursuit of knowledge was connected with the perfection of
+            the human soul and with a way of life directed toward a deeper
+            understanding of reality.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      TRANSCENDENT THEOSOPHY
      ===================================================== -->
 
-      <section class="narrative-block" id="transcendent-theosophy">
-        <h2>What Is Mulla Sadra's Transcendent Theosophy?</h2>
+        <section class="narrative-block" id="transcendent-theosophy">
+          <h2>What Is Mulla Sadra's Transcendent Theosophy?</h2>
 
-        <p>
-          <strong>Transcendent Theosophy</strong>, known as
-          <em>al-Hikmah al-Muta'aliyah</em>, is the name most closely associated
-          with Mulla Sadra's mature philosophical system. The expression refers
-          broadly to a higher or transcendent form of wisdom rather than simply
-          to a separate religious doctrine.
-        </p>
+          <p>
+            <strong>Transcendent Theosophy</strong>, known as
+            <em>al-Hikmah al-Muta'aliyah</em>, is the name most closely
+            associated with Mulla Sadra's mature philosophical system. The
+            expression refers broadly to a higher or transcendent form of wisdom
+            rather than simply to a separate religious doctrine.
+          </p>
 
-        <p>
-          Mulla Sadra's system combines philosophical demonstration,
-          metaphysical inquiry, mystical insight, theology, and the
-          interpretation of religious texts. His aim was not merely to construct
-          an abstract theory of reality, but also to understand how the human
-          being can move toward intellectual and spiritual perfection.
-        </p>
+          <p>
+            Mulla Sadra's system combines philosophical demonstration,
+            metaphysical inquiry, mystical insight, theology, and the
+            interpretation of religious texts. His aim was not merely to
+            construct an abstract theory of reality, but also to understand how
+            the human being can move toward intellectual and spiritual
+            perfection.
+          </p>
 
-        <p>
-          Transcendent Theosophy draws critically upon earlier traditions,
-          including Avicennan philosophy, Illuminationism, mystical metaphysics,
-          and Shi'i intellectual thought. At the same time, Mulla Sadra
-          developed distinctive doctrines concerning existence, motion,
-          knowledge, the soul, and the relationship between God and creation.
-        </p>
-      </section>
+          <p>
+            Transcendent Theosophy draws critically upon earlier traditions,
+            including Avicennan philosophy, Illuminationism, mystical
+            metaphysics, and Shi'i intellectual thought. At the same time, Mulla
+            Sadra developed distinctive doctrines concerning existence, motion,
+            knowledge, the soul, and the relationship between God and creation.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      EXISTENCE
      ===================================================== -->
 
-      <section class="narrative-block" id="existence">
-        <h2>Mulla Sadra's Philosophy of Existence</h2>
+        <section class="narrative-block" id="existence">
+          <h2>Mulla Sadra's Philosophy of Existence</h2>
 
-        <p>
-          <strong>Existence</strong> is the central concept of Mulla Sadra's
-          metaphysics. One of his most important philosophical innovations was
-          to give ontological priority to existence rather than treating fixed
-          essences or quiddities as the ultimate constituents of external
-          reality.
-        </p>
+          <p>
+            <strong>Existence</strong> is the central concept of Mulla Sadra's
+            metaphysics. One of his most important philosophical innovations was
+            to give ontological priority to existence rather than treating fixed
+            essences or quiddities as the ultimate constituents of external
+            reality.
+          </p>
 
-        <p>
-          For Mulla Sadra, existence is not merely an abstract concept produced
-          by the human mind. It is the fundamental reality through which things
-          are actual. Individual beings differ from one another, but they
-          possess reality through different modes and degrees of existence.
-        </p>
+          <p>
+            For Mulla Sadra, existence is not merely an abstract concept
+            produced by the human mind. It is the fundamental reality through
+            which things are actual. Individual beings differ from one another,
+            but they possess reality through different modes and degrees of
+            existence.
+          </p>
 
-        <p>
-          This emphasis transformed the traditional philosophical discussion of
-          being and essence. It allowed Mulla Sadra to develop a metaphysics in
-          which reality is unified yet differentiated, graded yet diverse, and
-          fundamentally dynamic rather than completely static.
-        </p>
-      </section>
+          <p>
+            This emphasis transformed the traditional philosophical discussion
+            of being and essence. It allowed Mulla Sadra to develop a
+            metaphysics in which reality is unified yet differentiated, graded
+            yet diverse, and fundamentally dynamic rather than completely
+            static.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      EXISTENCE AND ESSENCE
      ===================================================== -->
 
-      <section class="narrative-block" id="existence-essence">
-        <h2>Mulla Sadra on Existence and Essence</h2>
+        <section class="narrative-block" id="existence-essence">
+          <h2>Mulla Sadra on Existence and Essence</h2>
 
-        <p>
-          One of the central questions of Islamic metaphysics concerns the
-          relationship between <strong>existence</strong> and
-          <strong>essence</strong>. Essence, often translated from the Arabic
-          concept of quiddity, concerns what a thing is, while existence
-          concerns the actuality through which the thing is real.
-        </p>
+          <p>
+            One of the central questions of Islamic metaphysics concerns the
+            relationship between <strong>existence</strong> and
+            <strong>essence</strong>. Essence, often translated from the Arabic
+            concept of quiddity, concerns what a thing is, while existence
+            concerns the actuality through which the thing is real.
+          </p>
 
-        <p>
-          Mulla Sadra argued that existence has ontological priority over
-          essence. Essences are important for thought because they allow the
-          mind to distinguish and classify things, but he held that existence is
-          more fundamental to the reality of things outside the mind.
-        </p>
+          <p>
+            Mulla Sadra argued that existence has ontological priority over
+            essence. Essences are important for thought because they allow the
+            mind to distinguish and classify things, but he held that existence
+            is more fundamental to the reality of things outside the mind.
+          </p>
 
-        <p>
-          This position became the foundation of his distinctive ontology.
-          Reality is not ultimately explained as a collection of completely
-          self-contained and immutable essences; instead, Mulla Sadra understood
-          existence itself as primary, differentiated, and capable of degrees of
-          intensity and perfection.
-        </p>
-      </section>
+          <p>
+            This position became the foundation of his distinctive ontology.
+            Reality is not ultimately explained as a collection of completely
+            self-contained and immutable essences; instead, Mulla Sadra
+            understood existence itself as primary, differentiated, and capable
+            of degrees of intensity and perfection.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      PRIMACY OF EXISTENCE
      ===================================================== -->
 
-      <section class="narrative-block" id="primacy-of-existence">
-        <h2>What Is the Primacy of Existence in Mulla Sadra's Philosophy?</h2>
+        <section class="narrative-block" id="primacy-of-existence">
+          <h2>What Is the Primacy of Existence in Mulla Sadra's Philosophy?</h2>
 
-        <p>
-          The <strong>primacy of existence</strong>, known as
-          <em>asalat al-wujud</em>, is one of the central doctrines of Mulla
-          Sadra's metaphysics. It expresses his claim that existence is
-          ontologically fundamental.
-        </p>
+          <p>
+            The <strong>primacy of existence</strong>, known as
+            <em>asalat al-wujud</em>, is one of the central doctrines of Mulla
+            Sadra's metaphysics. It expresses his claim that existence is
+            ontologically fundamental.
+          </p>
 
-        <p>
-          According to this doctrine, essences or quiddities do not possess the
-          same primary status in external reality as existence itself. The human
-          mind can distinguish a horse from a tree, or one kind of being from
-          another, through their essences, but such conceptual distinctions do
-          not make essence the ultimate ground of reality.
-        </p>
+          <p>
+            According to this doctrine, essences or quiddities do not possess
+            the same primary status in external reality as existence itself. The
+            human mind can distinguish a horse from a tree, or one kind of being
+            from another, through their essences, but such conceptual
+            distinctions do not make essence the ultimate ground of reality.
+          </p>
 
-        <p>
-          Mulla Sadra therefore redirected the traditional debate about
-          existence and essence toward an ontology centered on existence itself.
-          This doctrine became one of the foundations of his later theories of
-          gradation, causation, motion, and the relationship between God and
-          created beings.
-        </p>
-      </section>
+          <p>
+            Mulla Sadra therefore redirected the traditional debate about
+            existence and essence toward an ontology centered on existence
+            itself. This doctrine became one of the foundations of his later
+            theories of gradation, causation, motion, and the relationship
+            between God and created beings.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      GRADATION
      ===================================================== -->
 
-      <section class="narrative-block" id="gradation">
-        <h2>What Is the Gradation of Existence?</h2>
+        <section class="narrative-block" id="gradation">
+          <h2>What Is the Gradation of Existence?</h2>
 
-        <p>
-          Another important doctrine in Mulla Sadra's philosophy is the
-          <strong>gradation of existence</strong>, known as
-          <em>tashkik al-wujud</em>. This doctrine explains how existence can be
-          fundamentally one while appearing in many different beings.
-        </p>
+          <p>
+            Another important doctrine in Mulla Sadra's philosophy is the
+            <strong>gradation of existence</strong>, known as
+            <em>tashkik al-wujud</em>. This doctrine explains how existence can
+            be fundamentally one while appearing in many different beings.
+          </p>
 
-        <p>
-          Mulla Sadra understood existence as a reality expressed in different
-          degrees of intensity, perfection, and limitation. Beings are therefore
-          genuinely different from one another, but their differences do not
-          require existence itself to be divided into completely unrelated
-          realities.
-        </p>
+          <p>
+            Mulla Sadra understood existence as a reality expressed in different
+            degrees of intensity, perfection, and limitation. Beings are
+            therefore genuinely different from one another, but their
+            differences do not require existence itself to be divided into
+            completely unrelated realities.
+          </p>
 
-        <p>
-          The doctrine of gradation allowed him to explain both unity and
-          multiplicity. Reality contains many levels and forms of being, yet
-          these differences can be understood within a single metaphysical
-          framework centered on the varying degrees of existence.
-        </p>
-      </section>
+          <p>
+            The doctrine of gradation allowed him to explain both unity and
+            multiplicity. Reality contains many levels and forms of being, yet
+            these differences can be understood within a single metaphysical
+            framework centered on the varying degrees of existence.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      SUBSTANTIAL MOTION
      ===================================================== -->
 
-      <section class="narrative-block" id="substantial-motion">
-        <h2>What Is Mulla Sadra's Theory of Substantial Motion?</h2>
+        <section class="narrative-block" id="substantial-motion">
+          <h2>What Is Mulla Sadra's Theory of Substantial Motion?</h2>
 
-        <p>
-          <strong>Substantial motion</strong>, or
-          <em>al-harakat al-jawhariyyah</em>, is one of Mulla Sadra's most
-          important philosophical doctrines. It challenges the idea that change
-          occurs only in the accidental properties of things while their
-          underlying substances remain entirely unchanged.
-        </p>
+          <p>
+            <strong>Substantial motion</strong>, or
+            <em>al-harakat al-jawhariyyah</em>, is one of Mulla Sadra's most
+            important philosophical doctrines. It challenges the idea that
+            change occurs only in the accidental properties of things while
+            their underlying substances remain entirely unchanged.
+          </p>
 
-        <p>
-          Mulla Sadra argued that natural substances themselves are involved in
-          continuous transformation. Change therefore reaches more deeply into
-          reality than a mere alteration of size, position, color, or other
-          accidental characteristics. The natural world is fundamentally
-          dynamic.
-        </p>
+          <p>
+            Mulla Sadra argued that natural substances themselves are involved
+            in continuous transformation. Change therefore reaches more deeply
+            into reality than a mere alteration of size, position, color, or
+            other accidental characteristics. The natural world is fundamentally
+            dynamic.
+          </p>
 
-        <p>
-          Substantial motion became important for his accounts of time, nature,
-          causation, and the development of living beings. It also supported his
-          broader metaphysical vision in which existence is not a static reality
-          but is associated with movement, transformation, and degrees of
-          perfection.
-        </p>
-      </section>
+          <p>
+            Substantial motion became important for his accounts of time,
+            nature, causation, and the development of living beings. It also
+            supported his broader metaphysical vision in which existence is not
+            a static reality but is associated with movement, transformation,
+            and degrees of perfection.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      SOUL
      ===================================================== -->
 
-      <section class="narrative-block" id="soul">
-        <h2>Mulla Sadra's Philosophy of the Soul</h2>
+        <section class="narrative-block" id="soul">
+          <h2>Mulla Sadra's Philosophy of the Soul</h2>
 
-        <p>
-          The <strong>human soul</strong> occupies an important place in Mulla
-          Sadra's philosophy. His philosophical psychology is closely connected
-          with his metaphysics of existence, his doctrine of substantial motion,
-          and his understanding of knowledge and human perfection.
-        </p>
+          <p>
+            The <strong>human soul</strong> occupies an important place in Mulla
+            Sadra's philosophy. His philosophical psychology is closely
+            connected with his metaphysics of existence, his doctrine of
+            substantial motion, and his understanding of knowledge and human
+            perfection.
+          </p>
 
-        <p>
-          Mulla Sadra understood the soul as developing through stages of being.
-          Human existence begins in close connection with the material world,
-          but the soul possesses the capacity for increasingly higher forms of
-          perception, intellectual activity, and spiritual realization.
-        </p>
+          <p>
+            Mulla Sadra understood the soul as developing through stages of
+            being. Human existence begins in close connection with the material
+            world, but the soul possesses the capacity for increasingly higher
+            forms of perception, intellectual activity, and spiritual
+            realization.
+          </p>
 
-        <p>
-          The transformation of the soul is therefore not merely a psychological
-          process in the modern sense. It is an ontological development
-          connected with the soul's movement toward greater perfection, and it
-          provides an important foundation for his discussions of knowledge,
-          immortality, the imagination, and resurrection.
-        </p>
-      </section>
+          <p>
+            The transformation of the soul is therefore not merely a
+            psychological process in the modern sense. It is an ontological
+            development connected with the soul's movement toward greater
+            perfection, and it provides an important foundation for his
+            discussions of knowledge, immortality, the imagination, and
+            resurrection.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      KNOWLEDGE
      ===================================================== -->
 
-      <section class="narrative-block" id="knowledge">
-        <h2>Mulla Sadra's Theory of Knowledge</h2>
+        <section class="narrative-block" id="knowledge">
+          <h2>Mulla Sadra's Theory of Knowledge</h2>
 
-        <p>
-          <strong>Epistemology</strong> in Mulla Sadra's philosophy is closely
-          connected with metaphysics and philosophical psychology. Knowledge is
-          not understood merely as the passive reception of information by a
-          separate mind, but as something related to the development and
-          perfection of the knowing soul.
-        </p>
+          <p>
+            <strong>Epistemology</strong> in Mulla Sadra's philosophy is closely
+            connected with metaphysics and philosophical psychology. Knowledge
+            is not understood merely as the passive reception of information by
+            a separate mind, but as something related to the development and
+            perfection of the knowing soul.
+          </p>
 
-        <p>
-          Mulla Sadra gave an essential place to rational demonstration and
-          philosophical argument. At the same time, he argued that human
-          knowledge cannot always be reduced to conceptual representations or
-          discursive reasoning, and he developed accounts of more immediate
-          forms of awareness.
-        </p>
+          <p>
+            Mulla Sadra gave an essential place to rational demonstration and
+            philosophical argument. At the same time, he argued that human
+            knowledge cannot always be reduced to conceptual representations or
+            discursive reasoning, and he developed accounts of more immediate
+            forms of awareness.
+          </p>
 
-        <p>
-          His theory of knowledge therefore attempts to overcome a simple
-          opposition between rational philosophy and mystical experience. The
-          search for truth requires intellectual discipline, but the capacity to
-          know is also connected with the ontological and spiritual development
-          of the person who knows.
-        </p>
-      </section>
+          <p>
+            His theory of knowledge therefore attempts to overcome a simple
+            opposition between rational philosophy and mystical experience. The
+            search for truth requires intellectual discipline, but the capacity
+            to know is also connected with the ontological and spiritual
+            development of the person who knows.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      KNOWLEDGE BY PRESENCE
      ===================================================== -->
 
-      <section class="narrative-block" id="knowledge-by-presence">
-        <h2>What Is Knowledge by Presence in Mulla Sadra's Philosophy?</h2>
+        <section class="narrative-block" id="knowledge-by-presence">
+          <h2>What Is Knowledge by Presence in Mulla Sadra's Philosophy?</h2>
 
-        <p>
-          <strong>Knowledge by presence</strong>, commonly called
-          <em>al-'ilm al-huduri</em>, is an important part of the broader
-          epistemological tradition developed in Islamic philosophy and given a
-          significant place in Mulla Sadra's thought.
-        </p>
+          <p>
+            <strong>Knowledge by presence</strong>, commonly called
+            <em>al-'ilm al-huduri</em>, is an important part of the broader
+            epistemological tradition developed in Islamic philosophy and given
+            a significant place in Mulla Sadra's thought.
+          </p>
 
-        <p>
-          Knowledge by presence differs from knowledge that depends upon mental
-          concepts or representations. In such knowledge, the knower has an
-          immediate awareness of what is known rather than knowing it solely
-          through an image, definition, or abstract concept.
-        </p>
+          <p>
+            Knowledge by presence differs from knowledge that depends upon
+            mental concepts or representations. In such knowledge, the knower
+            has an immediate awareness of what is known rather than knowing it
+            solely through an image, definition, or abstract concept.
+          </p>
 
-        <p>
-          This idea is particularly important for understanding self-awareness
-          and the nature of the soul. Mulla Sadra used it within a wider
-          metaphysical account in which knowledge is closely related to being,
-          allowing questions about cognition to be connected with the mode of
-          existence of the knowing subject.
-        </p>
-      </section>
+          <p>
+            This idea is particularly important for understanding self-awareness
+            and the nature of the soul. Mulla Sadra used it within a wider
+            metaphysical account in which knowledge is closely related to being,
+            allowing questions about cognition to be connected with the mode of
+            existence of the knowing subject.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      GOD
      ===================================================== -->
 
-      <section class="narrative-block" id="god">
-        <h2>Mulla Sadra's Philosophy of God</h2>
+        <section class="narrative-block" id="god">
+          <h2>Mulla Sadra's Philosophy of God</h2>
 
-        <p>
-          Mulla Sadra's <strong>philosophy of God</strong> is grounded in his
-          metaphysics of existence. God is understood as the Necessary Existent,
-          whose existence does not depend upon another cause and whose reality
-          is fundamentally unlike the contingent existence of created beings.
-        </p>
+          <p>
+            Mulla Sadra's <strong>philosophy of God</strong> is grounded in his
+            metaphysics of existence. God is understood as the Necessary
+            Existent, whose existence does not depend upon another cause and
+            whose reality is fundamentally unlike the contingent existence of
+            created beings.
+          </p>
 
-        <p>
-          Contingent beings, by contrast, do not possess existence
-          independently. Their reality is dependent and ultimately grounded in
-          the divine source of existence. Questions about causation and
-          ontological dependence are therefore central to Mulla Sadra's
-          philosophical understanding of the relationship between God and the
-          world.
-        </p>
+          <p>
+            Contingent beings, by contrast, do not possess existence
+            independently. Their reality is dependent and ultimately grounded in
+            the divine source of existence. Questions about causation and
+            ontological dependence are therefore central to Mulla Sadra's
+            philosophical understanding of the relationship between God and the
+            world.
+          </p>
 
-        <p>
-          His philosophical theology develops earlier Islamic metaphysical
-          arguments while also engaging mystical and theological traditions. The
-          result is an account of divine reality closely connected with his
-          doctrines of the primacy, unity, and gradation of existence.
-        </p>
-      </section>
+          <p>
+            His philosophical theology develops earlier Islamic metaphysical
+            arguments while also engaging mystical and theological traditions.
+            The result is an account of divine reality closely connected with
+            his doctrines of the primacy, unity, and gradation of existence.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      CREATION
      ===================================================== -->
 
-      <section class="narrative-block" id="creation">
-        <h2>Mulla Sadra and the Philosophy of Creation</h2>
+        <section class="narrative-block" id="creation">
+          <h2>Mulla Sadra and the Philosophy of Creation</h2>
 
-        <p>
-          Mulla Sadra's account of <strong>creation</strong> is closely
-          connected with his doctrine of existence and his analysis of
-          contingency. Created beings do not possess absolute independence;
-          their existence depends upon the ultimate source from which contingent
-          reality derives.
-        </p>
+          <p>
+            Mulla Sadra's account of <strong>creation</strong> is closely
+            connected with his doctrine of existence and his analysis of
+            contingency. Created beings do not possess absolute independence;
+            their existence depends upon the ultimate source from which
+            contingent reality derives.
+          </p>
 
-        <p>
-          This dependence can be understood as more than a question about a
-          single event at the beginning of time. Mulla Sadra's metaphysical
-          framework emphasizes the continuing ontological dependence of created
-          beings upon God, whose existence is necessary rather than contingent.
-        </p>
+          <p>
+            This dependence can be understood as more than a question about a
+            single event at the beginning of time. Mulla Sadra's metaphysical
+            framework emphasizes the continuing ontological dependence of
+            created beings upon God, whose existence is necessary rather than
+            contingent.
+          </p>
 
-        <p>
-          His discussions of creation also engage wider philosophical debates
-          about temporal origination, causation, and the relationship between
-          the eternal divine reality and a changing world. These questions form
-          part of his larger attempt to explain how dependent and dynamic beings
-          are related to their ultimate source.
-        </p>
-      </section>
+          <p>
+            His discussions of creation also engage wider philosophical debates
+            about temporal origination, causation, and the relationship between
+            the eternal divine reality and a changing world. These questions
+            form part of his larger attempt to explain how dependent and dynamic
+            beings are related to their ultimate source.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      COSMOLOGY
      ===================================================== -->
 
-      <section class="narrative-block" id="cosmology">
-        <h2>Mulla Sadra's Cosmology and Philosophy of Nature</h2>
+        <section class="narrative-block" id="cosmology">
+          <h2>Mulla Sadra's Cosmology and Philosophy of Nature</h2>
 
-        <p>
-          Mulla Sadra's <strong>cosmology</strong> extends his metaphysics of
-          existence into the study of the natural world. The universe is not
-          understood as a collection of completely self-sufficient substances,
-          but as an ordered reality whose beings possess different degrees and
-          modes of existence.
-        </p>
+          <p>
+            Mulla Sadra's <strong>cosmology</strong> extends his metaphysics of
+            existence into the study of the natural world. The universe is not
+            understood as a collection of completely self-sufficient substances,
+            but as an ordered reality whose beings possess different degrees and
+            modes of existence.
+          </p>
 
-        <p>
-          His philosophy of nature is closely connected with the doctrine of
-          substantial motion. Natural things are not simply static substances
-          that occasionally acquire new properties; the physical world itself is
-          characterized by continuous transformation at the level of substance.
-        </p>
+          <p>
+            His philosophy of nature is closely connected with the doctrine of
+            substantial motion. Natural things are not simply static substances
+            that occasionally acquire new properties; the physical world itself
+            is characterized by continuous transformation at the level of
+            substance.
+          </p>
 
-        <p>
-          Mulla Sadra therefore connected existence, motion, time, causation,
-          and development within a single philosophical framework. The changing
-          natural world could be understood as a dynamic order of beings moving
-          through different stages and degrees of actuality and perfection.
-        </p>
-      </section>
+          <p>
+            Mulla Sadra therefore connected existence, motion, time, causation,
+            and development within a single philosophical framework. The
+            changing natural world could be understood as a dynamic order of
+            beings moving through different stages and degrees of actuality and
+            perfection.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      RESURRECTION
      ===================================================== -->
 
-      <section class="narrative-block" id="resurrection">
-        <h2>Mulla Sadra on the Soul, Afterlife, and Resurrection</h2>
+        <section class="narrative-block" id="resurrection">
+          <h2>Mulla Sadra on the Soul, Afterlife, and Resurrection</h2>
 
-        <p>
-          <strong>Resurrection</strong> is an important subject in Mulla Sadra's
-          philosophical theology. His account of the afterlife is closely
-          connected with his understanding of the soul as a reality capable of
-          development, transformation, and forms of existence beyond bodily
-          life.
-        </p>
+          <p>
+            <strong>Resurrection</strong> is an important subject in Mulla
+            Sadra's philosophical theology. His account of the afterlife is
+            closely connected with his understanding of the soul as a reality
+            capable of development, transformation, and forms of existence
+            beyond bodily life.
+          </p>
 
-        <p>
-          Mulla Sadra connected the soul's future condition with its ontological
-          and intellectual development. The soul's life is therefore not treated
-          as a series of completely disconnected states, but as a continuing
-          development whose consequences extend beyond its present bodily
-          existence.
-        </p>
+          <p>
+            Mulla Sadra connected the soul's future condition with its
+            ontological and intellectual development. The soul's life is
+            therefore not treated as a series of completely disconnected states,
+            but as a continuing development whose consequences extend beyond its
+            present bodily existence.
+          </p>
 
-        <p>
-          His philosophical discussions of resurrection also involve the role of
-          imagination and the nature of posthumous existence. In this way, he
-          attempted to engage religious teachings about the afterlife through a
-          philosophical framework concerned with existence, the soul, and human
-          transformation.
-        </p>
-      </section>
+          <p>
+            His philosophical discussions of resurrection also involve the role
+            of imagination and the nature of posthumous existence. In this way,
+            he attempted to engage religious teachings about the afterlife
+            through a philosophical framework concerned with existence, the
+            soul, and human transformation.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      FOUR JOURNEYS
      ===================================================== -->
 
-      <section class="narrative-block" id="asfar">
-        <h2>What Is the Asfar al-Arba'a or Four Journeys?</h2>
+        <section class="narrative-block" id="asfar">
+          <h2>What Is the Asfar al-Arba'a or Four Journeys?</h2>
 
-        <p>
-          The <strong>Asfar al-Arba'a</strong>, usually translated as
-          <strong>The Four Journeys</strong>, is Mulla Sadra's magnum opus and
-          the most comprehensive presentation of his mature philosophical
-          system.
-        </p>
+          <p>
+            The <strong>Asfar al-Arba'a</strong>, usually translated as
+            <strong>The Four Journeys</strong>, is Mulla Sadra's magnum opus and
+            the most comprehensive presentation of his mature philosophical
+            system.
+          </p>
 
-        <p>
-          Its full title is
-          <em>al-Hikmah al-Muta'aliyah fi al-Asfar al-'Aqliyyah al-Arba'ah</em>,
-          meaning roughly
-          <em>Transcendent Wisdom in the Four Intellectual Journeys</em>. The
-          work organizes major philosophical questions through the metaphor of a
-          series of intellectual and spiritual journeys.
-        </p>
+          <p>
+            Its full title is
+            <em>al-Hikmah al-Muta'aliyah fi al-Asfar al-'Aqliyyah al-Arba'ah</em
+            >, meaning roughly
+            <em>Transcendent Wisdom in the Four Intellectual Journeys</em>. The
+            work organizes major philosophical questions through the metaphor of
+            a series of intellectual and spiritual journeys.
+          </p>
 
-        <p>
-          The four journeys are traditionally described as a journey from
-          creation toward God, a journey in relation to God, a return from God
-          toward creation, and a journey within creation while remaining
-          oriented toward God. Across this vast work, Mulla Sadra discusses
-          metaphysics, theology, natural philosophy, psychology, epistemology,
-          and eschatology.
-        </p>
-      </section>
+          <p>
+            The four journeys are traditionally described as a journey from
+            creation toward God, a journey in relation to God, a return from God
+            toward creation, and a journey within creation while remaining
+            oriented toward God. Across this vast work, Mulla Sadra discusses
+            metaphysics, theology, natural philosophy, psychology, epistemology,
+            and eschatology.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      MAJOR WORKS
      ===================================================== -->
 
-      <section class="narrative-block" id="works">
-        <h2>Major Works of Mulla Sadra</h2>
+        <section class="narrative-block" id="works">
+          <h2>Major Works of Mulla Sadra</h2>
 
-        <p>
-          Mulla Sadra was a prolific author whose writings cover philosophy,
-          theology, metaphysics, Qur'anic interpretation, mysticism, and
-          questions concerning the soul and knowledge. His most important works
-          include:
-        </p>
+          <p>
+            Mulla Sadra was a prolific author whose writings cover philosophy,
+            theology, metaphysics, Qur'anic interpretation, mysticism, and
+            questions concerning the soul and knowledge. His most important
+            works include:
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong><em>Asfar al-Arba'a</em></strong>
-            — The Four Journeys and his most comprehensive philosophical work.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong><em>Asfar al-Arba'a</em></strong>
+              — The Four Journeys and his most comprehensive philosophical work.
+            </li>
 
-          <li>
-            <strong><em>Al-Hikma al-'Arshiyya</em></strong>
-            — A major work of philosophical theology and metaphysics.
-          </li>
+            <li>
+              <strong><em>Al-Hikma al-'Arshiyya</em></strong>
+              — A major work of philosophical theology and metaphysics.
+            </li>
 
-          <li>
-            <strong><em>Al-Masha'ir</em></strong>
-            — A concise treatment of Mulla Sadra's philosophy of existence.
-          </li>
+            <li>
+              <strong><em>Al-Masha'ir</em></strong>
+              — A concise treatment of Mulla Sadra's philosophy of existence.
+            </li>
 
-          <li>
-            <strong><em>Al-Shawahid al-Rububiyyah</em></strong>
-            — A work concerning philosophical theology and divine wisdom.
-          </li>
+            <li>
+              <strong><em>Al-Shawahid al-Rububiyyah</em></strong>
+              — A work concerning philosophical theology and divine wisdom.
+            </li>
 
-          <li>
-            <strong><em>Mafatih al-Ghayb</em></strong>
-            — A work associated with Mulla Sadra's Qur'anic and philosophical
-            interpretation.
-          </li>
+            <li>
+              <strong><em>Mafatih al-Ghayb</em></strong>
+              — A work associated with Mulla Sadra's Qur'anic and philosophical
+              interpretation.
+            </li>
 
-          <li>
-            <strong><em>Asrar al-Ayat</em></strong>
-            — A philosophical and mystical interpretation of Qur'anic verses.
-          </li>
-        </ul>
+            <li>
+              <strong><em>Asrar al-Ayat</em></strong>
+              — A philosophical and mystical interpretation of Qur'anic verses.
+            </li>
+          </ul>
 
-        <p>
-          The <em>Asfar al-Arba'a</em> remains the central text for
-          understanding the overall structure of Mulla Sadra's philosophical
-          system. His other works often examine particular problems in greater
-          concentration, including existence, divine reality, Qur'anic
-          interpretation, knowledge, creation, and resurrection.
-        </p>
-      </section>
+          <p>
+            The <em>Asfar al-Arba'a</em> remains the central text for
+            understanding the overall structure of Mulla Sadra's philosophical
+            system. His other works often examine particular problems in greater
+            concentration, including existence, divine reality, Qur'anic
+            interpretation, knowledge, creation, and resurrection.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      MAIN IDEAS
      ===================================================== -->
 
-      <section class="narrative-block" id="key-ideas">
-        <h2>Mulla Sadra's Main Philosophical Ideas</h2>
+        <section class="narrative-block" id="key-ideas">
+          <h2>Mulla Sadra's Main Philosophical Ideas</h2>
 
-        <h3>1. Primacy of Existence</h3>
+          <h3>1. Primacy of Existence</h3>
 
-        <p>
-          Mulla Sadra argues that <strong>existence</strong> is ontologically
-          fundamental. Essences or quiddities are important for conceptual
-          thought, but existence has priority in explaining what is ultimately
-          real.
-        </p>
+          <p>
+            Mulla Sadra argues that <strong>existence</strong> is ontologically
+            fundamental. Essences or quiddities are important for conceptual
+            thought, but existence has priority in explaining what is ultimately
+            real.
+          </p>
 
-        <h3>2. Gradation of Existence</h3>
+          <h3>2. Gradation of Existence</h3>
 
-        <p>
-          Existence is expressed through different degrees of intensity,
-          perfection, and limitation. This doctrine allows Mulla Sadra to
-          explain how reality can be both unified and genuinely diverse.
-        </p>
+          <p>
+            Existence is expressed through different degrees of intensity,
+            perfection, and limitation. This doctrine allows Mulla Sadra to
+            explain how reality can be both unified and genuinely diverse.
+          </p>
 
-        <h3>3. Substantial Motion</h3>
+          <h3>3. Substantial Motion</h3>
 
-        <p>
-          Reality is fundamentally dynamic. Natural substances themselves
-          undergo continuous transformation rather than changing only in their
-          accidental properties.
-        </p>
+          <p>
+            Reality is fundamentally dynamic. Natural substances themselves
+            undergo continuous transformation rather than changing only in their
+            accidental properties.
+          </p>
 
-        <h3>4. Knowledge by Presence</h3>
+          <h3>4. Knowledge by Presence</h3>
 
-        <p>
-          Some forms of knowledge involve immediate awareness rather than merely
-          possessing conceptual representations. This idea is especially
-          important for understanding self-awareness, the soul, and the
-          relationship between knowledge and being.
-        </p>
+          <p>
+            Some forms of knowledge involve immediate awareness rather than
+            merely possessing conceptual representations. This idea is
+            especially important for understanding self-awareness, the soul, and
+            the relationship between knowledge and being.
+          </p>
 
-        <h3>5. Philosophy as Spiritual Perfection</h3>
+          <h3>5. Philosophy as Spiritual Perfection</h3>
 
-        <p>
-          Philosophy is not only theoretical speculation. For Mulla Sadra, the
-          pursuit of wisdom also involves the transformation and perfection of
-          the human soul, bringing intellectual inquiry into relation with
-          spiritual practice.
-        </p>
-      </section>
+          <p>
+            Philosophy is not only theoretical speculation. For Mulla Sadra, the
+            pursuit of wisdom also involves the transformation and perfection of
+            the human soul, bringing intellectual inquiry into relation with
+            spiritual practice.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      PHILOSOPHY AND MYSTICISM
      ===================================================== -->
 
-      <section class="narrative-block" id="philosophy-mysticism">
-        <h2>Mulla Sadra, Philosophy, Mysticism, and Revelation</h2>
+        <section class="narrative-block" id="philosophy-mysticism">
+          <h2>Mulla Sadra, Philosophy, Mysticism, and Revelation</h2>
 
-        <p>
-          One of the most distinctive characteristics of Mulla Sadra's
-          philosophy is his attempt to reconcile
-          <strong
-            >philosophical reasoning, mystical insight, and religious
-            revelation</strong
-          >.
-        </p>
+          <p>
+            One of the most distinctive characteristics of Mulla Sadra's
+            philosophy is his attempt to reconcile
+            <strong
+              >philosophical reasoning, mystical insight, and religious
+              revelation</strong
+            >.
+          </p>
 
-        <p>
-          He did not believe that rational philosophy and spiritual experience
-          had to remain completely separate. Logical demonstration remained
-          essential for philosophical inquiry, while intellectual intuition and
-          spiritual discipline could contribute to a deeper understanding of
-          reality.
-        </p>
+          <p>
+            He did not believe that rational philosophy and spiritual experience
+            had to remain completely separate. Logical demonstration remained
+            essential for philosophical inquiry, while intellectual intuition
+            and spiritual discipline could contribute to a deeper understanding
+            of reality.
+          </p>
 
-        <p>
-          This synthesis helped distinguish Transcendent Theosophy from a purely
-          Peripatetic approach based principally on discursive reasoning, while
-          also resisting the idea that mystical intuition alone could replace
-          philosophical demonstration.
-        </p>
-      </section>
+          <p>
+            This synthesis helped distinguish Transcendent Theosophy from a
+            purely Peripatetic approach based principally on discursive
+            reasoning, while also resisting the idea that mystical intuition
+            alone could replace philosophical demonstration.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      IBN ARABI CONNECTION
      ===================================================== -->
 
-      <section class="narrative-block" id="ibn-arabi">
-        <h2>Mulla Sadra and Ibn Arabi: What Is the Connection?</h2>
+        <section class="narrative-block" id="ibn-arabi">
+          <h2>Mulla Sadra and Ibn Arabi: What Is the Connection?</h2>
 
-        <p>
-          <strong>Mulla Sadra and Ibn Arabi</strong> belong to different periods
-          of Islamic intellectual history, but the metaphysical and mystical
-          traditions associated with Ibn Arabi formed an important part of the
-          intellectual background from which Mulla Sadra developed his mature
-          philosophical synthesis.
-        </p>
+          <p>
+            <strong>Mulla Sadra and Ibn Arabi</strong> belong to different
+            periods of Islamic intellectual history, but the metaphysical and
+            mystical traditions associated with Ibn Arabi formed an important
+            part of the intellectual background from which Mulla Sadra developed
+            his mature philosophical synthesis.
+          </p>
 
-        <p>
-          Mulla Sadra engaged with themes associated with the unity and
-          manifestation of being, but he developed his own systematic account of
-          existence. His doctrines of the primacy and gradation of existence
-          should therefore not simply be treated as repetitions of Ibn Arabi's
-          mystical language.
-        </p>
+          <p>
+            Mulla Sadra engaged with themes associated with the unity and
+            manifestation of being, but he developed his own systematic account
+            of existence. His doctrines of the primacy and gradation of
+            existence should therefore not simply be treated as repetitions of
+            Ibn Arabi's mystical language.
+          </p>
 
-        <p>
-          The relationship is better understood as one of philosophical
-          engagement and creative synthesis. Mulla Sadra incorporated elements
-          from mystical metaphysics into a wider system that also drew heavily
-          upon Avicennan philosophy, Illuminationism, theology, and rigorous
-          philosophical argument.
-        </p>
-      </section>
+          <p>
+            The relationship is better understood as one of philosophical
+            engagement and creative synthesis. Mulla Sadra incorporated elements
+            from mystical metaphysics into a wider system that also drew heavily
+            upon Avicennan philosophy, Illuminationism, theology, and rigorous
+            philosophical argument.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      AVICENNA CONNECTION
      ===================================================== -->
 
-      <section class="narrative-block" id="avicenna">
-        <h2>Mulla Sadra and Avicenna: Development of Islamic Metaphysics</h2>
+        <section class="narrative-block" id="avicenna">
+          <h2>Mulla Sadra and Avicenna: Development of Islamic Metaphysics</h2>
 
-        <p>
-          <strong>Avicenna (Ibn Sina)</strong> was one of the most important
-          philosophical predecessors of Mulla Sadra. Avicenna's metaphysical
-          analysis of existence, essence, necessity, and contingency provided an
-          essential intellectual background for many of the questions that Mulla
-          Sadra would later reconsider.
-        </p>
+          <p>
+            <strong>Avicenna (Ibn Sina)</strong> was one of the most important
+            philosophical predecessors of Mulla Sadra. Avicenna's metaphysical
+            analysis of existence, essence, necessity, and contingency provided
+            an essential intellectual background for many of the questions that
+            Mulla Sadra would later reconsider.
+          </p>
 
-        <p>
-          Mulla Sadra did not simply accept Avicennan metaphysics unchanged. He
-          transformed the discussion by giving ontological priority to existence
-          and by developing a more explicitly dynamic account of natural and
-          substantial reality.
-        </p>
+          <p>
+            Mulla Sadra did not simply accept Avicennan metaphysics unchanged.
+            He transformed the discussion by giving ontological priority to
+            existence and by developing a more explicitly dynamic account of
+            natural and substantial reality.
+          </p>
 
-        <p>
-          In this sense, Mulla Sadra represents a major later development within
-          <strong>Islamic philosophy</strong>. Avicennan concepts were
-          reinterpreted alongside Illuminationist, mystical, theological, and
-          Shi'i intellectual traditions to produce a new and influential
-          philosophical synthesis.
-        </p>
-      </section>
+          <p>
+            In this sense, Mulla Sadra represents a major later development
+            within
+            <strong>Islamic philosophy</strong>. Avicennan concepts were
+            reinterpreted alongside Illuminationist, mystical, theological, and
+            Shi'i intellectual traditions to produce a new and influential
+            philosophical synthesis.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      INFLUENCE
      ===================================================== -->
 
-      <section class="narrative-block" id="legacy">
-        <h2>Mulla Sadra's Influence and Legacy in Islamic Philosophy</h2>
+        <section class="narrative-block" id="legacy">
+          <h2>Mulla Sadra's Influence and Legacy in Islamic Philosophy</h2>
 
-        <p>
-          Mulla Sadra became one of the most influential philosophers of the
-          eastern Islamic world. Although the full extent of his influence
-          developed gradually, his philosophical system later became especially
-          important in Iran and within traditions of Shi'i philosophical
-          education.
-        </p>
+          <p>
+            Mulla Sadra became one of the most influential philosophers of the
+            eastern Islamic world. Although the full extent of his influence
+            developed gradually, his philosophical system later became
+            especially important in Iran and within traditions of Shi'i
+            philosophical education.
+          </p>
 
-        <p>
-          His influence also extended to South Asia, where works associated with
-          his philosophical tradition entered later educational and commentary
-          traditions. The transmission of his thought occurred through teaching,
-          manuscript culture, philosophical commentaries, and the continuing
-          study of his major works.
-        </p>
+          <p>
+            His influence also extended to South Asia, where works associated
+            with his philosophical tradition entered later educational and
+            commentary traditions. The transmission of his thought occurred
+            through teaching, manuscript culture, philosophical commentaries,
+            and the continuing study of his major works.
+          </p>
 
-        <p>
-          In modern Iran, Mulla Sadra remains a major subject of study and
-          debate. His ideas concerning existence, metaphysics, the soul,
-          knowledge, motion, and the relationship between philosophy and
-          spirituality continue to shape discussions of Persian and Islamic
-          philosophy.
-        </p>
-      </section>
+          <p>
+            In modern Iran, Mulla Sadra remains a major subject of study and
+            debate. His ideas concerning existence, metaphysics, the soul,
+            knowledge, motion, and the relationship between philosophy and
+            spirituality continue to shape discussions of Persian and Islamic
+            philosophy.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      EXPLAINED SIMPLY
      ===================================================== -->
 
-      <section class="narrative-block" id="explained-simply">
-        <h2>Mulla Sadra's Philosophy Explained Simply</h2>
+        <section class="narrative-block" id="explained-simply">
+          <h2>Mulla Sadra's Philosophy Explained Simply</h2>
 
-        <p>
-          Mulla Sadra can be understood as a philosopher who placed
-          <strong>existence</strong> at the center of reality and attempted to
-          bring philosophical reasoning, mystical insight, and Islamic religious
-          thought into a single, wide-ranging philosophical system.
-        </p>
+          <p>
+            Mulla Sadra can be understood as a philosopher who placed
+            <strong>existence</strong> at the center of reality and attempted to
+            bring philosophical reasoning, mystical insight, and Islamic
+            religious thought into a single, wide-ranging philosophical system.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong>What is most fundamental in reality?</strong>
-            Existence is more fundamental than the essences or categories
-            through which the human mind distinguishes and describes things.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>What is most fundamental in reality?</strong>
+              Existence is more fundamental than the essences or categories
+              through which the human mind distinguishes and describes things.
+            </li>
 
-          <li>
-            <strong>Is reality static?</strong>
-            No. Mulla Sadra's theory of substantial motion describes the natural
-            world as undergoing continuous transformation at a fundamental
-            level.
-          </li>
+            <li>
+              <strong>Is reality static?</strong>
+              No. Mulla Sadra's theory of substantial motion describes the
+              natural world as undergoing continuous transformation at a
+              fundamental level.
+            </li>
 
-          <li>
-            <strong>Are all beings equal in existence?</strong>
-            No. Existence is a unified reality expressed through different
-            degrees of intensity, perfection, and limitation.
-          </li>
+            <li>
+              <strong>Are all beings equal in existence?</strong>
+              No. Existence is a unified reality expressed through different
+              degrees of intensity, perfection, and limitation.
+            </li>
 
-          <li>
-            <strong>How do humans know reality?</strong>
-            Human knowledge involves rational thought and conceptual
-            understanding, but Mulla Sadra also recognized direct forms of
-            awareness such as knowledge by presence.
-          </li>
+            <li>
+              <strong>How do humans know reality?</strong>
+              Human knowledge involves rational thought and conceptual
+              understanding, but Mulla Sadra also recognized direct forms of
+              awareness such as knowledge by presence.
+            </li>
 
-          <li>
-            <strong>What is the purpose of philosophy?</strong>
-            Philosophy is a search for wisdom that also contributes to the
-            intellectual and spiritual perfection of the human soul.
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>What is the purpose of philosophy?</strong>
+              Philosophy is a search for wisdom that also contributes to the
+              intellectual and spiritual perfection of the human soul.
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      IMPORTANCE
      ===================================================== -->
 
-      <section class="narrative-block" id="importance">
-        <h2>Why Is Mulla Sadra Important in the History of Philosophy?</h2>
+        <section class="narrative-block" id="importance">
+          <h2>Why Is Mulla Sadra Important in the History of Philosophy?</h2>
 
-        <p>
-          Mulla Sadra is important because he transformed major questions in
-          <strong>Islamic metaphysics</strong>. His doctrine of the primacy of
-          existence gave ontological priority to being itself and developed a
-          highly influential account of the relationship between existence and
-          essence.
-        </p>
+          <p>
+            Mulla Sadra is important because he transformed major questions in
+            <strong>Islamic metaphysics</strong>. His doctrine of the primacy of
+            existence gave ontological priority to being itself and developed a
+            highly influential account of the relationship between existence and
+            essence.
+          </p>
 
-        <p>
-          His doctrine of substantial motion also challenged more static
-          accounts of natural substance by presenting change as something that
-          reaches into the substantial reality of the natural world. His
-          theories of knowledge and the soul similarly connected metaphysical
-          questions with human intellectual and spiritual development.
-        </p>
+          <p>
+            His doctrine of substantial motion also challenged more static
+            accounts of natural substance by presenting change as something that
+            reaches into the substantial reality of the natural world. His
+            theories of knowledge and the soul similarly connected metaphysical
+            questions with human intellectual and spiritual development.
+          </p>
 
-        <p>
-          His broader achievement was to create an ambitious synthesis of
-          philosophical reasoning, Islamic theology, mystical insight, and
-          scriptural interpretation. For this reason, Mulla Sadra is widely
-          regarded as one of the central figures in the later history of
-          <strong>Persian and Islamic philosophy</strong>.
-        </p>
-      </section>
+          <p>
+            His broader achievement was to create an ambitious synthesis of
+            philosophical reasoning, Islamic theology, mystical insight, and
+            scriptural interpretation. For this reason, Mulla Sadra is widely
+            regarded as one of the central figures in the later history of
+            <strong>Persian and Islamic philosophy</strong>.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          FAQ
          ===================================================== -->
 
-      <section class="narrative-block" id="faq">
-        <h2>Frequently Asked Questions About Mulla Sadra</h2>
+        <section class="narrative-block" id="faq">
+          <h2>Frequently Asked Questions About Mulla Sadra</h2>
 
-        <h3>Who was Mulla Sadra?</h3>
+          <h3>Who was Mulla Sadra?</h3>
 
-        <p>
-          Mulla Sadra was a Persian Islamic philosopher of the Safavid period
-          who developed the philosophical system known as Transcendent
-          Theosophy. He is particularly famous for his metaphysics of existence,
-          substantial motion, and theory of knowledge.
-        </p>
+          <p>
+            Mulla Sadra was a Persian Islamic philosopher of the Safavid period
+            who developed the philosophical system known as Transcendent
+            Theosophy. He is particularly famous for his metaphysics of
+            existence, substantial motion, and theory of knowledge.
+          </p>
 
-        <h3>What is Mulla Sadra famous for?</h3>
+          <h3>What is Mulla Sadra famous for?</h3>
 
-        <p>
-          Mulla Sadra is famous for Transcendent Theosophy, the primacy of
-          existence, gradation of existence, substantial motion, knowledge by
-          presence, and his major philosophical work
-          <em>Asfar al-Arba'a</em>.
-        </p>
+          <p>
+            Mulla Sadra is famous for Transcendent Theosophy, the primacy of
+            existence, gradation of existence, substantial motion, knowledge by
+            presence, and his major philosophical work
+            <em>Asfar al-Arba'a</em>.
+          </p>
 
-        <h3>What was Mulla Sadra's philosophy?</h3>
+          <h3>What was Mulla Sadra's philosophy?</h3>
 
-        <p>
-          Mulla Sadra's philosophy was a synthesis of Islamic theology,
-          Avicennan philosophy, Illuminationism, mystical thought, and
-          philosophical reasoning centered on the nature of existence.
-        </p>
+          <p>
+            Mulla Sadra's philosophy was a synthesis of Islamic theology,
+            Avicennan philosophy, Illuminationism, mystical thought, and
+            philosophical reasoning centered on the nature of existence.
+          </p>
 
-        <h3>What is Transcendent Theosophy?</h3>
+          <h3>What is Transcendent Theosophy?</h3>
 
-        <p>
-          Transcendent Theosophy, or
-          <em>al-Hikmah al-Muta'aliyah</em>, is the philosophical system
-          associated with Mulla Sadra. It combines rational demonstration,
-          metaphysics, spiritual insight, and Islamic religious thought.
-        </p>
+          <p>
+            Transcendent Theosophy, or
+            <em>al-Hikmah al-Muta'aliyah</em>, is the philosophical system
+            associated with Mulla Sadra. It combines rational demonstration,
+            metaphysics, spiritual insight, and Islamic religious thought.
+          </p>
 
-        <h3>What is the primacy of existence?</h3>
+          <h3>What is the primacy of existence?</h3>
 
-        <p>
-          The primacy of existence, or <em>asalat al-wujud</em>, is Mulla
-          Sadra's doctrine that existence is ontologically fundamental, while
-          essence or quiddity does not have the same foundational status in
-          external reality.
-        </p>
+          <p>
+            The primacy of existence, or <em>asalat al-wujud</em>, is Mulla
+            Sadra's doctrine that existence is ontologically fundamental, while
+            essence or quiddity does not have the same foundational status in
+            external reality.
+          </p>
 
-        <h3>What is substantial motion according to Mulla Sadra?</h3>
+          <h3>What is substantial motion according to Mulla Sadra?</h3>
 
-        <p>
-          Substantial motion is the doctrine that natural substances themselves
-          undergo continuous transformation. Change is therefore not limited to
-          accidental properties but reaches the substantial level of natural
-          reality.
-        </p>
+          <p>
+            Substantial motion is the doctrine that natural substances
+            themselves undergo continuous transformation. Change is therefore
+            not limited to accidental properties but reaches the substantial
+            level of natural reality.
+          </p>
 
-        <h3>What is the gradation of existence?</h3>
+          <h3>What is the gradation of existence?</h3>
 
-        <p>
-          The gradation of existence, or <em>tashkik al-wujud</em>, is the idea
-          that existence is a unified reality expressed through different
-          degrees of intensity and perfection.
-        </p>
+          <p>
+            The gradation of existence, or <em>tashkik al-wujud</em>, is the
+            idea that existence is a unified reality expressed through different
+            degrees of intensity and perfection.
+          </p>
 
-        <h3>What did Mulla Sadra believe about existence and essence?</h3>
+          <h3>What did Mulla Sadra believe about existence and essence?</h3>
 
-        <p>
-          Mulla Sadra argued that existence has ontological priority over
-          essence. Essences help the mind identify and classify things, while
-          existence is fundamental to external reality.
-        </p>
+          <p>
+            Mulla Sadra argued that existence has ontological priority over
+            essence. Essences help the mind identify and classify things, while
+            existence is fundamental to external reality.
+          </p>
 
-        <h3>What is knowledge by presence?</h3>
+          <h3>What is knowledge by presence?</h3>
 
-        <p>
-          Knowledge by presence, or <em>al-'ilm al-huduri</em>, refers to a
-          direct form of knowledge in which the known is present to the knower
-          rather than being known only through an abstract mental
-          representation.
-        </p>
+          <p>
+            Knowledge by presence, or <em>al-'ilm al-huduri</em>, refers to a
+            direct form of knowledge in which the known is present to the knower
+            rather than being known only through an abstract mental
+            representation.
+          </p>
 
-        <h3>What did Mulla Sadra believe about the soul?</h3>
+          <h3>What did Mulla Sadra believe about the soul?</h3>
 
-        <p>
-          Mulla Sadra viewed the soul as a developing reality capable of
-          intellectual and spiritual perfection. His philosophy of the soul is
-          closely connected with existence, knowledge, substantial motion, and
-          resurrection.
-        </p>
+          <p>
+            Mulla Sadra viewed the soul as a developing reality capable of
+            intellectual and spiritual perfection. His philosophy of the soul is
+            closely connected with existence, knowledge, substantial motion, and
+            resurrection.
+          </p>
 
-        <h3>What did Mulla Sadra believe about God?</h3>
+          <h3>What did Mulla Sadra believe about God?</h3>
 
-        <p>
-          Mulla Sadra understood God as the Necessary Existent and ultimate
-          source of existence. His philosophical theology is closely connected
-          with his metaphysics of being and causation.
-        </p>
+          <p>
+            Mulla Sadra understood God as the Necessary Existent and ultimate
+            source of existence. His philosophical theology is closely connected
+            with his metaphysics of being and causation.
+          </p>
 
-        <h3>What is the Asfar al-Arba'a?</h3>
+          <h3>What is the Asfar al-Arba'a?</h3>
 
-        <p>
-          <em>Asfar al-Arba'a</em>, or <em>The Four Journeys</em>, is Mulla
-          Sadra's magnum opus. It presents his philosophical system through the
-          metaphor of four intellectual and spiritual journeys and discusses
-          metaphysics, theology, psychology, cosmology, epistemology, and
-          eschatology.
-        </p>
+          <p>
+            <em>Asfar al-Arba'a</em>, or <em>The Four Journeys</em>, is Mulla
+            Sadra's magnum opus. It presents his philosophical system through
+            the metaphor of four intellectual and spiritual journeys and
+            discusses metaphysics, theology, psychology, cosmology,
+            epistemology, and eschatology.
+          </p>
 
-        <h3>Who influenced Mulla Sadra?</h3>
+          <h3>Who influenced Mulla Sadra?</h3>
 
-        <p>
-          Mulla Sadra was influenced by Avicenna, Suhrawardi, Ibn Arabi, Islamic
-          theology, Shi'i intellectual traditions, and earlier philosophical
-          traditions. He developed these influences into his own system of
-          Transcendent Theosophy.
-        </p>
+          <p>
+            Mulla Sadra was influenced by Avicenna, Suhrawardi, Ibn Arabi,
+            Islamic theology, Shi'i intellectual traditions, and earlier
+            philosophical traditions. He developed these influences into his own
+            system of Transcendent Theosophy.
+          </p>
 
-        <h3>What is Mulla Sadra's contribution to Islamic philosophy?</h3>
+          <h3>What is Mulla Sadra's contribution to Islamic philosophy?</h3>
 
-        <p>
-          Mulla Sadra transformed Islamic metaphysics by placing existence at
-          the center of philosophical inquiry and developing influential
-          doctrines concerning existence and essence, substantial motion,
-          knowledge, the soul, and the relationship between philosophy and
-          spiritual wisdom.
-        </p>
+          <p>
+            Mulla Sadra transformed Islamic metaphysics by placing existence at
+            the center of philosophical inquiry and developing influential
+            doctrines concerning existence and essence, substantial motion,
+            knowledge, the soul, and the relationship between philosophy and
+            spiritual wisdom.
+          </p>
 
-        <h3>Why is Mulla Sadra important today?</h3>
+          <h3>Why is Mulla Sadra important today?</h3>
 
-        <p>
-          Mulla Sadra remains important because his philosophy continues to be
-          studied in Islamic philosophy, Persian philosophy, metaphysics,
-          philosophy of religion, and discussions concerning existence,
-          consciousness, knowledge, and the nature of reality.
-        </p>
-      </section>
+          <p>
+            Mulla Sadra remains important because his philosophy continues to be
+            studied in Islamic philosophy, Persian philosophy, metaphysics,
+            philosophy of religion, and discussions concerning existence,
+            consciousness, knowledge, and the nature of reality.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED THINKERS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-thinkers-title">
-        <span class="section-eyebrow"> Continue Exploring </span>
+        <section class="connection" aria-labelledby="related-thinkers-title">
+          <span class="section-eyebrow"> Continue Exploring </span>
 
-        <h2 id="related-thinkers-title">
-          Related Islamic and Persian Philosophers
-        </h2>
+          <h2 id="related-thinkers-title">
+            Related Islamic and Persian Philosophers
+          </h2>
 
-        <p>
-          Explore other major thinkers in the development of Islamic philosophy,
-          Persian philosophy, mystical thought, and medieval and early modern
-          intellectual history.
-        </p>
+          <p>
+            Explore other major thinkers in the development of Islamic
+            philosophy, Persian philosophy, mystical thought, and medieval and
+            early modern intellectual history.
+          </p>
 
-        <div class="related-links">
-          <a href="al-kindi.html"> Al-Kindi </a>
-          ·
+          <div class="related-links">
+            <a href="al-kindi.html"> Al-Kindi </a>
+            ·
 
-          <a href="al-farabi.html"> Al-Farabi </a>
-          ·
+            <a href="al-farabi.html"> Al-Farabi </a>
+            ·
 
-          <a href="avicenna.html"> Avicenna (Ibn Sina) </a>
-          ·
+            <a href="avicenna.html"> Avicenna (Ibn Sina) </a>
+            ·
 
-          <a href="al-ghazali.html"> Al-Ghazali </a>
-          ·
+            <a href="al-ghazali.html"> Al-Ghazali </a>
+            ·
 
-          <a href="averroes.html"> Averroes (Ibn Rushd) </a>
-          ·
+            <a href="averroes.html"> Averroes (Ibn Rushd) </a>
+            ·
 
-          <a href="suhrawardi.html"> Suhrawardi </a>
-          ·
+            <a href="suhrawardi.html"> Suhrawardi </a>
+            ·
 
-          <a href="ibn-arabi.html"> Ibn Arabi </a>
-        </div>
-      </section>
+            <a href="ibn-arabi.html"> Ibn Arabi </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED AREAS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-topics-title">
-        <span class="section-eyebrow"> Philosophical Connections </span>
+        <section class="connection" aria-labelledby="related-topics-title">
+          <span class="section-eyebrow"> Philosophical Connections </span>
 
-        <h2 id="related-topics-title">Related Areas of Philosophy</h2>
+          <h2 id="related-topics-title">Related Areas of Philosophy</h2>
 
-        <p>
-          Mulla Sadra's philosophy connects Islamic metaphysics with
-          epistemology, philosophy of mind, philosophy of religion, cosmology,
-          mysticism, and the philosophy of existence.
-        </p>
+          <p>
+            Mulla Sadra's philosophy connects Islamic metaphysics with
+            epistemology, philosophy of mind, philosophy of religion, cosmology,
+            mysticism, and the philosophy of existence.
+          </p>
 
-        <div class="related-links">
-          <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
-          ·
+          <div class="related-links">
+            <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
+            ·
 
-          <a href="epistemology-branch-philosophy.html"> Epistemology </a>
-          ·
+            <a href="epistemology-branch-philosophy.html"> Epistemology </a>
+            ·
 
-          <a href="islamic-philosophy.html"> Islamic Philosophy </a>
-          ·
+            <a href="islamic-philosophy.html"> Islamic Philosophy </a>
+            ·
 
-          <a href="medieval-philosophy.html"> Medieval Philosophy </a>
-          ·
+            <a href="medieval-philosophy.html"> Medieval Philosophy </a>
+            ·
 
-          <a href="schools.html"> Schools of Philosophy </a>
-          ·
+            <a href="schools.html"> Schools of Philosophy </a>
+            ·
 
-          <a href="history.html"> History of Philosophy </a>
-        </div>
-      </section>
+            <a href="history.html"> History of Philosophy </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          CONCLUSION
          ===================================================== -->
 
-      <section class="narrative-block" aria-labelledby="conclusion-title">
-        <span class="section-eyebrow"> Transcendent Theosophy </span>
+        <section class="narrative-block" aria-labelledby="conclusion-title">
+          <span class="section-eyebrow"> Transcendent Theosophy </span>
 
-        <h2 id="conclusion-title">Why Mulla Sadra Still Matters</h2>
+          <h2 id="conclusion-title">Why Mulla Sadra Still Matters</h2>
 
-        <p>
-          Mulla Sadra occupies a central position in the later history of
-          Islamic philosophy. His Transcendent Theosophy transformed
-          philosophical discussions of existence, essence, causation, knowledge,
-          the soul, and the nature of reality.
-        </p>
+          <p>
+            Mulla Sadra occupies a central position in the later history of
+            Islamic philosophy. His Transcendent Theosophy transformed
+            philosophical discussions of existence, essence, causation,
+            knowledge, the soul, and the nature of reality.
+          </p>
 
-        <p>
-          His doctrines of the
-          <strong>primacy of existence</strong>,
-          <strong>gradation of existence</strong>, and
-          <strong>substantial motion</strong> provide a dynamic account of
-          reality, while his theory of knowledge by presence connects
-          metaphysics with consciousness and the human soul.
-        </p>
+          <p>
+            His doctrines of the
+            <strong>primacy of existence</strong>,
+            <strong>gradation of existence</strong>, and
+            <strong>substantial motion</strong> provide a dynamic account of
+            reality, while his theory of knowledge by presence connects
+            metaphysics with consciousness and the human soul.
+          </p>
 
-        <p>
-          Mulla Sadra's broader achievement was his attempt to bring together
-          reason, philosophical demonstration, mystical insight, theology, and
-          revelation. His influence on later Islamic philosophy makes him an
-          essential thinker for anyone studying Persian philosophy, Islamic
-          metaphysics, and the history of philosophy.
-        </p>
+          <p>
+            Mulla Sadra's broader achievement was his attempt to bring together
+            reason, philosophical demonstration, mystical insight, theology, and
+            revelation. His influence on later Islamic philosophy makes him an
+            essential thinker for anyone studying Persian philosophy, Islamic
+            metaphysics, and the history of philosophy.
+          </p>
 
-        <a class="cta-button" href="thinkers.html">
-          Explore Great Philosophers
-          <span aria-hidden="true">&rarr;</span>
-        </a>
-      </section>
-    </main>
+          <a class="cta-button" href="thinkers.html">
+            Explore Great Philosophers
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </section>
+      </main>
+    </div>
 
     <!-- =====================================================
        FOOTER
@@ -2204,8 +2277,8 @@
        SCRIPTS
        ===================================================== -->
 
-     <script src="script.js" defer></script>
-     <script src="article-toc.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="article-toc.js" defer></script>
 
     <script src="branches-enhance.js" defer></script>
 

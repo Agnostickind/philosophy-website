@@ -113,7 +113,7 @@
 
     <!-- ================= STYLESHEETS ================= -->
 
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="article-toc.css" />
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
@@ -347,10 +347,10 @@
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link
-    rel="describedby"
-    href="https://agnostickind.github.io/philosophy-website/llms.txt"
-  >
-</head>
+      rel="describedby"
+      href="https://agnostickind.github.io/philosophy-website/llms.txt"
+    />
+  </head>
 
   <body>
     <!-- =====================================================
@@ -640,12 +640,11 @@
         </div>
 
         <a href="schools.html">Schools</a>
-       <a href="books.html">Books</a>
+        <a href="books.html">Books</a>
         <a href="world-literature.html">Literature</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </div>
-
 
       <div class="nav-tools">
         <!-- SEARCH -->
@@ -745,1184 +744,1268 @@
       </div>
     </header>
 
-    <main id="main-content" tabindex="-1">
-      <!-- =====================================================
+    <div class="article-reading-area">
+      <!-- =========================================================
+     ARTICLE TABLE OF CONTENTS
+     ========================================================= -->
+
+      <!-- Desktop TOC -->
+      <aside class="article-toc" aria-label="Article contents">
+        <div class="article-toc__header">
+          <span class="article-toc__title">Contents</span>
+
+          <button
+            type="button"
+            class="article-toc__hide"
+            aria-label="Hide article contents"
+          >
+            Hide
+          </button>
+        </div>
+
+        <nav class="article-toc__nav" aria-label="Article sections">
+          <div class="article-toc__list"></div>
+        </nav>
+      </aside>
+
+      <!-- Mobile TOC trigger -->
+      <button
+        type="button"
+        class="mobile-toc-trigger"
+        aria-expanded="false"
+        aria-controls="mobile-toc-drawer"
+      >
+        <span>Contents</span>
+        <span class="mobile-toc-trigger__chevron" aria-hidden="true">⌄</span>
+      </button>
+
+      <!-- Mobile TOC overlay -->
+      <div class="mobile-toc-overlay" hidden></div>
+
+      <!-- Mobile TOC drawer -->
+      <aside
+        id="mobile-toc-drawer"
+        class="mobile-toc-drawer"
+        aria-label="Article contents"
+        aria-hidden="true"
+      >
+        <div class="mobile-toc-drawer__header">
+          <span class="mobile-toc-drawer__title">Contents</span>
+
+          <button
+            type="button"
+            class="mobile-toc-drawer__close"
+            aria-label="Close article contents"
+          >
+            ×
+          </button>
+        </div>
+
+        <nav class="mobile-toc-drawer__nav" aria-label="Article sections">
+          <div class="mobile-toc-drawer__list"></div>
+        </nav>
+      </aside>
+
+      <main id="main-content" tabindex="-1">
+        <!-- =====================================================
          INTRODUCTION
          ===================================================== -->
 
-      <section class="about-home">
-        <h2>Who Was Avicenna (Ibn Sina)?</h2>
+        <section class="about-home">
+          <h2>Who Was Avicenna (Ibn Sina)?</h2>
 
-        <p>
-          <strong>Avicenna</strong>, known in Arabic and Persian as
-          <strong>Ibn Sina</strong> (Abū ʿAlī al-Ḥusayn ibn ʿAbdillāh ibn Sīnā,
-          c. 980–1037 CE), was one of the most influential philosophers and
-          physicians of the medieval Islamic world. He developed one of the most
-          comprehensive philosophical systems of the medieval period, and his
-          ideas profoundly shaped later Islamic philosophy as well as Jewish and
-          Christian philosophical traditions.
-        </p>
+          <p>
+            <strong>Avicenna</strong>, known in Arabic and Persian as
+            <strong>Ibn Sina</strong> (Abū ʿAlī al-Ḥusayn ibn ʿAbdillāh ibn
+            Sīnā, c. 980–1037 CE), was one of the most influential philosophers
+            and physicians of the medieval Islamic world. He developed one of
+            the most comprehensive philosophical systems of the medieval period,
+            and his ideas profoundly shaped later Islamic philosophy as well as
+            Jewish and Christian philosophical traditions.
+          </p>
 
-        <p>
-          Avicenna was active in the eastern regions of the Islamic world,
-          particularly in Central Asia and Persia, during the tenth and eleventh
-          centuries. Building upon the work of earlier philosophers such as
-          <strong>Al-Kindi</strong> and <strong>Al-Farabi</strong>, as well as
-          the Greek philosophical tradition, he developed a systematic framework
-          encompassing metaphysics, logic, natural philosophy, psychology, and
-          other branches of knowledge.
-        </p>
+          <p>
+            Avicenna was active in the eastern regions of the Islamic world,
+            particularly in Central Asia and Persia, during the tenth and
+            eleventh centuries. Building upon the work of earlier philosophers
+            such as
+            <strong>Al-Kindi</strong> and <strong>Al-Farabi</strong>, as well as
+            the Greek philosophical tradition, he developed a systematic
+            framework encompassing metaphysics, logic, natural philosophy,
+            psychology, and other branches of knowledge.
+          </p>
 
-        <p>
-          His philosophical thought is especially famous for its distinction
-          between <strong>essence and existence</strong>, its analysis of
-          <strong>necessary and contingent being</strong>, and its influential
-          arguments concerning God as the <strong>Necessary Existent</strong>.
-          These ideas became central to later debates in both Islamic and
-          medieval European philosophy.
-        </p>
+          <p>
+            His philosophical thought is especially famous for its distinction
+            between <strong>essence and existence</strong>, its analysis of
+            <strong>necessary and contingent being</strong>, and its influential
+            arguments concerning God as the <strong>Necessary Existent</strong>.
+            These ideas became central to later debates in both Islamic and
+            medieval European philosophy.
+          </p>
 
-        <p>
-          Avicenna was also one of the most important physicians of the medieval
-          world. His vast medical encyclopedia, the <em>Canon of Medicine</em>,
-          became a major reference work in Islamic and later European medicine,
-          while his philosophical summa, the <em>Book of Healing</em>, presented
-          his systematic account of logic, natural science, mathematics, and
-          metaphysics. Together, these works demonstrate the extraordinary range
-          and lasting influence of his intellectual achievement.
-        </p>
-      </section>
+          <p>
+            Avicenna was also one of the most important physicians of the
+            medieval world. His vast medical encyclopedia, the
+            <em>Canon of Medicine</em>, became a major reference work in Islamic
+            and later European medicine, while his philosophical summa, the
+            <em>Book of Healing</em>, presented his systematic account of logic,
+            natural science, mathematics, and metaphysics. Together, these works
+            demonstrate the extraordinary range and lasting influence of his
+            intellectual achievement.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          QUICK FACTS
          ===================================================== -->
 
-      <section class="narrative-block" id="quick-facts">
-        <h2>Avicenna: Quick Facts</h2>
+        <section class="narrative-block" id="quick-facts">
+          <h2>Avicenna: Quick Facts</h2>
 
-        <ul class="plain-list">
-          <li>
-            <strong>Full name</strong> — Abū ʿAlī al-Ḥusayn ibn ʿAbdillāh ibn
-            Sīnā
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>Full name</strong> — Abū ʿAlī al-Ḥusayn ibn ʿAbdillāh ibn
+              Sīnā
+            </li>
 
-          <li><strong>Known as</strong> — Ibn Sina or Avicenna</li>
+            <li><strong>Known as</strong> — Ibn Sina or Avicenna</li>
 
-          <li><strong>Born</strong> — c. 980 CE, near Bukhara</li>
+            <li><strong>Born</strong> — c. 980 CE, near Bukhara</li>
 
-          <li><strong>Died</strong> — 1037 CE, Hamadan</li>
+            <li><strong>Died</strong> — 1037 CE, Hamadan</li>
 
-          <li>
-            <strong>Associated with</strong> — Bukhara, Gurganj, Rayy, Hamadan,
-            and Isfahan
-          </li>
+            <li>
+              <strong>Associated with</strong> — Bukhara, Gurganj, Rayy,
+              Hamadan, and Isfahan
+            </li>
 
-          <li>
-            <strong>Philosophical tradition</strong> — Islamic philosophy,
-            Peripatetic (Aristotelian-Neoplatonic) tradition
-          </li>
+            <li>
+              <strong>Philosophical tradition</strong> — Islamic philosophy,
+              Peripatetic (Aristotelian-Neoplatonic) tradition
+            </li>
 
-          <li>
-            <strong>Major influences</strong> — Aristotle, Neoplatonism,
-            Al-Farabi, Islamic theology
-          </li>
+            <li>
+              <strong>Major influences</strong> — Aristotle, Neoplatonism,
+              Al-Farabi, Islamic theology
+            </li>
 
-          <li>
-            <strong>Major philosophical subjects</strong> — Metaphysics, logic,
-            psychology, epistemology, cosmology, natural philosophy, and ethics
-          </li>
+            <li>
+              <strong>Major philosophical subjects</strong> — Metaphysics,
+              logic, psychology, epistemology, cosmology, natural philosophy,
+              and ethics
+            </li>
 
-          <li>
-            <strong>Famous philosophical work</strong> —
-            <em>The Book of Healing</em>
-          </li>
+            <li>
+              <strong>Famous philosophical work</strong> —
+              <em>The Book of Healing</em>
+            </li>
 
-          <li>
-            <strong>Famous medical work</strong> —
-            <em>The Canon of Medicine</em>
-          </li>
+            <li>
+              <strong>Famous medical work</strong> —
+              <em>The Canon of Medicine</em>
+            </li>
 
-          <li>
-            <strong>Famous thought experiment</strong> — The Flying Man argument
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>Famous thought experiment</strong> — The Flying Man
+              argument
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          EARLY LIFE
          ===================================================== -->
 
-      <section class="narrative-block" id="early-life">
-        <h2>Avicenna's Early Life and Historical Background</h2>
+        <section class="narrative-block" id="early-life">
+          <h2>Avicenna's Early Life and Historical Background</h2>
 
-        <figure class="narrative-figure">
-          <img
-            src="images/ibn-sina-islamic-schools.jpg"
-            alt="Representation of Avicenna (Ibn Sina), medieval Islamic philosopher and physician"
-            loading="lazy"
-            decoding="async"
-          />
+          <figure class="narrative-figure">
+            <img
+              src="images/ibn-sina-islamic-schools.jpg"
+              alt="Representation of Avicenna (Ibn Sina), medieval Islamic philosopher and physician"
+              loading="lazy"
+              decoding="async"
+            />
 
-          <figcaption>
-            Avicenna became one of the most systematic philosophers of the
-            medieval Islamic world.
-          </figcaption>
-        </figure>
+            <figcaption>
+              Avicenna became one of the most systematic philosophers of the
+              medieval Islamic world.
+            </figcaption>
+          </figure>
 
-        <p>
-          Avicenna (Ibn Sina) was born around 980 CE near Bukhara, in the
-          eastern Islamic world under the Samanid dynasty. Much of what is known
-          about his early intellectual development comes from an
-          autobiographical account later completed by his student al-Juzjani.
-          According to this account, Avicenna showed exceptional intellectual
-          ability and received an extensive education in the Quran, Arabic
-          literature, Islamic scholarship, logic, mathematics, and philosophy.
-        </p>
+          <p>
+            Avicenna (Ibn Sina) was born around 980 CE near Bukhara, in the
+            eastern Islamic world under the Samanid dynasty. Much of what is
+            known about his early intellectual development comes from an
+            autobiographical account later completed by his student al-Juzjani.
+            According to this account, Avicenna showed exceptional intellectual
+            ability and received an extensive education in the Quran, Arabic
+            literature, Islamic scholarship, logic, mathematics, and philosophy.
+          </p>
 
-        <p>
-          He went on to study logic, geometry, astronomy, and natural
-          philosophy, while also turning to medicine. His autobiographical
-          account presents medicine as a field he found comparatively
-          accessible, and he soon acquired a reputation as a skilled physician.
-          A famous episode from the same account describes his difficulty
-          understanding Aristotle's
-          <em>Metaphysics</em> until he encountered a work by Al-Farabi
-          explaining the purpose of Aristotle's treatise.
-        </p>
+          <p>
+            He went on to study logic, geometry, astronomy, and natural
+            philosophy, while also turning to medicine. His autobiographical
+            account presents medicine as a field he found comparatively
+            accessible, and he soon acquired a reputation as a skilled
+            physician. A famous episode from the same account describes his
+            difficulty understanding Aristotle's
+            <em>Metaphysics</em> until he encountered a work by Al-Farabi
+            explaining the purpose of Aristotle's treatise.
+          </p>
 
-        <p>
-          Avicenna's intellectual life unfolded during a period of major
-          political change in Central Asia and Persia. The decline of the
-          Samanid state and the struggles among regional dynasties forced him to
-          move repeatedly in search of patronage and security. He spent
-          important periods of his life in places including Gurganj, Rayy,
-          Hamadan, and Isfahan.
-        </p>
+          <p>
+            Avicenna's intellectual life unfolded during a period of major
+            political change in Central Asia and Persia. The decline of the
+            Samanid state and the struggles among regional dynasties forced him
+            to move repeatedly in search of patronage and security. He spent
+            important periods of his life in places including Gurganj, Rayy,
+            Hamadan, and Isfahan.
+          </p>
 
-        <p>
-          Throughout these movements, Avicenna served rulers in several
-          capacities, including as a physician, adviser, and administrator. He
-          was at times involved directly in political affairs and even served as
-          vizier in Hamadan. His career also included periods of confinement and
-          political danger, yet he continued to write extensively, producing a
-          philosophical and scientific corpus that would transform the history
-          of Islamic and medieval philosophy.
-        </p>
-      </section>
+          <p>
+            Throughout these movements, Avicenna served rulers in several
+            capacities, including as a physician, adviser, and administrator. He
+            was at times involved directly in political affairs and even served
+            as vizier in Hamadan. His career also included periods of
+            confinement and political danger, yet he continued to write
+            extensively, producing a philosophical and scientific corpus that
+            would transform the history of Islamic and medieval philosophy.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          PHYSICIAN AND PHILOSOPHER
          ===================================================== -->
 
-      <section class="narrative-block" id="physician-and-philosopher">
-        <h2>Was Avicenna a Doctor or a Philosopher?</h2>
+        <section class="narrative-block" id="physician-and-philosopher">
+          <h2>Was Avicenna a Doctor or a Philosopher?</h2>
 
-        <p>
-          Avicenna was both a physician and a philosopher, and separating these
-          identities too sharply can obscure the unity of his intellectual
-          project. He was one of the most important systematic philosophers of
-          the medieval Islamic world while also producing one of the most
-          influential medical encyclopedias in history. His interests extended
-          further into logic, psychology, natural science, mathematics, and
-          questions concerning religion and prophecy.
-        </p>
+          <p>
+            Avicenna was both a physician and a philosopher, and separating
+            these identities too sharply can obscure the unity of his
+            intellectual project. He was one of the most important systematic
+            philosophers of the medieval Islamic world while also producing one
+            of the most influential medical encyclopedias in history. His
+            interests extended further into logic, psychology, natural science,
+            mathematics, and questions concerning religion and prophecy.
+          </p>
 
-        <p>
-          His philosophy and medicine shared a common concern with explanation,
-          causation, and the ordered structure of reality. Natural philosophy
-          provided a theoretical framework for understanding bodies, motion,
-          sensation, and life, while medicine investigated health, disease, and
-          the practical conditions of the human body. The disciplines were
-          distinct, but they belonged to a broader scientific worldview.
-        </p>
+          <p>
+            His philosophy and medicine shared a common concern with
+            explanation, causation, and the ordered structure of reality.
+            Natural philosophy provided a theoretical framework for
+            understanding bodies, motion, sensation, and life, while medicine
+            investigated health, disease, and the practical conditions of the
+            human body. The disciplines were distinct, but they belonged to a
+            broader scientific worldview.
+          </p>
 
-        <p>
-          Avicenna's psychology is particularly important for understanding this
-          connection. His analysis of perception, imagination, memory, and the
-          rational soul belongs simultaneously to philosophical inquiry and to a
-          broader investigation of human nature. Questions about the relation
-          between body and soul therefore occupied a central position in both
-          his metaphysical and scientific thought.
-        </p>
+          <p>
+            Avicenna's psychology is particularly important for understanding
+            this connection. His analysis of perception, imagination, memory,
+            and the rational soul belongs simultaneously to philosophical
+            inquiry and to a broader investigation of human nature. Questions
+            about the relation between body and soul therefore occupied a
+            central position in both his metaphysical and scientific thought.
+          </p>
 
-        <p>
-          <strong>Avicenna the philosopher</strong> and
-          <strong>Avicenna the physician</strong> are therefore best understood
-          as parts of a single intellectual enterprise. He sought a rationally
-          organized understanding of reality as a whole, ranging from the most
-          abstract questions concerning existence and God to the concrete study
-          of the human body and its illnesses.
-        </p>
-      </section>
+          <p>
+            <strong>Avicenna the philosopher</strong> and
+            <strong>Avicenna the physician</strong> are therefore best
+            understood as parts of a single intellectual enterprise. He sought a
+            rationally organized understanding of reality as a whole, ranging
+            from the most abstract questions concerning existence and God to the
+            concrete study of the human body and its illnesses.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          GREEK PHILOSOPHY
          ===================================================== -->
 
-      <section class="narrative-block" id="greek-philosophy">
-        <h2>Avicenna and Greek Philosophy</h2>
+        <section class="narrative-block" id="greek-philosophy">
+          <h2>Avicenna and Greek Philosophy</h2>
 
-        <p>
-          Like Al-Kindi and Al-Farabi before him, Avicenna worked within a
-          philosophical tradition made possible by the transmission and
-          transformation of Greek learning into Arabic.
-          <strong>Aristotle</strong>
-          was one of his most important philosophical authorities, especially in
-          logic, natural philosophy, psychology, and metaphysics, although
-          Avicenna frequently developed his own arguments beyond the positions
-          found in Aristotle's surviving works.
-        </p>
+          <p>
+            Like Al-Kindi and Al-Farabi before him, Avicenna worked within a
+            philosophical tradition made possible by the transmission and
+            transformation of Greek learning into Arabic.
+            <strong>Aristotle</strong>
+            was one of his most important philosophical authorities, especially
+            in logic, natural philosophy, psychology, and metaphysics, although
+            Avicenna frequently developed his own arguments beyond the positions
+            found in Aristotle's surviving works.
+          </p>
 
-        <p>
-          His philosophical inheritance was not exclusively Aristotelian. The
-          Arabic philosophical tradition had also absorbed important ideas from
-          late antique Neoplatonism, sometimes through texts incorrectly
-          attributed to Aristotle. These influences helped shape Avicenna's
-          account of the relationship between the First Principle and the
-          ordered hierarchy of the cosmos.
-        </p>
+          <p>
+            His philosophical inheritance was not exclusively Aristotelian. The
+            Arabic philosophical tradition had also absorbed important ideas
+            from late antique Neoplatonism, sometimes through texts incorrectly
+            attributed to Aristotle. These influences helped shape Avicenna's
+            account of the relationship between the First Principle and the
+            ordered hierarchy of the cosmos.
+          </p>
 
-        <p>
-          Avicenna's theory of emanation, for example, combines philosophical
-          themes derived from Aristotle with ideas associated with Plotinus and
-          other late antique thinkers. Yet it would be misleading to describe
-          his philosophy as merely a mixture of borrowed doctrines. He developed
-          an original system with its own distinctive concepts, arguments, and
-          technical vocabulary.
-        </p>
+          <p>
+            Avicenna's theory of emanation, for example, combines philosophical
+            themes derived from Aristotle with ideas associated with Plotinus
+            and other late antique thinkers. Yet it would be misleading to
+            describe his philosophy as merely a mixture of borrowed doctrines.
+            He developed an original system with its own distinctive concepts,
+            arguments, and technical vocabulary.
+          </p>
 
-        <p>
-          His achievement was therefore one of philosophical transformation.
-          Avicenna inherited a complex Greek and Arabic intellectual tradition
-          and reorganized it into a remarkably systematic account of logic,
-          natural science, psychology, metaphysics, theology, and human
-          knowledge. This system later became so influential that generations of
-          philosophers defined their own positions partly through engagement
-          with Avicennian thought.
-        </p>
-      </section>
+          <p>
+            His achievement was therefore one of philosophical transformation.
+            Avicenna inherited a complex Greek and Arabic intellectual tradition
+            and reorganized it into a remarkably systematic account of logic,
+            natural science, psychology, metaphysics, theology, and human
+            knowledge. This system later became so influential that generations
+            of philosophers defined their own positions partly through
+            engagement with Avicennian thought.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          METAPHYSICS: NECESSARY EXISTENT
          ===================================================== -->
 
-      <section class="narrative-block" id="necessary-existent">
-        <h2>Avicenna's Metaphysics: The Necessary Existent</h2>
+        <section class="narrative-block" id="necessary-existent">
+          <h2>Avicenna's Metaphysics: The Necessary Existent</h2>
 
-        <p>
-          The most famous feature of
-          <strong>Avicenna's metaphysics</strong> is his analysis of existence
-          in terms of necessity and possibility. An existent may be
-          <strong>necessary in itself</strong>, meaning that it does not depend
-          upon a cause for its existence, or
-          <strong>possible in itself</strong>, meaning that its existence is not
-          explained by its own nature and therefore depends upon something else.
-        </p>
+          <p>
+            The most famous feature of
+            <strong>Avicenna's metaphysics</strong> is his analysis of existence
+            in terms of necessity and possibility. An existent may be
+            <strong>necessary in itself</strong>, meaning that it does not
+            depend upon a cause for its existence, or
+            <strong>possible in itself</strong>, meaning that its existence is
+            not explained by its own nature and therefore depends upon something
+            else.
+          </p>
 
-        <p>
-          Possible beings require an explanation for why they exist rather than
-          do not exist. When such a being is brought into existence by a cause,
-          it becomes necessary through that cause while remaining possible in
-          itself. Avicenna uses this distinction to analyze the dependence of
-          the entire order of caused beings upon a first principle that is not
-          itself dependent upon another cause.
-        </p>
+          <p>
+            Possible beings require an explanation for why they exist rather
+            than do not exist. When such a being is brought into existence by a
+            cause, it becomes necessary through that cause while remaining
+            possible in itself. Avicenna uses this distinction to analyze the
+            dependence of the entire order of caused beings upon a first
+            principle that is not itself dependent upon another cause.
+          </p>
 
-        <p>
-          This first principle is the <strong>Necessary Existent</strong>, whose
-          existence belongs to it in a fundamentally different way from the
-          existence of all caused things. The Necessary Existent is uncaused,
-          unique, and absolutely independent. Avicenna identifies this principle
-          with God, making the analysis of existence itself the foundation of
-          his philosophical theology.
-        </p>
+          <p>
+            This first principle is the <strong>Necessary Existent</strong>,
+            whose existence belongs to it in a fundamentally different way from
+            the existence of all caused things. The Necessary Existent is
+            uncaused, unique, and absolutely independent. Avicenna identifies
+            this principle with God, making the analysis of existence itself the
+            foundation of his philosophical theology.
+          </p>
 
-        <p>
-          Avicenna's argument is especially important because it approaches the
-          question of God through the structure and modality of being rather
-          than beginning primarily with motion or physical change. Later
-          Islamic, Jewish, and Christian philosophers engaged extensively with
-          this distinction between what is necessary and what is dependent or
-          possible, making it one of the most influential developments in
-          medieval metaphysics.  
-        </p>
-      </section>
+          <p>
+            Avicenna's argument is especially important because it approaches
+            the question of God through the structure and modality of being
+            rather than beginning primarily with motion or physical change.
+            Later Islamic, Jewish, and Christian philosophers engaged
+            extensively with this distinction between what is necessary and what
+            is dependent or possible, making it one of the most influential
+            developments in medieval metaphysics.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          BOOK OF HEALING
          ===================================================== -->
 
-      <section class="narrative-block" id="book-of-healing">
-        <h2>Avicenna's Book of Healing</h2>
+        <section class="narrative-block" id="book-of-healing">
+          <h2>Avicenna's Book of Healing</h2>
 
-        <p>
-          <em>The Book of Healing</em> (<em>Kitāb al-Shifāʾ</em>) is Avicenna's
-          great philosophical encyclopedia and one of the largest systematic
-          works produced in medieval philosophy. Despite its title, it is not a
-          medical book. Its purpose is intellectual and philosophical: the
-          "healing" in its title concerns the human soul's movement away from
-          ignorance through the acquisition of rational knowledge.
-        </p>
+          <p>
+            <em>The Book of Healing</em> (<em>Kitāb al-Shifāʾ</em>) is
+            Avicenna's great philosophical encyclopedia and one of the largest
+            systematic works produced in medieval philosophy. Despite its title,
+            it is not a medical book. Its purpose is intellectual and
+            philosophical: the "healing" in its title concerns the human soul's
+            movement away from ignorance through the acquisition of rational
+            knowledge.
+          </p>
 
-        <p>
-          The work is organized into major divisions devoted to logic, natural
-          philosophy, mathematics, and metaphysics. Its discussions range across
-          subjects including physics, the soul, sensation, astronomy, geometry,
-          and the nature of existence. In this way, the <em>Book of Healing</em>
-          presents Avicenna's attempt to construct a comprehensive scientific
-          and philosophical account of reality.
-        </p>
+          <p>
+            The work is organized into major divisions devoted to logic, natural
+            philosophy, mathematics, and metaphysics. Its discussions range
+            across subjects including physics, the soul, sensation, astronomy,
+            geometry, and the nature of existence. In this way, the
+            <em>Book of Healing</em>
+            presents Avicenna's attempt to construct a comprehensive scientific
+            and philosophical account of reality.
+          </p>
 
-        <p>
-          The metaphysical sections contain some of Avicenna's most influential
-          arguments concerning being, essence, existence, causation, necessity,
-          possibility, and the First Principle. These discussions became central
-          to the later development of Avicennism and to medieval philosophical
-          debates in both the Islamic world and Latin Europe.
-        </p>
+          <p>
+            The metaphysical sections contain some of Avicenna's most
+            influential arguments concerning being, essence, existence,
+            causation, necessity, possibility, and the First Principle. These
+            discussions became central to the later development of Avicennism
+            and to medieval philosophical debates in both the Islamic world and
+            Latin Europe.
+          </p>
 
-        <p>
-          Avicenna later presented parts of his philosophical system in other
-          forms. <em>The Book of Salvation</em> offers a more concise
-          presentation of material developed elsewhere, while
-          <em>Remarks and Admonitions</em> (<em>al-Isharat wa al-Tanbihat</em>)
-          became one of his most important later works and was the subject of
-          extensive commentary and debate among subsequent Islamic philosophers.
-        </p>
-      </section>
+          <p>
+            Avicenna later presented parts of his philosophical system in other
+            forms. <em>The Book of Salvation</em> offers a more concise
+            presentation of material developed elsewhere, while
+            <em>Remarks and Admonitions</em> (<em>al-Isharat wa al-Tanbihat</em
+            >) became one of his most important later works and was the subject
+            of extensive commentary and debate among subsequent Islamic
+            philosophers.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          FLYING MAN ARGUMENT
          ===================================================== -->
 
-      <section class="narrative-block" id="flying-man">
-        <h2>What Is Avicenna's Flying Man Argument?</h2>
-        <figure class="narrative-figure left">
-          <img
-            src="images/avicenna-flying-man.jpg"
-            alt="Conceptual illustration of Avicenna's Flying Man thought experiment on self-awareness"
-            loading="lazy"
-            decoding="async"
-          />
+        <section class="narrative-block" id="flying-man">
+          <h2>What Is Avicenna's Flying Man Argument?</h2>
+          <figure class="narrative-figure left">
+            <img
+              src="images/avicenna-flying-man.jpg"
+              alt="Conceptual illustration of Avicenna's Flying Man thought experiment on self-awareness"
+              loading="lazy"
+              decoding="async"
+            />
 
-          <figcaption>
-            Avicenna's Flying Man argument investigates self-awareness
-            independent of the physical senses.
-          </figcaption>
-        </figure>
+            <figcaption>
+              Avicenna's Flying Man argument investigates self-awareness
+              independent of the physical senses.
+            </figcaption>
+          </figure>
 
-        <p>
-          The <strong>Flying Man argument</strong> is Avicenna's most famous
-          thought experiment concerning self-awareness. He asks us to imagine a
-          human being created fully formed and suddenly suspended in empty
-          space, with the senses prevented from receiving information about the
-          external world and with the limbs arranged so that no bodily contact
-          provides awareness of the body.
-        </p>
+          <p>
+            The <strong>Flying Man argument</strong> is Avicenna's most famous
+            thought experiment concerning self-awareness. He asks us to imagine
+            a human being created fully formed and suddenly suspended in empty
+            space, with the senses prevented from receiving information about
+            the external world and with the limbs arranged so that no bodily
+            contact provides awareness of the body.
+          </p>
 
-        <p>
-          Avicenna argues that such a person would nevertheless affirm their own
-          existence. Even without awareness of external objects or of the body,
-          the person would still possess an immediate awareness of being a self.
-          This is intended to show that self-awareness cannot simply be reduced
-          to awareness of a particular bodily organ or to sensory perception.
-        </p>
+          <p>
+            Avicenna argues that such a person would nevertheless affirm their
+            own existence. Even without awareness of external objects or of the
+            body, the person would still possess an immediate awareness of being
+            a self. This is intended to show that self-awareness cannot simply
+            be reduced to awareness of a particular bodily organ or to sensory
+            perception.
+          </p>
 
-        <p>
-          The argument therefore plays an important role in Avicenna's
-          philosophical psychology. It supports his claim that the human soul
-          has a reality that cannot be identified straightforwardly with the
-          body. However, the Flying Man is best understood as an argument
-          concerning the immediacy of self-awareness and the nature of the soul,
-          rather than as a simple modern-style proof that the mind can exist
-          independently of every bodily condition.
-        </p>
+          <p>
+            The argument therefore plays an important role in Avicenna's
+            philosophical psychology. It supports his claim that the human soul
+            has a reality that cannot be identified straightforwardly with the
+            body. However, the Flying Man is best understood as an argument
+            concerning the immediacy of self-awareness and the nature of the
+            soul, rather than as a simple modern-style proof that the mind can
+            exist independently of every bodily condition.
+          </p>
 
-        <p>
-          The thought experiment has remained philosophically influential
-          because it raises a fundamental question: what is the basis of our
-          awareness of ourselves? Long before modern debates about consciousness
-          and personal identity, Avicenna used the imagined isolation of the
-          Flying Man to investigate whether awareness of the self is more
-          fundamental than awareness of the external world.
-        </p>
-      </section>
+          <p>
+            The thought experiment has remained philosophically influential
+            because it raises a fundamental question: what is the basis of our
+            awareness of ourselves? Long before modern debates about
+            consciousness and personal identity, Avicenna used the imagined
+            isolation of the Flying Man to investigate whether awareness of the
+            self is more fundamental than awareness of the external world.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          SOUL
          ===================================================== -->
 
-      <section class="narrative-block" id="soul">
-        <h2>Avicenna's Theory of the Soul</h2>
+        <section class="narrative-block" id="soul">
+          <h2>Avicenna's Theory of the Soul</h2>
 
-        <p>
-          Avicenna's <strong>philosophical psychology</strong>, developed most
-          extensively in the psychological sections of
-          <em>The Book of Healing</em>, draws upon Aristotle's
-          <em>On the Soul</em> while developing a more elaborate account of the
-          faculties of living beings. He distinguishes vegetative, animal, and
-          rational powers, each corresponding to different forms of life and
-          activity.
-        </p>
+          <p>
+            Avicenna's <strong>philosophical psychology</strong>, developed most
+            extensively in the psychological sections of
+            <em>The Book of Healing</em>, draws upon Aristotle's
+            <em>On the Soul</em> while developing a more elaborate account of
+            the faculties of living beings. He distinguishes vegetative, animal,
+            and rational powers, each corresponding to different forms of life
+            and activity.
+          </p>
 
-        <p>
-          The human rational soul occupies a distinctive position within this
-          hierarchy. Avicenna argues that it is not reducible to the material
-          body and that its intellectual activity cannot be adequately explained
-          as the operation of a bodily organ. For this reason, he treats the
-          rational soul as an immaterial substance capable of surviving bodily
-          death.
-        </p>
+          <p>
+            The human rational soul occupies a distinctive position within this
+            hierarchy. Avicenna argues that it is not reducible to the material
+            body and that its intellectual activity cannot be adequately
+            explained as the operation of a bodily organ. For this reason, he
+            treats the rational soul as an immaterial substance capable of
+            surviving bodily death.
+          </p>
 
-        <p>
-          His analysis of the soul also includes a detailed theory of the
-          internal senses. These faculties explain how sensory information is
-          organized, retained, combined, and interpreted through powers such as
-          imagination, estimation, and memory. Avicenna's psychology was
-          therefore not limited to abstract arguments about immortality but also
-          offered a sophisticated account of perception and mental activity.
-        </p>
+          <p>
+            His analysis of the soul also includes a detailed theory of the
+            internal senses. These faculties explain how sensory information is
+            organized, retained, combined, and interpreted through powers such
+            as imagination, estimation, and memory. Avicenna's psychology was
+            therefore not limited to abstract arguments about immortality but
+            also offered a sophisticated account of perception and mental
+            activity.
+          </p>
 
-        <p>
-          The theory of the soul connects directly with Avicenna's epistemology.
-          Human knowledge begins with sensory and imaginative activity but can
-          develop toward intellectual understanding. The rational soul's
-          movement from potential understanding to actual knowledge thus forms a
-          bridge between his natural philosophy, metaphysics, theory of
-          knowledge, and account of human perfection.
-        </p>
-      </section>
+          <p>
+            The theory of the soul connects directly with Avicenna's
+            epistemology. Human knowledge begins with sensory and imaginative
+            activity but can develop toward intellectual understanding. The
+            rational soul's movement from potential understanding to actual
+            knowledge thus forms a bridge between his natural philosophy,
+            metaphysics, theory of knowledge, and account of human perfection.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          EPISTEMOLOGY
          ===================================================== -->
 
-      <section class="narrative-block" id="epistemology">
-        <h2>Avicenna's Theory of Knowledge</h2>
+        <section class="narrative-block" id="epistemology">
+          <h2>Avicenna's Theory of Knowledge</h2>
 
-        <p>
-          <strong>Avicenna's epistemology</strong> explains human knowledge as a
-          movement from sensation toward intellectual understanding. Sense
-          perception provides awareness of particular things, while the internal
-          senses organize and preserve sensory forms. The intellect then
-          concerns universal and intelligible meanings that cannot simply be
-          identified with individual objects of perception.
-        </p>
+          <p>
+            <strong>Avicenna's epistemology</strong> explains human knowledge as
+            a movement from sensation toward intellectual understanding. Sense
+            perception provides awareness of particular things, while the
+            internal senses organize and preserve sensory forms. The intellect
+            then concerns universal and intelligible meanings that cannot simply
+            be identified with individual objects of perception.
+          </p>
 
-        <p>
-          A central role in this process belongs to the incorporeal
-          <strong>Active Intellect</strong>. In Avicenna's cosmological and
-          psychological system, the human intellect does not produce
-          intelligible forms entirely from itself. The Active Intellect plays a
-          crucial role in the actualization of human understanding and in the
-          acquisition of intelligible knowledge.
-        </p>
+          <p>
+            A central role in this process belongs to the incorporeal
+            <strong>Active Intellect</strong>. In Avicenna's cosmological and
+            psychological system, the human intellect does not produce
+            intelligible forms entirely from itself. The Active Intellect plays
+            a crucial role in the actualization of human understanding and in
+            the acquisition of intelligible knowledge.
+          </p>
 
-        <p>
-          Avicenna also gave special importance to intuition. Some individuals,
-          he argued, can grasp the middle term required for a demonstration with
-          extraordinary speed and clarity. At its highest level, this capacity
-          helps explain exceptional intellectual insight and forms part of his
-          philosophical account of prophecy.
-        </p>
+          <p>
+            Avicenna also gave special importance to intuition. Some
+            individuals, he argued, can grasp the middle term required for a
+            demonstration with extraordinary speed and clarity. At its highest
+            level, this capacity helps explain exceptional intellectual insight
+            and forms part of his philosophical account of prophecy.
+          </p>
 
-        <p>
-          His epistemology therefore combines discursive reasoning with a
-          broader hierarchy of intellectual capacities. Ordinary human beings
-          acquire knowledge gradually through learning and demonstration, while
-          exceptionally gifted individuals may achieve certain intellectual
-          insights with remarkable immediacy. Both remain part of Avicenna's
-          larger account of the relation between the human intellect and the
-          intelligible order of reality.
-        </p>
-      </section>
+          <p>
+            His epistemology therefore combines discursive reasoning with a
+            broader hierarchy of intellectual capacities. Ordinary human beings
+            acquire knowledge gradually through learning and demonstration,
+            while exceptionally gifted individuals may achieve certain
+            intellectual insights with remarkable immediacy. Both remain part of
+            Avicenna's larger account of the relation between the human
+            intellect and the intelligible order of reality.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          COSMOLOGY
          ===================================================== -->
 
-      <section class="narrative-block" id="cosmology">
-        <h2>Avicenna's Cosmology and Theory of Emanation</h2>
+        <section class="narrative-block" id="cosmology">
+          <h2>Avicenna's Cosmology and Theory of Emanation</h2>
 
-        <p>
-          Avicenna's cosmology describes an ordered universe whose existence
-          depends ultimately upon the Necessary Existent. Drawing upon late
-          antique philosophical traditions, he explains the structure of the
-          cosmos through a hierarchy of separate intellects associated with the
-          celestial spheres. This framework attempts to account for how a
-          multiplicity of beings can depend upon a single, absolutely simple
-          First Principle.
-        </p>
+          <p>
+            Avicenna's cosmology describes an ordered universe whose existence
+            depends ultimately upon the Necessary Existent. Drawing upon late
+            antique philosophical traditions, he explains the structure of the
+            cosmos through a hierarchy of separate intellects associated with
+            the celestial spheres. This framework attempts to account for how a
+            multiplicity of beings can depend upon a single, absolutely simple
+            First Principle.
+          </p>
 
-        <p>
-          In the traditional Avicennian cosmological model, the First Principle
-          gives rise to the first intellect, and the contemplation and
-          intelligible activity of the separate intellects explain the further
-          differentiation of the cosmic hierarchy. The series ultimately reaches
-          the <strong>Active Intellect</strong>, which is associated with the
-          sublunar world and plays an important role in Avicenna's account of
-          human knowledge.
-        </p>
+          <p>
+            In the traditional Avicennian cosmological model, the First
+            Principle gives rise to the first intellect, and the contemplation
+            and intelligible activity of the separate intellects explain the
+            further differentiation of the cosmic hierarchy. The series
+            ultimately reaches the <strong>Active Intellect</strong>, which is
+            associated with the sublunar world and plays an important role in
+            Avicenna's account of human knowledge.
+          </p>
 
-        <p>
-          This process is commonly described as <strong>emanation</strong>, but
-          the term should not suggest that the universe simply breaks off from
-          God as a physical substance divides into pieces. Avicenna's account is
-          a theory of ontological dependence: the existence and order of the
-          cosmos derive from a hierarchy of causes whose ultimate source is the
-          Necessary Existent.
-        </p>
+          <p>
+            This process is commonly described as <strong>emanation</strong>,
+            but the term should not suggest that the universe simply breaks off
+            from God as a physical substance divides into pieces. Avicenna's
+            account is a theory of ontological dependence: the existence and
+            order of the cosmos derive from a hierarchy of causes whose ultimate
+            source is the Necessary Existent.
+          </p>
 
-        <p>
-          Avicenna's cosmology combines Aristotelian conceptions of an ordered
-          and eternally moving cosmos with Neoplatonic ideas concerning the
-          derivation of multiplicity from unity. He thereby constructed one of
-          the most influential cosmological systems of medieval philosophy,
-          although later philosophers and theologians strongly debated both its
-          astronomical assumptions and its metaphysical implications.
-            
-        </p>
-      </section>
+          <p>
+            Avicenna's cosmology combines Aristotelian conceptions of an ordered
+            and eternally moving cosmos with Neoplatonic ideas concerning the
+            derivation of multiplicity from unity. He thereby constructed one of
+            the most influential cosmological systems of medieval philosophy,
+            although later philosophers and theologians strongly debated both
+            its astronomical assumptions and its metaphysical implications.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          MEDICINE
          ===================================================== -->
 
-      <section class="narrative-block" id="medicine">
-        <h2>Avicenna and the Canon of Medicine</h2>
+        <section class="narrative-block" id="medicine">
+          <h2>Avicenna and the Canon of Medicine</h2>
 
-        <p>
-          Alongside his philosophical work, Avicenna produced the
-          <em>Canon of Medicine</em> (<em>al-Qanun fi al-Tibb</em>), one of the
-          most influential medical works of the medieval world. The work brought
-          together major strands of Greek and Islamic medical knowledge within a
-          highly organized and systematic framework.
-        </p>
+          <p>
+            Alongside his philosophical work, Avicenna produced the
+            <em>Canon of Medicine</em> (<em>al-Qanun fi al-Tibb</em>), one of
+            the most influential medical works of the medieval world. The work
+            brought together major strands of Greek and Islamic medical
+            knowledge within a highly organized and systematic framework.
+          </p>
 
-        <p>
-          The <em>Canon</em> addresses general principles of medicine as well as
-          diseases, diagnosis, treatment, simple and compound medicines, and the
-          practical organization of medical knowledge. Its systematic method
-          contributed greatly to its long-lasting influence and made it an
-          important reference work for generations of physicians and students.
-        </p>
+          <p>
+            The <em>Canon</em> addresses general principles of medicine as well
+            as diseases, diagnosis, treatment, simple and compound medicines,
+            and the practical organization of medical knowledge. Its systematic
+            method contributed greatly to its long-lasting influence and made it
+            an important reference work for generations of physicians and
+            students.
+          </p>
 
-        <p>
-          Through translation into Latin, the <em>Canon of Medicine</em> became
-          an important text in European medical education as well as in the
-          Islamic world. Its authority endured for centuries, although its role
-          and dominance varied across institutions and historical periods as
-          medical knowledge gradually changed.
-        </p>
+          <p>
+            Through translation into Latin, the
+            <em>Canon of Medicine</em> became an important text in European
+            medical education as well as in the Islamic world. Its authority
+            endured for centuries, although its role and dominance varied across
+            institutions and historical periods as medical knowledge gradually
+            changed.
+          </p>
 
-        <p>
-          Avicenna's medical writing illustrates the same systematic impulse
-          found in his philosophy. He sought to classify knowledge, identify
-          causes, distinguish general principles from particular cases, and
-          place individual observations within an ordered theoretical framework.
-             
-        </p>
-      </section>
+          <p>
+            Avicenna's medical writing illustrates the same systematic impulse
+            found in his philosophy. He sought to classify knowledge, identify
+            causes, distinguish general principles from particular cases, and
+            place individual observations within an ordered theoretical
+            framework.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          ETHICS
          ===================================================== -->
 
-      <section class="narrative-block" id="ethics">
-        <h2>Avicenna's Philosophy of Ethics and Happiness</h2>
+        <section class="narrative-block" id="ethics">
+          <h2>Avicenna's Philosophy of Ethics and Happiness</h2>
 
-        <p>
-          Avicenna's ethical thought is closely connected with his philosophical
-          psychology and metaphysics. Human beings possess different powers and
-          desires, but the rational soul occupies the highest position because
-          it is capable of intellectual knowledge. Human perfection therefore
-          involves the proper development and ordering of the soul's capacities.
-        </p>
+          <p>
+            Avicenna's ethical thought is closely connected with his
+            philosophical psychology and metaphysics. Human beings possess
+            different powers and desires, but the rational soul occupies the
+            highest position because it is capable of intellectual knowledge.
+            Human perfection therefore involves the proper development and
+            ordering of the soul's capacities.
+          </p>
 
-        <p>
-          Intellectual perfection plays a central role in Avicenna's account of
-          happiness. The highest form of human fulfillment is connected with the
-          acquisition of knowledge and the rational soul's increasing relation
-          to the intelligible order of reality. Ethical development is
-          consequently not merely a matter of external behavior but of
-          transforming the character and capacities of the soul.
-        </p>
+          <p>
+            Intellectual perfection plays a central role in Avicenna's account
+            of happiness. The highest form of human fulfillment is connected
+            with the acquisition of knowledge and the rational soul's increasing
+            relation to the intelligible order of reality. Ethical development
+            is consequently not merely a matter of external behavior but of
+            transforming the character and capacities of the soul.
+          </p>
 
-        <p>
-          Avicenna also recognized the practical importance of moral discipline,
-          social life, law, and political organization. His discussions of
-          prophecy and religion connect the philosophical pursuit of truth with
-          the need for communities to receive guidance through laws and symbols
-          appropriate to collective human life.
-        </p>
+          <p>
+            Avicenna also recognized the practical importance of moral
+            discipline, social life, law, and political organization. His
+            discussions of prophecy and religion connect the philosophical
+            pursuit of truth with the need for communities to receive guidance
+            through laws and symbols appropriate to collective human life.
+          </p>
 
-        <p>
-          His ethical thought is therefore best understood within his larger
-          philosophical system. Questions concerning virtue and happiness cannot
-          be separated from his theories of the soul, knowledge, prophecy, and
-          the ultimate perfection of human intellectual capacities.
-        </p>
-      </section>
+          <p>
+            His ethical thought is therefore best understood within his larger
+            philosophical system. Questions concerning virtue and happiness
+            cannot be separated from his theories of the soul, knowledge,
+            prophecy, and the ultimate perfection of human intellectual
+            capacities.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          MAJOR WORKS
          ===================================================== -->
 
-      <section class="narrative-block" id="works">
-        <h2>Major Works of Avicenna (Ibn Sina)</h2>
+        <section class="narrative-block" id="works">
+          <h2>Major Works of Avicenna (Ibn Sina)</h2>
 
-        <p>
-          Avicenna was an extraordinarily prolific author, and the number of
-          works attributed to him is usually placed in the hundreds, although
-          questions of authorship and the survival of particular texts make an
-          exact total difficult to establish. His writings range across
-          philosophy, medicine, logic, natural science, theology, and shorter
-          treatises on specialized subjects.
-        </p>
+          <p>
+            Avicenna was an extraordinarily prolific author, and the number of
+            works attributed to him is usually placed in the hundreds, although
+            questions of authorship and the survival of particular texts make an
+            exact total difficult to establish. His writings range across
+            philosophy, medicine, logic, natural science, theology, and shorter
+            treatises on specialized subjects.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong>
-              <em>The Book of Healing</em>
-            </strong>
-            — Avicenna's major philosophical encyclopedia, covering logic,
-            physics, psychology, and metaphysics.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>
+                <em>The Book of Healing</em>
+              </strong>
+              — Avicenna's major philosophical encyclopedia, covering logic,
+              physics, psychology, and metaphysics.
+            </li>
 
-          <li>
-            <strong>
-              <em>The Canon of Medicine</em>
-            </strong>
-            — A comprehensive medical encyclopedia that became the standard
-            medical reference across the Islamic world and medieval Europe.
-          </li>
+            <li>
+              <strong>
+                <em>The Canon of Medicine</em>
+              </strong>
+              — A comprehensive medical encyclopedia that became the standard
+              medical reference across the Islamic world and medieval Europe.
+            </li>
 
-          <li>
-            <strong>
-              <em>The Book of Salvation</em>
-            </strong>
-            — A condensed philosophical companion to
-            <em>The Book of Healing</em>.
-          </li>
+            <li>
+              <strong>
+                <em>The Book of Salvation</em>
+              </strong>
+              — A condensed philosophical companion to
+              <em>The Book of Healing</em>.
+            </li>
 
-          <li>
-            <strong>
-              <em>Remarks and Admonitions</em> (al-Isharat wa al-Tanbihat)
-            </strong>
-            — A later, highly influential philosophical work covering logic,
-            natural philosophy, metaphysics, and spiritual themes.
-          </li>
+            <li>
+              <strong>
+                <em>Remarks and Admonitions</em> (al-Isharat wa al-Tanbihat)
+              </strong>
+              — A later, highly influential philosophical work covering logic,
+              natural philosophy, metaphysics, and spiritual themes.
+            </li>
 
-          <li>
-            <strong>
-              <em>The Book of Definitions</em>
-            </strong>
-            — A short work clarifying key philosophical terms and concepts.
-          </li>
+            <li>
+              <strong>
+                <em>The Book of Definitions</em>
+              </strong>
+              — A short work clarifying key philosophical terms and concepts.
+            </li>
 
-          <li>
-            <strong>
-              Autobiography and biographical continuation (with his student
-              al-Juzjani)
-            </strong>
-            — An important primary source for Avicenna's early life and
-            intellectual development.
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>
+                Autobiography and biographical continuation (with his student
+                al-Juzjani)
+              </strong>
+              — An important primary source for Avicenna's early life and
+              intellectual development.
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          MAIN IDEAS
          ===================================================== -->
 
-      <section class="narrative-block" id="key-ideas">
-        <h2>Avicenna's Main Philosophical Ideas</h2>
+        <section class="narrative-block" id="key-ideas">
+          <h2>Avicenna's Main Philosophical Ideas</h2>
 
-        <h3>1. The Necessary Existent</h3>
+          <h3>1. The Necessary Existent</h3>
 
-        <p>
-          Avicenna distinguishes between what is necessary in itself and what is
-          possible in itself, arguing that dependent beings ultimately require a
-          first principle whose existence is uncaused and necessary.
-        </p>
+          <p>
+            Avicenna distinguishes between what is necessary in itself and what
+            is possible in itself, arguing that dependent beings ultimately
+            require a first principle whose existence is uncaused and necessary.
+          </p>
 
-        <h3>2. The Flying Man and Self-Awareness</h3>
+          <h3>2. The Flying Man and Self-Awareness</h3>
 
-        <p>
-          Through the Flying Man thought experiment, Avicenna argues that a
-          person can possess immediate awareness of the self even without
-          awareness of external objects or of the body, supporting his account
-          of the soul's distinctive immaterial reality.
-        </p>
+          <p>
+            Through the Flying Man thought experiment, Avicenna argues that a
+            person can possess immediate awareness of the self even without
+            awareness of external objects or of the body, supporting his account
+            of the soul's distinctive immaterial reality.
+          </p>
 
-        <h3>3. Emanation and Cosmic Order</h3>
+          <h3>3. Emanation and Cosmic Order</h3>
 
-        <p>
-          Avicenna explains the ordered multiplicity of the cosmos through a
-          hierarchy of causes and separate intellects ultimately dependent upon
-          the Necessary Existent, combining Aristotelian and Neoplatonic
-          philosophical traditions.
-        </p>
+          <p>
+            Avicenna explains the ordered multiplicity of the cosmos through a
+            hierarchy of causes and separate intellects ultimately dependent
+            upon the Necessary Existent, combining Aristotelian and Neoplatonic
+            philosophical traditions.
+          </p>
 
-        <h3>4. Knowledge and the Active Intellect</h3>
+          <h3>4. Knowledge and the Active Intellect</h3>
 
-        <p>
-          Human knowledge begins with sensation and develops toward intellectual
-          understanding, while the Active Intellect plays a crucial role in the
-          actualization of intelligible knowledge within Avicenna's
-          philosophical system.
-        </p>
+          <p>
+            Human knowledge begins with sensation and develops toward
+            intellectual understanding, while the Active Intellect plays a
+            crucial role in the actualization of intelligible knowledge within
+            Avicenna's philosophical system.
+          </p>
 
-        <h3>5. Philosophy, Medicine, and the Human Being</h3>
+          <h3>5. Philosophy, Medicine, and the Human Being</h3>
 
-        <p>
-          Avicenna pursued philosophy and medicine as distinct but connected
-          sciences. Together they contributed to his wider effort to understand
-          reality, nature, the human body, the soul, and the causes governing
-          both health and knowledge.
-        </p>
-      </section>
+          <p>
+            Avicenna pursued philosophy and medicine as distinct but connected
+            sciences. Together they contributed to his wider effort to
+            understand reality, nature, the human body, the soul, and the causes
+            governing both health and knowledge.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          AVICENNA AND AL-KINDI / AL-FARABI
          ===================================================== -->
 
-      <section class="narrative-block" id="al-farabi-al-kindi">
-        <h2>Avicenna, Al-Kindi, and Al-Farabi: What Is the Connection?</h2>
+        <section class="narrative-block" id="al-farabi-al-kindi">
+          <h2>Avicenna, Al-Kindi, and Al-Farabi: What Is the Connection?</h2>
 
-        <p>
-          <strong>Avicenna, Al-Kindi, and Al-Farabi</strong> represent major
-          stages in the development of philosophy in the Arabic-speaking Islamic
-          world. Al-Kindi helped establish an early philosophical vocabulary in
-          Arabic and participated in the intellectual culture surrounding the
-          translation and interpretation of Greek scientific and philosophical
-          works.
-        </p>
+          <p>
+            <strong>Avicenna, Al-Kindi, and Al-Farabi</strong> represent major
+            stages in the development of philosophy in the Arabic-speaking
+            Islamic world. Al-Kindi helped establish an early philosophical
+            vocabulary in Arabic and participated in the intellectual culture
+            surrounding the translation and interpretation of Greek scientific
+            and philosophical works.
+          </p>
 
-        <p>
-          Al-Farabi developed a highly influential account of logic, philosophy,
-          metaphysics, politics, and the classification of the sciences.
-          Avicenna himself reports that a work by Al-Farabi helped him
-          understand the aim of Aristotle's <em>Metaphysics</em>, demonstrating
-          the important place Al-Farabi occupied in his intellectual
-          development.
-        </p>
+          <p>
+            Al-Farabi developed a highly influential account of logic,
+            philosophy, metaphysics, politics, and the classification of the
+            sciences. Avicenna himself reports that a work by Al-Farabi helped
+            him understand the aim of Aristotle's <em>Metaphysics</em>,
+            demonstrating the important place Al-Farabi occupied in his
+            intellectual development.
+          </p>
 
-        <p>
-          Avicenna inherited this philosophical tradition but transformed it
-          into a more comprehensive and distinctive system. His work introduced
-          new formulations of problems concerning existence, necessity, the
-          soul, causation, and knowledge, and these developments became central
-          to the subsequent history of Islamic philosophy.
-        </p>
+          <p>
+            Avicenna inherited this philosophical tradition but transformed it
+            into a more comprehensive and distinctive system. His work
+            introduced new formulations of problems concerning existence,
+            necessity, the soul, causation, and knowledge, and these
+            developments became central to the subsequent history of Islamic
+            philosophy.
+          </p>
 
-        <p>
-          The relationship among these philosophers should therefore be
-          understood as intellectual development rather than simple succession.
-          Each worked with inherited Greek materials while producing new
-          philosophical frameworks, and Avicenna's later influence became
-          possible partly because he built upon—and critically transformed—the
-          work of those who came before him.
-        </p>
-      </section>
+          <p>
+            The relationship among these philosophers should therefore be
+            understood as intellectual development rather than simple
+            succession. Each worked with inherited Greek materials while
+            producing new philosophical frameworks, and Avicenna's later
+            influence became possible partly because he built upon—and
+            critically transformed—the work of those who came before him.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          LEGACY
          ===================================================== -->
 
-      <section class="narrative-block" id="legacy">
-        <h2>Avicenna's Influence and Legacy</h2>
+        <section class="narrative-block" id="legacy">
+          <h2>Avicenna's Influence and Legacy</h2>
 
-        <p>
-          Avicenna's influence on later Islamic philosophy was immense.
-          <strong>Avicennism</strong> became one of the dominant philosophical
-          frameworks with which later thinkers had to engage, whether through
-          acceptance, revision, or criticism. Philosophers and theologians,
-          including <strong>Al-Ghazali</strong>, addressed problems and concepts
-          whose formulation had been profoundly shaped by Avicenna's system.
-        </p>
+          <p>
+            Avicenna's influence on later Islamic philosophy was immense.
+            <strong>Avicennism</strong> became one of the dominant philosophical
+            frameworks with which later thinkers had to engage, whether through
+            acceptance, revision, or criticism. Philosophers and theologians,
+            including <strong>Al-Ghazali</strong>, addressed problems and
+            concepts whose formulation had been profoundly shaped by Avicenna's
+            system.
+          </p>
 
-        <p>
-          His influence extended especially strongly into Persian philosophical
-          traditions, where Avicennian thought remained a major point of
-          reference for centuries. Later philosophers developed, criticized, and
-          transformed his theories, ensuring that his philosophy remained an
-          active intellectual tradition rather than simply a collection of
-          historical doctrines.     
-        </p>
+          <p>
+            His influence extended especially strongly into Persian
+            philosophical traditions, where Avicennian thought remained a major
+            point of reference for centuries. Later philosophers developed,
+            criticized, and transformed his theories, ensuring that his
+            philosophy remained an active intellectual tradition rather than
+            simply a collection of historical doctrines.
+          </p>
 
-        <p>
-          Avicenna's works were also translated into Latin and entered the
-          philosophical culture of medieval Europe. His discussions of being,
-          essence, existence, the soul, causation, and God influenced scholastic
-          debates and became important sources for philosophers who sometimes
-          adopted his arguments while rejecting other parts of his system.
-        </p>
+          <p>
+            Avicenna's works were also translated into Latin and entered the
+            philosophical culture of medieval Europe. His discussions of being,
+            essence, existence, the soul, causation, and God influenced
+            scholastic debates and became important sources for philosophers who
+            sometimes adopted his arguments while rejecting other parts of his
+            system.
+          </p>
 
-        <p>
-          His <em>Canon of Medicine</em> gave him an equally important
-          reputation in the history of science and medicine. Through its long
-          circulation in the Islamic world and in Latin Europe, Avicenna became
-          one of the rare historical figures whose influence extended deeply
-          into both philosophy and medical education.
-        </p>
+          <p>
+            His <em>Canon of Medicine</em> gave him an equally important
+            reputation in the history of science and medicine. Through its long
+            circulation in the Islamic world and in Latin Europe, Avicenna
+            became one of the rare historical figures whose influence extended
+            deeply into both philosophy and medical education.
+          </p>
 
-        <p>
-          Few medieval thinkers produced a philosophical system of such breadth
-          and subsequent influence. Avicenna's legacy lies not only in
-          individual doctrines but in his ability to construct an integrated
-          account of logic, science, metaphysics, psychology, theology, and
-          human knowledge.     
-        </p>
-      </section>
+          <p>
+            Few medieval thinkers produced a philosophical system of such
+            breadth and subsequent influence. Avicenna's legacy lies not only in
+            individual doctrines but in his ability to construct an integrated
+            account of logic, science, metaphysics, psychology, theology, and
+            human knowledge.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          SIMPLE EXPLANATION
          ===================================================== -->
 
-      <section class="narrative-block" id="explained-simply">
-        <h2>Avicenna's Philosophy Explained Simply</h2>
+        <section class="narrative-block" id="explained-simply">
+          <h2>Avicenna's Philosophy Explained Simply</h2>
 
-        <p>
-          Avicenna (Ibn Sina) can be understood as a philosopher who attempted
-          to build a unified explanation of reality. He asked what it means for
-          something to exist, why dependent things require causes, how the human
-          soul knows itself and the world, and how the entire cosmos ultimately
-          depends upon a first principle.
-        </p>
+          <p>
+            Avicenna (Ibn Sina) can be understood as a philosopher who attempted
+            to build a unified explanation of reality. He asked what it means
+            for something to exist, why dependent things require causes, how the
+            human soul knows itself and the world, and how the entire cosmos
+            ultimately depends upon a first principle.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong>Why does anything exist?</strong>
-            Avicenna distinguishes between things that depend upon causes and a
-            Necessary Existent that does not depend upon anything else for its
-            existence.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>Why does anything exist?</strong>
+              Avicenna distinguishes between things that depend upon causes and
+              a Necessary Existent that does not depend upon anything else for
+              its existence.
+            </li>
 
-          <li>
-            <strong>What is the soul?</strong>
-            The human rational soul is an immaterial principle whose reality
-            cannot be reduced simply to the body. The Flying Man explores this
-            through the problem of immediate self-awareness.
-          </li>
+            <li>
+              <strong>What is the soul?</strong>
+              The human rational soul is an immaterial principle whose reality
+              cannot be reduced simply to the body. The Flying Man explores this
+              through the problem of immediate self-awareness.
+            </li>
 
-          <li>
-            <strong>How does the universe work?</strong>
-            The cosmos forms an ordered hierarchy of causes and intellects whose
-            ultimate source is the Necessary Existent.
-          </li>
+            <li>
+              <strong>How does the universe work?</strong>
+              The cosmos forms an ordered hierarchy of causes and intellects
+              whose ultimate source is the Necessary Existent.
+            </li>
 
-          <li>
-            <strong>How do humans know things?</strong>
-            Knowledge begins with sensation and develops toward intellectual
-            understanding, with the Active Intellect playing a central role in
-            Avicenna's account of intelligible knowledge.
-          </li>
+            <li>
+              <strong>How do humans know things?</strong>
+              Knowledge begins with sensation and develops toward intellectual
+              understanding, with the Active Intellect playing a central role in
+              Avicenna's account of intelligible knowledge.
+            </li>
 
-          <li>
-            <strong>Why is Avicenna also famous in medicine?</strong>
-            Because his <em>Canon of Medicine</em> organized a vast body of
-            medical knowledge into a systematic framework that remained
-            influential for centuries.
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>Why is Avicenna also famous in medicine?</strong>
+              Because his <em>Canon of Medicine</em> organized a vast body of
+              medical knowledge into a systematic framework that remained
+              influential for centuries.
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          IMPORTANCE
          ===================================================== -->
 
-      <section class="narrative-block" id="importance">
-        <h2>Why Is Avicenna Important in the History of Philosophy?</h2>
+        <section class="narrative-block" id="importance">
+          <h2>Why Is Avicenna Important in the History of Philosophy?</h2>
 
-        <p>
-          Avicenna is important because he created one of the most comprehensive
-          and influential philosophical systems of the medieval period. His work
-          integrated logic, natural philosophy, psychology, metaphysics, and
-          theology into a highly structured intellectual framework that shaped
-          philosophical debate for centuries.
-         
-        </p>
+          <p>
+            Avicenna is important because he created one of the most
+            comprehensive and influential philosophical systems of the medieval
+            period. His work integrated logic, natural philosophy, psychology,
+            metaphysics, and theology into a highly structured intellectual
+            framework that shaped philosophical debate for centuries.
+          </p>
 
-        <p>
-          His analysis of necessity and possibility, his account of the
-          Necessary Existent, his theories of the soul and self-awareness, and
-          his explanation of human knowledge became major subjects of subsequent
-          philosophical and theological discussion. His influence extended
-          across Islamic, Jewish, and Christian intellectual traditions.
-        </p>
+          <p>
+            His analysis of necessity and possibility, his account of the
+            Necessary Existent, his theories of the soul and self-awareness, and
+            his explanation of human knowledge became major subjects of
+            subsequent philosophical and theological discussion. His influence
+            extended across Islamic, Jewish, and Christian intellectual
+            traditions.
+          </p>
 
-        <p>
-          Avicenna is also historically remarkable because his achievements were
-          not confined to philosophy. His <em>Canon of Medicine</em> made him
-          one of the most influential physicians of the medieval world,
-          demonstrating the extraordinary breadth of his scientific and
-          intellectual work.
-        </p>
+          <p>
+            Avicenna is also historically remarkable because his achievements
+            were not confined to philosophy. His <em>Canon of Medicine</em> made
+            him one of the most influential physicians of the medieval world,
+            demonstrating the extraordinary breadth of his scientific and
+            intellectual work.
+          </p>
 
-        <p>
-          His lasting importance lies in both the originality of his ideas and
-          the systematic power of his philosophy. Later thinkers could accept,
-          modify, or reject Avicenna's conclusions, but for centuries they could
-          scarcely ignore the conceptual framework he had created.
-            
-        </p>
-      </section>
+          <p>
+            His lasting importance lies in both the originality of his ideas and
+            the systematic power of his philosophy. Later thinkers could accept,
+            modify, or reject Avicenna's conclusions, but for centuries they
+            could scarcely ignore the conceptual framework he had created.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          FAQ
          ===================================================== -->
 
-      <section class="narrative-block" id="faq">
-        <h2>Frequently Asked Questions About Avicenna</h2>
+        <section class="narrative-block" id="faq">
+          <h2>Frequently Asked Questions About Avicenna</h2>
 
-        <h3>Who was Avicenna?</h3>
+          <h3>Who was Avicenna?</h3>
 
-        <p>
-          Avicenna, known as Ibn Sina, was an eleventh-century Islamic
-          philosopher and physician regarded as one of the most systematic
-          thinkers in the history of Islamic philosophy.
-        </p>
+          <p>
+            Avicenna, known as Ibn Sina, was an eleventh-century Islamic
+            philosopher and physician regarded as one of the most systematic
+            thinkers in the history of Islamic philosophy.
+          </p>
 
-        <h3>What is Avicenna known for?</h3>
+          <h3>What is Avicenna known for?</h3>
 
-        <p>
-          Avicenna is known for his systematic philosophy of the Necessary
-          Existent, the Flying Man argument concerning the soul, his
-          philosophical encyclopedia <em>The Book of Healing</em>, and his
-          medical encyclopedia <em>The Canon of Medicine</em>.
-        </p>
+          <p>
+            Avicenna is known for his systematic philosophy of the Necessary
+            Existent, the Flying Man argument concerning the soul, his
+            philosophical encyclopedia <em>The Book of Healing</em>, and his
+            medical encyclopedia <em>The Canon of Medicine</em>.
+          </p>
 
-        <h3>Was Avicenna a doctor or a philosopher?</h3>
+          <h3>Was Avicenna a doctor or a philosopher?</h3>
 
-        <p>
-          Avicenna was both. He was a practicing physician and the author of the
-          influential <em>Canon of Medicine</em>, as well as a systematic
-          philosopher whose ideas shaped Islamic and medieval European thought.
-        </p>
+          <p>
+            Avicenna was both. He was a practicing physician and the author of
+            the influential <em>Canon of Medicine</em>, as well as a systematic
+            philosopher whose ideas shaped Islamic and medieval European
+            thought.
+          </p>
 
-        <h3>What is Avicenna's philosophy?</h3>
+          <h3>What is Avicenna's philosophy?</h3>
 
-        <p>
-          Avicenna's philosophy combines Aristotelian and Neoplatonic ideas into
-          a systematic account of metaphysics, logic, psychology, cosmology, and
-          ethics, centered on the distinction between necessary and contingent
-          existence.
-        </p>
+          <p>
+            Avicenna's philosophy combines Aristotelian and Neoplatonic ideas
+            into a systematic account of metaphysics, logic, psychology,
+            cosmology, and ethics, centered on the distinction between necessary
+            and contingent existence.
+          </p>
 
-        <h3>What is the Necessary Existent in Avicenna's philosophy?</h3>
+          <h3>What is the Necessary Existent in Avicenna's philosophy?</h3>
 
-        <p>
-          The Necessary Existent is Avicenna's term for a being whose existence
-          requires no external cause. He identifies this being with God and
-          argues that all contingent existence ultimately depends on it.
-        </p>
+          <p>
+            The Necessary Existent is Avicenna's term for a being whose
+            existence requires no external cause. He identifies this being with
+            God and argues that all contingent existence ultimately depends on
+            it.
+          </p>
 
-        <h3>What is Avicenna's Flying Man argument?</h3>
+          <h3>What is Avicenna's Flying Man argument?</h3>
 
-        <p>
-          The Flying Man argument imagines a person with no sensory contact with
-          their body or the external world who would nevertheless still affirm
-          their own existence, an argument Avicenna uses to support the soul's
-          independence from the body.
-        </p>
+          <p>
+            The Flying Man argument imagines a person with no sensory contact
+            with their body or the external world who would nevertheless still
+            affirm their own existence, an argument Avicenna uses to support the
+            soul's independence from the body.
+          </p>
 
-        <h3>What did Avicenna believe about the soul?</h3>
+          <h3>What did Avicenna believe about the soul?</h3>
 
-        <p>
-          Avicenna believed the human rational soul is an immaterial substance
-          distinct from the body, capable of surviving the body's death.
-        </p>
+          <p>
+            Avicenna believed the human rational soul is an immaterial substance
+            distinct from the body, capable of surviving the body's death.
+          </p>
 
-        <h3>What is Avicenna's most famous book?</h3>
+          <h3>What is Avicenna's most famous book?</h3>
 
-        <p>
-          Avicenna's most important philosophical work is
-          <em>The Book of Healing</em>, while his most famous medical work is
-          <em>The Canon of Medicine</em>.
-        </p>
+          <p>
+            Avicenna's most important philosophical work is
+            <em>The Book of Healing</em>, while his most famous medical work is
+            <em>The Canon of Medicine</em>.
+          </p>
 
-        <h3>How did Avicenna influence later philosophy?</h3>
+          <h3>How did Avicenna influence later philosophy?</h3>
 
-        <p>
-          Avicenna's systematic philosophy, sometimes called Avicennism,
-          influenced later Islamic thinkers such as Al-Ghazali and was
-          translated into Latin, where it shaped medieval European scholastic
-          philosophy and theology.
-        </p>
+          <p>
+            Avicenna's systematic philosophy, sometimes called Avicennism,
+            influenced later Islamic thinkers such as Al-Ghazali and was
+            translated into Latin, where it shaped medieval European scholastic
+            philosophy and theology.
+          </p>
 
-        <h3>What is the difference between Avicenna and Al-Kindi?</h3>
+          <h3>What is the difference between Avicenna and Al-Kindi?</h3>
 
-        <p>
-          Al-Kindi was an earlier, foundational figure who helped establish
-          Arabic philosophical vocabulary and promote Greek philosophy, while
-          Avicenna, working a century later, produced a far more systematic and
-          comprehensive philosophical framework built partly on the groundwork
-          laid by Al-Kindi and Al-Farabi.
-        </p>
+          <p>
+            Al-Kindi was an earlier, foundational figure who helped establish
+            Arabic philosophical vocabulary and promote Greek philosophy, while
+            Avicenna, working a century later, produced a far more systematic
+            and comprehensive philosophical framework built partly on the
+            groundwork laid by Al-Kindi and Al-Farabi.
+          </p>
 
-        <h3>Did Avicenna believe in God?</h3>
+          <h3>Did Avicenna believe in God?</h3>
 
-        <p>
-          Yes. Avicenna's metaphysics argues for the existence of a Necessary
-          Existent, which he identifies with God, as the ultimate ground of all
-          contingent existence.
-        </p>
-      </section>
+          <p>
+            Yes. Avicenna's metaphysics argues for the existence of a Necessary
+            Existent, which he identifies with God, as the ultimate ground of
+            all contingent existence.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED THINKERS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-thinkers-title">
-        <span class="section-eyebrow"> Continue Exploring </span>
+        <section class="connection" aria-labelledby="related-thinkers-title">
+          <span class="section-eyebrow"> Continue Exploring </span>
 
-        <h2 id="related-thinkers-title">
-          Related Islamic and Arabic Philosophers
-        </h2>
+          <h2 id="related-thinkers-title">
+            Related Islamic and Arabic Philosophers
+          </h2>
 
-        <p>
-          Explore other major thinkers in the development of Islamic philosophy,
-          Arabic philosophy, Persian philosophy, and medieval intellectual
-          history.
-        </p>
+          <p>
+            Explore other major thinkers in the development of Islamic
+            philosophy, Arabic philosophy, Persian philosophy, and medieval
+            intellectual history.
+          </p>
 
-        <div class="related-links">
-          <a href="al-kindi.html"> Al-Kindi </a>
-          ·
+          <div class="related-links">
+            <a href="al-kindi.html"> Al-Kindi </a>
+            ·
 
-          <a href="al-farabi.html"> Al-Farabi </a>
-          ·
+            <a href="al-farabi.html"> Al-Farabi </a>
+            ·
 
-          <a href="al-ghazali.html"> Al-Ghazali </a>
-          ·
+            <a href="al-ghazali.html"> Al-Ghazali </a>
+            ·
 
-          <a href="averroes.html"> Averroes (Ibn Rushd) </a>
-          ·
+            <a href="averroes.html"> Averroes (Ibn Rushd) </a>
+            ·
 
-          <a href="suhrawardi.html"> Suhrawardi </a>
-          ·
+            <a href="suhrawardi.html"> Suhrawardi </a>
+            ·
 
-          <a href="ibn-arabi.html"> Ibn Arabi </a>
-        </div>
-      </section>
+            <a href="ibn-arabi.html"> Ibn Arabi </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED AREAS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-topics-title">
-        <span class="section-eyebrow"> Philosophical Connections </span>
+        <section class="connection" aria-labelledby="related-topics-title">
+          <span class="section-eyebrow"> Philosophical Connections </span>
 
-        <h2 id="related-topics-title">Related Areas of Philosophy</h2>
+          <h2 id="related-topics-title">Related Areas of Philosophy</h2>
 
-        <p>
-          Avicenna's work connects the history of Islamic philosophy with
-          metaphysics, epistemology, philosophy of mind, ethics, cosmology, and
-          the transmission of Greek philosophy.
-        </p>
+          <p>
+            Avicenna's work connects the history of Islamic philosophy with
+            metaphysics, epistemology, philosophy of mind, ethics, cosmology,
+            and the transmission of Greek philosophy.
+          </p>
 
-        <div class="related-links">
-          <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
-          ·
+          <div class="related-links">
+            <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
+            ·
 
-          <a href="epistemology-branch-philosophy.html"> Epistemology </a>
-          ·
+            <a href="epistemology-branch-philosophy.html"> Epistemology </a>
+            ·
 
-          <a href="ethics-branch-philosophy.html"> Ethics </a>
-          ·
+            <a href="ethics-branch-philosophy.html"> Ethics </a>
+            ·
 
-          <a href="islamic-philosophy.html"> Islamic Philosophy </a>
-          ·
+            <a href="islamic-philosophy.html"> Islamic Philosophy </a>
+            ·
 
-          <a href="ancient-greece.html"> Ancient Greek Philosophy </a>
-          ·
+            <a href="ancient-greece.html"> Ancient Greek Philosophy </a>
+            ·
 
-          <a href="schools.html"> Schools of Philosophy </a>
-        </div>
-      </section>
+            <a href="schools.html"> Schools of Philosophy </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          CONCLUSION
          ===================================================== -->
 
-      <section class="narrative-block" aria-labelledby="conclusion-title">
-        <span class="section-eyebrow"> Classical Islamic Philosophy </span>
+        <section class="narrative-block" aria-labelledby="conclusion-title">
+          <span class="section-eyebrow"> Classical Islamic Philosophy </span>
 
-        <h2 id="conclusion-title">Why Avicenna Still Matters</h2>
+          <h2 id="conclusion-title">Why Avicenna Still Matters</h2>
 
-        <p>
-          Avicenna occupies a central position in the history of Islamic and
-          world philosophy. Building on the earlier work of Al-Kindi and
-          Al-Farabi, he constructed the most systematic philosophical framework
-          of the classical Islamic period, addressing logic, metaphysics,
-          psychology, cosmology, and ethics within a single coherent system.
-        </p>
+          <p>
+            Avicenna occupies a central position in the history of Islamic and
+            world philosophy. Building on the earlier work of Al-Kindi and
+            Al-Farabi, he constructed the most systematic philosophical
+            framework of the classical Islamic period, addressing logic,
+            metaphysics, psychology, cosmology, and ethics within a single
+            coherent system.
+          </p>
 
-        <p>
-          His arguments for the Necessary Existent and the immaterial soul,
-          together with his Flying Man thought experiment, remain among the most
-          discussed contributions of medieval philosophy. His parallel
-          achievement in medicine, through the <em>Canon of Medicine</em>, gave
-          him an influence that extended far beyond philosophy itself.
-        </p>
+          <p>
+            His arguments for the Necessary Existent and the immaterial soul,
+            together with his Flying Man thought experiment, remain among the
+            most discussed contributions of medieval philosophy. His parallel
+            achievement in medicine, through the <em>Canon of Medicine</em>,
+            gave him an influence that extended far beyond philosophy itself.
+          </p>
 
-        <p>
-          Understanding Avicenna also helps explain the intellectual background
-          against which later thinkers such as Al-Ghazali and Averroes developed
-          their own responses to the philosophical tradition.
-        </p>
+          <p>
+            Understanding Avicenna also helps explain the intellectual
+            background against which later thinkers such as Al-Ghazali and
+            Averroes developed their own responses to the philosophical
+            tradition.
+          </p>
 
-        <a class="cta-button" href="thinkers.html">
-          Explore Great Philosophers
-          <span aria-hidden="true">&rarr;</span>
-        </a>
-      </section>
-    </main>
+          <a class="cta-button" href="thinkers.html">
+            Explore Great Philosophers
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </section>
+      </main>
+    </div>
 
     <!-- =====================================================
        FOOTER
@@ -2037,8 +2120,8 @@
        SCRIPTS
        ===================================================== -->
 
-     <script src="script.js" defer></script>
-     <script src="article-toc.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="article-toc.js" defer></script>
 
     <script src="branches-enhance.js" defer></script>
 

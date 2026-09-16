@@ -99,7 +99,7 @@
 
     <meta name="theme-color" content="#b88a44" />
 
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="article-toc.css" />
     <link rel="stylesheet" href="nav-bar.css" />
 
@@ -394,10 +394,10 @@
       }
     </script>
     <link
-    rel="describedby"
-    href="https://agnostickind.github.io/philosophy-website/llms.txt"
-  >
-</head>
+      rel="describedby"
+      href="https://agnostickind.github.io/philosophy-website/llms.txt"
+    />
+  </head>
 
   <body>
     <!-- =====================================================
@@ -687,12 +687,11 @@
         </div>
 
         <a href="schools.html">Schools</a>
-       <a href="books.html">Books</a>
+        <a href="books.html">Books</a>
         <a href="world-literature.html">Literature</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </div>
-
 
       <div class="nav-tools">
         <!-- SEARCH -->
@@ -790,1966 +789,2068 @@
       </div>
     </header>
 
-    <main id="main-content" tabindex="-1">
-      <!-- =====================================================
+    <div class="article-reading-area">
+      <!-- =========================================================
+     ARTICLE TABLE OF CONTENTS
+     ========================================================= -->
+
+      <!-- Desktop TOC -->
+      <aside class="article-toc" aria-label="Article contents">
+        <div class="article-toc__header">
+          <span class="article-toc__title">Contents</span>
+
+          <button
+            type="button"
+            class="article-toc__hide"
+            aria-label="Hide article contents"
+          >
+            Hide
+          </button>
+        </div>
+
+        <nav class="article-toc__nav" aria-label="Article sections">
+          <div class="article-toc__list"></div>
+        </nav>
+      </aside>
+
+      <!-- Mobile TOC trigger -->
+      <button
+        type="button"
+        class="mobile-toc-trigger"
+        aria-expanded="false"
+        aria-controls="mobile-toc-drawer"
+      >
+        <span>Contents</span>
+        <span class="mobile-toc-trigger__chevron" aria-hidden="true">⌄</span>
+      </button>
+
+      <!-- Mobile TOC overlay -->
+      <div class="mobile-toc-overlay" hidden></div>
+
+      <!-- Mobile TOC drawer -->
+      <aside
+        id="mobile-toc-drawer"
+        class="mobile-toc-drawer"
+        aria-label="Article contents"
+        aria-hidden="true"
+      >
+        <div class="mobile-toc-drawer__header">
+          <span class="mobile-toc-drawer__title">Contents</span>
+
+          <button
+            type="button"
+            class="mobile-toc-drawer__close"
+            aria-label="Close article contents"
+          >
+            ×
+          </button>
+        </div>
+
+        <nav class="mobile-toc-drawer__nav" aria-label="Article sections">
+          <div class="mobile-toc-drawer__list"></div>
+        </nav>
+      </aside>
+
+      <main id="main-content" tabindex="-1">
+        <!-- =====================================================
          INTRODUCTION
          ===================================================== -->
 
-      <section class="about-home">
-        <h2>Who Was Al-Farabi?</h2>
+        <section class="about-home">
+          <h2>Who Was Al-Farabi?</h2>
 
-        <p>
-          <strong>Al-Farabi</strong> (Abū Naṣr Muḥammad ibn Muḥammad al-Fārābī,
-          c. 870–950/951 CE) was one of the most important philosophers of the
-          medieval Islamic world. His writings addressed a remarkably wide range
-          of subjects, including
-          <strong
-            >logic, metaphysics, psychology, ethics, political philosophy, the
-            philosophy of religion, mathematics, and music</strong
-          >. He became especially influential for his attempt to present
-          philosophy as a coherent system concerned with both the nature of
-          reality and the achievement of human perfection.
-        </p>
+          <p>
+            <strong>Al-Farabi</strong> (Abū Naṣr Muḥammad ibn Muḥammad
+            al-Fārābī, c. 870–950/951 CE) was one of the most important
+            philosophers of the medieval Islamic world. His writings addressed a
+            remarkably wide range of subjects, including
+            <strong
+              >logic, metaphysics, psychology, ethics, political philosophy, the
+              philosophy of religion, mathematics, and music</strong
+            >. He became especially influential for his attempt to present
+            philosophy as a coherent system concerned with both the nature of
+            reality and the achievement of human perfection.
+          </p>
 
-        <p>
-          Al-Farabi lived during a period in which the Arabic-speaking
-          intellectual world had inherited and developed a large body of Greek
-          philosophical and scientific learning. His thought shows a deep
-          engagement with <strong>Aristotle and Plato</strong>, as well as with
-          the late antique philosophical traditions through which much Greek
-          philosophy had reached the Islamic world. Rather than merely repeating
-          these earlier thinkers, he developed original theories about
-          intellect, knowledge, human happiness, religion, and political life.
-        </p>
+          <p>
+            Al-Farabi lived during a period in which the Arabic-speaking
+            intellectual world had inherited and developed a large body of Greek
+            philosophical and scientific learning. His thought shows a deep
+            engagement with <strong>Aristotle and Plato</strong>, as well as
+            with the late antique philosophical traditions through which much
+            Greek philosophy had reached the Islamic world. Rather than merely
+            repeating these earlier thinkers, he developed original theories
+            about intellect, knowledge, human happiness, religion, and political
+            life.
+          </p>
 
-        <p>
-          He became known in later philosophical tradition as the
-          <strong>"Second Teacher"</strong>, with Aristotle regarded as the
-          "First Teacher." This title reflects the exceptional importance of his
-          work on logic and his role in explaining and organizing the
-          Aristotelian philosophical tradition for later thinkers. His
-          <strong>Enumeration of the Sciences</strong> was particularly
-          important as an attempt to classify the major fields of human
-          knowledge.
-        </p>
+          <p>
+            He became known in later philosophical tradition as the
+            <strong>"Second Teacher"</strong>, with Aristotle regarded as the
+            "First Teacher." This title reflects the exceptional importance of
+            his work on logic and his role in explaining and organizing the
+            Aristotelian philosophical tradition for later thinkers. His
+            <strong>Enumeration of the Sciences</strong> was particularly
+            important as an attempt to classify the major fields of human
+            knowledge.
+          </p>
 
-        <p>
-          One of Al-Farabi's best-known political ideas appears in his
-          conception of the <strong>Virtuous City</strong> (<em
-            >al-Madīnah al-Fāḍilah</em
-          >). For him, the highest purpose of a well-ordered political community
-          was not simply wealth, security, or power, but the achievement of
-          genuine human happiness and perfection. A virtuous society therefore
-          required cooperation, education, and forms of leadership capable of
-          guiding people toward their highest intellectual and moral ends.
-        </p>
+          <p>
+            One of Al-Farabi's best-known political ideas appears in his
+            conception of the <strong>Virtuous City</strong> (<em
+              >al-Madīnah al-Fāḍilah</em
+            >). For him, the highest purpose of a well-ordered political
+            community was not simply wealth, security, or power, but the
+            achievement of genuine human happiness and perfection. A virtuous
+            society therefore required cooperation, education, and forms of
+            leadership capable of guiding people toward their highest
+            intellectual and moral ends.
+          </p>
 
-        <p>
-          Al-Farabi's importance extends beyond political philosophy. He
-          produced major writings on the nature of the intellect and human
-          knowledge and also wrote the <strong>Great Book of Music</strong>, one
-          of the most significant medieval works on music theory in the Islamic
-          world. His philosophical synthesis strongly influenced later Islamic
-          thinkers, particularly <strong>Avicenna</strong>, and helped establish
-          a lasting tradition of philosophical inquiry within the medieval
-          Islamic world.
-        </p>
-      </section>
-      <div class="philosophy-divider"></div>
+          <p>
+            Al-Farabi's importance extends beyond political philosophy. He
+            produced major writings on the nature of the intellect and human
+            knowledge and also wrote the <strong>Great Book of Music</strong>,
+            one of the most significant medieval works on music theory in the
+            Islamic world. His philosophical synthesis strongly influenced later
+            Islamic thinkers, particularly <strong>Avicenna</strong>, and helped
+            establish a lasting tradition of philosophical inquiry within the
+            medieval Islamic world.
+          </p>
+        </section>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          QUICK FACTS
          ===================================================== -->
 
-      <section class="narrative-block" id="quick-facts">
-        <h2>Al-Farabi: Quick Facts</h2>
+        <section class="narrative-block" id="quick-facts">
+          <h2>Al-Farabi: Quick Facts</h2>
 
-        <ul class="plain-list">
-          <li>
-            <strong>Full name</strong> — Abū Naṣr Muḥammad ibn Muḥammad
-            al-Fārābī
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>Full name</strong> — Abū Naṣr Muḥammad ibn Muḥammad
+              al-Fārābī
+            </li>
 
-          <li><strong>Born</strong> — c. 870 CE</li>
+            <li><strong>Born</strong> — c. 870 CE</li>
 
-          <li><strong>Died</strong> — c. 950–951 CE</li>
+            <li><strong>Died</strong> — c. 950–951 CE</li>
 
-          <li>
-            <strong>Known as</strong> — Al-Farabi, Alfarabius, and the "Second
-            Master"
-          </li>
+            <li>
+              <strong>Known as</strong> — Al-Farabi, Alfarabius, and the "Second
+              Master"
+            </li>
 
-          <li>
-            <strong>Philosophical tradition</strong> — Arabic and Islamic
-            philosophy
-          </li>
+            <li>
+              <strong>Philosophical tradition</strong> — Arabic and Islamic
+              philosophy
+            </li>
 
-          <li>
-            <strong>Major influences</strong> — Plato, Aristotle, and
-            Neoplatonic philosophy
-          </li>
+            <li>
+              <strong>Major influences</strong> — Plato, Aristotle, and
+              Neoplatonic philosophy
+            </li>
 
-          <li>
-            <strong>Major subjects</strong> — Logic, metaphysics, epistemology,
-            psychology, ethics, political philosophy, religion, and music
-          </li>
+            <li>
+              <strong>Major subjects</strong> — Logic, metaphysics,
+              epistemology, psychology, ethics, political philosophy, religion,
+              and music
+            </li>
 
-          <li>
-            <strong>Best-known political concept</strong> — The Virtuous City
-          </li>
+            <li>
+              <strong>Best-known political concept</strong> — The Virtuous City
+            </li>
 
-          <li>
-            <strong>Important philosophical concept</strong> — The Active
-            Intellect
-          </li>
+            <li>
+              <strong>Important philosophical concept</strong> — The Active
+              Intellect
+            </li>
 
-          <li>
-            <strong>Major work</strong> —
-            <em>The Opinions of the People of the Virtuous City</em>
-          </li>
+            <li>
+              <strong>Major work</strong> —
+              <em>The Opinions of the People of the Virtuous City</em>
+            </li>
 
-          <li>
-            <strong>Other major work</strong> —
-            <em>Enumeration of the Sciences</em>
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>Other major work</strong> —
+              <em>Enumeration of the Sciences</em>
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      LIFE
      ===================================================== -->
 
-      <section class="narrative-block" id="life">
-        <h2>Al-Farabi's Life and Historical Background</h2>
-        <figure class="narrative-figure">
-          <img
-            src="images/al-frabi-ancient-islamic.jpg"
-            alt="Representation of Al-Farabi, medieval Islamic philosopher"
-            loading="lazy"
-            decoding="async"
-          />
+        <section class="narrative-block" id="life">
+          <h2>Al-Farabi's Life and Historical Background</h2>
+          <figure class="narrative-figure">
+            <img
+              src="images/al-frabi-ancient-islamic.jpg"
+              alt="Representation of Al-Farabi, medieval Islamic philosopher"
+              loading="lazy"
+              decoding="async"
+            />
 
-          <figcaption>
-            Al-Farabi was one of the major philosophers of the medieval Islamic
-            intellectual tradition.
-          </figcaption>
-        </figure>
+            <figcaption>
+              Al-Farabi was one of the major philosophers of the medieval
+              Islamic intellectual tradition.
+            </figcaption>
+          </figure>
 
-        <p>
-          Reliable information about Al-Farabi's early life is limited. He was
-          probably born around 870 CE in or near Farab in Central Asia and later
-          moved toward the major intellectual centers of the Islamic world. His
-          formative years therefore unfolded within a broad cultural environment
-          in which Persian, Arabic, Greek, and other intellectual traditions
-          interacted. Although later biographical accounts provide additional
-          details, many of those stories cannot be established with complete
-          certainty.
-        </p>
+          <p>
+            Reliable information about Al-Farabi's early life is limited. He was
+            probably born around 870 CE in or near Farab in Central Asia and
+            later moved toward the major intellectual centers of the Islamic
+            world. His formative years therefore unfolded within a broad
+            cultural environment in which Persian, Arabic, Greek, and other
+            intellectual traditions interacted. Although later biographical
+            accounts provide additional details, many of those stories cannot be
+            established with complete certainty.
+          </p>
 
-        <p>
-          He spent important periods of his intellectual life in
-          <strong>Baghdad</strong>, where he studied philosophy and logic, and
-          later lived in Syria, including Damascus. Baghdad was then one of the
-          most important centers of scholarship in the Islamic world, supporting
-          extensive work in philosophy, mathematics, medicine, astronomy,
-          grammar, and logic. Al-Farabi's intellectual development was closely
-          connected with this wider scholarly environment and with the
-          continuing study of philosophical works inherited from ancient Greek
-          traditions.
-        </p>
+          <p>
+            He spent important periods of his intellectual life in
+            <strong>Baghdad</strong>, where he studied philosophy and logic, and
+            later lived in Syria, including Damascus. Baghdad was then one of
+            the most important centers of scholarship in the Islamic world,
+            supporting extensive work in philosophy, mathematics, medicine,
+            astronomy, grammar, and logic. Al-Farabi's intellectual development
+            was closely connected with this wider scholarly environment and with
+            the continuing study of philosophical works inherited from ancient
+            Greek traditions.
+          </p>
 
-        <p>
-          Unlike many later biographical stories about philosophers, the details
-          of Al-Farabi's life should be treated cautiously. Modern scholarship
-          emphasizes that relatively little information about his biography can
-          be established with confidence. Accounts concerning his education,
-          teachers, travels, languages, occupations, and personal circumstances
-          sometimes contain legendary or conflicting elements. This makes his
-          philosophical writings especially important for understanding his
-          intellectual career rather than relying entirely on later biographies.
-        </p>
+          <p>
+            Unlike many later biographical stories about philosophers, the
+            details of Al-Farabi's life should be treated cautiously. Modern
+            scholarship emphasizes that relatively little information about his
+            biography can be established with confidence. Accounts concerning
+            his education, teachers, travels, languages, occupations, and
+            personal circumstances sometimes contain legendary or conflicting
+            elements. This makes his philosophical writings especially important
+            for understanding his intellectual career rather than relying
+            entirely on later biographies.
+          </p>
 
-        <p>
-          Al-Farabi's historical importance is closely connected with the
-          intellectual movement through which Greek philosophy was studied,
-          translated, interpreted, and developed in the medieval Islamic world.
-          He engaged deeply with Aristotle's logic and philosophy while also
-          examining Plato, mathematics, political philosophy, metaphysics,
-          music, and the organization of the sciences. His work consequently
-          belongs to a period in which philosophers were not merely preserving
-          earlier ideas but were actively reorganizing and extending them within
-          new intellectual and cultural contexts.
-        </p>
+          <p>
+            Al-Farabi's historical importance is closely connected with the
+            intellectual movement through which Greek philosophy was studied,
+            translated, interpreted, and developed in the medieval Islamic
+            world. He engaged deeply with Aristotle's logic and philosophy while
+            also examining Plato, mathematics, political philosophy,
+            metaphysics, music, and the organization of the sciences. His work
+            consequently belongs to a period in which philosophers were not
+            merely preserving earlier ideas but were actively reorganizing and
+            extending them within new intellectual and cultural contexts.
+          </p>
 
-        <p>
-          Al-Farabi is generally associated with the final years of his life in
-          Syria, and he died in Damascus around 950 or 951 CE. Despite the
-          limited biographical evidence, his later reputation became
-          exceptionally influential. He was remembered as a major authority on
-          logic and philosophy and was traditionally given the title of the
-          <strong>"Second Master"</strong> after Aristotle. His writings helped
-          establish a systematic philosophical vocabulary and framework that
-          influenced later thinkers, including Avicenna and other philosophers
-          of the medieval Islamic and Jewish intellectual traditions.
-        </p>
-      </section>
+          <p>
+            Al-Farabi is generally associated with the final years of his life
+            in Syria, and he died in Damascus around 950 or 951 CE. Despite the
+            limited biographical evidence, his later reputation became
+            exceptionally influential. He was remembered as a major authority on
+            logic and philosophy and was traditionally given the title of the
+            <strong>"Second Master"</strong> after Aristotle. His writings
+            helped establish a systematic philosophical vocabulary and framework
+            that influenced later thinkers, including Avicenna and other
+            philosophers of the medieval Islamic and Jewish intellectual
+            traditions.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
      SECOND MASTER
      ===================================================== -->
 
-      <section class="narrative-block" id="second-master">
-        <h2>Why Is Al-Farabi Called the Second Master?</h2>
+        <section class="narrative-block" id="second-master">
+          <h2>Why Is Al-Farabi Called the Second Master?</h2>
 
-        <p>
-          Al-Farabi is traditionally known as the
-          <strong>"Second Master"</strong>, while Aristotle is regarded as the
-          "First Master." The title reflects Al-Farabi's extraordinary
-          reputation as a philosopher and especially as a scholar of
-          <strong>logic</strong>. It expresses the exceptionally high status
-          medieval intellectual traditions attributed to his work in organizing,
-          explaining, and developing philosophical knowledge.
-        </p>
+          <p>
+            Al-Farabi is traditionally known as the
+            <strong>"Second Master"</strong>, while Aristotle is regarded as the
+            "First Master." The title reflects Al-Farabi's extraordinary
+            reputation as a philosopher and especially as a scholar of
+            <strong>logic</strong>. It expresses the exceptionally high status
+            medieval intellectual traditions attributed to his work in
+            organizing, explaining, and developing philosophical knowledge.
+          </p>
 
-        <p>
-          His extensive engagement with Aristotle helped make him one of the
-          most influential interpreters of Aristotelian philosophy in the
-          medieval Islamic world. Al-Farabi studied and commented on major areas
-          of Aristotelian thought, particularly logic and metaphysics, while
-          also engaging with Plato and other philosophical traditions. His
-          writings helped make Greek philosophical ideas more systematic and
-          accessible within the intellectual environment of the Islamic world.
-        </p>
+          <p>
+            His extensive engagement with Aristotle helped make him one of the
+            most influential interpreters of Aristotelian philosophy in the
+            medieval Islamic world. Al-Farabi studied and commented on major
+            areas of Aristotelian thought, particularly logic and metaphysics,
+            while also engaging with Plato and other philosophical traditions.
+            His writings helped make Greek philosophical ideas more systematic
+            and accessible within the intellectual environment of the Islamic
+            world.
+          </p>
 
-        <p>
-          The title should not be interpreted as meaning that Al-Farabi simply
-          copied Aristotle. His writings develop original approaches to logic,
-          metaphysics, intellect, political philosophy, religion, and music. He
-          was particularly interested in how different branches of knowledge
-          relate to one another and how philosophy can provide an ordered
-          account of reality, human knowledge, and the organization of society.
-        </p>
+          <p>
+            The title should not be interpreted as meaning that Al-Farabi simply
+            copied Aristotle. His writings develop original approaches to logic,
+            metaphysics, intellect, political philosophy, religion, and music.
+            He was particularly interested in how different branches of
+            knowledge relate to one another and how philosophy can provide an
+            ordered account of reality, human knowledge, and the organization of
+            society.
+          </p>
 
-        <p>
-          Al-Farabi's importance as the "Second Master" is also connected with
-          his attempt to clarify the structure of philosophical knowledge. His
-          works on logic examine reasoning, demonstration, definition, and the
-          forms through which knowledge can be organized. For Al-Farabi, logic
-          was not merely an isolated technical discipline; it served as an
-          instrument that could help distinguish sound reasoning from error and
-          provide a foundation for disciplined intellectual inquiry.
-        </p>
+          <p>
+            Al-Farabi's importance as the "Second Master" is also connected with
+            his attempt to clarify the structure of philosophical knowledge. His
+            works on logic examine reasoning, demonstration, definition, and the
+            forms through which knowledge can be organized. For Al-Farabi, logic
+            was not merely an isolated technical discipline; it served as an
+            instrument that could help distinguish sound reasoning from error
+            and provide a foundation for disciplined intellectual inquiry.
+          </p>
 
-        <p>
-          The title therefore reflects both Al-Farabi's relationship with the
-          earlier Greek philosophical tradition and his own contribution to its
-          development. By interpreting Aristotle while also engaging with Plato,
-          political philosophy, metaphysics, ethics, and the sciences, Al-Farabi
-          helped shape the philosophical tradition that later influenced
-          thinkers such as Avicenna and other philosophers of the medieval
-          Islamic world. His reputation as the "Second Master" consequently
-          represents his historical role as a major interpreter, organizer, and
-          creative developer of philosophy rather than merely a follower of
-          Aristotle.
-        </p>
-      </section>
+          <p>
+            The title therefore reflects both Al-Farabi's relationship with the
+            earlier Greek philosophical tradition and his own contribution to
+            its development. By interpreting Aristotle while also engaging with
+            Plato, political philosophy, metaphysics, ethics, and the sciences,
+            Al-Farabi helped shape the philosophical tradition that later
+            influenced thinkers such as Avicenna and other philosophers of the
+            medieval Islamic world. His reputation as the "Second Master"
+            consequently represents his historical role as a major interpreter,
+            organizer, and creative developer of philosophy rather than merely a
+            follower of Aristotle.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          GREEK PHILOSOPHY
          ===================================================== -->
 
-      <section class="narrative-block" id="greek-influences">
-        <h2>Al-Farabi and Greek Philosophy</h2>
+        <section class="narrative-block" id="greek-influences">
+          <h2>Al-Farabi and Greek Philosophy</h2>
 
-        <p>
-          <strong>Greek philosophy</strong> provided one of the most important
-          intellectual foundations for Al-Farabi's philosophical work. He was
-          deeply engaged with the legacy of Aristotle, while also drawing upon
-          Plato and the late antique traditions through which Greek philosophy
-          had been transmitted to the Arabic-speaking intellectual world.
-        </p>
+          <p>
+            <strong>Greek philosophy</strong> provided one of the most important
+            intellectual foundations for Al-Farabi's philosophical work. He was
+            deeply engaged with the legacy of Aristotle, while also drawing upon
+            Plato and the late antique traditions through which Greek philosophy
+            had been transmitted to the Arabic-speaking intellectual world.
+          </p>
 
-        <p>
-          Al-Farabi's understanding of Aristotle was shaped not only by the
-          original Aristotelian tradition but also by the Neoplatonic and
-          Alexandrian commentators who had organized and interpreted Greek
-          philosophy in late antiquity. This intellectual background helps
-          explain why Aristotelian logic, Platonic political thought, and
-          Neoplatonic metaphysical ideas could appear together in his work.
-        </p>
+          <p>
+            Al-Farabi's understanding of Aristotle was shaped not only by the
+            original Aristotelian tradition but also by the Neoplatonic and
+            Alexandrian commentators who had organized and interpreted Greek
+            philosophy in late antiquity. This intellectual background helps
+            explain why Aristotelian logic, Platonic political thought, and
+            Neoplatonic metaphysical ideas could appear together in his work.
+          </p>
 
-        <p>
-          Al-Farabi was particularly concerned with the apparent relationship
-          between Plato and Aristotle. A work traditionally attributed to him,
-          <em>The Harmonization of the Two Opinions of the Two Sages</em>,
-          attempts to show that important disagreements between Plato and
-          Aristotle can be reconciled within a broader philosophical unity. The
-          authenticity of this work, however, remains a subject of scholarly
-          debate.
-        </p>
+          <p>
+            Al-Farabi was particularly concerned with the apparent relationship
+            between Plato and Aristotle. A work traditionally attributed to him,
+            <em>The Harmonization of the Two Opinions of the Two Sages</em>,
+            attempts to show that important disagreements between Plato and
+            Aristotle can be reconciled within a broader philosophical unity.
+            The authenticity of this work, however, remains a subject of
+            scholarly debate.
+          </p>
 
-        <p>
-          The attempt to harmonize Greek philosophical traditions was also
-          complicated by the transmission of texts into Arabic. Some writings
-          circulating in the Islamic world under Aristotle's name were actually
-          derived from later Neoplatonic thinkers, especially Plotinus. As a
-          result, the boundaries between Aristotelian and Neoplatonic ideas were
-          sometimes understood differently from the way modern scholarship
-          distinguishes them.
-        </p>
+          <p>
+            The attempt to harmonize Greek philosophical traditions was also
+            complicated by the transmission of texts into Arabic. Some writings
+            circulating in the Islamic world under Aristotle's name were
+            actually derived from later Neoplatonic thinkers, especially
+            Plotinus. As a result, the boundaries between Aristotelian and
+            Neoplatonic ideas were sometimes understood differently from the way
+            modern scholarship distinguishes them.
+          </p>
 
-        <p>
-          His political philosophy likewise shows a significant engagement with
-          Greek thought, particularly the Platonic concern with the just and
-          well-ordered city. Al-Farabi developed these ideas within his own
-          philosophical framework, connecting political order with ethics,
-          knowledge, human happiness, and the intellectual development of the
-          community.
-        </p>
+          <p>
+            His political philosophy likewise shows a significant engagement
+            with Greek thought, particularly the Platonic concern with the just
+            and well-ordered city. Al-Farabi developed these ideas within his
+            own philosophical framework, connecting political order with ethics,
+            knowledge, human happiness, and the intellectual development of the
+            community.
+          </p>
 
-        <p>
-          Al-Farabi therefore did not simply reproduce Greek philosophy. His
-          achievement lay in interpreting, organizing, and developing this
-          inheritance within the intellectual world of the medieval Islamic
-          civilization. Through this work, he became an important figure in the
-          transmission of Greek philosophy and in the formation of the later
-          Islamic philosophical tradition.
-        </p>
-      </section>
+          <p>
+            Al-Farabi therefore did not simply reproduce Greek philosophy. His
+            achievement lay in interpreting, organizing, and developing this
+            inheritance within the intellectual world of the medieval Islamic
+            civilization. Through this work, he became an important figure in
+            the transmission of Greek philosophy and in the formation of the
+            later Islamic philosophical tradition.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          LOGIC
          ===================================================== -->
 
-      <section class="narrative-block" id="logic">
-        <h2>Al-Farabi's Philosophy of Logic</h2>
+        <section class="narrative-block" id="logic">
+          <h2>Al-Farabi's Philosophy of Logic</h2>
 
-        <p>
-          <strong>Logic</strong> was one of Al-Farabi's most important
-          philosophical interests. He regarded it as an instrumental science
-          that provides the mind with rules for correct reasoning and helps
-          protect human thought from error, confusion, and invalid inference.
-        </p>
+          <p>
+            <strong>Logic</strong> was one of Al-Farabi's most important
+            philosophical interests. He regarded it as an instrumental science
+            that provides the mind with rules for correct reasoning and helps
+            protect human thought from error, confusion, and invalid inference.
+          </p>
 
-        <p>
-          Al-Farabi wrote extensively on the logical tradition associated with
-          Aristotle's <em>Organon</em>. His writings include commentaries,
-          summaries, and independent treatises dealing with concepts,
-          propositions, definitions, syllogisms, demonstration, and the
-          different forms through which human beings reason and argue.
-        </p>
+          <p>
+            Al-Farabi wrote extensively on the logical tradition associated with
+            Aristotle's <em>Organon</em>. His writings include commentaries,
+            summaries, and independent treatises dealing with concepts,
+            propositions, definitions, syllogisms, demonstration, and the
+            different forms through which human beings reason and argue.
+          </p>
 
-        <p>
-          For Al-Farabi, the highest form of logical reasoning was
-          <strong>demonstration</strong>, because demonstration aims at genuine
-          knowledge and certainty rather than mere persuasion or opinion. In
-          this respect, logic was not simply a technical discipline but an
-          essential instrument for philosophy and the systematic pursuit of
-          truth.
-        </p>
+          <p>
+            For Al-Farabi, the highest form of logical reasoning was
+            <strong>demonstration</strong>, because demonstration aims at
+            genuine knowledge and certainty rather than mere persuasion or
+            opinion. In this respect, logic was not simply a technical
+            discipline but an essential instrument for philosophy and the
+            systematic pursuit of truth.
+          </p>
 
-        <p>
-          One of the most distinctive features of his thought is his analysis of
-          the relationship between <strong>logic and language</strong>.
-          Al-Farabi compared logic to grammar: grammar provides rules governing
-          the expressions of a particular language, whereas logic provides more
-          universal rules governing the concepts and intelligible meanings with
-          which the human mind reasons.
-        </p>
+          <p>
+            One of the most distinctive features of his thought is his analysis
+            of the relationship between <strong>logic and language</strong>.
+            Al-Farabi compared logic to grammar: grammar provides rules
+            governing the expressions of a particular language, whereas logic
+            provides more universal rules governing the concepts and
+            intelligible meanings with which the human mind reasons.
+          </p>
 
-        <p>
-          His conception of logic was also broader than the modern tendency to
-          identify logic only with formal deduction. Following the late antique
-          interpretation of Aristotle's logical corpus, Al-Farabi examined
-          demonstrative, dialectical, rhetorical, sophistical, and poetic forms
-          of reasoning and considered the different purposes they serve in
-          intellectual and social life.
-        </p>
+          <p>
+            His conception of logic was also broader than the modern tendency to
+            identify logic only with formal deduction. Following the late
+            antique interpretation of Aristotle's logical corpus, Al-Farabi
+            examined demonstrative, dialectical, rhetorical, sophistical, and
+            poetic forms of reasoning and considered the different purposes they
+            serve in intellectual and social life.
+          </p>
 
-        <p>
-          Al-Farabi's work made a major contribution to the development of the
-          Arabic logical tradition and helped establish logic as a central part
-          of philosophical education in the medieval Islamic world. His
-          influence can be seen in later thinkers, including Avicenna, and his
-          discussions of logic and language remained important for subsequent
-          Islamic and medieval philosophical traditions.
-        </p>
-      </section>
+          <p>
+            Al-Farabi's work made a major contribution to the development of the
+            Arabic logical tradition and helped establish logic as a central
+            part of philosophical education in the medieval Islamic world. His
+            influence can be seen in later thinkers, including Avicenna, and his
+            discussions of logic and language remained important for subsequent
+            Islamic and medieval philosophical traditions.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          ENUMERATION
          ===================================================== -->
 
-      <section class="narrative-block" id="enumeration">
-        <h2>Al-Farabi's Enumeration of the Sciences</h2>
+        <section class="narrative-block" id="enumeration">
+          <h2>Al-Farabi's Enumeration of the Sciences</h2>
 
-        <p>
-          <em>Enumeration of the Sciences</em>
-          (<em>Iḥṣāʾ al-ʿUlūm</em>) is one of Al-Farabi's most important works
-          for understanding his classification of human knowledge. Rather than
-          presenting philosophy as a collection of unrelated subjects, the work
-          attempts to show how the major intellectual disciplines can be
-          distinguished, organized, and understood in relation to one another.
-        </p>
+          <p>
+            <em>Enumeration of the Sciences</em>
+            (<em>Iḥṣāʾ al-ʿUlūm</em>) is one of Al-Farabi's most important works
+            for understanding his classification of human knowledge. Rather than
+            presenting philosophy as a collection of unrelated subjects, the
+            work attempts to show how the major intellectual disciplines can be
+            distinguished, organized, and understood in relation to one another.
+          </p>
 
-        <p>
-          Al-Farabi's classification includes
-          <strong
-            >language, logic, mathematics, natural science, metaphysics,
-            political science, jurisprudence, and theology</strong
-          >. Mathematics itself encompasses several disciplines, while his
-          treatment of the sciences also considers the methods, objects, and
-          purposes that distinguish one form of inquiry from another.
-        </p>
+          <p>
+            Al-Farabi's classification includes
+            <strong
+              >language, logic, mathematics, natural science, metaphysics,
+              political science, jurisprudence, and theology</strong
+            >. Mathematics itself encompasses several disciplines, while his
+            treatment of the sciences also considers the methods, objects, and
+            purposes that distinguish one form of inquiry from another.
+          </p>
 
-        <p>
-          The work demonstrates how broadly Al-Farabi understood philosophy and
-          intellectual education. Logic serves as an instrument for disciplined
-          reasoning, while the theoretical sciences investigate different levels
-          of reality and the practical sciences concern human action and
-          political life. Knowledge therefore possesses an intelligible order
-          rather than being merely an accumulation of isolated information.
-        </p>
+          <p>
+            The work demonstrates how broadly Al-Farabi understood philosophy
+            and intellectual education. Logic serves as an instrument for
+            disciplined reasoning, while the theoretical sciences investigate
+            different levels of reality and the practical sciences concern human
+            action and political life. Knowledge therefore possesses an
+            intelligible order rather than being merely an accumulation of
+            isolated information.
+          </p>
 
-        <p>
-          The <em>Enumeration</em> also had an important historical influence
-          because classifications of knowledge helped shape educational and
-          philosophical traditions beyond Al-Farabi's immediate intellectual
-          environment. Parts of the work became known in medieval Europe through
-          Latin translation, contributing to wider discussions about the
-          organization and hierarchy of the sciences.
-        </p>
-      </section>
+          <p>
+            The <em>Enumeration</em> also had an important historical influence
+            because classifications of knowledge helped shape educational and
+            philosophical traditions beyond Al-Farabi's immediate intellectual
+            environment. Parts of the work became known in medieval Europe
+            through Latin translation, contributing to wider discussions about
+            the organization and hierarchy of the sciences.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          METAPHYSICS
          ===================================================== -->
 
-      <section class="narrative-block" id="metaphysics">
-        <h2>What Was Al-Farabi's Philosophy of Metaphysics?</h2>
+        <section class="narrative-block" id="metaphysics">
+          <h2>What Was Al-Farabi's Philosophy of Metaphysics?</h2>
 
-        <p>
-          <strong>Al-Farabi's metaphysics</strong> investigates existence,
-          causation, the structure of reality, and the relationship between the
-          First Existent and the beings that depend upon it. His metaphysical
-          writings also examine fundamental philosophical distinctions,
-          including the difference between things existing outside the mind and
-          the concepts through which the mind understands them.
-        </p>
+          <p>
+            <strong>Al-Farabi's metaphysics</strong> investigates existence,
+            causation, the structure of reality, and the relationship between
+            the First Existent and the beings that depend upon it. His
+            metaphysical writings also examine fundamental philosophical
+            distinctions, including the difference between things existing
+            outside the mind and the concepts through which the mind understands
+            them.
+          </p>
 
-        <p>
-          At the highest level of his cosmological framework stands the
-          <strong>First Existent</strong>, the ultimate principle upon which all
-          other beings depend. From this first principle proceeds an ordered
-          hierarchy of intellectual and celestial realities, providing Al-Farabi
-          with a philosophical account of the relationship between ultimate
-          reality and the changing world of human experience.
-        </p>
+          <p>
+            At the highest level of his cosmological framework stands the
+            <strong>First Existent</strong>, the ultimate principle upon which
+            all other beings depend. From this first principle proceeds an
+            ordered hierarchy of intellectual and celestial realities, providing
+            Al-Farabi with a philosophical account of the relationship between
+            ultimate reality and the changing world of human experience.
+          </p>
 
-        <p>
-          His cosmological system is often described in terms of
-          <strong>emanation</strong>. The First Existent is understood as the
-          ultimate source from which the ordered universe proceeds, while the
-          successive intellects are connected with the celestial order. This
-          framework combines questions about causation, cosmology, and the
-          hierarchy of being.
-        </p>
+          <p>
+            His cosmological system is often described in terms of
+            <strong>emanation</strong>. The First Existent is understood as the
+            ultimate source from which the ordered universe proceeds, while the
+            successive intellects are connected with the celestial order. This
+            framework combines questions about causation, cosmology, and the
+            hierarchy of being.
+          </p>
 
-        <p>
-          Al-Farabi's metaphysics cannot, however, be reduced simply to
-          Neoplatonism. His writings also contain strongly Aristotelian
-          treatments of being, categories, causation, and the objects of
-          metaphysical inquiry. Modern scholarship therefore emphasizes the
-          complexity of the philosophical traditions that were brought together
-          within his broader system.
-        </p>
+          <p>
+            Al-Farabi's metaphysics cannot, however, be reduced simply to
+            Neoplatonism. His writings also contain strongly Aristotelian
+            treatments of being, categories, causation, and the objects of
+            metaphysical inquiry. Modern scholarship therefore emphasizes the
+            complexity of the philosophical traditions that were brought
+            together within his broader system.
+          </p>
 
-        <p>
-          Metaphysics is also closely connected with the rest of Al-Farabi's
-          philosophy. His account of the First Existent and the cosmic hierarchy
-          provides the background for his theories of intellect and human
-          knowledge, while his political philosophy ultimately connects human
-          perfection with an understanding of the place of human beings within
-          the larger order of reality.
-        </p>
-      </section>
+          <p>
+            Metaphysics is also closely connected with the rest of Al-Farabi's
+            philosophy. His account of the First Existent and the cosmic
+            hierarchy provides the background for his theories of intellect and
+            human knowledge, while his political philosophy ultimately connects
+            human perfection with an understanding of the place of human beings
+            within the larger order of reality.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          GOD / FIRST CAUSE
          ===================================================== -->
 
-      <section class="narrative-block" id="first-existent">
-        <h2>Al-Farabi's Philosophy of God and the First Existent</h2>
+        <section class="narrative-block" id="first-existent">
+          <h2>Al-Farabi's Philosophy of God and the First Existent</h2>
 
-        <p>
-          In Al-Farabi's metaphysics, the
-          <strong>First Existent</strong> occupies the highest position in the
-          hierarchy of reality. The First is absolutely prior to everything else
-          and does not depend upon another cause for its existence. Other beings
-          ultimately depend upon the First in a way that distinguishes the
-          ultimate principle from the caused and dependent realities below it.
-        </p>
+          <p>
+            In Al-Farabi's metaphysics, the
+            <strong>First Existent</strong> occupies the highest position in the
+            hierarchy of reality. The First is absolutely prior to everything
+            else and does not depend upon another cause for its existence. Other
+            beings ultimately depend upon the First in a way that distinguishes
+            the ultimate principle from the caused and dependent realities below
+            it.
+          </p>
 
-        <p>
-          Al-Farabi's philosophical discussion of the First Existent is not
-          simply a repetition of religious theology. He seeks to investigate the
-          ultimate principle of reality through metaphysical analysis, asking
-          what kind of being can stand at the highest level of the causal and
-          intelligible order of the universe.
-        </p>
+          <p>
+            Al-Farabi's philosophical discussion of the First Existent is not
+            simply a repetition of religious theology. He seeks to investigate
+            the ultimate principle of reality through metaphysical analysis,
+            asking what kind of being can stand at the highest level of the
+            causal and intelligible order of the universe.
+          </p>
 
-        <p>
-          From the First Existent proceeds an ordered hierarchy of intellectual
-          and celestial realities. Through this cosmological framework,
-          Al-Farabi explains how the multiplicity of the universe can be related
-          to a single ultimate principle without treating the world as
-          independent of its highest source.
-        </p>
+          <p>
+            From the First Existent proceeds an ordered hierarchy of
+            intellectual and celestial realities. Through this cosmological
+            framework, Al-Farabi explains how the multiplicity of the universe
+            can be related to a single ultimate principle without treating the
+            world as independent of its highest source.
+          </p>
 
-        <p>
-          His philosophical account of God therefore forms an important
-          connection between
-          <strong>metaphysics, cosmology, and philosophy of religion</strong>.
-          The First Existent provides the ultimate foundation of his account of
-          the universe, while the hierarchy proceeding from it helps explain the
-          structure within which human intellectual life takes place.
-        </p>
-      </section>
+          <p>
+            His philosophical account of God therefore forms an important
+            connection between
+            <strong>metaphysics, cosmology, and philosophy of religion</strong>.
+            The First Existent provides the ultimate foundation of his account
+            of the universe, while the hierarchy proceeding from it helps
+            explain the structure within which human intellectual life takes
+            place.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          INTELLECT
          ===================================================== -->
 
-      <section class="narrative-block" id="intellect">
-        <h2>Al-Farabi's Theory of Intellect</h2>
+        <section class="narrative-block" id="intellect">
+          <h2>Al-Farabi's Theory of Intellect</h2>
 
-        <p>
-          The <strong>theory of intellect</strong> is one of the most important
-          parts of Al-Farabi's philosophy. He investigates how human beings move
-          from the capacity for knowledge toward actual intellectual
-          understanding, making the development of the intellect central to his
-          accounts of psychology, epistemology, human perfection, and happiness.
-        </p>
+          <p>
+            The <strong>theory of intellect</strong> is one of the most
+            important parts of Al-Farabi's philosophy. He investigates how human
+            beings move from the capacity for knowledge toward actual
+            intellectual understanding, making the development of the intellect
+            central to his accounts of psychology, epistemology, human
+            perfection, and happiness.
+          </p>
 
-        <p>
-          In his <em>Epistle on the Intellect</em>, Al-Farabi discusses
-          different meanings and forms of intellect. His philosophical account
-          includes the potential intellect, actual intellect, acquired
-          intellect, and the <strong>Active Intellect</strong>, although these
-          distinctions must be understood within his wider attempt to explain
-          how intelligible knowledge becomes actual in the human mind.
-        </p>
+          <p>
+            In his <em>Epistle on the Intellect</em>, Al-Farabi discusses
+            different meanings and forms of intellect. His philosophical account
+            includes the potential intellect, actual intellect, acquired
+            intellect, and the <strong>Active Intellect</strong>, although these
+            distinctions must be understood within his wider attempt to explain
+            how intelligible knowledge becomes actual in the human mind.
+          </p>
 
-        <p>
-          The potential intellect represents the human capacity to receive and
-          understand intelligible forms. Through intellectual activity, this
-          capacity becomes actualized. The development of knowledge is therefore
-          not merely the passive collection of information but a transformation
-          of the rational powers that belong to human beings.
-        </p>
+          <p>
+            The potential intellect represents the human capacity to receive and
+            understand intelligible forms. Through intellectual activity, this
+            capacity becomes actualized. The development of knowledge is
+            therefore not merely the passive collection of information but a
+            transformation of the rational powers that belong to human beings.
+          </p>
 
-        <p>
-          The acquired intellect represents a more advanced stage of
-          intellectual development and is associated with the human being's
-          approach toward greater perfection. Al-Farabi consequently understands
-          intellectual achievement as a graded process in which the rational
-          soul moves from potentiality toward increasingly complete forms of
-          understanding.
-        </p>
+          <p>
+            The acquired intellect represents a more advanced stage of
+            intellectual development and is associated with the human being's
+            approach toward greater perfection. Al-Farabi consequently
+            understands intellectual achievement as a graded process in which
+            the rational soul moves from potentiality toward increasingly
+            complete forms of understanding.
+          </p>
 
-        <p>
-          The Active Intellect plays a crucial role in his epistemology and
-          psychology. It is connected with the principles through which human
-          beings can attain intelligible knowledge and develop their rational
-          capacities, linking the structure of the cosmos with the highest
-          possibilities of human intellectual life.
-        </p>
-      </section>
+          <p>
+            The Active Intellect plays a crucial role in his epistemology and
+            psychology. It is connected with the principles through which human
+            beings can attain intelligible knowledge and develop their rational
+            capacities, linking the structure of the cosmos with the highest
+            possibilities of human intellectual life.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          ACTIVE INTELLECT
          ===================================================== -->
 
-      <section class="narrative-block" id="active-intellect">
-        <h2>What Is the Active Intellect in Al-Farabi's Philosophy?</h2>
+        <section class="narrative-block" id="active-intellect">
+          <h2>What Is the Active Intellect in Al-Farabi's Philosophy?</h2>
 
-        <p>
-          The <strong>Active Intellect</strong> is an immaterial intellect that
-          occupies a crucial position in Al-Farabi's philosophical psychology
-          and cosmology. It belongs to the hierarchy of separate intellects
-          associated with his account of the celestial order and also has a
-          decisive relationship to human intellectual development.
-        </p>
+          <p>
+            The <strong>Active Intellect</strong> is an immaterial intellect
+            that occupies a crucial position in Al-Farabi's philosophical
+            psychology and cosmology. It belongs to the hierarchy of separate
+            intellects associated with his account of the celestial order and
+            also has a decisive relationship to human intellectual development.
+          </p>
 
-        <p>
-          The Active Intellect plays a role in making intelligible knowledge
-          possible for human beings. In Al-Farabi's account, the human intellect
-          does not begin with complete intellectual knowledge already realized;
-          it must develop from potentiality toward actuality through the
-          acquisition and understanding of intelligible principles.
-        </p>
+          <p>
+            The Active Intellect plays a role in making intelligible knowledge
+            possible for human beings. In Al-Farabi's account, the human
+            intellect does not begin with complete intellectual knowledge
+            already realized; it must develop from potentiality toward actuality
+            through the acquisition and understanding of intelligible
+            principles.
+          </p>
 
-        <p>
-          The Active Intellect is also connected with the sublunary world and
-          with the processes through which human beings attain the principles of
-          understanding. This gives it a distinctive mediating role between the
-          higher cosmological hierarchy and the intellectual capacities of
-          embodied human beings.
-        </p>
+          <p>
+            The Active Intellect is also connected with the sublunary world and
+            with the processes through which human beings attain the principles
+            of understanding. This gives it a distinctive mediating role between
+            the higher cosmological hierarchy and the intellectual capacities of
+            embodied human beings.
+          </p>
 
-        <p>
-          The Active Intellect is therefore important not only to Al-Farabi's
-          <strong>philosophy of mind</strong> but also to his account of human
-          perfection and happiness. The highest development of the human
-          intellect depends upon a process through which rational capacities are
-          increasingly actualized and brought toward their proper fulfillment.
-        </p>
-      </section>
+          <p>
+            The Active Intellect is therefore important not only to Al-Farabi's
+            <strong>philosophy of mind</strong> but also to his account of human
+            perfection and happiness. The highest development of the human
+            intellect depends upon a process through which rational capacities
+            are increasingly actualized and brought toward their proper
+            fulfillment.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          EPISTEMOLOGY
          ===================================================== -->
 
-      <section class="narrative-block" id="epistemology">
-        <h2>Al-Farabi's Epistemology and Theory of Knowledge</h2>
+        <section class="narrative-block" id="epistemology">
+          <h2>Al-Farabi's Epistemology and Theory of Knowledge</h2>
 
-        <p>
-          <strong>Al-Farabi's epistemology</strong> examines how human beings
-          acquire knowledge and how intellectual capacities develop from
-          potentiality into actuality. His account connects sensation,
-          imagination, rational understanding, and the different methods through
-          which human beings arrive at varying degrees of certainty.
-        </p>
+          <p>
+            <strong>Al-Farabi's epistemology</strong> examines how human beings
+            acquire knowledge and how intellectual capacities develop from
+            potentiality into actuality. His account connects sensation,
+            imagination, rational understanding, and the different methods
+            through which human beings arrive at varying degrees of certainty.
+          </p>
 
-        <p>
-          Human beings initially possess rational capacities that must be
-          developed through intellectual activity, education, experience, and
-          the acquisition of knowledge. Sensory experience provides an important
-          starting point, but human understanding becomes distinctively
-          intellectual when the mind is able to grasp intelligible meanings and
-          universal principles.
-        </p>
+          <p>
+            Human beings initially possess rational capacities that must be
+            developed through intellectual activity, education, experience, and
+            the acquisition of knowledge. Sensory experience provides an
+            important starting point, but human understanding becomes
+            distinctively intellectual when the mind is able to grasp
+            intelligible meanings and universal principles.
+          </p>
 
-        <p>
-          Al-Farabi also distinguishes between different forms of reasoning.
-          Demonstration occupies the highest position because it aims at secure
-          and properly established knowledge, while dialectical, rhetorical, and
-          other forms of argument perform different functions within education,
-          inquiry, and communication.
-        </p>
+          <p>
+            Al-Farabi also distinguishes between different forms of reasoning.
+            Demonstration occupies the highest position because it aims at
+            secure and properly established knowledge, while dialectical,
+            rhetorical, and other forms of argument perform different functions
+            within education, inquiry, and communication.
+          </p>
 
-        <p>
-          The perfection of the intellect is closely connected with the highest
-          human goal. For Al-Farabi, genuine happiness depends upon the
-          development and perfection of the rational faculty. Knowledge is
-          therefore not merely useful for practical survival but part of the
-          fulfillment of human nature itself.
-        </p>
-      </section>
+          <p>
+            The perfection of the intellect is closely connected with the
+            highest human goal. For Al-Farabi, genuine happiness depends upon
+            the development and perfection of the rational faculty. Knowledge is
+            therefore not merely useful for practical survival but part of the
+            fulfillment of human nature itself.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          HAPPINESS
          ===================================================== -->
 
-      <section class="narrative-block" id="happiness">
-        <h2>What Did Al-Farabi Mean by Happiness?</h2>
+        <section class="narrative-block" id="happiness">
+          <h2>What Did Al-Farabi Mean by Happiness?</h2>
 
-        <p>
-          <strong>Happiness</strong> (<em>saʿāda</em>) is one of the central
-          concepts in Al-Farabi's philosophy. He does not understand happiness
-          simply as pleasure, wealth, status, or physical comfort. These may be
-          desired as subordinate goods, but they do not by themselves constitute
-          the highest fulfillment available to human beings.
-        </p>
+          <p>
+            <strong>Happiness</strong> (<em>saʿāda</em>) is one of the central
+            concepts in Al-Farabi's philosophy. He does not understand happiness
+            simply as pleasure, wealth, status, or physical comfort. These may
+            be desired as subordinate goods, but they do not by themselves
+            constitute the highest fulfillment available to human beings.
+          </p>
 
-        <p>
-          Genuine happiness is connected with
-          <strong>human perfection</strong>, especially the perfection of the
-          rational and intellectual capacities. A human being must develop
-          knowledge and virtue in order to approach the highest form of
-          happiness, because the proper end of human life involves the
-          fulfillment of specifically human capacities.
-        </p>
+          <p>
+            Genuine happiness is connected with
+            <strong>human perfection</strong>, especially the perfection of the
+            rational and intellectual capacities. A human being must develop
+            knowledge and virtue in order to approach the highest form of
+            happiness, because the proper end of human life involves the
+            fulfillment of specifically human capacities.
+          </p>
 
-        <p>
-          This perfection is both intellectual and practical. Knowledge alone
-          does not make a human life complete if the individual's choices and
-          actions remain disordered. Al-Farabi therefore connects intellectual
-          understanding with virtue, education, habituation, and the proper
-          direction of human action.
-        </p>
+          <p>
+            This perfection is both intellectual and practical. Knowledge alone
+            does not make a human life complete if the individual's choices and
+            actions remain disordered. Al-Farabi therefore connects intellectual
+            understanding with virtue, education, habituation, and the proper
+            direction of human action.
+          </p>
 
-        <p>
-          This explains why Al-Farabi's ethics and political philosophy are
-          closely connected. Society should be organized in a way that helps
-          human beings pursue genuine happiness rather than merely satisfying
-          bodily needs or acquiring wealth and power. Political life has a
-          higher purpose because communities can assist human beings in pursuing
-          forms of perfection difficult to achieve in isolation.
-        </p>
-      </section>
+          <p>
+            This explains why Al-Farabi's ethics and political philosophy are
+            closely connected. Society should be organized in a way that helps
+            human beings pursue genuine happiness rather than merely satisfying
+            bodily needs or acquiring wealth and power. Political life has a
+            higher purpose because communities can assist human beings in
+            pursuing forms of perfection difficult to achieve in isolation.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          POLITICAL PHILOSOPHY
          ===================================================== -->
 
-      <section class="narrative-block" id="political-philosophy">
-        <h2>What Was Al-Farabi's Political Philosophy?</h2>
+        <section class="narrative-block" id="political-philosophy">
+          <h2>What Was Al-Farabi's Political Philosophy?</h2>
 
-        <p>
-          <strong>Al-Farabi's political philosophy</strong> asks what kind of
-          society can enable human beings to achieve their highest perfection
-          and genuine happiness. Political inquiry is therefore inseparable from
-          his understanding of human nature and from the question of what
-          constitutes the proper end of human life.
-        </p>
+          <p>
+            <strong>Al-Farabi's political philosophy</strong> asks what kind of
+            society can enable human beings to achieve their highest perfection
+            and genuine happiness. Political inquiry is therefore inseparable
+            from his understanding of human nature and from the question of what
+            constitutes the proper end of human life.
+          </p>
 
-        <p>
-          He does not regard political organization as merely a system for
-          providing food, security, economic activity, and physical survival. A
-          properly ordered society should also guide its citizens toward
-          intellectual and moral development and establish forms of cooperation
-          directed toward genuinely human ends.
-        </p>
+          <p>
+            He does not regard political organization as merely a system for
+            providing food, security, economic activity, and physical survival.
+            A properly ordered society should also guide its citizens toward
+            intellectual and moral development and establish forms of
+            cooperation directed toward genuinely human ends.
+          </p>
 
-        <p>
-          Human beings require association because individuals depend upon one
-          another for the conditions of life and for the development of their
-          capacities. The political community is therefore not simply an
-          accidental gathering of people but an organized form of cooperation
-          capable of directing collective life toward different possible ends.
-        </p>
+          <p>
+            Human beings require association because individuals depend upon one
+            another for the conditions of life and for the development of their
+            capacities. The political community is therefore not simply an
+            accidental gathering of people but an organized form of cooperation
+            capable of directing collective life toward different possible ends.
+          </p>
 
-        <p>
-          His political thought therefore connects
-          <strong
-            >politics, ethics, psychology, metaphysics, education, and
-            philosophy</strong
-          >. The nature of a political order depends ultimately upon what it
-          understands to be human perfection, because different communities
-          pursue different conceptions of what is genuinely good.
-        </p>
+          <p>
+            His political thought therefore connects
+            <strong
+              >politics, ethics, psychology, metaphysics, education, and
+              philosophy</strong
+            >. The nature of a political order depends ultimately upon what it
+            understands to be human perfection, because different communities
+            pursue different conceptions of what is genuinely good.
+          </p>
 
-        <p>
-          The central model of his political philosophy is the virtuous regime,
-          whose guiding purpose is the realization of human excellence. This
-          makes Al-Farabi's political philosophy fundamentally teleological:
-          political institutions are evaluated not merely by their power or
-          stability but by the ends toward which they direct communal life.
-        </p>
-      </section>
+          <p>
+            The central model of his political philosophy is the virtuous
+            regime, whose guiding purpose is the realization of human
+            excellence. This makes Al-Farabi's political philosophy
+            fundamentally teleological: political institutions are evaluated not
+            merely by their power or stability but by the ends toward which they
+            direct communal life.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          VIRTUOUS CITY
          ===================================================== -->
 
-      <section class="narrative-block" id="virtuous-city">
-        <h2>What Is Al-Farabi's Virtuous City?</h2>
+        <section class="narrative-block" id="virtuous-city">
+          <h2>What Is Al-Farabi's Virtuous City?</h2>
 
-        <p>
-          The <strong>Virtuous City</strong> (<em>al-Madīna al-Fāḍila</em>) is
-          Al-Farabi's most famous political concept. It describes a community in
-          which people cooperate to achieve genuine happiness and human
-          perfection. Its members are united not simply by geographical
-          proximity or economic exchange but by participation in a common
-          understanding of the highest human end.
-        </p>
+          <p>
+            The <strong>Virtuous City</strong> (<em>al-Madīna al-Fāḍila</em>) is
+            Al-Farabi's most famous political concept. It describes a community
+            in which people cooperate to achieve genuine happiness and human
+            perfection. Its members are united not simply by geographical
+            proximity or economic exchange but by participation in a common
+            understanding of the highest human end.
+          </p>
 
-        <p>
-          In an excellent city, political institutions and social relationships
-          should be directed toward the proper human end rather than merely
-          toward material survival. The different activities within the
-          community ideally cooperate as parts of a larger whole, with each
-          contributing to the conditions necessary for collective flourishing.
-        </p>
+          <p>
+            In an excellent city, political institutions and social
+            relationships should be directed toward the proper human end rather
+            than merely toward material survival. The different activities
+            within the community ideally cooperate as parts of a larger whole,
+            with each contributing to the conditions necessary for collective
+            flourishing.
+          </p>
 
-        <p>
-          Al-Farabi frequently explains political order through analogies with
-          the natural and living order of the universe. Just as the parts of a
-          living organism perform different functions within an organized whole,
-          the members and institutions of a political community possess
-          different roles within a coordinated social order.
-        </p>
+          <p>
+            Al-Farabi frequently explains political order through analogies with
+            the natural and living order of the universe. Just as the parts of a
+            living organism perform different functions within an organized
+            whole, the members and institutions of a political community possess
+            different roles within a coordinated social order.
+          </p>
 
-        <p>
-          Al-Farabi's ideal city is therefore both a political and philosophical
-          model. Its organization reflects his understanding of human nature,
-          the hierarchy of knowledge, virtue, and the structure of reality.
-          Political order is connected with a broader philosophical account of
-          what human beings are and what they are ultimately capable of
-          becoming.
-        </p>
-      </section>
+          <p>
+            Al-Farabi's ideal city is therefore both a political and
+            philosophical model. Its organization reflects his understanding of
+            human nature, the hierarchy of knowledge, virtue, and the structure
+            of reality. Political order is connected with a broader
+            philosophical account of what human beings are and what they are
+            ultimately capable of becoming.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          PHILOSOPHER KING
          ===================================================== -->
 
-      <section class="narrative-block" id="ruler">
-        <h2>Al-Farabi's Philosopher-King and Ideal Ruler</h2>
+        <section class="narrative-block" id="ruler">
+          <h2>Al-Farabi's Philosopher-King and Ideal Ruler</h2>
 
-        <p>
-          The ruler of the Virtuous City must possess exceptional intellectual
-          and moral qualities. Al-Farabi's ideal ruler combines philosophical
-          knowledge with the ability to guide a community toward its proper end.
-          Leadership therefore requires more than political power, inherited
-          status, military strength, or the ability to command obedience.
-        </p>
+          <p>
+            The ruler of the Virtuous City must possess exceptional intellectual
+            and moral qualities. Al-Farabi's ideal ruler combines philosophical
+            knowledge with the ability to guide a community toward its proper
+            end. Leadership therefore requires more than political power,
+            inherited status, military strength, or the ability to command
+            obedience.
+          </p>
 
-        <p>
-          This idea has clear connections with
-          <strong>Plato's philosopher-king</strong>, but Al-Farabi develops the
-          concept within his own philosophical framework and within the
-          intellectual world of medieval Islamic civilization. The ideal leader
-          must unite theoretical understanding with practical judgment and the
-          capacity to establish an appropriate political order.
-        </p>
+          <p>
+            This idea has clear connections with
+            <strong>Plato's philosopher-king</strong>, but Al-Farabi develops
+            the concept within his own philosophical framework and within the
+            intellectual world of medieval Islamic civilization. The ideal
+            leader must unite theoretical understanding with practical judgment
+            and the capacity to establish an appropriate political order.
+          </p>
 
-        <p>
-          The ideal ruler must understand reality, human nature, happiness, and
-          the proper organization of society. Where necessary, the ruler must
-          also be able to communicate philosophical truths through forms of
-          teaching and representation accessible to citizens who do not engage
-          in philosophical demonstration themselves.
-        </p>
+          <p>
+            The ideal ruler must understand reality, human nature, happiness,
+            and the proper organization of society. Where necessary, the ruler
+            must also be able to communicate philosophical truths through forms
+            of teaching and representation accessible to citizens who do not
+            engage in philosophical demonstration themselves.
+          </p>
 
-        <p>
-          For this reason, political leadership in Al-Farabi's philosophy is
-          closely related to education. The ruler must not only possess
-          knowledge but also understand how different members of a community can
-          be guided toward appropriate intellectual and ethical goals through
-          laws, institutions, instruction, and persuasive representation.
-        </p>
-      </section>
+          <p>
+            For this reason, political leadership in Al-Farabi's philosophy is
+            closely related to education. The ruler must not only possess
+            knowledge but also understand how different members of a community
+            can be guided toward appropriate intellectual and ethical goals
+            through laws, institutions, instruction, and persuasive
+            representation.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          DEFICIENT CITIES
          ===================================================== -->
 
-      <section class="narrative-block" id="deficient-cities">
-        <h2>Al-Farabi's Classification of Deficient Cities</h2>
+        <section class="narrative-block" id="deficient-cities">
+          <h2>Al-Farabi's Classification of Deficient Cities</h2>
 
-        <p>
-          Al-Farabi does not only describe the Virtuous City. He also examines
-          forms of society that fail to direct citizens toward genuine
-          happiness. These alternative political orders reveal the importance of
-          purpose in his philosophy, because communities can possess
-          organization and power while still pursuing ends that he regards as
-          fundamentally inadequate.
-        </p>
+          <p>
+            Al-Farabi does not only describe the Virtuous City. He also examines
+            forms of society that fail to direct citizens toward genuine
+            happiness. These alternative political orders reveal the importance
+            of purpose in his philosophy, because communities can possess
+            organization and power while still pursuing ends that he regards as
+            fundamentally inadequate.
+          </p>
 
-        <p>
-          Some societies are organized primarily around
-          <strong
-            >wealth, pleasure, honor, domination, or physical survival</strong
-          >. Such communities may satisfy immediate needs and may even appear
-          successful according to ordinary standards, but they remain deficient
-          from the standpoint of genuine human perfection.
-        </p>
+          <p>
+            Some societies are organized primarily around
+            <strong
+              >wealth, pleasure, honor, domination, or physical survival</strong
+            >. Such communities may satisfy immediate needs and may even appear
+            successful according to ordinary standards, but they remain
+            deficient from the standpoint of genuine human perfection.
+          </p>
 
-        <p>
-          Al-Farabi's classifications also distinguish between communities whose
-          members lack knowledge of true happiness and those in which people
-          knowingly pursue distorted or inferior ends. His political analysis is
-          therefore concerned not only with institutions but with the beliefs,
-          values, and conceptions of the good that shape collective life.
-        </p>
+          <p>
+            Al-Farabi's classifications also distinguish between communities
+            whose members lack knowledge of true happiness and those in which
+            people knowingly pursue distorted or inferior ends. His political
+            analysis is therefore concerned not only with institutions but with
+            the beliefs, values, and conceptions of the good that shape
+            collective life.
+          </p>
 
-        <p>
-          His analysis demonstrates that Al-Farabi evaluates political systems
-          according to their ultimate purpose: whether they genuinely help human
-          beings attain knowledge, virtue, and happiness. A community cannot be
-          judged solely by wealth, military strength, territorial size, or
-          political stability if its fundamental orientation directs human
-          beings away from their highest possible end.
-        </p>
-      </section>
+          <p>
+            His analysis demonstrates that Al-Farabi evaluates political systems
+            according to their ultimate purpose: whether they genuinely help
+            human beings attain knowledge, virtue, and happiness. A community
+            cannot be judged solely by wealth, military strength, territorial
+            size, or political stability if its fundamental orientation directs
+            human beings away from their highest possible end.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELIGION
          ===================================================== -->
 
-      <section class="narrative-block" id="religion">
-        <h2>Al-Farabi on Philosophy and Religion</h2>
+        <section class="narrative-block" id="religion">
+          <h2>Al-Farabi on Philosophy and Religion</h2>
 
-        <p>
-          The relationship between <strong>philosophy and religion</strong> is
-          one of the most distinctive aspects of Al-Farabi's political thought.
-          He attempts to explain how a community can be guided toward important
-          truths even though not every individual possesses the same level of
-          philosophical education or demonstrative understanding.
-        </p>
+          <p>
+            The relationship between <strong>philosophy and religion</strong> is
+            one of the most distinctive aspects of Al-Farabi's political
+            thought. He attempts to explain how a community can be guided toward
+            important truths even though not every individual possesses the same
+            level of philosophical education or demonstrative understanding.
+          </p>
 
-        <p>
-          Al-Farabi understands religion as a system of beliefs, practices, and
-          rules that guides a community toward its intended goals. Religious
-          teaching can communicate important truths through images, symbols,
-          narratives, and persuasive forms appropriate to the intellectual
-          capacities and practical needs of a wider population.
-        </p>
+          <p>
+            Al-Farabi understands religion as a system of beliefs, practices,
+            and rules that guides a community toward its intended goals.
+            Religious teaching can communicate important truths through images,
+            symbols, narratives, and persuasive forms appropriate to the
+            intellectual capacities and practical needs of a wider population.
+          </p>
 
-        <p>
-          Philosophy, by contrast, seeks demonstrative knowledge through
-          intellectual reasoning. Al-Farabi therefore distinguishes
-          philosophical knowledge from the symbolic and persuasive modes through
-          which religion can guide a broader population, while still treating
-          both as capable of having important roles within the organization of
-          human life.
-        </p>
+          <p>
+            Philosophy, by contrast, seeks demonstrative knowledge through
+            intellectual reasoning. Al-Farabi therefore distinguishes
+            philosophical knowledge from the symbolic and persuasive modes
+            through which religion can guide a broader population, while still
+            treating both as capable of having important roles within the
+            organization of human life.
+          </p>
 
-        <p>
-          This distinction should not be reduced to the simple claim that
-          philosophy and religion always teach unrelated truths. A major
-          question in Al-Farabi's political philosophy concerns how universal
-          truths may be represented differently according to the capacities of
-          different audiences and the practical requirements of political
-          communities.
-        </p>
+          <p>
+            This distinction should not be reduced to the simple claim that
+            philosophy and religion always teach unrelated truths. A major
+            question in Al-Farabi's political philosophy concerns how universal
+            truths may be represented differently according to the capacities of
+            different audiences and the practical requirements of political
+            communities.
+          </p>
 
-        <p>
-          His treatment of religion consequently connects epistemology,
-          imagination, rhetoric, political authority, and education. The
-          relationship between philosophical demonstration and religious
-          representation became one of the most influential and controversial
-          themes in later Islamic, Jewish, and medieval philosophical thought.
-        </p>
-      </section>
+          <p>
+            His treatment of religion consequently connects epistemology,
+            imagination, rhetoric, political authority, and education. The
+            relationship between philosophical demonstration and religious
+            representation became one of the most influential and controversial
+            themes in later Islamic, Jewish, and medieval philosophical thought.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          PROPHECY
          ===================================================== -->
 
-      <section class="narrative-block" id="prophecy">
-        <h2>Al-Farabi's Philosophy of Prophecy</h2>
+        <section class="narrative-block" id="prophecy">
+          <h2>Al-Farabi's Philosophy of Prophecy</h2>
 
-        <p>
-          Al-Farabi's theory of <strong>prophecy</strong> is closely connected
-          with his philosophy of imagination, intellect, and political
-          leadership. He attempts to explain prophecy within a philosophical
-          account of the human faculties and their relationship to the higher
-          intelligible order described in his cosmology.
-        </p>
+          <p>
+            Al-Farabi's theory of <strong>prophecy</strong> is closely connected
+            with his philosophy of imagination, intellect, and political
+            leadership. He attempts to explain prophecy within a philosophical
+            account of the human faculties and their relationship to the higher
+            intelligible order described in his cosmology.
+          </p>
 
-        <p>
-          The prophet possesses an exceptionally developed imaginative capacity
-          through which intelligible truths can be represented in forms that
-          ordinary people can understand. Imagination therefore performs a
-          mediating function: what may be grasped intellectually by a
-          philosopher can be communicated symbolically through images and
-          representations.
-        </p>
+          <p>
+            The prophet possesses an exceptionally developed imaginative
+            capacity through which intelligible truths can be represented in
+            forms that ordinary people can understand. Imagination therefore
+            performs a mediating function: what may be grasped intellectually by
+            a philosopher can be communicated symbolically through images and
+            representations.
+          </p>
 
-        <p>
-          This philosophical treatment of prophecy does not make imagination
-          insignificant or merely deceptive. On the contrary, imagination is
-          essential for translating meanings into forms capable of influencing
-          human action, educating communities, and communicating matters that
-          many people cannot approach through philosophical demonstration alone.
-        </p>
+          <p>
+            This philosophical treatment of prophecy does not make imagination
+            insignificant or merely deceptive. On the contrary, imagination is
+            essential for translating meanings into forms capable of influencing
+            human action, educating communities, and communicating matters that
+            many people cannot approach through philosophical demonstration
+            alone.
+          </p>
 
-        <p>
-          This allows Al-Farabi to connect prophecy with political leadership.
-          The ideal ruler must be capable of guiding citizens toward the
-          appropriate intellectual and ethical goals of the community. In his
-          highest political model, exceptional intellectual understanding and
-          exceptional imaginative and practical capacities are therefore closely
-          connected.
-        </p>
-      </section>
+          <p>
+            This allows Al-Farabi to connect prophecy with political leadership.
+            The ideal ruler must be capable of guiding citizens toward the
+            appropriate intellectual and ethical goals of the community. In his
+            highest political model, exceptional intellectual understanding and
+            exceptional imaginative and practical capacities are therefore
+            closely connected.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          ETHICS
          ===================================================== -->
 
-      <section class="narrative-block" id="ethics">
-        <h2>Al-Farabi's Ethics and Moral Philosophy</h2>
+        <section class="narrative-block" id="ethics">
+          <h2>Al-Farabi's Ethics and Moral Philosophy</h2>
 
-        <p>
-          Although ethics is not as extensive a part of his surviving corpus as
-          political philosophy or logic,
-          <strong>virtue and moral development</strong> remain essential to
-          Al-Farabi's account of human perfection. Ethical questions are closely
-          connected with his larger investigation of happiness and the proper
-          ends of individual and communal life.
-        </p>
+          <p>
+            Although ethics is not as extensive a part of his surviving corpus
+            as political philosophy or logic,
+            <strong>virtue and moral development</strong> remain essential to
+            Al-Farabi's account of human perfection. Ethical questions are
+            closely connected with his larger investigation of happiness and the
+            proper ends of individual and communal life.
+          </p>
 
-        <p>
-          Human beings must cultivate appropriate habits and intellectual
-          capacities. Moral virtues help organize the individual toward the
-          proper human end rather than toward merely temporary pleasures or
-          external goods. Virtuous action therefore involves the disciplined
-          formation of character as well as the development of practical
-          understanding.
-        </p>
+          <p>
+            Human beings must cultivate appropriate habits and intellectual
+            capacities. Moral virtues help organize the individual toward the
+            proper human end rather than toward merely temporary pleasures or
+            external goods. Virtuous action therefore involves the disciplined
+            formation of character as well as the development of practical
+            understanding.
+          </p>
 
-        <p>
-          Al-Farabi does not treat moral life as completely independent from
-          knowledge. Human beings must understand, at least in an appropriate
-          manner, the ends toward which they act. The development of
-          intellectual capacities and the cultivation of moral habits
-          consequently belong to a broader process of becoming more fully
-          perfected.
-        </p>
+          <p>
+            Al-Farabi does not treat moral life as completely independent from
+            knowledge. Human beings must understand, at least in an appropriate
+            manner, the ends toward which they act. The development of
+            intellectual capacities and the cultivation of moral habits
+            consequently belong to a broader process of becoming more fully
+            perfected.
+          </p>
 
-        <p>
-          This ethical dimension is essential to the Virtuous City: a good
-          political community must cultivate citizens who are capable of
-          pursuing genuine happiness. Education, law, leadership, and social
-          institutions therefore possess an ethical function because political
-          life can either encourage or obstruct the formation of virtuous
-          character and rational understanding.
-        </p>
-      </section>
+          <p>
+            This ethical dimension is essential to the Virtuous City: a good
+            political community must cultivate citizens who are capable of
+            pursuing genuine happiness. Education, law, leadership, and social
+            institutions therefore possess an ethical function because political
+            life can either encourage or obstruct the formation of virtuous
+            character and rational understanding.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          PSYCHOLOGY
          ===================================================== -->
 
-      <section class="narrative-block" id="psychology">
-        <h2>Al-Farabi's Philosophy of Mind and Psychology</h2>
+        <section class="narrative-block" id="psychology">
+          <h2>Al-Farabi's Philosophy of Mind and Psychology</h2>
 
-        <p>
-          Al-Farabi's <strong>philosophy of mind</strong> examines the faculties
-          of the human soul, including sensation, imagination, memory, and
-          intellect. His psychological theory attempts to explain how different
-          powers cooperate in human life and how the mind moves from immediate
-          sensory contact with the world toward abstract intellectual knowledge.
-        </p>
+          <p>
+            Al-Farabi's <strong>philosophy of mind</strong> examines the
+            faculties of the human soul, including sensation, imagination,
+            memory, and intellect. His psychological theory attempts to explain
+            how different powers cooperate in human life and how the mind moves
+            from immediate sensory contact with the world toward abstract
+            intellectual knowledge.
+          </p>
 
-        <p>
-          Sensation provides awareness of particular objects, while the internal
-          faculties retain, combine, and transform sensory materials.
-          Imagination is especially important because it can preserve sensible
-          forms even when the objects themselves are absent and can combine
-          these forms in ways that extend beyond immediate perception.
-        </p>
+          <p>
+            Sensation provides awareness of particular objects, while the
+            internal faculties retain, combine, and transform sensory materials.
+            Imagination is especially important because it can preserve sensible
+            forms even when the objects themselves are absent and can combine
+            these forms in ways that extend beyond immediate perception.
+          </p>
 
-        <p>
-          His account of the human soul is important because it explains how
-          people move from sensory experience toward abstract intellectual
-          knowledge. The rational faculty is not simply another sense; it makes
-          possible the understanding of intelligible meanings and universal
-          principles that cannot be reduced to particular sensory impressions.
-        </p>
+          <p>
+            His account of the human soul is important because it explains how
+            people move from sensory experience toward abstract intellectual
+            knowledge. The rational faculty is not simply another sense; it
+            makes possible the understanding of intelligible meanings and
+            universal principles that cannot be reduced to particular sensory
+            impressions.
+          </p>
 
-        <p>
-          Imagination also plays a major role in his account of dreams,
-          prophecy, political leadership, and the communication of philosophical
-          truths through symbolic representations. This makes psychology central
-          to several apparently different areas of his philosophy, including
-          epistemology, religion, politics, and the theory of prophecy.
-        </p>
-      </section>
+          <p>
+            Imagination also plays a major role in his account of dreams,
+            prophecy, political leadership, and the communication of
+            philosophical truths through symbolic representations. This makes
+            psychology central to several apparently different areas of his
+            philosophy, including epistemology, religion, politics, and the
+            theory of prophecy.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          COSMOLOGY
          ===================================================== -->
 
-      <section class="narrative-block" id="cosmology">
-        <h2>Al-Farabi's Cosmology and Hierarchy of Being</h2>
+        <section class="narrative-block" id="cosmology">
+          <h2>Al-Farabi's Cosmology and Hierarchy of Being</h2>
 
-        <p>
-          Al-Farabi presents a hierarchical account of the universe in which the
-          <strong>First Existent</strong> stands at the highest level of
-          reality. His cosmology seeks to explain how an ordered universe can
-          proceed from an ultimate first principle while containing multiple
-          levels of intellectual, celestial, and material existence.
-        </p>
+          <p>
+            Al-Farabi presents a hierarchical account of the universe in which
+            the
+            <strong>First Existent</strong> stands at the highest level of
+            reality. His cosmology seeks to explain how an ordered universe can
+            proceed from an ultimate first principle while containing multiple
+            levels of intellectual, celestial, and material existence.
+          </p>
 
-        <p>
-          From the First Existent there proceeds an ordered series of
-          intellectual and celestial principles. His cosmological system
-          contains multiple separate intellects associated with the celestial
-          order, culminating in the
-          <strong>Active Intellect</strong>, which occupies a particularly
-          important position in relation to the sublunary world and human
-          beings.
-        </p>
+          <p>
+            From the First Existent there proceeds an ordered series of
+            intellectual and celestial principles. His cosmological system
+            contains multiple separate intellects associated with the celestial
+            order, culminating in the
+            <strong>Active Intellect</strong>, which occupies a particularly
+            important position in relation to the sublunary world and human
+            beings.
+          </p>
 
-        <p>
-          The celestial hierarchy in Al-Farabi's philosophy reflects the
-          astronomical understanding inherited from ancient and late antique
-          traditions. His cosmology should therefore be understood historically
-          rather than treated as a modern scientific description of the physical
-          universe. Its philosophical importance lies in the explanatory order
-          it gives to causation, intellect, and the hierarchy of being.
-        </p>
+          <p>
+            The celestial hierarchy in Al-Farabi's philosophy reflects the
+            astronomical understanding inherited from ancient and late antique
+            traditions. His cosmology should therefore be understood
+            historically rather than treated as a modern scientific description
+            of the physical universe. Its philosophical importance lies in the
+            explanatory order it gives to causation, intellect, and the
+            hierarchy of being.
+          </p>
 
-        <p>
-          This cosmology connects Al-Farabi's metaphysics with his psychology
-          because the Active Intellect also plays a central role in human
-          intellectual development. The structure of the cosmos and the
-          development of the human mind are therefore not separate subjects in
-          his system but interconnected parts of a broader philosophical vision.
-        </p>
-      </section>
+          <p>
+            This cosmology connects Al-Farabi's metaphysics with his psychology
+            because the Active Intellect also plays a central role in human
+            intellectual development. The structure of the cosmos and the
+            development of the human mind are therefore not separate subjects in
+            his system but interconnected parts of a broader philosophical
+            vision.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          MUSIC
          ===================================================== -->
 
-      <section class="narrative-block" id="music">
-        <figure class="narrative-figure left">
-          <img
-            src="images/al-farabi-music.jpg"
-            alt="Representation of Al-Farabi's work on music and philosophy"
-            loading="lazy"
-            decoding="async"
-          />
+        <section class="narrative-block" id="music">
+          <figure class="narrative-figure left">
+            <img
+              src="images/al-farabi-music.jpg"
+              alt="Representation of Al-Farabi's work on music and philosophy"
+              loading="lazy"
+              decoding="async"
+            />
 
-          <figcaption>
-            Al-Farabi's <em>Great Book of Music</em> is one of the major
-            surviving medieval works on music theory.
-          </figcaption>
-        </figure>
+            <figcaption>
+              Al-Farabi's <em>Great Book of Music</em> is one of the major
+              surviving medieval works on music theory.
+            </figcaption>
+          </figure>
 
-        <h2>Al-Farabi's Philosophy of Music</h2>
+          <h2>Al-Farabi's Philosophy of Music</h2>
 
-        <p>
-          Al-Farabi was also a major theorist of
-          <strong>music</strong>. His <em>Great Book of Music</em> (<em
-            >Kitāb al-Mūsīqā al-Kabīr</em
-          >) is one of the most substantial surviving medieval works on musical
-          theory produced in the Islamic world. It reflects both his engagement
-          with earlier Greek theory and his attention to the musical practices
-          of his own intellectual environment.
-        </p>
+          <p>
+            Al-Farabi was also a major theorist of
+            <strong>music</strong>. His <em>Great Book of Music</em> (<em
+              >Kitāb al-Mūsīqā al-Kabīr</em
+            >) is one of the most substantial surviving medieval works on
+            musical theory produced in the Islamic world. It reflects both his
+            engagement with earlier Greek theory and his attention to the
+            musical practices of his own intellectual environment.
+          </p>
 
-        <p>
-          His treatment of music goes beyond practical musical performance. He
-          examines sound, intervals, rhythm, instruments, musical composition,
-          and the theoretical foundations of musical harmony. The work therefore
-          approaches music as a field requiring systematic analysis rather than
-          simply as an art of performance.
-        </p>
+          <p>
+            His treatment of music goes beyond practical musical performance. He
+            examines sound, intervals, rhythm, instruments, musical composition,
+            and the theoretical foundations of musical harmony. The work
+            therefore approaches music as a field requiring systematic analysis
+            rather than simply as an art of performance.
+          </p>
 
-        <p>
-          Al-Farabi did not merely repeat Greek musical theory. He also
-          recognized limitations in some of the material available to him and
-          discussed musical practices relevant to the Middle Eastern world of
-          his own time. His work consequently combines inherited theoretical
-          traditions with observation and analysis of actual musical practice.
-        </p>
+          <p>
+            Al-Farabi did not merely repeat Greek musical theory. He also
+            recognized limitations in some of the material available to him and
+            discussed musical practices relevant to the Middle Eastern world of
+            his own time. His work consequently combines inherited theoretical
+            traditions with observation and analysis of actual musical practice.
+          </p>
 
-        <p>
-          His work on music demonstrates the breadth of his intellectual
-          interests and the connection he saw between mathematical and
-          philosophical investigation. It also reveals his wider methodological
-          tendency to analyze complex subjects through classification,
-          definition, proportion, and the careful examination of the principles
-          underlying practical arts.
-        </p>
-      </section>
+          <p>
+            His work on music demonstrates the breadth of his intellectual
+            interests and the connection he saw between mathematical and
+            philosophical investigation. It also reveals his wider
+            methodological tendency to analyze complex subjects through
+            classification, definition, proportion, and the careful examination
+            of the principles underlying practical arts.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          MAJOR WORKS
          ===================================================== -->
 
-      <section class="narrative-block" id="works">
-        <h2>Major Works of Al-Farabi</h2>
+        <section class="narrative-block" id="works">
+          <h2>Major Works of Al-Farabi</h2>
 
-        <p>
-          Al-Farabi wrote extensively on philosophy, logic, politics, religion,
-          psychology, language, and music. His surviving works and writings
-          attributed to him reveal an unusually broad intellectual project,
-          although questions concerning authenticity, dating, and the exact
-          chronological order of some texts remain important issues for modern
-          scholarship.
-        </p>
+          <p>
+            Al-Farabi wrote extensively on philosophy, logic, politics,
+            religion, psychology, language, and music. His surviving works and
+            writings attributed to him reveal an unusually broad intellectual
+            project, although questions concerning authenticity, dating, and the
+            exact chronological order of some texts remain important issues for
+            modern scholarship.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong>
-              <em>The Opinions of the People of the Virtuous City</em>
-            </strong>
-            — Al-Farabi's best-known account of metaphysics, cosmology, human
-            perfection, and the ideal political community.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>
+                <em>The Opinions of the People of the Virtuous City</em>
+              </strong>
+              — Al-Farabi's best-known account of metaphysics, cosmology, human
+              perfection, and the ideal political community.
+            </li>
 
-          <li>
-            <strong>
-              <em>The Political Regime</em>
-            </strong>
-            — A major work concerning political organization, human perfection,
-            and the relationship between society and the cosmic order.
-          </li>
+            <li>
+              <strong>
+                <em>The Political Regime</em>
+              </strong>
+              — A major work concerning political organization, human
+              perfection, and the relationship between society and the cosmic
+              order.
+            </li>
 
-          <li>
-            <strong>
-              <em>Enumeration of the Sciences</em>
-            </strong>
-            — A systematic classification of intellectual disciplines and their
-            relationships.
-          </li>
+            <li>
+              <strong>
+                <em>Enumeration of the Sciences</em>
+              </strong>
+              — A systematic classification of intellectual disciplines and
+              their relationships.
+            </li>
 
-          <li>
-            <strong>
-              <em>Epistle on the Intellect</em>
-            </strong>
-            — A major treatment of intellect and human knowledge.
-          </li>
+            <li>
+              <strong>
+                <em>Epistle on the Intellect</em>
+              </strong>
+              — A major treatment of intellect and human knowledge.
+            </li>
 
-          <li>
-            <strong>
-              <em>The Attainment of Happiness</em>
-            </strong>
-            — A work exploring human perfection, knowledge, and genuine
-            happiness.
-          </li>
+            <li>
+              <strong>
+                <em>The Attainment of Happiness</em>
+              </strong>
+              — A work exploring human perfection, knowledge, and genuine
+              happiness.
+            </li>
 
-          <li>
-            <strong>
-              <em>The Harmonization of the Two Opinions of the Two Sages</em>
-            </strong>
-            — A philosophical discussion concerning Plato and Aristotle.
-          </li>
+            <li>
+              <strong>
+                <em>The Harmonization of the Two Opinions of the Two Sages</em>
+              </strong>
+              — A philosophical discussion concerning Plato and Aristotle.
+            </li>
 
-          <li>
-            <strong>
-              <em>The Great Book of Music</em>
-            </strong>
-            — Al-Farabi's major contribution to medieval music theory and
-            philosophy.
-          </li>
+            <li>
+              <strong>
+                <em>The Great Book of Music</em>
+              </strong>
+              — Al-Farabi's major contribution to medieval music theory and
+              philosophy.
+            </li>
 
-          <li>
-            <strong>
-              <em>The Book of Religion</em>
-            </strong>
-            — A significant work concerning religion, political community, and
-            philosophical knowledge.
-          </li>
-        </ul>
+            <li>
+              <strong>
+                <em>The Book of Religion</em>
+              </strong>
+              — A significant work concerning religion, political community, and
+              philosophical knowledge.
+            </li>
+          </ul>
 
-        <p>
-          Modern scholarship also emphasizes that the chronological order of
-          many of Al-Farabi's works remains uncertain, so claims about a simple
-          linear development of his philosophy should be made cautiously.
-          Questions of authenticity also affect some texts traditionally
-          associated with him, making it important to distinguish firmly
-          established works from writings whose attribution remains debated.
-        </p>
-      </section>
+          <p>
+            Modern scholarship also emphasizes that the chronological order of
+            many of Al-Farabi's works remains uncertain, so claims about a
+            simple linear development of his philosophy should be made
+            cautiously. Questions of authenticity also affect some texts
+            traditionally associated with him, making it important to
+            distinguish firmly established works from writings whose attribution
+            remains debated.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          PLATO AND ARISTOTLE
          ===================================================== -->
 
-      <section class="narrative-block" id="plato-aristotle">
-        <h2>Al-Farabi, Plato, and Aristotle</h2>
+        <section class="narrative-block" id="plato-aristotle">
+          <h2>Al-Farabi, Plato, and Aristotle</h2>
 
-        <p>
-          Al-Farabi's philosophy cannot be understood without considering his
-          relationship to <strong>Plato and Aristotle</strong>. Both
-          philosophers formed part of the Greek intellectual inheritance
-          available in Arabic translation, interpretation, and commentary,
-          although Al-Farabi encountered their ideas through the complex
-          philosophical traditions that had developed during late antiquity.
-        </p>
+          <p>
+            Al-Farabi's philosophy cannot be understood without considering his
+            relationship to <strong>Plato and Aristotle</strong>. Both
+            philosophers formed part of the Greek intellectual inheritance
+            available in Arabic translation, interpretation, and commentary,
+            although Al-Farabi encountered their ideas through the complex
+            philosophical traditions that had developed during late antiquity.
+          </p>
 
-        <p>
-          From Aristotle, he drew heavily on logic, metaphysics, psychology, and
-          natural philosophy. From Plato, he drew important resources for
-          thinking about political organization, education, virtue, and the role
-          of the philosopher. Yet these broad distinctions should not obscure
-          the originality of Al-Farabi's own philosophical system.
-        </p>
+          <p>
+            From Aristotle, he drew heavily on logic, metaphysics, psychology,
+            and natural philosophy. From Plato, he drew important resources for
+            thinking about political organization, education, virtue, and the
+            role of the philosopher. Yet these broad distinctions should not
+            obscure the originality of Al-Farabi's own philosophical system.
+          </p>
 
-        <p>
-          Al-Farabi did not simply choose one philosopher over the other.
-          Instead, he attempted to understand their philosophical relationship
-          and to integrate their ideas into a broader philosophical framework.
-          His intellectual project was also shaped by Neoplatonic and
-          neo-Aristotelian traditions that influenced the interpretation of both
-          Plato and Aristotle in late antiquity.
-        </p>
+          <p>
+            Al-Farabi did not simply choose one philosopher over the other.
+            Instead, he attempted to understand their philosophical relationship
+            and to integrate their ideas into a broader philosophical framework.
+            His intellectual project was also shaped by Neoplatonic and
+            neo-Aristotelian traditions that influenced the interpretation of
+            both Plato and Aristotle in late antiquity.
+          </p>
 
-        <p>
-          His attempt to harmonize the Greek philosophical inheritance should
-          therefore be understood historically rather than as the claim that
-          Plato and Aristotle literally agreed on every philosophical question.
-          Al-Farabi sought a systematic philosophical order capable of drawing
-          upon the resources of multiple traditions while addressing the
-          intellectual problems of his own time.
-        </p>
-      </section>
+          <p>
+            His attempt to harmonize the Greek philosophical inheritance should
+            therefore be understood historically rather than as the claim that
+            Plato and Aristotle literally agreed on every philosophical
+            question. Al-Farabi sought a systematic philosophical order capable
+            of drawing upon the resources of multiple traditions while
+            addressing the intellectual problems of his own time.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          ISLAMIC PHILOSOPHY
          ===================================================== -->
 
-      <section class="narrative-block" id="islamic-philosophy">
-        <h2>Al-Farabi's Place in Islamic Philosophy</h2>
+        <section class="narrative-block" id="islamic-philosophy">
+          <h2>Al-Farabi's Place in Islamic Philosophy</h2>
 
-        <p>
-          Al-Farabi occupies a central position in the history of
-          <strong>Islamic philosophy</strong> and Arabic philosophy. His work
-          helped transform the philosophical inheritance available from Greek
-          sources into a systematic intellectual tradition expressed largely
-          through the Arabic language and developed within the civilization of
-          the medieval Islamic world.
-        </p>
+          <p>
+            Al-Farabi occupies a central position in the history of
+            <strong>Islamic philosophy</strong> and Arabic philosophy. His work
+            helped transform the philosophical inheritance available from Greek
+            sources into a systematic intellectual tradition expressed largely
+            through the Arabic language and developed within the civilization of
+            the medieval Islamic world.
+          </p>
 
-        <p>
-          His writings on logic, metaphysics, psychology, political philosophy,
-          and religion became important resources for later philosophers. His
-          influence was not confined to a single discipline because his
-          philosophical system connected questions about knowledge, reality,
-          human nature, political organization, and the ultimate purpose of
-          human life.
-        </p>
+          <p>
+            His writings on logic, metaphysics, psychology, political
+            philosophy, and religion became important resources for later
+            philosophers. His influence was not confined to a single discipline
+            because his philosophical system connected questions about
+            knowledge, reality, human nature, political organization, and the
+            ultimate purpose of human life.
+          </p>
 
-        <p>
-          His influence was particularly important for later philosophers such
-          as <strong>Avicenna</strong>, while his thought also became part of
-          intellectual traditions extending into al-Andalus, medieval Jewish
-          philosophy, and later discussions of Aristotelian and Neoplatonic
-          ideas. The precise character of his influence, however, differs
-          considerably between individual thinkers and traditions.
-        </p>
+          <p>
+            His influence was particularly important for later philosophers such
+            as <strong>Avicenna</strong>, while his thought also became part of
+            intellectual traditions extending into al-Andalus, medieval Jewish
+            philosophy, and later discussions of Aristotelian and Neoplatonic
+            ideas. The precise character of his influence, however, differs
+            considerably between individual thinkers and traditions.
+          </p>
 
-        <p>
-          Al-Farabi is therefore important not merely as a transmitter of Greek
-          philosophy but as an original philosopher who reorganized inherited
-          materials into a distinctive system. His work helped establish many of
-          the major philosophical questions that later Islamic philosophers
-          would continue to develop, criticize, and transform.
-        </p>
-      </section>
+          <p>
+            Al-Farabi is therefore important not merely as a transmitter of
+            Greek philosophy but as an original philosopher who reorganized
+            inherited materials into a distinctive system. His work helped
+            establish many of the major philosophical questions that later
+            Islamic philosophers would continue to develop, criticize, and
+            transform.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          AL-KINDI CONNECTION
          ===================================================== -->
 
-      <section class="narrative-block" id="al-kindi">
-        <h2>Al-Kindi and Al-Farabi: What Is the Difference?</h2>
+        <section class="narrative-block" id="al-kindi">
+          <h2>Al-Kindi and Al-Farabi: What Is the Difference?</h2>
 
-        <p>
-          <strong>Al-Kindi and Al-Farabi</strong> belong to successive
-          generations of early Arabic philosophy. Al-Kindi was an important
-          figure in the early translation and adaptation of Greek philosophical
-          and scientific ideas, while Al-Farabi later developed a particularly
-          systematic treatment of logic, political philosophy, psychology,
-          metaphysics, and the classification of knowledge.
-        </p>
+          <p>
+            <strong>Al-Kindi and Al-Farabi</strong> belong to successive
+            generations of early Arabic philosophy. Al-Kindi was an important
+            figure in the early translation and adaptation of Greek
+            philosophical and scientific ideas, while Al-Farabi later developed
+            a particularly systematic treatment of logic, political philosophy,
+            psychology, metaphysics, and the classification of knowledge.
+          </p>
 
-        <p>
-          Al-Kindi was particularly important in the early transmission and
-          adaptation of Greek philosophical ideas. His writings addressed
-          metaphysics, mathematics, natural science, music, and other subjects,
-          helping establish philosophical inquiry in an Arabic intellectual
-          environment that was still actively receiving and translating Greek
-          materials.
-        </p>
+          <p>
+            Al-Kindi was particularly important in the early transmission and
+            adaptation of Greek philosophical ideas. His writings addressed
+            metaphysics, mathematics, natural science, music, and other
+            subjects, helping establish philosophical inquiry in an Arabic
+            intellectual environment that was still actively receiving and
+            translating Greek materials.
+          </p>
 
-        <p>
-          Al-Farabi built upon a broader intellectual environment already shaped
-          by translation, commentary, and philosophical debate. His distinctive
-          contribution was to organize many areas of inquiry into a more
-          elaborate and interconnected philosophical framework, with logic and
-          the theory of intellect occupying especially important positions.
-        </p>
+          <p>
+            Al-Farabi built upon a broader intellectual environment already
+            shaped by translation, commentary, and philosophical debate. His
+            distinctive contribution was to organize many areas of inquiry into
+            a more elaborate and interconnected philosophical framework, with
+            logic and the theory of intellect occupying especially important
+            positions.
+          </p>
 
-        <p>
-          Together, they represent two crucial stages in the development of
-          <strong>Islamic philosophy</strong>. The comparison should not imply a
-          simple progression from an incomplete philosopher to a complete one;
-          each thinker developed his own distinctive philosophical concerns
-          within different stages of the transmission and transformation of the
-          Greek intellectual heritage.
-        </p>
-      </section>
+          <p>
+            Together, they represent two crucial stages in the development of
+            <strong>Islamic philosophy</strong>. The comparison should not imply
+            a simple progression from an incomplete philosopher to a complete
+            one; each thinker developed his own distinctive philosophical
+            concerns within different stages of the transmission and
+            transformation of the Greek intellectual heritage.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          AVICENNA
          ===================================================== -->
 
-      <section class="narrative-block" id="avicenna">
-        <h2>Al-Farabi and Avicenna: Influence on Islamic Philosophy</h2>
+        <section class="narrative-block" id="avicenna">
+          <h2>Al-Farabi and Avicenna: Influence on Islamic Philosophy</h2>
 
-        <p>
-          <strong>Avicenna (Ibn Sina)</strong> was strongly influenced by
-          Al-Farabi, particularly in the intellectual environment from which
-          Avicenna developed his own philosophical system. A famous report
-          associated with Avicenna describes Al-Farabi's writings as helping him
-          understand Aristotle's difficult <em>Metaphysics</em>.
-        </p>
+          <p>
+            <strong>Avicenna (Ibn Sina)</strong> was strongly influenced by
+            Al-Farabi, particularly in the intellectual environment from which
+            Avicenna developed his own philosophical system. A famous report
+            associated with Avicenna describes Al-Farabi's writings as helping
+            him understand Aristotle's difficult <em>Metaphysics</em>.
+          </p>
 
-        <p>
-          Al-Farabi's systematic treatments of logic, metaphysics, intellect,
-          political philosophy, and the relationship between philosophy and
-          religion provided important resources for later Islamic philosophical
-          thought. His emphasis on the organization of the sciences and on the
-          centrality of intellectual development also formed part of the
-          philosophical background inherited by subsequent thinkers.
-        </p>
+          <p>
+            Al-Farabi's systematic treatments of logic, metaphysics, intellect,
+            political philosophy, and the relationship between philosophy and
+            religion provided important resources for later Islamic
+            philosophical thought. His emphasis on the organization of the
+            sciences and on the centrality of intellectual development also
+            formed part of the philosophical background inherited by subsequent
+            thinkers.
+          </p>
 
-        <p>
-          Avicenna would eventually develop his own highly sophisticated
-          philosophical system, introducing distinctions and arguments that go
-          significantly beyond Al-Farabi's formulations. The relationship
-          between the two should therefore be understood as one of important
-          influence and intellectual inheritance rather than simple agreement.
-        </p>
+          <p>
+            Avicenna would eventually develop his own highly sophisticated
+            philosophical system, introducing distinctions and arguments that go
+            significantly beyond Al-Farabi's formulations. The relationship
+            between the two should therefore be understood as one of important
+            influence and intellectual inheritance rather than simple agreement.
+          </p>
 
-        <p>
-          Their connection illustrates Al-Farabi's larger historical importance.
-          By the time of Avicenna, many of the philosophical problems addressed
-          by Al-Farabi—concerning being, intellect, demonstration, happiness,
-          and the relationship between human knowledge and ultimate reality—had
-          become central to the continuing development of Islamic philosophy.
-        </p>
-      </section>
+          <p>
+            Their connection illustrates Al-Farabi's larger historical
+            importance. By the time of Avicenna, many of the philosophical
+            problems addressed by Al-Farabi—concerning being, intellect,
+            demonstration, happiness, and the relationship between human
+            knowledge and ultimate reality—had become central to the continuing
+            development of Islamic philosophy.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          LEGACY
          ===================================================== -->
 
-      <section class="narrative-block" id="legacy">
-        <h2>Al-Farabi's Influence and Legacy</h2>
+        <section class="narrative-block" id="legacy">
+          <h2>Al-Farabi's Influence and Legacy</h2>
 
-        <p>
-          Al-Farabi's influence extended well beyond the Islamic philosophical
-          tradition. His works circulated primarily in Arabic, while aspects of
-          his thought later entered medieval Jewish and Latin intellectual
-          traditions through translation, adaptation, and the broader
-          transmission of Arabic philosophical learning.
-        </p>
+          <p>
+            Al-Farabi's influence extended well beyond the Islamic philosophical
+            tradition. His works circulated primarily in Arabic, while aspects
+            of his thought later entered medieval Jewish and Latin intellectual
+            traditions through translation, adaptation, and the broader
+            transmission of Arabic philosophical learning.
+          </p>
 
-        <p>
-          His political philosophy influenced later discussions of the
-          relationship between philosophy, religion, political authority, and
-          human perfection. His writings on logic and the classification of
-          knowledge also contributed to educational and philosophical traditions
-          concerned with the proper organization of intellectual inquiry.
-        </p>
+          <p>
+            His political philosophy influenced later discussions of the
+            relationship between philosophy, religion, political authority, and
+            human perfection. His writings on logic and the classification of
+            knowledge also contributed to educational and philosophical
+            traditions concerned with the proper organization of intellectual
+            inquiry.
+          </p>
 
-        <p>
-          His influence can be seen in thinkers such as
-          <strong
-            >Avicenna, Ibn Bajja, Ibn Tufayl, Averroes, and Maimonides</strong
-          >, although the precise nature of that influence differs from thinker
-          to thinker. Some inherited particular doctrines or philosophical
-          problems from him, while others encountered his thought through the
-          wider traditions of Aristotelianism and Islamic philosophy that he had
-          helped shape.
-        </p>
+          <p>
+            His influence can be seen in thinkers such as
+            <strong
+              >Avicenna, Ibn Bajja, Ibn Tufayl, Averroes, and Maimonides</strong
+            >, although the precise nature of that influence differs from
+            thinker to thinker. Some inherited particular doctrines or
+            philosophical problems from him, while others encountered his
+            thought through the wider traditions of Aristotelianism and Islamic
+            philosophy that he had helped shape.
+          </p>
 
-        <p>
-          His enduring importance also lies in the unusual unity of his
-          intellectual project. Logic, metaphysics, psychology, politics,
-          religion, ethics, and music were not merely separate interests but
-          parts of a larger attempt to understand reality, human knowledge, and
-          the conditions under which human beings can achieve their highest
-          perfection.
-        </p>
-      </section>
+          <p>
+            His enduring importance also lies in the unusual unity of his
+            intellectual project. Logic, metaphysics, psychology, politics,
+            religion, ethics, and music were not merely separate interests but
+            parts of a larger attempt to understand reality, human knowledge,
+            and the conditions under which human beings can achieve their
+            highest perfection.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          KEY IDEAS
          ===================================================== -->
 
-      <section class="narrative-block" id="key-ideas">
-        <h2>Al-Farabi's Main Philosophical Ideas</h2>
+        <section class="narrative-block" id="key-ideas">
+          <h2>Al-Farabi's Main Philosophical Ideas</h2>
 
-        <h3>1. Human Beings Seek Perfection</h3>
+          <h3>1. Human Beings Seek Perfection</h3>
 
-        <p>
-          Al-Farabi understands human life in terms of the pursuit of
-          perfection. Human beings possess capacities that must be developed
-          through knowledge, virtuous action, education, and rational activity,
-          allowing them to move beyond merely satisfying immediate physical
-          needs toward the fulfillment of their distinctively human potential.
-        </p>
+          <p>
+            Al-Farabi understands human life in terms of the pursuit of
+            perfection. Human beings possess capacities that must be developed
+            through knowledge, virtuous action, education, and rational
+            activity, allowing them to move beyond merely satisfying immediate
+            physical needs toward the fulfillment of their distinctively human
+            potential.
+          </p>
 
-        <h3>2. Genuine Happiness Is the Highest Human Goal</h3>
+          <h3>2. Genuine Happiness Is the Highest Human Goal</h3>
 
-        <p>
-          Happiness is not simply pleasure, wealth, honor, or physical security.
-          Genuine happiness requires the perfection of the rational and
-          intellectual capacities together with an appropriately ordered life.
-          It represents the fulfillment of human nature rather than a temporary
-          emotional state or the possession of external goods.
-        </p>
+          <p>
+            Happiness is not simply pleasure, wealth, honor, or physical
+            security. Genuine happiness requires the perfection of the rational
+            and intellectual capacities together with an appropriately ordered
+            life. It represents the fulfillment of human nature rather than a
+            temporary emotional state or the possession of external goods.
+          </p>
 
-        <h3>3. The Virtuous City Should Promote Human Happiness</h3>
+          <h3>3. The Virtuous City Should Promote Human Happiness</h3>
 
-        <p>
-          A good political community should help citizens pursue genuine
-          happiness rather than merely satisfying their material needs.
-          Political institutions, education, law, and leadership should
-          therefore be evaluated partly according to whether they guide communal
-          life toward knowledge, virtue, and the proper perfection of human
-          beings.
-        </p>
+          <p>
+            A good political community should help citizens pursue genuine
+            happiness rather than merely satisfying their material needs.
+            Political institutions, education, law, and leadership should
+            therefore be evaluated partly according to whether they guide
+            communal life toward knowledge, virtue, and the proper perfection of
+            human beings.
+          </p>
 
-        <h3>4. The Intellect Is Central to Human Perfection</h3>
+          <h3>4. The Intellect Is Central to Human Perfection</h3>
 
-        <p>
-          Human beings become more fully developed through the actualization of
-          their intellectual capacities and the acquisition of knowledge. The
-          movement from potential to actual understanding is central to
-          Al-Farabi's psychology and epistemology and connects the development
-          of the individual with his broader account of human happiness.
-        </p>
+          <p>
+            Human beings become more fully developed through the actualization
+            of their intellectual capacities and the acquisition of knowledge.
+            The movement from potential to actual understanding is central to
+            Al-Farabi's psychology and epistemology and connects the development
+            of the individual with his broader account of human happiness.
+          </p>
 
-        <h3>5. The Active Intellect Makes Intellectual Knowledge Possible</h3>
+          <h3>5. The Active Intellect Makes Intellectual Knowledge Possible</h3>
 
-        <p>
-          The Active Intellect plays a fundamental role in Al-Farabi's account
-          of how human beings acquire intelligible knowledge. It connects his
-          cosmology with his theory of the human mind and helps explain how
-          rational capacities can attain the principles necessary for
-          increasingly complete intellectual understanding.
-        </p>
+          <p>
+            The Active Intellect plays a fundamental role in Al-Farabi's account
+            of how human beings acquire intelligible knowledge. It connects his
+            cosmology with his theory of the human mind and helps explain how
+            rational capacities can attain the principles necessary for
+            increasingly complete intellectual understanding.
+          </p>
 
-        <h3>
-          6. Philosophy and Religion Serve Different Intellectual Functions
-        </h3>
+          <h3>
+            6. Philosophy and Religion Serve Different Intellectual Functions
+          </h3>
 
-        <p>
-          Philosophy seeks demonstrative intellectual knowledge, while religion
-          communicates and organizes beliefs and practices in forms capable of
-          guiding a wider community. Al-Farabi's distinction is closely
-          connected with his theories of imagination, rhetoric, education, and
-          political leadership rather than being merely a simple opposition
-          between reason and religion.
-        </p>
+          <p>
+            Philosophy seeks demonstrative intellectual knowledge, while
+            religion communicates and organizes beliefs and practices in forms
+            capable of guiding a wider community. Al-Farabi's distinction is
+            closely connected with his theories of imagination, rhetoric,
+            education, and political leadership rather than being merely a
+            simple opposition between reason and religion.
+          </p>
 
-        <h3>7. Political Leadership Requires Knowledge and Virtue</h3>
+          <h3>7. Political Leadership Requires Knowledge and Virtue</h3>
 
-        <p>
-          The ideal ruler must possess exceptional intellectual, moral, and
-          practical qualities and guide the community toward its proper end.
-          Legitimate excellence in leadership depends on understanding human
-          happiness and possessing the ability to educate and organize a
-          community rather than merely exercising power over it.
-        </p>
-      </section>
+          <p>
+            The ideal ruler must possess exceptional intellectual, moral, and
+            practical qualities and guide the community toward its proper end.
+            Legitimate excellence in leadership depends on understanding human
+            happiness and possessing the ability to educate and organize a
+            community rather than merely exercising power over it.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          SIMPLE EXPLANATION
          ===================================================== -->
 
-      <section class="narrative-block" id="explained-simply">
-        <h2>Al-Farabi's Philosophy Explained Simply</h2>
+        <section class="narrative-block" id="explained-simply">
+          <h2>Al-Farabi's Philosophy Explained Simply</h2>
 
-        <p>
-          Al-Farabi's philosophy can be understood through one central question:
-          <strong
-            >How can human beings and societies achieve genuine happiness and
-            perfection?</strong
-          >
-          His answer brings together knowledge, virtue, education, political
-          organization, and an understanding of humanity's place within the
-          larger structure of reality.
-        </p>
+          <p>
+            Al-Farabi's philosophy can be understood through one central
+            question:
+            <strong
+              >How can human beings and societies achieve genuine happiness and
+              perfection?</strong
+            >
+            His answer brings together knowledge, virtue, education, political
+            organization, and an understanding of humanity's place within the
+            larger structure of reality.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong>Human beings have rational capacities.</strong>
-            These capacities allow people to acquire knowledge and understand
-            reality.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>Human beings have rational capacities.</strong>
+              These capacities allow people to acquire knowledge and understand
+              reality.
+            </li>
 
-          <li>
-            <strong>Knowledge and virtue lead toward perfection.</strong>
-            A good human life requires intellectual and moral development.
-          </li>
+            <li>
+              <strong>Knowledge and virtue lead toward perfection.</strong>
+              A good human life requires intellectual and moral development.
+            </li>
 
-          <li>
-            <strong>Society is necessary.</strong>
-            Human beings cooperate with others because individuals cannot
-            achieve their highest perfection entirely alone.
-          </li>
+            <li>
+              <strong>Society is necessary.</strong>
+              Human beings cooperate with others because individuals cannot
+              achieve their highest perfection entirely alone.
+            </li>
 
-          <li>
-            <strong>The Virtuous City supports genuine happiness.</strong>
-            Political institutions should help citizens develop toward their
-            proper human end.
-          </li>
+            <li>
+              <strong>The Virtuous City supports genuine happiness.</strong>
+              Political institutions should help citizens develop toward their
+              proper human end.
+            </li>
 
-          <li>
-            <strong>The ruler needs knowledge and virtue.</strong>
-            Political leadership should be directed by wisdom rather than merely
-            by wealth, force, or ambition.
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>The ruler needs knowledge and virtue.</strong>
+              Political leadership should be directed by wisdom rather than
+              merely by wealth, force, or ambition.
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          WHY IMPORTANT
          ===================================================== -->
 
-      <section class="narrative-block" id="importance">
-        <h2>Why Is Al-Farabi Important in the History of Philosophy?</h2>
+        <section class="narrative-block" id="importance">
+          <h2>Why Is Al-Farabi Important in the History of Philosophy?</h2>
 
-        <p>
-          Al-Farabi is important because he transformed the philosophical
-          inheritance of Plato, Aristotle, and late antique neo-Aristotelian and
-          Neoplatonic traditions into one of the most sophisticated and
-          systematic philosophical projects of the medieval Islamic world.
-        </p>
+          <p>
+            Al-Farabi is important because he transformed the philosophical
+            inheritance of Plato, Aristotle, and late antique neo-Aristotelian
+            and Neoplatonic traditions into one of the most sophisticated and
+            systematic philosophical projects of the medieval Islamic world.
+          </p>
 
-        <p>
-          His contributions to
-          <strong
-            >logic, metaphysics, philosophy of mind, political philosophy,
-            religion, ethics, and music</strong
-          >
-          demonstrate the extraordinary breadth of his intellectual project. Yet
-          this breadth was accompanied by a strong concern for systematic
-          relationships between disciplines rather than a collection of
-          disconnected interests.
-        </p>
+          <p>
+            His contributions to
+            <strong
+              >logic, metaphysics, philosophy of mind, political philosophy,
+              religion, ethics, and music</strong
+            >
+            demonstrate the extraordinary breadth of his intellectual project.
+            Yet this breadth was accompanied by a strong concern for systematic
+            relationships between disciplines rather than a collection of
+            disconnected interests.
+          </p>
 
-        <p>
-          His political philosophy is particularly influential because it treats
-          society as something that should be evaluated according to its ability
-          to guide human beings toward genuine happiness and perfection. This
-          makes questions about education, leadership, knowledge, virtue, and
-          political authority inseparable within his account of the ideal
-          community.
-        </p>
+          <p>
+            His political philosophy is particularly influential because it
+            treats society as something that should be evaluated according to
+            its ability to guide human beings toward genuine happiness and
+            perfection. This makes questions about education, leadership,
+            knowledge, virtue, and political authority inseparable within his
+            account of the ideal community.
+          </p>
 
-        <p>
-          Al-Farabi also played a decisive role in establishing logic and the
-          theory of the intellect as central components of philosophical inquiry
-          in the Arabic-speaking intellectual tradition. His interpretation and
-          development of Greek philosophical materials provided an important
-          foundation for later Islamic philosophers, even when they disagreed
-          with or significantly transformed his conclusions.
-        </p>
+          <p>
+            Al-Farabi also played a decisive role in establishing logic and the
+            theory of the intellect as central components of philosophical
+            inquiry in the Arabic-speaking intellectual tradition. His
+            interpretation and development of Greek philosophical materials
+            provided an important foundation for later Islamic philosophers,
+            even when they disagreed with or significantly transformed his
+            conclusions.
+          </p>
 
-        <p>
-          For this reason, Al-Farabi remains a major figure not only in Islamic
-          philosophy but also in the broader history of political philosophy,
-          metaphysics, logic, philosophy of mind, and the transmission and
-          transformation of Greek philosophy across medieval intellectual
-          traditions.
-        </p>
-      </section>
+          <p>
+            For this reason, Al-Farabi remains a major figure not only in
+            Islamic philosophy but also in the broader history of political
+            philosophy, metaphysics, logic, philosophy of mind, and the
+            transmission and transformation of Greek philosophy across medieval
+            intellectual traditions.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          FAQ
          ===================================================== -->
 
-      <section class="narrative-block" id="faq">
-        <h2>Frequently Asked Questions About Al-Farabi</h2>
+        <section class="narrative-block" id="faq">
+          <h2>Frequently Asked Questions About Al-Farabi</h2>
 
-        <h3>Who was Al-Farabi?</h3>
+          <h3>Who was Al-Farabi?</h3>
 
-        <p>
-          Al-Farabi was a major tenth-century philosopher of the Islamic world
-          who wrote about logic, metaphysics, psychology, political philosophy,
-          ethics, religion, mathematics, and music.
-        </p>
+          <p>
+            Al-Farabi was a major tenth-century philosopher of the Islamic world
+            who wrote about logic, metaphysics, psychology, political
+            philosophy, ethics, religion, mathematics, and music.
+          </p>
 
-        <h3>What is Al-Farabi famous for?</h3>
+          <h3>What is Al-Farabi famous for?</h3>
 
-        <p>
-          Al-Farabi is especially famous for his political philosophy, the
-          concept of the Virtuous City, his theory of intellect, his work on
-          logic, and his attempt to synthesize Platonic, Aristotelian, and
-          Neoplatonic philosophy.
-        </p>
+          <p>
+            Al-Farabi is especially famous for his political philosophy, the
+            concept of the Virtuous City, his theory of intellect, his work on
+            logic, and his attempt to synthesize Platonic, Aristotelian, and
+            Neoplatonic philosophy.
+          </p>
 
-        <h3>Why is Al-Farabi called the Second Master?</h3>
+          <h3>Why is Al-Farabi called the Second Master?</h3>
 
-        <p>
-          Al-Farabi is traditionally called the "Second Master" because
-          Aristotle was regarded as the "First Master." The title reflects
-          Al-Farabi's exceptional reputation, particularly in logic and
-          philosophy.
-        </p>
+          <p>
+            Al-Farabi is traditionally called the "Second Master" because
+            Aristotle was regarded as the "First Master." The title reflects
+            Al-Farabi's exceptional reputation, particularly in logic and
+            philosophy.
+          </p>
 
-        <h3>What is Al-Farabi's Virtuous City?</h3>
+          <h3>What is Al-Farabi's Virtuous City?</h3>
 
-        <p>
-          The Virtuous City is Al-Farabi's model of an excellent political
-          community. Its institutions and citizens cooperate toward genuine
-          human happiness and perfection.
-        </p>
+          <p>
+            The Virtuous City is Al-Farabi's model of an excellent political
+            community. Its institutions and citizens cooperate toward genuine
+            human happiness and perfection.
+          </p>
 
-        <h3>What was Al-Farabi's political philosophy?</h3>
+          <h3>What was Al-Farabi's political philosophy?</h3>
 
-        <p>
-          Al-Farabi's political philosophy argues that society should be
-          organized toward the highest human goal: genuine happiness and
-          perfection. His ideal ruler must possess intellectual and moral
-          excellence.
-        </p>
+          <p>
+            Al-Farabi's political philosophy argues that society should be
+            organized toward the highest human goal: genuine happiness and
+            perfection. His ideal ruler must possess intellectual and moral
+            excellence.
+          </p>
 
-        <h3>What did Al-Farabi believe about happiness?</h3>
+          <h3>What did Al-Farabi believe about happiness?</h3>
 
-        <p>
-          Al-Farabi regarded genuine happiness as the highest human goal. It is
-          connected with intellectual and moral perfection rather than merely
-          with pleasure, wealth, honor, or physical security.
-        </p>
+          <p>
+            Al-Farabi regarded genuine happiness as the highest human goal. It
+            is connected with intellectual and moral perfection rather than
+            merely with pleasure, wealth, honor, or physical security.
+          </p>
 
-        <h3>What is the Active Intellect according to Al-Farabi?</h3>
+          <h3>What is the Active Intellect according to Al-Farabi?</h3>
 
-        <p>
-          The Active Intellect is an immaterial intellect that plays an
-          important role in Al-Farabi's cosmology and theory of knowledge. It
-          helps make human intellectual understanding possible.
-        </p>
+          <p>
+            The Active Intellect is an immaterial intellect that plays an
+            important role in Al-Farabi's cosmology and theory of knowledge. It
+            helps make human intellectual understanding possible.
+          </p>
 
-        <h3>What was Al-Farabi's theory of intellect?</h3>
+          <h3>What was Al-Farabi's theory of intellect?</h3>
 
-        <p>
-          Al-Farabi distinguishes several forms or stages of intellect,
-          including potential, actual, and acquired intellect, while also
-          discussing the separate Active Intellect.
-        </p>
+          <p>
+            Al-Farabi distinguishes several forms or stages of intellect,
+            including potential, actual, and acquired intellect, while also
+            discussing the separate Active Intellect.
+          </p>
 
-        <h3>What did Al-Farabi say about Plato and Aristotle?</h3>
+          <h3>What did Al-Farabi say about Plato and Aristotle?</h3>
 
-        <p>
-          Al-Farabi studied both Plato and Aristotle extensively and attempted
-          to understand and harmonize their philosophical positions. Their ideas
-          strongly influenced his political philosophy, logic, metaphysics, and
-          ethics.
-        </p>
+          <p>
+            Al-Farabi studied both Plato and Aristotle extensively and attempted
+            to understand and harmonize their philosophical positions. Their
+            ideas strongly influenced his political philosophy, logic,
+            metaphysics, and ethics.
+          </p>
 
-        <h3>What is Al-Farabi's most famous book?</h3>
+          <h3>What is Al-Farabi's most famous book?</h3>
 
-        <p>
-          One of Al-Farabi's most famous works is
-          <em>The Opinions of the People of the Virtuous City</em>, also known
-          as <em>The Virtuous City</em> or <em>The Perfect State</em> in some
-          translations.
-        </p>
+          <p>
+            One of Al-Farabi's most famous works is
+            <em>The Opinions of the People of the Virtuous City</em>, also known
+            as <em>The Virtuous City</em> or <em>The Perfect State</em> in some
+            translations.
+          </p>
 
-        <h3>What is Al-Farabi's Enumeration of the Sciences?</h3>
+          <h3>What is Al-Farabi's Enumeration of the Sciences?</h3>
 
-        <p>
-          <em>Enumeration of the Sciences</em> is a work in which Al-Farabi
-          classifies major fields of knowledge, including language, logic,
-          mathematics, natural science, metaphysics, and political disciplines.
-        </p>
+          <p>
+            <em>Enumeration of the Sciences</em> is a work in which Al-Farabi
+            classifies major fields of knowledge, including language, logic,
+            mathematics, natural science, metaphysics, and political
+            disciplines.
+          </p>
 
-        <h3>What was Al-Farabi's contribution to Islamic philosophy?</h3>
+          <h3>What was Al-Farabi's contribution to Islamic philosophy?</h3>
 
-        <p>
-          Al-Farabi helped develop a systematic philosophical tradition in the
-          Islamic world by combining Greek philosophy with questions concerning
-          metaphysics, human perfection, politics, religion, and knowledge.
-        </p>
+          <p>
+            Al-Farabi helped develop a systematic philosophical tradition in the
+            Islamic world by combining Greek philosophy with questions
+            concerning metaphysics, human perfection, politics, religion, and
+            knowledge.
+          </p>
 
-        <h3>How did Al-Farabi influence Avicenna?</h3>
+          <h3>How did Al-Farabi influence Avicenna?</h3>
 
-        <p>
-          Al-Farabi's works on logic, metaphysics, intellect, and philosophy
-          provided important intellectual resources for Avicenna. Avicenna
-          regarded Al-Farabi as particularly helpful for understanding
-          Aristotle's metaphysics.
-        </p>
+          <p>
+            Al-Farabi's works on logic, metaphysics, intellect, and philosophy
+            provided important intellectual resources for Avicenna. Avicenna
+            regarded Al-Farabi as particularly helpful for understanding
+            Aristotle's metaphysics.
+          </p>
 
-        <h3>Was Al-Farabi influenced by Aristotle?</h3>
+          <h3>Was Al-Farabi influenced by Aristotle?</h3>
 
-        <p>
-          Yes. Aristotle was one of Al-Farabi's most important philosophical
-          influences, especially in logic, metaphysics, psychology, and natural
-          philosophy.
-        </p>
+          <p>
+            Yes. Aristotle was one of Al-Farabi's most important philosophical
+            influences, especially in logic, metaphysics, psychology, and
+            natural philosophy.
+          </p>
 
-        <h3>Did Al-Farabi believe philosophy and religion were the same?</h3>
+          <h3>Did Al-Farabi believe philosophy and religion were the same?</h3>
 
-        <p>
-          No. Al-Farabi distinguishes philosophical knowledge from religious
-          belief and representation. Philosophy seeks demonstrative knowledge,
-          while religion communicates beliefs and practices in forms capable of
-          guiding a broader community.
-        </p>
+          <p>
+            No. Al-Farabi distinguishes philosophical knowledge from religious
+            belief and representation. Philosophy seeks demonstrative knowledge,
+            while religion communicates beliefs and practices in forms capable
+            of guiding a broader community.
+          </p>
 
-        <h3>What was Al-Farabi's contribution to music?</h3>
+          <h3>What was Al-Farabi's contribution to music?</h3>
 
-        <p>
-          Al-Farabi wrote the <em>Great Book of Music</em>, one of the major
-          medieval works on music theory in the Islamic world. It examines
-          musical sounds, intervals, rhythm, instruments, and theoretical
-          principles.
-        </p>
-      </section>
+          <p>
+            Al-Farabi wrote the <em>Great Book of Music</em>, one of the major
+            medieval works on music theory in the Islamic world. It examines
+            musical sounds, intervals, rhythm, instruments, and theoretical
+            principles.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED THINKERS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-thinkers-title">
-        <span class="section-eyebrow"> Continue Exploring </span>
+        <section class="connection" aria-labelledby="related-thinkers-title">
+          <span class="section-eyebrow"> Continue Exploring </span>
 
-        <h2 id="related-thinkers-title">
-          Related Islamic and Arabic Philosophers
-        </h2>
+          <h2 id="related-thinkers-title">
+            Related Islamic and Arabic Philosophers
+          </h2>
 
-        <p>
-          Explore other major thinkers in the development of Islamic philosophy,
-          Arabic philosophy, Persian philosophy, and medieval intellectual
-          history.
-        </p>
+          <p>
+            Explore other major thinkers in the development of Islamic
+            philosophy, Arabic philosophy, Persian philosophy, and medieval
+            intellectual history.
+          </p>
 
-        <div class="related-links">
-          <a href="al-kindi.html"> Al-Kindi </a>
-          ·
+          <div class="related-links">
+            <a href="al-kindi.html"> Al-Kindi </a>
+            ·
 
-          <a href="avicenna.html"> Avicenna (Ibn Sina) </a>
-          ·
+            <a href="avicenna.html"> Avicenna (Ibn Sina) </a>
+            ·
 
-          <a href="al-ghazali.html"> Al-Ghazali </a>
-          ·
+            <a href="al-ghazali.html"> Al-Ghazali </a>
+            ·
 
-          <a href="averroes.html"> Averroes (Ibn Rushd) </a>
-          ·
+            <a href="averroes.html"> Averroes (Ibn Rushd) </a>
+            ·
 
-          <a href="suhrawardi.html"> Suhrawardi </a>
-          ·
+            <a href="suhrawardi.html"> Suhrawardi </a>
+            ·
 
-          <a href="ibn-arabi.html"> Ibn Arabi </a>
-        </div>
-      </section>
+            <a href="ibn-arabi.html"> Ibn Arabi </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED AREAS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-topics-title">
-        <span class="section-eyebrow"> Philosophical Connections </span>
+        <section class="connection" aria-labelledby="related-topics-title">
+          <span class="section-eyebrow"> Philosophical Connections </span>
 
-        <h2 id="related-topics-title">Related Areas of Philosophy</h2>
+          <h2 id="related-topics-title">Related Areas of Philosophy</h2>
 
-        <p>
-          Al-Farabi's philosophy connects Islamic philosophy with political
-          philosophy, metaphysics, epistemology, logic, ethics, philosophy of
-          mind, philosophy of religion, cosmology, and the history of Greek
-          philosophy.
-        </p>
+          <p>
+            Al-Farabi's philosophy connects Islamic philosophy with political
+            philosophy, metaphysics, epistemology, logic, ethics, philosophy of
+            mind, philosophy of religion, cosmology, and the history of Greek
+            philosophy.
+          </p>
 
-        <div class="related-links">
-          <a href="ethics-branch-philosophy.html"> Ethics </a>
-          ·
+          <div class="related-links">
+            <a href="ethics-branch-philosophy.html"> Ethics </a>
+            ·
 
-          <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
-          ·
+            <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
+            ·
 
-          <a href="epistemology-branch-philosophy.html"> Epistemology </a>
-          ·
+            <a href="epistemology-branch-philosophy.html"> Epistemology </a>
+            ·
 
-          <a href="logic-branch-philosophy.html"> Logic </a>
-          ·
+            <a href="logic-branch-philosophy.html"> Logic </a>
+            ·
 
-          <a href="islamic-philosophy.html"> Islamic Philosophy </a>
-          ·
+            <a href="islamic-philosophy.html"> Islamic Philosophy </a>
+            ·
 
-          <a href="schools.html"> Schools of Philosophy </a>
-        </div>
-      </section>
+            <a href="schools.html"> Schools of Philosophy </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          CONCLUSION
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="conclusion-title">
-        <span class="section-eyebrow"> Medieval Islamic Philosophy </span>
+        <section class="connection" aria-labelledby="conclusion-title">
+          <span class="section-eyebrow"> Medieval Islamic Philosophy </span>
 
-        <h2 id="conclusion-title">Why Al-Farabi Still Matters</h2>
+          <h2 id="conclusion-title">Why Al-Farabi Still Matters</h2>
 
-        <p>
-          Al-Farabi occupies one of the most important positions in the history
-          of Islamic philosophy. His work brought together Greek philosophical
-          traditions and the intellectual concerns of the medieval Islamic
-          world.
-        </p>
+          <p>
+            Al-Farabi occupies one of the most important positions in the
+            history of Islamic philosophy. His work brought together Greek
+            philosophical traditions and the intellectual concerns of the
+            medieval Islamic world.
+          </p>
 
-        <p>
-          His theories of intellect, knowledge, happiness, political
-          organization, religion, and the Virtuous City demonstrate how closely
-          philosophy, ethics, psychology, and politics can be connected.
-        </p>
+          <p>
+            His theories of intellect, knowledge, happiness, political
+            organization, religion, and the Virtuous City demonstrate how
+            closely philosophy, ethics, psychology, and politics can be
+            connected.
+          </p>
 
-        <p>
-          His influence on later thinkers such as Avicenna, Averroes, and
-          Maimonides makes him essential for understanding the development of
-          medieval philosophy across Islamic, Jewish, and Christian intellectual
-          traditions.
-        </p>
+          <p>
+            His influence on later thinkers such as Avicenna, Averroes, and
+            Maimonides makes him essential for understanding the development of
+            medieval philosophy across Islamic, Jewish, and Christian
+            intellectual traditions.
+          </p>
 
-        <a class="cta-button" href="thinkers.html">
-          Explore Great Philosophers
-          <span aria-hidden="true">&rarr;</span>
-        </a>
-      </section>
-    </main>
+          <a class="cta-button" href="thinkers.html">
+            Explore Great Philosophers
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </section>
+      </main>
+    </div>
 
     <!-- =====================================================
        FOOTER
@@ -2864,8 +2965,8 @@
        SCRIPTS
        ===================================================== -->
 
-     <script src="script.js" defer></script>
-     <script src="article-toc.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="article-toc.js" defer></script>
 
     <script src="branches-enhance.js" defer></script>
 

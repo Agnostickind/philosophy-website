@@ -110,7 +110,7 @@
 
     <!-- ================= STYLESHEETS ================= -->
 
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="article-toc.css" />
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
@@ -310,10 +310,10 @@
       }
     </script>
     <link
-    rel="describedby"
-    href="https://agnostickind.github.io/philosophy-website/llms.txt"
-  >
-</head>
+      rel="describedby"
+      href="https://agnostickind.github.io/philosophy-website/llms.txt"
+    />
+  </head>
 
   <body>
     <!-- =====================================================
@@ -603,12 +603,11 @@
         </div>
 
         <a href="schools.html">Schools</a>
-       <a href="books.html">Books</a>
+        <a href="books.html">Books</a>
         <a href="world-literature.html">Literature</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </div>
-
 
       <div class="nav-tools">
         <!-- SEARCH -->
@@ -708,1123 +707,1202 @@
       </div>
     </header>
 
-    <main id="main-content" tabindex="-1">
-      <!-- =====================================================
+    <div class="article-reading-area">
+      <!-- =========================================================
+     ARTICLE TABLE OF CONTENTS
+     ========================================================= -->
+
+      <!-- Desktop TOC -->
+      <aside class="article-toc" aria-label="Article contents">
+        <div class="article-toc__header">
+          <span class="article-toc__title">Contents</span>
+
+          <button
+            type="button"
+            class="article-toc__hide"
+            aria-label="Hide article contents"
+          >
+            Hide
+          </button>
+        </div>
+
+        <nav class="article-toc__nav" aria-label="Article sections">
+          <div class="article-toc__list"></div>
+        </nav>
+      </aside>
+
+      <!-- Mobile TOC trigger -->
+      <button
+        type="button"
+        class="mobile-toc-trigger"
+        aria-expanded="false"
+        aria-controls="mobile-toc-drawer"
+      >
+        <span>Contents</span>
+        <span class="mobile-toc-trigger__chevron" aria-hidden="true">⌄</span>
+      </button>
+
+      <!-- Mobile TOC overlay -->
+      <div class="mobile-toc-overlay" hidden></div>
+
+      <!-- Mobile TOC drawer -->
+      <aside
+        id="mobile-toc-drawer"
+        class="mobile-toc-drawer"
+        aria-label="Article contents"
+        aria-hidden="true"
+      >
+        <div class="mobile-toc-drawer__header">
+          <span class="mobile-toc-drawer__title">Contents</span>
+
+          <button
+            type="button"
+            class="mobile-toc-drawer__close"
+            aria-label="Close article contents"
+          >
+            ×
+          </button>
+        </div>
+
+        <nav class="mobile-toc-drawer__nav" aria-label="Article sections">
+          <div class="mobile-toc-drawer__list"></div>
+        </nav>
+      </aside>
+
+      <main id="main-content" tabindex="-1">
+        <!-- =====================================================
          INTRODUCTION
          ===================================================== -->
 
-      <section class="about-home">
-        <h2>Who Was Suhrawardi?</h2>
+        <section class="about-home">
+          <h2>Who Was Suhrawardi?</h2>
 
-        <p>
-          <strong>Suhrawardi</strong> (Shihāb al-Dīn Yaḥyā ibn Ḥabash
-          al-Suhrawardī, c. 1154–1191 CE) was a Persian philosopher and mystic
-          who founded one of the most original schools of thought in the history
-          of <strong>Islamic philosophy</strong>: the
-          <strong>Illuminationist</strong>, or <strong>Ishraqi</strong>,
-          tradition. His philosophy developed a systematic metaphysics and
-          epistemology centered on the concept and symbolism of
-          <strong>light</strong>, making him one of the most distinctive
-          thinkers of the post-Avicennian period.
-           
-        </p>
+          <p>
+            <strong>Suhrawardi</strong> (Shihāb al-Dīn Yaḥyā ibn Ḥabash
+            al-Suhrawardī, c. 1154–1191 CE) was a Persian philosopher and mystic
+            who founded one of the most original schools of thought in the
+            history of <strong>Islamic philosophy</strong>: the
+            <strong>Illuminationist</strong>, or <strong>Ishraqi</strong>,
+            tradition. His philosophy developed a systematic metaphysics and
+            epistemology centered on the concept and symbolism of
+            <strong>light</strong>, making him one of the most distinctive
+            thinkers of the post-Avicennian period.
+          </p>
 
-        <p>
-          Suhrawardi was trained in the philosophical tradition associated with
-          <strong>Avicenna (Ibn Sina)</strong>, but he developed an original
-          critique of Avicennian Peripateticism. He did not simply reject
-          rational philosophy: logical demonstration remained important to him.
-          However, he argued that complete philosophical wisdom also required a
-          more direct form of knowledge, often described through illumination,
-          intuition, presence, and immediate awareness.
-            
-        </p>
+          <p>
+            Suhrawardi was trained in the philosophical tradition associated
+            with
+            <strong>Avicenna (Ibn Sina)</strong>, but he developed an original
+            critique of Avicennian Peripateticism. He did not simply reject
+            rational philosophy: logical demonstration remained important to
+            him. However, he argued that complete philosophical wisdom also
+            required a more direct form of knowledge, often described through
+            illumination, intuition, presence, and immediate awareness.
+          </p>
 
-        <p>
-          His most famous work, <em>Hikmat al-Ishraq</em> or
-          <strong>The Philosophy of Illumination</strong>, presents his
-          distinctive philosophical system. In it, Suhrawardi developed an
-          ontology structured around different degrees of light and darkness,
-          with the <strong>Light of Lights</strong> occupying the highest
-          metaphysical position. He also developed influential ideas concerning
-          direct or <strong>presential knowledge</strong> and the role of the
-          imaginal world in human experience and cosmology.
-             
-        </p>
+          <p>
+            His most famous work, <em>Hikmat al-Ishraq</em> or
+            <strong>The Philosophy of Illumination</strong>, presents his
+            distinctive philosophical system. In it, Suhrawardi developed an
+            ontology structured around different degrees of light and darkness,
+            with the <strong>Light of Lights</strong> occupying the highest
+            metaphysical position. He also developed influential ideas
+            concerning direct or <strong>presential knowledge</strong> and the
+            role of the imaginal world in human experience and cosmology.
+          </p>
 
-        <p>
-          Suhrawardi sought to create a form of philosophy that combined
-          rigorous intellectual investigation with direct spiritual realization.
-          His work drew upon several traditions, including Greek philosophy,
-          especially Platonic and Aristotelian traditions as transmitted through
-          Islamic philosophy, while also engaging with Iranian intellectual and
-          symbolic traditions. For this reason, his thought cannot accurately be
-          reduced to either pure mysticism or conventional Peripatetic
-          philosophy.     
-        </p>
+          <p>
+            Suhrawardi sought to create a form of philosophy that combined
+            rigorous intellectual investigation with direct spiritual
+            realization. His work drew upon several traditions, including Greek
+            philosophy, especially Platonic and Aristotelian traditions as
+            transmitted through Islamic philosophy, while also engaging with
+            Iranian intellectual and symbolic traditions. For this reason, his
+            thought cannot accurately be reduced to either pure mysticism or
+            conventional Peripatetic philosophy.
+          </p>
 
-        <p>
-          Suhrawardi's life was as dramatic as his philosophy was original.
-          After traveling and studying in several intellectual centers, he
-          eventually reached Aleppo, where conflicts with influential religious
-          scholars and political circumstances contributed to his downfall. He
-          died in 1191 at a young age, traditionally remembered as having been
-          executed, and became known as <strong>al-Maqtul</strong>, "the Slain"
-          or "the Executed," to distinguish him from other figures bearing the
-          name Suhrawardi.     
-        </p>
+          <p>
+            Suhrawardi's life was as dramatic as his philosophy was original.
+            After traveling and studying in several intellectual centers, he
+            eventually reached Aleppo, where conflicts with influential
+            religious scholars and political circumstances contributed to his
+            downfall. He died in 1191 at a young age, traditionally remembered
+            as having been executed, and became known as
+            <strong>al-Maqtul</strong>, "the Slain" or "the Executed," to
+            distinguish him from other figures bearing the name Suhrawardi.
+          </p>
 
-        <p>
-          Although Suhrawardi died young, his philosophical influence continued
-          for centuries. The <strong>Illuminationist tradition</strong> became a
-          major current of philosophy in the Islamic East, and his ideas later
-          influenced important thinkers, including philosophers working in the
-          broader intellectual traditions that eventually contributed to the
-          development of Safavid-era Persian philosophy. Today, Suhrawardi is
-          remembered as one of the central figures in the history of
-          <strong>Islamic and Persian philosophy</strong>.
-         
-        </p>
-      </section>
-      <div class="philosophy-divider"></div>
+          <p>
+            Although Suhrawardi died young, his philosophical influence
+            continued for centuries. The
+            <strong>Illuminationist tradition</strong> became a major current of
+            philosophy in the Islamic East, and his ideas later influenced
+            important thinkers, including philosophers working in the broader
+            intellectual traditions that eventually contributed to the
+            development of Safavid-era Persian philosophy. Today, Suhrawardi is
+            remembered as one of the central figures in the history of
+            <strong>Islamic and Persian philosophy</strong>.
+          </p>
+        </section>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          QUICK FACTS
          ===================================================== -->
 
-      <section class="narrative-block" id="quick-facts">
-        <h2>Suhrawardi: Quick Facts</h2>
+        <section class="narrative-block" id="quick-facts">
+          <h2>Suhrawardi: Quick Facts</h2>
 
-        <ul class="plain-list">
-          <li>
-            <strong>Full name</strong> — Shihāb al-Dīn Yaḥyā ibn Ḥabash
-            al-Suhrawardī
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>Full name</strong> — Shihāb al-Dīn Yaḥyā ibn Ḥabash
+              al-Suhrawardī
+            </li>
 
-          <li>
-            <strong>Known as</strong> — Suhrawardi, Shaykh al-Ishraq ("Master of
-            Illumination"), or al-Maqtul ("the Executed")
-          </li>
+            <li>
+              <strong>Known as</strong> — Suhrawardi, Shaykh al-Ishraq ("Master
+              of Illumination"), or al-Maqtul ("the Executed")
+            </li>
 
-          <li>
-            <strong>Born</strong> — 1154 CE, Suhraward, in present-day Iran
-          </li>
+            <li>
+              <strong>Born</strong> — 1154 CE, Suhraward, in present-day Iran
+            </li>
 
-          <li><strong>Died</strong> — 1191 CE, Aleppo, present-day Syria</li>
+            <li><strong>Died</strong> — 1191 CE, Aleppo, present-day Syria</li>
 
-          <li>
-            <strong>Associated with</strong> — Suhraward, Isfahan, Anatolia, and
-            Aleppo
-          </li>
+            <li>
+              <strong>Associated with</strong> — Suhraward, Isfahan, Anatolia,
+              and Aleppo
+            </li>
 
-          <li>
-            <strong>Philosophical tradition</strong> — Founder of
-            Illuminationist (Ishraqi) philosophy
-          </li>
+            <li>
+              <strong>Philosophical tradition</strong> — Founder of
+              Illuminationist (Ishraqi) philosophy
+            </li>
 
-          <li>
-            <strong>Major influences</strong> — Avicenna, Platonic philosophy,
-            Zoroastrian and ancient Persian thought, Sufi mysticism
-          </li>
+            <li>
+              <strong>Major influences</strong> — Avicenna, Platonic philosophy,
+              Zoroastrian and ancient Persian thought, Sufi mysticism
+            </li>
 
-          <li>
-            <strong>Major philosophical subjects</strong> — Metaphysics of
-            light, epistemology, cosmology, logic, and mystical philosophy
-          </li>
+            <li>
+              <strong>Major philosophical subjects</strong> — Metaphysics of
+              light, epistemology, cosmology, logic, and mystical philosophy
+            </li>
 
-          <li>
-            <strong>Famous work</strong> —
-            <em>The Philosophy of Illumination</em> (Hikmat al-Ishraq)
-          </li>
+            <li>
+              <strong>Famous work</strong> —
+              <em>The Philosophy of Illumination</em> (Hikmat al-Ishraq)
+            </li>
 
-          <li>
-            <strong>Key philosophical position</strong> — Knowledge by presence
-            and the primacy of light in metaphysics
-          </li>
+            <li>
+              <strong>Key philosophical position</strong> — Knowledge by
+              presence and the primacy of light in metaphysics
+            </li>
 
-          <li>
-            <strong>Manner of death</strong> — Executed on charges of heresy, c.
-            1191 CE
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>Manner of death</strong> — Executed on charges of heresy,
+              c. 1191 CE
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          EARLY LIFE
          ===================================================== -->
 
-      <section class="narrative-block" id="early-life">
-        <h2>Suhrawardi's Early Life and Historical Background</h2>
+        <section class="narrative-block" id="early-life">
+          <h2>Suhrawardi's Early Life and Historical Background</h2>
 
-        <figure class="narrative-figure">
-          <img
-            src="images/suhrawardi.jpg"
-            alt="Representation of Suhrawardi, founder of Illuminationist philosophy"
-            loading="lazy"
-            decoding="async"
-          />
+          <figure class="narrative-figure">
+            <img
+              src="images/suhrawardi.jpg"
+              alt="Representation of Suhrawardi, founder of Illuminationist philosophy"
+              loading="lazy"
+              decoding="async"
+            />
 
-          <figcaption>
-            Suhrawardi founded the Illuminationist school of Islamic philosophy
-            and died before reaching the age of forty.
-          </figcaption>
-        </figure>
+            <figcaption>
+              Suhrawardi founded the Illuminationist school of Islamic
+              philosophy and died before reaching the age of forty.
+            </figcaption>
+          </figure>
 
-        <p>
-          Suhrawardi was born around 1154 CE in Suhraward, a town or village in
-          northwestern Iran. His early education took place in nearby Maragha,
-          where he studied with Majd al-Din al-Jili. He later traveled to
-          Isfahan, an important center of learning, where he continued his
-          philosophical and logical education within the intellectual
-          environment shaped strongly by the legacy of
-          <strong>Avicenna</strong>.
-        </p>
+          <p>
+            Suhrawardi was born around 1154 CE in Suhraward, a town or village
+            in northwestern Iran. His early education took place in nearby
+            Maragha, where he studied with Majd al-Din al-Jili. He later
+            traveled to Isfahan, an important center of learning, where he
+            continued his philosophical and logical education within the
+            intellectual environment shaped strongly by the legacy of
+            <strong>Avicenna</strong>.
+          </p>
 
-        <p>
-          Suhrawardi's education gave him a strong foundation in the
-          <strong>Peripatetic tradition</strong>, including logic and the
-          philosophical sciences. His later writings show that he knew the
-          Avicennian tradition closely, even though he would eventually
-          criticize and transform important parts of it. His philosophical
-          originality therefore developed from within the intellectual culture
-          he later sought to reform rather than from a complete rejection of
-          earlier philosophy.
-        </p>
+          <p>
+            Suhrawardi's education gave him a strong foundation in the
+            <strong>Peripatetic tradition</strong>, including logic and the
+            philosophical sciences. His later writings show that he knew the
+            Avicennian tradition closely, even though he would eventually
+            criticize and transform important parts of it. His philosophical
+            originality therefore developed from within the intellectual culture
+            he later sought to reform rather than from a complete rejection of
+            earlier philosophy.
+          </p>
 
-        <p>
-          After completing his formal studies, Suhrawardi traveled in search of
-          knowledge and spiritual guidance. Traditional accounts associate part
-          of this period with Anatolia and with encounters with mystics and
-          religious figures. These experiences became important to the
-          development of his thought, which increasingly combined philosophical
-          investigation with spiritual discipline and direct forms of knowledge.
-        </p>
+          <p>
+            After completing his formal studies, Suhrawardi traveled in search
+            of knowledge and spiritual guidance. Traditional accounts associate
+            part of this period with Anatolia and with encounters with mystics
+            and religious figures. These experiences became important to the
+            development of his thought, which increasingly combined
+            philosophical investigation with spiritual discipline and direct
+            forms of knowledge.
+          </p>
 
-        <p>
-          Suhrawardi eventually reached Aleppo, where he gained the attention of
-          <strong>al-Malik al-Zahir</strong>, the Ayyubid ruler of the city and
-          son of Saladin. He completed his major work,
-          <em>Hikmat al-Ishraq</em>, before his death. His growing intellectual
-          influence and conflicts with members of Aleppo's religious
-          establishment contributed to the circumstances that eventually brought
-          his remarkably productive life to an abrupt end.
-        </p>
-      </section>
+          <p>
+            Suhrawardi eventually reached Aleppo, where he gained the attention
+            of
+            <strong>al-Malik al-Zahir</strong>, the Ayyubid ruler of the city
+            and son of Saladin. He completed his major work,
+            <em>Hikmat al-Ishraq</em>, before his death. His growing
+            intellectual influence and conflicts with members of Aleppo's
+            religious establishment contributed to the circumstances that
+            eventually brought his remarkably productive life to an abrupt end.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
    CRITIQUE OF PERIPATETIC PHILOSOPHY 
    ===================================================== -->
 
-      <section class="narrative-block" id="critique-of-peripatetic-philosophy">
-        <h2>Suhrawardi's Critique of Peripatetic Philosophy</h2>
+        <section
+          class="narrative-block"
+          id="critique-of-peripatetic-philosophy"
+        >
+          <h2>Suhrawardi's Critique of Peripatetic Philosophy</h2>
 
-        <p>
-          Suhrawardi was deeply familiar with the
-          <strong>Peripatetic</strong> philosophical tradition that had been
-          developed in the Islamic world by thinkers such as Al-Farabi and
-          especially <strong>Avicenna</strong>. His early philosophical writings
-          demonstrate detailed engagement with Peripatetic logic, physics, and
-          metaphysics, and his later philosophy continued to employ rigorous
-          argument even when departing from established Avicennian positions.
-        </p>
+          <p>
+            Suhrawardi was deeply familiar with the
+            <strong>Peripatetic</strong> philosophical tradition that had been
+            developed in the Islamic world by thinkers such as Al-Farabi and
+            especially <strong>Avicenna</strong>. His early philosophical
+            writings demonstrate detailed engagement with Peripatetic logic,
+            physics, and metaphysics, and his later philosophy continued to
+            employ rigorous argument even when departing from established
+            Avicennian positions.
+          </p>
 
-        <p>
-          His criticism was therefore not a rejection of reason itself.
-          Suhrawardi questioned whether conceptual definitions and discursive
-          demonstration alone could provide access to every kind of
-          philosophical knowledge. Certain realities, especially the knowing
-          subject's awareness of itself, seemed to him to require a more
-          immediate form of apprehension than ordinary representational
-          knowledge could provide.
-        </p>
+          <p>
+            His criticism was therefore not a rejection of reason itself.
+            Suhrawardi questioned whether conceptual definitions and discursive
+            demonstration alone could provide access to every kind of
+            philosophical knowledge. Certain realities, especially the knowing
+            subject's awareness of itself, seemed to him to require a more
+            immediate form of apprehension than ordinary representational
+            knowledge could provide.
+          </p>
 
-        <p>
-          Suhrawardi also challenged particular assumptions within Peripatetic
-          metaphysics and natural philosophy. Rather than organizing his mature
-          system primarily around the language of being and existence, he
-          developed a philosophical vocabulary centered on
-          <strong>light</strong>, manifestation, presence, and degrees of
-          illumination. In this sense, Illuminationist philosophy was both a
-          continuation and a major transformation of the Avicennian intellectual
-          tradition.
-        </p>
+          <p>
+            Suhrawardi also challenged particular assumptions within Peripatetic
+            metaphysics and natural philosophy. Rather than organizing his
+            mature system primarily around the language of being and existence,
+            he developed a philosophical vocabulary centered on
+            <strong>light</strong>, manifestation, presence, and degrees of
+            illumination. In this sense, Illuminationist philosophy was both a
+            continuation and a major transformation of the Avicennian
+            intellectual tradition.
+          </p>
 
-        <p>
-          Logic nevertheless remained an important part of philosophical
-          training. Suhrawardi believed that intellectual discipline and
-          demonstrative reasoning were necessary, but he denied that
-          philosophical wisdom could be reduced to discursive argument alone.
-          The highest form of wisdom required the union of intellectual
-          investigation with direct realization and illumination.
-        </p>
-      </section>
+          <p>
+            Logic nevertheless remained an important part of philosophical
+            training. Suhrawardi believed that intellectual discipline and
+            demonstrative reasoning were necessary, but he denied that
+            philosophical wisdom could be reduced to discursive argument alone.
+            The highest form of wisdom required the union of intellectual
+            investigation with direct realization and illumination.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
    PHILOSOPHY OF ILLUMINATION 
    ===================================================== -->
 
-      <section class="narrative-block" id="philosophy-of-illumination">
-        <h2>What Is Suhrawardi's Philosophy of Illumination?</h2>
+        <section class="narrative-block" id="philosophy-of-illumination">
+          <h2>What Is Suhrawardi's Philosophy of Illumination?</h2>
 
-        <p>
-          <strong>Hikmat al-Ishraq</strong>, usually translated as
-          <em>The Philosophy of Illumination</em>, is Suhrawardi's major
-          philosophical work and the foundational text of the
-          <strong>Illuminationist school</strong>. Completed during his lifetime
-          in the late twelfth century, the work presents a systematic
-          alternative to important elements of the dominant Avicennian
-          philosophical tradition.
-        </p>
+          <p>
+            <strong>Hikmat al-Ishraq</strong>, usually translated as
+            <em>The Philosophy of Illumination</em>, is Suhrawardi's major
+            philosophical work and the foundational text of the
+            <strong>Illuminationist school</strong>. Completed during his
+            lifetime in the late twelfth century, the work presents a systematic
+            alternative to important elements of the dominant Avicennian
+            philosophical tradition.
+          </p>
 
-        <p>
-          At the center of this system is the concept of <strong>light</strong>.
-          For Suhrawardi, light provides a particularly powerful way of
-          describing manifestation and intelligibility: what is luminous is
-          manifest, while darkness represents different forms of obscurity and
-          material limitation. His language of light therefore functions not
-          merely as poetic symbolism but as part of a systematic philosophical
-          account of reality.
-        </p>
+          <p>
+            At the center of this system is the concept of
+            <strong>light</strong>. For Suhrawardi, light provides a
+            particularly powerful way of describing manifestation and
+            intelligibility: what is luminous is manifest, while darkness
+            represents different forms of obscurity and material limitation. His
+            language of light therefore functions not merely as poetic symbolism
+            but as part of a systematic philosophical account of reality.
+          </p>
 
-        <p>
-          Suhrawardi describes existence as a complex hierarchy of immaterial
-          lights and material realities. The highest principle is the
-          <strong>Light of Lights</strong>, while lower levels of reality differ
-          in their degree of illumination, independence, and proximity to the
-          supreme source. This hierarchy allowed him to reinterpret inherited
-          philosophical questions concerning God, the intellects, the soul, and
-          the cosmos.
-        </p>
+          <p>
+            Suhrawardi describes existence as a complex hierarchy of immaterial
+            lights and material realities. The highest principle is the
+            <strong>Light of Lights</strong>, while lower levels of reality
+            differ in their degree of illumination, independence, and proximity
+            to the supreme source. This hierarchy allowed him to reinterpret
+            inherited philosophical questions concerning God, the intellects,
+            the soul, and the cosmos.
+          </p>
 
-        <p>
-          The <em>Philosophy of Illumination</em> also demonstrates Suhrawardi's
-          characteristic method. It engages critically with logic and earlier
-          philosophy before presenting his own illuminationist doctrines. The
-          resulting system combines rational analysis with the claim that
-          genuine wisdom requires forms of direct realization that cannot be
-          replaced by conceptual reasoning alone.
-        </p>
-      </section>
+          <p>
+            The <em>Philosophy of Illumination</em> also demonstrates
+            Suhrawardi's characteristic method. It engages critically with logic
+            and earlier philosophy before presenting his own illuminationist
+            doctrines. The resulting system combines rational analysis with the
+            claim that genuine wisdom requires forms of direct realization that
+            cannot be replaced by conceptual reasoning alone.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
    METAPHYSICS OF LIGHT 
    ===================================================== -->
 
-      <section class="narrative-block" id="metaphysics-of-light">
-        <figure class="narrative-figure left">
-          <img
-            src="images/suhrawardi-light-of-lights.jpg"
-            alt="Conceptual illustration of Suhrawardi's hierarchy of lights and the Light of Lights"
-            loading="lazy"
-            decoding="async"
-          />
+        <section class="narrative-block" id="metaphysics-of-light">
+          <figure class="narrative-figure left">
+            <img
+              src="images/suhrawardi-light-of-lights.jpg"
+              alt="Conceptual illustration of Suhrawardi's hierarchy of lights and the Light of Lights"
+              loading="lazy"
+              decoding="async"
+            />
 
-          <figcaption>
-            Suhrawardi's cosmology describes reality through a graded hierarchy
-            of lights and their relation to a supreme source.
-          </figcaption>
-        </figure>
+            <figcaption>
+              Suhrawardi's cosmology describes reality through a graded
+              hierarchy of lights and their relation to a supreme source.
+            </figcaption>
+          </figure>
 
-        <h2>Suhrawardi's Metaphysics of Light and the Light of Lights</h2>
+          <h2>Suhrawardi's Metaphysics of Light and the Light of Lights</h2>
 
-        <p>
-          At the center of Suhrawardi's <strong>metaphysics</strong> is the
-          <strong>Light of Lights</strong> (<em>Nur al-Anwar</em>), the supreme
-          and self-subsistent source of all other lights. Unlike material
-          objects, the highest lights possess no bodily extension or material
-          limitation. The Light of Lights represents the ultimate principle from
-          which the ordered hierarchy of reality depends.
-        </p>
+          <p>
+            At the center of Suhrawardi's <strong>metaphysics</strong> is the
+            <strong>Light of Lights</strong> (<em>Nur al-Anwar</em>), the
+            supreme and self-subsistent source of all other lights. Unlike
+            material objects, the highest lights possess no bodily extension or
+            material limitation. The Light of Lights represents the ultimate
+            principle from which the ordered hierarchy of reality depends.
+          </p>
 
-        <p>
-          Below the supreme source, Suhrawardi describes multiple orders of
-          immaterial lights. These lights differ according to their degree and
-          their relations of domination and illumination. His cosmological
-          language draws upon earlier philosophical discussions of separate
-          intellects while transforming them into a distinct illuminationist
-          account of a universe structured through graded manifestations of
-          light.
-        </p>
+          <p>
+            Below the supreme source, Suhrawardi describes multiple orders of
+            immaterial lights. These lights differ according to their degree and
+            their relations of domination and illumination. His cosmological
+            language draws upon earlier philosophical discussions of separate
+            intellects while transforming them into a distinct illuminationist
+            account of a universe structured through graded manifestations of
+            light.
+          </p>
 
-        <p>
-          Suhrawardi also distinguishes immaterial lights from
-          <strong>barzakhs</strong>, a term used for bodies and material
-          realities that are neither pure lights nor self-manifesting in the
-          same way as immaterial beings. The material world is therefore
-          characterized by a different mode of existence and receives
-          illumination without possessing the complete independence attributed
-          to the higher lights.
-        </p>
+          <p>
+            Suhrawardi also distinguishes immaterial lights from
+            <strong>barzakhs</strong>, a term used for bodies and material
+            realities that are neither pure lights nor self-manifesting in the
+            same way as immaterial beings. The material world is therefore
+            characterized by a different mode of existence and receives
+            illumination without possessing the complete independence attributed
+            to the higher lights.
+          </p>
 
-        <p>
-          This metaphysical framework allowed Suhrawardi to reinterpret
-          traditional philosophical and theological concepts through the
-          language of illumination. God, celestial realities, souls, and the
-          structure of the cosmos could all be discussed according to their
-          relation to manifestation, light, and varying degrees of proximity to
-          the supreme
-          <strong>Light of Lights</strong>.
-        </p>
-      </section>
+          <p>
+            This metaphysical framework allowed Suhrawardi to reinterpret
+            traditional philosophical and theological concepts through the
+            language of illumination. God, celestial realities, souls, and the
+            structure of the cosmos could all be discussed according to their
+            relation to manifestation, light, and varying degrees of proximity
+            to the supreme
+            <strong>Light of Lights</strong>.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
    KNOWLEDGE BY PRESENCE 
    ===================================================== -->
 
-      <section class="narrative-block" id="knowledge-by-presence">
-        <h2>Suhrawardi's Theory of Knowledge by Presence</h2>
+        <section class="narrative-block" id="knowledge-by-presence">
+          <h2>Suhrawardi's Theory of Knowledge by Presence</h2>
 
-        <p>
-          One of Suhrawardi's most influential philosophical contributions is
-          his theory of <strong>knowledge by presence</strong> (<em
-            >al-ilm al-huduri</em
-          >). This theory concerns forms of knowledge in which the knower has an
-          immediate relation to what is known rather than knowing it solely
-          through an abstract concept, image, or mental representation.
-        </p>
+          <p>
+            One of Suhrawardi's most influential philosophical contributions is
+            his theory of <strong>knowledge by presence</strong> (<em
+              >al-ilm al-huduri</em
+            >). This theory concerns forms of knowledge in which the knower has
+            an immediate relation to what is known rather than knowing it solely
+            through an abstract concept, image, or mental representation.
+          </p>
 
-        <p>
-          Self-awareness provides an especially important example. Suhrawardi
-          argues that a person does not ordinarily know the self in the same way
-          that one knows an external object through a representation. The
-          knowing subject is immediately present to itself. Self-knowledge
-          therefore reveals a form of awareness in which the distinction between
-          knower and known cannot be understood simply through the ordinary
-          model of representation.
-        </p>
+          <p>
+            Self-awareness provides an especially important example. Suhrawardi
+            argues that a person does not ordinarily know the self in the same
+            way that one knows an external object through a representation. The
+            knowing subject is immediately present to itself. Self-knowledge
+            therefore reveals a form of awareness in which the distinction
+            between knower and known cannot be understood simply through the
+            ordinary model of representation.
+          </p>
 
-        <p>
-          This differs from <strong>representational knowledge</strong>, in
-          which the mind knows something through a concept or mental form that
-          refers to an object. Suhrawardi's analysis of immediate self-awareness
-          helped establish an important distinction within later Islamic
-          philosophy between knowledge acquired through representations and
-          knowledge grounded in direct presence.
-        </p>
+          <p>
+            This differs from <strong>representational knowledge</strong>, in
+            which the mind knows something through a concept or mental form that
+            refers to an object. Suhrawardi's analysis of immediate
+            self-awareness helped establish an important distinction within
+            later Islamic philosophy between knowledge acquired through
+            representations and knowledge grounded in direct presence.
+          </p>
 
-        <p>
-          Later philosophers developed and transformed this idea in different
-          ways. Its influence is particularly important for the history of
-          Islamic theories of the soul, consciousness, and self-awareness.
-          Suhrawardi's discussion remains philosophically significant because it
-          raises a fundamental question: can every form of knowledge be
-          explained as the possession of a representation, or are some forms of
-          awareness more immediate?
-        </p>
-      </section>
+          <p>
+            Later philosophers developed and transformed this idea in different
+            ways. Its influence is particularly important for the history of
+            Islamic theories of the soul, consciousness, and self-awareness.
+            Suhrawardi's discussion remains philosophically significant because
+            it raises a fundamental question: can every form of knowledge be
+            explained as the possession of a representation, or are some forms
+            of awareness more immediate?
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
    EPISTEMOLOGY / INTUITION 
    ===================================================== -->
 
-      <section class="narrative-block" id="epistemology">
-        <h2>Suhrawardi's Epistemology: Reason and Intuition Together</h2>
+        <section class="narrative-block" id="epistemology">
+          <h2>Suhrawardi's Epistemology: Reason and Intuition Together</h2>
 
-        <p>
-          Suhrawardi's broader <strong>epistemology</strong> does not oppose
-          reason and intuition as two completely separate paths. Instead, he
-          argues that philosophical wisdom requires different forms of
-          intellectual and spiritual development. Demonstrative reasoning
-          provides discipline and clarity, while illumination and direct
-          realization provide access to realities that cannot be exhausted by
-          conceptual analysis alone.
-        </p>
+          <p>
+            Suhrawardi's broader <strong>epistemology</strong> does not oppose
+            reason and intuition as two completely separate paths. Instead, he
+            argues that philosophical wisdom requires different forms of
+            intellectual and spiritual development. Demonstrative reasoning
+            provides discipline and clarity, while illumination and direct
+            realization provide access to realities that cannot be exhausted by
+            conceptual analysis alone.
+          </p>
 
-        <p>
-          He therefore gives an important place to both the philosopher and the
-          mystic. The ideal sage possesses intellectual rigor while also
-          attaining a direct form of wisdom. In Suhrawardi's understanding, the
-          greatest philosophers are not simply skilled debaters or logicians but
-          individuals whose theoretical understanding is joined to genuine
-          realization.
-        </p>
+          <p>
+            He therefore gives an important place to both the philosopher and
+            the mystic. The ideal sage possesses intellectual rigor while also
+            attaining a direct form of wisdom. In Suhrawardi's understanding,
+            the greatest philosophers are not simply skilled debaters or
+            logicians but individuals whose theoretical understanding is joined
+            to genuine realization.
+          </p>
 
-        <p>
-          Suhrawardi classified seekers of wisdom according to the relationship
-          between philosophical investigation and spiritual realization. This
-          hierarchy reflects his conviction that intellectual mastery and
-          mystical experience can exist separately, but that their combination
-          represents a more complete form of philosophical achievement.
-        </p>
+          <p>
+            Suhrawardi classified seekers of wisdom according to the
+            relationship between philosophical investigation and spiritual
+            realization. This hierarchy reflects his conviction that
+            intellectual mastery and mystical experience can exist separately,
+            but that their combination represents a more complete form of
+            philosophical achievement.
+          </p>
 
-        <p>
-          This integration of demonstration and illumination distinguishes the
-          <strong>Illuminationist</strong> approach from a philosophy based
-          entirely on discursive reasoning. Yet Suhrawardi's system should not
-          be described as anti-rational: his mystical and symbolic teachings
-          were accompanied by detailed philosophical argument and sustained
-          engagement with the logical traditions of his time.
-        </p>
-      </section>
+          <p>
+            This integration of demonstration and illumination distinguishes the
+            <strong>Illuminationist</strong> approach from a philosophy based
+            entirely on discursive reasoning. Yet Suhrawardi's system should not
+            be described as anti-rational: his mystical and symbolic teachings
+            were accompanied by detailed philosophical argument and sustained
+            engagement with the logical traditions of his time.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
    ANCIENT WISDOM / ZOROASTRIAN INFLUENCE 
    ===================================================== -->
 
-      <section class="narrative-block" id="ancient-wisdom">
-        <h2>Suhrawardi and Ancient Persian and Platonic Wisdom</h2>
+        <section class="narrative-block" id="ancient-wisdom">
+          <h2>Suhrawardi and Ancient Persian and Platonic Wisdom</h2>
 
-        <p>
-          A distinctive feature of Suhrawardi's philosophy is his claim to
-          recover or continue an <strong>ancient tradition of wisdom</strong>.
-          He associated this philosophical heritage with several groups of
-          ancient sages, including Greek thinkers such as Plato as well as
-          figures connected with Persian, Egyptian, and Hermetic traditions. His
-          historical account of these traditions should not always be treated as
-          a modern reconstruction of intellectual history, but as part of his
-          philosophical understanding of the continuity of wisdom.
-        </p>
+          <p>
+            A distinctive feature of Suhrawardi's philosophy is his claim to
+            recover or continue an <strong>ancient tradition of wisdom</strong>.
+            He associated this philosophical heritage with several groups of
+            ancient sages, including Greek thinkers such as Plato as well as
+            figures connected with Persian, Egyptian, and Hermetic traditions.
+            His historical account of these traditions should not always be
+            treated as a modern reconstruction of intellectual history, but as
+            part of his philosophical understanding of the continuity of wisdom.
+          </p>
 
-        <p>
-          Suhrawardi made particularly important use of
-          <strong>ancient Persian imagery and names</strong>. His writings refer
-          to Iranian sages and employ symbolic language associated with light,
-          spiritual beings, and cosmic order. These references contributed to
-          his distinctive intellectual identity and to later interpretations of
-          Illuminationism as a major current within the history of Persian
-          philosophy.
-        </p>
+          <p>
+            Suhrawardi made particularly important use of
+            <strong>ancient Persian imagery and names</strong>. His writings
+            refer to Iranian sages and employ symbolic language associated with
+            light, spiritual beings, and cosmic order. These references
+            contributed to his distinctive intellectual identity and to later
+            interpretations of Illuminationism as a major current within the
+            history of Persian philosophy.
+          </p>
 
-        <p>
-          It is nevertheless misleading to describe Suhrawardi simply as
-          reproducing
-          <strong>Zoroastrian philosophy</strong>. His system was developed
-          within a medieval Islamic philosophical environment and was deeply
-          engaged with Avicennian metaphysics, Greek philosophy, Islamic
-          mysticism, and other intellectual traditions. Ancient Iranian
-          symbolism was transformed within a new philosophical synthesis rather
-          than merely adopted unchanged.
-        </p>
+          <p>
+            It is nevertheless misleading to describe Suhrawardi simply as
+            reproducing
+            <strong>Zoroastrian philosophy</strong>. His system was developed
+            within a medieval Islamic philosophical environment and was deeply
+            engaged with Avicennian metaphysics, Greek philosophy, Islamic
+            mysticism, and other intellectual traditions. Ancient Iranian
+            symbolism was transformed within a new philosophical synthesis
+            rather than merely adopted unchanged.
+          </p>
 
-        <p>
-          By presenting Illuminationist philosophy as connected with a very
-          ancient wisdom, Suhrawardi positioned himself as both an innovator and
-          an heir. His philosophy sought to move beyond what he regarded as
-          limitations in contemporary Peripatetic thought while claiming a
-          deeper continuity with earlier traditions of philosophical and
-          spiritual wisdom.
-        </p>
-      </section>
+          <p>
+            By presenting Illuminationist philosophy as connected with a very
+            ancient wisdom, Suhrawardi positioned himself as both an innovator
+            and an heir. His philosophy sought to move beyond what he regarded
+            as limitations in contemporary Peripatetic thought while claiming a
+            deeper continuity with earlier traditions of philosophical and
+            spiritual wisdom.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
    MYSTICAL AND SYMBOLIC WRITINGS 
    ===================================================== -->
 
-      <section class="narrative-block" id="mystical-writings">
-        <h2>Suhrawardi's Mystical and Symbolic Narratives</h2>
+        <section class="narrative-block" id="mystical-writings">
+          <h2>Suhrawardi's Mystical and Symbolic Narratives</h2>
 
-        <p>
-          Alongside his systematic philosophical treatises, Suhrawardi wrote a
-          series of shorter mystical narratives and allegories. Works associated
-          with this literary dimension of his thought include
-          <em>The Sound of Gabriel's Wing</em>,
-          <em>The Language of the Ants</em>, and
-          <em>A Tale of Occidental Exile</em>. These writings communicate
-          philosophical and spiritual ideas through symbolic stories rather than
-          through formal demonstration alone.
-        </p>
+          <p>
+            Alongside his systematic philosophical treatises, Suhrawardi wrote a
+            series of shorter mystical narratives and allegories. Works
+            associated with this literary dimension of his thought include
+            <em>The Sound of Gabriel's Wing</em>,
+            <em>The Language of the Ants</em>, and
+            <em>A Tale of Occidental Exile</em>. These writings communicate
+            philosophical and spiritual ideas through symbolic stories rather
+            than through formal demonstration alone.
+          </p>
 
-        <p>
-          Their imagery frequently involves journeys, angels, exile, awakening,
-          and movement between different levels of reality. The narratives often
-          portray the human soul as separated from or distant from a higher
-          spiritual world, while philosophical and spiritual development becomes
-          a journey toward greater illumination and knowledge.
-        </p>
+          <p>
+            Their imagery frequently involves journeys, angels, exile,
+            awakening, and movement between different levels of reality. The
+            narratives often portray the human soul as separated from or distant
+            from a higher spiritual world, while philosophical and spiritual
+            development becomes a journey toward greater illumination and
+            knowledge.
+          </p>
 
-        <p>
-          These symbolic writings should not be regarded merely as simplified
-          versions of his technical philosophy. They represent a distinctive
-          mode of philosophical expression in which narrative and symbolism can
-          communicate experiences and realities that are difficult to capture
-          through abstract conceptual language alone.
-        </p>
+          <p>
+            These symbolic writings should not be regarded merely as simplified
+            versions of his technical philosophy. They represent a distinctive
+            mode of philosophical expression in which narrative and symbolism
+            can communicate experiences and realities that are difficult to
+            capture through abstract conceptual language alone.
+          </p>
 
-        <p>
-          The coexistence of systematic treatises and mystical narratives is one
-          of the most distinctive features of Suhrawardi's intellectual legacy.
-          It reflects his conviction that philosophy involves more than
-          constructing arguments: wisdom also concerns transformation, vision,
-          and the development of the person seeking knowledge.
-        </p>
-      </section>
+          <p>
+            The coexistence of systematic treatises and mystical narratives is
+            one of the most distinctive features of Suhrawardi's intellectual
+            legacy. It reflects his conviction that philosophy involves more
+            than constructing arguments: wisdom also concerns transformation,
+            vision, and the development of the person seeking knowledge.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
    EXECUTION 
    ===================================================== -->
 
-      <section class="narrative-block" id="execution">
-        <h2>Why Was Suhrawardi Executed?</h2>
+        <section class="narrative-block" id="execution">
+          <h2>Why Was Suhrawardi Executed?</h2>
 
-        <p>
-          Suhrawardi died in Aleppo at the end of 1191 CE, or possibly in the
-          early part of 1192 according to some accounts. He is traditionally
-          understood to have been executed or otherwise put to death after
-          accusations of heresy. The precise circumstances, however, remain
-          disputed, and medieval sources do not provide a single uncontested
-          account of how his death occurred.
-        </p>
+          <p>
+            Suhrawardi died in Aleppo at the end of 1191 CE, or possibly in the
+            early part of 1192 according to some accounts. He is traditionally
+            understood to have been executed or otherwise put to death after
+            accusations of heresy. The precise circumstances, however, remain
+            disputed, and medieval sources do not provide a single uncontested
+            account of how his death occurred.
+          </p>
 
-        <p>
-          His downfall appears to have involved a combination of
-          <strong>religious and political factors</strong>. Suhrawardi had
-          developed a close relationship with al-Malik al-Zahir and had gained
-          considerable intellectual prominence in Aleppo. At the same time, his
-          public debates and unconventional philosophical teachings brought him
-          into conflict with influential members of the city's religious
-          establishment.
-        </p>
+          <p>
+            His downfall appears to have involved a combination of
+            <strong>religious and political factors</strong>. Suhrawardi had
+            developed a close relationship with al-Malik al-Zahir and had gained
+            considerable intellectual prominence in Aleppo. At the same time,
+            his public debates and unconventional philosophical teachings
+            brought him into conflict with influential members of the city's
+            religious establishment.
+          </p>
 
-        <p>
-          Sources and later historians have suggested several possible
-          objections to his teachings. These include concerns about his use of
-          pre-Islamic Persian symbolism, his claims concerning inspiration and
-          wisdom, and his discussion of prophecy. Political concerns surrounding
-          his influence at the Ayyubid court may also have contributed to the
-          hostility directed toward him.
-        </p>
+          <p>
+            Sources and later historians have suggested several possible
+            objections to his teachings. These include concerns about his use of
+            pre-Islamic Persian symbolism, his claims concerning inspiration and
+            wisdom, and his discussion of prophecy. Political concerns
+            surrounding his influence at the Ayyubid court may also have
+            contributed to the hostility directed toward him.
+          </p>
 
-        <p>
-          The exact sequence of events remains uncertain, and it is therefore
-          safer not to attribute his death to a single cause. Suhrawardi
-          nevertheless became widely known by the epithet
-          <strong>al-Maqtul</strong>, meaning "the Slain" or "the Killed,"
-          distinguishing him from other figures bearing the name Suhrawardi. His
-          death ended his life at a young age but did not prevent the rapid
-          circulation and long-term influence of his philosophical writings.
-        </p>
-      </section>
+          <p>
+            The exact sequence of events remains uncertain, and it is therefore
+            safer not to attribute his death to a single cause. Suhrawardi
+            nevertheless became widely known by the epithet
+            <strong>al-Maqtul</strong>, meaning "the Slain" or "the Killed,"
+            distinguishing him from other figures bearing the name Suhrawardi.
+            His death ended his life at a young age but did not prevent the
+            rapid circulation and long-term influence of his philosophical
+            writings.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
    MAJOR WORKS 
    ===================================================== -->
 
-      <section class="narrative-block" id="works">
-        <h2>Major Works of Suhrawardi</h2>
+        <section class="narrative-block" id="works">
+          <h2>Major Works of Suhrawardi</h2>
 
-        <p>
-          Despite his short life, Suhrawardi produced a substantial body of
-          philosophical, mystical, and symbolic writing in both Arabic and
-          Persian. His works range from technical discussions of logic and
-          philosophy to allegorical narratives concerned with the soul,
-          spiritual knowledge, and the world of light.
-        </p>
+          <p>
+            Despite his short life, Suhrawardi produced a substantial body of
+            philosophical, mystical, and symbolic writing in both Arabic and
+            Persian. His works range from technical discussions of logic and
+            philosophy to allegorical narratives concerned with the soul,
+            spiritual knowledge, and the world of light.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong>
-              <em>The Philosophy of Illumination</em> (Hikmat al-Ishraq)
-            </strong>
-            — Suhrawardi's major philosophical work and the foundational text of
-            Illuminationist philosophy.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>
+                <em>The Philosophy of Illumination</em> (Hikmat al-Ishraq)
+              </strong>
+              — Suhrawardi's major philosophical work and the foundational text
+              of Illuminationist philosophy.
+            </li>
 
-          <li>
-            <strong> <em>The Intimations</em> (al-Talwihat) </strong>
-            — A major philosophical work engaging with logic and the Peripatetic
-            tradition while preparing the ground for Suhrawardi's later ideas.
-          </li>
+            <li>
+              <strong> <em>The Intimations</em> (al-Talwihat) </strong>
+              — A major philosophical work engaging with logic and the
+              Peripatetic tradition while preparing the ground for Suhrawardi's
+              later ideas.
+            </li>
 
-          <li>
-            <strong>
-              <em>The Paths and Havens</em> (al-Mashari wa al-Mutarahat)
-            </strong>
-            — An extensive philosophical work containing discussions of logic,
-            physics, and metaphysical questions.
-          </li>
+            <li>
+              <strong>
+                <em>The Paths and Havens</em> (al-Mashari wa al-Mutarahat)
+              </strong>
+              — An extensive philosophical work containing discussions of logic,
+              physics, and metaphysical questions.
+            </li>
 
-          <li>
-            <strong>
-              <em>The Sound of Gabriel's Wing</em>
-            </strong>
-            — A symbolic mystical narrative concerned with knowledge, spiritual
-            realities, and the soul's encounter with the world of light.
-          </li>
+            <li>
+              <strong>
+                <em>The Sound of Gabriel's Wing</em>
+              </strong>
+              — A symbolic mystical narrative concerned with knowledge,
+              spiritual realities, and the soul's encounter with the world of
+              light.
+            </li>
 
-          <li>
-            <strong>
-              <em>The Language of the Ants</em>
-            </strong>
-            — A collection or series of symbolic narratives expressing
-            Illuminationist and mystical themes through allegory.
-          </li>
+            <li>
+              <strong>
+                <em>The Language of the Ants</em>
+              </strong>
+              — A collection or series of symbolic narratives expressing
+              Illuminationist and mystical themes through allegory.
+            </li>
 
-          <li>
-            <strong>
-              <em>A Tablet Dedicated to Fakhr al-Din</em>
-            </strong>
-            — A shorter work associated with the presentation of important
-            Illuminationist doctrines in a more concise form.
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>
+                <em>A Tablet Dedicated to Fakhr al-Din</em>
+              </strong>
+              — A shorter work associated with the presentation of important
+              Illuminationist doctrines in a more concise form.
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
    MAIN IDEAS 
    ===================================================== -->
 
-      <section class="narrative-block" id="key-ideas">
-        <h2>Suhrawardi's Main Philosophical Ideas</h2>
+        <section class="narrative-block" id="key-ideas">
+          <h2>Suhrawardi's Main Philosophical Ideas</h2>
 
-        <h3>1. Light as the Language of Reality</h3>
+          <h3>1. Light as the Language of Reality</h3>
 
-        <p>
-          Suhrawardi uses light to explain manifestation and the different
-          degrees of reality, making illumination the central vocabulary of his
-          metaphysical system.
-        </p>
+          <p>
+            Suhrawardi uses light to explain manifestation and the different
+            degrees of reality, making illumination the central vocabulary of
+            his metaphysical system.
+          </p>
 
-        <h3>2. The Light of Lights</h3>
+          <h3>2. The Light of Lights</h3>
 
-        <p>
-          The highest principle is the self-subsistent
-          <strong>Light of Lights</strong>, from which the ordered hierarchy of
-          immaterial lights ultimately depends.
-        </p>
+          <p>
+            The highest principle is the self-subsistent
+            <strong>Light of Lights</strong>, from which the ordered hierarchy
+            of immaterial lights ultimately depends.
+          </p>
 
-        <h3>3. Knowledge by Presence</h3>
+          <h3>3. Knowledge by Presence</h3>
 
-        <p>
-          Some forms of knowledge, especially self-awareness, involve direct
-          presence rather than knowledge obtained solely through concepts or
-          mental representations.
-        </p>
+          <p>
+            Some forms of knowledge, especially self-awareness, involve direct
+            presence rather than knowledge obtained solely through concepts or
+            mental representations.
+          </p>
 
-        <h3>4. Reason and Illumination Together</h3>
+          <h3>4. Reason and Illumination Together</h3>
 
-        <p>
-          Demonstrative reasoning remains necessary, but the highest
-          philosophical wisdom also requires direct realization and spiritual
-          transformation.
-        </p>
+          <p>
+            Demonstrative reasoning remains necessary, but the highest
+            philosophical wisdom also requires direct realization and spiritual
+            transformation.
+          </p>
 
-        <h3>5. The World of Images</h3>
+          <h3>5. The World of Images</h3>
 
-        <p>
-          Suhrawardi's philosophy also became important for later discussions of
-          an intermediary imaginal realm between purely intellectual and
-          material reality, although later thinkers developed this doctrine in
-          different directions.
-        </p>
+          <p>
+            Suhrawardi's philosophy also became important for later discussions
+            of an intermediary imaginal realm between purely intellectual and
+            material reality, although later thinkers developed this doctrine in
+            different directions.
+          </p>
 
-        <h3>6. Ancient Wisdom and Philosophical Renewal</h3>
+          <h3>6. Ancient Wisdom and Philosophical Renewal</h3>
 
-        <p>
-          Suhrawardi presented Illuminationist philosophy as connected with
-          ancient traditions of wisdom associated with Persian, Greek, and other
-          sages while creating an original philosophical system of his own.
-        </p>
-      </section>
+          <p>
+            Suhrawardi presented Illuminationist philosophy as connected with
+            ancient traditions of wisdom associated with Persian, Greek, and
+            other sages while creating an original philosophical system of his
+            own.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
    SUHRAWARDI AND AVICENNA 
    ===================================================== -->
 
-      <section class="narrative-block" id="suhrawardi-avicenna">
-        <h2>Suhrawardi and Avicenna: Agreement and Departure</h2>
+        <section class="narrative-block" id="suhrawardi-avicenna">
+          <h2>Suhrawardi and Avicenna: Agreement and Departure</h2>
 
-        <p>
-          <strong>Suhrawardi and Avicenna</strong> are closely connected within
-          the history of Islamic philosophy. Suhrawardi received his
-          philosophical education in an intellectual environment strongly shaped
-          by Avicennian thought, and his writings demonstrate detailed knowledge
-          of Avicennan logic, metaphysics, psychology, and natural philosophy.
-        </p>
+          <p>
+            <strong>Suhrawardi and Avicenna</strong> are closely connected
+            within the history of Islamic philosophy. Suhrawardi received his
+            philosophical education in an intellectual environment strongly
+            shaped by Avicennian thought, and his writings demonstrate detailed
+            knowledge of Avicennan logic, metaphysics, psychology, and natural
+            philosophy.
+          </p>
 
-        <p>
-          Their relationship should therefore not be understood as simple
-          opposition. Suhrawardi retained important elements of the
-          philosophical tradition he inherited while criticizing what he
-          regarded as its limitations. He sought to construct a different
-          philosophical framework rather than merely abandon the achievements of
-          Avicennian philosophy.
-        </p>
+          <p>
+            Their relationship should therefore not be understood as simple
+            opposition. Suhrawardi retained important elements of the
+            philosophical tradition he inherited while criticizing what he
+            regarded as its limitations. He sought to construct a different
+            philosophical framework rather than merely abandon the achievements
+            of Avicennian philosophy.
+          </p>
 
-        <p>
-          One major difference concerns the role of direct knowledge and
-          illumination. Suhrawardi gave greater philosophical importance to
-          <strong>presential knowledge</strong> and spiritual realization,
-          arguing that not every form of certainty could be adequately explained
-          through conceptual definition and discursive demonstration.
-        </p>
+          <p>
+            One major difference concerns the role of direct knowledge and
+            illumination. Suhrawardi gave greater philosophical importance to
+            <strong>presential knowledge</strong> and spiritual realization,
+            arguing that not every form of certainty could be adequately
+            explained through conceptual definition and discursive
+            demonstration.
+          </p>
 
-        <p>
-          Suhrawardi also reworked major metaphysical questions through his
-          distinctive language of light. In this respect, Illuminationism became
-          one of the most important post-Avicennian attempts to preserve
-          philosophical rigor while creating a new conceptual structure for
-          understanding reality, knowledge, and the human soul.
-        </p>
-      </section>
+          <p>
+            Suhrawardi also reworked major metaphysical questions through his
+            distinctive language of light. In this respect, Illuminationism
+            became one of the most important post-Avicennian attempts to
+            preserve philosophical rigor while creating a new conceptual
+            structure for understanding reality, knowledge, and the human soul.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
    LEGACY 
    ===================================================== -->
 
-      <section class="narrative-block" id="legacy">
-        <h2>Suhrawardi's Influence and Legacy</h2>
+        <section class="narrative-block" id="legacy">
+          <h2>Suhrawardi's Influence and Legacy</h2>
 
-        <p>
-          Despite his early death, Suhrawardi's <strong>Illuminationist</strong>
-          philosophy established a lasting intellectual tradition within
-          <strong>Islamic philosophy</strong>. His writings were copied,
-          studied, and commented upon in major centers of learning across Syria,
-          Iraq, and Iran, and a substantial commentarial tradition developed
-          within only a few generations of his death.
-            
-        </p>
+          <p>
+            Despite his early death, Suhrawardi's
+            <strong>Illuminationist</strong>
+            philosophy established a lasting intellectual tradition within
+            <strong>Islamic philosophy</strong>. His writings were copied,
+            studied, and commented upon in major centers of learning across
+            Syria, Iraq, and Iran, and a substantial commentarial tradition
+            developed within only a few generations of his death.
+          </p>
 
-        <p>
-          Later commentators interpreted his philosophy in different ways. Some
-          emphasized the systematic and discursive aspects of his work, while
-          others gave greater attention to its symbolic, mystical, and
-          allegorical dimensions. This diversity helped make Illuminationism a
-          continuing philosophical tradition rather than a system confined to
-          Suhrawardi's own lifetime.  
-        </p>
+          <p>
+            Later commentators interpreted his philosophy in different ways.
+            Some emphasized the systematic and discursive aspects of his work,
+            while others gave greater attention to its symbolic, mystical, and
+            allegorical dimensions. This diversity helped make Illuminationism a
+            continuing philosophical tradition rather than a system confined to
+            Suhrawardi's own lifetime.
+          </p>
 
-        <p>
-          His influence became especially important in later Persian philosophy.
-          <strong>Mulla Sadra</strong>, for example, engaged deeply with both
-          Avicennian and Illuminationist traditions while developing his own
-          philosophical synthesis. Suhrawardi's discussions of light, gradation,
-          knowledge, and the structure of reality remained important reference
-          points for subsequent philosophical developments.
-            
-        </p>
+          <p>
+            His influence became especially important in later Persian
+            philosophy.
+            <strong>Mulla Sadra</strong>, for example, engaged deeply with both
+            Avicennian and Illuminationist traditions while developing his own
+            philosophical synthesis. Suhrawardi's discussions of light,
+            gradation, knowledge, and the structure of reality remained
+            important reference points for subsequent philosophical
+            developments.
+          </p>
 
-        <p>
-          Suhrawardi's philosophy also remains important to modern scholarship
-          because of its treatment of self-awareness and immediate knowledge.
-          His theory of knowledge by presence has attracted renewed attention in
-          comparative philosophy and in philosophical discussions concerning the
-          relationship between consciousness, the self, and the objects of
-          knowledge.
-        </p>
+          <p>
+            Suhrawardi's philosophy also remains important to modern scholarship
+            because of its treatment of self-awareness and immediate knowledge.
+            His theory of knowledge by presence has attracted renewed attention
+            in comparative philosophy and in philosophical discussions
+            concerning the relationship between consciousness, the self, and the
+            objects of knowledge.
+          </p>
 
-        <p>
-          His historical legacy should not be reduced solely to the story of a
-          philosopher executed for controversial ideas. More fundamentally,
-          Suhrawardi transformed the intellectual landscape of post-Avicennian
-          philosophy by establishing a new philosophical language and a
-          tradition that continued to develop for centuries after his death.
-        </p>
-      </section>
+          <p>
+            His historical legacy should not be reduced solely to the story of a
+            philosopher executed for controversial ideas. More fundamentally,
+            Suhrawardi transformed the intellectual landscape of post-Avicennian
+            philosophy by establishing a new philosophical language and a
+            tradition that continued to develop for centuries after his death.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
    SIMPLE EXPLANATION 
    ===================================================== -->
 
-      <section class="narrative-block" id="explained-simply">
-        <h2>Suhrawardi's Philosophy Explained Simply</h2>
+        <section class="narrative-block" id="explained-simply">
+          <h2>Suhrawardi's Philosophy Explained Simply</h2>
 
-        <p>
-          Suhrawardi can be understood as a philosopher who believed that
-          logical argument is essential but cannot by itself explain every form
-          of knowledge. He developed a philosophical system in which reality is
-          described through different degrees of light and in which the deepest
-          forms of wisdom involve both intellectual understanding and direct
-          realization.
-        </p>
+          <p>
+            Suhrawardi can be understood as a philosopher who believed that
+            logical argument is essential but cannot by itself explain every
+            form of knowledge. He developed a philosophical system in which
+            reality is described through different degrees of light and in which
+            the deepest forms of wisdom involve both intellectual understanding
+            and direct realization.
+          </p>
 
-        <ul class="plain-list">
-          <li>
-            <strong>What is the most basic reality?</strong>
-            Suhrawardi describes the highest level of reality as the
-            <strong>Light of Lights</strong>, the supreme source upon which all
-            other levels of the hierarchy depend.
-          </li>
+          <ul class="plain-list">
+            <li>
+              <strong>What is the most basic reality?</strong>
+              Suhrawardi describes the highest level of reality as the
+              <strong>Light of Lights</strong>, the supreme source upon which
+              all other levels of the hierarchy depend.
+            </li>
 
-          <li>
-            <strong>How do we know ourselves?</strong>
-            Through an immediate form of self-awareness in which the knowing
-            subject is directly present to itself rather than known only through
-            a mental representation.
-          </li>
+            <li>
+              <strong>How do we know ourselves?</strong>
+              Through an immediate form of self-awareness in which the knowing
+              subject is directly present to itself rather than known only
+              through a mental representation.
+            </li>
 
-          <li>
-            <strong>Is logic enough for wisdom?</strong>
-            No. Logic and demonstration are necessary, but Suhrawardi argues
-            that complete wisdom also requires direct realization and
-            illumination.
-          </li>
+            <li>
+              <strong>Is logic enough for wisdom?</strong>
+              No. Logic and demonstration are necessary, but Suhrawardi argues
+              that complete wisdom also requires direct realization and
+              illumination.
+            </li>
 
-          <li>
-            <strong>Where did his ideas come from?</strong>
-            He developed his philosophy through critical engagement with
-            Avicennian thought while drawing upon Greek philosophy, Islamic
-            mystical traditions, and ancient Persian symbolic material.
-          </li>
+            <li>
+              <strong>Where did his ideas come from?</strong>
+              He developed his philosophy through critical engagement with
+              Avicennian thought while drawing upon Greek philosophy, Islamic
+              mystical traditions, and ancient Persian symbolic material.
+            </li>
 
-          <li>
-            <strong>What happened to him?</strong>
-            He died in Aleppo at a young age after accusations of heresy,
-            although the precise circumstances and causes of his death remain
-            disputed by historians.
-          </li>
-        </ul>
-      </section>
+            <li>
+              <strong>What happened to him?</strong>
+              He died in Aleppo at a young age after accusations of heresy,
+              although the precise circumstances and causes of his death remain
+              disputed by historians.
+            </li>
+          </ul>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- ===================================================== 
+        <!-- ===================================================== 
    IMPORTANCE 
    ===================================================== -->
 
-      <section class="narrative-block" id="importance">
-        <h2>Why Is Suhrawardi Important in the History of Philosophy?</h2>
+        <section class="narrative-block" id="importance">
+          <h2>Why Is Suhrawardi Important in the History of Philosophy?</h2>
 
-        <p>
-          Suhrawardi is important because he founded one of the most original
-          philosophical systems in the history of Islamic thought. His
-          Illuminationist philosophy combined rigorous engagement with logic and
-          metaphysics with a distinctive theory of direct knowledge and a
-          systematic account of reality structured through the language of
-          light.
-        </p>
+          <p>
+            Suhrawardi is important because he founded one of the most original
+            philosophical systems in the history of Islamic thought. His
+            Illuminationist philosophy combined rigorous engagement with logic
+            and metaphysics with a distinctive theory of direct knowledge and a
+            systematic account of reality structured through the language of
+            light.
+          </p>
 
-        <p>
-          He also represents a major turning point in the history of
-          <strong>post-Avicennian philosophy</strong>. Rather than simply
-          accepting the dominant Peripatetic framework, Suhrawardi critically
-          examined it and developed an alternative system that remained
-          philosophically rigorous while giving greater importance to
-          illumination, presence, symbolism, and spiritual realization.
-        </p>
+          <p>
+            He also represents a major turning point in the history of
+            <strong>post-Avicennian philosophy</strong>. Rather than simply
+            accepting the dominant Peripatetic framework, Suhrawardi critically
+            examined it and developed an alternative system that remained
+            philosophically rigorous while giving greater importance to
+            illumination, presence, symbolism, and spiritual realization.
+          </p>
 
-        <p>
-          His theory of <strong>knowledge by presence</strong> became
-          particularly significant for later Islamic philosophy, while his
-          metaphysics of light provided a new vocabulary for discussing God,
-          immaterial beings, the soul, and the structure of the cosmos. His
-          influence extended far beyond the short period of his own life.
-        </p>
+          <p>
+            His theory of <strong>knowledge by presence</strong> became
+            particularly significant for later Islamic philosophy, while his
+            metaphysics of light provided a new vocabulary for discussing God,
+            immaterial beings, the soul, and the structure of the cosmos. His
+            influence extended far beyond the short period of his own life.
+          </p>
 
-        <p>
-          Suhrawardi is therefore important not merely as a philosopher who
-          introduced mystical ideas into philosophy, but as a systematic thinker
-          who created a distinct philosophical tradition. His work demonstrates
-          the continuing creativity of Islamic philosophy after Avicenna and
-          helped shape later developments in Persian philosophy for centuries.
-             
-        </p>
-      </section>
+          <p>
+            Suhrawardi is therefore important not merely as a philosopher who
+            introduced mystical ideas into philosophy, but as a systematic
+            thinker who created a distinct philosophical tradition. His work
+            demonstrates the continuing creativity of Islamic philosophy after
+            Avicenna and helped shape later developments in Persian philosophy
+            for centuries.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          FAQ
          (Mirrors the FAQPage JSON-LD in <head> — keep both in sync)
          ===================================================== -->
 
-      <section class="narrative-block" id="faq">
-        <h2>Frequently Asked Questions About Suhrawardi</h2>
+        <section class="narrative-block" id="faq">
+          <h2>Frequently Asked Questions About Suhrawardi</h2>
 
-        <h3>Who was Suhrawardi?</h3>
+          <h3>Who was Suhrawardi?</h3>
 
-        <p>
-          Suhrawardi was a twelfth-century Persian philosopher and mystic who
-          founded the Illuminationist (Ishraqi) school of philosophy, built
-          around a philosophy of light, and who was executed as a young man in
-          Aleppo.
-        </p>
+          <p>
+            Suhrawardi was a twelfth-century Persian philosopher and mystic who
+            founded the Illuminationist (Ishraqi) school of philosophy, built
+            around a philosophy of light, and who was executed as a young man in
+            Aleppo.
+          </p>
 
-        <h3>What is Illuminationism?</h3>
+          <h3>What is Illuminationism?</h3>
 
-        <p>
-          Illuminationism, or Hikmat al-Ishraq, is the philosophical system
-          founded by Suhrawardi that describes reality as a hierarchy of lights
-          of varying intensity, proceeding from a supreme Light of Lights, and
-          that holds intuitive, direct experiential knowledge to be as important
-          as logical demonstration.
-        </p>
+          <p>
+            Illuminationism, or Hikmat al-Ishraq, is the philosophical system
+            founded by Suhrawardi that describes reality as a hierarchy of
+            lights of varying intensity, proceeding from a supreme Light of
+            Lights, and that holds intuitive, direct experiential knowledge to
+            be as important as logical demonstration.
+          </p>
 
-        <h3>Why was Suhrawardi executed?</h3>
+          <h3>Why was Suhrawardi executed?</h3>
 
-        <p>
-          Suhrawardi was executed in Aleppo around 1191 CE on the order of the
-          Ayyubid ruler al-Malik al-Zahir, son of Saladin, after religious
-          scholars accused him of heretical teachings, though the precise
-          combination of theological and political reasons behind the execution
-          remains debated by historians.
-        </p>
+          <p>
+            Suhrawardi was executed in Aleppo around 1191 CE on the order of the
+            Ayyubid ruler al-Malik al-Zahir, son of Saladin, after religious
+            scholars accused him of heretical teachings, though the precise
+            combination of theological and political reasons behind the
+            execution remains debated by historians.
+          </p>
 
-        <h3>What is Suhrawardi's philosophy of light?</h3>
+          <h3>What is Suhrawardi's philosophy of light?</h3>
 
-        <p>
-          Suhrawardi's philosophy of light describes all of reality, both
-          physical and immaterial, in terms of light and darkness, arguing that
-          light is self-evident and self-manifesting, and that a single supreme
-          Light of Lights is the source from which all other lights and,
-          ultimately, all existing things emanate.
-        </p>
+          <p>
+            Suhrawardi's philosophy of light describes all of reality, both
+            physical and immaterial, in terms of light and darkness, arguing
+            that light is self-evident and self-manifesting, and that a single
+            supreme Light of Lights is the source from which all other lights
+            and, ultimately, all existing things emanate.
+          </p>
 
-        <h3>What is knowledge by presence in Suhrawardi's philosophy?</h3>
+          <h3>What is knowledge by presence in Suhrawardi's philosophy?</h3>
 
-        <p>
-          Knowledge by presence is Suhrawardi's theory that certain kinds of
-          knowledge, especially self-knowledge, are grasped through direct,
-          unmediated presence of the knower to the known, rather than through
-          abstract concepts or logical representation, and that this immediate
-          form of knowledge is more fundamental than discursive reasoning.
-        </p>
+          <p>
+            Knowledge by presence is Suhrawardi's theory that certain kinds of
+            knowledge, especially self-knowledge, are grasped through direct,
+            unmediated presence of the knower to the known, rather than through
+            abstract concepts or logical representation, and that this immediate
+            form of knowledge is more fundamental than discursive reasoning.
+          </p>
 
-        <h3>How did Suhrawardi differ from Avicenna?</h3>
+          <h3>How did Suhrawardi differ from Avicenna?</h3>
 
-        <p>
-          While Avicenna built a systematic Peripatetic philosophy centered on
-          the Necessary Existent and formal logical demonstration, Suhrawardi
-          argued that Peripatetic philosophy alone was insufficient and proposed
-          replacing or supplementing it with a philosophy of light grounded in
-          intuitive, experiential knowledge alongside logical training.
-        </p>
-      </section>
+          <p>
+            While Avicenna built a systematic Peripatetic philosophy centered on
+            the Necessary Existent and formal logical demonstration, Suhrawardi
+            argued that Peripatetic philosophy alone was insufficient and
+            proposed replacing or supplementing it with a philosophy of light
+            grounded in intuitive, experiential knowledge alongside logical
+            training.
+          </p>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED THINKERS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-thinkers-title">
-        <span class="section-eyebrow"> Continue Exploring </span>
+        <section class="connection" aria-labelledby="related-thinkers-title">
+          <span class="section-eyebrow"> Continue Exploring </span>
 
-        <h2 id="related-thinkers-title">
-          Related Islamic and Arabic Philosophers
-        </h2>
+          <h2 id="related-thinkers-title">
+            Related Islamic and Arabic Philosophers
+          </h2>
 
-        <p>
-          Explore other major thinkers in the development of Islamic philosophy,
-          Arabic philosophy, Persian philosophy, and medieval intellectual
-          history.
-        </p>
+          <p>
+            Explore other major thinkers in the development of Islamic
+            philosophy, Arabic philosophy, Persian philosophy, and medieval
+            intellectual history.
+          </p>
 
-        <div class="related-links">
-          <a href="al-kindi.html"> Al-Kindi </a>
-          ·
+          <div class="related-links">
+            <a href="al-kindi.html"> Al-Kindi </a>
+            ·
 
-          <a href="al-farabi.html"> Al-Farabi </a>
-          ·
+            <a href="al-farabi.html"> Al-Farabi </a>
+            ·
 
-          <a href="avicenna.html"> Avicenna (Ibn Sina) </a>
-          ·
+            <a href="avicenna.html"> Avicenna (Ibn Sina) </a>
+            ·
 
-          <a href="al-ghazali.html"> Al-Ghazali </a>
-          ·
+            <a href="al-ghazali.html"> Al-Ghazali </a>
+            ·
 
-          <a href="averroes.html"> Averroes (Ibn Rushd) </a>
-          ·
+            <a href="averroes.html"> Averroes (Ibn Rushd) </a>
+            ·
 
-          <a href="ibn-arabi.html"> Ibn Arabi </a>
-        </div>
-      </section>
+            <a href="ibn-arabi.html"> Ibn Arabi </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          RELATED AREAS
          ===================================================== -->
 
-      <section class="connection" aria-labelledby="related-topics-title">
-        <span class="section-eyebrow"> Philosophical Connections </span>
+        <section class="connection" aria-labelledby="related-topics-title">
+          <span class="section-eyebrow"> Philosophical Connections </span>
 
-        <h2 id="related-topics-title">Related Areas of Philosophy</h2>
+          <h2 id="related-topics-title">Related Areas of Philosophy</h2>
 
-        <p>
-          Suhrawardi's work connects the history of Islamic philosophy with
-          metaphysics, epistemology, philosophy of mind, mysticism, and the
-          transmission of Platonic and ancient Persian thought.
-        </p>
+          <p>
+            Suhrawardi's work connects the history of Islamic philosophy with
+            metaphysics, epistemology, philosophy of mind, mysticism, and the
+            transmission of Platonic and ancient Persian thought.
+          </p>
 
-        <div class="related-links">
-          <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
-          ·
+          <div class="related-links">
+            <a href="metaphysics-branch-philosophy.html"> Metaphysics </a>
+            ·
 
-          <a href="epistemology-branch-philosophy.html"> Epistemology </a>
-          ·
+            <a href="epistemology-branch-philosophy.html"> Epistemology </a>
+            ·
 
-          <a href="ethics-branch-philosophy.html"> Ethics </a>
-          ·
+            <a href="ethics-branch-philosophy.html"> Ethics </a>
+            ·
 
-          <a href="islamic-philosophy.html"> Islamic Philosophy </a>
-          ·
+            <a href="islamic-philosophy.html"> Islamic Philosophy </a>
+            ·
 
-          <a href="ancient-greece.html"> Ancient Greek Philosophy </a>
-          ·
+            <a href="ancient-greece.html"> Ancient Greek Philosophy </a>
+            ·
 
-          <a href="schools.html"> Schools of Philosophy </a>
-        </div>
-      </section>
+            <a href="schools.html"> Schools of Philosophy </a>
+          </div>
+        </section>
 
-      <div class="philosophy-divider"></div>
+        <div class="philosophy-divider"></div>
 
-      <!-- =====================================================
+        <!-- =====================================================
          CONCLUSION
          ===================================================== -->
 
-      <section class="narrative-block" aria-labelledby="conclusion-title">
-        <span class="section-eyebrow"> Classical Islamic Philosophy </span>
+        <section class="narrative-block" aria-labelledby="conclusion-title">
+          <span class="section-eyebrow"> Classical Islamic Philosophy </span>
 
-        <h2 id="conclusion-title">Why Suhrawardi Still Matters</h2>
+          <h2 id="conclusion-title">Why Suhrawardi Still Matters</h2>
 
-        <p>
-          Suhrawardi occupies a singular place in the history of Islamic
-          philosophy as the founder of an entirely original school of thought.
-          His metaphysics of light, his theory of knowledge by presence, and his
-          insistence that philosophy required both rigorous logic and cultivated
-          intuitive insight opened a path beyond the Peripatetic framework that
-          had dominated Islamic philosophy since Al-Kindi and Al-Farabi.
-        </p>
+          <p>
+            Suhrawardi occupies a singular place in the history of Islamic
+            philosophy as the founder of an entirely original school of thought.
+            His metaphysics of light, his theory of knowledge by presence, and
+            his insistence that philosophy required both rigorous logic and
+            cultivated intuitive insight opened a path beyond the Peripatetic
+            framework that had dominated Islamic philosophy since Al-Kindi and
+            Al-Farabi.
+          </p>
 
-        <p>
-          His short but extraordinarily productive life, and the dramatic
-          circumstances of his execution, have made him one of the most
-          compelling figures in medieval Islamic intellectual history, while his
-          philosophical ideas continued to shape Persian philosophy for
-          centuries after his death, most notably through their influence on
-          Mulla Sadra.
-        </p>
+          <p>
+            His short but extraordinarily productive life, and the dramatic
+            circumstances of his execution, have made him one of the most
+            compelling figures in medieval Islamic intellectual history, while
+            his philosophical ideas continued to shape Persian philosophy for
+            centuries after his death, most notably through their influence on
+            Mulla Sadra.
+          </p>
 
-        <p>
-          Understanding Suhrawardi also helps explain the intellectual diversity
-          within classical Islamic philosophy, which extended well beyond the
-          Peripatetic tradition represented by Avicenna and Averroes.
-        </p>
+          <p>
+            Understanding Suhrawardi also helps explain the intellectual
+            diversity within classical Islamic philosophy, which extended well
+            beyond the Peripatetic tradition represented by Avicenna and
+            Averroes.
+          </p>
 
-        <a class="cta-button" href="thinkers.html">
-          Explore Great Philosophers
-          <span aria-hidden="true">&rarr;</span>
-        </a>
-      </section>
-    </main>
+          <a class="cta-button" href="thinkers.html">
+            Explore Great Philosophers
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </section>
+      </main>
+    </div>
 
     <!-- =====================================================
        FOOTER
@@ -1939,8 +2017,8 @@
        SCRIPTS
        ===================================================== -->
 
-     <script src="script.js" defer></script>
-     <script src="article-toc.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="article-toc.js" defer></script>
 
     <script src="branches-enhance.js" defer></script>
 

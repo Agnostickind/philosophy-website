@@ -1,0 +1,1008 @@
+/* Socrates reference page — page-scoped selectors only. */
+.sr-hero {
+    overflow: hidden;
+    border-bottom: 1px solid rgba(184, 138, 68, .25);
+    background: radial-gradient(circle at 80% 20%, rgba(184, 138, 68, .16), transparent 34%), linear-gradient(135deg, rgba(248, 242, 229, .98), rgba(236, 225, 204, .92))
+}
+
+.sr-hero-inner,
+.sr-page {
+    width: min(1240px, calc(100% - 40px));
+    margin: auto
+}
+
+.sr-hero-inner {
+    padding: 24px 0 56px
+}
+
+.sr-breadcrumb {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    opacity: .72
+}
+
+.sr-breadcrumb a {
+    color: inherit;
+    text-decoration: none
+}
+
+.sr-breadcrumb a:hover {
+    color: #b88a44
+}
+
+.sr-profile {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 310px;
+    gap: 60px;
+    align-items: center
+}
+
+.sr-profile-copy {
+    max-width: 760px
+}
+
+.sr-kicker,
+.sr-section-label {
+    display: block;
+    margin-bottom: 12px;
+    color: #9b6f2e;
+    font-size: .74rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase
+}
+
+.sr-profile h1 {
+    margin: 0 0 14px;
+    font-family: "Cinzel", Georgia, serif;
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    line-height: .95;
+    letter-spacing: -.03em
+}
+
+.sr-lede {
+    max-width: 700px;
+    margin: 0;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(1.25rem, 2.3vw, 1.7rem);
+    line-height: 1.45
+}
+
+.sr-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 25px
+}
+
+.sr-tags span {
+    padding: 7px 11px;
+    border: 1px solid rgba(184, 138, 68, .4);
+    border-radius: 999px;
+    font-size: .72rem;
+    letter-spacing: .06em;
+    text-transform: uppercase
+}
+
+.sr-portrait {
+    margin: 0;
+    padding: 9px;
+    background: rgba(255, 255, 255, .45);
+    border: 1px solid rgba(184, 138, 68, .3);
+    box-shadow: 0 18px 50px rgba(45, 31, 15, .12)
+}
+
+.sr-portrait img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover
+}
+
+.sr-portrait figcaption {
+    padding: 9px 5px 1px;
+    font-size: .72rem;
+    line-height: 1.4;
+    opacity: .68
+}
+
+.sr-page {
+    padding: 55px 0 90px
+}
+
+.sr-layout {
+    display: grid;
+    grid-template-columns: 225px minmax(0, 820px);
+    gap: 65px;
+    justify-content: center
+}
+
+.sr-sidebar-card {
+    position: sticky;
+    top: 24px;
+    padding: 18px 0;
+    border-top: 2px solid #b88a44
+}
+
+.sr-sidebar-heading {
+    margin-bottom: 13px;
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase
+}
+
+.sr-sidebar nav {
+    display: grid;
+    gap: 3px
+}
+
+.sr-sidebar nav a {
+    padding: 7px 9px;
+    border-left: 2px solid transparent;
+    color: inherit;
+    font-size: .82rem;
+    line-height: 1.35;
+    text-decoration: none;
+    opacity: .68;
+    transition: .18s ease
+}
+
+.sr-sidebar nav a:hover,
+.sr-sidebar nav a.is-active {
+    border-left-color: #b88a44;
+    color: #8c6227;
+    opacity: 1;
+    background: rgba(184, 138, 68, .07)
+}
+
+.sr-content {
+    min-width: 0
+}
+
+.sr-section,
+.sr-related {
+    scroll-margin-top: 30px;
+    margin-bottom: 68px
+}
+
+.sr-section h2,
+.sr-related h2 {
+    margin: 0 0 20px;
+    font-family: "Cinzel", Georgia, serif;
+    font-size: clamp(1.65rem, 3vw, 2.45rem);
+    line-height: 1.15
+}
+
+.sr-section h3,
+.sr-related h3 {
+    font-family: "Cormorant Garamond", Georgia, serif
+}
+
+.sr-section p,
+.sr-related p {
+    max-width: 78ch;
+    font-size: 1.03rem;
+    line-height: 1.78
+}
+
+.sr-section-intro {
+    opacity: .82
+}
+
+.sr-answer,
+.sr-caution,
+.sr-term {
+    margin: 26px 0;
+    padding: 18px 20px;
+    border-left: 3px solid #b88a44;
+    background: rgba(184, 138, 68, .08);
+    line-height: 1.65
+}
+
+.sr-answer strong {
+    color: #8c6227
+}
+
+.sr-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 0;
+    border-top: 1px solid rgba(120, 90, 45, .2)
+}
+
+.sr-facts div {
+    display: grid;
+    grid-template-columns: 135px 1fr;
+    gap: 12px;
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(120, 90, 45, .16)
+}
+
+.sr-facts dt {
+    font-weight: 700;
+    font-size: .86rem
+}
+
+.sr-facts dd {
+    margin: 0;
+    font-size: .92rem;
+    line-height: 1.45
+}
+
+.sr-idea-grid,
+.sr-source-grid,
+.sr-legacy-grid,
+.sr-certainty {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 28px
+}
+
+.sr-card,
+.sr-source,
+.sr-legacy-grid>div,
+.sr-certainty>div {
+    padding: 21px;
+    border: 1px solid rgba(120, 90, 45, .18);
+    background: rgba(255, 255, 255, .34)
+}
+
+.sr-card h3,
+.sr-source h3,
+.sr-legacy-grid h3,
+.sr-certainty h3 {
+    margin: 0 0 7px;
+    font-size: 1.28rem
+}
+
+.sr-card p,
+.sr-source p,
+.sr-legacy-grid p {
+    margin: 0;
+    font-size: .94rem;
+    line-height: 1.62
+}
+
+.sr-process {
+    margin: 28px 0;
+    border-top: 1px solid rgba(120, 90, 45, .2)
+}
+
+.sr-process div {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 15px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(120, 90, 45, .15)
+}
+
+.sr-process b {
+    color: #b88a44;
+    font-size: .78rem;
+    letter-spacing: .08em
+}
+
+.sr-process span {
+    line-height: 1.55
+}
+
+.sr-term {
+    display: grid;
+    gap: 5px
+}
+
+.sr-term strong {
+    font-family: "Cinzel", Georgia, serif
+}
+
+.sr-quote {
+    margin: 34px 0;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid rgba(184, 138, 68, .4);
+    border-bottom: 1px solid rgba(184, 138, 68, .4)
+}
+
+.sr-quote blockquote {
+    margin: 0 0 12px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    font-style: italic;
+    line-height: 1.2
+}
+
+.sr-quote cite {
+    font-size: .8rem;
+    opacity: .7
+}
+
+.sr-caution p {
+    margin: 6px 0 0
+}
+
+.sr-timeline {
+    margin: 30px 0;
+    padding-left: 26px;
+    border-left: 1px solid rgba(184, 138, 68, .5)
+}
+
+.sr-timeline>div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 95px 1fr;
+    gap: 18px;
+    padding: 0 0 27px
+}
+
+.sr-timeline>div::before {
+    content: "";
+    position: absolute;
+    left: -31px;
+    top: 5px;
+    width: 9px;
+    height: 9px;
+    border: 2px solid #b88a44;
+    border-radius: 50%;
+    background: #f5eddf
+}
+
+.sr-year {
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #9b6f2e
+}
+
+.sr-timeline h3 {
+    margin: 0 0 4px;
+    font-size: 1.25rem
+}
+
+.sr-timeline p {
+    margin: 0
+}
+
+.sr-dialogues {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 25px
+}
+
+.sr-dialogues a {
+    display: grid;
+    gap: 4px;
+    padding: 15px 17px;
+    border: 1px solid rgba(120, 90, 45, .18);
+    color: inherit;
+    text-decoration: none;
+    transition: transform .18s ease, border-color .18s ease, background .18s ease
+}
+
+.sr-dialogues a:hover {
+    transform: translateY(-2px);
+    border-color: rgba(184, 138, 68, .65);
+    background: rgba(184, 138, 68, .07)
+}
+
+.sr-dialogues span {
+    font-size: .84rem;
+    opacity: .68
+}
+
+.sr-closing {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(184, 138, 68, .35);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.35rem !important
+}
+
+.sr-certainty ul {
+    margin: 0;
+    padding-left: 19px
+}
+
+.sr-certainty li {
+    margin: 8px 0;
+    line-height: 1.55;
+    font-size: .92rem
+}
+
+.sr-faq {
+    border-top: 1px solid rgba(120, 90, 45, .2)
+}
+
+.sr-faq details {
+    border-bottom: 1px solid rgba(120, 90, 45, .16)
+}
+
+.sr-faq summary {
+    cursor: pointer;
+    padding: 17px 3px;
+    font-weight: 700;
+    line-height: 1.45
+}
+
+.sr-faq summary::marker {
+    color: #b88a44
+}
+
+.sr-faq details p {
+    margin: -2px 0 18px;
+    padding-right: 20px;
+    font-size: .94rem;
+    line-height: 1.7
+}
+
+.sr-related {
+    padding: 30px 0 0;
+    border-top: 1px solid rgba(184, 138, 68, .4)
+}
+
+.sr-related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 20px
+}
+
+.sr-related-links a {
+    padding: 9px 13px;
+    border: 1px solid rgba(120, 90, 45, .22);
+    color: inherit;
+    text-decoration: none;
+    font-size: .82rem
+}
+
+.sr-related-links a:hover {
+    border-color: #b88a44;
+    color: #8c6227
+}
+
+@media(max-width:980px) {
+    .sr-profile {
+        grid-template-columns: minmax(0, 1fr) 245px;
+        gap: 35px
+    }
+
+    .sr-layout {
+        grid-template-columns: 185px minmax(0, 1fr);
+        gap: 35px
+    }
+}
+
+@media(max-width:760px) {
+
+    .sr-hero-inner,
+    .sr-page {
+        width: min(100% - 28px, 700px)
+    }
+
+    .sr-hero-inner {
+        padding-bottom: 38px
+    }
+
+    .sr-profile {
+        grid-template-columns: 1fr;
+        gap: 28px
+    }
+
+    .sr-portrait {
+        width: min(100%, 330px)
+    }
+
+    .sr-layout {
+        display: block
+    }
+
+    .sr-sidebar {
+        margin-bottom: 35px
+    }
+
+    .sr-sidebar-card {
+        position: static;
+        padding: 0;
+        border-top: 0
+    }
+
+    .sr-sidebar-heading {
+        padding: 12px 14px;
+        border: 1px solid rgba(120, 90, 45, .18);
+        cursor: pointer
+    }
+
+    .sr-sidebar nav {
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 6px;
+        border: 1px solid rgba(120, 90, 45, .18)
+    }
+
+    .sr-sidebar-card.is-open nav {
+        display: grid
+    }
+
+    .sr-facts,
+    .sr-idea-grid,
+    .sr-source-grid,
+    .sr-legacy-grid,
+    .sr-certainty,
+    .sr-dialogues {
+        grid-template-columns: 1fr
+    }
+
+    .sr-facts div {
+        grid-template-columns: 115px 1fr
+    }
+
+    .sr-timeline>div {
+        grid-template-columns: 1fr;
+        gap: 5px
+    }
+
+    .sr-page {
+        padding-top: 35px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    .sr-dialogues a,
+    .sr-sidebar nav a {
+        transition: none
+    }
+}
+
+@media print {
+
+    .sr-sidebar,
+    .sr-tags {
+        display: none
+    }
+
+    .sr-layout {
+        display: block
+    }
+
+    .sr-profile {
+        grid-template-columns: 1fr 220px
+    }
+
+    .sr-section {
+        break-inside: avoid
+    }
+}
+
+/* =========================================================
+   SOCRATES HERO — IMAGE FIX
+   Keep hero image completely isolated from global styles
+   ========================================================= */
+
+.sr-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.sr-hero-inner {
+    width: min(1240px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 24px 0 56px;
+}
+
+.sr-profile {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 310px;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Hero text */
+.sr-profile-copy {
+    min-width: 0;
+    max-width: 760px;
+}
+
+/* Hero portrait container */
+.sr-portrait {
+    display: block;
+    position: relative;
+
+    width: 310px;
+    max-width: 310px;
+
+    height: auto;
+    max-height: none;
+
+    margin: 0;
+    padding: 9px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(184, 138, 68, 0.3);
+    box-shadow: 0 18px 50px rgba(45, 31, 15, 0.12);
+}
+
+/* IMPORTANT:
+   Override any global img height/width rules */
+.sr-hero .sr-portrait img {
+    display: block;
+
+    width: 100% !important;
+    height: auto !important;
+
+    max-width: 100% !important;
+    max-height: none !important;
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+    object-position: center top;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+}
+
+/* Caption */
+.sr-hero .sr-portrait figcaption {
+    display: block;
+
+    margin: 0;
+    padding: 9px 5px 1px;
+
+    font-size: 0.72rem;
+    line-height: 1.4;
+
+    opacity: 0.68;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 980px) {
+
+    .sr-profile {
+        grid-template-columns: minmax(0, 1fr) 245px;
+        gap: 35px;
+    }
+
+    .sr-portrait {
+        width: 245px;
+        max-width: 245px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    .sr-profile {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .sr-portrait {
+        width: min(100%, 330px);
+        max-width: 330px;
+    }
+
+    .sr-hero .sr-portrait img {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 3 / 4;
+    }
+
+}
+
+/* =========================================================
+   SOCRATES REFERENCE PAGE — DARK MODE
+   Detects the site's existing appearance-panel state
+   ========================================================= */
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-hero {
+    background:
+        radial-gradient(circle at 80% 20%,
+            rgba(184, 138, 68, 0.12),
+            transparent 34%),
+        linear-gradient(135deg,
+            #15161c,
+            #1c1b1a);
+
+    border-bottom-color: rgba(184, 138, 68, 0.28);
+}
+
+
+/* =========================================================
+   HERO TEXT
+   ========================================================= */
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-profile h1 {
+    color: #f3eee4;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-lede {
+    color: #ddd6c9;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-breadcrumb {
+    color: #c8c0b3;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-breadcrumb a {
+    color: inherit;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-breadcrumb a:hover {
+    color: #d0a15a;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-kicker {
+    color: #d0a15a;
+}
+
+
+/* =========================================================
+   HERO TAGS
+   ========================================================= */
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-tags span {
+    color: #ddd6c9;
+
+    border-color: rgba(208, 161, 90, 0.45);
+
+    background: rgba(184, 138, 68, 0.05);
+}
+
+
+/* =========================================================
+   HERO IMAGE FRAME
+   ========================================================= */
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-portrait {
+    background: rgba(255, 255, 255, 0.055);
+
+    border-color: rgba(208, 161, 90, 0.28);
+
+    box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.38);
+}
+
+
+/* =========================================================
+   IMAGE CAPTION
+   ========================================================= */
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-portrait figcaption {
+    color: #bdb5a8;
+}
+
+
+/* =========================================================
+   REFERENCE PAGE BELOW HERO
+   ========================================================= */
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-page {
+    background: #15161c;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-sidebar-card {
+    border-top-color: #b88a44;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-sidebar-heading {
+    color: #eee7da;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-sidebar nav a {
+    color: #d0c8bb;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-sidebar nav a:hover,
+body:has(.theme-options button[data-theme="dark"].active) .sr-sidebar nav a.is-active {
+    color: #d0a15a;
+    background: rgba(184, 138, 68, 0.08);
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-section h2,
+body:has(.theme-options button[data-theme="dark"].active) .sr-related h2 {
+    color: #f3eee4;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-section h3,
+body:has(.theme-options button[data-theme="dark"].active) .sr-related h3 {
+    color: #eee7da;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-section p,
+body:has(.theme-options button[data-theme="dark"].active) .sr-related p {
+    color: #d0c8bb;
+}
+
+
+/* =========================================================
+   DARK MODE CARDS
+   ========================================================= */
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-card,
+body:has(.theme-options button[data-theme="dark"].active) .sr-source,
+body:has(.theme-options button[data-theme="dark"].active) .sr-legacy-grid>div,
+body:has(.theme-options button[data-theme="dark"].active) .sr-certainty>div,
+body:has(.theme-options button[data-theme="dark"].active) .sr-dialogues a {
+    background: rgba(255, 255, 255, 0.045);
+
+    border-color: rgba(208, 161, 90, 0.18);
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-card p,
+body:has(.theme-options button[data-theme="dark"].active) .sr-source p,
+body:has(.theme-options button[data-theme="dark"].active) .sr-legacy-grid p {
+    color: #c9c1b5;
+}
+
+
+/* =========================================================
+   DARK MODE ANSWER / CAUTION / TERM BOXES
+   ========================================================= */
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-answer,
+body:has(.theme-options button[data-theme="dark"].active) .sr-caution,
+body:has(.theme-options button[data-theme="dark"].active) .sr-term {
+    background: rgba(184, 138, 68, 0.08);
+
+    border-left-color: #b88a44;
+
+    color: #d8d0c4;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-answer strong {
+    color: #d0a15a;
+}
+
+
+/* =========================================================
+   DARK MODE FACTS
+   ========================================================= */
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-facts {
+    border-color: rgba(208, 161, 90, 0.2);
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-facts div {
+    border-color: rgba(208, 161, 90, 0.15);
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-facts dt,
+body:has(.theme-options button[data-theme="dark"].active) .sr-facts dd {
+    color: #d0c8bb;
+}
+
+
+/* =========================================================
+   DARK MODE TIMELINE
+   ========================================================= */
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-timeline {
+    border-left-color: rgba(184, 138, 68, 0.45);
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-timeline>div::before {
+    background: #15161c;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-year {
+    color: #d0a15a;
+}
+
+
+/* =========================================================
+   DARK MODE QUOTE
+   ========================================================= */
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-quote {
+    border-color: rgba(184, 138, 68, 0.4);
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-quote blockquote {
+    color: #eee7da;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-quote cite {
+    color: #aaa195;
+}
+
+
+/* =========================================================
+   DARK MODE FAQ
+   ========================================================= */
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-faq {
+    border-top-color: rgba(208, 161, 90, 0.2);
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-faq details {
+    border-bottom-color: rgba(208, 161, 90, 0.15);
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-faq summary {
+    color: #eee7da;
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-faq details p {
+    color: #c9c1b5;
+}
+
+
+/* =========================================================
+   DARK MODE RELATED LINKS
+   ========================================================= */
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-related {
+    border-top-color: rgba(184, 138, 68, 0.4);
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-related-links a {
+    color: #d0c8bb;
+    border-color: rgba(208, 161, 90, 0.2);
+}
+
+body:has(.theme-options button[data-theme="dark"].active) .sr-related-links a:hover {
+    color: #d0a15a;
+    border-color: #b88a44;
+}
+
+/* =========================================================
+   SCROLLABLE ARTICLE TOC
+   ========================================================= */
+
+.article-toc {
+  position: sticky;
+  top: 90px;
+  max-height: calc(100vh - 110px);
+}
+
+.article-toc__list {
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+
+  /* Firefox */
+  scrollbar-width: thin;
+}
+
+/* Chrome / Edge / Safari */
+.article-toc__list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.article-toc__list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.article-toc__list::-webkit-scrollbar-thumb {
+  background: rgba(184, 138, 68, 0.45);
+  border-radius: 10px;
+}
+
+.article-toc__list::-webkit-scrollbar-thumb:hover {
+  background: rgba(184, 138, 68, 0.75);
+}

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
@@ -42,8 +41,6 @@
         <loc>https://agnostickind.github.io/philosophy-website/contact.html</loc>
     </url>
 
-    <!-- School deep-dive pages -->
-
     <url>
         <loc>https://agnostickind.github.io/philosophy-website/greek-schools.html</loc>
     </url>
@@ -66,6 +63,14 @@
 
     <url>
         <loc>https://agnostickind.github.io/philosophy-website/modern-schools.html</loc>
+    </url>
+
+    <url>
+        <loc>https://agnostickind.github.io/philosophy-website/stoicism.html</loc>
+    </url>
+
+    <url>
+        <loc>https://agnostickind.github.io/philosophy-website/author-kavya-jain.html</loc>
     </url>
 
 </urlset>

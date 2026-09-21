@@ -312,6 +312,137 @@ document.addEventListener('DOMContentLoaded', () => {
         );
 
     }
+
+    /* ---------------------------------------------------------
+   MOBILE MEGA MENU — COLLAPSIBLE SECTIONS
+
+   Paste this AFTER your existing menu code (same script).
+   Your existing JS stays exactly as it is.
+   --------------------------------------------------------- */
+
+    (() => {
+
+        const mobileMQ = window.matchMedia('(max-width: 1100px)');
+
+        const headings =
+            document.querySelectorAll('.mega-column > h4');
+
+
+        /* Open one section, close the others in the same menu */
+
+        const toggleSection = (heading) => {
+
+            if (!mobileMQ.matches) return;
+
+            const column = heading.parentElement;
+            const menu = column.closest('.mega-menu');
+
+            const willOpen = !column.classList.contains('col-open');
+
+            menu.querySelectorAll('.mega-column.col-open').forEach((c) => {
+
+                c.classList.remove('col-open');
+
+                c.querySelector(':scope > h4')
+                    .setAttribute('aria-expanded', 'false');
+
+            });
+
+            if (willOpen) {
+
+                column.classList.add('col-open');
+
+                heading.setAttribute('aria-expanded', 'true');
+
+                /* Bring the opened section into view */
+                heading.scrollIntoView({
+                    block: 'nearest',
+                    behavior: 'smooth'
+                });
+
+            }
+
+        };
+
+
+        headings.forEach((heading) => {
+
+            heading.addEventListener('click', () => toggleSection(heading));
+
+            heading.addEventListener('keydown', (event) => {
+
+                if (event.key === 'Enter' || event.key === ' ') {
+
+                    event.preventDefault();
+
+                    toggleSection(heading);
+
+                }
+
+            });
+
+        });
+
+
+        /* Button semantics only while the hamburger layout is active */
+
+        const syncAccessibility = () => {
+
+            headings.forEach((heading) => {
+
+                const column = heading.parentElement;
+
+                if (mobileMQ.matches) {
+
+                    heading.setAttribute('role', 'button');
+                    heading.setAttribute('tabindex', '0');
+
+                    heading.setAttribute(
+                        'aria-expanded',
+                        String(column.classList.contains('col-open'))
+                    );
+
+                } else {
+
+                    heading.removeAttribute('role');
+                    heading.removeAttribute('tabindex');
+                    heading.removeAttribute('aria-expanded');
+
+                    column.classList.remove('col-open');
+
+                }
+
+            });
+
+        };
+
+
+        syncAccessibility();
+
+        mobileMQ.addEventListener('change', syncAccessibility);
+
+
+        /* Keep --nav-h equal to the real navbar height,
+           so the open menu panel fits the screen exactly */
+
+        const navbar = document.querySelector('.navbar');
+
+        const setNavHeight = () => {
+
+            if (!navbar) return;
+
+            document.documentElement.style.setProperty(
+                '--nav-h',
+                navbar.offsetHeight + 'px'
+            );
+
+        };
+
+        setNavHeight();
+
+        window.addEventListener('resize', setNavHeight);
+
+    })();
     /* ---------------------------------------------------------
        2. ACTIVE NAV LINK
        Highlights whichever nav/footer link matches the

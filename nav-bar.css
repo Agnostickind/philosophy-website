@@ -1326,42 +1326,163 @@ body.command-palette-open {
     line-height: 1.35;
 }
 
+
 /* =========================================================
-   MOBILE — BOOKS MEGA MENU
+   MOBILE / TABLET NAV FIX  (hamburger layout, <= 1100px)
+
+   HOW TO USE
+   1. Paste this at the VERY END of your stylesheet
+      (after your @media (max-width: 1100px) block).
+   2. Delete your old "MOBILE — BOOKS MEGA MENU" block
+      (the @media (max-width: 768px) one) - this replaces it.
+   3. Desktop is untouched: everything is inside the media query.
    ========================================================= */
 
-@media (max-width: 768px) {
+:root {
+    --nav-h: 74px;   /* the JS keeps this equal to the real navbar height */
+}
 
+@media (max-width: 1100px) {
+
+    /* -----------------------------------------------------
+       1. HAMBURGER PANEL
+          Keeps YOUR existing panel (absolute, top: 100%,
+          display none/flex). Only fixes:
+          - margin-left: 50px from the base .nav-links rule,
+            which shifts the panel sideways on tablets
+          - align-items: center from the base rule, which
+            shrinks and centres the rows in a column
+          - height, so it matches the real navbar height
+          - bottom padding for phones with a home bar
+       ----------------------------------------------------- */
+
+    .nav-links {
+        margin-left: 0;
+        align-items: stretch;
+
+        max-height: calc(100dvh - var(--nav-h));
+
+        padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+    }
+
+
+    /* -----------------------------------------------------
+       2. UNDO THE DESKTOP "FULL-SCREEN PANEL + OWN SCROLLBAR"
+          (this is what was clipping your entries: a second
+          scroll box nested inside your scrolling panel)
+       ----------------------------------------------------- */
+
+    .mega-menu {
+        height: auto;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .mega-menu-inner,
     .books-mega .mega-menu-inner {
         display: block;
+
         width: 100%;
+        max-width: none;
+        height: auto;
+
         margin: 0;
+        padding: 0.3rem 0 0.8rem 1rem;
+
+        overflow: visible;
     }
 
-    .books-mega .mega-intro {
-        grid-column: auto;
-        grid-row: auto;
-    }
 
-    .books-mega .mega-column {
-        grid-column: auto !important;
-        grid-row: auto !important;
-        width: 100%;
-        padding: 0.3rem 0;
-    }
+    /* -----------------------------------------------------
+       3. OPEN STATE FOR EVERY MEGA MENU (Books had no rule)
+       ----------------------------------------------------- */
 
-    .books-collections {
+    .nav-mega.mobile-open .mega-menu {
         display: block;
-        width: 100%;
     }
 
-    .books-collections .mega-column {
-        width: 100%;
-        padding: 0.2rem 0;
+    .nav-mega.mobile-open .mega-mobile-toggle span {
+        border-color: var(--gold-bright);
+
+        transform:
+            rotate(-135deg) translate(-2px, -2px);
     }
 
-    .books-collections .mega-column a {
+
+    /* -----------------------------------------------------
+       4. COLLAPSIBLE SECTIONS (tap a heading to expand)
+       ----------------------------------------------------- */
+
+    .mega-menu .mega-column {
+        padding: 0;
+
+        border-bottom: 1px solid var(--ink-line);
+    }
+
+    .mega-menu .mega-column:last-child {
+        border-bottom: none;
+    }
+
+
+    /* Heading = tap target */
+
+    .mega-menu .mega-column > h4 {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
         margin: 0;
+        padding: 0.95rem 0.25rem;
+
+        cursor: pointer;
+
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .mega-menu .mega-column > h4:focus-visible {
+        outline: 1px solid var(--gold);
+        outline-offset: 2px;
+    }
+
+
+    /* Chevron */
+
+    .mega-menu .mega-column > h4::after {
+        content: "";
+
+        flex-shrink: 0;
+
+        width: 7px;
+        height: 7px;
+
+        margin-left: 1rem;
+
+        border-right: 1px solid currentColor;
+        border-bottom: 1px solid currentColor;
+
+        transform: rotate(45deg);
+
+        transition: transform 0.25s ease;
+    }
+
+    .mega-menu .mega-column.col-open > h4::after {
+        transform: rotate(-135deg);
+    }
+
+
+    /* Links hidden until the section is open */
+
+    .mega-menu .mega-column > a {
+        display: none;
+    }
+
+    .mega-menu .mega-column.col-open > a {
+        display: block;
+    }
+
+    .mega-menu .mega-column.col-open {
+        padding-bottom: 0.6rem;
     }
 
 }

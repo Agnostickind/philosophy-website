@@ -61,7 +61,7 @@
 .sr-profile h1 {
     margin: 0 0 14px;
     font-family: "Cinzel", Georgia, serif;
-    font-size: clamp(2.7rem, 6vw, 5.2rem);
+    font-size: clamp(2.7rem, 4vw, 5.2rem);
     line-height: .95;
     letter-spacing: -.03em;
 }

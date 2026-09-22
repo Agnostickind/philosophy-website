@@ -793,7 +793,7 @@ const searchData = [
         category: "Ancient Greek",
         description: "Pre-Socratic philosopher known for his philosophy of change, opposites and the Logos.",
         keywords: "heraclitus greek pre socratic change flux unity opposites logos river natural philosophy",
-        url: "thinkers.html#heraclitus"
+        url: "heraclitus.html"
     },
 
     {
@@ -801,7 +801,7 @@ const searchData = [
         category: "Ancient Greek",
         description: "Pre-Socratic philosopher associated with atomism and materialism.",
         keywords: "democritus atomism atoms materialism natural science greek philosophy",
-        url: "thinkers.html#democritus"
+        url: "democritus.html"
     },
 
     {
@@ -809,7 +809,7 @@ const searchData = [
         category: "Ancient Greek",
         description: "Greek philosopher known for questioning, ethics and the Socratic method.",
         keywords: "socrates socratic method critical thinking ethics self examination ancient greek moral philosophy",
-        url: "thinkers.html#socrates"
+        url: "socrates.html"
     },
 
     {
@@ -817,7 +817,7 @@ const searchData = [
         category: "Ancient Greek",
         description: "Greek philosopher, founder of the Academy and author of The Republic.",
         keywords: "plato republic theory forms ideal state academy education platonism greek philosophy",
-        url: "thinkers.html#plato"
+        url: "plato.html"
     },
 
     {
@@ -825,7 +825,7 @@ const searchData = [
         category: "Ancient Greek",
         description: "Greek philosopher whose work covered logic, ethics, science, politics and the arts.",
         keywords: "aristotle virtue ethics formal logic biology science observation politics metaphysics peripatetic",
-        url: "thinkers.html#aristotle"
+        url: "aristotle.html"
     },
 
     {

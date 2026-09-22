@@ -58,6 +58,12 @@
     text-transform: uppercase
 }
 
+.sr-section p + p {
+  margin-top: 1.1rem;
+}
+
+
+
 .sr-profile h1 {
     margin: 0 0 14px;
     font-family: "Cinzel", Georgia, serif;
@@ -1005,4 +1011,834 @@ body:has(.theme-options button[data-theme="dark"].active) .sr-related-links a:ho
 
 .article-toc__list::-webkit-scrollbar-thumb:hover {
   background: rgba(184, 138, 68, 0.75);
+}
+
+/* ================= PHILOSOPHER REFERENCE LINKS ================= */
+
+.fwd-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+/* Individual philosopher links */
+.fwd-chip-list a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.65rem 1rem;
+
+  border: 1px solid rgba(184, 138, 68, 0.45);
+  border-radius: 4px;
+
+  background: rgba(184, 138, 68, 0.07);
+
+  color: inherit;
+  text-decoration: none;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.2;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Hover */
+.fwd-chip-list a:hover {
+  background: rgba(184, 138, 68, 0.16);
+  border-color: rgba(184, 138, 68, 0.8);
+  transform: translateY(-2px);
+}
+
+/* Keyboard accessibility */
+.fwd-chip-list a:focus-visible {
+  outline: 2px solid #b88a44;
+  outline-offset: 3px;
+}
+
+/* ================= DARK MODE ================= */
+
+body.dark-theme .fwd-chip-list a {
+  background: rgba(184, 138, 68, 0.1);
+  border-color: rgba(184, 138, 68, 0.5);
+  color: #e8dcc7;
+}
+
+body.dark-theme .fwd-chip-list a:hover {
+  background: rgba(184, 138, 68, 0.2);
+  border-color: #b88a44;
+  color: #f1e7d4;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 700px) {
+  .fwd-chip-list {
+    gap: 0.6rem;
+  }
+
+  .fwd-chip-list a {
+    padding: 0.6rem 0.85rem;
+    font-size: 1rem;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 480px) {
+  .fwd-chip-list {
+    gap: 0.5rem;
+  }
+
+  .fwd-chip-list a {
+    padding: 0.55rem 0.75rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* =========================================================
+   MISCONCEPTIONS + FAQ ACCORDION
+   ========================================================= */
+
+/* Container spacing */
+#misconceptions .sr-related-links,
+#faq .sr-related-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+/* Individual accordion item */
+#misconceptions details,
+#faq details {
+  border: 1px solid rgba(184, 138, 68, 0.35);
+  border-radius: 5px;
+  background: rgba(184, 138, 68, 0.035);
+  overflow: hidden;
+
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+/* Hover */
+#misconceptions details:hover,
+#faq details:hover {
+  border-color: rgba(184, 138, 68, 0.65);
+  background: rgba(184, 138, 68, 0.06);
+}
+
+/* =========================================================
+   QUESTION / SUMMARY
+   ========================================================= */
+
+#misconceptions summary,
+#faq summary {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  min-height: 3.4rem;
+  padding: 0.9rem 3.25rem 0.9rem 1.15rem;
+
+  cursor: pointer;
+  list-style: none;
+
+  color: inherit;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+/* Remove browser's default marker */
+#misconceptions summary::-webkit-details-marker,
+#faq summary::-webkit-details-marker {
+  display: none;
+}
+
+#misconceptions summary::marker,
+#faq summary::marker {
+  display: none;
+  content: "";
+}
+
+/* =========================================================
+   PLUS / MINUS INDICATOR
+   ========================================================= */
+
+#misconceptions summary::after,
+#faq summary::after {
+  content: "+";
+
+  position: absolute;
+  right: 1.15rem;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 1.35rem;
+  height: 1.35rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(184, 138, 68, 0.5);
+  border-radius: 50%;
+
+  color: #b88a44;
+
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+/* Open state */
+#misconceptions details[open] summary::after,
+#faq details[open] summary::after {
+  content: "−";
+  background: rgba(184, 138, 68, 0.12);
+}
+
+/* Open question */
+#misconceptions details[open] summary,
+#faq details[open] summary {
+  color: #b88a44;
+  background: rgba(184, 138, 68, 0.06);
+}
+
+/* =========================================================
+   ANSWER
+   ========================================================= */
+
+#misconceptions details p,
+#faq details p {
+  margin: 0;
+
+  padding: 0 1.25rem 1.15rem 1.25rem;
+
+  border-top: 1px solid rgba(184, 138, 68, 0.18);
+
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* Give the answer a little breathing room when opened */
+#misconceptions details[open] p,
+#faq details[open] p {
+  padding-top: 1rem;
+}
+
+/* =========================================================
+   KEYBOARD ACCESSIBILITY
+   ========================================================= */
+
+#misconceptions summary:focus-visible,
+#faq summary:focus-visible {
+  outline: 2px solid #b88a44;
+  outline-offset: -2px;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-theme #misconceptions details,
+body.dark-theme #faq details {
+  border-color: rgba(184, 138, 68, 0.38);
+  background: rgba(184, 138, 68, 0.055);
+}
+
+body.dark-theme #misconceptions details:hover,
+body.dark-theme #faq details:hover {
+  border-color: rgba(184, 138, 68, 0.7);
+  background: rgba(184, 138, 68, 0.09);
+}
+
+body.dark-theme #misconceptions summary,
+body.dark-theme #faq summary {
+  color: #e8dcc7;
+}
+
+body.dark-theme #misconceptions details[open] summary,
+body.dark-theme #faq details[open] summary {
+  color: #d4aa68;
+  background: rgba(184, 138, 68, 0.08);
+}
+
+body.dark-theme #misconceptions details p,
+body.dark-theme #faq details p {
+  border-top-color: rgba(184, 138, 68, 0.2);
+  color: #d8d0c4;
+}
+
+body.dark-theme #misconceptions summary::after,
+body.dark-theme #faq summary::after {
+  color: #d4aa68;
+  border-color: rgba(184, 138, 68, 0.55);
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 700px) {
+  #misconceptions .sr-related-links,
+  #faq .sr-related-links {
+    gap: 0.65rem;
+    margin-top: 1.25rem;
+  }
+
+  #misconceptions summary,
+  #faq summary {
+    min-height: 3.2rem;
+    padding: 0.85rem 3rem 0.85rem 1rem;
+    font-size: 1.05rem;
+  }
+
+  #misconceptions summary::after,
+  #faq summary::after {
+    right: 0.9rem;
+  }
+
+  #misconceptions details p,
+  #faq details p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+  #misconceptions .sr-related-links,
+  #faq .sr-related-links {
+    gap: 0.55rem;
+  }
+
+  #misconceptions summary,
+  #faq summary {
+    min-height: 3rem;
+    padding: 0.8rem 2.75rem 0.8rem 0.9rem;
+    font-size: 1rem;
+  }
+
+  #misconceptions summary::after,
+  #faq summary::after {
+    right: 0.75rem;
+
+    width: 1.25rem;
+    height: 1.25rem;
+
+    font-size: 0.9rem;
+  }
+
+  #misconceptions details p,
+  #faq details p {
+    padding: 0.85rem 0.9rem 1rem;
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  #misconceptions details[open] p,
+  #faq details[open] p {
+    padding-top: 0.85rem;
+  }
+}
+
+/* ================= RELATED LINK CARDS ================= */
+
+.sr-related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.sr-related-card {
+  display: block;
+  padding: 1.35rem 1.4rem;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(184, 138, 68, 0.28);
+  border-radius: 8px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.sr-related-card h3 {
+  margin: 0 0 0.45rem;
+  color: #8b642d;
+  font-family: "Cinzel", serif;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.sr-related-card p {
+  margin: 0;
+  color: #4f463b;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Hover */
+.sr-related-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(184, 138, 68, 0.65);
+  background: rgba(243, 239, 239, 0.7);
+  box-shadow: 0 6px 18px rgba(60, 45, 25, 0.1);
+}
+
+/* Keyboard accessibility */
+.sr-related-card:focus-visible {
+  outline: 2px solid #b88a44;
+  outline-offset: 3px;
+}
+
+/* Prevent browser's default link colors */
+.sr-related-card:visited {
+  color: inherit;
+}
+
+.sr-related-card:active {
+  transform: translateY(-1px);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+  .sr-related-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .sr-related-card {
+    padding: 1.15rem 1.2rem;
+  }
+
+  .sr-related-card h3 {
+    font-size: 1rem;
+  }
+
+  .sr-related-card p {
+    font-size: 0.92rem;
+  }
+}
+
+/* =========================================================
+   COMPARISON TABLE — LIGHT MODE
+   ========================================================= */
+
+.sr-comparison-wrap {
+  width: 100%;
+  margin: 2rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sr-comparison {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+
+  background: #fffdf8 !important;
+  color: #40382f !important;
+
+  border: 1px solid #c9a66b;
+  border-radius: 8px;
+
+  box-shadow: 0 4px 14px rgba(60, 45, 25, 0.08);
+}
+
+/* Caption */
+
+.sr-comparison caption {
+  caption-side: top;
+  padding: 0 0 0.85rem;
+
+  text-align: left;
+
+  color: #765323 !important;
+  font-family: "Cinzel", serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Header */
+
+.sr-comparison thead th {
+  background: #f1e7d3 !important;
+  color: #5f421d !important;
+
+  padding: 1rem 1.1rem;
+
+  border-bottom: 2px solid #c9a66b;
+
+  font-family: "Cinzel", serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Body */
+
+.sr-comparison tbody td,
+.sr-comparison tbody th {
+  padding: 1rem 1.1rem;
+
+  background: #fffdf8 !important;
+  color: #40382f !important;
+
+  border-bottom: 1px solid #dfcfb2;
+
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Position names */
+
+.sr-comparison tbody th[scope="row"] {
+  color: #765323 !important;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+}
+
+/* Alternating rows */
+
+.sr-comparison tbody tr:nth-child(even) td,
+.sr-comparison tbody tr:nth-child(even) th {
+  background: #faf5ea !important;
+}
+
+/* Hover */
+
+.sr-comparison tbody tr:hover td,
+.sr-comparison tbody tr:hover th {
+  background: #f3ead9 !important;
+}
+
+/* Last row */
+
+.sr-comparison tbody tr:last-child td,
+.sr-comparison tbody tr:last-child th {
+  border-bottom: none;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode .sr-comparison {
+  background: #211e1a !important;
+  color: #ddd5c8 !important;
+
+  border-color: #8f6b38 !important;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Dark caption */
+
+body.dark-mode .sr-comparison caption {
+  color: #d4a45e !important;
+}
+
+/* Dark header */
+
+body.dark-mode .sr-comparison thead th {
+  background: #302a23 !important;
+  color: #e2b96f !important;
+
+  border-bottom-color: #8f6b38 !important;
+}
+
+/* Dark body */
+
+body.dark-mode .sr-comparison tbody td,
+body.dark-mode .sr-comparison tbody th {
+  background: #211e1a !important;
+  color: #ddd5c8 !important;
+
+  border-bottom-color: #4d402f !important;
+}
+
+/* Dark position names */
+
+body.dark-mode .sr-comparison tbody th[scope="row"] {
+  color: #d4a45e !important;
+}
+
+/* Dark alternating rows */
+
+body.dark-mode .sr-comparison tbody tr:nth-child(even) td,
+body.dark-mode .sr-comparison tbody tr:nth-child(even) th {
+  background: #28231d !important;
+}
+
+/* Dark hover */
+
+body.dark-mode .sr-comparison tbody tr:hover td,
+body.dark-mode .sr-comparison tbody tr:hover th {
+  background: #332b21 !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+  .sr-comparison {
+    min-width: 680px;
+    font-size: 0.9rem;
+  }
+
+  .sr-comparison thead th,
+  .sr-comparison tbody td,
+  .sr-comparison tbody th {
+    padding: 0.85rem 0.9rem;
+  }
+}
+
+/* =========================================================
+   FREE WILL & DETERMINISM — EXAMPLES
+   LIGHT MODE
+   ========================================================= */
+
+.fwd-examples-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+.fwd-example-card {
+  position: relative;
+
+  padding: 1.4rem 1.45rem;
+
+  background: #fffdf8;
+  color: #40382f;
+
+  border: 1px solid #d8c39d;
+  border-radius: 8px;
+
+  box-shadow: 0 3px 12px rgba(60, 45, 25, 0.07);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Gold accent line */
+
+.fwd-example-card::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 1.45rem;
+
+  width: 38px;
+  height: 2px;
+
+  background: #b88a44;
+}
+
+/* Heading */
+
+.fwd-example-card h3 {
+  margin: 0 0 0.55rem;
+  padding-top: 0.15rem;
+
+  color: #765323;
+
+  font-family: "Cinzel", serif;
+  font-size: 1.03rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Paragraph */
+
+.fwd-example-card p {
+  margin: 0;
+
+  color: #51483d;
+
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Light hover */
+
+.fwd-example-card:hover {
+  transform: translateY(-3px);
+
+  background: #fffaf0;
+  border-color: #b88a44;
+
+  box-shadow: 0 7px 18px rgba(60, 45, 25, 0.11);
+}
+
+
+
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+  .fwd-examples-grid {
+    gap: 1rem;
+  }
+
+  .fwd-example-card {
+    padding: 1.25rem 1.3rem;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .fwd-examples-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.4rem;
+  }
+
+  .fwd-example-card {
+    padding: 1.2rem 1.25rem;
+  }
+
+  .fwd-example-card h3 {
+    font-size: 0.98rem;
+  }
+
+  .fwd-example-card p {
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+}
+
+/* =========================================================
+   FREE WILL & DETERMINISM — EXAMPLES
+   DARK MODE
+   ========================================================= */
+
+.fwd-examples-grid {
+  /* Keeps the existing grid layout */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+.fwd-example-card {
+  background: #211e1a;
+  border: 1px solid #594a35;
+  color: #ddd5c8;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Small gold accent at top of each card */
+
+.fwd-example-card::before {
+  background: #c49a58;
+}
+
+/* Card headings */
+
+.fwd-example-card h3 {
+  color: #d7aa63;
+}
+
+/* Card descriptions */
+
+.fwd-example-card p {
+  color: #d0c8bc;
+}
+
+/* Hover */
+
+.fwd-example-card:hover {
+  background: #28231d;
+  border-color: #b88a44;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================================================
+   DARK MODE — TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+  .fwd-example-card {
+    padding: 1.25rem 1.3rem;
+  }
+}
+
+
+/* =========================================================
+   DARK MODE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .fwd-examples-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .fwd-example-card {
+    padding: 1.2rem 1.25rem;
+  }
+
+  .fwd-example-card h3 {
+    font-size: 0.98rem;
+  }
+
+  .fwd-example-card p {
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
 }

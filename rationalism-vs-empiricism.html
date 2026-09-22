@@ -140,184 +140,7 @@
         font-size: clamp(2.5rem, 4vw, 5.2rem);
       }
 
-      /* =========================================================
-     COMPARISON TABLE
-     LIGHT / DEFAULT THEME
-     ========================================================= */
-
-      .sr-comparison-wrap {
-        width: 100%;
-        margin: 28px 0 34px;
-
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-
-        box-sizing: border-box;
-
-        border: 1px solid rgba(120, 88, 42, 0.22);
-        border-radius: 4px;
-
-        background: rgba(255, 255, 255, 0.18);
-      }
-
-      .sr-comparison {
-        width: 100%;
-        min-width: 680px;
-
-        border-collapse: collapse;
-
-        font-size: 0.95rem;
-      }
-
-      .sr-comparison caption {
-        padding: 18px 20px;
-
-        text-align: left;
-
-        font-family: "Cinzel", Georgia, serif;
-        font-weight: 600;
-
-        color: #7d5925;
-
-        background: rgba(184, 138, 68, 0.08);
-      }
-
-      .sr-comparison th,
-      .sr-comparison td {
-        padding: 15px 18px;
-
-        border-bottom: 1px solid rgba(120, 88, 42, 0.16);
-
-        text-align: left;
-        vertical-align: top;
-
-        color: inherit;
-      }
-
-      .sr-comparison thead th {
-        color: #7d5925;
-
-        font-size: 0.78rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-
-        background: rgba(184, 138, 68, 0.05);
-      }
-
-      .sr-comparison tbody th {
-        width: 20%;
-
-        font-weight: 600;
-
-        color: inherit;
-      }
-
-      .sr-comparison tbody tr {
-        transition: background 0.2s ease;
-      }
-
-      .sr-comparison tbody tr:hover {
-        background: rgba(184, 138, 68, 0.045);
-      }
-
-      .sr-comparison tbody tr:last-child th,
-      .sr-comparison tbody tr:last-child td {
-        border-bottom: 0;
-      }
-      /* =========================================================
-   COMPARISON TABLE — DARK MODE
-   ========================================================= */
-
-      body.dark-theme .sr-comparison-wrap,
-      body.dark-mode .sr-comparison-wrap,
-      body.dark .sr-comparison-wrap,
-      body[data-theme="dark"] .sr-comparison-wrap {
-        background: #15161b;
-        border-color: rgba(184, 138, 68, 0.24);
-      }
-
-      body.dark-theme .sr-comparison,
-      body.dark-mode .sr-comparison,
-      body.dark .sr-comparison,
-      body[data-theme="dark"] .sr-comparison {
-        background: #15161b;
-      }
-
-      body.dark-theme .sr-comparison caption,
-      body.dark-mode .sr-comparison caption,
-      body.dark .sr-comparison caption,
-      body[data-theme="dark"] .sr-comparison caption {
-        color: #d2ae67;
-        background: #191a20;
-      }
-
-      body.dark-theme .sr-comparison thead,
-      body.dark-mode .sr-comparison thead,
-      body.dark .sr-comparison thead,
-      body[data-theme="dark"] .sr-comparison thead {
-        background: #1b1c22;
-      }
-
-      body.dark-theme .sr-comparison thead th,
-      body.dark-mode .sr-comparison thead th,
-      body.dark .sr-comparison thead th,
-      body[data-theme="dark"] .sr-comparison thead th {
-        color: #c9a45d;
-        background: #1b1c22;
-      }
-
-      body.dark-theme .sr-comparison tbody,
-      body.dark-mode .sr-comparison tbody,
-      body.dark .sr-comparison tbody,
-      body[data-theme="dark"] .sr-comparison tbody {
-        background: #15161b;
-      }
-
-      body.dark-theme .sr-comparison tbody th,
-      body.dark-mode .sr-comparison tbody th,
-      body.dark .sr-comparison tbody th,
-      body[data-theme="dark"] .sr-comparison tbody th {
-        color: #eee7da;
-        background: #15161b;
-      }
-
-      body.dark-theme .sr-comparison tbody td,
-      body.dark-mode .sr-comparison tbody td,
-      body.dark .sr-comparison tbody td,
-      body[data-theme="dark"] .sr-comparison tbody td {
-        color: #eee7da;
-        background: #15161b;
-      }
-
-      body.dark-theme .sr-comparison th,
-      body.dark-theme .sr-comparison td,
-      body.dark-mode .sr-comparison th,
-      body.dark-mode .sr-comparison td,
-      body.dark .sr-comparison th,
-      body.dark .sr-comparison td,
-      body[data-theme="dark"] .sr-comparison th,
-      body[data-theme="dark"] .sr-comparison td {
-        border-bottom-color: rgba(255, 255, 255, 0.08);
-      }
-
-      body.dark-theme .sr-comparison tbody tr:hover,
-      body.dark-mode .sr-comparison tbody tr:hover,
-      body.dark .sr-comparison tbody tr:hover,
-      body[data-theme="dark"] .sr-comparison tbody tr:hover {
-        background: rgba(184, 138, 68, 0.055);
-      }
-
-      body.dark-theme .sr-comparison tbody tr:hover th,
-      body.dark-theme .sr-comparison tbody tr:hover td,
-      body.dark-mode .sr-comparison tbody tr:hover th,
-      body.dark-mode .sr-comparison tbody tr:hover td,
-      body.dark .sr-comparison tbody tr:hover th,
-      body.dark .sr-comparison tbody tr:hover td,
-      body[data-theme="dark"] .sr-comparison tbody tr:hover th,
-      body[data-theme="dark"] .sr-comparison tbody tr:hover td {
-        background: rgba(184, 138, 68, 0.055);
-      }
-
+      
       /* =========================================================
      RATIONALISM VS EMPIRICISM
      CONCEPTUAL DIAGRAM
@@ -3839,7 +3662,7 @@
             </p>
 
             <div class="sr-related-grid">
-              <a href="descartes.html" class="sr-related-card">
+              <a href="rene-descartes.html" class="sr-related-card">
                 <h3>René Descartes</h3>
 
                 <p>
@@ -3848,7 +3671,7 @@
                 </p>
               </a>
 
-              <a href="spinoza.html" class="sr-related-card">
+              <a href="baruch-spinoza.html" class="sr-related-card">
                 <h3>Baruch Spinoza</h3>
 
                 <p>
@@ -3972,9 +3795,9 @@
             <h2>Related Philosophers, Schools &amp; Fields</h2>
 
             <div class="sr-related-links">
-              <a href="descartes.html"> René Descartes </a>
+              <a href="rene-descartes.html"> René Descartes </a>
 
-              <a href="spinoza.html"> Baruch Spinoza </a>
+              <a href="baruch-spinoza.html"> Baruch Spinoza </a>
 
               <a href="leibniz.html"> Gottfried Wilhelm Leibniz </a>
 

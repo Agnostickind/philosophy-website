@@ -1842,3 +1842,412 @@ body.dark-mode .sr-comparison tbody tr:hover th {
     line-height: 1.65;
   }
 }
+
+      /* =========================================================
+     FORMS / KEY POINTS GRID (reused component: fw-views)
+     LIGHT / DEFAULT THEME
+     ========================================================= */
+
+      .fw-views {
+        width: 100%;
+        margin: 34px 0;
+        padding: 24px;
+        box-sizing: border-box;
+        border: 1px solid rgba(120, 88, 42, 0.2);
+        background: rgba(184, 138, 68, 0.035);
+      }
+
+      .fw-views-title {
+        margin: 0 0 22px;
+        font-family: "Cinzel", Georgia, serif;
+        font-size: 1.15rem;
+        color: #b88a44;
+      }
+
+      .fw-views-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .fw-views-card {
+        min-width: 0;
+        padding: 22px;
+        box-sizing: border-box;
+        border: 1px solid rgba(120, 88, 42, 0.18);
+        background: rgba(255, 255, 255, 0.18);
+      }
+
+      .fw-views-card h3 {
+        margin: 0 0 12px;
+        font-family: "Cinzel", Georgia, serif;
+        color: #b88a44;
+      }
+
+      .fw-views-card p {
+        margin-bottom: 0;
+      }
+
+      .fw-views-note {
+        margin: 20px 0 0;
+        padding-top: 18px;
+        border-top: 1px solid rgba(120, 88, 42, 0.16);
+        font-size: 0.92rem;
+      }
+
+      .fw-views-note strong {
+        color: #b88a44;
+      }
+
+      /* DARK THEME */
+
+      body.dark-theme .fw-views,
+      body.dark-mode .fw-views,
+      body.dark .fw-views,
+      body[data-theme="dark"] .fw-views {
+        border-color: rgba(184, 138, 68, 0.22);
+        background: rgba(184, 138, 68, 0.035);
+      }
+
+      body.dark-theme .fw-views-title,
+      body.dark-mode .fw-views-title,
+      body.dark .fw-views-title,
+      body[data-theme="dark"] .fw-views-title {
+        color: #c9a45d;
+      }
+
+      body.dark-theme .fw-views-card,
+      body.dark-mode .fw-views-card,
+      body.dark .fw-views-card,
+      body[data-theme="dark"] .fw-views-card {
+        border-color: rgba(184, 138, 68, 0.16);
+        background: rgba(255, 255, 255, 0.025);
+      }
+
+      body.dark-theme .fw-views-card h3,
+      body.dark-mode .fw-views-card h3,
+      body.dark .fw-views-card h3,
+      body[data-theme="dark"] .fw-views-card h3 {
+        color: #d8b36a;
+      }
+
+      body.dark-theme .fw-views-note,
+      body.dark-mode .fw-views-note,
+      body.dark .fw-views-note,
+      body[data-theme="dark"] .fw-views-note {
+        border-top-color: rgba(255, 255, 255, 0.08);
+      }
+
+      body.dark-theme .fw-views-note strong,
+      body.dark-mode .fw-views-note strong,
+      body.dark .fw-views-note strong,
+      body[data-theme="dark"] .fw-views-note strong {
+        color: #c9a45d;
+      }
+
+      /* =========================================================
+     INTERNAL LINK STYLE
+     ========================================================= */
+
+      .sr-section a[href="free-will.html"],
+      .sr-section a[href="free-will-vs-determinism.html"] {
+        color: #9a6f32;
+        font-weight: 600;
+        text-decoration: underline;
+        text-decoration-color: rgba(154, 111, 50, 0.45);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        text-shadow: 0 0 5px rgba(184, 138, 68, 0.25);
+        transition:
+          color 0.2s ease,
+          text-shadow 0.2s ease,
+          text-decoration-color 0.2s ease;
+      }
+
+      .sr-section a[href="free-will.html"]:hover,
+      .sr-section a[href="free-will-vs-determinism.html"]:hover {
+        color: #b88a44;
+        text-decoration-color: #b88a44;
+        text-shadow:
+          0 0 6px rgba(184, 138, 68, 0.4),
+          0 0 12px rgba(184, 138, 68, 0.18);
+      }
+
+      /* =========================================================
+     INTERNAL LINK STYLE
+     ========================================================= */
+
+      .sr-section a[href="free-will.html"],
+      .sr-section a[href="determinism.html"] {
+        color: #9a6f32;
+        font-weight: 600;
+        text-decoration: underline;
+        text-decoration-color: rgba(154, 111, 50, 0.45);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        text-shadow: 0 0 5px rgba(184, 138, 68, 0.25);
+        transition:
+          color 0.2s ease,
+          text-shadow 0.2s ease,
+          text-decoration-color 0.2s ease;
+      }
+
+      .sr-section a[href="free-will.html"]:hover,
+      .sr-section a[href="free-will-vs-determinism.html"]:hover {
+        color: #b88a44;
+        text-decoration-color: #b88a44;
+        text-shadow:
+          0 0 6px rgba(184, 138, 68, 0.4),
+          0 0 12px rgba(184, 138, 68, 0.18);
+      }
+
+
+      /* =========================================================
+     TIMELINE
+     ========================================================= */
+
+      .fw-timeline {
+        margin: 30px 0;
+        padding-left: 20px;
+        border-left: 2px solid rgba(184, 138, 68, 0.42);
+      }
+
+      .fw-timeline-item {
+        position: relative;
+        margin-bottom: 28px;
+        padding-left: 22px;
+      }
+
+      .fw-timeline-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .fw-timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -28px;
+        top: 6px;
+        width: 11px;
+        height: 11px;
+        box-sizing: border-box;
+        border: 2px solid #b88a44;
+        border-radius: 50%;
+        background: #f8f4ec;
+      }
+
+      .fw-timeline-date {
+        display: block;
+        margin-bottom: 5px;
+        color: #9b6f2e;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .fw-timeline-item h3 {
+        margin-bottom: 7px;
+        font-family: "Cinzel", Georgia, serif;
+        color: #8f672e;
+      }
+
+      body.dark-theme .fw-timeline,
+      body.dark-mode .fw-timeline,
+      body.dark .fw-timeline,
+      body[data-theme="dark"] .fw-timeline {
+        border-left-color: rgba(184, 138, 68, 0.42);
+      }
+
+      body.dark-theme .fw-timeline-item::before,
+      body.dark-mode .fw-timeline-item::before,
+      body.dark .fw-timeline-item::before,
+      body[data-theme="dark"] .fw-timeline-item::before {
+        background: #15161b;
+      }
+
+      body.dark-theme .fw-timeline-date,
+      body.dark-mode .fw-timeline-date,
+      body.dark .fw-timeline-date,
+      body[data-theme="dark"] .fw-timeline-date {
+        color: #c9a45d;
+      }
+
+      body.dark-theme .fw-timeline-item h3,
+      body.dark-mode .fw-timeline-item h3,
+      body.dark .fw-timeline-item h3,
+      body[data-theme="dark"] .fw-timeline-item h3 {
+        color: #d8b36a;
+      }
+
+      /* =========================================================
+     TABLET
+     ========================================================= */
+
+      @media (max-width: 900px) {
+        .fw-views-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* =========================================================
+     MOBILE — 700px
+     ========================================================= */
+
+      @media (max-width: 700px) {
+        .sr-comparison-wrap {
+          margin: 24px 0 30px;
+          border-radius: 3px;
+          max-width: 100%;
+        }
+
+        .sr-comparison {
+          min-width: 640px;
+          font-size: 0.9rem;
+        }
+
+        .sr-comparison caption {
+          padding: 15px 16px;
+          font-size: 0.95rem;
+        }
+
+        .sr-comparison th,
+        .sr-comparison td {
+          padding: 12px 14px;
+        }
+
+        .sr-comparison thead th {
+          font-size: 0.7rem;
+        }
+
+        .fw-views {
+          margin: 28px 0;
+          padding: 18px;
+        }
+
+        .fw-views-title {
+          margin-bottom: 18px;
+          font-size: 1rem;
+        }
+
+        .fw-views-grid {
+          grid-template-columns: 1fr;
+          gap: 14px;
+        }
+
+        .fw-views-card {
+          padding: 18px;
+        }
+
+        .fw-views-note {
+          font-size: 0.88rem;
+        }
+
+        .fw-timeline {
+          margin: 24px 0;
+          padding-left: 15px;
+        }
+
+        .fw-timeline-item {
+          margin-bottom: 24px;
+          padding-left: 17px;
+        }
+
+        .fw-timeline-item::before {
+          left: -22px;
+          width: 9px;
+          height: 9px;
+        }
+      }
+
+      /* SMALL MOBILE — 480px */
+
+      @media (max-width: 480px) {
+        .sr-comparison {
+          min-width: 600px;
+        }
+
+        .sr-comparison th,
+        .sr-comparison td {
+          padding: 11px 12px;
+        }
+
+        .fw-views {
+          margin: 24px 0;
+          padding: 15px;
+        }
+
+        .fw-views-card {
+          padding: 15px;
+        }
+
+        .fw-views-note {
+          margin-top: 17px;
+          padding-top: 15px;
+          font-size: 0.84rem;
+        }
+
+        .fw-timeline {
+          padding-left: 13px;
+        }
+
+        .fw-timeline-item {
+          margin-bottom: 21px;
+          padding-left: 13px;
+        }
+
+        .fw-timeline-item::before {
+          left: -20px;
+        }
+      }
+
+      /* VERY SMALL PHONES — 360px */
+
+      @media (max-width: 360px) {
+        .fw-views {
+          padding: 13px;
+        }
+
+        .fw-views-card {
+          padding: 13px;
+        }
+
+        .sr-comparison {
+          min-width: 580px;
+        }
+      }
+
+      /* =========================================================
+     SECTION LABEL
+     ========================================================= */
+
+      .sr-section-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 14px;
+        padding: 5px 11px;
+        font-family: "Cinzel", serif;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #8f672d;
+        background: rgba(184, 138, 68, 0.08);
+        border: 1px solid rgba(184, 138, 68, 0.28);
+        border-radius: 3px;
+      }
+
+      .sr-section-label::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background: #b88a44;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+
+      .sr-section-label:hover {
+        background: rgba(184, 138, 68, 0.12);
+        border-color: rgba(184, 138, 68, 0.42);
+      }
+  

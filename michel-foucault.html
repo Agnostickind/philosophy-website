@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -23,13 +23,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- FIX: removed duplicate robots tag and separate googlebot tag; one robots tag covers all crawlers -->
     <meta
       name="robots"
-      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-    />
-
-    <meta
-      name="googlebot"
       content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     />
 
@@ -42,16 +38,7 @@
       content="Explore Michel Foucault's philosophy of power, knowledge, and discourse — from the Panopticon and biopower to his lasting influence on modern thought."
     />
 
-    <!--
-      NOTE: the meta "keywords" tag has been removed.
-      No major search engine has used it for ranking since ~2009;
-      it added no SEO value and only exposed the full internal
-      keyword list to anyone viewing page source.
-    -->
-
     <meta name="author" content="Kavya Jain" />
-
-    <meta name="robots" content="index, follow, max-image-preview:large" />
 
     <meta name="theme-color" content="#b88a44" />
 
@@ -63,6 +50,7 @@
     />
 
     <!-- ================= OPEN GRAPH ================= -->
+    <!-- FIX: og:type changed from "profile" to "article", added article: dates + author -->
 
     <meta
       property="og:title"
@@ -74,7 +62,7 @@
       content="Learn about Michel Foucault's philosophy of power, knowledge, discourse, genealogy, surveillance, the Panopticon, biopower, governmentality, and major works."
     />
 
-    <meta property="og:type" content="profile" />
+    <meta property="og:type" content="article" />
 
     <meta
       property="og:url"
@@ -87,13 +75,13 @@
     />
 
     <!--
-      Added: explicit image dimensions + type so platforms (Facebook,
-      LinkedIn, Slack, etc.) can lay out the preview card without
-      first fetching the image to inspect it. Update width/height
-      below if your actual file's pixel dimensions differ.
+      NOTE: og:image:width/height below assume a 1200x630 social card.
+      Your current image is 400x500 (portrait). Either crop/create a
+      real 1200x630 version of this image, or delete these two
+      dimension tags so platforms fetch and measure the image themselves.
     -->
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="500" />
     <meta property="og:image:type" content="image/jpeg" />
 
     <meta
@@ -104,6 +92,11 @@
     <meta property="og:site_name" content="The Great Library of Philosophy" />
 
     <meta property="og:locale" content="en_US" />
+
+    <meta property="article:published_time" content="2026-08-01" />
+    <!-- TODO: replace with the real original publish date -->
+    <meta property="article:modified_time" content="2026-09-28" />
+    <meta property="article:author" content="Kavya Jain" />
 
     <!-- ================= TWITTER / X ================= -->
 
@@ -130,13 +123,23 @@
     />
 
     <!-- ================= STYLESHEETS (unchanged, left as-is) ================= -->
-
+    <!--
+      NOTE: branches-refine.css, history-refine.css, and
+      branches-enhance.js (loaded near the closing body tag) appear to
+      be built for the Branches/History pages, not this Thinkers page.
+      If nothing on this page actually uses their classes/selectors,
+      remove them here to cut unused-CSS/JS weight. I left them in
+      since I can't confirm from this file alone whether any shared
+      component depends on them — check before deleting.
+    -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="article-toc.css" />
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
     <link rel="stylesheet" href="branches-refine.css" />
     <link rel="stylesheet" href="history-refine.css" />
+
+    <!-- FIX: minimal styles for the new breadcrumb, quick-answer box, and sources table (added inline so nothing extra needs uploading) -->
 
     <!-- ================= FAVICONS ================= -->
 
@@ -162,19 +165,36 @@
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "ProfilePage",
-            "@id": "https://agnostickind.github.io/philosophy-website/michel-foucault.html#profilepage",
-            "url": "https://agnostickind.github.io/philosophy-website/michel-foucault.html",
-            "name": "Michel Foucault: Philosophy, Power, Knowledge & Discourse | The Great Library of Philosophy",
-            "description": "Learn about Michel Foucault's philosophy of power, knowledge, discourse, genealogy, archaeology, surveillance, the Panopticon, biopower, biopolitics, governmentality, and major works.",
-            "isPartOf": {
-              "@id": "https://agnostickind.github.io/philosophy-website/#website"
-            },
-            "mainEntity": {
+            "@type": "Article",
+            "@id": "https://agnostickind.github.io/philosophy-website/michel-foucault.html#article",
+            "headline": "Michel Foucault: Philosophy, Power, Knowledge & Discourse",
+            "description": "Explore Michel Foucault's philosophy of power, knowledge, and discourse, from the Panopticon and biopower to his lasting influence on modern thought.",
+            "mainEntityOfPage": "https://agnostickind.github.io/philosophy-website/michel-foucault.html",
+            "about": {
               "@id": "https://agnostickind.github.io/philosophy-website/michel-foucault.html#person"
             },
-            "primaryImageOfPage": {
+            "image": {
               "@id": "https://agnostickind.github.io/philosophy-website/michel-foucault.html#image"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Kavya Jain",
+              "url": "https://agnostickind.github.io/philosophy-website/author-kavya-jn.html"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "The Great Library of Philosophy",
+              "url": "https://agnostickind.github.io/philosophy-website/"
+            },
+            "datePublished": "2026-08-01",
+            "dateModified": "2026-09-28",
+            "inLanguage": "en",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".quick-answer"]
+            },
+            "isPartOf": {
+              "@id": "https://agnostickind.github.io/philosophy-website/#website"
             }
           },
 
@@ -190,6 +210,54 @@
               "@type": "Place",
               "name": "Poitiers, France"
             },
+
+            "articleSection": "Philosophy",
+
+            "keywords": [
+              "Michel Foucault",
+              "Foucault philosophy",
+              "Foucault power",
+              "power and knowledge",
+              "discourse",
+              "Panopticon",
+              "biopower",
+              "disciplinary power",
+              "governmentality",
+              "genealogy",
+              "postmodernism"
+            ],
+
+            "wordCount": 2180,
+
+            "mentions": [
+              {
+                "@type": "Person",
+                "name": "Jeremy Bentham",
+                "sameAs": [
+                  "https://en.wikipedia.org/wiki/Jeremy_Bentham",
+                  "https://www.wikidata.org/wiki/Q12800"
+                ]
+              }
+            ],
+
+            "citation": [
+              {
+                "@type": "Book",
+                "name": "Discipline and Punish: The Birth of the Prison",
+                "author": {
+                  "@type": "Person",
+                  "name": "Michel Foucault"
+                }
+              },
+              {
+                "@type": "Book",
+                "name": "The History of Sexuality, Volume 1: An Introduction",
+                "author": {
+                  "@type": "Person",
+                  "name": "Michel Foucault"
+                }
+              }
+            ],
             "nationality": "French",
             "jobTitle": [
               "Philosopher",
@@ -197,32 +265,12 @@
               "Social Theorist"
             ],
             "knowsAbout": [
-              "Power",
-              "Knowledge",
               "Power/knowledge",
               "Discourse",
-              "Archaeology",
               "Genealogy",
               "Disciplinary power",
-              "Surveillance",
-              "Panopticon",
               "Biopower",
-              "Biopolitics",
-              "Governmentality",
-              "Institutions",
-              "Punishment",
-              "Prisons",
-              "Psychiatry",
-              "Madness",
-              "Sexuality",
-              "Identity",
-              "Subjectivity",
-              "Normalization",
-              "Social theory",
-              "Political thought",
-              "Continental philosophy",
-              "Post-structuralism",
-              "Modern philosophy"
+              "Governmentality"
             ],
             "notableWork": [
               "Madness and Civilization",
@@ -233,7 +281,7 @@
             ],
             "sameAs": [
               "https://en.wikipedia.org/wiki/Michel_Foucault",
-              "https://www.wikidata.org/wiki/Q19837",
+              "https://www.wikidata.org/wiki/Q44272",
               "https://plato.stanford.edu/entries/foucault/",
               "https://www.britannica.com/biography/Michel-Foucault"
             ],
@@ -290,6 +338,17 @@
           },
 
           {
+            "@type": "Organization",
+            "@id": "https://agnostickind.github.io/philosophy-website/#organization",
+            "name": "The Great Library of Philosophy",
+            "url": "https://agnostickind.github.io/philosophy-website/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://agnostickind.github.io/philosophy-website/images/favicon.ico"
+            }
+          },
+
+          {
             "@type": "FAQPage",
             "@id": "https://agnostickind.github.io/philosophy-website/michel-foucault.html#faq",
             "mainEntity": [
@@ -311,14 +370,6 @@
               },
               {
                 "@type": "Question",
-                "name": "What was Michel Foucault's philosophy?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Michel Foucault's philosophy investigated the historical relationship between knowledge and power. He examined how institutions and social practices shape human behavior, define categories of normality, and influence the ways individuals understand themselves."
-                }
-              },
-              {
-                "@type": "Question",
                 "name": "What did Michel Foucault mean by power?",
                 "acceptedAnswer": {
                   "@type": "Answer",
@@ -335,34 +386,10 @@
               },
               {
                 "@type": "Question",
-                "name": "What is Michel Foucault's theory of discourse?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Foucault's theory of discourse examines systems of statements, concepts, practices, and rules that determine how particular subjects can be discussed and understood as objects of knowledge within a specific historical period."
-                }
-              },
-              {
-                "@type": "Question",
                 "name": "What is the Panopticon in Michel Foucault's philosophy?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "The Panopticon is a model of surveillance inspired by Jeremy Bentham's prison design. Foucault used it to explain how the possibility of being observed can encourage individuals to regulate their own behavior."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is Discipline and Punish about?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Discipline and Punish examines the historical transformation of punishment and the development of modern disciplinary institutions. Foucault studies prisons, surveillance, examination, normalization, and techniques used to regulate bodies and behavior."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is Michel Foucault's genealogy?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Genealogy is Foucault's historical method for investigating how ideas, institutions, and practices developed through conflict, change, accidents, and historical circumstances rather than through a simple process of inevitable progress."
                 }
               },
               {
@@ -375,50 +402,10 @@
               },
               {
                 "@type": "Question",
-                "name": "What is biopolitics?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Biopolitics refers to political strategies and forms of power directed toward populations and collective biological life. It is closely connected with Foucault's concept of biopower and modern systems of population management."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is governmentality?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Governmentality refers to the different ways conduct can be governed and directed. Foucault used the concept to study modern government, administration, expertise, political strategies, and practices through which individuals govern themselves."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Was Michel Foucault a structuralist?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Foucault was sometimes associated with structuralism, particularly during his earlier career, but he resisted being permanently defined by the label. His later work on genealogy, power, institutions, and historical practices moved beyond many structuralist approaches."
-                }
-              },
-              {
-                "@type": "Question",
                 "name": "Was Michel Foucault a postmodernist?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Michel Foucault is often associated with postmodernism because of his criticism of universal historical narratives and his analysis of knowledge and power. However, he did not consistently identify himself as a postmodernist, making the label an imperfect description."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How did Michel Foucault influence modern philosophy?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Foucault influenced modern philosophy by transforming discussions about power, knowledge, institutions, sexuality, identity, and history. His work continues to influence philosophy, sociology, political theory, gender studies, cultural studies, history, and the social sciences."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How do you pronounce Michel Foucault?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Michel Foucault is pronounced mee-SHEL foo-KOH. In French, the final l and t in Foucault are silent, so the name ends on an open oh sound rather than a hard consonant."
                 }
               },
               {
@@ -441,7 +428,7 @@
        NAVIGATION
        ===================================================== -->
 
-   <nav class="navbar">
+    <nav class="navbar">
       <a href="index.html" class="logo">
         <h2>Φ Philosophy</h2>
       </a>
@@ -452,13 +439,9 @@
         <!-- ================= HISTORY MEGA MENU ================= -->
 
         <div class="nav-mega history-mega">
-          <!-- Main History page link -->
-
           <a href="history.html" class="mega-trigger" aria-haspopup="true">
             History
           </a>
-
-          <!-- Mobile expand / collapse button -->
 
           <button
             class="mega-mobile-toggle"
@@ -470,12 +453,8 @@
             <span></span>
           </button>
 
-          <!-- History mega menu -->
-
           <div class="mega-menu" id="history-mega-menu">
             <div class="mega-menu-inner">
-              <!-- INTRODUCTION -->
-
               <div class="mega-intro">
                 <span class="mega-eyebrow"> The Great Tradition </span>
 
@@ -490,8 +469,6 @@
                   Explore History <span>→</span>
                 </a>
               </div>
-
-              <!-- ANCIENT -->
 
               <div class="mega-column">
                 <h4>Ancient Civilizations</h4>
@@ -540,8 +517,6 @@
                 </a>
               </div>
 
-              <!-- MEDIEVAL -->
-
               <div class="mega-column">
                 <h4>Medieval &amp; Renaissance</h4>
 
@@ -560,8 +535,6 @@
                   <span>Humanism and intellectual renewal</span>
                 </a>
               </div>
-
-              <!-- MODERN -->
 
               <div class="mega-column">
                 <h4>Modern &amp; Contemporary</h4>
@@ -586,12 +559,10 @@
         </div>
 
         <div class="nav-mega thinkers-mega">
-          <!-- Main Thinkers page link -->
           <a href="thinkers.html" class="mega-trigger" aria-haspopup="true">
             Thinkers
           </a>
 
-          <!-- Mobile expand / collapse button -->
           <button
             class="mega-mobile-toggle"
             type="button"
@@ -602,10 +573,8 @@
             <span></span>
           </button>
 
-          <!-- Thinkers mega menu -->
           <div class="mega-menu" id="thinkers-mega-menu">
             <div class="mega-menu-inner">
-              <!-- INTRODUCTION -->
               <div class="mega-intro">
                 <span class="mega-eyebrow"> The Great Minds </span>
 
@@ -622,7 +591,6 @@
                 </a>
               </div>
 
-              <!-- ANCIENT GREECE -->
               <div class="mega-column">
                 <h4>Ancient Greece</h4>
                 <a href="thales-of-miletus.html"
@@ -677,7 +645,6 @@
                 >
               </div>
 
-              <!-- HELLENISTIC & ROMAN -->
               <div class="mega-column">
                 <h4>Hellenistic &amp; Roman</h4>
                 <a href="pyrrho.html"
@@ -710,7 +677,6 @@
                 >
               </div>
 
-              <!-- MEDIEVAL & RENAISSANCE -->
               <div class="mega-column">
                 <h4>Medieval &amp; Renaissance</h4>
                 <a href="saint-augustine.html"
@@ -739,7 +705,6 @@
                 >
               </div>
 
-              <!-- EARLY MODERN · 17TH CENTURY -->
               <div class="mega-column">
                 <h4>Early Modern · 17th Century</h4>
                 <a href="francis-bacon.html"
@@ -776,7 +741,6 @@
                 >
               </div>
 
-              <!-- THE ENLIGHTENMENT · 18TH CENTURY -->
               <div class="mega-column">
                 <h4>The Enlightenment · 18th Century</h4>
                 <a href="george-berkeley.html"
@@ -826,7 +790,6 @@
                 >
               </div>
 
-              <!-- 19TH CENTURY -->
               <div class="mega-column">
                 <h4>19th Century</h4>
                 <a href="hegel.html"
@@ -855,7 +818,6 @@
                 >
               </div>
 
-              <!-- 20TH CENTURY -->
               <div class="mega-column">
                 <h4>20th Century</h4>
                 <a href="sigmund-freud.html"
@@ -903,7 +865,6 @@
                 >
               </div>
 
-              <!-- CONTEMPORARY -->
               <div class="mega-column">
                 <h4>Contemporary</h4>
                 <a href="hannah-arendt.html"
@@ -956,7 +917,6 @@
                 >
               </div>
 
-              <!-- INDIA · CLASSICAL & MEDIEVAL -->
               <div class="mega-column">
                 <h4>India · Classical &amp; Medieval</h4>
                 <a href="kapila.html"
@@ -1008,7 +968,6 @@
                 >
               </div>
 
-              <!-- INDIA · MODERN -->
               <div class="mega-column">
                 <h4>India · Modern</h4>
                 <a href="rabindranath-tagore.html"
@@ -1049,7 +1008,6 @@
                 >
               </div>
 
-              <!-- EAST ASIA · CHINA & JAPAN -->
               <div class="mega-column">
                 <h4>East Asia · China &amp; Japan</h4>
                 <a href="confucius.html"
@@ -1106,7 +1064,6 @@
                 >
               </div>
 
-              <!-- ISLAMIC & PERSIAN -->
               <div class="mega-column">
                 <h4>Islamic &amp; Persian</h4>
                 <a href="al-kindi.html"
@@ -1173,13 +1130,9 @@
         <!-- ================= BRANCHES MEGA MENU ================= -->
 
         <div class="nav-mega branches-mega">
-          <!-- Main Branches page link -->
-
           <a href="branches.html" class="mega-trigger" aria-haspopup="true">
             Branches
           </a>
-
-          <!-- Mobile expand / collapse button -->
 
           <button
             class="mega-mobile-toggle"
@@ -1191,12 +1144,8 @@
             <span></span>
           </button>
 
-          <!-- Branches mega menu -->
-
           <div class="mega-menu" id="branches-mega-menu">
             <div class="mega-menu-inner">
-              <!-- INTRODUCTION -->
-
               <div class="mega-intro">
                 <span class="mega-eyebrow">
                   The Architecture of Philosophy
@@ -1214,8 +1163,6 @@
                   Explore Branches <span>→</span>
                 </a>
               </div>
-
-              <!-- FOUNDATIONAL -->
 
               <div class="mega-column">
                 <h4>Foundational Branches</h4>
@@ -1245,8 +1192,6 @@
                   <span>Beauty, art, and aesthetic experience</span>
                 </a>
               </div>
-
-              <!-- HUMAN & SOCIAL -->
 
               <div class="mega-column">
                 <h4>Human &amp; Social Philosophy</h4>
@@ -1282,8 +1227,6 @@
                 </a>
               </div>
 
-              <!-- KNOWLEDGE, REALITY & RELIGION -->
-
               <div class="mega-column">
                 <h4>Knowledge &amp; Reality</h4>
 
@@ -1310,13 +1253,9 @@
         <!-- ================= BOOKS MEGA MENU ================= -->
 
         <div class="nav-mega books-mega">
-          <!-- Main Books page link -->
-
           <a href="books.html" class="mega-trigger" aria-haspopup="true">
             Books
           </a>
-
-          <!-- Mobile expand / collapse button -->
 
           <button
             class="mega-mobile-toggle"
@@ -1328,12 +1267,8 @@
             <span></span>
           </button>
 
-          <!-- Books mega menu -->
-
           <div class="mega-menu" id="books-mega-menu">
             <div class="mega-menu-inner">
-              <!-- INTRODUCTION -->
-
               <div class="mega-intro">
                 <span class="mega-eyebrow"> The Philosophical Library </span>
 
@@ -1349,8 +1284,6 @@
                   Explore Books <span>→</span>
                 </a>
               </div>
-
-              <!-- ANCIENT PHILOSOPHY COLLECTION -->
 
               <div class="mega-column">
                 <h4>Ancient Philosophy Collection</h4>
@@ -1433,9 +1366,6 @@
                   >
                 </a>
               </div>
-              <!-- FUTURE COLLECTION -->
-
-              <!-- INDIAN PHILOSOPHY COLLECTION -->
 
               <div class="mega-column">
                 <h4>Indian Philosophy Collection</h4>
@@ -1533,8 +1463,6 @@
                   >
                 </a>
               </div>
-
-              <!-- ================= ENLIGHTENMENT COLLECTION ================= -->
 
               <div class="mega-column">
                 <h4>Enlightenment Collection</h4>
@@ -1637,7 +1565,6 @@
                   >
                 </a>
               </div>
-              <!-- MODERN PHILOSOPHY COLLECTION -->
 
               <div class="mega-column">
                 <h4>Modern Philosophy Collection</h4>
@@ -1711,8 +1638,6 @@
                 </a>
               </div>
 
-              <!-- POLITICAL & ETHICS COLLECTION -->
-
               <div class="mega-column">
                 <h4>Political &amp; Ethics Collection</h4>
 
@@ -1783,8 +1708,6 @@
                   >
                 </a>
               </div>
-
-              <!-- ================= EAST ASIAN PHILOSOPHY COLLECTION ================= -->
 
               <div class="mega-column">
                 <h4>East Asian Philosophy</h4>
@@ -1859,7 +1782,6 @@
                   >
                 </a>
               </div>
-              <!-- ================= ISLAMIC PHILOSOPHY COLLECTION ================= -->
 
               <div class="mega-column">
                 <h4>Islamic Philosophy Collection</h4>
@@ -1913,10 +1835,7 @@
         <a href="contact.html">Contact</a>
       </div>
 
-
       <div class="nav-tools">
-        <!-- SEARCH -->
-
         <div class="search-container">
           <button
             class="search-toggle"
@@ -1938,8 +1857,6 @@
           </div>
         </div>
 
-        <!-- APPEARANCE -->
-
         <button
           class="appearance-toggle"
           id="appearanceToggle"
@@ -1949,8 +1866,6 @@
         >
           Aa
         </button>
-
-        <!-- LANGUAGE -->
 
         <div class="language-container">
           <button
@@ -1975,8 +1890,6 @@
         </div>
       </div>
 
-      <!-- MOBILE MENU -->
-
       <button
         class="menu-toggle"
         aria-label="Toggle navigation menu"
@@ -1988,19 +1901,23 @@
       </button>
     </nav>
 
+    <!-- FIX: visible breadcrumb, matching the BreadcrumbList schema above -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> › <a href="thinkers.html">Thinkers</a> ›
+      <span aria-current="page">Michel Foucault</span>
+    </nav>
+
     <!-- =====================================================
        HERO
        ===================================================== -->
 
     <header class="home-hero">
       <div class="hero-content">
-        <h1>Michel Foucault: Philosophy, Power, Knowledge, and Discourse</h1>
+        <h1>Michel Foucault: Philosophy, Power &amp; Knowledge Explained</h1>
 
         <p class="subtitle">
-          Explore Michel Foucault's philosophy of power and knowledge,
-          discourse, genealogy, archaeology, surveillance, Discipline and
-          Punish, the Panopticon, biopower, sexuality, governmentality, and his
-          influence on modern thought.
+          A plain-English guide to Foucault's ideas on power, discourse,
+          surveillance, the Panopticon, and biopower.
         </p>
       </div>
     </header>
@@ -2069,11 +1986,48 @@
 
       <main id="main-content" tabindex="-1">
         <!-- =====================================================
+         QUICK ANSWER (new — AEO answer-first block)
+         ===================================================== -->
+
+        <section class="quick-answer" id="quick-answer">
+          <h2>Michel Foucault in Brief</h2>
+          <p>
+            <strong
+              >Michel Foucault (1926–1984) was a French philosopher and
+              historian of ideas who argued that power and knowledge are
+              intertwined: institutions like prisons, hospitals, and schools
+              produce knowledge about people and use it to classify, discipline,
+              and govern them. His best-known works are
+              <em>Discipline and Punish</em> and
+              <em>The History of Sexuality</em>.</strong
+            >
+          </p>
+        </section>
+
+        <!-- =====================================================
          INTRODUCTION
          ===================================================== -->
 
         <section class="about-home">
           <h2>Who Was Michel Foucault?</h2>
+          <figure class="narrative-figure">
+            <picture>
+              <source srcset="images/michel-foucault.webp" type="image/webp" />
+              <img
+                src="images/michel-foucault.jpg"
+                alt="Michel Foucault is a  influential French philosopher and social theorist"
+                width="400"
+                height="450"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+
+            <figcaption>
+              Michel Foucault became one of the most influential philosophers of
+              power, knowledge, institutions, and modern society.
+            </figcaption>
+          </figure>
 
           <p>
             <strong>Michel Foucault</strong> (1926–1984) was a French
@@ -2125,6 +2079,55 @@
             societies organize knowledge and exercise power over individuals and
             populations.
           </p>
+        </section>
+
+        <section class="narrative-block" id="explained-simply">
+          <h2>Michel Foucault's Philosophy Explained Simply</h2>
+
+          <ul class="plain-list">
+            <li>
+              <strong>What is power?</strong>
+              Power is not found only in governments and rulers. It can operate
+              through institutions, relationships, social norms, observation,
+              and everyday practices.
+            </li>
+
+            <li>
+              <strong>What is power/knowledge?</strong>
+              Knowledge and power can support one another because institutions
+              produce information about people while using that knowledge to
+              classify, organize, and regulate social life.
+            </li>
+
+            <li>
+              <strong>What is discourse?</strong>
+              A discourse is a system of ideas and practices that shapes how a
+              particular subject can be discussed, understood, and treated as
+              knowledge.
+            </li>
+
+            <li>
+              <strong>What is genealogy?</strong>
+              Genealogy studies how ideas and institutions developed
+              historically through conflicts, changes, practices, and accidents
+              rather than assuming that history follows a simple path of
+              progress.
+            </li>
+
+            <li>
+              <strong>What is the Panopticon?</strong>
+              The Panopticon represents a model of power based on the
+              possibility of observation, where individuals may regulate their
+              own behavior because they believe they could be watched.
+            </li>
+
+            <li>
+              <strong>What is biopower?</strong>
+              Biopower refers to modern forms of power concerned with bodies,
+              health, populations, reproduction, mortality, and the management
+              of life.
+            </li>
+          </ul>
         </section>
 
         <div class="philosophy-divider"></div>
@@ -2217,25 +2220,6 @@
         <section class="narrative-block" id="early-life">
           <h2>Michel Foucault's Early Life and Education</h2>
 
-          <figure class="narrative-figure">
-            <picture>
-              <source srcset="images/michel-foucault.webp" type="image/webp" />
-              <img
-                src="images/michel-foucault.jpg"
-                alt="Portrait of Michel Foucault, influential French philosopher and social theorist"
-                width="400"
-                height="500"
-                loading="lazy"
-                decoding="async"
-              />
-            </picture>
-
-            <figcaption>
-              Michel Foucault became one of the most influential philosophers of
-              power, knowledge, institutions, and modern society.
-            </figcaption>
-          </figure>
-
           <p>
             Michel Foucault was born in Poitiers, France, on October 15, 1926.
             He grew up in a prosperous family with strong connections to
@@ -2263,9 +2247,10 @@
             development. The work of Georges Canguilhem was especially
             significant for his understanding of the history of science and the
             historical transformation of concepts. Friedrich Nietzsche later
-            became crucial to Foucault's genealogical approach, while
+            became crucial to Foucault's genealogical approach (see
+            <a href="#nietzsche">Foucault and Nietzsche</a> below), while
             phenomenology, structuralism, and the wider intellectual environment
-            of twentieth- century French philosophy also formed part of his
+            of twentieth-century French philosophy also formed part of his
             intellectual context.
           </p>
 
@@ -2285,10 +2270,11 @@
             Thought at the Collège de France, a position he held until his death
             in 1984. His public lecture courses became an important part of his
             intellectual legacy and documented the continuing development of his
-            ideas. During these years, his research moved through questions of
-            punishment, discipline, sexuality, government, and subjectivity,
-            while his methods increasingly took a critical and genealogical
-            form.
+            ideas, particularly his later work on
+            <a href="#governmentality">governmentality</a>. During these years,
+            his research moved through questions of punishment, discipline,
+            sexuality, government, and subjectivity, while his methods
+            increasingly took a critical and genealogical form.
           </p>
         </section>
 
@@ -2300,6 +2286,15 @@
 
         <section class="narrative-block" id="importance">
           <h2>Why Is Michel Foucault Important?</h2>
+
+          <p>
+            Michel Foucault is important because he transformed how scholars
+            examine power, knowledge, institutions, and social norms. His work
+            showed how historically specific systems of classification and
+            expertise can shape what societies regard as true, normal, or
+            acceptable. His ideas influenced philosophy, history, sociology,
+            cultural studies, and critical theory.
+          </p>
 
           <p>
             Michel Foucault is important because he changed the way many
@@ -2363,242 +2358,34 @@
         <div class="philosophy-divider"></div>
 
         <!-- =====================================================
-         MAIN IDEAS
-         ===================================================== -->
-
-        <section class="narrative-block" id="main-ideas">
-          <h2>Michel Foucault's Main Philosophical Ideas</h2>
-
-          <h3>1. Power Is More Than Political Authority</h3>
-
-          <p>
-            Foucault argued that power should not be understood only as
-            something possessed by kings, governments, or political
-            institutions. Power also exists within relationships, institutions,
-            and social practices. It operates through the many processes by
-            which people are observed, classified, educated, trained, corrected,
-            examined, and evaluated. Power is therefore not simply a force
-            exercised from above by one person or group against another.
-          </p>
-
-          <p>
-            This broader understanding led Foucault to examine the everyday
-            techniques through which modern societies guide and regulate
-            conduct. A school timetable, a medical examination, a military
-            drill, or a prison routine may appear different from political laws,
-            yet each can organize behavior in systematic ways. Foucault was
-            especially interested in how such techniques could make individuals
-            both more useful and more controllable within particular
-            institutional settings.
-          </p>
-
-          <p>
-            Foucault also emphasized that power is relational and productive.
-            Power does not merely prohibit, repress, or say no; it can produce
-            forms of knowledge, establish categories, create standards of
-            normality, and shape particular kinds of subjects. This does not
-            mean that power is harmless or that domination disappears, but it
-            means that understanding power requires examining the concrete
-            practices through which social relationships are organized.
-          </p>
-
-          <p>
-            Because power operates through relationships rather than existing as
-            a single object held permanently by one authority, Foucault also
-            stressed the possibility of resistance. Wherever power relations
-            exist, people may respond, challenge, modify, or resist them. His
-            analysis therefore directs attention away from the search for one
-            absolute source of power and toward the complex networks of
-            practices through which power is exercised in particular historical
-            and social circumstances.
-          </p>
-
-          <h3>2. Power and Knowledge Are Connected</h3>
-
-          <p>
-            Foucault's concept of <strong>power/knowledge</strong> emphasizes
-            that knowledge and power cannot always be understood as completely
-            separate spheres. Systems of knowledge can participate in relations
-            of power, while relations of power can encourage, organize, and
-            sustain the production of particular kinds of knowledge. This
-            relationship is not simply a claim that all knowledge is false or
-            that truth is nothing more than political manipulation.
-          </p>
-
-          <p>
-            Institutions collect information, establish categories, define
-            standards, and determine what counts as relevant expertise. Doctors,
-            psychiatrists, teachers, judges, administrators, and other
-            specialists may produce knowledge about individuals and populations
-            through their professional practices. Such knowledge can then be
-            used to make decisions, establish norms, and organize forms of
-            intervention, connecting the production of knowledge with practical
-            forms of power.
-          </p>
-
-          <p>
-            Foucault therefore studied what he sometimes described as regimes of
-            truth: historically specific arrangements through which certain
-            statements become accepted, circulated, tested, and authorized.
-            Every society does not simply possess one timeless method for
-            determining truth. Institutions, disciplines, procedures, and
-            standards influence which speakers are recognized as competent and
-            which forms of evidence are considered legitimate within particular
-            domains.
-          </p>
-
-          <p>
-            The importance of power/knowledge lies in its demand that knowledge
-            be studied historically and institutionally as well as
-            philosophically. Foucault asks not only whether a statement is true,
-            but also how a field of knowledge came into existence and what
-            practices support it. This approach makes it possible to investigate
-            the social consequences of expertise without abandoning the
-            distinction between serious inquiry and the simplistic claim that
-            every truth is merely an expression of power.
-          </p>
-
-          <h3>3. Discourse Shapes What Can Be Said and Thought</h3>
-
-          <p>
-            A discourse is not simply a conversation or a collection of words.
-            Foucault used the concept to investigate historically organized
-            systems of statements, concepts, practices, and rules through which
-            particular subjects become intelligible. A discourse helps establish
-            what can be meaningfully said about an object, which questions can
-            be asked, which concepts are available, and what kinds of statements
-            may count as knowledge within a particular field.
-          </p>
-
-          <p>
-            For example, madness can be discussed through religious, legal,
-            medical, psychological, or psychiatric frameworks, and each
-            framework organizes the subject differently. The question is
-            therefore not merely what individual people believe about madness.
-            Foucault investigates the wider historical conditions that make
-            certain descriptions possible, establish particular experts as
-            authoritative, and determine which forms of speech or evidence are
-            accepted within a field.
-          </p>
-
-          <p>
-            In his archaeological studies, Foucault examined the rules and
-            regularities underlying discursive formations without reducing them
-            to the intentions of individual authors. He was interested in the
-            broader conditions that made systems of thought possible during
-            particular periods. This allowed him to study major transformations
-            in knowledge as historical changes in the organization of discourse
-            rather than as the simple accumulation of increasingly correct
-            ideas.
-          </p>
-
-          <p>
-            Discourse is closely connected to institutions and power because
-            ideas do not circulate in an entirely empty social space.
-            Universities, hospitals, courts, governments, and professional
-            disciplines help organize who may speak with authority and how
-            knowledge is applied. Foucault's analysis of discourse therefore
-            connects language and ideas with institutions, practices, and social
-            relations, making discourse a central concept in his broader
-            historical study of knowledge and power.
-          </p>
-
-          <h3>4. Human Knowledge Has a History</h3>
-
-          <p>
-            Foucault rejected the assumption that modern concepts always
-            represent the natural and inevitable development of human reason. He
-            investigated how concepts such as madness, disease, criminality,
-            sexuality, and normality changed historically. His work asks how
-            different periods organized knowledge about human beings and why
-            certain distinctions, categories, and forms of expertise emerged
-            when they did.
-          </p>
-
-          <p>
-            His method of <strong>archaeology</strong> examined the historical
-            conditions that structure systems of thought and knowledge. Rather
-            than searching primarily for the intentions of individual thinkers,
-            archaeology investigates the rules and conceptual possibilities that
-            make certain statements possible within a particular historical
-            period. It therefore studies discontinuities and transformations in
-            knowledge instead of assuming that intellectual history follows a
-            single, continuous path of progress.
-          </p>
-
-          <p>
-            Foucault later developed the method of <strong>genealogy</strong>,
-            inspired in important ways by Nietzsche's genealogical
-            investigations. Genealogy traces the complex and contingent
-            historical processes through which present practices and
-            institutions emerged. It resists explanations that portray history
-            as the inevitable realization of a rational plan and instead
-            investigates struggles, accidents, conflicts, techniques, and
-            practical developments that helped produce the present.
-          </p>
-
-          <p>
-            By showing that present institutions and categories have histories,
-            Foucault aimed to make the familiar appear less inevitable.
-            Historical investigation can reveal that practices often treated as
-            natural or permanent were formed under particular conditions and
-            might therefore be changed. This critical use of history became one
-            of Foucault's most important philosophical contributions, linking
-            historical research to questions about freedom, critique, and the
-            possibility of thinking differently about the present.
-          </p>
-
-          <h3>5. Human Beings Are Shaped by Social Practices</h3>
-
-          <p>
-            Foucault studied how individuals become subjects through historical
-            and social processes. Institutions and systems of knowledge do not
-            merely describe people from the outside; they can also influence how
-            people understand themselves. Medical categories, educational
-            practices, legal judgments, psychological descriptions, and social
-            norms can all participate in the formation of identities and in the
-            ways individuals relate to their own bodies and behavior.
-          </p>
-
-          <p>
-            This process is often described through Foucault's concept of
-            <strong>subjectification</strong>. Human beings become subjects in
-            multiple senses: they are made into objects of knowledge and
-            regulation, but they also develop particular forms of
-            self-understanding. Foucault therefore examined both the ways
-            individuals are subjected to external systems of power and the ways
-            they actively form themselves through practices, habits, reflection,
-            and relations with others.
-          </p>
-
-          <p>
-            In his later work, Foucault increasingly studied what he called
-            technologies or practices of the self. His attention turned toward
-            the ancient world and toward ways individuals deliberately worked
-            upon themselves in order to shape their conduct and character. This
-            later research complicated the common interpretation that his
-            philosophy was concerned only with institutions controlling passive
-            individuals; it also explored self-formation and ethical practices.
-          </p>
-
-          <p>
-            Foucault's account of subjectivity does not imply that individuals
-            are completely determined by society or lack all freedom. Instead,
-            he asks how particular forms of freedom and self-understanding
-            become possible within historically changing relations of power. His
-            work encourages us to examine how we have become the kinds of
-            subjects we are and whether alternative ways of thinking, acting,
-            and relating to ourselves might still be possible.
-          </p>
-        </section>
-        <div class="philosophy-divider"></div>
-
-        <!-- =====================================================
          POWER
          ===================================================== -->
 
         <section class="narrative-block" id="power">
           <h2>What Did Michel Foucault Mean by Power?</h2>
+          <figure class="narrative-figure">
+            <picture>
+              <source
+                srcset="images/michel-foucault-power.webp"
+                type="image/webp"
+              />
+              <img
+                src="images/michel-foucault-power.jpg"
+                alt="Portrait of Michel Foucault, philosopher known for his analysis of power, institutions, and social practices"
+                width="400"
+                height="450"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+
+            <figcaption>
+              For Foucault, power is not held solely by governments or
+              individuals; it operates through everyday relationships,
+              institutions, knowledge, and practices that shape how people
+              behave and understand themselves.
+            </figcaption>
+          </figure>
 
           <p>
             <strong>Michel Foucault's theory of power</strong> differs
@@ -2607,7 +2394,9 @@
             Foucault, power is primarily exercised within relationships and
             operates through a wide network of social practices. It should
             therefore not be understood only as direct political command,
-            physical force, or the authority of governments, rulers, and laws.
+            physical force, or the authority of governments, rulers, and laws —
+            the kind of sovereign authority theorized by thinkers like
+            <a href="thomas-hobbes.html">Thomas Hobbes</a>.
           </p>
 
           <p>
@@ -2637,8 +2426,10 @@
             schools, hospitals, professional institutions, and other social
             settings can contain relations of power. These relations are
             historically changing and often involve techniques that appear
-            ordinary, useful, educational, scientific, or administrative rather
-            than openly coercive.
+            ordinary, useful, <a href="education-philosophy.html"> educational</a>,<a href="science-philosophy.html"> scientific</a>, or administrative rather
+            than openly coercive. This broader view of power runs through
+            <a href="political-philosophy.html">political philosophy</a> more
+            widely.
           </p>
 
           <p>
@@ -2715,6 +2506,141 @@
             or intellectual achievement to a simple conspiracy or claiming that
             the distinction between truth and falsehood no longer matters.
           </p>
+
+          <!-- FIX: new table for AEO/GEO — extractable, quotable format -->
+          <table class="power-modes-table">
+            <caption>
+              Three modes of power in Foucault's work
+            </caption>
+            <thead>
+              <tr>
+                <th>Mode</th>
+                <th>Target</th>
+                <th>How it works</th>
+                <th>Example</th>
+                <th>Key text</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sovereign power</td>
+                <td>Lawbreakers</td>
+                <td>Visible, public punishment</td>
+                <td>Public execution</td>
+                <td><em>Discipline and Punish</em></td>
+              </tr>
+              <tr>
+                <td>Disciplinary power</td>
+                <td>Individual bodies</td>
+                <td>Observation, examination, normalization</td>
+                <td>School timetable, prison</td>
+                <td><em>Discipline and Punish</em></td>
+              </tr>
+              <tr>
+                <td>Biopower</td>
+                <td>Populations</td>
+                <td>Statistics, public health, management of life</td>
+                <td>Census, vaccination drives</td>
+                <td>
+                  <em>The History of Sexuality, Vol. I</em>; Collège de France
+                  lectures
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- =====================================================
+     FOUCAULT–CHOMSKY DEBATE
+     ===================================================== -->
+
+        <section class="narrative-block" id="foucault-chomsky-debate">
+          <h2>Foucault–Chomsky Debate (1971)</h2>
+
+          <p>
+            The <strong>Foucault–Chomsky debate</strong> was a famous
+            intellectual discussion between Michel Foucault and Noam Chomsky
+            held in Eindhoven, Netherlands, in 1971. The discussion, organized
+            in connection with the Dutch television program
+            <em>International Philosophical Encounters</em>, brought together
+            two influential thinkers whose approaches to human nature,
+            knowledge, politics, and justice differed significantly.
+          </p>
+
+          <p>
+            Chomsky defended a conception of <strong>human nature</strong> in
+            which certain innate structures and capacities play an important
+            role in explaining human language and behavior. He also argued that
+            a conception of human nature could provide a basis for criticizing
+            existing political institutions and imagining a more just society.
+          </p>
+
+          <p>
+            Foucault was more skeptical of attempts to establish a universal
+            account of human nature as a foundation for political judgment. His
+            historical investigations emphasized how concepts concerning human
+            beings are produced within particular historical and institutional
+            conditions. Rather than beginning with a fixed conception of human
+            nature, Foucault examined how forms of knowledge, social practices,
+            and relations of power change across historical periods.
+          </p>
+
+          <p>
+            The discussion also revealed different approaches to the
+            relationship between intellectual work and political action. Chomsky
+            emphasized principles of justice and the possibility of criticizing
+            institutions according to broader moral standards, whereas Foucault
+            emphasized the historical analysis of the systems through which
+            societies establish knowledge, norms, and forms of social control.
+          </p>
+
+          <table class="power-modes-table">
+            <caption>
+              Major themes in the Foucault–Chomsky debate
+            </caption>
+
+            <thead>
+              <tr>
+                <th>Theme</th>
+                <th>Chomsky</th>
+                <th>Foucault</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Human nature</td>
+                <td>Emphasized innate human capacities</td>
+                <td>Emphasized historical formation and transformation</td>
+              </tr>
+
+              <tr>
+                <td>Knowledge</td>
+                <td>Connected to rational inquiry and human capacities</td>
+                <td>
+                  Examined through historical relations of power and knowledge
+                </td>
+              </tr>
+
+              <tr>
+                <td>Justice</td>
+                <td>
+                  Defended broader principles for criticizing institutions
+                </td>
+                <td>Questioned universal foundations for political judgment</td>
+              </tr>
+
+              <tr>
+                <td>Political analysis</td>
+                <td>Included normative criticism of existing institutions</td>
+                <td>
+                  Emphasized historical analysis of power and institutions
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
         <div class="philosophy-divider"></div>
@@ -2787,7 +2713,14 @@
 
         <section class="narrative-block" id="archaeology">
           <h2>What Was Michel Foucault's Archaeology of Knowledge?</h2>
-
+          <p>
+            Michel Foucault's archaeology of knowledge was a historical method
+            for analyzing the rules, concepts, and conditions that make
+            particular forms of knowledge possible in different periods. Rather
+            than seeking a single origin or continuous development of ideas,
+            archaeology examines how systems of discourse are structured and how
+            statements become accepted as meaningful knowledge.
+          </p>
           <p>
             During an important period of his career, Foucault described his
             historical method as <strong>archaeology</strong>. Archaeology does
@@ -2854,13 +2787,14 @@
 
           <p>
             Foucault later developed an approach known as
-            <strong>genealogy</strong>, strongly influenced by Friedrich
-            Nietzsche's genealogical investigations. Genealogy examines the
-            historical development of practices, institutions, and systems of
-            thought without assuming that history follows a simple, rational, or
-            inevitable path toward progress. It emphasizes contingency and asks
-            how present realities emerged from complex historical processes
-            rather than from a predetermined plan.
+            <strong>genealogy</strong>, strongly influenced by
+            <a href="#nietzsche">Friedrich Nietzsche's</a> genealogical
+            investigations. Genealogy examines the historical development of
+            practices, institutions, and systems of thought without assuming
+            that history follows a simple, rational, or inevitable path toward
+            progress. It emphasizes contingency and asks how present realities
+            emerged from complex historical processes rather than from a
+            predetermined plan.
           </p>
 
           <p>
@@ -3053,7 +2987,8 @@
             disciplinary institutions such as the prison. Its central argument
             is that modern power operates less through visible force and more
             through constant observation, examination, and normalization — a
-            shift Foucault illustrates through Jeremy Bentham's Panopticon.
+            shift Foucault illustrates through
+            <a href="jeremy-bentham.html">Jeremy Bentham's</a> Panopticon.
           </p>
 
           <p>
@@ -3114,6 +3049,466 @@
 
         <div class="philosophy-divider"></div>
 
+        <!-- =====================================================
+     DERRIDA'S CRITIQUE
+     ===================================================== -->
+
+        <section class="narrative-block" id="derrida-critique">
+          <h2>
+            Derrida's Critique of Foucault's <em>Madness and Civilization</em>
+          </h2>
+
+          <p>
+            Jacques Derrida offered an influential early critique of Michel
+            Foucault's <em>Madness and Civilization</em> in his 1963 lecture
+            <em>Cogito and the History of Madness</em>. Derrida questioned
+            Foucault's interpretation of the relationship between madness and
+            reason in the work of René Descartes, particularly Foucault's
+            reading of the <em>First Meditation</em>.
+          </p>
+
+          <p>
+            Foucault had argued that the history of Western reason involved a
+            significant separation between reason and madness and interpreted
+            Descartes as an important moment in this history. Derrida challenged
+            aspects of this interpretation, arguing that Foucault's reading of
+            Descartes did not adequately account for the philosophical function
+            of doubt in the <em>First Meditation</em>.
+          </p>
+
+          <p>
+            The disagreement was significant because it concerned not only the
+            interpretation of Descartes but also the methodological foundations
+            of Foucault's project. Derrida questioned whether a historical
+            account of madness could completely place itself outside the
+            philosophical language and conceptual structures through which
+            madness and reason had traditionally been discussed.
+          </p>
+
+          <p>
+            The exchange between Foucault and Derrida later became an important
+            episode in twentieth-century French philosophy. Their disagreement
+            illustrates a broader methodological question: whether the history
+            of reason and madness can be written from a position entirely
+            outside the philosophical traditions whose assumptions are being
+            investigated.
+          </p>
+        </section>
+        <div class="philosophy-divider"></div>
+
+        <!-- =====================================================
+     DOCILE BODIES
+     ===================================================== -->
+
+        <section class="narrative-block" id="docile-bodies">
+          <h2>Foucault's Concept of Docile Bodies</h2>
+
+          <p>
+            The concept of <strong>docile bodies</strong> is central to Michel
+            Foucault's analysis of disciplinary power. In
+            <em>Discipline and Punish</em>, Foucault describes how modern
+            institutions develop techniques for training, organizing, observing,
+            and regulating individual bodies. A body becomes "docile" when it
+            can be subjected to discipline, made more useful, and trained to
+            conform to established procedures and expectations.
+          </p>
+
+          <p>
+            Foucault's argument is not simply that institutions physically force
+            people to obey. Disciplinary power operates through detailed
+            organization of time, space, movement, repetition, examination, and
+            surveillance. Schools, military institutions, factories, hospitals,
+            and prisons can establish routines through which individuals
+            gradually learn how they are expected to sit, stand, move, work,
+            behave, and perform.
+          </p>
+
+          <p>
+            The idea of the docile body therefore connects physical behavior
+            with institutional knowledge. Individuals are observed and evaluated
+            through examinations, records, measurements, and classifications,
+            while the resulting knowledge can be used to further organize and
+            regulate their conduct. Discipline consequently works through both
+            the body and the production of information about the individual.
+          </p>
+
+          <p>
+            Foucault's concept can also be applied to contemporary situations in
+            which people monitor and regulate themselves according to
+            established standards. School schedules, workplace performance
+            measurements, fitness targets, and other systems of continuous
+            evaluation can be examined through the Foucauldian question of how
+            individuals come to regulate their own conduct.
+          </p>
+        </section>
+        <div class="philosophy-divider"></div>
+
+        <!-- =====================================================
+     DISPOSITIF
+     ===================================================== -->
+
+        <section class="narrative-block" id="dispositif">
+          <h2>Foucault's Concept of the Dispositif</h2>
+
+          <p>
+            The French term <strong>dispositif</strong>, often translated as
+            <strong>"apparatus"</strong>, refers to the heterogeneous network of
+            practices, institutions, laws, regulations, forms of knowledge,
+            architectural arrangements, and discourses through which relations
+            of power operate. Foucault developed the concept particularly in his
+            work of the 1970s to describe how power is not exercised through a
+            single institution or rule but through relationships among many
+            different elements.
+          </p>
+
+          <p>
+            A dispositif can therefore include both what is explicitly said and
+            what remains implicit. A prison, for example, is not simply a
+            physical building. It is connected to legal rules, administrative
+            procedures, architectural arrangements, surveillance practices,
+            criminological knowledge, professional institutions, and ideas about
+            punishment and rehabilitation. Together these elements form a
+            network through which particular forms of conduct become possible,
+            expected, or regulated.
+          </p>
+
+          <p>
+            Foucault emphasized that a dispositif has a strategic function. It
+            emerges within particular historical circumstances and can change as
+            relationships among institutions, forms of knowledge, and techniques
+            of power change. The concept therefore helps explain why power
+            should not be understood merely as something possessed by a ruler or
+            institution. Power can operate through networks of practices that
+            organize how people are observed, classified, governed, and
+            understood.
+          </p>
+
+          <p>
+            The concept of the dispositif is closely connected to
+            <strong>power/knowledge</strong>. Institutions can produce knowledge
+            about individuals and populations, while that knowledge can
+            simultaneously make new forms of intervention possible. The
+            dispositif provides a way of studying this relationship as a
+            historically specific arrangement of discourse, institutions,
+            practices, and material structures.
+          </p>
+
+          <div class="concept-highlight">
+            <h3>Simple Definition of Dispositif</h3>
+
+            <p>
+              A <strong>dispositif</strong> is a historically specific network
+              of institutions, practices, rules, spaces, forms of knowledge, and
+              discourses through which power operates and particular forms of
+              conduct are organized.
+            </p>
+          </div>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- =====================================================
+     CARCERAL ARCHIPELAGO
+     ===================================================== -->
+
+        <section class="narrative-block" id="carceral-archipelago">
+          <h2>Foucault's Carceral Archipelago</h2>
+
+          <p>
+            The <strong>carceral archipelago</strong> is Foucault's term for the
+            network of institutions and disciplinary mechanisms through which
+            punishment and surveillance extend beyond the prison itself. The
+            concept appears in <em>Discipline and Punish</em> (1975), where
+            Foucault examines the transformation of modern punishment and the
+            expansion of disciplinary techniques throughout society.
+          </p>
+
+          <p>
+            The word <strong>"archipelago"</strong> provides the central
+            metaphor: instead of imagining the prison as an isolated
+            institution, Foucault describes a wider network of connected
+            disciplinary sites. Prisons, reformatories, schools, hospitals,
+            factories, military institutions, probation systems, and other
+            organizations can participate in practices of observation,
+            examination, classification, training, and correction.
+          </p>
+
+          <p>
+            The carceral does not therefore refer only to physical imprisonment.
+            Disciplinary techniques can extend into ordinary social
+            institutions, creating a continuum between confinement, supervision,
+            correction, and normalization. Individuals may be evaluated through
+            examinations, records, reports, classifications, and behavioral
+            assessments without necessarily being imprisoned.
+          </p>
+
+          <p>
+            This concept is closely related to Foucault's analysis of
+            <strong>panopticism</strong>. The Panopticon provides a model of
+            surveillance in which the possibility of observation encourages
+            individuals to regulate their own conduct. The carceral archipelago
+            describes the broader diffusion of related disciplinary mechanisms
+            across institutions and social spaces.
+          </p>
+
+          <div class="concept-highlight">
+            <h3>What Does "Carceral Archipelago" Mean?</h3>
+
+            <p>
+              Foucault's <strong>carceral archipelago</strong> describes the
+              wider network through which disciplinary and corrective practices
+              extend beyond prisons into institutions and social practices
+              concerned with observation, examination, classification, training,
+              and normalization.
+            </p>
+          </div>
+        </section>
+
+        <div class="philosophy-divider"></div>
+        <!-- =====================================================
+     HETEROTOPIA
+     ===================================================== -->
+
+        <section class="narrative-block" id="heterotopia">
+          <h2>Foucault's Concept of Heterotopia</h2>
+
+          <p>
+            <strong>Heterotopia</strong> is Foucault's concept of "other
+            spaces": real places that exist within society but function in
+            distinctive relationships to the other spaces around them. Foucault
+            developed the idea in his discussion of
+            <em>Des espaces autres</em> ("Of Other Spaces"), originally
+            presented as a lecture in 1967 and published much later. Unlike
+            <strong>utopias</strong>, which are imagined or unreal spaces,
+            heterotopias are actual locations that can represent, mirror,
+            contest, or rearrange relationships found elsewhere in society.
+          </p>
+
+          <p>
+            Foucault proposed that heterotopias exist in many different
+            cultures, although their forms vary historically. Examples he
+            discussed include cemeteries, psychiatric institutions, prisons,
+            museums, libraries, theatres, gardens, and ships. These spaces can
+            bring together different meanings, social positions, or
+            relationships that would normally remain separated.
+          </p>
+
+          <p>
+            Foucault identified several principles for analyzing heterotopias.
+            Some are associated with <strong>crisis</strong>, while others are
+            associated with <strong>deviation</strong>, in which people whose
+            behavior is judged to depart from a social norm are placed. Other
+            heterotopias juxtapose several spaces within one location,
+            accumulate different periods of time, or operate through particular
+            systems of opening, closing, entry, and exclusion.
+          </p>
+
+          <p>
+            The concept is therefore not simply another word for an unusual
+            place. Foucault's heterotopia concerns the relationship between a
+            real space and the wider social order. A museum, for example, can
+            gather objects from different historical periods into a single
+            physical location, while a cemetery can create a distinct space
+            whose relationship to the living population changes according to
+            cultural and historical arrangements.
+          </p>
+
+          <div class="concept-highlight">
+            <h3>Heterotopia vs. Utopia</h3>
+
+            <p>
+              A <strong>utopia</strong> is an imagined or unreal place, whereas
+              a <strong>heterotopia</strong> is a real place that functions as
+              an "other space" in relation to the surrounding social order.
+            </p>
+          </div>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- =====================================================
+     FOUCAULT'S BOOMERANG
+     ===================================================== -->
+
+        <section class="narrative-block" id="foucault-boomerang">
+          <h2>Foucault's Boomerang Effect</h2>
+
+          <p>
+            The <strong>Foucault boomerang</strong>, also called the
+            <strong>colonial boomerang</strong> or
+            <strong>imperial boomerang</strong>, describes the process by which
+            techniques of power developed in colonial contexts can return to the
+            imperial center and influence domestic forms of governance,
+            policing, surveillance, or population control. Foucault discussed
+            this process in his 1976 lectures published as
+            <em>Society Must Be Defended</em>.
+          </p>
+
+          <p>
+            Foucault argued that colonization did not involve only the one-way
+            exportation of European political and legal models to other
+            territories. Colonial encounters could also become sites where
+            techniques and institutions of power were developed, tested, or
+            adapted. These techniques could subsequently influence the
+            organization of power within European societies themselves.
+          </p>
+
+          <p>
+            The term should not be attributed exclusively to Foucault. The
+            broader idea of a colonial or imperial "boomerang" has important
+            earlier formulations in the work of
+            <strong>Aimé Césaire</strong> and <strong>Hannah Arendt</strong>.
+            Foucault's contribution was to describe how colonial models could
+            have a "boomerang effect" on mechanisms, institutions, and
+            techniques of power in the West.
+          </p>
+
+          <p>
+            The concept therefore challenges a simple division between
+            "colonial" and "domestic" histories of power. It encourages
+            historians and social theorists to examine how techniques of
+            surveillance, policing, administration, confinement, and population
+            management can circulate between different geographical and
+            political settings.
+          </p>
+
+          <div class="concept-highlight">
+            <h3>What Is the Foucault Boomerang?</h3>
+
+            <p>
+              The <strong>Foucault boomerang</strong> describes the return or
+              circulation of techniques of colonial power back into the
+              societies that developed and deployed them, contributing to new
+              forms of domestic governance and social control.
+            </p>
+          </div>
+        </section>
+
+        <div class="philosophy-divider"></div>
+        <!-- =====================================================
+     LIMIT-EXPERIENCE
+     ===================================================== -->
+
+        <section class="narrative-block" id="limit-experience">
+          <h2>Foucault and Limit-Experience</h2>
+
+          <p>
+            <strong>Limit-experience</strong> refers to an experience that
+            pushes a person toward the boundaries of established forms of
+            identity, knowledge, or ordinary experience. The concept has
+            important roots in the work of <strong>Georges Bataille</strong> and
+            was also associated with Maurice Blanchot before becoming
+            significant in Foucault's own philosophical development. Foucault
+            was interested in experiences capable of disrupting familiar ways of
+            understanding oneself and the world.
+          </p>
+
+          <p>
+            In this context, a limit-experience is not simply an unusually
+            intense experience. It concerns an encounter in which established
+            categories or assumptions can become unstable. Experiences involving
+            madness, sexuality, transgression, extreme forms of literature, or
+            confrontation with death could raise questions about the boundaries
+            through which modern subjects understand themselves.
+          </p>
+
+          <p>
+            The idea is connected to Foucault's interest in the possibility of
+            transformation. Rather than assuming that the subject possesses a
+            fixed and universal identity, limit-experiences can reveal how
+            identities and forms of knowledge are historically organized. An
+            experience that brings someone to the limits of an established way
+            of thinking can therefore create the possibility of thinking or
+            becoming otherwise.
+          </p>
+
+          <p>
+            Limit-experience also helps explain an important dimension of
+            Foucault's early philosophical interests that differs from his later
+            analyses of institutions and disciplinary power. His work was
+            influenced by writers and thinkers concerned with transgression,
+            literature, madness, and the disruption of conventional
+            subjectivity. The concept therefore provides a bridge between
+            Foucault's historical investigations and his interest in experiences
+            that challenge established forms of selfhood.
+          </p>
+
+          <div class="concept-highlight">
+            <h3>Simple Definition of Limit-Experience</h3>
+
+            <p>
+              A <strong>limit-experience</strong> is an experience that brings a
+              person toward the boundaries of ordinary identity, knowledge, or
+              subjectivity and can disrupt established ways of understanding
+              oneself.
+            </p>
+          </div>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
+        <!-- =====================================================
+     CRITICAL ONTOLOGY
+     ===================================================== -->
+
+        <section class="narrative-block" id="critical-ontology">
+          <h2>Foucault's Critical Ontology of Ourselves</h2>
+
+          <p>
+            <strong>Critical ontology</strong>, particularly Foucault's idea of
+            a <strong>"critical ontology of ourselves,"</strong> describes an
+            approach to philosophy that examines how we have historically become
+            the kinds of subjects we are. Rather than searching for an
+            unchanging human essence, Foucault asks how historically specific
+            practices, institutions, forms of knowledge, and relations of power
+            have shaped the ways people understand themselves.
+          </p>
+
+          <p>
+            This approach is closely associated with Foucault's later
+            interpretation of Enlightenment, particularly his 1984 essay
+            <em>What Is Enlightenment?</em>. Foucault connects critique with the
+            examination of what appears natural, necessary, or universal.
+            Historical analysis can reveal that some features of contemporary
+            society are the products of particular historical processes rather
+            than inevitable features of human existence.
+          </p>
+
+          <p>
+            A critical ontology of ourselves therefore asks questions such as:
+            <strong
+              >How did we become who we are? Which practices have shaped our
+              identities? Which forms of knowledge define what counts as normal?
+              Which limits are historically produced rather than absolutely
+              necessary?</strong
+            >
+            The purpose is not simply to describe the past but to identify
+            points at which established ways of thinking and acting might be
+            questioned.
+          </p>
+
+          <p>
+            Foucault's critical ontology is consequently different from a
+            traditional ontology that seeks to establish the timeless structure
+            of being. It is a historically oriented practice of critique
+            directed toward ourselves and our present. It asks how the present
+            has been constructed and where possibilities for transformation may
+            exist within those historical conditions.
+          </p>
+
+          <div class="concept-highlight">
+            <h3>What Is a Critical Ontology?</h3>
+
+            <p>
+              Foucault's <strong>critical ontology of ourselves</strong> is the
+              historical and philosophical examination of how our identities,
+              practices, forms of knowledge, and limits have been produced, with
+              the aim of identifying what might be questioned or transformed.
+            </p>
+          </div>
+        </section>
+
+        <div class="philosophy-divider"></div>
         <!-- =====================================================
          DISCIPLINARY POWER
          ===================================================== -->
@@ -3184,66 +3579,401 @@
          PANOPTICON
          ===================================================== -->
 
+        <!-- =====================================================
+     PANOPTICON
+     ===================================================== -->
+
         <section class="narrative-block" id="panopticon">
           <h2>What Did Michel Foucault Mean by the Panopticon?</h2>
 
           <p>
+            Michel Foucault used the <strong>Panopticon</strong> as a model for
+            explaining how modern disciplinary power can operate through
+            visibility, surveillance, and self-regulation. Drawing on
+            <a href="jeremy-bentham.html">Jeremy Bentham</a>'s 1791 prison
+            design, Foucault argued that the possibility of being watched can
+            lead individuals to monitor and regulate their own behavior, even
+            when no authority is visibly intervening.
+          </p>
+
+          <p>
             The <strong>Panopticon</strong> is one of the best-known concepts
-            associated with Michel Foucault. The original Panopticon was a
-            prison design proposed by the English philosopher and reformer
-            Jeremy Bentham. Its architectural principle involved a central
-            observation tower from which inmates arranged in surrounding cells
-            could potentially be seen, while the inmates themselves could not
-            always know whether observation was actually taking place at any
-            particular moment.
+            associated with Michel Foucault, but the original idea was not
+            Foucault's invention. The Panopticon was a prison and institutional
+            design proposed by the English philosopher and reformer
+            <a href="jeremy-bentham.html">Jeremy Bentham</a> in
+            <strong>1791</strong>. Bentham's design placed a central observation
+            point within a circular structure surrounded by individual cells.
+            From the central position, an observer could potentially see the
+            occupants of the surrounding cells, while those being observed could
+            not reliably determine when they were actually being watched.
           </p>
 
           <p>
-            Foucault used the Panopticon as a model for understanding a broader
-            form of modern disciplinary power based on visibility and the
-            possibility of surveillance. The important point is not that every
-            modern institution literally possesses the architectural form of
-            Bentham's prison. Rather, the Panopticon illustrates a principle in
-            which the possibility of being observed can influence behavior even
-            when direct supervision is not constantly occurring.
+            Almost two centuries later, Foucault made the Panopticon central to
+            his analysis of modern <strong>disciplinary power</strong> in
+            <em>Discipline and Punish</em> (1975). For Foucault, Bentham's
+            architectural model provided a way of understanding a broader
+            mechanism of power based on
+            <strong
+              >visibility, observation, and the possibility of
+              surveillance</strong
+            >. The important point is not that every modern institution
+            literally reproduces Bentham's circular prison. Instead, the
+            Panopticon illustrates how the possibility of being observed can
+            influence behavior even when direct supervision is not continuously
+            taking place.
           </p>
 
           <p>
-            In such a situation, individuals may begin to regulate their own
-            behavior because they know they could be observed. The possibility
-            of surveillance can therefore become internalized, reducing the need
-            for continuous direct intervention or physical force. For Foucault,
-            this made the Panopticon a particularly powerful image of
-            disciplinary power: visibility itself could become a mechanism
-            through which conduct is organized and individuals participate in
-            their own regulation.
+            This possibility of observation can lead individuals to regulate
+            their own conduct. When people cannot know with certainty whether
+            they are being watched, they may behave as though observation is
+            possible. Surveillance can therefore become partly
+            <strong>internalized</strong>: instead of relying entirely on
+            physical force or constant intervention, disciplinary power can
+            encourage individuals to monitor and correct themselves. Foucault
+            used this mechanism to show how power can operate through the
+            organization of visibility rather than simply through explicit
+            commands or punishment.
           </p>
 
           <p>
-            Foucault connected this principle with broader disciplinary
-            techniques found in institutions such as schools, hospitals,
-            factories, and prisons. Observation can be combined with records,
-            examinations, classifications, and comparisons with established
-            norms. The Panopticon therefore represents more than surveillance
-            alone; it belongs to a larger analysis of how visibility, knowledge,
-            discipline, and normalization can become connected within systems
-            for managing individuals.
+            The Panopticon is therefore connected to several other techniques of
+            discipline that Foucault examines, including
+            <strong
+              >observation, examination, documentation, classification,
+              comparison, and normalization</strong
+            >. Schools, hospitals, factories, military institutions, and prisons
+            can organize individuals through schedules, examinations, records,
+            rankings, reports, and established norms. Surveillance becomes
+            particularly significant when observation is combined with systems
+            of knowledge that identify, compare, classify, and evaluate
+            individuals.
           </p>
 
           <p>
-            Foucault's discussion of the Panopticon has become especially
-            relevant to modern debates about surveillance, digital technology,
-            cameras, data collection, workplaces, and the monitoring of
-            behavior. However, his broader philosophy of power should not be
-            reduced only to the idea of surveillance. The Panopticon is one
-            important model within his analysis of disciplinary society, while
-            Foucault's wider work also examines productive power, resistance,
-            sexuality, biopower, governmentality, and the historical formation
-            of human subjects.
+            Foucault's Panopticon should therefore be understood as more than a
+            theory of surveillance or a description of a particular prison. It
+            represents a model of <strong>disciplinary power</strong> in which
+            visibility can help organize conduct and individuals can participate
+            in their own regulation. The concept has subsequently been applied
+            in discussions of CCTV, workplace monitoring, digital surveillance,
+            algorithmic tracking, data collection, and other forms of
+            contemporary observation. These are modern applications of
+            Foucault's framework, rather than institutions that Foucault himself
+            necessarily analyzed.
           </p>
+
+          <!-- ================= PANOPTICON TIMELINE ================= -->
+
+          <div class="concept-highlight">
+            <strong>Panopticon: Key Timeline</strong>
+
+            <ul>
+              <li>
+                <strong>1791:</strong> Jeremy Bentham proposed and published his
+                Panopticon design as a model for institutional inspection and
+                supervision.
+              </li>
+
+              <li>
+                <strong>1975:</strong> Michel Foucault analyzed the Panopticon
+                in <em>Discipline and Punish</em> as a model for understanding
+                modern disciplinary power.
+              </li>
+
+              <li>
+                <strong>Modern applications:</strong> The Panopticon has become
+                a widely used framework for discussing surveillance, monitoring,
+                institutional discipline, and the internalization of
+                observation.
+              </li>
+            </ul>
+          </div>
         </section>
+
         <div class="philosophy-divider"></div>
 
+        <!-- =====================================================
+     DEATH OF MAN — THE ORDER OF THINGS
+     ===================================================== -->
+
+        <section class="narrative-block" id="death-of-man">
+          <h2>The "Death of Man" in <em>The Order of Things</em></h2>
+
+          <p>
+            One of Michel Foucault's most famous and controversial arguments
+            appears near the end of <em>The Order of Things</em> (1966), where
+            he discusses the possible <strong>"death of man."</strong> Foucault
+            was not predicting the literal disappearance or extinction of human
+            beings. Instead, he was questioning the historical status of
+            <strong>"man"</strong> as a modern philosophical and epistemological
+            concept. His argument is that the modern idea of the human being as
+            both the subject who knows and the object to be studied emerged
+            under particular historical conditions rather than existing as an
+            eternal foundation of knowledge.
+          </p>
+
+          <p>
+            Foucault's analysis begins from the different ways knowledge was
+            organized during the Renaissance, the Classical period, and
+            modernity. In the modern
+            <strong>episteme</strong>, human beings became objects of systematic
+            study in fields such as biology, economics, and linguistics, while
+            simultaneously being treated as subjects capable of producing
+            knowledge about themselves. This double position made "man" a
+            distinctive figure within modern thought.
+          </p>
+
+          <p>
+            The phrase <strong>"death of man"</strong> therefore refers to the
+            possible disappearance of this particular historical configuration.
+            Foucault argues that if the conditions that produced the modern
+            conception of "man" were to change, the concept itself could also be
+            transformed. The claim is closely connected to his broader method of
+            showing that apparently universal categories can have specific
+            historical origins.
+          </p>
+
+          <p>
+            Foucault famously concludes <em>The Order of Things</em> with an
+            image of a face drawn in the sand at the edge of the sea, suggesting
+            that the modern figure of "man" may be erased as changing forms of
+            knowledge reorganize the intellectual landscape. The image
+            emphasizes the historical contingency of the concept rather than
+            making a prediction about the physical future of humanity.
+          </p>
+
+          <div class="concept-highlight">
+            <h3>What Does Foucault Mean by the "Death of Man"?</h3>
+
+            <p>
+              In Foucault's philosophy, the "death of man" means the possible
+              disappearance of
+              <strong>man as a particular modern form of knowledge</strong>. It
+              is a philosophical and historical claim about the status of the
+              human subject, not a prediction that human beings will literally
+              cease to exist.
+            </p>
+          </div>
+        </section>
+
+        <!-- =====================================================
+     WHAT IS AN AUTHOR?
+     ===================================================== -->
+
+        <section class="narrative-block" id="what-is-an-author">
+          <h2>Foucault's <em>What Is an Author?</em></h2>
+
+          <p>
+            In his influential essay and lecture
+            <em>What Is an Author?</em> (1969), Michel Foucault questioned the
+            assumption that the author is simply the individual person who
+            creates a text. He asked instead how the category of the
+            <strong>author</strong> functions within systems of discourse and
+            why certain texts are attributed to particular individuals. His
+            analysis shifts attention from the author's personal identity and
+            intentions toward the historical and institutional functions that
+            authorship performs.
+          </p>
+
+          <p>
+            Foucault introduced the concept of the
+            <strong>author-function</strong>
+            to describe the ways in which the name of an author can classify,
+            organize, and regulate a body of discourse. An author's name can
+            affect how a text is interpreted, which works are grouped together,
+            how a text is valued, and what kinds of authority or responsibility
+            are associated with it. In this sense, the author is not merely a
+            source of writing but also a function within a particular cultural
+            and institutional system.
+          </p>
+
+          <p>
+            Foucault also argued that the role and significance of authorship
+            have changed historically. Not every form of discourse has always
+            required an identifiable author in the same way. The importance
+            attached to authorship is therefore itself a historical phenomenon.
+            Questions of ownership, responsibility, authenticity,
+            classification, censorship, and authority can all contribute to the
+            way a society assigns texts to authors.
+          </p>
+
+          <p>
+            <em>What Is an Author?</em> is often discussed alongside Roland
+            Barthes's earlier essay <em>The Death of the Author</em>. Both
+            thinkers challenged traditional assumptions about the author's
+            authority, but Foucault's analysis is particularly concerned with
+            the historical conditions under which the author operates as a
+            function of discourse. Rather than simply asking who wrote a text,
+            Foucault asks what the category of "author" does within a system of
+            knowledge and discourse.
+          </p>
+
+          <table class="power-modes-table">
+            <caption>
+              Key ideas in Foucault's analysis of authorship
+            </caption>
+
+            <thead>
+              <tr>
+                <th>Concept</th>
+                <th>Meaning</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Author</td>
+                <td>
+                  The individual traditionally identified as the writer or
+                  creator of a work.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Author-function</td>
+                <td>
+                  The cultural and institutional function through which an
+                  author's name organizes, classifies, and regulates discourse.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Authorship</td>
+                <td>
+                  A historically variable system involving attribution,
+                  authority, responsibility, ownership, and classification.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Foucault's central question</td>
+                <td>
+                  How and why does the category of the author function within
+                  particular systems of discourse?
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- =====================================================
+     WHAT IS ENLIGHTENMENT?
+     ===================================================== -->
+
+        <section class="narrative-block" id="what-is-enlightenment">
+          <h2>Foucault's <em>What Is Enlightenment?</em></h2>
+
+          <p>
+            In his 1984 essay <em>What Is Enlightenment?</em>, Michel Foucault
+            returned to Immanuel Kant's famous 1784 essay of the same name.
+            Rather than treating the Enlightenment simply as a historical
+            period, Foucault examined it as a particular
+            <strong>attitude toward the present</strong>. His interpretation
+            asks how people can critically examine the historical conditions,
+            assumptions, and limits that shape their own ways of thinking and
+            acting.
+          </p>
+
+          <p>
+            Kant had described Enlightenment in terms of humanity's emergence
+            from self-imposed immaturity through the courage to use reason.
+            Foucault approached Kant's question differently. He emphasized the
+            continuing importance of asking what is happening in the present and
+            examining the historical processes through which contemporary forms
+            of thought, institutions, and practices have been produced.
+          </p>
+
+          <p>
+            Foucault therefore connected Enlightenment with
+            <strong>critique</strong>. Critique involves investigating what
+            appears natural, necessary, or self-evident and asking how it came
+            to take its present form. This does not mean rejecting everything
+            that exists. Instead, historical inquiry can reveal that some limits
+            and arrangements are contingent and therefore potentially open to
+            transformation.
+          </p>
+
+          <p>
+            This approach led Foucault to describe his project as a
+            <strong>"critical ontology of ourselves."</strong> The phrase refers
+            to examining how we have become the kinds of subjects we are through
+            historically specific practices, institutions, forms of knowledge,
+            and relations of power. His interpretation of Enlightenment thus
+            connects historical inquiry with an ongoing practice of questioning
+            the limits imposed upon the present.
+          </p>
+
+          <div class="concept-highlight">
+            <h3>Foucault's Interpretation of Enlightenment</h3>
+
+            <p>
+              For Foucault, Enlightenment can be understood not only as an
+              eighteenth- century historical movement but also as a continuing
+              <strong>critical attitude toward the present</strong>: examining
+              how historically produced limits shape us and investigating where
+              those limits might be transformed.
+            </p>
+          </div>
+
+          <table class="power-modes-table">
+            <caption>
+              Kant and Foucault on Enlightenment
+            </caption>
+
+            <thead>
+              <tr>
+                <th>Theme</th>
+                <th>Kant</th>
+                <th>Foucault</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Central question</td>
+                <td>
+                  What does it mean for humanity to emerge from immaturity?
+                </td>
+                <td>
+                  How should we critically examine our present historical
+                  condition?
+                </td>
+              </tr>
+
+              <tr>
+                <td>Reason</td>
+                <td>Emphasis on the public use of reason.</td>
+                <td>
+                  Emphasis on critical examination of historically formed
+                  limits.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Enlightenment</td>
+                <td>A process of intellectual emancipation.</td>
+                <td>
+                  An attitude toward the present and a practice of critique.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Historical perspective</td>
+                <td>
+                  Enlightenment understood in relation to humanity's
+                  intellectual maturity.
+                </td>
+                <td>
+                  Modernity examined through the historical formation of
+                  practices, institutions, and forms of subjectivity.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
         <!-- =====================================================
          SURVEILLANCE
          ===================================================== -->
@@ -3558,14 +4288,15 @@
 
           <p>
             Foucault's philosophy of sexuality became enormously influential in
-            gender studies and queer theory. His work encouraged scholars to
-            study sexuality not simply as a fixed biological reality but also as
-            something shaped by historical discourse, institutions, social
-            practices, and systems of knowledge. His arguments remain debated,
-            but they profoundly changed discussions about sexual identity by
-            directing attention toward the historical conditions through which
-            particular categories and forms of self-understanding become
-            possible.
+            gender studies and queer theory, shaping the work of later thinkers
+            such as <a href="judith-butler.html">Judith Butler</a>. His work
+            encouraged scholars to study sexuality not simply as a fixed
+            biological reality but also as something shaped by historical
+            discourse, institutions, social practices, and systems of knowledge.
+            His arguments remain debated, but they profoundly changed
+            discussions about sexual identity by directing attention toward the
+            historical conditions through which particular categories and forms
+            of self-understanding become possible.
           </p>
         </section>
 
@@ -3771,7 +4502,15 @@
 
         <section class="narrative-block" id="structuralism">
           <h2>Was Michel Foucault a Structuralist?</h2>
-
+          <p>
+            Michel Foucault was often associated with structuralism,
+            particularly because his early work examined systems that organize
+            knowledge, language, and thought. However, he did not consistently
+            identify himself as a structuralist and later distinguished his
+            approach from structuralism. His historical analyses increasingly
+            emphasized changing discourses, practices, and relations of power
+            rather than fixed structures alone.
+          </p>
           <p>
             Michel Foucault was sometimes associated with
             <strong>structuralism</strong>, a major intellectual movement in
@@ -3836,6 +4575,16 @@
           <h2>Was Michel Foucault a Postmodernist?</h2>
 
           <p>
+            Michel Foucault is often classified as a
+            <strong>postmodern philosopher</strong>, particularly because of his
+            critiques of universal historical narratives and his analyses of
+            knowledge, discourse, and power. However, Foucault did not
+            consistently identify himself with postmodernism. His work is more
+            precisely understood through his own historical methods and analyses
+            of how systems of thought change.
+          </p>
+
+          <p>
             Michel Foucault is frequently described as a
             <strong>postmodern philosopher</strong>, especially in popular
             discussions of twentieth-century philosophy. His criticism of
@@ -3897,14 +4646,14 @@
           <h2>Michel Foucault and Friedrich Nietzsche</h2>
 
           <p>
-            Friedrich Nietzsche was one of the most important influences on
-            Michel Foucault, particularly in the development of his genealogical
-            method. Nietzsche's criticism of traditional morality and his
-            investigation of the historical development of values provided an
-            important alternative to philosophical approaches that search for
-            timeless origins or universal foundations. Foucault drew upon this
-            inspiration while developing his own distinctive analysis of history
-            and power.
+            <a href="nietzsche.html">Friedrich Nietzsche</a> was one of the most
+            important influences on Michel Foucault, particularly in the
+            development of his genealogical method. Nietzsche's criticism of
+            traditional morality and his investigation of the historical
+            development of values provided an important alternative to
+            philosophical approaches that search for timeless origins or
+            universal foundations. Foucault drew upon this inspiration while
+            developing his own distinctive analysis of history and power.
           </p>
 
           <p>
@@ -3962,13 +4711,13 @@
 
           <p>
             Michel Foucault's relationship with Marxism was complex and changed
-            over the course of his intellectual development. Both Marx and
-            Foucault were deeply concerned with historical structures and the
-            ways human life is shaped by social systems, but they developed
-            significantly different theories of power and historical change.
-            Foucault's early intellectual environment included engagement with
-            Marxism, although he later moved away from many of its central
-            explanatory frameworks.
+            over the course of his intellectual development. Both
+            <a href="karl-marx.html">Marx</a> and Foucault were deeply concerned
+            with historical structures and the ways human life is shaped by
+            social systems, but they developed significantly different theories
+            of power and historical change. Foucault's early intellectual
+            environment included engagement with Marxism, although he later
+            moved away from many of its central explanatory frameworks.
           </p>
 
           <p>
@@ -4019,28 +4768,55 @@
         <div class="philosophy-divider"></div>
 
         <!-- =====================================================
-         MAJOR WORKS
-         ===================================================== -->
+     MAJOR WORKS
+     ===================================================== -->
 
         <section class="narrative-block" id="works">
           <h2>Michel Foucault Books: The Complete Reading List</h2>
+          <figure class="narrative-figure">
+            <picture>
+              <source
+                srcset="images/michel-foucault-books.webp"
+                type="image/webp"
+              />
+              <img
+                src="images/michel-foucault-books.jpg"
+                alt="Michel Foucault and his major philosophical works on power, knowledge, history, and society"
+                width="400"
+                height="450"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+
+            <figcaption>
+              Foucault's major works examine the historical relationship between
+              power, knowledge, institutions, discipline, sexuality, and the
+              ways modern societies shape human thought and behavior.
+            </figcaption>
+          </figure>
 
           <p>
             Readers approaching <strong>Michel Foucault's books</strong> for the
             first time often ask where to start. A commonly recommended order is
             <em>Discipline and Punish</em> or
             <em>The History of Sexuality, Volume I</em> first, since these are
-            his most widely taught and accessible works, followed by
-            <em>Madness and Civilization</em> and
-            <em>The Order of Things</em> for his earlier historical studies, and
-            <em>The Archaeology of Knowledge</em> for readers specifically
-            interested in his method. Below is the complete list of his major
-            books in order of original publication.
+            among his most widely taught works, followed by
+            <em>Madness and Civilization</em>, <em>The Order of Things</em>, and
+            <em>The Archaeology of Knowledge</em> for readers interested in his
+            historical and methodological approaches. His later work and the
+            <strong>Collège de France lectures</strong> are particularly
+            important for understanding concepts such as
+            <strong
+              >biopower, biopolitics, governmentality, security, and the history
+              of modern forms of power</strong
+            >. Below is a chronological reading list of Foucault's major books,
+            followed by his principal published lecture courses.
           </p>
 
           <ul class="plain-list">
             <li>
-              <strong><em>Madness and Civilization</em></strong>
+              <strong><em>Madness and Civilization</em> (1961)</strong>
               — An influential abridged English version of Foucault's larger
               <em>History of Madness</em>, investigating the historical
               treatment of madness, confinement, and the changing relationship
@@ -4048,7 +4824,7 @@
             </li>
 
             <li>
-              <strong><em>The Birth of the Clinic</em></strong>
+              <strong><em>The Birth of the Clinic</em> (1963)</strong>
               — An examination of the development of modern medical knowledge,
               clinical observation, and the historical transformation through
               which illness and the human body became objects of a distinctive
@@ -4056,7 +4832,7 @@
             </li>
 
             <li>
-              <strong><em>The Order of Things</em></strong>
+              <strong><em>The Order of Things</em> (1966)</strong>
               — A major study of the historical organization of knowledge and
               the changing structures of thought in the human sciences,
               examining broad transformations in the ways language,
@@ -4064,14 +4840,14 @@
             </li>
 
             <li>
-              <strong><em>The Archaeology of Knowledge</em></strong>
+              <strong><em>The Archaeology of Knowledge</em> (1969)</strong>
               — Foucault's important methodological work on discourse,
               statements, discursive formations, historical knowledge, and the
               principles of archaeological analysis.
             </li>
 
             <li>
-              <strong><em>Discipline and Punish</em></strong>
+              <strong><em>Discipline and Punish</em> (1975)</strong>
               — A famous genealogical study of punishment, prisons,
               surveillance, discipline, examination, normalization, and the
               development of modern techniques for regulating bodies and
@@ -4079,14 +4855,20 @@
             </li>
 
             <li>
-              <strong><em>The History of Sexuality, Volume I</em></strong>
+              <strong
+                ><em
+                  >The History of Sexuality, Volume I: The Will to Knowledge</em
+                >
+                (1976)</strong
+              >
               — An influential work examining sexuality, discourse, confession,
               power, the critique of the repressive hypothesis, and the
-              emergence of biopower as a major form of modern power.
+              emergence of <strong>biopower</strong> as a major form of modern
+              power.
             </li>
 
             <li>
-              <strong><em>The Use of Pleasure</em></strong>
+              <strong><em>The Use of Pleasure</em> (1984)</strong>
               — The second published volume of
               <em>The History of Sexuality</em>, examining ancient Greek ethical
               practices and the historical relationship between sexuality,
@@ -4094,11 +4876,108 @@
             </li>
 
             <li>
-              <strong><em>The Care of the Self</em></strong>
-              — The third published volume of <em>The History of Sexuality</em>,
-              studying ancient Roman ethical practices and the philosophical
-              cultivation of the self through particular relationships to
-              conduct, truth, and ways of living.
+              <strong><em>The Care of the Self</em> (1984)</strong>
+              — The third published volume of
+              <em>The History of Sexuality</em>, studying ancient Roman ethical
+              practices and the philosophical cultivation of the self through
+              particular relationships to conduct, truth, and ways of living.
+            </li>
+
+            <li>
+              <strong><em>Confessions of the Flesh</em> (2018)</strong>
+              — The fourth volume of
+              <em>The History of Sexuality</em>, completed by Foucault before
+              his death but published posthumously. It examines early Christian
+              practices of confession, spiritual direction, desire,
+              truth-telling, and the formation of the subject through Christian
+              technologies of the self.
+            </li>
+          </ul>
+
+          <!-- =====================================================
+       COLLÈGE DE FRANCE LECTURES
+       ===================================================== -->
+
+          <h3>Collège de France Lectures</h3>
+
+          <p>
+            Foucault's <strong>Collège de France lecture courses</strong> are
+            essential for understanding the development of his later thinking
+            about
+            <strong
+              >power, governmentality, biopolitics, security, population,
+              sovereignty, and the modern state</strong
+            >. Delivered between 1970 and 1984, many were published posthumously
+            from lecture transcripts.
+          </p>
+
+          <ul class="plain-list">
+            <li>
+              <strong><em>Society Must Be Defended</em> (1975–1976)</strong>
+              — Explores war, political struggle, sovereignty, historical
+              discourse, and the relationship between power and the production
+              of historical knowledge. It is particularly important for
+              understanding Foucault's analysis of power beyond the traditional
+              model of sovereign authority.
+            </li>
+
+            <li>
+              <strong
+                ><em>Security, Territory, Population</em> (1977–1978)</strong
+              >
+              — A foundational course for understanding
+              <strong>governmentality</strong>. Foucault examines security
+              mechanisms, territory, population, pastoral power, and the
+              emergence of governmental forms of power.
+            </li>
+
+            <li>
+              <strong><em>The Birth of Biopolitics</em> (1978–1979)</strong>
+              — Extends Foucault's analysis of governmentality into political
+              economy and liberalism, examining liberal and neoliberal forms of
+              governing and the relationship between economic rationality,
+              government, and individual conduct.
+            </li>
+
+            <li>
+              <strong
+                ><em>On the Government of the Living</em> (1979–1980)</strong
+              >
+              — Examines Christianity, confession, truth, and the ways in which
+              individuals are governed through relationships between truth,
+              belief, and the self.
+            </li>
+
+            <li>
+              <strong><em>Subjectivity and Truth</em> (1980–1981)</strong>
+              — Investigates the historical formation of subjectivity and the
+              relationship between sexuality, truth, and practices through which
+              individuals understand themselves.
+            </li>
+
+            <li>
+              <strong
+                ><em>The Hermeneutics of the Subject</em> (1981–1982)</strong
+              >
+              — Focuses on ancient philosophy, the
+              <strong>care of the self</strong>, self-knowledge, spiritual
+              practices, and the historical formation of ethical subjectivity.
+            </li>
+
+            <li>
+              <strong
+                ><em>The Government of Self and Others</em> (1982–1983)</strong
+              >
+              — Examines parrhesia, political life, truth-telling, and the
+              relationship between governing others and governing oneself.
+            </li>
+
+            <li>
+              <strong><em>The Courage of Truth</em> (1983–1984)</strong>
+              — Foucault's final Collège de France course, examining
+              <strong>parrhesia</strong>, truth-telling, ethics, and the
+              relationship between truth and the formation of the ethical
+              subject.
             </li>
           </ul>
         </section>
@@ -4222,13 +5101,14 @@
 
           <p>
             His philosophy of sexuality and identity became especially
-            influential in gender studies and queer theory. Scholars have used
-            Foucault's historical approach to question the assumption that
-            modern identities and categories have always existed in their
-            present form. His analysis of the relationship between scientific
-            discourse, social norms, and sexual identity contributed
-            significantly to later debates concerning the historical
-            construction and regulation of gender and sexuality.
+            influential in gender studies and queer theory. Scholars such as
+            <a href="judith-butler.html">Judith Butler</a> used Foucault's
+            historical approach to question the assumption that modern
+            identities and categories have always existed in their present form.
+            His analysis of the relationship between scientific discourse,
+            social norms, and sexual identity contributed significantly to later
+            debates concerning the historical construction and regulation of
+            gender and sexuality.
           </p>
 
           <p>
@@ -4323,61 +5203,6 @@
         <div class="philosophy-divider"></div>
 
         <!-- =====================================================
-         EXPLAINED SIMPLY
-         ===================================================== -->
-
-        <section class="narrative-block" id="explained-simply">
-          <h2>Michel Foucault's Philosophy Explained Simply</h2>
-
-          <ul class="plain-list">
-            <li>
-              <strong>What is power?</strong>
-              Power is not found only in governments and rulers. It can operate
-              through institutions, relationships, social norms, observation,
-              and everyday practices.
-            </li>
-
-            <li>
-              <strong>What is power/knowledge?</strong>
-              Knowledge and power can support one another because institutions
-              produce information about people while using that knowledge to
-              classify, organize, and regulate social life.
-            </li>
-
-            <li>
-              <strong>What is discourse?</strong>
-              A discourse is a system of ideas and practices that shapes how a
-              particular subject can be discussed, understood, and treated as
-              knowledge.
-            </li>
-
-            <li>
-              <strong>What is genealogy?</strong>
-              Genealogy studies how ideas and institutions developed
-              historically through conflicts, changes, practices, and accidents
-              rather than assuming that history follows a simple path of
-              progress.
-            </li>
-
-            <li>
-              <strong>What is the Panopticon?</strong>
-              The Panopticon represents a model of power based on the
-              possibility of observation, where individuals may regulate their
-              own behavior because they believe they could be watched.
-            </li>
-
-            <li>
-              <strong>What is biopower?</strong>
-              Biopower refers to modern forms of power concerned with bodies,
-              health, populations, reproduction, mortality, and the management
-              of life.
-            </li>
-          </ul>
-        </section>
-
-        <div class="philosophy-divider"></div>
-
-        <!-- =====================================================
          FAQ
          ===================================================== -->
 
@@ -4404,16 +5229,6 @@
             <em>The History of Sexuality</em>.
           </p>
 
-          <h3>What was Michel Foucault's philosophy?</h3>
-
-          <p>
-            Michel Foucault's philosophy investigated the historical
-            relationship between knowledge and power. He examined how
-            institutions and social practices shape human behavior, define
-            categories of normality, and influence the ways individuals
-            understand themselves.
-          </p>
-
           <h3>What did Michel Foucault mean by power?</h3>
 
           <p>
@@ -4434,41 +5249,13 @@
             social life.
           </p>
 
-          <h3>What is Michel Foucault's theory of discourse?</h3>
-
-          <p>
-            Foucault's theory of discourse examines systems of statements,
-            concepts, practices, and rules that determine how particular
-            subjects can be discussed and understood as objects of knowledge
-            within a specific historical period.
-          </p>
-
           <h3>What is the Panopticon in Michel Foucault's philosophy?</h3>
 
           <p>
-            The Panopticon is a model of surveillance inspired by Jeremy
-            Bentham's prison design. Foucault used it to explain how the
-            possibility of being observed can encourage individuals to regulate
-            their own behavior.
-          </p>
-
-          <h3>What is Discipline and Punish about?</h3>
-
-          <p>
-            <em>Discipline and Punish</em> examines the historical
-            transformation of punishment and the development of modern
-            disciplinary institutions. Foucault studies prisons, surveillance,
-            examination, normalization, and techniques used to regulate bodies
-            and behavior.
-          </p>
-
-          <h3>What is Michel Foucault's genealogy?</h3>
-
-          <p>
-            Genealogy is Foucault's historical method for investigating how
-            ideas, institutions, and practices developed through conflict,
-            change, accidents, and historical circumstances rather than through
-            a simple process of inevitable progress.
+            The Panopticon is a model of surveillance inspired by
+            <a href="jeremy-bentham.html">Jeremy Bentham's</a> prison design.
+            Foucault used it to explain how the possibility of being observed
+            can encourage individuals to regulate their own behavior.
           </p>
 
           <h3>What is biopower?</h3>
@@ -4481,33 +5268,6 @@
             existence.
           </p>
 
-          <h3>What is biopolitics?</h3>
-
-          <p>
-            Biopolitics refers to political strategies and forms of power
-            directed toward populations and collective biological life. It is
-            closely connected with Foucault's concept of biopower and modern
-            systems of population management.
-          </p>
-
-          <h3>What is governmentality?</h3>
-
-          <p>
-            Governmentality refers to the different ways conduct can be governed
-            and directed. Foucault used the concept to study modern government,
-            administration, expertise, political strategies, and practices
-            through which individuals govern themselves.
-          </p>
-
-          <h3>Was Michel Foucault a structuralist?</h3>
-
-          <p>
-            Foucault was sometimes associated with structuralism, particularly
-            during his earlier career, but he resisted being permanently defined
-            by the label. His later work on genealogy, power, institutions, and
-            historical practices moved beyond many structuralist approaches.
-          </p>
-
           <h3>Was Michel Foucault a postmodernist?</h3>
 
           <p>
@@ -4516,24 +5276,6 @@
             knowledge and power. However, he did not consistently identify
             himself as a postmodernist, making the label an imperfect
             description.
-          </p>
-
-          <h3>How did Michel Foucault influence modern philosophy?</h3>
-
-          <p>
-            Foucault influenced modern philosophy by transforming discussions
-            about power, knowledge, institutions, sexuality, identity, and
-            history. His work continues to influence philosophy, sociology,
-            political theory, gender studies, cultural studies, history, and the
-            social sciences.
-          </p>
-
-          <h3>How do you pronounce Michel Foucault?</h3>
-
-          <p>
-            Michel Foucault is pronounced "mee-SHEL foo-KOH." In French, the
-            final "l" and "t" in "Foucault" are silent, so the name ends on an
-            open "oh" sound rather than a hard consonant.
           </p>
 
           <h3>What Michel Foucault book should I read first?</h3>
@@ -4549,10 +5291,402 @@
 
         <div class="philosophy-divider"></div>
 
+        <!-- =========================================================
+     MICHEL FOUCAULT — VISUAL & STUDY RESOURCES
+     ========================================================= -->
+
+        <section class="foucault-resources" id="foucault-resources">
+          <div class="foucault-resources-header">
+            <span class="foucault-resource-label">STUDY RESOURCES</span>
+
+            <h2>Michel Foucault — Visual &amp; Study Resources</h2>
+
+            <p>
+              Explore these supplementary resources for studying Michel
+              Foucault's philosophy, including visual materials and a
+              downloadable study guide.
+            </p>
+          </div>
+
+          <!-- ================= SVG RESOURCES ================= -->
+
+          <div class="foucault-svg-resources">
+            <!-- SVG 1 -->
+            <article class="foucault-resource-card">
+              <div class="foucault-resource-image">
+                <a
+                  href="images/foucault-concept-map.svg"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open Michel Foucault visual resource 1 in a new tab"
+                >
+                  <img
+                    src="images/foucault-concept-map.svg"
+                    alt="Michel Foucault philosophical visual resource"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="foucault-resource-content">
+                <span class="foucault-resource-type">SVG RESOURCE</span>
+
+                <h3>Foucault Visual Resource</h3>
+
+                <p>
+                  A visual resource designed to help illustrate an important
+                  aspect of Michel Foucault's philosophical thought.
+                </p>
+
+                <a
+                  class="foucault-resource-link"
+                  href="images/foucault-concept-map.svg"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Open Full Size
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- SVG 2 -->
+            <article class="foucault-resource-card">
+              <div class="foucault-resource-image">
+                <a
+                  href="images/foucault-timeline.svg"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open Michel Foucault visual resource 2 in a new tab"
+                >
+                  <img
+                    src="images/foucault-timeline.svg"
+                    alt="Michel Foucault philosophical visual resource"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="foucault-resource-content">
+                <span class="foucault-resource-type">SVG RESOURCE</span>
+
+                <h3>Foucault Visual Resource</h3>
+
+                <p>
+                  A visual reference providing additional context for
+                  understanding Foucault's philosophical concepts.
+                </p>
+
+                <a
+                  class="foucault-resource-link"
+                  href="images/foucault-timeline.svg"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Open Full Size
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- SVG 3 -->
+            <article class="foucault-resource-card">
+              <div class="foucault-resource-image">
+                <a
+                  href="images/foucault-panopticon-diagram.svg"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Open Michel Foucault visual resource 3 in a new tab"
+                >
+                  <img
+                    src="images/foucault-panopticon-diagram.svg"
+                    alt="Michel Foucault philosophical visual resource"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+
+              <div class="foucault-resource-content">
+                <span class="foucault-resource-type">SVG RESOURCE</span>
+
+                <h3>Foucault Visual Resource</h3>
+
+                <p>
+                  A visual aid offering another way to explore a major theme or
+                  concept associated with Michel Foucault.
+                </p>
+
+                <a
+                  class="foucault-resource-link"
+                  href="images/foucault-panopticon-diagram.svg"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Open Full Size
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ================= PDF RESOURCE ================= -->
+
+          <article class="foucault-pdf-resource">
+            <div class="foucault-pdf-icon" aria-hidden="true">PDF</div>
+
+            <div class="foucault-pdf-content">
+              <span class="foucault-resource-type">DOWNLOADABLE RESOURCE</span>
+
+              <h3>Michel Foucault Study Guide</h3>
+
+              <p>
+                Use this PDF as a supplementary study resource for exploring
+                Michel Foucault's life, works, concepts, and philosophical
+                ideas.
+              </p>
+
+              <div class="foucault-pdf-actions">
+                <a
+                  class="foucault-resource-link"
+                  href="images/michel-foucault-study-guide.pdf"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Read PDF
+                  <span aria-hidden="true">→</span>
+                </a>
+
+                <a
+                  class="foucault-download-link"
+                  href="images/michel-foucault-study-guide.pdf"
+                  download
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- =====================================================
+     AUTHOR / EDITORIAL INFORMATION
+     ===================================================== -->
+
+        <section class="author-info" aria-label="Article information">
+          <div class="author-details">
+            <div class="author-avatar" aria-hidden="true">KJ</div>
+
+            <div class="author-text">
+              <p class="written-by">
+                <strong>Written by: Kavya Jain</strong>
+              </p>
+
+              <p class="author-role">Philosophy Research &amp; Content</p>
+
+              <p class="article-meta">
+                <span>Published: Augest 01, 2026</span>
+                <span>Last updated: September 28, 2026</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="editorial-note">
+            <p>
+              This article was researched and written as an educational resource
+              on Michel Foucault's philosophy, including his ideas on
+              <strong
+                >power, knowledge, discourse, genealogy, archaeology,
+                discipline, surveillance, biopower, governmentality, and
+                sexuality</strong
+              >. Publication dates, major works, and lecture information have
+              been checked against established scholarly and bibliographic
+              sources.
+            </p>
+          </div>
+        </section>
+
+        <!-- =====================================================
+     SOURCES & FURTHER READING
+     ===================================================== -->
+
+        <section class="sources-section" id="sources">
+          <h2>Sources &amp; Further Reading</h2>
+
+          <p>
+            The information on this page draws on Foucault's published works,
+            collected lecture courses, and established scholarly resources.
+            These sources are provided so readers can verify the historical,
+            bibliographical, and philosophical information discussed throughout
+            the article.
+          </p>
+
+          <ol class="sources-list">
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em
+                >Madness and Civilization: A History of Insanity in the Age of
+                Reason.</em
+              >
+              Vintage Books.
+            </li>
+
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em
+                >The Birth of the Clinic: An Archaeology of Medical
+                Perception.</em
+              >
+              Vintage Books.
+            </li>
+
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em
+                >The Order of Things: An Archaeology of the Human Sciences.</em
+              >
+              Routledge.
+            </li>
+
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em>The Archaeology of Knowledge.</em>
+              Routledge.
+            </li>
+
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em>Discipline and Punish: The Birth of the Prison.</em>
+              Vintage Books.
+            </li>
+
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em
+                >The History of Sexuality, Volume 1: The Will to Knowledge.</em
+              >
+              Penguin Books.
+            </li>
+
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em>The Use of Pleasure: The History of Sexuality, Volume 2.</em>
+              Penguin Books.
+            </li>
+
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em>The Care of the Self: The History of Sexuality, Volume 3.</em>
+              Penguin Books.
+            </li>
+
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em
+                >Confessions of the Flesh: The History of Sexuality, Volume
+                4.</em
+              >
+              Penguin Books, 2018.
+            </li>
+
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em
+                >Society Must Be Defended: Lectures at the Collège de France,
+                1975–76.</em
+              >
+              Picador.
+            </li>
+
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em
+                >Security, Territory, Population: Lectures at the Collège de
+                France, 1977–78.</em
+              >
+              Palgrave Macmillan.
+            </li>
+
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em
+                >The Birth of Biopolitics: Lectures at the Collège de France,
+                1978–79.</em
+              >
+              Palgrave Macmillan.
+            </li>
+
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em
+                >The Hermeneutics of the Subject: Lectures at the Collège de
+                France, 1981–82.</em
+              >
+              Picador.
+            </li>
+
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em
+                >The Government of Self and Others: Lectures at the Collège de
+                France, 1982–83.</em
+              >
+              Palgrave Macmillan.
+            </li>
+
+            <li>
+              <strong>Foucault, Michel.</strong>
+              <em
+                >The Courage of Truth: Lectures at the Collège de France,
+                1983–84.</em
+              >
+              Palgrave Macmillan.
+            </li>
+
+            <li>
+              <strong>Collège de France.</strong>
+              <em>Michel Foucault — Collège de France.</em>
+              Official institutional resources on Foucault's teaching and
+              lecture courses.
+              <a
+                href="https://www.college-de-france.fr/en/chair/michel-foucault-history-of-systems-of-thought-statutory-chair"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                college-de-france.fr
+              </a>
+            </li>
+
+            <li>
+              <strong>Stanford Encyclopedia of Philosophy.</strong>
+              <em>Michel Foucault.</em>
+              Scholarly reference material on Foucault's philosophy, historical
+              methodology, power, knowledge, ethics, and subjectivity.
+              <a
+                href="https://plato.stanford.edu/entries/foucault/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                plato.stanford.edu
+              </a>
+            </li>
+          </ol>
+
+          <p class="sources-note">
+            <strong>Editorial note:</strong>
+            This page distinguishes between Foucault's works published during
+            his lifetime and texts published posthumously from manuscripts or
+            lecture materials. Publication dates refer to the original
+            publication or lecture-course period where applicable, rather than
+            the date of a particular English translation.
+          </p>
+        </section>
+
+        <div class="philosophy-divider"></div>
+
         <!-- =====================================================
          RELATED THINKERS
          ===================================================== -->
-
+      
         <section class="connection" aria-labelledby="related-thinkers-title">
           <span class="section-eyebrow">Continue Exploring</span>
 
@@ -4561,28 +5695,27 @@
           </h2>
 
           <p>
-            Explore other major philosophers connected with existentialism,
-            continental philosophy, social theory, political philosophy, and the
-            development of modern and contemporary thought.
+            Explore other thinkers connected to Foucault's work on power,
+            discourse, discipline, and social theory.
           </p>
 
           <div class="related-links">
-            <a href="friedrich-nietzsche.html">Friedrich Nietzsche</a>
+            <a href="nietzsche.html">Friedrich Nietzsche</a>
             ·
 
             <a href="karl-marx.html">Karl Marx</a>
             ·
 
-            <a href="jean-paul-sartre.html">Jean-Paul Sartre</a>
+            <a href="jeremy-bentham.html">Jeremy Bentham</a>
             ·
 
-            <a href="simone-de-beauvoir.html">Simone de Beauvoir</a>
+            <a href="gilles-deleuze.html">Gilles Deleuze</a>
             ·
 
-            <a href="albert-camus.html">Albert Camus</a>
+            <a href="judith-butler.html">Judith Butler</a>
             ·
 
-            <a href="hegel.html">G. W. F. Hegel</a>
+            <a href="jacques-derrida.html">Jacques Derrida</a>
           </div>
         </section>
 
@@ -4591,6 +5724,7 @@
         <!-- =====================================================
          RELATED AREAS
          ===================================================== -->
+        <!-- FIX: links now match the topics named in the paragraph above them (political philosophy, epistemology, ethics, philosophy of history, philosophy of language) instead of Logic/Modern/Schools, which weren't mentioned -->
 
         <section class="connection" aria-labelledby="related-topics-title">
           <span class="section-eyebrow">Philosophical Connections</span>
@@ -4599,27 +5733,27 @@
 
           <p>
             Michel Foucault's work connects political philosophy, social
-            philosophy, epistemology, ethics, philosophy of history, philosophy
-            of language, and the study of power and modern institutions.
+            philosophy, epistemology, ethics, philosophy of history, and
+            philosophy of language.
           </p>
 
           <div class="related-links">
+            <a href="political-philosophy.html">Political Philosophy</a>
+            ·
+
             <a href="epistemology-branch-philosophy.html">Epistemology</a>
             ·
 
             <a href="ethics-branch-philosophy.html">Ethics</a>
             ·
 
-            <a href="logic-branch-philosophy.html">Logic</a>
+            <a href="history-philosophy.html">Philosophy of History</a>
+            ·
+
+            <a href="language-philosophy.html">Philosophy of Language</a>
             ·
 
             <a href="contemporary-philosophy.html">Contemporary Philosophy</a>
-            ·
-
-            <a href="modern-philosophy.html">Modern Philosophy</a>
-            ·
-
-            <a href="schools.html">Schools of Philosophy</a>
           </div>
         </section>
 
@@ -4708,19 +5842,18 @@
         </div>
 
         <div class="footer-column">
-          <h3>PHILOSOPHY</h3>
+          <h3>Terms and Conditions</h3>
+          <a href="about.html">About</a>
 
-          <a href="ancient-greece.html">Ancient Philosophy</a>
+          <a href="editorial-policy.html">Editorial-policy</a>
 
-          <a href="medieval-philosophy.html">Medieval Philosophy</a>
+          <a href="privacy-policy.html">Policy</a>
 
-          <a href="renaissance-philosophy.html">Renaissance Philosophy</a>
+          <a href="terms.html">Terms</a>
 
-          <a href="enlightenment-philosophy.html">Enlightenment Philosophy</a>
+          <a href="contact.html">Contact</a>
 
-          <a href="modern-philosophy.html">Modern Philosophy</a>
-
-          <a href="contemporary-philosophy.html">Contemporary Philosophy</a>
+          <a href="author-kavya-jain.html">About Author</a>
         </div>
 
         <div class="footer-column">
@@ -4761,12 +5894,8 @@
           <a href="schools.html">Schools of Thought</a>
 
           <a href="branches.html">Branches of Philosophy</a>
-
-          <a href="contact.html">Contact the Library</a>
         </div>
       </div>
-
-      <!-- FOOTER BOTTOM -->
 
       <div class="footer-bottom">
         <div class="footer-bottom-brand">
@@ -4848,8 +5977,6 @@
 
         <div class="appearance-options theme-options">
           <button type="button" data-theme="automatic">Auto</button>
-
-          <button type="button" data-theme="light" class="active">Light</button>
 
           <button type="button" data-theme="dark">Dark</button>
         </div>

@@ -1016,3 +1016,22 @@ body:not(.theme-dark) .history-section-title>p {
         max-width: 100%;
     }
 }
+
+/* ---------- BLACK THEME: light prose on black ---------- */
+body:not(.theme-dark) .intro-text>p,
+body:not(.theme-dark) .era-content p,
+body:not(.theme-dark) .philosopher-info p,
+body:not(.theme-dark) .history-summary p,
+body:not(.theme-dark) .world-card p,
+body:not(.theme-dark) .world-intro,
+body:not(.theme-dark) .history-section-title>p {
+  color: var(--theme-body, #ddd7ca);
+  font-weight: 500;
+}
+
+body:not(.theme-dark) .intro-text a,
+body:not(.theme-dark) .era-content a,
+body:not(.theme-dark) .world-card a:not(.world-btn) {
+  color: #e0bb72;
+  font-weight: 600;
+}

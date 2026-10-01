@@ -2781,3 +2781,69 @@ PHILOSOPHY IN MOTION=========================================================*/
     }
 
 }
+
+/* =========================================================
+   BLACK THEME — replace navy with black on the homepage
+   ========================================================= */
+
+.home-page {
+  --home-bg: #050506;
+  --home-bg-deep: #000000;
+
+  background:
+    radial-gradient(circle at 75% 10%, rgba(201, 169, 110, 0.10), transparent 30%),
+    var(--home-bg);          /* blue radial glow removed */
+}
+
+/* hero */
+.home-hero {
+  background:
+    linear-gradient(90deg,
+      rgba(0, 0, 0, 0.96) 0%,
+      rgba(0, 0, 0, 0.82) 42%,
+      rgba(0, 0, 0, 0.42) 75%,
+      rgba(0, 0, 0, 0.7) 100%);
+}
+
+/* fixed video background overlay */
+#home-video-overlay {
+  background:
+    linear-gradient(90deg,
+      rgba(0, 0, 0, 0.86),
+      rgba(0, 0, 0, 0.66),
+      rgba(0, 0, 0, 0.84));
+}
+
+/* video frame */
+.home-video-frame {
+  background: #050506;
+}
+
+/* gallery thinker cards */
+.home-thinker-image {
+  background: #0b0b0d;
+}
+
+.home-thinker-overlay {
+  background:
+    linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.05) 20%,
+      rgba(0, 0, 0, 0.30) 45%,
+      rgba(0, 0, 0, 0.94) 100%);
+}
+
+.home-thinker-feature:hover .home-thinker-overlay {
+  background:
+    linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.02) 15%,
+      rgba(0, 0, 0, 0.20) 42%,
+      rgba(0, 0, 0, 0.96) 100%);
+}
+
+/* FAQ */
+.home-faq {
+  background:
+    linear-gradient(180deg,
+      rgba(0, 0, 0, 0.96),
+      #050506);
+}

@@ -692,3 +692,22 @@ body.page-wide .quote blockquote {
     justify-content: center;
   }
 }
+
+/* ---------- BLACK THEME FIXES ---------- */
+:root {
+  --background: #050506;
+}
+
+.tree-box {
+  background: #0b0b0d;
+}
+
+.comparison thead th {
+  background: #08080a;          /* solid, so rows don't show through when sticky */
+  color: var(--light-text, #eee7d6);
+}
+
+.comparison tbody tr:hover {
+  background: rgba(201, 161, 90, 0.08);
+}
+

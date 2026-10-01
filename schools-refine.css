@@ -313,3 +313,26 @@ body:not(.theme-dark) .category-nav.nav-reverse a[aria-current="location"] {
 .nav-reverse-inner::-webkit-scrollbar {
   display: none;
 }
+
+/* ---------- BLACK THEME: side navigation ---------- */
+.nav-reverse-inner,
+body:not(.theme-dark) .nav-reverse-inner {
+  background: rgba(8, 8, 10, 0.95);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+}
+
+body:not(.theme-dark) .category-nav.nav-reverse a {
+  color: var(--ink-text, #e9e4d8);
+}
+
+body:not(.theme-dark) .category-nav.nav-reverse a:hover,
+body:not(.theme-dark) .category-nav.nav-reverse a:focus-visible {
+  background: rgba(201, 161, 90, 0.10);
+  color: var(--gold-bright, #e0bb72);
+}
+
+body:not(.theme-dark) .category-nav.nav-reverse a.is-active,
+body:not(.theme-dark) .category-nav.nav-reverse a[aria-current="location"] {
+  color: var(--gold-bright, #e0bb72);
+  background: rgba(201, 161, 90, 0.16);
+}

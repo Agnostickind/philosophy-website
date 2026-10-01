@@ -1582,3 +1582,24 @@ body.command-palette-open {
     }
 
 }
+
+/* =========================================================
+   BLACK THEME — mega menu + command palette
+   ========================================================= */
+
+.mega-menu {
+  background: #050506;
+}
+
+.command-window {
+  background: #08080a;
+}
+
+.philosophy-command-palette,
+.command-backdrop {
+  background: rgba(0, 0, 0, 0.78);
+}
+
+.command-footer kbd {
+  background: rgba(255, 255, 255, 0.04);
+}

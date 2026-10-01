@@ -844,7 +844,7 @@ const searchData = [
         category: "Indian & Eastern",
         description: "Founder of Buddhism and teacher of the Four Noble Truths and Eightfold Path.",
         keywords: "buddha gautama buddhism buddhist four noble truths eightfold path meditation mindfulness nirvana india",
-        url: "thinkers.html#gautama-buddha"
+        url: "gautama-buddha.html"
     },
 
     {
@@ -852,7 +852,7 @@ const searchData = [
         category: "Indian & Eastern",
         description: "Important figure in Jain philosophy associated with non-violence and spiritual liberation.",
         keywords: "mahavira jainism jain philosophy ahimsa non violence self control liberation india",
-        url: "thinkers.html#mahavira"
+        url: "mahavira.html"
     },
 
     {
@@ -860,7 +860,7 @@ const searchData = [
         category: "Indian Philosophy",
         description: "Indian thinker associated with the Arthashastra, political philosophy, economics and statecraft.",
         keywords: "chanakya kautilya indian philosophy arthashastra political philosophy economics statecraft diplomacy india",
-        url: "thinkers.html#chanakya"
+        url: "chanakya.html"
     },
 
     {
@@ -868,7 +868,7 @@ const searchData = [
         category: "Indian Philosophy",
         description: "Indian philosopher and teacher associated with Advaita Vedanta.",
         keywords: "shankara adi shankaracharya advaita vedanta vedanta upanishads brahma atman hindu philosophy india",
-        url: "thinkers.html#adi-shankaracharya"
+        url: "adi-shankaracharya.html"
     },
 
     {
@@ -876,7 +876,7 @@ const searchData = [
         category: "Indian & Eastern",
         description: "Indian Buddhist philosopher associated with Madhyamaka and the philosophy of emptiness.",
         keywords: "nagarjuna madhyamaka buddhism buddhist emptiness sunyata middle way mahayana india",
-        url: "thinkers.html#nagarjuna"
+        url: "nagarjuna.html"
     },
 
     {
@@ -884,7 +884,7 @@ const searchData = [
         category: "Indian Philosophy",
         description: "Modern Indian spiritual thinker known for self-awareness, freedom and questioning authority.",
         keywords: "jiddu krishnamurti krishnamurti self awareness freedom fear psychological conditioning spirituality india",
-        url: "thinkers.html#jiddu-krishnamurti"
+        url: "jiddu-krishnamurti.html"
     },
 
 
@@ -895,7 +895,7 @@ const searchData = [
         category: "Chinese Philosophy",
         description: "Chinese philosopher associated with Confucianism, ethics, education and good governance.",
         keywords: "confucius confucianism chinese philosophy ethics morality education governance virtue filial piety china",
-        url: "thinkers.html#confucius"
+        url: "confucius.html"
     },
 
     {
@@ -903,7 +903,7 @@ const searchData = [
         category: "Chinese Philosophy",
         description: "Chinese philosopher traditionally associated with Taoism and the Tao Te Ching.",
         keywords: "lao tzu laozi taoism daoism tao te ching wu wei nature harmony chinese philosophy china",
-        url: "thinkers.html#lao-tzu"
+        url: "lao-tzu.html"
     },
 
     {
@@ -911,7 +911,7 @@ const searchData = [
         category: "Chinese Philosophy",
         description: "Chinese philosopher associated with Taoist philosophy, freedom of thought and natural living.",
         keywords: "zhuangzi taoism daoism taoist freedom mind natural living parables chinese philosophy china",
-        url: "thinkers.html#zhuangzi"
+        url: "zhuangzi.html"
     },
 
     {
@@ -919,7 +919,7 @@ const searchData = [
         category: "Chinese Philosophy",
         description: "Chinese Confucian philosopher known for his views on human nature and benevolent government.",
         keywords: "mencius confucianism confucian human nature good benevolent government moral education china",
-        url: "thinkers.html#mencius"
+        url: "mencius.html"
     },
 
 
@@ -930,7 +930,7 @@ const searchData = [
         category: "Modern Philosophy",
         description: "French philosopher associated with rationalism, modern philosophy and mind-body dualism.",
         keywords: "descartes rene descartes rationalism modern philosophy mind body dualism cogito geometry epistemology",
-        url: "thinkers.html#rene-descarte"
+        url: "rene-descartes.html"
     },
 
     {
@@ -938,7 +938,7 @@ const searchData = [
         category: "Enlightenment",
         description: "English Enlightenment philosopher associated with empiricism, natural rights and liberalism.",
         keywords: "john locke locke empiricism natural rights social contract liberalism enlightenment government",
-        url: "thinkers.html#john-loche"
+        url: "john-locke.html"
     },
 
     {
@@ -946,7 +946,7 @@ const searchData = [
         category: "Enlightenment",
         description: "Scottish philosopher known for empiricism, skepticism and his theory of causation.",
         keywords: "david hume hume empiricism skepticism causation philosophy of mind experience enlightenment",
-        url: "thinkers.html#david-hume"
+        url: "david-hume.html"
     },
 
     {
@@ -954,7 +954,7 @@ const searchData = [
         category: "Enlightenment",
         description: "German philosopher whose work transformed epistemology, metaphysics and moral philosophy.",
         keywords: "kant immanuel kant enlightenment epistemology metaphysics ethics categorical imperative critique pure reason moral philosophy",
-        url: "thinkers.html#immanuel-kant"
+        url: "immanuel-kant.html"
     },
 
     {
@@ -962,7 +962,7 @@ const searchData = [
         category: "Modern Philosophy",
         description: "German philosopher known for pessimism, the will and The World as Will and Representation.",
         keywords: "schopenhauer pessimism will world representation ethics compassion existentialism indian philosophy",
-        url: "thinkers.html#schopenhauer"
+        url: "schopenhauer.html"
     },
 
     {
@@ -970,7 +970,7 @@ const searchData = [
         category: "Modern Philosophy",
         description: "German philosopher and social theorist associated with historical materialism and class struggle.",
         keywords: "karl marx marx marxism communism capitalism class struggle historical materialism political philosophy economics",
-        url: "thinkers.html#karl-marx"
+        url: "karl-marx.html"
     },
 
     {
@@ -978,7 +978,7 @@ const searchData = [
         category: "Modern Philosophy",
         description: "German philosopher known for his critique of morality, will to power and existential thought.",
         keywords: "nietzsche friedrich nietzsche will power ubermensch morality existentialism nihilism god dead philosophy",
-        url: "thinkers.html#neitzsche"
+        url: "nietzsche.html"
     },
 
     {
@@ -986,7 +986,7 @@ const searchData = [
         category: "Contemporary Philosophy",
         description: "French philosopher associated with existentialism, freedom, responsibility and phenomenology.",
         keywords: "sartre jean paul sartre existentialism freedom responsibility phenomenology marxism existence",
-        url: "thinkers.html#jean-paul"
+        url: "jean-paul-sartre.html"
     },
 
     {
@@ -994,7 +994,7 @@ const searchData = [
         category: "Contemporary Philosophy",
         description: "French philosopher and writer associated with absurdism, revolt and freedom.",
         keywords: "camus albert camus absurdism myth sisyphus stranger revolt freedom existentialism",
-        url: "thinkers.html#albert-kamus"
+        url: "albert-camus.html"
     },
 
     {
@@ -1002,7 +1002,7 @@ const searchData = [
         category: "Contemporary Philosophy",
         description: "British philosopher and logician associated with analytic philosophy, logic and philosophy of language.",
         keywords: "bertrand russell russell analytic philosophy logic mathematical logic language pacifism",
-        url: "thinkers.html#russell"
+        url: "bertrand-russell.html"
     },
 
     {
@@ -1010,7 +1010,7 @@ const searchData = [
         category: "Modern Philosophy",
         description: "German idealist philosopher known for dialectics and the philosophy of history.",
         keywords: "hegel hegelian german idealism absolute idealism dialectical method philosophy history",
-        url: "thinkers.html#hegel"
+        url: "hegel.html"
     },
 
     {
@@ -1018,7 +1018,7 @@ const searchData = [
         category: "Modern Philosophy",
         description: "Early modern philosopher associated with rationalism, monism and Ethics.",
         keywords: "spinoza baruch spinoza rationalism monism god nature ethics enlightenment",
-        url: "thinkers.html#spinoza"
+        url: "spinoza.html"
     },
 
     {
@@ -1026,7 +1026,7 @@ const searchData = [
         category: "Contemporary Philosophy",
         description: "French existentialist philosopher associated with feminist philosophy and The Second Sex.",
         keywords: "simone de beauvoir feminist philosophy feminism existentialism second sex freedom otherness phenomenology",
-        url: "thinkers.html#simone"
+        url: "simone-de-beauvoir.html"
     },
 
 
@@ -1037,7 +1037,7 @@ const searchData = [
         category: "Islamic Philosophy",
         description: "Islamic philosopher, theologian and mystic known for his work on theology, ethics and Sufism.",
         keywords: "ghazali al ghazali islamic philosophy theology sufism ethics islam",
-        url: "thinkers.html#al-ghazali"
+        url: "al-ghazali.html"
     },
 
     {
@@ -1045,7 +1045,7 @@ const searchData = [
         category: "Islamic Philosophy",
         description: "Islamic philosopher associated with political philosophy, logic and metaphysics.",
         keywords: "farabi al farabi islamic philosophy political philosophy logic metaphysics neoplatonism aristotle",
-        url: "thinkers.html#al-farabi"
+        url: "al-farabi.html"
     },
 
     {
@@ -1053,7 +1053,7 @@ const searchData = [
         category: "Islamic Philosophy",
         description: "Persian polymath known for contributions to philosophy, medicine, metaphysics and psychology.",
         keywords: "avicenna ibn sina islamic philosophy metaphysics essence existence psychology medicine aristotle",
-        url: "thinkers.html#avicenna"
+        url: "avicenna.html"
     },
 
     {
@@ -1061,7 +1061,7 @@ const searchData = [
         category: "Islamic Philosophy",
         description: "Andalusian philosopher known for his commentaries on Aristotle and defense of rational inquiry.",
         keywords: "averroes ibn rushd islamic philosophy aristotle rationalism faith reason law medicine political philosophy",
-        url: "thinkers.html#averroes"
+        url: "averroes.html"
     },
 
     /* ================= SCHOOLS OF PHILOSOPHY ================= */
@@ -2233,7 +2233,7 @@ function loadAppearanceSettings() {
     const savedTheme =
         localStorage.getItem(
             "appearance-theme"
-        ) || "light";
+        ) || "dark";
 
 
     const savedSpacing =

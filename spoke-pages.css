@@ -1,0 +1,131 @@
+/* Extra styles for Chanakya spoke pages. Link AFTER your existing stylesheets. */
+.breadcrumb {
+    max-width: 900px;
+    margin: 1rem auto 0;
+    padding: 0 1.25rem;
+    font-size: .9rem
+}
+
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem;
+    margin: 0;
+    padding: 0
+}
+
+.breadcrumb li+li::before {
+    content: "›";
+    margin-right: .35rem;
+    opacity: .6
+}
+
+.answer-box {
+    border-left: 4px solid #b88a44;
+    background: rgba(184, 138, 68, .10);
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0;
+    border-radius: 6px
+}
+
+.answer-box strong.label {
+    display: block;
+    font-size: .8rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #b88a44;
+    margin-bottom: .35rem
+}
+
+.inline-toc {
+    border: 1px solid rgba(128, 128, 128, .35);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0
+}
+
+.inline-toc h2 {
+    font-size: 1.05rem;
+    margin: 0 0 .5rem
+}
+
+.inline-toc ol {
+    margin: 0;
+    padding-left: 1.25rem
+}
+
+.table-wrap {
+    overflow-x: auto;
+    margin: 1.25rem 0
+}
+
+.table-wrap table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 560px;
+    font-size: .95rem
+}
+
+.table-wrap th,
+.table-wrap td {
+    border: 1px solid rgba(128, 128, 128, .35);
+    padding: .6rem .75rem;
+    text-align: left;
+    vertical-align: top
+}
+
+.table-wrap th {
+    background: rgba(184, 138, 68, .15)
+}
+
+.diagram {
+    margin: 1.5rem 0;
+    text-align: center
+}
+
+.diagram svg {
+    max-width: 100%;
+    height: auto
+}
+
+.diagram figcaption {
+    font-size: .9rem;
+    opacity: .8;
+    margin-top: .5rem
+}
+
+.hub-link {
+    display: inline-block;
+    margin: .5rem 0 0;
+    font-weight: 600
+}
+
+.deep-dives {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1.25rem 0
+}
+
+.deep-dives a {
+    display: block;
+    border: 1px solid rgba(128, 128, 128, .35);
+    border-radius: 8px;
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit
+}
+
+.deep-dives a:hover {
+    border-color: #b88a44
+}
+
+.deep-dives strong {
+    display: block;
+    margin-bottom: .25rem
+}
+
+.sources li {
+    margin-bottom: .4rem
+}

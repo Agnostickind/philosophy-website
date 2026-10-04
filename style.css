@@ -8394,7 +8394,7 @@ body.theme-dark .home-hero button {
    MAIN SECTION
    ========================================================= */
 
-.foucault-resources {
+.resources {
   width: 100%;
   max-width: 1120px;
 
@@ -8410,7 +8410,7 @@ body.theme-dark .home-hero button {
    SECTION HEADER
    ========================================================= */
 
-.foucault-resources-header {
+.resources-header {
   max-width: 820px;
 
   margin: 0 auto 44px;
@@ -8419,7 +8419,7 @@ body.theme-dark .home-hero button {
 }
 
 
-.foucault-resource-label {
+.resources-label {
   display: inline-block;
 
   margin-bottom: 12px;
@@ -8438,7 +8438,7 @@ body.theme-dark .home-hero button {
 }
 
 
-.foucault-resources-header h2 {
+.resources-header h2 {
   margin: 0 0 16px;
 
   font-family: "Cormorant Garamond", serif;
@@ -8453,7 +8453,7 @@ body.theme-dark .home-hero button {
 }
 
 
-.foucault-resources-header p {
+.resources-header p {
   max-width: 720px;
 
   margin: 0 auto;
@@ -8472,7 +8472,7 @@ body.theme-dark .home-hero button {
    SVG RESOURCE GRID
    ========================================================= */
 
-.foucault-svg-resources {
+.svg-resources {
   display: grid;
 
   grid-template-columns:
@@ -8488,7 +8488,7 @@ body.theme-dark .home-hero button {
    SVG RESOURCE CARD
    ========================================================= */
 
-.foucault-resource-card {
+.resource-card {
   overflow: hidden;
 
   background:
@@ -8512,7 +8512,7 @@ body.theme-dark .home-hero button {
 }
 
 
-.foucault-resource-card:hover {
+.resource-card:hover {
   transform: translateY(-4px);
 
   border-color: rgba(184, 138, 68, 0.55);
@@ -8526,7 +8526,7 @@ body.theme-dark .home-hero button {
    SVG IMAGE AREA
    ========================================================= */
 
-.foucault-resource-image {
+.resource-image {
   width: 100%;
 
   aspect-ratio: 16 / 10;
@@ -8545,7 +8545,7 @@ body.theme-dark .home-hero button {
 }
 
 
-.foucault-resource-image a {
+.resource-image a {
   display: block;
 
   width: 100%;
@@ -8553,7 +8553,7 @@ body.theme-dark .home-hero button {
 }
 
 
-.foucault-resource-image img {
+.resource-image img {
   display: block;
 
   width: 100%;
@@ -8571,8 +8571,8 @@ body.theme-dark .home-hero button {
 }
 
 
-.foucault-resource-card:hover
-.foucault-resource-image img {
+.resource-card:hover
+.resource-image img {
   transform: scale(1.025);
 
   filter:
@@ -8586,12 +8586,12 @@ body.theme-dark .home-hero button {
    CARD CONTENT
    ========================================================= */
 
-.foucault-resource-content {
+.resource-content {
   padding: 24px;
 }
 
 
-.foucault-resource-type {
+.resource-type {
   display: block;
 
   margin-bottom: 8px;
@@ -8610,7 +8610,7 @@ body.theme-dark .home-hero button {
 }
 
 
-.foucault-resource-content h3 {
+.resource-content h3 {
   margin: 0 0 10px;
 
   font-family: "Cormorant Garamond", serif;
@@ -8625,7 +8625,7 @@ body.theme-dark .home-hero button {
 }
 
 
-.foucault-resource-content p {
+.resource-content p {
   margin: 0 0 18px;
 
   font-family: "Cardo", serif;
@@ -8642,7 +8642,7 @@ body.theme-dark .home-hero button {
    SVG LINK
    ========================================================= */
 
-.foucault-resource-link {
+.resource-link {
   display: inline-flex;
 
   align-items: center;
@@ -8665,7 +8665,7 @@ body.theme-dark .home-hero button {
 }
 
 
-.foucault-resource-link:hover {
+.resource-link:hover {
   color: #e0b96d;
 
   gap: 11px;
@@ -8676,7 +8676,7 @@ body.theme-dark .home-hero button {
    PDF RESOURCE
    ========================================================= */
 
-.foucault-pdf-resource {
+.pdf-resource {
   display: flex;
 
   align-items: center;
@@ -8706,7 +8706,7 @@ body.theme-dark .home-hero button {
 }
 
 
-.foucault-pdf-resource:hover {
+.pdf-resource:hover {
   border-color:
     rgba(184, 138, 68, 0.5);
 
@@ -8719,7 +8719,7 @@ body.theme-dark .home-hero button {
    PDF BADGE
    ========================================================= */
 
-.foucault-pdf-icon {
+.pdf-icon {
   flex: 0 0 auto;
 
   display: flex;
@@ -8764,12 +8764,12 @@ body.theme-dark .home-hero button {
    PDF CONTENT
    ========================================================= */
 
-.foucault-pdf-content {
+.pdf-content {
   flex: 1;
 }
 
 
-.foucault-pdf-content h3 {
+.pdf-content h3 {
   margin: 0 0 10px;
 
   font-family: "Cormorant Garamond", serif;
@@ -8784,7 +8784,7 @@ body.theme-dark .home-hero button {
 }
 
 
-.foucault-pdf-content p {
+.pdf-content p {
   max-width: 760px;
 
   margin: 0 0 18px;
@@ -8803,7 +8803,7 @@ body.theme-dark .home-hero button {
    PDF ACTIONS
    ========================================================= */
 
-.foucault-pdf-actions {
+.pdf-actions {
   display: flex;
 
   align-items: center;
@@ -8818,7 +8818,7 @@ body.theme-dark .home-hero button {
    DOWNLOAD BUTTON
    ========================================================= */
 
-.foucault-download-link {
+.download-link {
   display: inline-flex;
 
   align-items: center;
@@ -8851,7 +8851,7 @@ body.theme-dark .home-hero button {
 }
 
 
-.foucault-download-link:hover {
+.download-link:hover {
   background: #b88a44;
 
   border-color: #b88a44;
@@ -8866,7 +8866,7 @@ body.theme-dark .home-hero button {
 
 @media (max-width: 900px) {
 
-  .foucault-svg-resources {
+  .svg-resources {
     grid-template-columns:
       repeat(2, minmax(0, 1fr));
   }
@@ -8880,41 +8880,41 @@ body.theme-dark .home-hero button {
 
 @media (max-width: 650px) {
 
-  .foucault-resources {
+  .resources {
     margin: 60px auto;
 
     padding: 0 18px;
   }
 
 
-  .foucault-resources-header {
+  .resources-header {
     margin-bottom: 30px;
   }
 
 
-  .foucault-resources-header h2 {
+  .resources-header h2 {
     font-size: 2rem;
   }
 
 
-  .foucault-resources-header p {
+  .resources-header p {
     font-size: 0.98rem;
   }
 
 
-  .foucault-svg-resources {
+  .svg-resources {
     grid-template-columns: 1fr;
 
     gap: 20px;
   }
 
 
-  .foucault-resource-content {
+  .resource-content {
     padding: 20px;
   }
 
 
-  .foucault-pdf-resource {
+  .pdf-resource {
     flex-direction: column;
 
     align-items: flex-start;
@@ -8925,24 +8925,134 @@ body.theme-dark .home-hero button {
   }
 
 
-  .foucault-pdf-icon {
+  .pdf-icon {
     width: 64px;
 
     height: 78px;
   }
 
 
-  .foucault-pdf-content h3 {
+  .pdf-content h3 {
     font-size: 1.5rem;
   }
 
 
-  .foucault-pdf-actions {
+  .pdf-actions {
     align-items: flex-start;
 
     flex-direction: column;
 
     gap: 14px;
+  }
+
+}
+
+/* =========================================================
+   STATIC TABLE OF CONTENTS — BLACK & RED THEME
+   ========================================================= */
+
+.static-toc {
+  width: 100%;
+  max-width: 850px;
+  margin: 2rem auto;
+  padding: 1.5rem 1.75rem;
+
+  background: #090909;
+  border: 1px solid rgba(180, 25, 25, 0.45);
+  border-left: 3px solid #b41919;
+  border-radius: 10px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.45),
+    0 0 18px rgba(180, 25, 25, 0.08);
+}
+
+/* TOC heading */
+.static-toc h2 {
+  margin: 0 0 1rem;
+
+  color: #f1f1f1;
+  font-size: 1.35rem;
+  line-height: 1.4;
+}
+
+/* TOC list */
+.static-toc-list {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+/* Individual items */
+.static-toc-list li {
+  margin: 0.5rem 0;
+  padding-left: 0.25rem;
+
+  color: #a8a8a8;
+}
+
+/* Links */
+.static-toc-list a {
+  color: #d2d2d2;
+  text-decoration: none;
+  line-height: 1.6;
+
+  transition:
+    color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+/* Hover */
+.static-toc-list a:hover {
+  color: #e33434;
+  text-decoration: none;
+  padding-left: 4px;
+}
+
+/* Keyboard accessibility */
+.static-toc-list a:focus-visible {
+  color: #ff4a4a;
+  outline: 2px solid #b41919;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent headings from hiding underneath
+   a sticky header */
+h2[id],
+h3[id] {
+  scroll-margin-top: 100px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .static-toc {
+    padding: 1.25rem;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+  }
+
+  .static-toc h2 {
+    font-size: 1.2rem;
+  }
+
+  .static-toc-list {
+    padding-left: 1.25rem;
+  }
+
+  .static-toc-list li {
+    margin: 0.65rem 0;
   }
 
 }

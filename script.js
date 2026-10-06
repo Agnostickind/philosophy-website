@@ -1784,7 +1784,7 @@ languageOptions.forEach((option) => {
 
             /* Fallback */
             window.location.href =
-                "https://agnostickind.github.io/philosophy-website/";
+                "https://libraryofphilosophy.com/";
 
             return;
         }

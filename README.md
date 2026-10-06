@@ -8,16 +8,16 @@ The project brings together philosophical history, major thinkers, branches of p
 
 Visit the live website:
 
-https://agnostickind.github.io/philosophy-website/
+https://libraryofphilosophy.com/
 
 ### Main Sections
 
-- [Philosophy History](https://agnostickind.github.io/philosophy-website/history.html)
-- [Philosophers & Thinkers](https://agnostickind.github.io/philosophy-website/thinkers.html)
-- [Branches of Philosophy](https://agnostickind.github.io/philosophy-website/branches.html)
-- [Philosophical Schools](https://agnostickind.github.io/philosophy-website/schools.html)
-- [Philosophical Works](https://agnostickind.github.io/philosophy-website/books.html)
-- [World Literature](https://agnostickind.github.io/philosophy-website/world-literature.html)
+- [Philosophy History](https://libraryofphilosophy.com/history.html)
+- [Philosophers & Thinkers](https://libraryofphilosophy.com/thinkers.html)
+- [Branches of Philosophy](https://libraryofphilosophy.com/branches.html)
+- [Philosophical Schools](https://libraryofphilosophy.com/schools.html)
+- [Philosophical Works](https://libraryofphilosophy.com/books.html)
+- [World Literature](https://libraryofphilosophy.com/world-literature.html)
 
 ## About the Project
 

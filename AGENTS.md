@@ -98,7 +98,7 @@ SEO changes should remain consistent with the actual content of the page.
 
 The canonical website is:
 
-https://agnostickind.github.io/philosophy-website/
+https://libraryofphilosophy.com/
 
 Do not introduce incorrect, invented, or broken internal URLs.
 

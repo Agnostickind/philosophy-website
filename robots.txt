@@ -23,3 +23,4 @@ Sitemap: https://libraryofphilosophy.com/sitemap.xml
 Sitemap: https://libraryofphilosophy.com/history-sitemap.xml
 Sitemap: https://libraryofphilosophy.com/branches-sitemap.xml
 Sitemap: https://libraryofphilosophy.com/thinkers-sitemap.xml
+Sitemap: https://libraryofphilosophy.com/newpages.xml

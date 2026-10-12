@@ -8492,11 +8492,9 @@ body.theme-dark .home-hero button {
   overflow: hidden;
 
   background:
-    linear-gradient(
-      145deg,
+    linear-gradient(145deg,
       rgba(32, 29, 26, 0.96),
-      rgba(22, 21, 20, 0.98)
-    );
+      rgba(22, 21, 20, 0.98));
 
   border: 1px solid rgba(184, 138, 68, 0.24);
 
@@ -8534,11 +8532,9 @@ body.theme-dark .home-hero button {
   overflow: hidden;
 
   background:
-    radial-gradient(
-      circle at center,
+    radial-gradient(circle at center,
       rgba(184, 138, 68, 0.07),
-      rgba(10, 10, 10, 0.95)
-    );
+      rgba(10, 10, 10, 0.95));
 
   border-bottom:
     1px solid rgba(184, 138, 68, 0.18);
@@ -8571,14 +8567,11 @@ body.theme-dark .home-hero button {
 }
 
 
-.resource-card:hover
-.resource-image img {
+.resource-card:hover .resource-image img {
   transform: scale(1.025);
 
   filter:
-    drop-shadow(
-      0 0 10px rgba(184, 138, 68, 0.12)
-    );
+    drop-shadow(0 0 10px rgba(184, 138, 68, 0.12));
 }
 
 
@@ -8686,11 +8679,9 @@ body.theme-dark .home-hero button {
   padding: 30px;
 
   background:
-    linear-gradient(
-      145deg,
+    linear-gradient(145deg,
       rgba(32, 29, 26, 0.97),
-      rgba(21, 20, 19, 0.99)
-    );
+      rgba(21, 20, 19, 0.99));
 
   border:
     1px solid rgba(184, 138, 68, 0.3);
@@ -8733,11 +8724,9 @@ body.theme-dark .home-hero button {
   height: 92px;
 
   background:
-    linear-gradient(
-      145deg,
+    linear-gradient(145deg,
       #29241e,
-      #1b1917
-    );
+      #1b1917);
 
   border:
     1px solid rgba(184, 138, 68, 0.45);

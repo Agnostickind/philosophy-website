@@ -141,172 +141,281 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       gtag("config", "G-JPZD4Q0LLL");
     </script>
 
-    <!-- =========================================================
-         SCHEMA: WEBPAGE + PERSON
-         ========================================================= -->
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebPage",
-            "@id": "https://libraryofphilosophy.com/martin-heidegger.html#webpage",
-
-            "url": "https://libraryofphilosophy.com/martin-heidegger.html",
-
-            "name": "Martin Heidegger: Being and Time, Dasein & Philosophy | The Great Library",
-
-            "description": "Explore Martin Heidegger's philosophy of Being, Dasein, authenticity, Being and Time, the Kehre, and his later philosophy of technology, along with his political history.",
-
-            "isPartOf": {
-              "@type": "WebSite",
-              "@id": "https://libraryofphilosophy.com/#website",
-              "name": "The Great Library of Philosophy",
-              "url": "https://libraryofphilosophy.com/"
-            },
-
-            "primaryImageOfPage": {
-              "@type": "ImageObject",
-              "url": "https://libraryofphilosophy.com/images/heidegger-young-student.jpeg"
-            },
-
-            "mainEntity": {
-              "@id": "https://libraryofphilosophy.com/martin-heidegger.html#person"
-            }
-          },
-
-          {
+    ```html
+<!-- ================= STRUCTURED DATA ================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://libraryofphilosophy.com/martin-heidegger.html#article",
+      "headline": "Martin Heidegger: Being and Time, Dasein & Philosophy | The Great Library",
+      "description": "Explore Martin Heidegger's philosophy of Being, Dasein, authenticity, Being and Time, the Kehre, and his later philosophy of technology, along with his political history.",
+      "mainEntityOfPage": "https://libraryofphilosophy.com/martin-heidegger.html",
+      "about": {
+        "@id": "https://libraryofphilosophy.com/martin-heidegger.html#person"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://libraryofphilosophy.com/images/heidegger-young-student.jpeg",
+        "caption": "Photograph of Martin Heidegger as a young student"
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://libraryofphilosophy.com/author-kavya-jn.html#person",
+        "name": "Kavya Jain",
+        "url": "https://libraryofphilosophy.com/author-kavya-jn.html"
+      },
+      "publisher": {
+        "@id": "https://libraryofphilosophy.com/#organization"
+      },
+      "datePublished": "2026-10-04",
+      "dateModified": "2026-10-04",
+      "inLanguage": "en",
+      "articleSection": "Modern Philosophy",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".quick-answer"]
+      },
+      "citation": [
+        {
+          "@type": "Book",
+          "name": "Being and Time",
+          "author": {
             "@type": "Person",
-            "@id": "https://libraryofphilosophy.com/martin-heidegger.html#person",
-
-            "name": "Martin Heidegger",
-
-            "alternateName": ["Heidegger"],
-
-            "description": "Martin Heidegger was a German philosopher best known for Being and Time and his investigations into Being, Dasein, authenticity, phenomenology, hermeneutics, language, and technology.",
-
-            "image": {
-              "@type": "ImageObject",
-              "url": "https://libraryofphilosophy.com/images/heidegger-young-student.jpeg"
-            },
-
-            "birthDate": "1889-09-26",
-
-            "deathDate": "1976-05-26",
-
-            "birthPlace": {
-              "@type": "Place",
-              "name": "Messkirch, Grand Duchy of Baden, German Empire"
-            },
-
-            "deathPlace": {
-              "@type": "Place",
-              "name": "Freiburg im Breisgau, West Germany"
-            },
-
-            "nationality": "German",
-
-            "jobTitle": ["Philosopher", "University professor"],
-
-            "hasOccupation": [
-              {
-                "@type": "Occupation",
-                "name": "Philosopher"
-              },
-              {
-                "@type": "Occupation",
-                "name": "University professor"
-              }
-            ],
-
-            "alumniOf": {
-              "@type": "CollegeOrUniversity",
-              "name": "University of Freiburg"
-            },
-
-            "knowsAbout": [
-              "Phenomenology",
-              "Ontology",
-              "Existential philosophy",
-              "Hermeneutics",
-              "Philosophy of technology",
-              "Metaphysics",
-              "Philosophy of Being",
-              "Dasein",
-              "Authenticity"
-            ],
-
-            "sameAs": [
-              "https://en.wikipedia.org/wiki/Martin_Heidegger",
-              "https://www.britannica.com/biography/Martin-Heidegger"
-            ]
+            "name": "Martin Heidegger"
           }
-        ]
-      }
-    </script>
-
-    <!-- =========================================================
-         SCHEMA: FAQ
-         ========================================================= -->
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Who was Martin Heidegger?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Martin Heidegger was a German philosopher best known for Being and Time and for his investigations into Being, Dasein, authenticity, phenomenology, and the conditions of human existence."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Martin Heidegger famous for?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Heidegger is best known for Being and Time, his analysis of Dasein and authenticity, his approach to phenomenology and ontology, his later philosophy of language, art, and technology, and his controversial political involvement during the Nazi period."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Dasein in Heidegger's philosophy?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Dasein is Heidegger's term for the distinctive mode of human existence examined in Being and Time. Dasein is the being for whom its own Being is an issue and whose existence is always situated within a meaningful world."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Was Martin Heidegger a Nazi?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Heidegger joined the Nazi Party in May 1933 and served as rector of the University of Freiburg from 1933 to 1934. His political involvement, later writings, and the antisemitic passages published in the Black Notebooks have been the subject of extensive scholarly debate."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the Kehre or 'turn' in Heidegger's thought?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Kehre refers to a transformation in Heidegger's later philosophy. His focus increasingly shifted from the existential analysis of Dasein in Being and Time toward the history of Being, language, art, poetry, and technology."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between Heidegger and Sartre?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sartre developed a form of existentialism that emphasized human freedom and responsibility, while Heidegger rejected interpreting his philosophy primarily as a doctrine of human freedom and emphasized the question of Being. Heidegger discussed this distinction explicitly in his Letter on Humanism."
-            }
+        },
+        {
+          "@type": "Book",
+          "name": "The Basic Problems of Phenomenology",
+          "author": {
+            "@type": "Person",
+            "name": "Martin Heidegger"
           }
-        ]
+        },
+        {
+          "@type": "Book",
+          "name": "The Question Concerning Technology and Other Essays",
+          "author": {
+            "@type": "Person",
+            "name": "Martin Heidegger"
+          }
+        }
+      ],
+      "isPartOf": {
+        "@id": "https://libraryofphilosophy.com/#website"
       }
-    </script>
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://libraryofphilosophy.com/martin-heidegger.html#person",
+      "name": "Martin Heidegger",
+      "alternateName": [
+        "Heidegger"
+      ],
+      "description": "Martin Heidegger was a German philosopher best known for Being and Time and his investigations into Being, Dasein, authenticity, phenomenology, hermeneutics, language, and technology.",
+      "image": "https://libraryofphilosophy.com/images/heidegger-young-student.jpeg",
+      "birthDate": "1889-09-26",
+      "deathDate": "1976-05-26",
+      "birthPlace": {
+        "@type": "Place",
+        "name": "Messkirch, Grand Duchy of Baden, German Empire"
+      },
+      "deathPlace": {
+        "@type": "Place",
+        "name": "Freiburg im Breisgau, West Germany"
+      },
+      "nationality": "German",
+      "jobTitle": [
+        "Philosopher",
+        "University professor"
+      ],
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Philosopher"
+        },
+        {
+          "@type": "Occupation",
+          "name": "University professor"
+        }
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Freiburg"
+      },
+      "knowsAbout": [
+        "Phenomenology",
+        "Ontology",
+        "Existential philosophy",
+        "Hermeneutics",
+        "Philosophy of technology",
+        "Metaphysics",
+        "Philosophy of Being",
+        "Dasein",
+        "Authenticity",
+        "Being and Time",
+        "History of Being"
+      ],
+      "notableWork": [
+        "Being and Time",
+        "The Basic Problems of Phenomenology",
+        "The Question Concerning Technology",
+        "Letter on Humanism"
+      ],
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Martin_Heidegger",
+        "https://www.britannica.com/biography/Martin-Heidegger"
+      ],
+      "url": "https://libraryofphilosophy.com/martin-heidegger.html"
+    },
+
+    {
+      "@type": "DefinedTermSet",
+      "name": "Key terms in Martin Heidegger's philosophy",
+      "hasDefinedTerm": [
+        {
+          "@type": "DefinedTerm",
+          "name": "Dasein",
+          "description": "Heidegger's term for the distinctive mode of human existence, the being for whom its own Being is an issue and whose existence is always situated within a meaningful world."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Being",
+          "description": "The fundamental philosophical question at the center of Heidegger's thought concerning what it means for beings to be and the meaning of Being itself."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Authenticity",
+          "description": "A mode of existence in which Dasein takes responsibility for its own possibilities rather than simply conforming to the anonymous norms of the they."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Being-in-the-world",
+          "description": "Heidegger's account of human existence as fundamentally situated within a meaningful world rather than existing as an isolated subject detached from its surroundings."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Kehre",
+          "description": "The term commonly used for the transformation in Heidegger's later philosophy toward questions concerning the history of Being, language, art, poetry, and technology."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Enframing",
+          "description": "Heidegger's term Gestell for the mode of revealing associated with modern technology, in which beings tend to appear primarily as resources available for ordering and use."
+        }
+      ]
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://libraryofphilosophy.com/martin-heidegger.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://libraryofphilosophy.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Modern Philosophy",
+          "item": "https://libraryofphilosophy.com/modern-philosophy.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Martin Heidegger",
+          "item": "https://libraryofphilosophy.com/martin-heidegger.html"
+        }
+      ]
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://libraryofphilosophy.com/#website",
+      "url": "https://libraryofphilosophy.com/",
+      "name": "The Great Library of Philosophy",
+      "description": "An educational resource on philosophy, philosophers, traditions, schools and major ideas.",
+      "publisher": {
+        "@id": "https://libraryofphilosophy.com/#organization"
+      }
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://libraryofphilosophy.com/#organization",
+      "name": "The Great Library of Philosophy",
+      "url": "https://libraryofphilosophy.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://libraryofphilosophy.com/favicon-192x192.png"
+      }
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://libraryofphilosophy.com/martin-heidegger.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who was Martin Heidegger?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Martin Heidegger was a German philosopher best known for Being and Time and for his investigations into Being, Dasein, authenticity, phenomenology, and the conditions of human existence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Martin Heidegger famous for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Heidegger is best known for Being and Time, his analysis of Dasein and authenticity, his approach to phenomenology and ontology, his later philosophy of language, art, and technology, and his controversial political involvement during the Nazi period."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Dasein in Heidegger's philosophy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dasein is Heidegger's term for the distinctive mode of human existence examined in Being and Time. Dasein is the being for whom its own Being is an issue and whose existence is always situated within a meaningful world."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was Martin Heidegger a Nazi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Heidegger joined the Nazi Party in May 1933 and served as rector of the University of Freiburg from 1933 to 1934. His political involvement, later writings, and the antisemitic passages published in the Black Notebooks have been the subject of extensive scholarly debate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Kehre or 'turn' in Heidegger's thought?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Kehre refers to a transformation in Heidegger's later philosophy. His focus increasingly shifted from the existential analysis of Dasein in Being and Time toward the history of Being, language, art, poetry, and technology."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between Heidegger and Sartre?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sartre developed a form of existentialism that emphasized human freedom and responsibility, while Heidegger rejected interpreting his philosophy primarily as a doctrine of human freedom and emphasized the question of Being. Heidegger discussed this distinction explicitly in his Letter on Humanism."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+```
+
 
     <!-- =========================================================
          STYLESHEETS

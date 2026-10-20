@@ -16,12 +16,19 @@
     />
 
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NCXRWR8P');</script>
-<!-- End Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NCXRWR8P");
+    </script>
+    <!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -29,8 +36,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     />
 
     <meta name="author" content="Kavya Jain" />
-
-  
 
     <meta name="theme-color" content="#b88a44" />
 
@@ -166,40 +171,309 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       gtag("config", "G-JPZD4Q0LLL");
     </script>
 
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
+   ```html
+<!-- =========================================================
+     SCHEMA: ARTICLE + PERSON + DEFINED TERMS + BREADCRUMB
+     + WEBSITE + ORGANIZATION
+     ========================================================= -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "Article",
+      "@id": "https://libraryofphilosophy.com/seneca.html#article",
+
+      "headline": "Seneca: Roman Stoicism, Ethics & the Art of Living | The Great Library",
+
+      "description": "Explore Seneca's life and philosophy, including Roman Stoicism, ethics, anger, time, mortality, virtue, practical philosophy, and his major works such as Letters to Lucilius and On the Shortness of Life.",
+
+      "mainEntityOfPage": "https://libraryofphilosophy.com/seneca.html",
+
+      "about": {
+        "@id": "https://libraryofphilosophy.com/seneca.html#person"
+      },
+
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://libraryofphilosophy.com/images/senecaseneca-roman-stoicism.jpg"
+      },
+
+      "author": {
         "@type": "Person",
-        "name": "Seneca",
-        "alternateName": ["Lucius Annaeus Seneca", "Seneca the Younger"],
-        "description": "Seneca was a Roman Stoic philosopher, statesman, and dramatist whose Letters to Lucilius and On the Shortness of Life developed a practical philosophy of time, emotion, and virtue, and who served as tutor and advisor to the emperor Nero.",
-        "birthDate": "c. 4 BCE",
-        "deathDate": "65",
-        "birthPlace": {
-          "@type": "Place",
-          "name": "Corduba, Hispania (present-day Córdoba, Spain)"
+        "name": "Kavya Jain",
+        "url": "https://libraryofphilosophy.com/author-kavya-jn.html"
+      },
+
+      "publisher": {
+        "@id": "https://libraryofphilosophy.com/#organization"
+      },
+
+      "datePublished": "2026-10-04",
+      "dateModified": "2026-10-04",
+
+      "inLanguage": "en",
+
+      "articleSection": "Ancient Philosophy",
+
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".quick-answer"
+        ]
+      },
+
+      "citation": [
+        {
+          "@type": "Book",
+          "name": "Letters to Lucilius",
+          "author": {
+            "@type": "Person",
+            "name": "Seneca"
+          }
         },
-        "deathPlace": {
-          "@type": "Place",
-          "name": "Rome"
+        {
+          "@type": "Book",
+          "name": "On the Shortness of Life",
+          "author": {
+            "@type": "Person",
+            "name": "Seneca"
+          }
         },
-        "jobTitle": ["Stoic philosopher", "Statesman", "Dramatist"],
-        "knowsAbout": [
-          "Stoicism",
-          "Ethics",
-          "Roman political philosophy",
-          "Tragedy",
-          "Practical philosophy"
-        ],
-        "notableWork": [
-          "Letters to Lucilius",
-          "On the Shortness of Life",
-          "On Anger"
-        ],
-        "sameAs": "https://en.wikipedia.org/wiki/Seneca_the_Younger"
+        {
+          "@type": "Book",
+          "name": "On Anger",
+          "author": {
+            "@type": "Person",
+            "name": "Seneca"
+          }
+        },
+        {
+          "@type": "Book",
+          "name": "Seneca: A Life",
+          "author": {
+            "@type": "Person",
+            "name": "Emily Wilson"
+          }
+        }
+      ],
+
+      "isPartOf": {
+        "@id": "https://libraryofphilosophy.com/#website"
       }
-    </script>
+    },
+
+
+    {
+      "@type": "Person",
+      "@id": "https://libraryofphilosophy.com/seneca.html#person",
+
+      "name": "Seneca",
+
+      "alternateName": [
+        "Lucius Annaeus Seneca",
+        "Seneca the Younger"
+      ],
+
+      "description": "Seneca was a Roman Stoic philosopher, statesman, and dramatist whose Letters to Lucilius and On the Shortness of Life developed a practical philosophy of time, emotion, and virtue, and who served as tutor and advisor to the emperor Nero.",
+
+      "url": "https://libraryofphilosophy.com/seneca.html",
+
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://libraryofphilosophy.com/images/senecaseneca-roman-stoicism.jpg"
+      },
+
+      "birthDate": "c. 4 BCE",
+
+      "deathDate": "65",
+
+      "birthPlace": {
+        "@type": "Place",
+        "name": "Corduba, Hispania",
+        "alternateName": "Córdoba, Spain"
+      },
+
+      "deathPlace": {
+        "@type": "Place",
+        "name": "Rome, Roman Empire",
+        "alternateName": "Rome, Italy"
+      },
+
+      "jobTitle": [
+        "Stoic philosopher",
+        "Statesman",
+        "Dramatist"
+      ],
+
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Philosopher"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Statesman"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Dramatist"
+        }
+      ],
+
+      "knowsAbout": [
+        "Stoicism",
+        "Ethics",
+        "Roman political philosophy",
+        "Tragedy",
+        "Practical philosophy",
+        "Virtue",
+        "Emotions",
+        "Anger",
+        "Mortality",
+        "Time",
+        "Self-mastery",
+        "Stoic ethics"
+      ],
+
+      "notableWork": [
+        {
+          "@type": "Book",
+          "name": "Letters to Lucilius"
+        },
+        {
+          "@type": "Book",
+          "name": "On the Shortness of Life"
+        },
+        {
+          "@type": "Book",
+          "name": "On Anger"
+        },
+        {
+          "@type": "Book",
+          "name": "On the Happy Life"
+        },
+        {
+          "@type": "Book",
+          "name": "On Clemency"
+        }
+      ],
+
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Seneca_the_Younger"
+      ]
+    },
+
+
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://libraryofphilosophy.com/seneca.html#definedterms",
+
+      "name": "Key Concepts in Seneca's Philosophy",
+
+      "description": "Key philosophical concepts associated with Seneca, including Stoic virtue, emotional discipline, mortality, the use of time, self-mastery, and practical philosophy.",
+
+      "hasDefinedTerm": [
+        {
+          "@type": "DefinedTerm",
+          "name": "Stoicism",
+          "description": "A Hellenistic philosophical tradition emphasizing virtue, rational judgment, self-mastery, and living in accordance with nature."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Virtue",
+          "description": "For Seneca, moral virtue is the central good and the foundation of a rational and flourishing life."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Emotional Discipline",
+          "description": "The Stoic practice of examining and regulating destructive passions through rational judgment."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Anger",
+          "description": "Seneca analyzes anger as a destructive passion that can be resisted through rational reflection and deliberate self-control."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Mortality",
+          "description": "Seneca treats awareness of death as an important philosophical practice for clarifying values and living deliberately."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Use of Time",
+          "description": "Seneca argues that human beings should use their limited time deliberately rather than allowing it to be consumed by distractions and trivial pursuits."
+        }
+      ]
+    },
+
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://libraryofphilosophy.com/seneca.html#breadcrumb",
+
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://libraryofphilosophy.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hellenistic and Roman Philosophy",
+          "item": "https://libraryofphilosophy.com/hellenistic-roman-philosophy.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Seneca",
+          "item": "https://libraryofphilosophy.com/seneca.html"
+        }
+      ]
+    },
+
+
+    {
+      "@type": "WebSite",
+      "@id": "https://libraryofphilosophy.com/#website",
+
+      "url": "https://libraryofphilosophy.com/",
+
+      "name": "The Great Library of Philosophy",
+
+      "description": "An educational library exploring the history, thinkers, schools, branches, and major ideas of philosophy.",
+
+      "publisher": {
+        "@id": "https://libraryofphilosophy.com/#organization"
+      },
+
+      "inLanguage": "en"
+    },
+
+
+    {
+      "@type": "Organization",
+      "@id": "https://libraryofphilosophy.com/#organization",
+
+      "name": "The Great Library of Philosophy",
+
+      "url": "https://libraryofphilosophy.com/",
+
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://libraryofphilosophy.com/images/logo.png"
+      }
+    }
+
+  ]
+}
+</script>
+```
+
 
     <script type="application/ld+json">
       {
@@ -234,18 +508,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     </script>
 
-         <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="thinkers-refine.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="thinkers-refine.css" />
     <link rel="stylesheet" href="home-refine.css" />
-       
+
     <link rel="stylesheet" href="nav-bar.css" />
   </head>
 
-   <body>
-   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCXRWR8P"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NCXRWR8P"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- ================= NAVBAR ================= -->
 
     <nav class="navbar">

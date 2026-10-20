@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <!-- =========================================================
          BASIC META
@@ -16,14 +16,19 @@
     />
 
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NCXRWR8P');</script>
-<!-- End Google Tag Manager -->
-
-    
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NCXRWR8P");
+    </script>
+    <!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -31,9 +36,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     />
 
     <meta name="author" content="Kavya Jain" />
-
-
-    
 
     <meta name="theme-color" content="#b88a44" />
 
@@ -141,37 +143,84 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
 
     <!-- =========================================================
-         SCHEMA: WEBPAGE + PERSON
-         ========================================================= -->
+     SCHEMA: ARTICLE + PERSON + DEFINED TERMS + BREADCRUMB
+     + WEBSITE + ORGANIZATION
+     ========================================================= -->
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "WebPage",
-            "@id": "https://libraryofphilosophy.com/thomas-aquinas.html#webpage",
+            "@type": "Article",
+            "@id": "https://libraryofphilosophy.com/thomas-aquinas.html#article",
 
-            "url": "https://libraryofphilosophy.com/thomas-aquinas.html",
-
-            "name": "Thomas Aquinas: Philosophy, Five Ways & Natural Law | The Great Library",
+            "headline": "Thomas Aquinas: Philosophy, Five Ways & Natural Law | The Great Library",
 
             "description": "Learn about Thomas Aquinas, the medieval philosopher and theologian, his Five Ways, natural law theory, Aristotelian philosophy, Summa Theologica, and influence on Western philosophy.",
 
-            "isPartOf": {
-              "@type": "WebSite",
-              "@id": "https://libraryofphilosophy.com/#website",
-              "name": "The Great Library of Philosophy",
-              "url": "https://libraryofphilosophy.com/"
+            "mainEntityOfPage": "https://libraryofphilosophy.com/thomas-aquinas.html",
+
+            "about": {
+              "@id": "https://libraryofphilosophy.com/thomas-aquinas.html#person"
             },
 
-            "primaryImageOfPage": {
+            "image": {
               "@type": "ImageObject",
               "url": "https://libraryofphilosophy.com/images/thomas-Aquinas-ancient-medieval.jpg"
             },
 
-            "mainEntity": {
-              "@id": "https://libraryofphilosophy.com/thomas-aquinas.html#person"
+            "author": {
+              "@type": "Person",
+              "name": "Kavya Jain",
+              "url": "https://libraryofphilosophy.com/author-kavya-jn.html"
+            },
+
+            "publisher": {
+              "@id": "https://libraryofphilosophy.com/#organization"
+            },
+
+            "datePublished": "2026-10-04",
+            "dateModified": "2026-10-04",
+
+            "inLanguage": "en",
+
+            "articleSection": "Medieval Philosophy",
+
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".quick-answer"]
+            },
+
+            "citation": [
+              {
+                "@type": "Book",
+                "name": "Summa Theologiae",
+                "author": {
+                  "@type": "Person",
+                  "name": "Thomas Aquinas"
+                }
+              },
+              {
+                "@type": "Book",
+                "name": "Summa contra Gentiles",
+                "author": {
+                  "@type": "Person",
+                  "name": "Thomas Aquinas"
+                }
+              },
+              {
+                "@type": "Book",
+                "name": "The Philosophy of Thomas Aquinas",
+                "author": {
+                  "@type": "Person",
+                  "name": "Eleonore Stump"
+                }
+              }
+            ],
+
+            "isPartOf": {
+              "@id": "https://libraryofphilosophy.com/#website"
             }
           },
 
@@ -188,6 +237,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             ],
 
             "description": "Thomas Aquinas (c. 1225–1274) was a medieval Dominican friar, philosopher, and theologian whose scholastic philosophy integrated Aristotelian philosophy with Christian theology. His thought developed influential accounts of metaphysics, ethics, natural law, natural theology, and the relationship between faith and reason.",
+
+            "url": "https://libraryofphilosophy.com/thomas-aquinas.html",
 
             "image": {
               "@type": "ImageObject",
@@ -245,13 +296,136 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               "Natural theology",
               "Philosophy of religion",
               "Faith and reason",
-              "Christian theology"
+              "Christian theology",
+              "Five Ways",
+              "Act and potency",
+              "Essence and existence",
+              "Analogy of being",
+              "Divine simplicity"
+            ],
+
+            "notableWork": [
+              {
+                "@type": "Book",
+                "name": "Summa Theologiae"
+              },
+              {
+                "@type": "Book",
+                "name": "Summa contra Gentiles"
+              },
+              {
+                "@type": "Book",
+                "name": "De ente et essentia"
+              },
+              {
+                "@type": "Book",
+                "name": "Commentary on Aristotle's Metaphysics"
+              }
             ],
 
             "sameAs": [
               "https://en.wikipedia.org/wiki/Thomas_Aquinas",
               "https://www.britannica.com/biography/Saint-Thomas-Aquinas"
             ]
+          },
+
+          {
+            "@type": "DefinedTermSet",
+            "@id": "https://libraryofphilosophy.com/thomas-aquinas.html#definedterms",
+
+            "name": "Key Concepts in Thomas Aquinas's Philosophy",
+
+            "description": "Key philosophical concepts associated with Thomas Aquinas, including natural law, the Five Ways, act and potency, essence and existence, analogy of being, and natural theology.",
+
+            "hasDefinedTerm": [
+              {
+                "@type": "DefinedTerm",
+                "name": "Natural Law",
+                "description": "Aquinas's account of moral law as the rational creature's participation in the eternal law."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Five Ways",
+                "description": "Five arguments presented by Aquinas for demonstrating the existence of God from features of the observable world."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Act and Potency",
+                "description": "Aquinas's Aristotelian framework for explaining change, actuality, and potentiality."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Essence and Existence",
+                "description": "A distinction central to Aquinas's metaphysics between what a thing is and the fact that it exists."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Analogy of Being",
+                "description": "Aquinas's account of how language about God can be meaningful without treating divine and created being as identical."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Natural Theology",
+                "description": "The philosophical investigation of God and divine attributes through reason rather than revelation alone."
+              }
+            ]
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://libraryofphilosophy.com/thomas-aquinas.html#breadcrumb",
+
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://libraryofphilosophy.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Medieval Philosophy",
+                "item": "https://libraryofphilosophy.com/medieval-philosophy.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Thomas Aquinas",
+                "item": "https://libraryofphilosophy.com/thomas-aquinas.html"
+              }
+            ]
+          },
+
+          {
+            "@type": "WebSite",
+            "@id": "https://libraryofphilosophy.com/#website",
+
+            "url": "https://libraryofphilosophy.com/",
+
+            "name": "The Great Library of Philosophy",
+
+            "description": "An educational library exploring the history, thinkers, schools, branches, and major ideas of philosophy.",
+
+            "publisher": {
+              "@id": "https://libraryofphilosophy.com/#organization"
+            },
+
+            "inLanguage": "en"
+          },
+
+          {
+            "@type": "Organization",
+            "@id": "https://libraryofphilosophy.com/#organization",
+
+            "name": "The Great Library of Philosophy",
+
+            "url": "https://libraryofphilosophy.com/",
+
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://libraryofphilosophy.com/images/logo.png"
+            }
           }
         ]
       }
@@ -299,10 +473,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
          STYLESHEETS
          ========================================================= -->
 
-         <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="thinkers-refine.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="thinkers-refine.css" />
     <link rel="stylesheet" href="home-refine.css" />
-       
+
     <link rel="stylesheet" href="nav-bar.css" />
 
     <!-- =========================================================
@@ -325,14 +499,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   </head>
 
-   <body>
-   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCXRWR8P"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NCXRWR8P"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- ================= NAVBAR ================= -->
 
-   <nav class="navbar">
+    <nav class="navbar">
       <a href="index.html" class="logo">
         <h2>Φ Philosophy</h2>
       </a>
@@ -1804,7 +1984,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="contact.html">Contact</a>
       </div>
 
-
       <div class="nav-tools">
         <!-- SEARCH -->
 
@@ -1943,7 +2122,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       >
         <div class="mobile-toc-drawer__header">
           <span class="mobile-toc-drawer__title">Contents</span>
-          
 
           <button
             type="button"
@@ -3380,7 +3558,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- PHILOSOPHICAL ERAS -->
 
-         <div class="footer-column">
+        <div class="footer-column">
           <h3>Terms and Conditions</h3>
           <a href="about.html">About</a>
 
@@ -3508,8 +3686,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="appearance-options theme-options">
           <button type="button" data-theme="automatic">Auto</button>
-
-           
 
           <button type="button" data-theme="dark">Dark</button>
         </div>

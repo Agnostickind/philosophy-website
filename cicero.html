@@ -18,14 +18,19 @@
     />
 
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NCXRWR8P');</script>
-<!-- End Google Tag Manager -->
-
-    
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NCXRWR8P");
+    </script>
+    <!-- End Google Tag Manager -->
 
     <meta name="theme-color" content="#b88a44" />
 
@@ -39,24 +44,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       Cicero: Roman Philosopher, Orator & Natural Law | The Great Library
     </title>
 
-     <meta
+    <meta
       name="description"
       content="Explore Cicero's philosophy of natural law, ethics, political philosophy, rhetoric, civic duty, and his role in transmitting Greek philosophy into Latin."
     />
-     <meta name="author" content="Kavya Jain" />
+    <meta name="author" content="Kavya Jain" />
 
     <meta name="theme-color" content="#b88a44" />
-
-
 
     <!-- =========================================================
          CANONICAL
          ========================================================= -->
 
-    <link
-      rel="canonical"
-      href="https://libraryofphilosophy.com/cicero.html"
-    />
+    <link rel="canonical" href="https://libraryofphilosophy.com/cicero.html" />
 
     <!-- =========================================================
          OPEN GRAPH
@@ -143,44 +143,97 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
 
     <!-- =========================================================
-         SCHEMA: WEBPAGE + PERSON
-         ========================================================= -->
+     SCHEMA: ARTICLE + PERSON + DEFINED TERMS + BREADCRUMB
+     + WEBSITE + ORGANIZATION
+     ========================================================= -->
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "WebPage",
+            "@type": "Article",
+            "@id": "https://libraryofphilosophy.com/cicero.html#article",
 
-            "@id": "https://libraryofphilosophy.com/cicero.html#webpage",
-
-            "url": "https://libraryofphilosophy.com/cicero.html",
-
-            "name": "Cicero: Roman Philosopher, Orator & Natural Law | The Great Library",
+            "headline": "Cicero: Roman Philosopher, Orator & Natural Law | The Great Library",
 
             "description": "Explore Cicero's life and philosophy, including his writings on natural law, ethics, political philosophy, rhetoric, civic duty, and the transmission of Greek philosophy into Latin.",
 
-            "isPartOf": {
-              "@type": "WebSite",
-              "@id": "https://libraryofphilosophy.com/#website",
-              "name": "The Great Library of Philosophy",
-              "url": "https://libraryofphilosophy.com/"
+            "mainEntityOfPage": "https://libraryofphilosophy.com/cicero.html",
+
+            "about": {
+              "@id": "https://libraryofphilosophy.com/cicero.html#person"
             },
 
-            "primaryImageOfPage": {
+            "image": {
               "@type": "ImageObject",
               "url": "https://libraryofphilosophy.com/images/cicero-roman-philosophy.jpg"
             },
 
-            "mainEntity": {
-              "@id": "https://libraryofphilosophy.com/cicero.html#person"
+            "author": {
+              "@type": "Person",
+              "name": "Kavya Jain",
+              "url": "https://libraryofphilosophy.com/author-kavya-jn.html"
+            },
+
+            "publisher": {
+              "@id": "https://libraryofphilosophy.com/#organization"
+            },
+
+            "datePublished": "2026-10-04",
+            "dateModified": "2026-10-04",
+
+            "inLanguage": "en",
+
+            "articleSection": "Ancient Philosophy",
+
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".quick-answer"]
+            },
+
+            "citation": [
+              {
+                "@type": "Book",
+                "name": "De Officiis",
+                "author": {
+                  "@type": "Person",
+                  "name": "Cicero"
+                }
+              },
+              {
+                "@type": "Book",
+                "name": "De Legibus",
+                "author": {
+                  "@type": "Person",
+                  "name": "Cicero"
+                }
+              },
+              {
+                "@type": "Book",
+                "name": "De Re Publica",
+                "author": {
+                  "@type": "Person",
+                  "name": "Cicero"
+                }
+              },
+              {
+                "@type": "Book",
+                "name": "Cicero: The Life and Times of Rome's Greatest Politician",
+                "author": {
+                  "@type": "Person",
+                  "name": "Anthony Everitt"
+                }
+              }
+            ],
+
+            "isPartOf": {
+              "@id": "https://libraryofphilosophy.com/#website"
             }
           },
 
           {
             "@type": "Person",
-
             "@id": "https://libraryofphilosophy.com/cicero.html#person",
 
             "name": "Cicero",
@@ -188,6 +241,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             "alternateName": ["Marcus Tullius Cicero"],
 
             "description": "Cicero was a Roman statesman, orator, lawyer, and philosopher whose writings helped transmit Greek philosophical ideas into Latin and addressed ethics, natural law, political philosophy, rhetoric, and civic duty.",
+
+            "url": "https://libraryofphilosophy.com/cicero.html",
 
             "image": {
               "@type": "ImageObject",
@@ -241,13 +296,139 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               "Political philosophy",
               "Rhetoric",
               "Republicanism",
-              "Civic duty"
+              "Civic duty",
+              "Natural law theory",
+              "Moral philosophy",
+              "Roman republicanism",
+              "Philosophical translation"
+            ],
+
+            "notableWork": [
+              {
+                "@type": "Book",
+                "name": "De Officiis"
+              },
+              {
+                "@type": "Book",
+                "name": "De Re Publica"
+              },
+              {
+                "@type": "Book",
+                "name": "De Legibus"
+              },
+              {
+                "@type": "Book",
+                "name": "Tusculan Disputations"
+              },
+              {
+                "@type": "Book",
+                "name": "De Natura Deorum"
+              }
             ],
 
             "sameAs": [
               "https://en.wikipedia.org/wiki/Cicero",
               "https://www.britannica.com/biography/Cicero"
             ]
+          },
+
+          {
+            "@type": "DefinedTermSet",
+            "@id": "https://libraryofphilosophy.com/cicero.html#definedterms",
+
+            "name": "Key Concepts in Cicero's Philosophy",
+
+            "description": "Key philosophical concepts associated with Cicero, including natural law, civic duty, virtue, republican government, rhetoric, and the relationship between philosophy and public life.",
+
+            "hasDefinedTerm": [
+              {
+                "@type": "DefinedTerm",
+                "name": "Natural Law",
+                "description": "Cicero's conception of a universal rational moral law grounded in nature and accessible through human reason."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Civic Duty",
+                "description": "The moral obligations individuals have toward their community and political society."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Virtue",
+                "description": "Moral excellence understood by Cicero as central to ethical life and responsible public conduct."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Republicanism",
+                "description": "A political tradition emphasizing civic participation, public institutions, law, and the common good."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Rhetoric",
+                "description": "The art of persuasive public speech, which Cicero connected with education, political life, and moral responsibility."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Academic Skepticism",
+                "description": "The skeptical philosophical tradition associated with Cicero's engagement with competing Hellenistic philosophical positions."
+              }
+            ]
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://libraryofphilosophy.com/cicero.html#breadcrumb",
+
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://libraryofphilosophy.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Ancient Philosophy",
+                "item": "https://libraryofphilosophy.com/ancient-philosophy.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Cicero",
+                "item": "https://libraryofphilosophy.com/cicero.html"
+              }
+            ]
+          },
+
+          {
+            "@type": "WebSite",
+            "@id": "https://libraryofphilosophy.com/#website",
+
+            "url": "https://libraryofphilosophy.com/",
+
+            "name": "The Great Library of Philosophy",
+
+            "description": "An educational library exploring the history, thinkers, schools, branches, and major ideas of philosophy.",
+
+            "publisher": {
+              "@id": "https://libraryofphilosophy.com/#organization"
+            },
+
+            "inLanguage": "en"
+          },
+
+          {
+            "@type": "Organization",
+            "@id": "https://libraryofphilosophy.com/#organization",
+
+            "name": "The Great Library of Philosophy",
+
+            "url": "https://libraryofphilosophy.com/",
+
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://libraryofphilosophy.com/images/logo.png"
+            }
           }
         ]
       }
@@ -297,10 +478,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
          STYLESHEETS
          ========================================================= -->
 
-         <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="thinkers-refine.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="thinkers-refine.css" />
     <link rel="stylesheet" href="home-refine.css" />
-       
+
     <link rel="stylesheet" href="nav-bar.css" />
 
     <!-- =========================================================
@@ -323,14 +504,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   </head>
 
-   <body>
-   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCXRWR8P"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NCXRWR8P"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- ================= NAVBAR ================= -->
 
-   <nav class="navbar">
+    <nav class="navbar">
       <a href="index.html" class="logo">
         <h2>Φ Philosophy</h2>
       </a>
@@ -1801,7 +1988,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </div>
-
 
       <div class="nav-tools">
         <!-- SEARCH -->
@@ -3374,7 +3560,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- PHILOSOPHICAL ERAS -->
 
-         <div class="footer-column">
+        <div class="footer-column">
           <h3>Terms and Conditions</h3>
           <a href="about.html">About</a>
 
@@ -3502,8 +3688,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="appearance-options theme-options">
           <button type="button" data-theme="automatic">Auto</button>
-
-           
 
           <button type="button" data-theme="dark">Dark</button>
         </div>

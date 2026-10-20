@@ -100,68 +100,237 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       of Freedom | Φ The Great Library of Philosophy
     </title>
 
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
+  
+<!-- ================= STRUCTURED DATA ================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://libraryofphilosophy.com/epictetus.html#article",
+      "headline": "Epictetus: Stoicism, the Dichotomy of Control & Philosophy of Inner Freedom | The Great Library",
+      "description": "Learn about Epictetus, the Greek Stoic philosopher whose teachings on the dichotomy of control, freedom, ethics, and practical philosophy were preserved by his student Arrian in the Discourses and Enchiridion.",
+      "mainEntityOfPage": "https://libraryofphilosophy.com/epictetus.html",
+      "about": {
+        "@id": "https://libraryofphilosophy.com/epictetus.html#person"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://libraryofphilosophy.com/images/stoic-philosophers.jpg",
+        "caption": "Illustration of Epictetus, the Greek Stoic philosopher"
+      },
+      "author": {
         "@type": "Person",
-        "name": "Epictetus",
-        "description": "Epictetus was a Greek Stoic philosopher, born into slavery, whose teachings, preserved by his student Arrian in the Discourses and the Enchiridion, developed the dichotomy of control and a philosophy of inner freedom that profoundly influenced Marcus Aurelius and modern Stoicism.",
-        "birthDate": "c. 50",
-        "deathDate": "c. 135",
-        "birthPlace": {
-          "@type": "Place",
-          "name": "Hierapolis, Phrygia (present-day Turkey)"
-        },
-        "deathPlace": {
-          "@type": "Place",
-          "name": "Nicopolis, Epirus (present-day Greece)"
-        },
-        "jobTitle": ["Stoic philosopher"],
-        "knowsAbout": [
-          "Stoicism",
-          "Ethics",
-          "Philosophy of freedom",
-          "Ancient Greek philosophy",
-          "Practical philosophy"
-        ],
-        "notableWork": ["Enchiridion", "Discourses"],
-        "sameAs": "https://en.wikipedia.org/wiki/Epictetus"
-      }
-    </script>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Who was Epictetus?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Epictetus was a Greek Stoic philosopher, born into slavery, whose teachings, preserved by his student Arrian in the Discourses and the Enchiridion, developed the dichotomy of control and a philosophy of inner freedom that profoundly influenced Marcus Aurelius and modern Stoicism."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the dichotomy of control?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The dichotomy of control is Epictetus's foundational Stoic principle that everything can be divided into what is within our power, namely our own judgments and choices, and what is not, including external events, other people's actions, and our reputation."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the Enchiridion?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Enchiridion, or Handbook, is a concise summary of Epictetus's core Stoic teachings compiled by his student Arrian, intended as a short, practical guide for applying Stoic principles to daily life."
-            }
+        "@id": "https://libraryofphilosophy.com/author-kavya-jn.html#person",
+        "name": "Kavya Jain",
+        "url": "https://libraryofphilosophy.com/author-kavya-jn.html"
+      },
+      "publisher": {
+        "@id": "https://libraryofphilosophy.com/#organization"
+      },
+      "datePublished": "2026-10-04",
+      "dateModified": "2026-10-04",
+      "inLanguage": "en",
+      "articleSection": "Ancient Philosophy",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".quick-answer"]
+      },
+      "citation": [
+        {
+          "@type": "Book",
+          "name": "Discourses",
+          "author": {
+            "@type": "Person",
+            "name": "Epictetus"
           }
-        ]
+        },
+        {
+          "@type": "Book",
+          "name": "Enchiridion",
+          "author": {
+            "@type": "Person",
+            "name": "Epictetus"
+          }
+        },
+        {
+          "@type": "Book",
+          "name": "The Discourses of Epictetus",
+          "author": {
+            "@type": "Person",
+            "name": "Epictetus"
+          }
+        }
+      ],
+      "isPartOf": {
+        "@id": "https://libraryofphilosophy.com/#website"
       }
-    </script>
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://libraryofphilosophy.com/epictetus.html#person",
+      "name": "Epictetus",
+      "alternateName": [
+        "Epictetus of Nicopolis"
+      ],
+      "description": "Epictetus was a Greek Stoic philosopher, born into slavery, whose teachings were preserved by his student Arrian in the Discourses and the Enchiridion and developed a philosophy of ethical discipline, practical freedom, and control over one's judgments and choices.",
+      "birthDate": "c. 50",
+      "deathDate": "c. 135",
+      "birthPlace": {
+        "@type": "Place",
+        "name": "Hierapolis, Phrygia"
+      },
+      "deathPlace": {
+        "@type": "Place",
+        "name": "Nicopolis, Epirus"
+      },
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Stoic philosopher"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Teacher"
+        }
+      ],
+      "knowsAbout": [
+        "Stoicism",
+        "Ethics",
+        "Philosophy of freedom",
+        "Ancient Greek philosophy",
+        "Practical philosophy",
+        "Dichotomy of control",
+        "Stoic ethics",
+        "Moral responsibility"
+      ],
+      "notableWork": [
+        "Enchiridion",
+        "Discourses"
+      ],
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Epictetus"
+      ],
+      "image": "https://libraryofphilosophy.com/images/stoic-philosophers.jpg",
+      "url": "https://libraryofphilosophy.com/epictetus.html"
+    },
+
+    {
+      "@type": "DefinedTermSet",
+      "name": "Key terms in Epictetus's philosophy",
+      "hasDefinedTerm": [
+        {
+          "@type": "DefinedTerm",
+          "name": "Dichotomy of Control",
+          "description": "Epictetus's distinction between what is within our power, especially our judgments and choices, and what is not within our power, including external events and other people's actions."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Prohairesis",
+          "description": "The rational faculty of choice or moral purpose through which a person makes judgments and determines how to respond to circumstances."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Stoic Freedom",
+          "description": "The condition of inner freedom achieved by governing one's judgments and choices rather than depending on external circumstances."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Stoic Ethics",
+          "description": "The ethical framework according to which virtue is the fundamental good and a person should live in accordance with reason and nature."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Assent",
+          "description": "The rational act of accepting or rejecting impressions and judgments, central to Stoic accounts of ethical responsibility and self-mastery."
+        }
+      ]
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://libraryofphilosophy.com/epictetus.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://libraryofphilosophy.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Ancient Philosophy",
+          "item": "https://libraryofphilosophy.com/ancient-philosophy.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Epictetus",
+          "item": "https://libraryofphilosophy.com/epictetus.html"
+        }
+      ]
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://libraryofphilosophy.com/#website",
+      "url": "https://libraryofphilosophy.com/",
+      "name": "The Great Library of Philosophy",
+      "description": "An educational resource on philosophy, philosophers, traditions, schools and major ideas.",
+      "publisher": {
+        "@id": "https://libraryofphilosophy.com/#organization"
+      }
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://libraryofphilosophy.com/#organization",
+      "name": "The Great Library of Philosophy",
+      "url": "https://libraryofphilosophy.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://libraryofphilosophy.com/favicon-192x192.png"
+      }
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://libraryofphilosophy.com/epictetus.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who was Epictetus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Epictetus was a Greek Stoic philosopher, born into slavery, whose teachings, preserved by his student Arrian in the Discourses and the Enchiridion, developed the dichotomy of control and a philosophy of inner freedom that profoundly influenced Marcus Aurelius and modern Stoicism."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the dichotomy of control?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The dichotomy of control is Epictetus's foundational Stoic principle that everything can be divided into what is within our power, namely our own judgments and choices, and what is not, including external events, other people's actions, and our reputation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Enchiridion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Enchiridion, or Handbook, is a concise summary of Epictetus's core Stoic teachings compiled by his student Arrian, intended as a short, practical guide for applying Stoic principles to daily life."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
 
          <link rel="stylesheet" href="style.css" />
  <link rel="stylesheet" href="thinkers-refine.css" />

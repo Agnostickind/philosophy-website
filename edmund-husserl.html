@@ -143,74 +143,92 @@
       gtag("config", "G-JPZD4Q0LLL");
     </script>
 
-    <!-- =========================================================
-         SCHEMA: WEBPAGE + PERSON
-         ========================================================= -->
-
+    <!-- ================= STRUCTURED DATA ================= -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "WebPage",
-            "@id": "https://libraryofphilosophy.com/edmund-husserl.html#webpage",
-
-            "url": "https://libraryofphilosophy.com/edmund-husserl.html",
-
-            "name": "Edmund Husserl: Phenomenology, Intentionality & Ideas | The Great Library of Philosophy",
-
+            "@type": "Article",
+            "@id": "https://libraryofphilosophy.com/edmund-husserl.html#article",
+            "headline": "Edmund Husserl: Phenomenology, Intentionality & Ideas | The Great Library of Philosophy",
             "description": "Explore the life and philosophy of Edmund Husserl, founder of phenomenology, including intentionality, the epoché, phenomenological reduction, the transcendental ego, and the lifeworld.",
-
-            "isPartOf": {
-              "@type": "WebSite",
-              "@id": "https://libraryofphilosophy.com/#website",
-              "name": "The Great Library of Philosophy",
-              "url": "https://libraryofphilosophy.com/"
-            },
-
-            "primaryImageOfPage": {
-              "@type": "ImageObject",
-              "url": "https://libraryofphilosophy.com/images/edmund-Husserl-modern-schools.jpg"
-            },
-
-            "mainEntity": {
+            "mainEntityOfPage": "https://libraryofphilosophy.com/edmund-husserl.html",
+            "about": {
               "@id": "https://libraryofphilosophy.com/edmund-husserl.html#person"
+            },
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://libraryofphilosophy.com/images/edmund-Husserl-modern-schools.jpg",
+              "caption": "Photograph of Edmund Husserl, founder of phenomenology"
+            },
+            "author": {
+              "@type": "Person",
+              "@id": "https://libraryofphilosophy.com/author-kavya-jn.html#person",
+              "name": "Kavya Jain",
+              "url": "https://libraryofphilosophy.com/author-kavya-jn.html"
+            },
+            "publisher": {
+              "@id": "https://libraryofphilosophy.com/#organization"
+            },
+            "datePublished": "2026-10-04",
+            "dateModified": "2026-10-04",
+            "inLanguage": "en",
+            "articleSection": "Modern Philosophy",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".quick-answer"]
+            },
+            "citation": [
+              {
+                "@type": "Book",
+                "name": "Logical Investigations",
+                "author": {
+                  "@type": "Person",
+                  "name": "Edmund Husserl"
+                }
+              },
+              {
+                "@type": "Book",
+                "name": "Ideas Pertaining to a Pure Phenomenology and to a Phenomenological Philosophy",
+                "author": {
+                  "@type": "Person",
+                  "name": "Edmund Husserl"
+                }
+              },
+              {
+                "@type": "Book",
+                "name": "The Crisis of European Sciences and Transcendental Phenomenology",
+                "author": {
+                  "@type": "Person",
+                  "name": "Edmund Husserl"
+                }
+              }
+            ],
+            "isPartOf": {
+              "@id": "https://libraryofphilosophy.com/#website"
             }
           },
 
           {
             "@type": "Person",
             "@id": "https://libraryofphilosophy.com/edmund-husserl.html#person",
-
             "name": "Edmund Husserl",
-
             "alternateName": ["Husserl"],
-
             "description": "Edmund Husserl was a German philosopher and founder of phenomenology, known for his analyses of intentionality, phenomenological reduction, transcendental consciousness, and the lifeworld.",
-
-            "image": {
-              "@type": "ImageObject",
-              "url": "https://libraryofphilosophy.com/images/edmund-Husserl-modern-schools.jpg"
-            },
-
+            "image": "https://libraryofphilosophy.com/images/edmund-Husserl-modern-schools.jpg",
             "birthDate": "1859-04-08",
-
             "deathDate": "1938-04-27",
-
             "birthPlace": {
               "@type": "Place",
               "name": "Prossnitz, Moravia, Austrian Empire"
             },
-
             "deathPlace": {
               "@type": "Place",
               "name": "Freiburg im Breisgau, Germany"
             },
-
             "nationality": "German",
-
             "jobTitle": ["Philosopher", "University professor"],
-
             "hasOccupation": [
               {
                 "@type": "Occupation",
@@ -221,7 +239,6 @@
                 "name": "University professor"
               }
             ],
-
             "alumniOf": [
               {
                 "@type": "CollegeOrUniversity",
@@ -236,7 +253,6 @@
                 "name": "University of Vienna"
               }
             ],
-
             "knowsAbout": [
               "Phenomenology",
               "Intentionality",
@@ -245,13 +261,105 @@
               "Epistemology",
               "Philosophy of mathematics",
               "Philosophy of mind",
-              "Lifeworld"
+              "Lifeworld",
+              "Epoché",
+              "Transcendental ego"
             ],
-
+            "notableWork": [
+              "Logical Investigations",
+              "Ideas Pertaining to a Pure Phenomenology and to a Phenomenological Philosophy",
+              "Cartesian Meditations",
+              "The Crisis of European Sciences and Transcendental Phenomenology"
+            ],
             "sameAs": [
               "https://en.wikipedia.org/wiki/Edmund_Husserl",
               "https://www.britannica.com/biography/Edmund-Husserl"
+            ],
+            "url": "https://libraryofphilosophy.com/edmund-husserl.html"
+          },
+
+          {
+            "@type": "DefinedTermSet",
+            "name": "Key terms in Edmund Husserl's philosophy",
+            "hasDefinedTerm": [
+              {
+                "@type": "DefinedTerm",
+                "name": "Phenomenology",
+                "description": "Husserl's philosophical method and discipline concerned with describing structures of conscious experience and the ways phenomena are given to consciousness."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Intentionality",
+                "description": "The structure by which consciousness is directed toward or is consciousness of something, whether a perceived object, remembered event, imagined possibility, or other intentional object."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Epoché",
+                "description": "The methodological suspension or bracketing of assumptions about the independent existence of the external world in order to investigate how things are given in experience."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Phenomenological Reduction",
+                "description": "The methodological movement through which attention is redirected from the natural attitude toward the structures and conditions of conscious experience."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Transcendental Ego",
+                "description": "The transcendental subjectivity disclosed through phenomenological reflection and associated with the constitutive structures of conscious experience."
+              },
+              {
+                "@type": "DefinedTerm",
+                "name": "Lifeworld",
+                "description": "The pre-theoretical world of everyday experience that provides the meaningful background within which scientific and theoretical activity takes place."
+              }
             ]
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://libraryofphilosophy.com/edmund-husserl.html#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://libraryofphilosophy.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Modern Philosophy",
+                "item": "https://libraryofphilosophy.com/modern-philosophy.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Edmund Husserl",
+                "item": "https://libraryofphilosophy.com/edmund-husserl.html"
+              }
+            ]
+          },
+
+          {
+            "@type": "WebSite",
+            "@id": "https://libraryofphilosophy.com/#website",
+            "url": "https://libraryofphilosophy.com/",
+            "name": "The Great Library of Philosophy",
+            "description": "An educational resource on philosophy, philosophers, traditions, schools and major ideas.",
+            "publisher": {
+              "@id": "https://libraryofphilosophy.com/#organization"
+            }
+          },
+
+          {
+            "@type": "Organization",
+            "@id": "https://libraryofphilosophy.com/#organization",
+            "name": "The Great Library of Philosophy",
+            "url": "https://libraryofphilosophy.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://libraryofphilosophy.com/favicon-192x192.png"
+            }
           }
         ]
       }

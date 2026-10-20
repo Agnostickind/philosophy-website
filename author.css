@@ -161,10 +161,6 @@
   margin-top: 0
 }
 
-.author-section__content p{
-  padding: 0.5rem;
-}
-
 .author-lede {
   grid-column: 2;
   margin: 0;
@@ -397,3 +393,4 @@
     transition: none
   }
 }
+

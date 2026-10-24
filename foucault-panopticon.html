@@ -1,3 +1,11 @@
+<!--
+  HOW TO USE THIS FILE
+  1. HEAD: replace your whole <head>…</head> with the one below.
+  2. BODY: keep your existing GTM <noscript>, <nav class="navbar">…</nav>, footer,
+     scripts and appearance panel exactly as they are.
+  3. Replace everything from <header class="home-hero"> down to the </div> that closes
+     <div class="article-reading-area"> with the block marked "REPLACE FROM HERE".
+-->
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,8 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
-    <!-- Google tag (same as michel-foucault.html) -->
-     <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-JPZD4Q0LLL"
@@ -17,14 +24,13 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-JPZD4Q0LLL");
     </script>
 
     <title>Foucault&#x27;s Panopticon Explained: Surveillance and Power</title>
     <meta
       name="description"
-      content="What is Foucault&#x27;s panopticon? Bentham&#x27;s design, Foucault&#x27;s reading in Discipline and Punish, modern examples like CCTV, and criticisms."
+      content="What is Foucault&#x27;s panopticon? Bentham&#x27;s design, Foucault&#x27;s reading in Discipline and Punish, modern examples like CCTV and social media, and criticisms."
     />
     <meta
       name="robots"
@@ -32,12 +38,19 @@
     />
 
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NCXRWR8P');</script>
-<!-- End Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NCXRWR8P");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta name="author" content="Kavya Jain" />
     <meta name="theme-color" content="#b88a44" />
     <link
@@ -54,21 +67,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     />
     <meta
       property="og:description"
-      content="What is Foucault&#x27;s panopticon? Bentham&#x27;s design, Foucault&#x27;s reading in Discipline and Punish, modern examples like CCTV, and criticisms."
+      content="What is Foucault&#x27;s panopticon? Bentham&#x27;s design, Foucault&#x27;s reading in Discipline and Punish, modern examples like CCTV and social media, and criticisms."
     />
     <meta
       property="og:url"
       content="https://libraryofphilosophy.com/foucault-panopticon.html"
     />
+    <!-- TODO: replace with a unique panopticon image (1200x630) when you have one -->
     <meta
       property="og:image"
       content="https://libraryofphilosophy.com/images/michel-foucault.jpg"
     />
     <meta
       property="og:image:alt"
-      content="Portrait or artistic representation of Michel Foucault"
+      content="Michel Foucault, philosopher of the panopticon and disciplinary power"
     />
-    <meta property="article:modified_time" content="2026-10-03" />
+    <meta property="article:published_time" content="2026-10-03" />
+    <meta property="article:modified_time" content="2026-10-24" />
     <meta property="article:author" content="Kavya Jain" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -77,22 +92,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     />
     <meta
       name="twitter:description"
-      content="What is Foucault&#x27;s panopticon? Bentham&#x27;s design, Foucault&#x27;s reading in Discipline and Punish, modern examples like CCTV, and criticisms."
+      content="What is Foucault&#x27;s panopticon? Bentham&#x27;s design, Foucault&#x27;s reading in Discipline and Punish, modern examples like CCTV and social media, and criticisms."
     />
     <meta
       name="twitter:image"
       content="https://libraryofphilosophy.com/images/michel-foucault.jpg"
     />
 
-         <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="thinkers-refine.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="thinkers-refine.css" />
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
-       
     <link rel="stylesheet" href="spoke-pages.css" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+    <!-- Styles the "In this article" label, which is now a paragraph instead of a heading; tweak to match spoke-pages.css if needed -->
+    <style>
+      .inline-toc .inline-toc-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin: 0 0 0.75rem;
+      }
+    </style>
 
     <script type="application/ld+json">
       {
@@ -101,11 +124,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {
             "@type": "Article",
             "@id": "https://libraryofphilosophy.com/foucault-panopticon.html#article",
-            "headline": "Foucault's Panopticon Explained: Surveillance, Discipline and Power",
-            "description": "What is Foucault's panopticon? Bentham's design, Foucault's reading in Discipline and Punish, modern examples like CCTV, and criticisms.",
+            "headline": "Foucault’s Panopticon Explained: Surveillance, Discipline and Power",
+            "description": "What is Foucault’s panopticon? Bentham’s design, Foucault’s reading in Discipline and Punish, modern examples like CCTV and social media, and criticisms.",
             "image": "https://libraryofphilosophy.com/images/michel-foucault.jpg",
             "datePublished": "2026-10-03",
-            "dateModified": "2026-10-03",
+            "dateModified": "2026-10-24",
             "inLanguage": "en",
             "mainEntityOfPage": "https://libraryofphilosophy.com/foucault-panopticon.html",
             "author": {
@@ -127,11 +150,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               "name": "Michel Foucault",
               "url": "https://libraryofphilosophy.com/michel-foucault.html"
             },
+            "mentions": [
+              {
+                "@type": "Person",
+                "name": "Jeremy Bentham",
+                "url": "https://libraryofphilosophy.com/jeremy-bentham.html"
+              },
+              {
+                "@type": "Person",
+                "name": "Gilles Deleuze",
+                "url": "https://libraryofphilosophy.com/gilles-deleuze.html"
+              }
+            ],
             "citation": [
               "Michel Foucault, Discipline and Punish: The Birth of the Prison, trans. Alan Sheridan (Pantheon, 1977; French original 1975).",
               "Jeremy Bentham, Panopticon; or, The Inspection-House (1791).",
-              "Thomas Mathiesen, “The Viewer Society: Michel Foucault's ‘Panopticon’ Revisited,” Theoretical Criminology 1(2), 1997.",
+              "Thomas Mathiesen, “The Viewer Society: Michel Foucault’s ‘Panopticon’ Revisited,” Theoretical Criminology 1(2), 1997.",
               "Gilles Deleuze, “Postscript on the Societies of Control,” October 59 (1992).",
+              "Shoshana Zuboff, The Age of Surveillance Capitalism (PublicAffairs, 2019).",
               "Gary Gutting, Foucault: A Very Short Introduction (Oxford University Press, 2005)."
             ]
           },
@@ -180,7 +216,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "name": "Who invented the panopticon?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Jeremy Bentham described it in 1787, and it was published in 1791. Foucault made it famous in Discipline and Punish (1975)."
+                  "text": "Jeremy Bentham described it in letters written in 1787 and published it in 1791. Michel Foucault made it famous in Discipline and Punish (1975)."
                 }
               },
               {
@@ -188,7 +224,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "name": "What does Foucault say about the panopticon?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "He treats it as a diagram of disciplinary power: constant possible observation leads people to regulate their own behaviour."
+                  "text": "He treats it as a diagram of disciplinary power: the constant possibility of being observed leads people to regulate their own behaviour."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is panopticism?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Panopticism is Foucault’s name for the panoptic principle as a general form of power: visibility, examination and self-regulation applied across prisons, schools, hospitals, factories and other institutions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Was the panopticon ever built?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Bentham’s own scheme was never built as he designed it, but several prisons were inspired by it, such as Presidio Modelo in Cuba and Stateville Correctional Center in Illinois."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between the panopticon and the synopticon?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In the panopticon, the few watch the many. Thomas Mathiesen’s synopticon (1997) describes the reverse: the many watch the few, especially through mass media."
                 }
               },
               {
@@ -196,7 +256,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "name": "Is social media a panopticon?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Some scholars say it shares panoptic features, such as tracking and self-monitoring, while others argue it differs because the watching is decentralised and often voluntary."
+                  "text": "It shares panoptic features such as tracking, metrics and self-monitoring, but it differs because the watching is decentralised, reciprocal and often voluntary."
                 }
               }
             ]
@@ -206,11 +266,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
   </head>
 
-   <body>
-   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCXRWR8P"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NCXRWR8P"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- ================= NAVBAR ================= -->
 
     <nav class="navbar">
@@ -1758,12 +1824,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span></span>
       </button>
     </nav>
+    <!-- ================= REPLACE FROM HERE ================= -->
     <header class="home-hero">
       <div class="hero-content">
         <h1>
-          Foucault's Panopticon Explained: Surveillance, Discipline and Power
+          Foucault’s Panopticon Explained: Surveillance, Discipline and Power
         </h1>
-    <p class="subtitle"> Michel Foucault’s Panopticon explains how Jeremy Bentham’s prison design became a model for understanding surveillance, discipline, and power. In <em>Discipline and Punish</em>, Foucault used the Panopticon to show how the possibility of constant observation can encourage self-regulation and shape behavior in modern institutions and society. </p>
+        <p class="subtitle">
+          Michel Foucault’s panopticon explains how Jeremy Bentham’s prison
+          design became a model for understanding surveillance, discipline, and
+          power. In <em>Discipline and Punish</em>, Foucault used the panopticon
+          to show how the possibility of constant observation can encourage
+          self-regulation and shape behavior in modern institutions and society.
+        </p>
       </div>
     </header>
 
@@ -1777,7 +1850,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </nav>
 
     <div class="article-reading-area">
-      <!-- Same TOC shell as michel-foucault.html: article-toc.js fills these automatically -->
       <aside class="article-toc" aria-label="Article contents">
         <div class="article-toc__header">
           <span class="article-toc__title">Contents</span>
@@ -1828,113 +1900,122 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <section class="about-home">
           <p class="byline">
             By <a href="author-kavya-jn.html">Kavya Jain</a> · Updated
-            <time datetime="2026-10-03">2026-10-03</time> · Part of our complete
-            guide: <a href="michel-foucault.html">Michel Foucault</a>
+            <time datetime="2026-10-24">2026-10-24</time> · Part of our complete
+            guide:
+            <a href="michel-foucault.html">Michel Foucault</a>
           </p>
           <div class="answer-box">
-            <strong class="label">Short answer</strong>The
-            <strong>panopticon</strong> is a prison design by Jeremy Bentham in
-            which a central tower can see every cell while inmates cannot tell
-            when they are watched. In <em>Discipline and Punish</em> (1975),
-            Michel Foucault treats it as a model of modern
-            <strong>disciplinary power</strong>: people behave as if always
+            <strong class="label">Short answer</strong>
+            The <strong>panopticon</strong> is a prison design by Jeremy Bentham
+            in which a central tower can see every cell while inmates cannot
+            tell when they are watched. In
+            <em>Discipline and Punish</em> (1975), Michel Foucault treats it as
+            a model of modern <strong>disciplinary power</strong>, which he
+            calls <strong>panopticism</strong>: people behave as if always
             observed, so they police themselves.
           </div>
           <nav class="inline-toc" aria-label="In this article">
-            <h2>In this article</h2>
+            <p class="inline-toc-title">In this article</p>
             <ol>
-              <li><a href="#what">What is the panopticon?</a></li>
-              <li><a href="#how">How the panopticon works</a></li>
               <li>
-                <a href="#plague">The plague town and the leper: two models</a>
-              </li>
-              <li><a href="#figure">A figure, not just a building</a></li>
-              <li><a href="#modern">Modern examples of panoptic logic</a></li>
-              <li>
-                <a href="#critique"
-                  >Criticisms of Foucault's use of the panopticon</a
+                <a href="#what"
+                  >What is the panopticon? Meaning and Bentham’s design</a
                 >
               </li>
-              <li><a href="#faq">Frequently asked questions</a></li>
+              <li><a href="#how">How Foucault’s panopticon works</a></li>
+              <li>
+                <a href="#plague"
+                  >Panopticism in <em>Discipline and Punish</em>: the plague
+                  town and the leper</a
+                >
+              </li>
+              <li>
+                <a href="#figure"
+                  >The panopticon as a model of disciplinary power</a
+                >
+              </li>
+              <li><a href="#modern">Panopticon examples today</a></li>
+              <li>
+                <a href="#critique">Criticisms of Foucault’s panopticon</a>
+              </li>
+              <li><a href="#faq">Foucault’s panopticon FAQ</a></li>
               <li><a href="#sources">Sources and further reading</a></li>
             </ol>
           </nav>
         </section>
         <div class="philosophy-divider"></div>
 
+        <!-- WHAT -->
         <section class="narrative-block" id="what">
-          <h2>What is the panopticon?</h2>
-
+          <h2>What is the panopticon? Meaning and Bentham’s design</h2>
           <p>
-            The Panopticon was a prison and institutional design proposed by the
-            English philosopher and utilitarian
-            <a href="jeremy-bentham.html">Jeremy Bentham</a> in the late
-            eighteenth century. Bentham developed the idea in letters written in
-            1787 and subsequently published it as
-            <em>Panopticon; or, The Inspection-House</em>
-            in 1791. The basic design consists of a circular building in which
-            individual cells are arranged around the outer circumference, facing
-            inward toward a central inspection tower. The architectural
-            arrangement is designed so that an inspector in the central position
-            could potentially see the occupants of the cells, while the
-            occupants could not reliably see the inspector or determine whether
-            they were being watched at any particular moment. Lighting, windows,
-            shutters, partitions, and the spatial separation of the cells are
-            therefore essential to the design because they create an
-            <strong>asymmetry of visibility</strong>: the person being observed
-            is visible, while the observer remains difficult to see. Bentham
-            believed that this uncertainty could make supervision more efficient
-            because the inspector would not need to intervene physically or
-            constantly monitor every prisoner. Instead, each person would have
-            reason to behave as though observation could occur at any time.
-            Bentham also conceived the Panopticon more broadly than a prison,
-            imagining that a similar principle of organized inspection could be
-            applied to institutions such as schools, hospitals, factories, and
-            other establishments in which supervision, order, and disciplined
-            conduct were important. The Panopticon is therefore both a specific
+            The <strong>panopticon</strong> (from the Greek for “all-seeing”)
+            was a prison and institutional design proposed by the English
+            philosopher and utilitarian
+            <a href="jeremy-bentham.html">Jeremy Bentham</a>. He developed the
+            idea in letters written in 1787 and published it in 1791 as
+            <em>Panopticon; or, The Inspection-House</em>.
+          </p>
+          <p>
+            Bentham’s panopticon is a circular building. Individual cells line
+            the outer ring and face inward toward a central inspection tower.
+            Lighting, shutters, and partitions are arranged so that an inspector
+            can potentially see every cell, while the occupants cannot tell
+            whether anyone is watching. This creates an
+            <strong>asymmetry of visibility</strong>.
+          </p>
+          <p>
+            Bentham believed this uncertainty made supervision cheaper and more
+            efficient, because no guard needed to patrol constantly. He also
+            imagined the same principle in schools, hospitals, factories, and
+            workhouses. The panopticon is therefore both a specific
             architectural proposal and a general model for organizing people
-            through continuous possibilities of observation.
+            through the possibility of being observed.
           </p>
 
-          <p>
-            Michel Foucault gives the Panopticon a much broader philosophical
-            significance in the chapter <strong>“Panopticism”</strong> in Part
-            Three of <em>Discipline and Punish</em> (1975). Foucault does not
-            treat Bentham's design simply as a proposed prison or as an example
-            of nineteenth-century architecture; he uses it as a
-            <strong>model of disciplinary power</strong>. Its importance lies in
-            the way the arrangement of visibility can encourage individuals to
-            regulate their own conduct because they cannot know with certainty
-            when they are being observed. The possibility of surveillance can
-            therefore become more important than constant physical surveillance
-            itself: once individuals behave as though they may be watched,
-            external supervision can be partially transformed into
-            self-monitoring and self-discipline. Foucault connects this
-            mechanism with a wider set of disciplinary techniques, including
-            observation, examination, classification, comparison, normalization,
-            and the organization of space. The Panopticon consequently becomes
-            what Foucault calls a <strong>“diagram”</strong> of a form of power
-            that can operate across different modern institutions rather than
-            merely a particular prison structure. Its significance in Foucault's
-            philosophy is therefore the relationship between
-            <strong
-              >visibility, surveillance, knowledge, and the regulation of
-              conduct</strong
-            >: by making individuals potentially visible to an authority while
-            making the operation of that authority difficult to determine,
-            disciplinary systems can encourage people to participate in their
-            own regulation. For Foucault's wider philosophical framework, see
-            our
-            <a href="michel-foucault.html">complete guide to Michel Foucault</a
-            >.
-          </p>
+          <h3>Panopticon at a glance</h3>
+          <div class="table-wrap">
+            <table>
+              <tbody>
+                <tr>
+                  <td><strong>Designer</strong></td>
+                  <td>Jeremy Bentham (letters of 1787; published 1791)</td>
+                </tr>
+                <tr>
+                  <td><strong>Core mechanism</strong></td>
+                  <td>
+                    Seen but never sure: inmates cannot verify when they are
+                    watched
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Foucault’s discussion</strong></td>
+                  <td>
+                    “Panopticism,” in <em>Discipline and Punish</em> (1975)
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Foucault’s reading</strong></td>
+                  <td>
+                    A diagram of disciplinary power that works through
+                    self-regulation
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Modern echoes</strong></td>
+                  <td>CCTV, workplace monitoring, exams, social media</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <figure class="diagram">
             <svg
               viewBox="0 0 300 300"
               width="320"
               xmlns="http://www.w3.org/2000/svg"
               role="img"
-              aria-label="Diagram of Bentham's panopticon: a central tower surrounded by a ring of cells"
+              aria-label="Diagram of Bentham’s panopticon: a central inspection tower surrounded by a ring of cells"
             >
               <title>Panopticon: central tower and ring of cells</title>
               <circle
@@ -2224,93 +2305,70 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </text>
             </svg>
             <figcaption>
-              Simplified plan. The inspector in the central tower can see every
-              cell, but the inmates cannot see into the tower.
+              Bentham’s panopticon, simplified plan. The inspector in the
+              central tower can see every cell, but the inmates cannot see into
+              the tower.
             </figcaption>
           </figure>
         </section>
         <div class="philosophy-divider"></div>
-        <section class="narrative-block" id="how">
-          <h2>How the panopticon works</h2>
 
+        <!-- HOW -->
+        <section class="narrative-block" id="how">
+          <h2>
+            How Foucault’s panopticon works: visibility, uncertainty and
+            self-discipline
+          </h2>
+
+          <h3>Asymmetric visibility: seen, but never seeing</h3>
           <p>
-            The Panopticon works through
-            <strong
-              >asymmetric visibility and uncertainty about observation</strong
-            >: the person being observed can be seen by an observer but cannot
-            reliably see the observer or know when observation is actually
-            taking place. In Jeremy Bentham's original design, prisoners are
-            placed in individual cells arranged around the inside of a circular
-            building, while an inspection tower stands at the center. The
-            arrangement of the cells, windows, lighting, and screens is designed
-            so that the inspector can potentially observe each prisoner while
-            remaining difficult for the prisoners to see one another or
-            determine whether the inspector is watching at any particular
-            moment. This uncertainty is crucial because the system does not
-            require a guard to intervene every time someone breaks a rule.
-            Instead, prisoners are encouraged to behave as though they might be
-            observed at any time. The possibility of surveillance therefore
-            becomes sufficient to influence conduct, making visibility itself a
-            mechanism of control. The Panopticon's efficiency, in Bentham's
-            conception, comes from producing disciplined behavior with
-            relatively little continuous physical intervention: the individual
-            modifies their conduct because they cannot confidently distinguish
-            moments of surveillance from moments when they are not being
-            watched.
+            The panopticon works through <strong>asymmetric visibility</strong>.
+            The inmate is always visible to the tower, but cannot see the
+            inspector. The arrangement of cells, windows, and screens means
+            power can see without being seen.
           </p>
 
+          <h3>Uncertainty turns prisoners into their own guards</h3>
           <p>
-            Foucault uses this mechanism in <em>Discipline and Punish</em> as a
-            model for understanding a broader form of
-            <strong>disciplinary power</strong>. For Foucault, the significance
-            of the Panopticon is not simply the prison building itself but the
-            way surveillance can become incorporated into the behavior of the
-            person being observed. When individuals know that they may be
-            observed without knowing exactly when observation occurs, they can
-            begin to regulate themselves even when an authority is not visibly
-            intervening. Power consequently becomes more continuous and less
-            dependent on direct force: the possibility of surveillance
-            encourages people to monitor, correct, and constrain their own
-            actions. Foucault describes this effect by arguing that the
-            individual becomes <q>the principle of his own subjection.</q> The
-            Panopticon therefore illustrates how disciplinary power can operate
-            through the organization of space, visibility, observation,
-            examination, and self-regulation. Foucault extends the model beyond
-            prisons to institutions such as schools, hospitals, factories, and
-            other settings in which individuals can be observed, compared,
-            assessed, and trained. The central principle is that effective
-            discipline does not necessarily require constant punishment; it can
-            work by arranging conditions in which people come to regulate their
-            own behavior under the possibility of being observed.
+            Because inmates cannot know when they are being watched, they must
+            behave as if they always are. The possibility of surveillance
+            becomes enough to shape conduct, so visibility itself becomes a
+            mechanism of control. No guard has to intervene each time a rule is
+            broken.
+          </p>
+          <p>
+            Foucault describes the result as the individual becoming
+            <q>the principle of his own subjection.</q> External supervision is
+            converted into self-monitoring, and power becomes continuous, cheap,
+            and less dependent on direct force.
+          </p>
+          <p>
+            For Foucault, this is the heart of
+            <strong>disciplinary power</strong>: effective discipline does not
+            necessarily need constant punishment. It can work by arranging
+            conditions in which people regulate their own behavior.
           </p>
         </section>
         <div class="philosophy-divider"></div>
-        <section class="narrative-block" id="plague">
-          <h2>The plague town and the leper: two models</h2>
 
+        <!-- PLAGUE -->
+        <section class="narrative-block" id="plague">
+          <h2>
+            Panopticism in <em>Discipline and Punish</em>: the plague town and
+            the leper
+          </h2>
           <p>
-            Foucault opens “Panopticism” in <em>Discipline and Punish</em> with
-            two contrasting historical models of managing disease and social
-            disorder. In his account of a plague-stricken town in the
-            seventeenth century, the population was subjected to detailed
-            spatial organization and continuous surveillance: the town was
-            divided into districts, movement was restricted, inhabitants were
-            registered and accounted for, households were inspected, and
-            officials monitored compliance with the regulations. The individual
-            was therefore kept visible, identified, and located within an
-            organized system of observation. Foucault contrasts this
-            disciplinary model with the older treatment of lepers, in which
-            those considered infected were separated from the healthy population
-            and excluded from ordinary social life. For Foucault, the contrast
-            represents two different ways of exercising power: the leper model
-            works primarily through exclusion and separation, whereas the plague
-            model works through surveillance, classification, registration,
-            spatial partitioning, and the continuous observation of individuals.
-            The Panopticon subsequently combines these principles into a more
-            general diagram of disciplinary power, in which individuals are not
-            simply expelled from society but are placed within an organized
-            field of visibility where their behavior can be observed, examined,
-            and regulated.
+            Foucault opens the chapter “Panopticism” with two historical models
+            of managing disease and disorder. In a seventeenth-century plague
+            town, the population was divided into districts, movement was
+            restricted, households were inspected, and every inhabitant was
+            registered and accounted for.
+          </p>
+          <p>
+            He contrasts this with the older treatment of lepers, who were cast
+            out and excluded from the community. The leper model works through
+            <strong>exclusion</strong>; the plague model works through
+            <strong>surveillance, classification, and partitioning</strong>.
           </p>
           <div class="table-wrap">
             <table>
@@ -2340,310 +2398,243 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </tbody>
             </table>
           </div>
-          <p>The panopticon is the plague model made into architecture.</p>
+          <p>
+            The panopticon is the plague model made into architecture:
+            individuals are not expelled but placed inside an organized field of
+            visibility where their behavior can be observed, examined, and
+            regulated. For the wider argument, see our
+            <a href="discipline-and-punish-summary.html"
+              ><em>Discipline and Punish</em> summary</a
+            >.
+          </p>
         </section>
         <div class="philosophy-divider"></div>
-        <section class="narrative-block" id="figure">
-          <h2>A figure, not just a building</h2>
 
+        <!-- FIGURE -->
+        <section class="narrative-block" id="figure">
+          <h2>The panopticon as a model of disciplinary power</h2>
           <p>
-            For Foucault, the Panopticon is significant not simply as a
-            particular prison design but as a
+            For Foucault, the panopticon matters less as a building than as a
             <strong>“figure of political technology”</strong>: a model for
-            organizing people, space, visibility, and information so that
-            individuals can be observed and their conduct can be regulated. In
-            <em>Discipline and Punish</em>, he argues that this logic can extend
-            beyond prisons to institutions such as schools, hospitals, barracks,
-            factories, and asylums, where individuals may be separated,
-            observed, examined, classified, compared, and corrected according to
-            established norms. The important feature is therefore not the
-            physical presence of a circular building or a central watchtower,
-            but the underlying arrangement of visibility and discipline.
-            Individuals are placed within a system in which their behavior can
-            be recorded and evaluated, while the possibility of observation
-            encourages them to regulate themselves. Foucault's point is
-            consequently not that society is literally a prison, but that
-            techniques resembling the Panoptic model can operate across
-            different institutions and forms of social organization. See
-            <a href="discipline-and-punish-summary.html"
-              >our Discipline and Punish summary</a
+            arranging people, space, visibility, and information so that conduct
+            can be observed and regulated. He also calls it a
+            <strong>“diagram”</strong> of power that can operate wherever it is
+            applied.
+          </p>
+          <p>
+            In <em>Discipline and Punish</em>, the same logic extends to
+            schools, hospitals, barracks, factories, and asylums. In each,
+            individuals can be separated, observed, examined, compared, and
+            corrected against established norms.
+          </p>
+          <p>
+            Foucault’s point is not that society is literally a prison. It is
+            that techniques resembling the panoptic model can operate across
+            many institutions. The key features are observation, examination,
+            classification, and <strong>normalization</strong>, not the circular
+            building itself.
+          </p>
+          <p>
+            Foucault later extended this analysis from individual bodies to
+            whole populations; see
+            <a href="foucault-biopower-vs-biopolitics.html"
+              >biopower vs biopolitics</a
             >
             and <a href="foucault-power-knowledge.html">power/knowledge</a>.
           </p>
         </section>
         <div class="philosophy-divider"></div>
+
+        <!-- MODERN -->
         <section class="narrative-block" id="modern">
-          <h2>Modern examples of panoptic logic</h2>
-
-          <ul class="plain-list">
-            <li>
-              <strong>CCTV and facial recognition</strong> can create conditions
-              in which people know that they may be identified or observed
-              without knowing exactly when or whether a particular system is
-              monitoring them.
-            </li>
-            <li>
-              <strong>Workplace monitoring</strong>, including keystroke
-              logging, productivity dashboards, access records, screen
-              monitoring, and call recording, can make employees' activities
-              continuously measurable and subject to evaluation.
-            </li>
-            <li>
-              <strong>Schools and examination systems</strong> use attendance
-              records, examinations, assessments, rankings, and other forms of
-              measurement to observe, compare, classify, and evaluate students.
-            </li>
-            <li>
-              <strong>Online platforms</strong> collect and analyze information
-              about user activity, interactions, and preferences, while
-              algorithmic systems may use this data to classify, recommend,
-              rank, or personalize content.
-            </li>
-          </ul>
-
+          <h2>
+            Panopticon examples today: CCTV, workplaces, schools and social
+            media
+          </h2>
           <p>
-            These examples share some features with the Panoptic model,
-            particularly visibility, measurement, data collection, and the
-            possibility that people modify their behavior because they know they
-            may be observed or evaluated. However, modern digital systems are
-            not simply literal versions of Bentham's centralized prison design.
-            Observation can be decentralized, automated, reciprocal, or carried
-            out through data systems rather than a single visible observer.
-            Thomas Mathiesen's concept of the
-            <em>“Synopticon”</em>, developed in his 1997 work
-            <em>Viewer Society</em>, describes a different arrangement in which
-            the <em>many</em> watch the <em>few</em>, particularly through mass
-            media. Later, Gilles Deleuze argued in his 1990 essay
-            <em>“Postscript on the Societies of Control”</em> that the enclosed,
-            institution-based disciplinary mechanisms associated with Foucault
-            were increasingly being supplemented by more continuous and flexible
-            forms of control. These concepts are therefore useful for comparing
-            different forms of modern surveillance and social regulation, rather
-            than treating them as interchangeable terms.
+            Modern surveillance rarely looks like Bentham’s tower, but it often
+            reproduces the panoptic logic of
+            <strong>visibility without certainty</strong>.
+          </p>
+
+          <h3>CCTV and facial recognition</h3>
+          <p>
+            Cameras and facial recognition systems mean people know they may be
+            identified or recorded without knowing when, or whether, a given
+            system is actually watching. The visible camera works much like
+            Bentham’s tower: its presence changes behavior whether or not anyone
+            is monitoring the feed.
+          </p>
+
+          <h3>Workplace monitoring</h3>
+          <p>
+            Keystroke logging, screen monitoring, call recording, access
+            records, and productivity dashboards make employees’ activity
+            continuously measurable. Workers who cannot tell when they are being
+            sampled tend to behave as if every moment counts.
+          </p>
+
+          <h3>Schools and examinations</h3>
+          <p>
+            Foucault gave special attention to the <strong>examination</strong>,
+            which combines observation with judgment. Attendance records,
+            grades, rankings, and online proctoring software all observe,
+            compare, and classify students against a norm.
+          </p>
+
+          <h3>
+            Social media and online platforms: is social media a panopticon?
+          </h3>
+          <p>
+            Social platforms share several panoptic features. Users know their
+            posts may be seen by peers, employers, or algorithms, and visible
+            metrics such as likes and followers invite constant self-monitoring
+            and self-presentation. Platforms also collect behavioral data to
+            classify and rank users; Shoshana Zuboff calls this wider system
+            <em>surveillance capitalism</em>.
+          </p>
+          <p>
+            But social media also departs from the panopticon. The watching is
+            often <strong>voluntary</strong>, <strong>reciprocal</strong> (users
+            watch each other, what Mark Andrejevic calls “lateral
+            surveillance”), and <strong>automated</strong>, so there may be no
+            single observer in a tower. It is better described as panoptic in
+            some respects than as a literal panopticon.
+          </p>
+
+          <h3>Panopticon vs synopticon: when the many watch the few</h3>
+          <p>
+            In <em>The Viewer Society</em> (1997), Thomas Mathiesen introduced
+            the <strong>synopticon</strong> to describe the reverse of the
+            panopticon: the <em>many</em> watch the <em>few</em>, especially
+            through mass media and, today, celebrities and influencers.
+            Mathiesen argued that the two processes work together rather than
+            replace each other.
+          </p>
+
+          <h3>Beyond the panopticon: Deleuze and the societies of control</h3>
+          <p>
+            In his 1990 essay <em>“Postscript on the Societies of Control,”</em>
+            <a href="gilles-deleuze.html">Gilles Deleuze</a> argued that
+            Foucault’s enclosed disciplinary institutions were being
+            supplemented by more continuous, flexible, and data-driven forms of
+            control. Panopticon, synopticon, and societies of control are
+            therefore best treated as different tools for analyzing
+            surveillance, not interchangeable terms.
           </p>
         </section>
         <div class="philosophy-divider"></div>
-        <section class="narrative-block" id="critique">
-          <h2>Criticisms of Foucault's use of the panopticon</h2>
 
+        <!-- CRITIQUE -->
+        <section class="narrative-block" id="critique">
+          <h2>Criticisms of Foucault’s panopticon</h2>
           <ul class="plain-list">
             <li>
-              <strong>The Panopticon was primarily a proposed design.</strong>
-              Bentham developed the scheme extensively, but his complete
-              Panopticon prison was never constructed according to his original
-              plan in Britain. Critics therefore caution against treating the
-              Panopticon as a straightforward description of how actual prisons
-              historically operated. Foucault's argument is less dependent on
-              the building having been widely implemented than on the design
-              functioning as a model of disciplinary power, but the distinction
-              remains important. A proposed architectural system should not
-              automatically be treated as evidence that real institutions
-              operated according to the same principles.
+              <strong>It was mostly a proposed design.</strong> Bentham’s own
+              scheme was never built as he planned it, so critics warn against
+              treating the panopticon as a description of how real prisons
+              operated. Foucault’s argument depends on the design as a model,
+              not on its wide implementation, but the distinction matters.
             </li>
-
             <li>
               <strong
-                >Foucault's interpretation is broader than Bentham's original
-                purpose.</strong
+                >Foucault’s reading is broader than Bentham’s purpose.</strong
               >
-              Foucault uses the Panopticon as a model for analysing disciplinary
-              power, while Bentham presented it as a practical institutional
-              design concerned with efficient inspection, management, reform,
-              and the prevention of abuse. Bentham's proposal also reflected his
-              utilitarian concern with arranging institutions so that
-              supervision could be made effective and economical. Critics
-              therefore argue that Foucault's philosophical use can understate
-              some of Bentham's own stated objectives and the specific
-              historical context of the proposal. The Panopticon in Foucault
-              should consequently be understood as a reinterpretation and
-              analytical model, not simply as a summary of everything Bentham
-              intended the design to accomplish.
+              Bentham presented the panopticon as a practical, utilitarian
+              design for efficient inspection, reform, and the prevention of
+              abuse. Foucault’s version is a philosophical reinterpretation, not
+              a summary of what Bentham intended.
             </li>
-
             <li>
-              <strong
-                >The Panopticon can make power appear too centralized.</strong
-              >
-              The classical Panopticon presents a relatively simple
-              relationship: an inspector occupies a central position while
-              individuals around the perimeter are potentially observed. Modern
-              systems of power are often more dispersed. Surveillance and
-              discipline can involve governments, employers, schools,
-              corporations, algorithms, platforms, institutions, peers, and
-              individuals simultaneously. There may be no single observer who
-              possesses complete knowledge or occupies a literal equivalent of
-              Bentham's central tower. This makes the traditional Panopticon
-              useful as a model of visibility and uncertainty, but less adequate
-              as a complete description of how contemporary power is organized.
+              <strong>It can make power look too centralized.</strong> The
+              classic panopticon has one inspector in one tower. Contemporary
+              surveillance is spread across governments, employers, platforms,
+              algorithms, and peers, and people often take part in it willingly.
+              Automated systems also act on data without anyone directly
+              watching.
             </li>
-
             <li>
-              <strong
-                >Modern surveillance is often decentralized and
-                reciprocal.</strong
-              >
-              Digital monitoring can involve governments, companies, platforms,
-              automated systems, and users observing one another rather than a
-              single central observer. Social media is particularly complicated
-              because users voluntarily produce information about themselves
-              while also observing and being observed by other users.
-              Recommendation systems, advertising networks, data brokers,
-              workplace software, smartphones, and automated analytics can
-              collect and process information without a human observer
-              continuously looking at each individual. These arrangements do not
-              fit neatly into the image of a single guard watching from a
-              central tower.
+              <strong>It overemphasizes visibility.</strong> Rules, incentives,
+              rankings, economic dependence, and social expectations also shape
+              behavior when surveillance is limited. Surveillance also matters
+              because it produces <em>knowledge</em>: records, categories,
+              scores, and decisions, not just watching.
             </li>
-
             <li>
-              <strong
-                >The model can overemphasize visibility as the source of
-                discipline.</strong
-              >
-              Foucault's Panopticon places visibility and the possibility of
-              observation at the center of disciplinary power, but institutions
-              can regulate conduct through many other mechanisms. Rules,
-              incentives, examinations, rankings, rewards, punishments,
-              professional norms, economic dependence, social expectations, and
-              bureaucratic procedures can shape behavior even when direct
-              surveillance is limited. A person may therefore comply with an
-              institutional norm not because they believe they are being
-              watched, but because the norm has become socially expected,
-              materially advantageous, or embedded in an administrative
-              procedure.
+              <strong>People do not always comply.</strong> The model can make
+              subjects look more passive and predictable than they are. People
+              resist, evade, perform for different audiences, or challenge
+              surveillance, so it can produce resistance as well as obedience.
             </li>
-
             <li>
-              <strong
-                >People do not always respond to surveillance with passive
-                obedience.</strong
-              >
-              The Panoptic model can sometimes make individuals appear more
-              disciplined and predictable than they actually are. People can
-              resist, evade, manipulate, ignore, or challenge systems of
-              surveillance. They may also develop strategies for presenting
-              themselves differently to different observers. In workplaces,
-              schools, prisons, and online environments, surveillance can
-              therefore produce resistance as well as compliance. This is
-              important because disciplinary power is not necessarily complete
-              or uncontested simply because observation is possible.
-            </li>
-
-            <li>
-              <strong
-                >Surveillance can produce participation as well as
-                constraint.</strong
-              >
-              Contemporary digital platforms complicate the traditional
-              Panopticon because people frequently participate in systems that
-              collect their information. Users post photographs, location
-              information, opinions, purchases, professional histories, and
-              personal preferences, sometimes because participation provides
-              social, economic, or practical benefits. This means that
-              surveillance cannot always be explained as something imposed
-              entirely from above. Individuals may actively contribute to the
-              production of the information through which they are monitored or
-              categorized. The relationship between surveillance and consent is
-              therefore more complicated than the one-way observation
-              represented by Bentham's architecture.
-            </li>
-
-            <li>
-              <strong
-                >The Panopticon does not fully explain automated forms of
-                surveillance.</strong
-              >
-              In contemporary digital systems, information can be collected,
-              classified, scored, and acted upon by automated processes without
-              a person directly observing the individual. Algorithms may detect
-              patterns, assign categories, estimate risk, personalize content,
-              or determine what information is shown to a user. In such cases,
-              the important mechanism may not be uncertainty about whether a
-              human is watching, but uncertainty about how data are being
-              interpreted and what consequences an automated system may produce.
-              The Panopticon can still illuminate the experience of being
-              potentially monitored, but additional concepts are needed to
-              explain algorithmic and data-driven power.
-            </li>
-
-            <li>
-              <strong
-                >The model may understate differences between institutions and
-                historical contexts.</strong
-              >
-              A prison, school, hospital, factory, and digital platform do not
-              exercise power in identical ways. Their purposes, rules,
-              technologies, forms of authority, and relationships with the
-              people they regulate differ substantially. Applying the Panopticon
-              too broadly can therefore make very different institutions appear
-              to share one underlying structure when their actual mechanisms of
-              control may be quite different. The concept is most useful when
-              treated as an analytical model that highlights particular features
-              of power rather than as a universal explanation of every
-              institution.
-            </li>
-
-            <li>
-              <strong
-                >The Panopticon can obscure the importance of knowledge and
-                classification.</strong
-              >
-              Surveillance is not only about seeing people; institutions also
-              record, compare, classify, measure, and interpret what they
-              observe. Foucault's broader discussion of disciplinary power
-              includes examination and the production of knowledge, but readings
-              focused exclusively on the Panopticon can reduce the argument to
-              simple watching. In practice, a system may become powerful not
-              merely because an individual is visible, but because information
-              about that individual is converted into records, categories,
-              rankings, diagnoses, assessments, or administrative decisions.
-            </li>
-
-            <li>
-              <strong
-                >The Panopticon should not be treated as Foucault's complete
-                theory of power.</strong
-              >
-              Foucault does not reduce all power to surveillance or claim that
-              every modern institution is literally a Panopticon. The Panopticon
-              is one particularly influential model within his analysis of
-              disciplinary power. His wider work also examines practices of
-              normalization, examination, knowledge, governmentality,
-              biopolitics, and the ways in which power operates through multiple
-              social relationships. Treating the Panopticon as a universal
-              theory of surveillance can therefore simplify Foucault's broader
-              and more complex account of how power operates.
+              <strong>It is not Foucault’s whole theory of power.</strong>
+              Foucault did not reduce power to surveillance or claim every
+              institution is a panopticon. His wider work also covers
+              normalization, governmentality, and
+              <a href="foucault-biopower-vs-biopolitics.html">biopolitics</a>.
             </li>
           </ul>
         </section>
         <div class="philosophy-divider"></div>
 
+        <!-- FAQ -->
         <section class="narrative-block" id="faq">
-          <h2>Frequently asked questions</h2>
+          <h2>Foucault’s panopticon FAQ</h2>
+
           <h3>What is the panopticon in simple terms?</h3>
           <p>
             A circular prison where one guard in a central tower can watch all
             inmates, who cannot see when they are being watched.
           </p>
+
           <h3>Who invented the panopticon?</h3>
           <p>
-            Jeremy Bentham described it in 1787, and it was published in 1791.
-            Foucault made it famous in <em>Discipline and Punish</em> (1975).
+            Jeremy Bentham described it in letters written in 1787 and published
+            it in 1791. Michel Foucault made it famous in
+            <em>Discipline and Punish</em> (1975).
           </p>
+
           <h3>What does Foucault say about the panopticon?</h3>
           <p>
-            He treats it as a diagram of disciplinary power: constant possible
-            observation leads people to regulate their own behaviour.
+            He treats it as a diagram of disciplinary power: the constant
+            possibility of being observed leads people to regulate their own
+            behaviour.
           </p>
+
+          <h3>What is panopticism?</h3>
+          <p>
+            Panopticism is Foucault’s name for the panoptic principle as a
+            general form of power: visibility, examination, and self-regulation
+            applied across prisons, schools, hospitals, factories, and other
+            institutions.
+          </p>
+
+          <h3>Was the panopticon ever built?</h3>
+          <p>
+            Bentham’s own scheme was never built as he designed it, but several
+            prisons were inspired by it, such as Presidio Modelo in Cuba and
+            Stateville Correctional Center in Illinois.
+          </p>
+
+          <h3>
+            What is the difference between the panopticon and the synopticon?
+          </h3>
+          <p>
+            In the panopticon, the few watch the many. Thomas Mathiesen’s
+            synopticon (1997) describes the reverse: the many watch the few,
+            especially through mass media.
+          </p>
+
           <h3>Is social media a panopticon?</h3>
           <p>
-            Some scholars say it shares panoptic features, such as tracking and
-            self-monitoring, while others argue it differs because the watching
-            is decentralised and often voluntary.
+            It shares panoptic features such as tracking, metrics, and
+            self-monitoring, but it differs because the watching is
+            decentralised, reciprocal, and often voluntary.
           </p>
         </section>
         <div class="philosophy-divider"></div>
 
+        <!-- SOURCES -->
         <section class="narrative-block sources" id="sources">
           <h2>Sources and further reading</h2>
           <ul class="plain-list">
@@ -2657,13 +2648,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <em>Panopticon; or, The Inspection-House</em> (1791).
             </li>
             <li>
-              Thomas Mathiesen, “The Viewer Society: Michel Foucault's
+              Thomas Mathiesen, “The Viewer Society: Michel Foucault’s
               ‘Panopticon’ Revisited,” <em>Theoretical Criminology</em> 1(2),
               1997.
             </li>
             <li>
               Gilles Deleuze, “Postscript on the Societies of Control,”
               <em>October</em> 59 (1992).
+            </li>
+            <li>
+              Mark Andrejevic, “The Work of Watching One Another: Lateral
+              Surveillance, Risk, and Governance,”
+              <em>Surveillance &amp; Society</em> 2(4), 2005.
+            </li>
+            <li>
+              Shoshana Zuboff,
+              <em>The Age of Surveillance Capitalism</em> (PublicAffairs, 2019).
             </li>
             <li>
               Gary Gutting, <em>Foucault: A Very Short Introduction</em> (Oxford
@@ -2706,16 +2706,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               >Where to Start Reading Foucault</a
             >
             · <a href="foucault-vs-marx.html">Foucault vs Marx</a> ·
-            <a href="foucault-vs-nietzsche.html">Foucault vs Nietzsche</a>·
-
+            <a href="foucault-vs-nietzsche.html">Foucault vs Nietzsche</a> ·
+            <a href="jeremy-bentham.html">Jeremy Bentham</a> ·
+            <a href="gilles-deleuze.html">Gilles Deleuze</a> ·
             <a href="political-philosophy.html">Political Philosophy</a> ·
-            <a href="contemporary-philosophy.html">Contemporary Philosophy</a> ·
-            <a href="nietzsche.html">Nietzsche</a> ·
-            <a href="karl-marx.html">Marx</a>
+            <a href="contemporary-philosophy.html">Contemporary Philosophy</a>
           </div>
         </section>
       </main>
     </div>
+    <!-- ================= REPLACE UNTIL HERE ================= -->
 
     <!-- ================= FOOTER ================= -->
 
@@ -2879,8 +2879,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="appearance-options theme-options">
           <button type="button" data-theme="automatic">Auto</button>
-
-           
 
           <button type="button" data-theme="dark">Dark</button>
         </div>

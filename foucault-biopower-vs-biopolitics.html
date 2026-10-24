@@ -1,3 +1,11 @@
+<!--
+  HOW TO USE THIS FILE
+  1. HEAD: replace your whole <head>…</head> with the one below.
+  2. BODY: keep your existing GTM <noscript>, <nav class="navbar">…</nav>, footer,
+     scripts and appearance panel exactly as they are.
+  3. Replace everything from <header class="home-hero"> down to the </div> that closes
+     <div class="article-reading-area"> with the block marked "REPLACE FROM HERE".
+-->
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,8 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
-    <!-- Google tag (same as michel-foucault.html) -->
-     <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-JPZD4Q0LLL"
@@ -17,14 +24,13 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-JPZD4Q0LLL");
     </script>
 
     <title>Biopower vs Biopolitics in Foucault: The Difference</title>
     <meta
       name="description"
-      content="Biopower vs biopolitics in Foucault: definitions, the two poles of power over life, key lectures, and examples like public health and census data."
+      content="Biopower vs biopolitics in Foucault: what each term means, the difference between them, the two poles of power over life, key lectures, and examples."
     />
     <meta
       name="robots"
@@ -32,12 +38,19 @@
     />
 
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NCXRWR8P');</script>
-<!-- End Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NCXRWR8P");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta name="author" content="Kavya Jain" />
     <meta name="theme-color" content="#b88a44" />
     <link
@@ -54,21 +67,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     />
     <meta
       property="og:description"
-      content="Biopower vs biopolitics in Foucault: definitions, the two poles of power over life, key lectures, and examples like public health and census data."
+      content="Biopower vs biopolitics in Foucault: what each term means, the difference between them, the two poles of power over life, key lectures, and examples."
     />
     <meta
       property="og:url"
       content="https://libraryofphilosophy.com/foucault-biopower-vs-biopolitics.html"
     />
+    <!-- TODO: replace with a unique biopower/biopolitics graphic (1200x630) when you have one -->
     <meta
       property="og:image"
       content="https://libraryofphilosophy.com/images/michel-foucault.jpg"
     />
     <meta
       property="og:image:alt"
-      content="Portrait or artistic representation of Michel Foucault"
+      content="Michel Foucault, philosopher of biopower and biopolitics"
     />
-    <meta property="article:modified_time" content="2026-10-03" />
+    <meta property="article:published_time" content="2026-10-03" />
+    <meta property="article:modified_time" content="2026-10-24" />
     <meta property="article:author" content="Kavya Jain" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -77,22 +92,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     />
     <meta
       name="twitter:description"
-      content="Biopower vs biopolitics in Foucault: definitions, the two poles of power over life, key lectures, and examples like public health and census data."
+      content="Biopower vs biopolitics in Foucault: what each term means, the difference between them, the two poles of power over life, key lectures, and examples."
     />
     <meta
       name="twitter:image"
       content="https://libraryofphilosophy.com/images/michel-foucault.jpg"
     />
 
-         <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="thinkers-refine.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="thinkers-refine.css" />
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
-       
     <link rel="stylesheet" href="spoke-pages.css" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+    <!-- Styles the "In this article" label, which is now a paragraph instead of a heading; tweak to match spoke-pages.css if needed -->
+    <style>
+      .inline-toc .inline-toc-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin: 0 0 0.75rem;
+      }
+    </style>
 
     <script type="application/ld+json">
       {
@@ -101,11 +124,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {
             "@type": "Article",
             "@id": "https://libraryofphilosophy.com/foucault-biopower-vs-biopolitics.html#article",
-            "headline": "Biopower vs Biopolitics in Foucault: What's the Difference?",
-            "description": "Biopower vs biopolitics in Foucault: definitions, the two poles of power over life, key lectures, and examples like public health and census data.",
+            "headline": "Biopower vs Biopolitics in Foucault: What’s the Difference?",
+            "description": "Biopower vs biopolitics in Foucault: what each term means, the difference between them, the two poles of power over life, key lectures, and examples.",
             "image": "https://libraryofphilosophy.com/images/michel-foucault.jpg",
             "datePublished": "2026-10-03",
-            "dateModified": "2026-10-03",
+            "dateModified": "2026-10-24",
             "inLanguage": "en",
             "mainEntityOfPage": "https://libraryofphilosophy.com/foucault-biopower-vs-biopolitics.html",
             "author": {
@@ -132,6 +155,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               "Michel Foucault, Society Must Be Defended: Lectures at the Collège de France, 1975–76 (Picador, 2003).",
               "Michel Foucault, Security, Territory, Population: Lectures at the Collège de France, 1977–78 (Palgrave Macmillan, 2007).",
               "Michel Foucault, The Birth of Biopolitics: Lectures at the Collège de France, 1978–79 (Palgrave Macmillan, 2008).",
+              "Giorgio Agamben, Homo Sacer: Sovereign Power and Bare Life (Stanford University Press, 1998; Italian original 1995).",
+              "Michael Hardt and Antonio Negri, Empire (Harvard University Press, 2000).",
               "Thomas Lemke, Biopolitics: An Advanced Introduction (NYU Press, 2011).",
               "Roberto Esposito, Bios: Biopolitics and Philosophy (University of Minnesota Press, 2008)."
             ]
@@ -170,6 +195,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             "mainEntity": [
               {
                 "@type": "Question",
+                "name": "What is the difference between biopower and biopolitics?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Biopower is the broader term for power that takes human life as its object. Biopolitics usually names its population-level pole, alongside the disciplinary control of individual bodies. Foucault does not always separate the terms, and usage varies among later scholars."
+                }
+              },
+              {
+                "@type": "Question",
                 "name": "What is biopower?",
                 "acceptedAnswer": {
                   "@type": "Answer",
@@ -186,10 +219,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               },
               {
                 "@type": "Question",
-                "name": "Are biopower and biopolitics the same?",
+                "name": "What is anatomo-politics?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Foucault often uses them close together. Many scholars treat biopolitics as one pole of biopower, but usage varies."
+                  "text": "Anatomo-politics is the first pole of biopower: the disciplining and training of individual bodies through institutions such as schools, barracks, hospitals, and prisons."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does “make live and let die” mean?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In his 1976 lectures, Foucault uses the phrase to describe modern power, which fosters and administers life while leaving some groups more exposed to death. It contrasts with sovereign power’s right to “make die and let live.”"
                 }
               },
               {
@@ -197,7 +238,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "name": "In which Foucault text does biopower first appear?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "In the final chapter of The History of Sexuality, Vol. 1 (1976), and in his 1975–76 lectures."
+                  "text": "In his 1975–76 lectures, Society Must Be Defended, and in the final chapter of The History of Sexuality, Vol. 1 (1976)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does biopower work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Biopower works by producing knowledge about bodies and populations and using it to regulate, organize, and manage life, through institutions, statistics, medical expertise, public-health practices, demographic policies, and norms."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are some examples of biopower?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Censuses, demographic statistics, public-health programs, disease surveillance, reproductive policies, health insurance, and other systems for managing population-level risk."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the relationship between discipline and biopower?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Disciplinary power trains and regulates individual bodies, while biopower also operates on populations. Foucault presents them as interconnected mechanisms that together make up modern power over life."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Did Foucault use biopower to say that modern governments control everything?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Biopower describes particular techniques through which bodies and populations are regulated, not total control. Foucault stresses that power is relational and runs through many institutions and forms of knowledge, not only the state."
                 }
               }
             ]
@@ -207,11 +280,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
   </head>
 
-   <body>
-   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCXRWR8P"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NCXRWR8P"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- ================= NAVBAR ================= -->
 
     <nav class="navbar">
@@ -1760,9 +1839,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </button>
     </nav>
 
+    <!-- ================= REPLACE FROM HERE ================= -->
     <header class="home-hero">
       <div class="hero-content">
-        <h1>Biopower vs Biopolitics in Foucault: What's the Difference?</h1>
+        <h1>Biopower vs Biopolitics in Foucault: What’s the Difference?</h1>
         <p class="subtitle">
           Explore Michel Foucault’s concepts of biopower and biopolitics and the
           relationship between them. This guide examines how modern forms of
@@ -1783,7 +1863,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </nav>
 
     <div class="article-reading-area">
-      <!-- Same TOC shell as michel-foucault.html: article-toc.js fills these automatically -->
       <aside class="article-toc" aria-label="Article contents">
         <div class="article-toc__header">
           <span class="article-toc__title">Contents</span>
@@ -1834,13 +1913,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <section class="about-home">
           <p class="byline">
             By <a href="author-kavya-jn.html">Kavya Jain</a> · Updated
-            <time datetime="2026-10-03">2026-10-03</time> · Part of our complete
-            guide: <a href="michel-foucault.html">Michel Foucault</a>
+            <time datetime="2026-10-24">2026-10-24</time> · Part of our complete
+            guide:
+            <a href="michel-foucault.html">Michel Foucault</a>
           </p>
           <div class="answer-box">
-            <strong class="label">Short answer</strong
-            ><strong>Biopower</strong> is Foucault's term for forms of power
-            that take human life as their object.
+            <strong class="label">Short answer</strong>
+            <strong>Biopower</strong> is Foucault’s term for forms of power that
+            take human life as their object.
             <strong>Biopolitics</strong> usually names its population-level
             pole: managing birth rates, health and longevity. Foucault does not
             always separate the terms, so many scholars treat biopolitics as one
@@ -1848,62 +1928,97 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             bodies.
           </div>
           <nav class="inline-toc" aria-label="In this article">
-            <h2>In this article</h2>
+            <p class="inline-toc-title">In this article</p>
             <ol>
-              <li><a href="#short">The short answer</a></li>
-              <li><a href="#table">Two poles of biopower</a></li>
-              <li><a href="#sovereign">From sovereign power to biopower</a></li>
-              <li><a href="#where">Where Foucault develops the terms</a></li>
-              <li><a href="#examples">Examples</a></li>
-              <li><a href="#after">How later thinkers use the terms</a></li>
-              <li><a href="#faq">Frequently asked questions</a></li>
+              <li><a href="#biopower">What is biopower?</a></li>
+              <li><a href="#biopolitics">What is biopolitics?</a></li>
+              <li>
+                <a href="#short">Biopower vs biopolitics: the short answer</a>
+              </li>
+              <li>
+                <a href="#table">Anatomo-politics and the two poles of power</a>
+              </li>
+              <li>
+                <a href="#sovereign"
+                  >From sovereign power to biopower: “make live and let die”</a
+                >
+              </li>
+              <li><a href="#where">Where does Foucault define biopower?</a></li>
+              <li>
+                <a href="#examples">Examples of biopower and biopolitics</a>
+              </li>
+              <li><a href="#after">Biopolitics after Foucault</a></li>
+              <li><a href="#faq">Biopower and biopolitics FAQ</a></li>
               <li><a href="#sources">Sources and further reading</a></li>
             </ol>
           </nav>
         </section>
         <div class="philosophy-divider"></div>
 
+        <!-- WHAT IS BIOPOWER -->
+        <section class="narrative-block" id="biopower">
+          <h2>What is biopower? Foucault’s definition</h2>
+          <p>
+            <strong>Biopower</strong> is Foucault’s term for modern power that
+            takes human life as its object. Rather than only threatening death,
+            it fosters, manages, and optimizes life, working on individual
+            bodies through discipline and on whole populations through
+            regulation. He develops the idea in his 1975–76 lectures and in
+            <em>The History of Sexuality, Vol. 1</em> (1976).
+          </p>
+        </section>
+        <div class="philosophy-divider"></div>
+
+        <!-- WHAT IS BIOPOLITICS -->
+        <section class="narrative-block" id="biopolitics">
+          <h2>What is biopolitics? Definition and meaning</h2>
+          <p>
+            <strong>Biopolitics</strong> is the population-level side of
+            biopower. It refers to forms of governance that regulate collective
+            life processes such as birth rates, mortality, public health, and
+            longevity, using statistics, demography, and medical knowledge.
+            Foucault develops it mainly in
+            <em>Society Must Be Defended</em> (1975–76).
+          </p>
+        </section>
+        <div class="philosophy-divider"></div>
+
+        <!-- SHORT ANSWER -->
         <section class="narrative-block" id="short">
-          <h2>The short answer</h2>
+          <h2>Biopower vs biopolitics: the short answer</h2>
           <p>
             <strong
-              >Biopower is Foucault’s term for modern forms of power that take
-              human life itself—both individual bodies and populations—as an
-              object to be managed, regulated, and optimized.</strong
+              >Biopower is the broader term for power over life; biopolitics is
+              usually the population-focused pole within it.</strong
             >
-            In <em>The History of Sexuality, Vol. 1</em> (1976), Foucault
-            contrasts this with the older sovereign power expressed through the
-            right to “take life or let live.” From the seventeenth century
-            onward, he describes the emergence of a form of power increasingly
-            concerned with fostering life, administering health, regulating
-            bodies, and managing the conditions in which populations live. He
-            describes biopower as having two interconnected poles: an
+            Foucault describes biopower as having two interconnected poles: an
             <strong>anatomo-politics of the human body</strong>, which
             disciplines and trains individual bodies, and a
             <strong>biopolitics of the population</strong>, which regulates
-            collective processes such as birth rates, mortality, health,
-            longevity, and living conditions.
+            collective processes such as birth rates, mortality, health, and
+            living conditions.
           </p>
           <p>
-            <strong
-              >Biopolitics therefore refers specifically to the
-              population-oriented pole of this broader power over life.</strong
-            >
-            However, Foucault’s terminology is not always used as a rigid
-            technical distinction, and later scholars sometimes use
-            <em>biopolitics</em> and <em>biopower</em> in different or
-            overlapping ways. The central point is that modern power does not
-            operate only by threatening or taking life; it also works through
-            institutions, knowledge, public-health measures, statistical
-            practices, norms, and forms of administration that seek to organize
-            and regulate living individuals and populations. For broader
-            context, see our
+            Foucault’s terminology is not always a rigid technical distinction,
+            and later scholars use <em>biopolitics</em> and <em>biopower</em> in
+            different or overlapping ways. When reading any author, check how
+            they define each term.
+          </p>
+          <p>
+            The central point is that modern power does not operate only by
+            threatening or taking life. It also works through institutions,
+            knowledge, public-health measures, statistical practices, norms, and
+            administration. For broader context, see our
             <a href="michel-foucault.html">main Foucault guide</a>.
           </p>
         </section>
         <div class="philosophy-divider"></div>
+
+        <!-- TABLE -->
         <section class="narrative-block" id="table">
-          <h2>Two poles of biopower</h2>
+          <h2>
+            Biopower vs biopolitics: anatomo-politics and the two poles of power
+          </h2>
           <div class="table-wrap">
             <table>
               <thead>
@@ -1945,379 +2060,289 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>
             The first pole is covered in our
             <a href="discipline-and-punish-summary.html"
-              >Discipline and Punish summary</a
-            >.
-          </p>
-        </section>
-        <div class="philosophy-divider"></div>
-        <section class="narrative-block" id="sovereign">
-          <h2>From sovereign power to biopower</h2>
-          <p>
-            <strong
-              >Foucault describes the emergence of biopower as a shift from
-              sovereign power, centered on the right to “make die and let live,”
-              toward modern forms of power concerned with “make live and let
-              die.”</strong
+              ><em>Discipline and Punish</em> summary</a
             >
-            In his account in <em>The History of Sexuality, Vol. 1</em> (1976),
-            the distinction does not mean that sovereign power simply
-            disappeared or that modern states stopped using coercion or
-            violence; rather, it identifies a change in the dominant way power
-            increasingly operates. Sovereign power was traditionally expressed
-            through the authority of a ruler over subjects, including the power
-            to punish, take life, or permit life to continue, whereas modern
-            power increasingly takes the biological and social processes of life
-            as objects of administration. From the seventeenth century onward,
-            Foucault identifies two interconnected developments: disciplinary
-            power directed toward individual bodies, and regulatory mechanisms
-            directed toward populations. Individual bodies could be trained,
-            examined, classified, and made more useful through institutions such
-            as schools, barracks, hospitals, workshops, and prisons, while
-            populations could be studied and regulated through knowledge and
-            practices concerning birthrates, mortality, disease, health, life
-            expectancy, reproduction, housing, and other conditions of
-            collective life. In this sense, the population becomes something
-            that can be observed through statistics, measured through
-            demographic and medical knowledge, and acted upon through
-            administrative and regulatory interventions. The state and other
-            institutions therefore increasingly exercise power not only by
-            prohibiting or punishing but also by attempting to
-            <strong>foster, regulate, optimize, and normalize life</strong>. At
-            the same time, “let die” points to the unequal distribution of
-            protection and exposure to risk within populations: a system
-            oriented toward fostering the life of a population can also
-            determine which groups receive greater protection, resources, or
-            intervention and which may be left more exposed to illness, poverty,
-            or death. Foucault’s point is therefore not that modern power is
-            simply more benevolent than sovereign power, but that its mechanisms
-            and objects have changed: power increasingly works through the
-            administration and regulation of living bodies and populations,
-            while sovereign forms of authority and coercion continue to exist
-            alongside these newer mechanisms.
+            and in our guide to
+            <a href="foucault-panopticon.html">Foucault’s panopticon</a>.
           </p>
         </section>
         <div class="philosophy-divider"></div>
+
+        <!-- SOVEREIGN -->
+        <section class="narrative-block" id="sovereign">
+          <h2>From sovereign power to biopower: “make live and let die”</h2>
+          <p>
+            Foucault describes biopower as a shift away from sovereign power. In
+            <em>The History of Sexuality, Vol. 1</em>, he frames sovereign power
+            as the right to “take life or let live.” In his 17 March 1976
+            lecture in <em>Society Must Be Defended</em>, he sums up the change
+            as a move from <strong>“make die and let live”</strong> to
+            <strong>“make live and let die.”</strong>
+          </p>
+          <p>
+            This does not mean sovereign power disappeared or that modern states
+            stopped using coercion and violence. It identifies a change in the
+            <em>dominant</em> way power operates.
+          </p>
+          <p>
+            From the seventeenth century onward, Foucault identifies two
+            interconnected developments.
+            <strong>Disciplinary power</strong> trains, examines, and classifies
+            individual bodies in schools, barracks, hospitals, workshops, and
+            prisons. <strong>Regulatory mechanisms</strong> study and manage
+            populations through knowledge of birth rates, mortality, disease,
+            life expectancy, and housing.
+          </p>
+          <p>
+            The population thus becomes something that can be measured through
+            statistics and acted on through administration. Power increasingly
+            works to
+            <strong>foster, regulate, optimize, and normalize life</strong>.
+          </p>
+          <p>
+            “Let die” points to the unequal distribution of protection and risk:
+            a system that fosters the life of a population can also leave some
+            groups more exposed to illness, poverty, or death. Foucault’s point
+            is not that modern power is more benevolent, but that its mechanisms
+            and objects have changed.
+          </p>
+        </section>
+        <div class="philosophy-divider"></div>
+
+        <!-- WHERE -->
         <section class="narrative-block" id="where">
-          <h2>Where Foucault develops the terms</h2>
+          <h2>Where does Foucault define biopower? Key texts and lectures</h2>
           <ul class="plain-list">
             <li>
               <strong><em>The History of Sexuality, Vol. 1</em> (1976):</strong>
-              Foucault gives his most widely cited formulation of
-              <strong>biopower</strong> in the final chapter, “Right of Death
-              and Power over Life.” He contrasts the sovereign right to “make
-              die and let live” with a modern power concerned with “make live
-              and let die,” and explains how power increasingly takes the
-              biological processes of individual bodies and populations as
-              objects of regulation. He identifies two connected poles: an
-              <strong>anatomo-politics of the human body</strong>, concerned
-              with disciplining and training individual bodies, and a
-              <strong>biopolitics of the population</strong>, concerned with
-              collective processes such as births, mortality, health,
-              reproduction, life expectancy, and living conditions.
+              His most cited written formulation appears in the final chapter,
+              “Right of Death and Power over Life.” He contrasts the sovereign
+              right to “take life or let live” with a power that fosters life,
+              and identifies the two poles: an
+              <strong>anatomo-politics of the human body</strong> and a
+              <strong>biopolitics of the population</strong>.
             </li>
-
             <li>
               <strong
                 ><em>Society Must Be Defended</em> (1975–76 lectures):</strong
               >
-              These lectures, delivered at the Collège de France, develop
-              Foucault’s account of
+              These Collège de France lectures develop
               <strong
-                >biopolitics as a technology of power directed toward
+                >biopolitics as a technology of power directed at
                 populations</strong
               >
-              and connect it to the emergence of modern state practices.
-              Foucault discusses how political power comes to operate on
-              populations through regulatory mechanisms concerned with
-              biological processes such as health, birthrates, mortality, and
-              reproduction. He also examines <strong>state racism</strong>,
-              arguing that racism can function within biopolitical forms of
-              power by dividing a population into groups and presenting the
-              biological or political survival of one group in relation to the
-              exposure or death of another. This provides an important bridge
-              between his analysis of biopolitics and his later discussion of
-              racism and the state.
+              and include the “make live and let die” formula. Foucault also
+              discusses <strong>state racism</strong>, arguing that racism can
+              divide a population and justify exposing one group to death for
+              the sake of another’s survival.
             </li>
-
             <li>
               <strong
                 ><em>Security, Territory, Population</em> (1977–78
                 lectures):</strong
               >
-              Foucault shifts attention toward
-              <strong>governmentality</strong> and the mechanisms through which
-              governments seek to manage populations rather than simply impose
-              laws upon individual subjects. His discussion of
-              <strong>security</strong>
-              examines practices that work with probabilities, circulation,
-              risks, epidemics, urban conditions, food supply, and other
-              processes affecting populations. Rather than attempting to
-              eliminate every undesirable event through direct prohibition,
-              security mechanisms seek to regulate the conditions and
-              probabilities within which events occur. The lectures therefore
-              help explain how biopolitical power operates through
-              administrative knowledge, statistics, expertise, and techniques of
-              governing.
+              Foucault shifts to <strong>governmentality</strong> and
+              <strong>security</strong>: managing probabilities, epidemics,
+              circulation, and food supply, rather than prohibiting every
+              undesirable event outright.
             </li>
-
             <li>
               <strong
                 ><em>The Birth of Biopolitics</em> (1978–79 lectures):</strong
               >
               Despite its title, this course is
               <strong
-                >not primarily a systematic definition of biopower or
-                biopolitics</strong
-              >. Instead, Foucault develops his analysis of
-              <strong>liberalism and neoliberalism</strong>
-              as forms of political rationality and examines how governments are
-              shaped by particular ideas about the proper limits and functions
-              of government. He discusses German ordoliberalism and American
-              neoliberalism, including the ways economic principles become
-              connected to the practice of governing. The course is nevertheless
-              important for understanding the broader development of Foucault’s
-              analysis of
-              <strong>governmentality</strong>, showing how his investigation
-              moves from disciplinary and biopolitical mechanisms toward the
-              rationalities through which modern subjects, markets, and
-              populations are governed.
+                >not primarily a definition of biopower or biopolitics</strong
+              >. It analyzes
+              <strong>liberalism and neoliberalism</strong> (German
+              ordoliberalism and American neoliberalism) as rationalities of
+              government.
             </li>
-
             <li>
-              <strong>Related Collège de France lectures:</strong> Foucault’s
-              treatment of these ideas is not confined to the four works above.
-              His lectures at the Collège de France form a broader development
-              of his changing vocabulary of
-              <strong
-                >power, discipline, governmentality, security, population, and
-                biopolitics</strong
-              >. In particular, the transition from
+              <strong>Reading the lectures together:</strong> The move from
               <em>Society Must Be Defended</em> to
-              <em>Security, Territory, Population</em> shows how his analysis
-              develops from the relationship between sovereign, disciplinary,
-              and regulatory power toward the study of governmentality and the
-              techniques used to govern populations. These texts should
-              therefore be read as parts of an evolving argument rather than as
-              isolated books in which Foucault gives one fixed definition of
-              biopower.
+              <em>Security, Territory, Population</em> shows an evolving
+              argument, from sovereign, disciplinary, and regulatory power
+              toward governmentality. None of these texts gives one fixed
+              definition of biopower.
             </li>
           </ul>
         </section>
         <div class="philosophy-divider"></div>
+
+        <!-- EXAMPLES -->
         <section class="narrative-block" id="examples">
-          <h2>Examples</h2>
+          <h2>
+            Examples of biopower and biopolitics: censuses, public health and
+            insurance
+          </h2>
           <ul class="plain-list">
             <li>
-              <strong>Censuses and demographic statistics:</strong> Governments
-              can collect and analyze information about population size, age,
-              fertility, mortality, migration, life expectancy, and other
-              demographic patterns. For Foucault, such statistical knowledge is
-              important because the population becomes an object that can be
-              measured, compared, monitored, and acted upon through policies
-              designed to influence collective conditions rather than simply
-              command individual subjects.
+              <strong>Censuses and demographic statistics:</strong> Data on
+              population size, age, fertility, mortality, and migration make the
+              population an object that can be measured, compared, and acted on
+              through policy.
             </li>
-
             <li>
               <strong>Public health, sanitation, and vaccination:</strong>
-              Measures aimed at controlling disease and improving population
-              health illustrate how political and administrative institutions
-              can intervene in biological processes affecting large groups.
-              Sanitation systems, disease surveillance, vaccination programs,
-              health regulations, and campaigns promoting particular health
-              practices can involve forms of knowledge and regulation directed
-              toward reducing mortality and managing risks across a population.
-              Their inclusion in a Foucauldian analysis does not mean that such
-              measures are inherently oppressive; the concept concerns how life,
-              health, risk, and populations become objects of organized
-              intervention.
+              Disease surveillance, sanitation systems, and vaccination programs
+              intervene in biological processes affecting large groups. A
+              Foucauldian reading does not call such measures inherently
+              oppressive; it asks how life, health, and risk become objects of
+              organized intervention.
             </li>
-
             <li>
-              <strong
-                >Family planning, reproduction, and birth-rate policies:</strong
-              >
-              Reproduction provides another important example because fertility
-              and birthrates can become matters of demographic and governmental
-              concern. Family-planning programs, incentives or restrictions
-              concerning reproduction, and policies designed to influence
-              population growth can therefore be studied in relation to
-              biopolitics. The history of
-              <strong>eugenics</strong> provides an especially coercive example
-              of attempts to manage reproduction according to supposedly
-              biological criteria, including policies involving compulsory
-              sterilization and selective reproduction in some historical
-              states.
+              <strong>Family planning and birth-rate policies:</strong>
+              Fertility can become a demographic and governmental concern. The
+              history of <strong>eugenics</strong>, including compulsory
+              sterilization, is an especially coercive example of managing
+              reproduction by supposedly biological criteria.
             </li>
-
             <li>
-              <strong
-                >Health insurance, actuarial practices, and risk
-                management:</strong
-              >
-              Insurance and related administrative systems can classify
-              individuals and populations according to risks such as illness,
-              disability, mortality, or life expectancy. Statistical and
-              actuarial techniques make it possible to calculate probabilities
-              and organize resources around those risks. In a Foucauldian
-              analysis, this illustrates how modern governance can operate
-              through measurement, probability, expertise, and management of
-              conditions rather than relying solely on direct commands or
-              punishment.
+              <strong>Health insurance and risk management:</strong> Actuarial
+              techniques classify individuals and populations by risks such as
+              illness or life expectancy, showing how governance can work
+              through probability and expertise rather than direct commands.
             </li>
-
             <li>
               <strong>Schools, workplaces, and other institutions:</strong>
-              Biopower should not be reduced to public-health policy alone.
-              Foucault’s broader analysis connects the regulation of populations
-              with disciplinary practices directed at individual bodies.
-              Schools, military institutions, factories, hospitals, and prisons
-              can classify, observe, examine, train, and normalize individuals
-              while also contributing to wider systems of administration and
-              knowledge. This is why biopower is best understood as part of a
-              broader network of modern power rather than as a single government
-              policy or institution.
+              Biopower is not only public-health policy. Institutions that
+              classify, examine, and train individuals (see
+              <a href="foucault-panopticon.html">the panopticon</a>) also feed
+              wider systems of administration and knowledge.
             </li>
           </ul>
-
           <p>
-            The concept has also been applied by later scholars to contemporary
-            controversies, including responses to epidemics and pandemics.
-            During debates over pandemic restrictions, surveillance,
-            vaccination, emergency powers, and the regulation of movement,
-            <strong>biopolitical</strong> language was used to analyze how
-            states sought to manage collective health and biological risk.
-            Philosopher <strong>Giorgio Agamben</strong>, for example, invoked
-            related concepts in criticizing aspects of emergency measures during
-            the COVID-19 pandemic, while other scholars disputed his
-            interpretation and argued that protecting public health and
-            restricting certain activities during an epidemic cannot by itself
-            establish the broader Foucauldian claim about biopolitical
-            domination. These later applications are therefore best treated as
-            interpretations and extensions of Foucault’s framework rather than
-            as examples of policies that Foucault himself discussed.
+            Later scholars have also applied the concept to epidemics. During
+            the COVID-19 pandemic, Giorgio Agamben used related ideas to
+            criticize emergency measures, while other scholars argued that
+            public-health restrictions alone cannot establish a claim of
+            biopolitical domination. These are extensions of Foucault’s
+            framework, not policies he discussed himself.
           </p>
         </section>
         <div class="philosophy-divider"></div>
+
+        <!-- AFTER -->
         <section class="narrative-block" id="after">
-          <h2>How later thinkers use the terms</h2>
+          <h2>
+            Biopolitics after Foucault: Agamben, Esposito, Hardt and Negri
+          </h2>
           <p>
-            <strong
-              >Later thinkers use biopolitics and biopower to develop different
-              interpretations of Foucault’s analysis of how political power
-              becomes concerned with human life, bodies, and
-              populations.</strong
-            >
-            These later approaches should not be treated as interchangeable with
-            Foucault’s own terminology, because each author extends the concepts
-            toward different philosophical and political questions.
-            <strong>Giorgio Agamben</strong>
-            connects biopolitics with the distinction between political life and
-            <em>bare life</em>—life reduced to its biological existence—and
-            argues that the <strong>camp</strong> provides a particularly
-            important model for understanding modern political power and the
-            production of spaces in which ordinary legal protections can be
-            suspended. His approach therefore places greater emphasis than
-            Foucault’s original account on sovereignty, law, the state of
-            exception, and the relationship between political authority and
-            exposed forms of life. <strong>Roberto Esposito</strong>, meanwhile,
-            develops biopolitical theory through the concept of
-            <strong>immunity</strong>. He examines how political communities
-            seek protection from threats and how mechanisms intended to preserve
-            collective life can simultaneously produce forms of exclusion or
-            danger. His <em>immunity/community</em> framework gives biopolitics
-            a distinctive vocabulary for examining the relationship between
-            protection, community, and the management of life.
+            Later thinkers extend biopower and biopolitics in different
+            directions, so their usage should not be treated as interchangeable
+            with Foucault’s own.
           </p>
+
+          <h3>
+            Giorgio Agamben: bare life, the camp and the state of exception
+          </h3>
           <p>
-            <strong>Michael Hardt and Antonio Negri</strong> extend the
-            discussion of biopower into an analysis of contemporary capitalism,
-            especially in <em>Empire</em> (2000) and <em>Multitude</em> (2004).
-            They use biopower to describe forms of power that operate not only
-            through institutions and states but also through social production,
-            communication, networks, economic relations, and the production of
-            social life itself. Their interpretation is consequently connected
-            to their broader account of
-            <strong>global capitalism and Empire</strong>, rather than being a
-            simple restatement of Foucault.
-            <strong>Thomas Lemke</strong> provides an influential overview of
-            these different developments and emphasizes the need to distinguish
-            Foucault’s historically specific analysis from the many later uses
-            of biopolitics and biopower. Taken together, these interpretations
-            show that the terms have become a broad field of debate: Agamben
-            emphasizes bare life, sovereignty, and the state of exception;
-            Esposito examines community and immunity; Hardt and Negri connect
-            biopower to global capitalism and social production; and Lemke helps
-            clarify the conceptual differences among these approaches.
+            Agamben distinguishes political life from <em>bare life</em>, life
+            reduced to its biological existence. He treats the
+            <strong>camp</strong> as a model of modern power, a space where
+            ordinary legal protections can be suspended. His approach stresses
+            sovereignty, law, and the state of exception more than Foucault
+            does.
+          </p>
+
+          <h3>Roberto Esposito: biopolitics and immunity</h3>
+          <p>
+            Esposito develops biopolitics through the concept of
+            <strong>immunity</strong>. Mechanisms meant to protect a community’s
+            life can also produce exclusion or danger, a tension he explores
+            through his <em>immunity/community</em> framework.
+          </p>
+
+          <h3>
+            Michael Hardt and Antonio Negri: biopower and global capitalism
+          </h3>
+          <p>
+            In <em>Empire</em> (2000) and <em>Multitude</em> (2004), Hardt and
+            Negri use biopower to describe power that works through social
+            production, communication, and networks, not only states. Their
+            reading is tied to their account of
+            <strong>global capitalism and Empire</strong>.
+          </p>
+
+          <h3>Thomas Lemke: mapping the debate</h3>
+          <p>
+            Lemke offers an influential overview and stresses the need to
+            distinguish Foucault’s historically specific analysis from later
+            uses. Taken together, these interpretations show that biopolitics is
+            now a broad field of debate, not a single settled concept.
           </p>
         </section>
         <div class="philosophy-divider"></div>
 
+        <!-- FAQ -->
         <section class="narrative-block" id="faq">
-          <h2>Frequently asked questions</h2>
+          <h2>Biopower and biopolitics FAQ</h2>
+
+          <h3>What is the difference between biopower and biopolitics?</h3>
+          <p>
+            Biopower is the broader term for power that takes human life as its
+            object. Biopolitics usually names its population-level pole,
+            alongside the disciplinary control of individual bodies. Foucault
+            does not always separate the terms, and usage varies among later
+            scholars.
+          </p>
+
           <h3>What is biopower?</h3>
           <p>
             A form of power that manages and fosters human life, working both on
             individual bodies and on whole populations.
           </p>
+
           <h3>What is biopolitics?</h3>
           <p>
             The population-level side of biopower: politics concerned with
             birth, death, health, and longevity.
           </p>
-          <h3>Are biopower and biopolitics the same?</h3>
+
+          <h3>What is anatomo-politics?</h3>
           <p>
-            Foucault often uses them close together. Many scholars treat
-            biopolitics as one pole of biopower, but usage varies.
+            Anatomo-politics is the first pole of biopower: the disciplining and
+            training of individual bodies through institutions such as schools,
+            barracks, hospitals, and prisons.
           </p>
+
+          <h3>What does “make live and let die” mean?</h3>
+          <p>
+            In his 1976 lectures, Foucault uses the phrase to describe modern
+            power, which fosters and administers life while leaving some groups
+            more exposed to death. It contrasts with sovereign power’s right to
+            “make die and let live.”
+          </p>
+
           <h3>In which Foucault text does biopower first appear?</h3>
           <p>
-            In the final chapter of
-            <em>The History of Sexuality, Vol. 1</em> (1976), and in his 1975–76
-            lectures.
+            In his 1975–76 lectures, <em>Society Must Be Defended</em>, and in
+            the final chapter of
+            <em>The History of Sexuality, Vol. 1</em> (1976).
           </p>
+
           <h3>How does biopower work?</h3>
           <p>
-            <strong
-              >Biopower works by producing knowledge about bodies and
-              populations and using that knowledge to regulate, organize, and
-              manage aspects of life.</strong
-            >
-            It can operate through institutions, statistics, medical expertise,
-            public-health practices, demographic policies, surveillance, norms,
-            and other techniques that influence how individuals and populations
-            are governed. Rather than relying only on direct commands or
-            punishment, biopower often works through the regulation of
-            conditions, risks, behaviors, and collective processes.
+            Biopower works by producing knowledge about bodies and populations
+            and using it to regulate, organize, and manage life, through
+            institutions, statistics, medical expertise, public-health
+            practices, demographic policies, and norms.
           </p>
 
           <h3>What are some examples of biopower?</h3>
           <p>
-            <strong
-              >Examples commonly examined through the concept of biopower
-              include censuses, demographic statistics, public-health programs,
-              disease surveillance, reproductive policies, health
-              administration, and systems for managing population-level
-              risks.</strong
-            >
-            These practices become relevant to Foucault’s analysis when human
-            life, health, reproduction, mortality, or population processes
-            become objects of systematic knowledge and intervention.
+            Censuses, demographic statistics, public-health programs, disease
+            surveillance, reproductive policies, health insurance, and other
+            systems for managing population-level risk.
           </p>
 
           <h3>What is the relationship between discipline and biopower?</h3>
           <p>
-            <strong
-              >Disciplinary power focuses primarily on training and regulating
-              individual bodies, while biopower also operates at the level of
-              populations.</strong
-            >
-            Foucault presents these as interconnected mechanisms rather than
-            completely separate systems. Discipline can make individual bodies
-            more useful, efficient, and governable, while regulatory mechanisms
-            address collective processes such as birthrates, mortality, health,
-            and longevity. Together, they form important parts of Foucault’s
-            account of modern power over life.
+            Disciplinary power trains and regulates individual bodies, while
+            biopower also operates on populations. Foucault presents them as
+            interconnected mechanisms that together make up modern power over
+            life.
           </p>
 
           <h3>
@@ -2325,22 +2350,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             everything?
           </h3>
           <p>
-            <strong
-              >No. Foucault’s concept does not mean that governments exercise
-              total control over every aspect of life.</strong
-            >
-            Biopower describes particular techniques and forms of power through
-            which bodies and populations can be regulated, managed, normalized,
-            or optimized. Foucault also emphasizes that power is relational and
-            operates through numerous institutions, practices, forms of
-            knowledge, and social relationships rather than existing solely in
-            the state. His analysis therefore concerns how power operates
-            through the management of life, not a claim that every aspect of
-            human behavior is completely controlled.
+            No. Biopower describes particular techniques through which bodies
+            and populations are regulated, not total control. Foucault stresses
+            that power is relational and runs through many institutions and
+            forms of knowledge, not only the state.
           </p>
         </section>
         <div class="philosophy-divider"></div>
 
+        <!-- SOURCES -->
         <section class="narrative-block sources" id="sources">
           <h2>Sources and further reading</h2>
           <ul class="plain-list">
@@ -2372,6 +2390,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 1978–79</em
               >
               (Palgrave Macmillan, 2008).
+            </li>
+            <li>
+              Giorgio Agamben,
+              <em>Homo Sacer: Sovereign Power and Bare Life</em> (Stanford
+              University Press, 1998; Italian original 1995).
+            </li>
+            <li>
+              Michael Hardt and Antonio Negri, <em>Empire</em> (Harvard
+              University Press, 2000).
             </li>
             <li>
               Thomas Lemke, <em>Biopolitics: An Advanced Introduction</em> (NYU
@@ -2416,8 +2443,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               >Where to Start Reading Foucault</a
             >
             · <a href="foucault-vs-marx.html">Foucault vs Marx</a> ·
-            <a href="foucault-vs-nietzsche.html">Foucault vs Nietzsche</a>·
-
+            <a href="foucault-vs-nietzsche.html">Foucault vs Nietzsche</a> ·
             <a href="political-philosophy.html">Political Philosophy</a> ·
             <a href="contemporary-philosophy.html">Contemporary Philosophy</a> ·
             <a href="nietzsche.html">Nietzsche</a> ·
@@ -2467,7 +2493,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <a href="editorial-policy.html">Editorial-policy</a>
 
-          <a href="privacy-policy.html">Policy</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
 
           <a href="terms.html">Terms</a>
 
@@ -2589,8 +2615,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="appearance-options theme-options">
           <button type="button" data-theme="automatic">Auto</button>
-
-           
 
           <button type="button" data-theme="dark">Dark</button>
         </div>

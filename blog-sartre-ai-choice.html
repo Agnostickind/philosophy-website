@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -13,14 +13,19 @@
     />
 
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NCXRWR8P');</script>
-<!-- End Google Tag Manager -->
-
-    
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NCXRWR8P");
+    </script>
+    <!-- End Google Tag Manager -->
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -152,17 +157,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 
-    <link
-      rel="describedby"
-      href="https://libraryofphilosophy.com/llms.txt"
-    />
+    <link rel="describedby" href="https://libraryofphilosophy.com/llms.txt" />
 
     <!-- ================= STYLESHEETS ================= -->
 
-         <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="thinkers-refine.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="thinkers-refine.css" />
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
+    <link rel="stylesheet" href="kj-style.css" />
 
     <!-- ================= ARTICLE REFINEMENT ================= -->
 
@@ -444,11 +447,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     ```
   </head>
 
-   <body>
-   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCXRWR8P"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NCXRWR8P"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     ```
     <!-- ================= NAVBAR ================= -->
 
@@ -797,8 +806,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- ================= POST HEADER ================= -->
 
-    <header class="thinkers-hero">
-      <div class="hero-content">
+    <header class="kj-hero">
+      <div class="kj-content">
         <p
           style="
             font-family: var(--mono);
@@ -821,13 +830,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </header>
 
-    <!-- ================= POST BODY ================= -->
-
-    <!-- ================= TOC ================= -->
-
-    <nav class="article-toc" aria-label="Table of contents">
-      <h2>In This Essay</h2>
-
+    <nav aria-label="TABLE OF CONTENTS" class="contents-of-page">
       <ol>
         <li>
           <a href="#existence-essence"> Existence Before Essence </a>
@@ -890,22 +893,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </nav>
 
     <article class="narrative-block sartre-blog" style="margin-top: 4rem">
-      <figure class="narrative-figure">
-        <img
-          src="images/being and nothingness by jean-paul sartre.jpg"
-          alt="Jean-Paul Sartre and Being and Nothingness"
-          loading="eager"
-          fetchpriority="high"
-          decoding="async"
-        />
-
-        <figcaption>
-          Jean-Paul Sartre's philosophy asks what it means to remain responsible
-          for a life that has no predetermined script.
-        </figcaption>
-      </figure>
-
       <div class="article-intro">
+        
         <p>
           An AI assistant can recommend what to buy, suggest what to write, rank
           which option looks best, plan a journey, summarize an argument, or
@@ -969,7 +958,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <!-- ================= SECTION 1 ================= -->
 
-      <p class="section-kicker">Existentialism</p>
+      <div class="section-kicker">Existentialism</div>
 
       <h2 id="existence-essence">Existence Before Essence</h2>
 
@@ -1794,8 +1783,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="appearance-options theme-options">
           <button type="button" data-theme="automatic">Auto</button>
-
-           
 
           <button type="button" data-theme="dark">Dark</button>
         </div>

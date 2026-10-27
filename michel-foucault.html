@@ -30,12 +30,19 @@
     />
 
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NCXRWR8P');</script>
-<!-- End Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NCXRWR8P");
+    </script>
+    <!-- End Google Tag Manager -->
 
     <!-- ================= SEO ================= -->
 
@@ -82,16 +89,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       content="https://libraryofphilosophy.com/images/michel-foucault.jpg"
     />
 
-    <!--
-      NOTE: og:image:width/height below assume a 1200x630 social card.
-      Your current image is 400x500 (portrait). Either crop/create a
-      real 1200x630 version of this image, or delete these two
-      dimension tags so platforms fetch and measure the image themselves.
-    -->
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="500" />
-    <meta property="og:image:type" content="image/jpeg" />
-
     <meta
       property="og:image:alt"
       content="Portrait of Michel Foucault, French philosopher, historian of ideas, and social theorist"
@@ -101,8 +98,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <meta property="og:locale" content="en_US" />
 
-    <meta property="article:published_time" content="2026-08-01" />
-    <!-- TODO: replace with the real original publish date -->
+    <meta property="article:published_time" content="2026-08-26" />
+
     <meta property="article:modified_time" content="2026-09-28" />
     <meta property="article:author" content="Kavya Jain" />
 
@@ -131,23 +128,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     />
 
     <!-- ================= STYLESHEETS (unchanged, left as-is) ================= -->
-    <!--
-      NOTE: branches-refine.css, history-refine.css, and
-      branches-enhance.js (loaded near the closing body tag) appear to
-      be built for the Branches/History pages, not this Thinkers page.
-      If nothing on this page actually uses their classes/selectors,
-      remove them here to cut unused-CSS/JS weight. I left them in
-      since I can't confirm from this file alone whether any shared
-      component depends on them — check before deleting.
-    -->
-         <link rel="stylesheet" href="style.css" />
- <link rel="stylesheet" href="thinkers-refine.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="thinkers-refine.css" />
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
-       
-    <link rel="stylesheet" href="spoke-pages.css" />
+    <link rel="stylesheet" href="kj-style.css" />
 
-    <!-- FIX: minimal styles for the new breadcrumb, quick-answer box, and sources table (added inline so nothing extra needs uploading) -->
+    <link rel="stylesheet" href="spoke-pages.css" />
 
     <!-- ================= FAVICONS ================= -->
 
@@ -431,11 +419,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
   </head>
 
-   <body>
-   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCXRWR8P"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NCXRWR8P"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- =====================================================
        NAVIGATION
        ===================================================== -->
@@ -2027,7 +2021,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <source srcset="images/michel-foucault.webp" type="image/webp" />
               <img
                 src="images/michel-foucault.jpg"
-                alt="Michel Foucault is a  influential French philosopher and social theorist"
+                alt="Michel Foucault is a influential French philosopher and social theorist"
                 width="400"
                 height="450"
                 loading="lazy"
@@ -2146,9 +2140,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- ================= TABLE OF CONTENTS ================= -->
 
-        <nav class="static-toc" aria-labelledby="toc-title">
-          <h2 id="toc-title">Table of Contents</h2>
-
+        <nav aria-label="TABLE OF CONTENTS" class="contents-of-page">
           <ol class="static-toc-list">
             <li><a href="#quick-answer">Michel Foucault in Brief</a></li>
             <li><a href="#who-was-foucault">Who Was Michel Foucault?</a></li>
@@ -2275,8 +2267,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li><strong>Important concept</strong> — Governmentality</li>
           </ul>
 
-          And for quotes go through the <a href="foucault-quotes.html">Michel Foucault quotes</a> page.
-          And if you dont know where to begin check out our <a href="how-to-read-foucault.html">How to Read Foucault</a> page.
+          And for quotes go through the
+          <a href="foucault-quotes.html">Michel Foucault quotes</a> page. And if
+          you dont know where to begin check out our
+          <a href="how-to-read-foucault.html">How to Read Foucault</a> page.
         </section>
 
         <div class="philosophy-divider"></div>
@@ -2383,23 +2377,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h2>Why Is Michel Foucault Important?</h2>
 
           <p>
-            Michel Foucault is important because he transformed how scholars
-            examine power, knowledge, institutions, and social norms. His work
-            showed how historically specific systems of classification and
-            expertise can shape what societies regard as true, normal, or
-            acceptable. His ideas influenced philosophy, history, sociology,
-            cultural studies, and critical theory.
-          </p>
-
-          <p>
             Michel Foucault is important because he changed the way many
             scholars think about the relationship between ideas, knowledge, and
             society. Rather than treating knowledge as something that develops
-            independently from historical circumstances, he investigated the
+            independently of historical circumstances, he investigated the
             conditions through which particular forms of knowledge become
-            possible. His work asks why certain concepts, categories, and
-            disciplines emerge at particular moments and why they later acquire
-            authority.
+            possible, asking why certain concepts, categories, and disciplines
+            emerge at particular moments and why they later acquire authority.
+            His work also transformed the philosophical study of power.
+            Traditional political theory often concentrates on sovereignty,
+            laws, governments, and the authority of rulers, whereas Foucault did
+            not deny the importance of these forms of power but argued that
+            modern power also operates in more dispersed and everyday ways.
+            Institutions and social practices can shape conduct through
+            observation, examination, classification, training, normalization,
+            and the production of knowledge.
           </p>
 
           <p>
@@ -2608,7 +2600,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </p>
 
           <!-- FIX: new table for AEO/GEO — extractable, quotable format -->
-          <table class="power-modes-table">
+          <div class="jk-table">
+            <table class="jk-tableau">
             <caption>
               Three modes of power in Foucault's work
             </caption>
@@ -2648,6 +2641,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </tr>
             </tbody>
           </table>
+          </div>
         </section>
 
         <div class="philosophy-divider"></div>
@@ -2887,7 +2881,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <p>
             Foucault later developed an approach known as
-           <a href="foucault-genealogy-vs-archaeology.html"><strong>genealogy</strong></a>, strongly influenced by
+            <a href="foucault-genealogy-vs-archaeology.html"
+              ><strong>genealogy</strong></a
+            >, strongly influenced by
             <a href="#nietzsche">Friedrich Nietzsche's</a> genealogical
             investigations. Genealogy examines the historical development of
             practices, institutions, and systems of thought without assuming
@@ -3687,9 +3683,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h2>What Did Michel Foucault Mean by the Panopticon?</h2>
 
           <p>
-            Michel Foucault used the <a href="foucault-panopticon.html"><strong>Panopticon</strong></a> as a model for
-            explaining how modern disciplinary power can operate through
-            visibility, surveillance, and self-regulation. Drawing on
+            Michel Foucault used the
+            <a href="foucault-panopticon.html"><strong>Panopticon</strong></a>
+            as a model for explaining how modern disciplinary power can operate
+            through visibility, surveillance, and self-regulation. Drawing on
             <a href="jeremy-bentham.html">Jeremy Bentham</a>'s 1791 prison
             design, Foucault argued that the possibility of being watched can
             lead individuals to monitor and regulate their own behavior, even
@@ -4676,23 +4673,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h2>Was Michel Foucault a Postmodernist?</h2>
 
           <p>
-            Michel Foucault is often classified as a
+            Michel Foucault is often described as a
             <strong>postmodern philosopher</strong>, particularly because of his
             critiques of universal historical narratives and his analyses of
-            knowledge, discourse, and power. However, Foucault did not
-            consistently identify himself with postmodernism. His work is more
-            precisely understood through his own historical methods and analyses
-            of how systems of thought change.
-          </p>
-
-          <p>
-            Michel Foucault is frequently described as a
-            <strong>postmodern philosopher</strong>, especially in popular
-            discussions of twentieth-century philosophy. His criticism of
-            universal historical narratives and his analysis of knowledge,
-            language, and power contributed to this association. However, the
-            label is not entirely straightforward and should be used carefully
-            when discussing Foucault's own intellectual identity.
+            knowledge, discourse, language, power, and social institutions. His
+            work became closely associated with postmodernism because he
+            questioned the idea that history follows a single, universal pattern
+            of progress and examined how societies construct systems of
+            knowledge that determine what is considered true, normal, or
+            authoritative at particular historical moments. However, Foucault
+            did not consistently identify himself as a postmodernist, and the
+            label should therefore be used carefully when discussing his
+            intellectual identity. Rather than developing a fixed philosophical
+            system under the name of postmodernism, he employed historical and
+            critical methods to investigate how systems of thought, forms of
+            knowledge, and practices of power emerge, change, and shape human
+            experience. For this reason, Foucault is often discussed alongside
+            postmodern thinkers while also being treated as a distinctive
+            philosopher whose work does not fit neatly within a single
+            intellectual category.
           </p>
 
           <p>
@@ -4728,12 +4727,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <p>
             It is therefore usually more precise to focus on Foucault's specific
-            concepts—such as <a href="foucault-power-knowledge.html" >power/knowledge</a>, discourse, archaeology, genealogy,
-            discipline, biopower, and subjectivity—rather than relying only on
-            the broad label "postmodernism." He is more securely understood as a
-            major figure associated with structuralist and post-structuralist
-            currents whose distinctive philosophy developed through historically
-            specific investigations of knowledge, power, and the human subject.
+            concepts—such as
+            <a href="foucault-power-knowledge.html">power/knowledge</a>,
+            discourse, archaeology, genealogy, discipline, biopower, and
+            subjectivity—rather than relying only on the broad label
+            "postmodernism." He is more securely understood as a major figure
+            associated with structuralist and post-structuralist currents whose
+            distinctive philosophy developed through historically specific
+            investigations of knowledge, power, and the human subject.
           </p>
         </section>
 
@@ -5095,14 +5096,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Power/Knowledge</h3>
 
           <p>
-           <a href="foucault-power-knowledge.html">Power and knowledge</a> are deeply connected through institutions and
-            practices that produce information, define expertise, establish
-            categories, and influence the ways human beings understand
-            themselves and others. Foucault's concept does not mean that all
-            knowledge is false; rather, it investigates how historically
-            organized systems of knowledge can become connected with practical
-            techniques of power, administration, classification, and
-            intervention.
+            <a href="foucault-power-knowledge.html">Power and knowledge</a> are
+            deeply connected through institutions and practices that produce
+            information, define expertise, establish categories, and influence
+            the ways human beings understand themselves and others. Foucault's
+            concept does not mean that all knowledge is false; rather, it
+            investigates how historically organized systems of knowledge can
+            become connected with practical techniques of power, administration,
+            classification, and intervention.
           </p>
 
           <h3>Discourse</h3>
@@ -5121,14 +5122,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Genealogy</h3>
 
           <p>
-           <a href="foucault-genealogy-vs-archaeology.html">Genealogy</a> investigates the historical struggles, conflicts,
-            contingencies, and transformations through which ideas, values,
-            institutions, and practices emerge. Inspired in important ways by
-            Nietzsche, Foucault's genealogical method rejects simple narratives
-            of inevitable progress and examines how present realities were
-            formed through complex historical processes. Its purpose is often to
-            make the familiar appear historically contingent rather than
-            naturally permanent.
+            <a href="foucault-genealogy-vs-archaeology.html">Genealogy</a>
+            investigates the historical struggles, conflicts, contingencies, and
+            transformations through which ideas, values, institutions, and
+            practices emerge. Inspired in important ways by Nietzsche,
+            Foucault's genealogical method rejects simple narratives of
+            inevitable progress and examines how present realities were formed
+            through complex historical processes. Its purpose is often to make
+            the familiar appear historically contingent rather than naturally
+            permanent.
           </p>
 
           <h3>Disciplinary Power</h3>
@@ -5147,13 +5149,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Biopower</h3>
 
           <p>
-          <a href="foucault-biopower-vs-biopolitics.html">Biopower</a> concerns modern forms of political and social power
-            directed toward bodies, health, populations, reproduction,
-            mortality, and the management of life. It includes both techniques
-            directed toward individual bodies and broader strategies concerned
-            with populations. Foucault used the concept to describe the growing
-            importance of scientific knowledge and administrative practices in
-            the political regulation and optimization of human life.
+            <a href="foucault-biopower-vs-biopolitics.html">Biopower</a>
+            concerns modern forms of political and social power directed toward
+            bodies, health, populations, reproduction, mortality, and the
+            management of life. It includes both techniques directed toward
+            individual bodies and broader strategies concerned with populations.
+            Foucault used the concept to describe the growing importance of
+            scientific knowledge and administrative practices in the political
+            regulation and optimization of human life.
           </p>
 
           <h3>Governmentality</h3>
@@ -5307,87 +5310,103 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          FAQ
          ===================================================== -->
 
-        <section class="narrative-block" id="faq">
+        <section class="new-faq" id="faq">
           <h2>Frequently Asked Questions About Michel Foucault</h2>
+          <details class="faq-item">
+            <summary>Who was Michel Foucault?</summary>
 
-          <h3>Who was Michel Foucault?</h3>
+            <p>
+              Michel Foucault was a French philosopher, historian of ideas, and
+              social theorist who lived from 1926 to 1984. He became famous for
+              his studies of power, knowledge, discourse, institutions,
+              punishment, sexuality, madness, surveillance, and the formation of
+              human identity.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>What is Michel Foucault famous for?</summary>
 
-          <p>
-            Michel Foucault was a French philosopher, historian of ideas, and
-            social theorist who lived from 1926 to 1984. He became famous for
-            his studies of power, knowledge, discourse, institutions,
-            punishment, sexuality, madness, surveillance, and the formation of
-            human identity.
-          </p>
+            <p>
+              Michel Foucault is famous for concepts including power/knowledge,
+              discourse, genealogy, disciplinary power, the Panopticon,
+              biopower, biopolitics, and governmentality. His best-known books
+              include
+              <em>Discipline and Punish</em> and
+              <em>The History of Sexuality</em>.
+            </p>
+          </details>
 
-          <h3>What is Michel Foucault famous for?</h3>
+          <details class="faq-item">
+            <summary>What did Michel Foucault mean by power?</summary>
 
-          <p>
-            Michel Foucault is famous for concepts including power/knowledge,
-            discourse, genealogy, disciplinary power, the Panopticon, biopower,
-            biopolitics, and governmentality. His best-known books include
-            <em>Discipline and Punish</em> and
-            <em>The History of Sexuality</em>.
-          </p>
+            <p>
+              Foucault argued that power is not possessed only by governments or
+              rulers. Power operates through relationships, institutions,
+              knowledge, social norms, discipline, observation, and everyday
+              practices that influence how individuals behave and understand
+              themselves.
+            </p>
+          </details>
 
-          <h3>What did Michel Foucault mean by power?</h3>
+          <details class="faq-item">
+            <summary>What is power/knowledge according to Foucault?</summary>
 
-          <p>
-            Foucault argued that power is not possessed only by governments or
-            rulers. Power operates through relationships, institutions,
-            knowledge, social norms, discipline, observation, and everyday
-            practices that influence how individuals behave and understand
-            themselves.
-          </p>
+            <p>
+              Power/knowledge refers to the close relationship between systems
+              of power and the production of knowledge. Institutions produce
+              knowledge about individuals and populations, while that knowledge
+              can also become part of systems that classify, regulate, and
+              govern social life.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              What is the Panopticon in Michel Foucault's philosophy?
+            </summary>
 
-          <h3>What is power/knowledge according to Foucault?</h3>
+            <p>
+              The Panopticon is a model of surveillance inspired by
+              <a href="jeremy-bentham.html">Jeremy Bentham's</a> prison design.
+              Foucault used it to explain how the possibility of being observed
+              can encourage individuals to regulate their own behavior.
+            </p>
+          </details>
 
-          <p>
-            Power/knowledge refers to the close relationship between systems of
-            power and the production of knowledge. Institutions produce
-            knowledge about individuals and populations, while that knowledge
-            can also become part of systems that classify, regulate, and govern
-            social life.
-          </p>
+          <details class="faq-item">
+            <summary>What is biopower?</summary>
 
-          <h3>What is the Panopticon in Michel Foucault's philosophy?</h3>
+            <p>
+              Biopower is Foucault's concept for modern forms of power concerned
+              with the management of life. It includes the political and
+              institutional regulation of bodies, health, populations,
+              reproduction, mortality, and other biological aspects of human
+              existence.
+            </p>
+          </details>
 
-          <p>
-            The Panopticon is a model of surveillance inspired by
-            <a href="jeremy-bentham.html">Jeremy Bentham's</a> prison design.
-            Foucault used it to explain how the possibility of being observed
-            can encourage individuals to regulate their own behavior.
-          </p>
+          <details class="faq-item">
+            <summary>Was Michel Foucault a postmodernist?</summary>
 
-          <h3>What is biopower?</h3>
+            <p>
+              Michel Foucault is often associated with postmodernism because of
+              his criticism of universal historical narratives and his analysis
+              of knowledge and power. However, he did not consistently identify
+              himself as a postmodernist, making the label an imperfect
+              description.
+            </p>
+          </details>
 
-          <p>
-            Biopower is Foucault's concept for modern forms of power concerned
-            with the management of life. It includes the political and
-            institutional regulation of bodies, health, populations,
-            reproduction, mortality, and other biological aspects of human
-            existence.
-          </p>
+          <details class="faq-item">
+            <summary>What Michel Foucault book should I read first?</summary>
 
-          <h3>Was Michel Foucault a postmodernist?</h3>
-
-          <p>
-            Michel Foucault is often associated with postmodernism because of
-            his criticism of universal historical narratives and his analysis of
-            knowledge and power. However, he did not consistently identify
-            himself as a postmodernist, making the label an imperfect
-            description.
-          </p>
-
-          <h3>What Michel Foucault book should I read first?</h3>
-
-          <p>
-            Most readers are advised to start with
-            <em>Discipline and Punish</em> or
-            <em>The History of Sexuality, Volume I</em>, his most widely taught
-            and accessible works, before moving on to earlier studies such as
-            <em>Madness and Civilization</em>.
-          </p>
+            <p>
+              Most readers are advised to start with
+              <em>Discipline and Punish</em> or
+              <em>The History of Sexuality, Volume I</em>, his most widely
+              taught and accessible works, before moving on to earlier studies
+              such as <em>Madness and Civilization</em>.
+            </p>
+          </details>
         </section>
 
         <div class="philosophy-divider"></div>
@@ -5585,7 +5604,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <p class="author-role">Philosophy Research &amp; Content</p>
 
               <p class="article-meta">
-                <span>Published: Augest 01, 2026</span>
+                <span>Published: August 26, 2026</span>
                 <span>Last updated: September 28, 2026</span>
               </p>
             </div>

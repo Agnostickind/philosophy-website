@@ -1,0 +1,995 @@
+      /* =========================================================
+   FAQ – dark red theme
+   Add this in <head> for the font (or swap for your own):
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+   ========================================================= */
+
+:root {
+  --faq-bg: #12080a;
+  --faq-surface: #1b0d10;
+  --faq-surface-open: #2a1015;
+  --faq-border: #5a1d26;
+  --faq-border-soft: #3a141a;
+  --faq-accent: #e07a6f;       /* rose-coral highlight */
+  --faq-accent-deep: #a8323e;  /* crimson */
+  --faq-text: #f3e6e1;
+  --faq-muted: #cdb8b3;
+  --faq-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+}
+
+/* ---------- Section wrapper ---------- */
+.new-faq {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+  background: var(--faq-bg);
+  color: var(--faq-text);
+  font-family: var(--faq-serif);
+}
+
+.new-faq h2 {
+  margin: 0 0 2rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--faq-text);
+}
+
+/* =========================================================
+   VERSION A – works with your CURRENT markup (h3 + p)
+   Each question/answer pair becomes one joined card.
+   ========================================================= */
+
+.new-faq h3 {
+  margin: 1rem 0 0;
+  padding: 1.1rem 1.4rem 0.4rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--faq-accent);
+  background: var(--faq-surface-open);
+  border: 1px solid var(--faq-border);
+  border-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  /* thin crimson bar on the left marks each question */
+  box-shadow: inset 3px 0 0 var(--faq-accent-deep);
+}
+
+.new-faq h3 + p {
+  margin: 0;
+  padding: 0.4rem 1.4rem 1.3rem;
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: var(--faq-muted);
+  background: var(--faq-surface-open);
+  border: 1px solid var(--faq-border);
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  box-shadow: inset 3px 0 0 var(--faq-accent-deep);
+}
+
+.new-faq em {
+  color: var(--faq-text);
+  font-style: italic;
+}
+
+
+
+/* ---------- Divider under the section ---------- */
+.philosophy-divider {
+  height: 1px;
+  max-width: 860px;
+  margin: 2.5rem auto;
+  background: linear-gradient(90deg, transparent, var(--faq-accent-deep), transparent);
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 600px) {
+  .new-faq { padding: 2rem 1rem; }
+  .new-faq h3,
+  .faq-item summary { font-size: 1.15rem; }
+  .new-faq h3 + p,
+  .faq-item p { font-size: 1.05rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-item,
+  .faq-item summary::after { transition: none; }
+}
+
+/* =========================================================
+   PHILOSOPHY LIBRARY — TABLE DESIGN
+   Scoped to .jk-table / .jk-tableau
+   ========================================================= */
+
+.jk-table {
+  width: 100%;
+  margin: 2.5rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #8d6935 #140506;
+  border: 1px solid rgba(184, 138, 68, 0.28);
+  background: rgba(20, 5, 6, 0.72);
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.25),
+    inset 0 0 30px rgba(184, 138, 68, 0.025);
+}
+
+/* Custom scrollbar — Chrome / Edge / Safari */
+.jk-table::-webkit-scrollbar {
+  height: 7px;
+}
+
+.jk-table::-webkit-scrollbar-track {
+  background: #140506;
+}
+
+.jk-table::-webkit-scrollbar-thumb {
+  background: #76562c;
+  border-radius: 10px;
+}
+
+.jk-table::-webkit-scrollbar-thumb:hover {
+  background: #a77b3b;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.jk-tableau {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #e8ddc8;
+  font-family: inherit;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+   ========================================================= */
+
+.jk-tableau thead {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(184, 138, 68, 0.15),
+      rgba(184, 138, 68, 0.07)
+    );
+}
+
+.jk-tableau thead th {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid rgba(184, 138, 68, 0.55);
+  color: #c69a55;
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TABLE BODY
+   ========================================================= */
+
+.jk-tableau tbody tr {
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Subtle alternating rows */
+.jk-tableau tbody tr:nth-child(even) {
+  background: rgba(184, 138, 68, 0.025);
+}
+
+/* Elegant gold hover */
+.jk-tableau tbody tr:hover {
+  background: rgba(184, 138, 68, 0.07);
+  box-shadow: inset 3px 0 0 rgba(184, 138, 68, 0.55);
+}
+
+
+/* =========================================================
+   CELLS
+   ========================================================= */
+
+.jk-tableau tbody th,
+.jk-tableau tbody td {
+  padding: 1.05rem 1.25rem;
+  border-bottom: 1px solid rgba(184, 138, 68, 0.16);
+  vertical-align: top;
+  text-align: left;
+}
+
+.jk-tableau tbody tr:last-child th,
+.jk-tableau tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* First column — position names */
+.jk-tableau tbody th {
+  width: 18%;
+  color: #d1aa6b;
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+/* Regular content */
+.jk-tableau tbody td {
+  color: #ded4c1;
+}
+
+
+/* =========================================================
+   COLUMN SEPARATION
+   ========================================================= */
+
+.jk-tableau th + th,
+.jk-tableau th + td,
+.jk-tableau td + td {
+  border-left: 1px solid rgba(184, 138, 68, 0.10);
+}
+
+
+/* =========================================================
+   SUBTLE TOP / BOTTOM DETAILS
+   ========================================================= */
+
+.jk-table::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(184, 138, 68, 0.45),
+    transparent
+  );
+}
+
+
+/* =========================================================
+   TABLET — 768px to 1099px
+   ========================================================= */
+
+@media (max-width: 1099px) {
+
+  .jk-table {
+    margin: 2rem 0;
+  }
+
+  .jk-tableau {
+    min-width: 680px;
+    font-size: 0.94rem;
+  }
+
+  .jk-tableau thead th {
+    padding: 0.9rem 1rem;
+    font-size: 0.78rem;
+  }
+
+  .jk-tableau tbody th,
+  .jk-tableau tbody td {
+    padding: 0.95rem 1rem;
+  }
+
+  .jk-tableau tbody th {
+    width: 20%;
+  }
+}
+
+
+/* =========================================================
+   MOBILE — BELOW 767px
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .jk-table {
+    margin: 1.75rem 0;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+
+  .jk-tableau {
+    min-width: 650px;
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .jk-tableau thead th {
+    padding: 0.85rem 0.9rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+  }
+
+  .jk-tableau tbody th,
+  .jk-tableau tbody td {
+    padding: 0.9rem;
+  }
+
+  .jk-tableau tbody th {
+    font-size: 0.84rem;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .jk-table {
+    margin: 1.5rem -0.5rem;
+  }
+
+  .jk-tableau {
+    min-width: 620px;
+    font-size: 0.86rem;
+  }
+
+  .jk-tableau thead th {
+    padding: 0.75rem 0.8rem;
+    font-size: 0.68rem;
+  }
+
+  .jk-tableau tbody th,
+  .jk-tableau tbody td {
+    padding: 0.8rem;
+  }
+}
+
+/* =========================================================
+   KJ HERO — EDITORIAL LIBRARY STYLE
+   ========================================================= */
+
+.kj-hero {
+  position: relative;
+  padding: 6rem 2rem 5.5rem;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 15% 45%,
+      rgba(184, 138, 68, 0.075),
+      transparent 32%
+    );
+}
+
+
+/* Main content */
+.kj-content {
+  position: relative;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding-left: 2.25rem;
+
+  border-left: 2px solid rgba(184, 138, 68, 0.55);
+}
+
+
+/* =========================================================
+   SMALL LABEL
+   ========================================================= */
+
+.kj-content::before {
+  content: "TESTING • PAGE DESIGN";
+
+  display: block;
+  margin-bottom: 1.25rem;
+
+  color: #b88a44;
+
+  font-family:
+    "Cinzel",
+    "Times New Roman",
+    serif;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.kj-content h1 {
+  max-width: 900px;
+  margin: 0;
+
+  color: #eee2ce;
+
+  font-family:
+    "Cinzel",
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(2.4rem, 5.5vw, 4.8rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: 0.015em;
+}
+
+
+/* =========================================================
+   SUBTITLE
+   ========================================================= */
+
+.kj-content .subtitle {
+  max-width: 720px;
+  margin: 1.75rem 0 0;
+
+  color: #c9bdab;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   SMALL DECORATIVE NUMBER
+   ========================================================= */
+
+.kj-hero::before {
+  content: ".✦ ݁˖";
+
+  position: absolute;
+  right: max(5%, calc((100% - 1150px) / 2));
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: rgba(184, 138, 68, 0.08);
+
+  font-family:
+    "Cinzel",
+    serif;
+
+  font-size: clamp(8rem, 17vw, 15rem);
+  font-weight: 600;
+  line-height: 1;
+}
+
+
+/* =========================================================
+   BOTTOM RULE
+   ========================================================= */
+
+.kj-hero::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  width: min(1050px, 90%);
+
+  height: 1px;
+
+  transform: translateX(-50%);
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(184, 138, 68, 0.35),
+      transparent
+    );
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1099px) {
+
+  .kj-hero {
+    padding: 5rem 2rem 4.5rem;
+  }
+
+  .kj-content {
+    max-width: 850px;
+    padding-left: 1.75rem;
+  }
+
+  .kj-hero::before {
+    right: 4%;
+    font-size: 10rem;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .kj-hero {
+    padding: 4rem 1.25rem 3.5rem;
+  }
+
+  .kj-content {
+    padding-left: 1.25rem;
+  }
+
+  .kj-content::before {
+    margin-bottom: 1rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+  }
+
+  .kj-content h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1.12;
+  }
+
+  .kj-content .subtitle {
+    margin-top: 1.4rem;
+    font-size: 1.08rem;
+    line-height: 1.6;
+  }
+
+  .kj-hero::before {
+    right: -1rem;
+    top: 72%;
+    font-size: 7rem;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .kj-hero {
+    padding: 3.25rem 1rem 3rem;
+  }
+
+  .kj-content {
+    padding-left: 1rem;
+  }
+
+  .kj-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .kj-content .subtitle {
+    font-size: 1rem;
+  }
+
+  .kj-hero::before {
+    font-size: 5rem;
+    opacity: 0.7;
+  }
+}
+
+/* =========================================================
+   MODERN TABLE OF CONTENTS
+   Great Library of Philosophy
+   ========================================================= */
+
+.contents-of-page {
+  position: relative;
+  max-width: 900px;
+  margin: 3.5rem auto;
+  padding: 2rem 2.25rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(184, 138, 68, 0.055),
+      rgba(15, 4, 5, 0.78)
+    );
+
+  border: 1px solid rgba(184, 138, 68, 0.25);
+  border-radius: 4px;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+
+  overflow: hidden;
+}
+
+
+/* Small gold accent at the top */
+.contents-of-page::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(184, 138, 68, 0.75) 25%,
+    #b88a44 50%,
+    rgba(184, 138, 68, 0.75) 75%,
+    transparent 100%
+  );
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.contents-of-page > strong {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+
+  margin-bottom: 1.5rem;
+
+  color: #d3aa6b;
+
+  font-family:
+    "Cinzel",
+    "Times New Roman",
+    serif;
+
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+
+/* Small symbol before "On this page" */
+.contents-of-page > strong::before {
+  content: "Φ";
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 27px;
+  height: 27px;
+
+  border: 1px solid rgba(184, 138, 68, 0.4);
+
+  color: #b88a44;
+
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   LIST
+   ========================================================= */
+
+.contents-of-page ol {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 0;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  counter-reset: toc-counter;
+}
+
+
+/* =========================================================
+   LIST ITEM
+   ========================================================= */
+
+.contents-of-page li {
+  position: relative;
+
+  counter-increment: toc-counter;
+
+  min-width: 0;
+
+  border-top: 1px solid rgba(184, 138, 68, 0.12);
+}
+
+
+/* Number */
+.contents-of-page li::before {
+  content: counter(toc-counter, decimal-leading-zero);
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: rgba(184, 138, 68, 0.55);
+
+  font-family:
+    "Cinzel",
+    serif;
+
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.contents-of-page a {
+  position: relative;
+
+  display: block;
+
+  padding: 0.85rem 2.25rem 0.85rem 2.35rem;
+
+  color: #d8cdbb;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: 1.05rem;
+  line-height: 1.4;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    padding-left 0.2s ease,
+    background-color 0.2s ease;
+}
+
+
+/* Right-facing arrow */
+.contents-of-page a::after {
+  content: "→";
+
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+
+  transform: translateY(-50%) translateX(-4px);
+
+  color: rgba(184, 138, 68, 0);
+
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.contents-of-page li:hover {
+  background: rgba(184, 138, 68, 0.045);
+}
+
+.contents-of-page li:hover::before {
+  color: #b88a44;
+}
+
+.contents-of-page a:hover {
+  padding-left: 2.55rem;
+  color: #eadfcf;
+}
+
+.contents-of-page a:hover::after {
+  color: #b88a44;
+  transform: translateY(-50%) translateX(0);
+}
+
+
+/* =========================================================
+   KEYBOARD ACCESSIBILITY
+   ========================================================= */
+
+.contents-of-page a:focus-visible {
+  outline: 1px solid #b88a44;
+  outline-offset: -2px;
+
+  color: #eadfcf;
+  background: rgba(184, 138, 68, 0.07);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .contents-of-page {
+    margin: 3rem 1rem;
+    padding: 1.75rem 1.5rem;
+  }
+
+  .contents-of-page ol {
+    grid-template-columns: 1fr;
+  }
+
+  .contents-of-page a {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .contents-of-page {
+    margin: 2.25rem 0;
+    padding: 1.5rem 1rem;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .contents-of-page > strong {
+    margin-bottom: 1rem;
+    font-size: 0.76rem;
+  }
+
+  .contents-of-page > strong::before {
+    width: 25px;
+    height: 25px;
+  }
+
+  .contents-of-page a {
+    padding:
+      0.8rem
+      1.8rem
+      0.8rem
+      2.1rem;
+
+    font-size: 1rem;
+  }
+
+  .contents-of-page li::before {
+    font-size: 0.65rem;
+  }
+
+  .contents-of-page a::after {
+    right: 0.6rem;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .contents-of-page {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .contents-of-page > strong {
+    letter-spacing: 0.1em;
+  }
+
+  .contents-of-page a {
+    padding-left: 1.9rem;
+    font-size: 0.97rem;
+  }
+}
+
+/* ================= TIMELINE ================= */
+
+.kj-timeline-section {
+  margin: 3rem 0;
+}
+
+.kj-timeline-section h2 {
+  margin-bottom: 2.5rem;
+  
+}
+
+/* Timeline container */
+.kj-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 0 1rem;
+}
+
+/* Vertical line */
+.kj-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 12px;
+  width: 2px;
+  background: #b88a44;
+}
+
+/* Individual timeline point */
+.kj-point {
+  position: relative;
+  padding: 0 0 2.5rem 3.5rem;
+}
+
+/* Timeline dot */
+.kj-point::before {
+  content: "";
+  position: absolute;
+  top: 0.35rem;
+  left: 5px;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #b88a44;
+  border-radius: 50%;
+  background: #f5efe3;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+/* Date */
+.kj-date {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #b88a44;
+  font-family: "Cinzel", serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* Description */
+.kj-point p {
+  margin: 0;
+  max-width: 760px;
+  line-height: 1.7;
+}
+
+/* Remove extra spacing from final item */
+.kj-point:last-child {
+  padding-bottom: 0;
+}

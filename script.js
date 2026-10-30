@@ -3063,3 +3063,33 @@ if (searchInput && searchResults) {
 
 }
 
+(function () {
+    var touch = window.matchMedia('(hover: none)');
+    var wraps = document.querySelectorAll('.preview-link');
+
+    function closeAll(except) {
+        wraps.forEach(function (w) {
+            if (w !== except) w.classList.remove('is-open');
+        });
+    }
+
+    wraps.forEach(function (wrap) {
+        var link = wrap.querySelector(':scope > a');
+        link.addEventListener('click', function (e) {
+            if (!touch.matches) return;               // desktop: normal link
+            if (!wrap.classList.contains('is-open')) {
+                e.preventDefault();                     // 1st tap: show card only
+                closeAll(wrap);
+                wrap.classList.add('is-open');
+            }                                         // 2nd tap: goes to the page
+        });
+    });
+
+    document.addEventListener('click', function (e) {
+        if (!e.target.closest('.preview-link')) closeAll();
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeAll();
+    });
+})();

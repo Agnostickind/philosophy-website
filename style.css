@@ -2651,33 +2651,108 @@ body.theme-dark #resetAppearance:hover {
 
 }
 
-.related-pages {
-  max-width: 900px;
-  margin: 5rem auto;
-  padding: 0 6vw;
+/* ================= RELATED PAGES CARDS ================= */
+
+.related-pages .related-pages-intro {
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+  color: var(--ink-text);
+  opacity: 0.8;
+}
+
+.related-pages h2{
+
   text-align: center;
 }
 
-.related-pages h2 {
-  font-family: "Cinzel", serif;
-  font-size: 2rem;
-  line-height: 1.3;
-  margin-bottom: 2rem;
-  color: var(--theme-ink-text);
-  letter-spacing: -0.01em;
-  position: relative;
+.related-pages .related-link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+  text-align: center;
 }
 
-.related-pages h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 2px;
-  margin: 0.7rem auto 0;
-  background: linear-gradient(to right,
-      transparent,
-      var(--gold),
-      transparent);
+.related-pages a.related-page-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.3rem 1.4rem;
+  border: 1px solid var(--paper-line);
+  border-top: 2px solid var(--gold);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ink-text);
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease,
+    transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.related-pages a.related-page-link:hover,
+.related-pages a.related-page-link:focus-visible {
+  background: var(--parchment-2);
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.related-pages a.related-page-link:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.related-pages .related-page-category {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.related-pages .related-page-title {
+  font-family: "Cinzel", serif;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: var(--ink-text);
+}
+
+.related-pages .related-page-description {
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: var(--ink-text);
+  opacity: 0.75;
+}
+
+.related-pages a.related-page-link::after {
+  content: "Read more →";
+  margin-top: auto;
+  padding-top: 0.6rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+}
+
+@media (max-width: 900px) {
+  .related-pages .related-link-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .related-pages .related-link-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .related-pages a.related-page-link {
+    transition: none;
+  }
+  .related-pages a.related-page-link:hover,
+  .related-pages a.related-page-link:focus-visible {
+    transform: none;
+  }
 }
 
 /* =========================================================
@@ -2785,6 +2860,8 @@ body.theme-dark #resetAppearance:hover {
   font-size: 1.1rem;
 }
 
+
+
 /* ---- side figure, Wikipedia-style: image + caption ---- */
 
 /* =========================================================
@@ -2806,6 +2883,17 @@ body.theme-dark #resetAppearance:hover {
   text-align: center;
   margin-bottom: 1.5rem;
   position: relative;
+}
+
+.narrative-block h3 {
+  font-family: "Cinzel", serif !important;;
+  font-size: 1.40rem !important;;
+  font-weight: 600 !important;;
+  line-height: 1.5 !important;;
+  margin-top: 2rem !important;;
+  margin-bottom: 0.8rem !important;;
+  color: var(--gold-bright) !important;;
+  letter-spacing: 0.3px !important;;
 }
 
 .narrative-block h2::after {
@@ -2848,38 +2936,71 @@ body.theme-dark #resetAppearance:hover {
   color: var(--gold);
 }
 
+.narrative-block li{
+ font-family: "Cormorant Garamond", serif;
+}
 
 
-/* ---- floated figure — sits inside the text flow ---- */
+
+/* ---- floated figure — Wikipedia-style thumbnail box ---- */
 
 .narrative-figure {
   float: right;
   width: 300px;
   max-width: 40%;
   margin: 0.3rem 0 1rem 2rem;
+  padding: 4px;
+  background: #000409;
+  border: 1px solid #c8ccd1;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .narrative-figure img {
+  display: block;
   width: 100%;
-  border: 1px solid var(--paper-line);
-  border-radius: 4px;
-  box-shadow: var(--shadow-card);
+  height: auto;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .narrative-figure figcaption {
-  font-family: var(--serif-body);
-  font-style: italic;
-  font-size: 0.85rem;
-  color: var(--muted-dark);
-  margin-top: 0.6rem;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 0.88rem;
+  color: #d5e3f2;
+  margin: 0;
+  padding: 6px 6px 4px;
   line-height: 1.5;
   text-align: left;
+}
+
+.narrative-figure figcaption a {
+  color: #d90fd6;
+  text-decoration: none;
+}
+
+.narrative-figure figcaption a:hover {
+  text-decoration: underline;
 }
 
 .narrative-figure.left {
   float: left;
   margin: 0.3rem 2rem 1rem 0;
 }
+/* ---- responsive layout ---- */
+
+@media (max-width: 650px) {
+  .narrative-figure,
+  .narrative-figure.left {
+    float: none;
+    width: 100%;
+    max-width: 360px;
+    margin: 1.25rem auto;
+  }
+}
+
 
 /* clear the float after the section so the next section
    doesn't visually collide with a tall image */
@@ -9647,3 +9768,142 @@ h3[id] {
         }
       }
 
+      
+.hatnote {
+  --gold: #f5c97a;
+  --cream: #e9dccb;
+  --card-bg: #1e0d0d;
+  --card-border: rgba(245, 201, 122, .35);
+
+  font-style: italic;
+  color: var(--cream);
+  margin: 0 0 1em 0;
+}
+
+.preview-link {
+  position: relative;
+  display: inline-block;
+}
+
+.preview-link > a {
+  font-style: normal;
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(245, 201, 122, .6);
+  transition: text-shadow .2s ease, border-color .2s ease;
+}
+
+.preview-card {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
+  width: 340px;
+  max-width: 80vw;
+  padding: 16px 18px;
+  box-sizing: border-box;
+  background: var(--card-bg);
+  color: var(--cream);
+  font-style: normal;          /* was "font: normal", which is invalid and gets ignored */
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  box-shadow: 0 20px 60px -15px rgba(0, 0, 0, .8),
+              0 0 0 1px rgba(0, 0, 0, .4);
+  z-index: 100;
+
+  /* hidden by default */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity .2s ease, transform .2s ease, visibility 0s .2s;
+}
+
+/* invisible bridge so the card doesn't vanish while moving the mouse to it */
+.preview-card::after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 0;
+  right: 0;
+  height: 14px;
+}
+
+/* little arrow pointing at the link (now matches the card) */
+.preview-card::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 20px;
+  width: 12px;
+  height: 12px;
+  background: var(--card-bg);
+  border-left: 1px solid var(--card-border);
+  border-top: 1px solid var(--card-border);
+  transform: rotate(45deg);
+}
+
+/* desktop: show on hover or keyboard focus */
+@media (hover: hover) {
+  .preview-link:hover .preview-card,
+  .preview-link:focus-within .preview-card {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition-delay: .25s, .25s, 0s;
+  }
+}
+
+/* touch: opened by the JavaScript (first tap) */
+.preview-link.is-open .preview-card {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+/* link glow while the card is showing */
+.preview-link:hover > a,
+.preview-link:focus-within > a,
+.preview-link.is-open > a {
+  text-shadow: 0 0 12px rgba(245, 201, 122, .55);
+  border-bottom-color: var(--gold);
+}
+
+.preview-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.preview-text strong { color: var(--gold); }
+
+.preview-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gold);          /* was #3366cc (blue) */
+  text-decoration: none;
+}
+.preview-more:hover { text-decoration: underline; }
+
+/* small screens: card spans the full width so it never runs off the edge */
+@media (max-width: 600px) {
+  .hatnote { position: relative; }
+  .preview-link { position: static; }
+
+  .preview-card {
+    left: 0;
+    right: 0;
+    width: auto;
+    max-width: none;
+    font-size: 15px;
+  }
+
+  .preview-card::before { display: none; }   /* arrow can't point at the link here */
+
+  .preview-more { padding: 8px 0; }          /* easier to tap */
+}

@@ -2946,8 +2946,8 @@ body.theme-dark #resetAppearance:hover {
 
 .narrative-figure {
   float: right;
-  width: 300px;
-  max-width: 40%;
+  width: 350px;
+  max-width: 45%;
   margin: 0.3rem 0 1rem 2rem;
   padding: 4px;
   background: #000409;

@@ -2946,8 +2946,8 @@ body.theme-dark #resetAppearance:hover {
 
 .narrative-figure {
   float: right;
-  width: 350px;
-  max-width: 45%;
+  width: 300px;
+  max-width: 40%;
   margin: 0.3rem 0 1rem 2rem;
   padding: 4px;
   background: #000409;
@@ -4037,6 +4037,8 @@ body.theme-dark #resetAppearance:hover {
   .fact-box {
     padding: 40px 25px;
   }
+
+ 
 
   .greek-word {
     flex-direction: column;
@@ -5732,7 +5734,7 @@ body.theme-dark .footer {
 .fact-box h2 {
 
   font-size: 2.5rem;
-  color: #f3e6d2;
+  color: #ec9108 !important;
   margin-bottom: 50px;
   position: relative;
 }

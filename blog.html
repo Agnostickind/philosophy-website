@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta
       name="robots"
       content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
@@ -27,25 +25,24 @@
     <!-- End Google Tag Manager -->
 
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-JPZD4Q0LLL"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-JPZD4Q0LLL");
-    </script>
+          
 
     <title>Φ Blog | Φ The Great Library of Philosophy</title>
 
     <meta
+      name="description"
+      content="Explore philosophical essays, ideas, reflections, and discussions from The Great Library of Philosophy, covering thinkers, schools, branches, history, and timeless questions."
+    />
+    <meta
+      name="keywords"
+      content="philosophy blog, philosophy essays, philosophical ideas, philosophy articles, philosophers, schools of philosophy, branches of philosophy, history of philosophy, philosophy discussions"
+    />
+    <meta name="author" content="Kavya Jain" />
+    <meta name="theme-color" content="#b88a44" />
+
+    <meta
       property="og:title"
-      content=" Φ Blog | Φ The Great Library of Philosophy"
+      content="Φ Blog | Φ The Great Library of Philosophy"
     />
     <meta
       property="og:description"
@@ -62,19 +59,9 @@
     />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="author" content="Kavya Jain" />
-    <meta
-      name="keywords"
-      content="philosophy blog, philosophy essays, philosophical ideas, philosophy articles, philosophers, schools of philosophy, branches of philosophy, history of philosophy, philosophy discussions"
-    />
-    <meta name="theme-color" content="#b88a44" />
     <meta
       name="twitter:title"
       content="Φ Blog | Φ The Great Library of Philosophy"
-    />
-    <meta
-      name="description"
-      content="Explore philosophical essays, ideas, reflections, and discussions from The Great Library of Philosophy, covering thinkers, schools, branches, history, and timeless questions."
     />
     <meta
       name="twitter:description"
@@ -85,26 +72,27 @@
       content="https://libraryofphilosophy.com/images/og-preview.jpg"
     />
     <meta name="twitter:creator" content="@agnostickind" />
+
     <link rel="canonical" href="https://libraryofphilosophy.com/blog.html" />
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="thinkers-refine.css" />
+
     <link rel="stylesheet" href="nav-bar.css" />
     <link rel="stylesheet" href="home-refine.css" />
+
+    <!-- blog.css LAST so it wins -->
+    <link rel="stylesheet" href="blog.css" />
+
     <!-- Website Favicon -->
     <link rel="icon" href="favicon.ico" sizes="any" />
-
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-
     <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
       href="favicon-192x192.png"
     />
-
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   </head>
 
@@ -119,7 +107,9 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!-- ================= NAVBAR ================= -->
+    <!-- =====================================================
+       NAVIGATION
+       ===================================================== -->
 
     <nav class="navbar">
       <a href="index.html" class="logo">
@@ -132,13 +122,9 @@
         <!-- ================= HISTORY MEGA MENU ================= -->
 
         <div class="nav-mega history-mega">
-          <!-- Main History page link -->
-
           <a href="history.html" class="mega-trigger" aria-haspopup="true">
             History
           </a>
-
-          <!-- Mobile expand / collapse button -->
 
           <button
             class="mega-mobile-toggle"
@@ -150,12 +136,8 @@
             <span></span>
           </button>
 
-          <!-- History mega menu -->
-
           <div class="mega-menu" id="history-mega-menu">
             <div class="mega-menu-inner">
-              <!-- INTRODUCTION -->
-
               <div class="mega-intro">
                 <span class="mega-eyebrow"> The Great Tradition </span>
 
@@ -170,8 +152,6 @@
                   Explore History <span>→</span>
                 </a>
               </div>
-
-              <!-- ANCIENT -->
 
               <div class="mega-column">
                 <h4>Ancient Civilizations</h4>
@@ -220,8 +200,6 @@
                 </a>
               </div>
 
-              <!-- MEDIEVAL -->
-
               <div class="mega-column">
                 <h4>Medieval &amp; Renaissance</h4>
 
@@ -240,8 +218,6 @@
                   <span>Humanism and intellectual renewal</span>
                 </a>
               </div>
-
-              <!-- MODERN -->
 
               <div class="mega-column">
                 <h4>Modern &amp; Contemporary</h4>
@@ -266,12 +242,10 @@
         </div>
 
         <div class="nav-mega thinkers-mega">
-          <!-- Main Thinkers page link -->
           <a href="thinkers.html" class="mega-trigger" aria-haspopup="true">
             Thinkers
           </a>
 
-          <!-- Mobile expand / collapse button -->
           <button
             class="mega-mobile-toggle"
             type="button"
@@ -282,10 +256,8 @@
             <span></span>
           </button>
 
-          <!-- Thinkers mega menu -->
           <div class="mega-menu" id="thinkers-mega-menu">
             <div class="mega-menu-inner">
-              <!-- INTRODUCTION -->
               <div class="mega-intro">
                 <span class="mega-eyebrow"> The Great Minds </span>
 
@@ -302,7 +274,6 @@
                 </a>
               </div>
 
-              <!-- ANCIENT GREECE -->
               <div class="mega-column">
                 <h4>Ancient Greece</h4>
                 <a href="thales-of-miletus.html"
@@ -357,7 +328,6 @@
                 >
               </div>
 
-              <!-- HELLENISTIC & ROMAN -->
               <div class="mega-column">
                 <h4>Hellenistic &amp; Roman</h4>
                 <a href="pyrrho.html"
@@ -390,7 +360,6 @@
                 >
               </div>
 
-              <!-- MEDIEVAL & RENAISSANCE -->
               <div class="mega-column">
                 <h4>Medieval &amp; Renaissance</h4>
                 <a href="saint-augustine.html"
@@ -419,7 +388,6 @@
                 >
               </div>
 
-              <!-- EARLY MODERN · 17TH CENTURY -->
               <div class="mega-column">
                 <h4>Early Modern · 17th Century</h4>
                 <a href="francis-bacon.html"
@@ -456,7 +424,6 @@
                 >
               </div>
 
-              <!-- THE ENLIGHTENMENT · 18TH CENTURY -->
               <div class="mega-column">
                 <h4>The Enlightenment · 18th Century</h4>
                 <a href="george-berkeley.html"
@@ -506,7 +473,6 @@
                 >
               </div>
 
-              <!-- 19TH CENTURY -->
               <div class="mega-column">
                 <h4>19th Century</h4>
                 <a href="hegel.html"
@@ -535,7 +501,6 @@
                 >
               </div>
 
-              <!-- 20TH CENTURY -->
               <div class="mega-column">
                 <h4>20th Century</h4>
                 <a href="sigmund-freud.html"
@@ -583,7 +548,6 @@
                 >
               </div>
 
-              <!-- CONTEMPORARY -->
               <div class="mega-column">
                 <h4>Contemporary</h4>
                 <a href="hannah-arendt.html"
@@ -636,7 +600,6 @@
                 >
               </div>
 
-              <!-- INDIA · CLASSICAL & MEDIEVAL -->
               <div class="mega-column">
                 <h4>India · Classical &amp; Medieval</h4>
                 <a href="kapila.html"
@@ -688,7 +651,6 @@
                 >
               </div>
 
-              <!-- INDIA · MODERN -->
               <div class="mega-column">
                 <h4>India · Modern</h4>
                 <a href="rabindranath-tagore.html"
@@ -729,7 +691,6 @@
                 >
               </div>
 
-              <!-- EAST ASIA · CHINA & JAPAN -->
               <div class="mega-column">
                 <h4>East Asia · China &amp; Japan</h4>
                 <a href="confucius.html"
@@ -786,7 +747,6 @@
                 >
               </div>
 
-              <!-- ISLAMIC & PERSIAN -->
               <div class="mega-column">
                 <h4>Islamic &amp; Persian</h4>
                 <a href="al-kindi.html"
@@ -853,13 +813,9 @@
         <!-- ================= BRANCHES MEGA MENU ================= -->
 
         <div class="nav-mega branches-mega">
-          <!-- Main Branches page link -->
-
           <a href="branches.html" class="mega-trigger" aria-haspopup="true">
             Branches
           </a>
-
-          <!-- Mobile expand / collapse button -->
 
           <button
             class="mega-mobile-toggle"
@@ -871,12 +827,8 @@
             <span></span>
           </button>
 
-          <!-- Branches mega menu -->
-
           <div class="mega-menu" id="branches-mega-menu">
             <div class="mega-menu-inner">
-              <!-- INTRODUCTION -->
-
               <div class="mega-intro">
                 <span class="mega-eyebrow">
                   The Architecture of Philosophy
@@ -894,8 +846,6 @@
                   Explore Branches <span>→</span>
                 </a>
               </div>
-
-              <!-- FOUNDATIONAL -->
 
               <div class="mega-column">
                 <h4>Foundational Branches</h4>
@@ -925,8 +875,6 @@
                   <span>Beauty, art, and aesthetic experience</span>
                 </a>
               </div>
-
-              <!-- HUMAN & SOCIAL -->
 
               <div class="mega-column">
                 <h4>Human &amp; Social Philosophy</h4>
@@ -962,8 +910,6 @@
                 </a>
               </div>
 
-              <!-- KNOWLEDGE, REALITY & RELIGION -->
-
               <div class="mega-column">
                 <h4>Knowledge &amp; Reality</h4>
 
@@ -990,13 +936,9 @@
         <!-- ================= BOOKS MEGA MENU ================= -->
 
         <div class="nav-mega books-mega">
-          <!-- Main Books page link -->
-
           <a href="books.html" class="mega-trigger" aria-haspopup="true">
             Books
           </a>
-
-          <!-- Mobile expand / collapse button -->
 
           <button
             class="mega-mobile-toggle"
@@ -1008,12 +950,8 @@
             <span></span>
           </button>
 
-          <!-- Books mega menu -->
-
           <div class="mega-menu" id="books-mega-menu">
             <div class="mega-menu-inner">
-              <!-- INTRODUCTION -->
-
               <div class="mega-intro">
                 <span class="mega-eyebrow"> The Philosophical Library </span>
 
@@ -1029,8 +967,6 @@
                   Explore Books <span>→</span>
                 </a>
               </div>
-
-              <!-- ANCIENT PHILOSOPHY COLLECTION -->
 
               <div class="mega-column">
                 <h4>Ancient Philosophy Collection</h4>
@@ -1113,9 +1049,6 @@
                   >
                 </a>
               </div>
-              <!-- FUTURE COLLECTION -->
-
-              <!-- INDIAN PHILOSOPHY COLLECTION -->
 
               <div class="mega-column">
                 <h4>Indian Philosophy Collection</h4>
@@ -1213,8 +1146,6 @@
                   >
                 </a>
               </div>
-
-              <!-- ================= ENLIGHTENMENT COLLECTION ================= -->
 
               <div class="mega-column">
                 <h4>Enlightenment Collection</h4>
@@ -1317,7 +1248,6 @@
                   >
                 </a>
               </div>
-              <!-- MODERN PHILOSOPHY COLLECTION -->
 
               <div class="mega-column">
                 <h4>Modern Philosophy Collection</h4>
@@ -1391,8 +1321,6 @@
                 </a>
               </div>
 
-              <!-- POLITICAL & ETHICS COLLECTION -->
-
               <div class="mega-column">
                 <h4>Political &amp; Ethics Collection</h4>
 
@@ -1463,8 +1391,6 @@
                   >
                 </a>
               </div>
-
-              <!-- ================= EAST ASIAN PHILOSOPHY COLLECTION ================= -->
 
               <div class="mega-column">
                 <h4>East Asian Philosophy</h4>
@@ -1539,7 +1465,6 @@
                   >
                 </a>
               </div>
-              <!-- ================= ISLAMIC PHILOSOPHY COLLECTION ================= -->
 
               <div class="mega-column">
                 <h4>Islamic Philosophy Collection</h4>
@@ -1594,7 +1519,6 @@
       </div>
 
       <div class="nav-tools">
-        <!-- SEARCH -->
         <div class="search-container">
           <button
             class="search-toggle"
@@ -1615,6 +1539,7 @@
             <div class="search-results" id="search-results"></div>
           </div>
         </div>
+
         <button
           class="appearance-toggle"
           id="appearanceToggle"
@@ -1625,7 +1550,6 @@
           Aa
         </button>
 
-        <!-- LANGUAGE -->
         <div class="language-container">
           <button
             class="language-toggle"
@@ -1637,23 +1561,17 @@
 
           <div class="language-box">
             <label>Language</label>
+
             <button class="language-option" data-lang="en">English</button>
             <button class="language-option" data-lang="hi">हिन्दी</button>
-
             <button class="language-option" data-lang="es">Español</button>
-
             <button class="language-option" data-lang="fr">Français</button>
-
             <button class="language-option" data-lang="de">Deutsch</button>
-
             <button class="language-option" data-lang="ja">日本語</button>
-
             <button class="language-option" data-lang="ar">العربية</button>
           </div>
         </div>
       </div>
-
-      <!-- ================= MOBILE MENU ================= -->
 
       <button
         class="menu-toggle"
@@ -1665,483 +1583,409 @@
         <span></span>
       </button>
     </nav>
-    <!-- ================= HERO ================= -->
 
-    <header class="home-hero">
-      <div class="hero-content">
-        <h1>The Philosophy Blog: Ideas, Essays, and Philosophical Questions</h1>
-
+    <main class="blog-page">
+      <!-- ============ HERO ============ -->
+      <header class="blog-hero">
+        <span class="blog-eyebrow">The Journal</span>
+        <h1>
+          The Philosophy Blog: <em>Ideas, Essays,</em> and Philosophical
+          Questions
+        </h1>
         <p>
           Explore philosophy through essays, explainers, reflections, and
           discussions of philosophical ideas, thinkers, ethics, society, and
           everyday life. Discover how the questions explored throughout this
           library connect with the problems and experiences of the modern world.
         </p>
-      </div>
-    </header>
+      </header>
 
-    <!-- ================= CATEGORY NAV ================= -->
-
-    <nav class="category-nav">
-      <a href="#featured">⭐ Featured</a>
-      <a href="#ethics">⚖ Ethics</a>
-      <a href="#history-posts">🏛 History</a>
-      <a href="#modern-life">🌍 Modern Life</a>
-      <a href="#explainers">💡 Explainers</a>
-    </nav>
-
-    <!-- ================= FEATURED POST ================= -->
-
-    <section class="book-month" id="featured">
-      <h2><span>⭐</span> Featured Post</h2>
-
-      <p>Our most recent deep dive — start here if you're new to the blog.</p>
-
-      <div class="featured-book">
-        <img src="images/thales.jpeg" alt="Featured blog post image" />
-
-        <div class="featured-content">
-          <h3>Why Thales Still Matters</h3>
-          <h4>
-            What the first philosopher can teach us about intellectual courage
-          </h4>
-
-          <p>
-            Twenty-six centuries ago, a merchant in a small Ionian trading city
-            looked at a solar eclipse and, instead of reaching for myth, reached
-            for reason. Here's why that first small act of intellectual courage
-            still matters today.
-          </p>
-
-          <ul>
-            <li>📅 Published: August 2026</li>
-            <li>✍️ By Kavya Jain</li>
-            <li>⏱ 6 min read</li>
-            <li>🏷 History, Ethics</li>
-          </ul>
-
-          <a href="blog-thales.html" class="read-btn">📖 Read Full Post</a>
+      <!-- ============ FEATURED POST (bento) ============ -->
+      <section class="blog-section" aria-labelledby="best-title">
+        <div class="section-head">
+          <h2 id="best-title">Featured <em>post</em></h2>
+          <a href="#all-posts" class="link-arrow">See all posts →</a>
         </div>
-      </div>
-    </section>
 
-   
+        <div class="bento">
+          <a
+            href="blog-thales.html"
+            class="bento-main card-img"
+            style="--img: url(&quot;images/thales-philosophy.png&quot;)"
+          >
+            <span class="pill pill-light">Aug 2026</span>
+            <span class="pill pill-ghost">History</span>
+            <div class="bento-title">
+              <span class="pill-tag">6 min read</span>
+              <h3>Why Thales Still Matters</h3>
+            </div>
+            <span class="round-btn" aria-hidden="true">↗</span>
+          </a>
 
-    <!-- ===== ETHICS ===== -->
-    <section class="library-section" id="ethics">
-      <h2><span>⚖</span> Ethics</h2>
+          <aside class="bento-side">
+            <div class="bento-note">
+              <span class="pill pill-outline">Newsletter</span>
+              <p class="note-small">Get new posts</p>
+              <h3>by Email</h3>
+              <p class="note-copy">
+                No spam, no schedule pressure — just an email when something new
+                goes up.
+              </p>
+              <a href="#newsletter" class="link-underline">Subscribe</a>
+            </div>
 
-      <p>
-        Reflections on how philosophical ethics applies to everyday choices.
-      </p>
+            <a
+              href="blog-hobbes-social-contract.html"
+              class="bento-pick card-img"
+              style="--img: url(&quot;images/social-contract-blog.png&quot;)"
+            >
+              <span class="count-badge">11</span>
+              <span class="cta-white">Latest: Hobbes's Social Contract →</span>
+            </a>
+          </aside>
+        </div>
+      </section>
 
-      <div class="blog-grid">
-        <article class="blog-card">
-          <div class="blog-card-image">
-            <img
-              src="images/Leviathan.jpg"
-              alt="Cover of Hobbes's Leviathan"
-              loading="lazy"
-              decoding="async"
-            />
+      <!-- ============ ALL POSTS (filter + cards) ============ -->
+      <section class="blog-section" id="all-posts" aria-labelledby="all-title">
+        <div class="section-head stacked">
+          <h2 id="all-title">All <strong>Posts</strong></h2>
+          <p class="lede">Browse by topic, or search the archive.</p>
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-tabs" role="tablist" aria-label="Filter posts">
+            <button class="active" data-filter="all" role="tab">
+              View all
+            </button>
+            <button data-filter="ethics" role="tab">Ethics</button>
+            <button data-filter="history" role="tab">History</button>
+            <button data-filter="modern-life" role="tab">Modern Life</button>
+            <button data-filter="explainers" role="tab">Explainers</button>
           </div>
-          <div class="blog-card-content">
-            <span class="blog-category-tag">Political Philosophy</span>
+          <input
+            type="search"
+            id="blogSearch"
+            class="blog-search"
+            placeholder="Search posts…"
+            aria-label="Search posts"
+          />
+        </div>
+
+        <div class="post-grid" id="postGrid">
+          <!-- ===== Newest first ===== -->
+
+          <article class="post-card" data-category="ethics">
+            <a
+              href="blog-hobbes-social-contract.html"
+              class="post-thumb"
+              style="--img: url(&quot;images/social-contract-blog.png&quot;)"
+              aria-hidden="true"
+              tabindex="-1"
+            ></a>
+            <div class="post-meta">
+              <span>Political Philosophy</span><span>8 min read</span>
+            </div>
             <h3>
               <a href="blog-hobbes-social-contract.html"
                 >Would You Actually Sign Hobbes's Social Contract?</a
               >
             </h3>
-            <p class="blog-card-subtitle">
-              Total safety in exchange for total obedience
-            </p>
-            <p class="blog-card-excerpt">
+            <p>
               Hobbes offers you a deal that sounds like an easy no — until you
               actually look at what's on the other side of it.
             </p>
-            <div class="blog-card-meta">
-              <span>📅 Sep 2026</span>
-              <span>⏱ 8 min read</span>
-            </div>
-            <a href="blog-hobbes-social-contract.html" class="blog-read-link"
-              >Read Post</a
-            >
-          </div>
-        </article>
+            <footer>Published Sep 2026 · by Kavya Jain</footer>
+          </article>
 
-        <article class="blog-card">
-          <div class="blog-card-image">
-            <img
-              src="images/peter-singer.jpg"
-              alt="Peter Singer, philosopher of practical ethics"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="blog-card-content">
-            <span class="blog-category-tag">Ethics</span>
+          <article class="post-card" data-category="history">
+            <a
+              href="blog-thales.html"
+              class="post-thumb"
+              style="--img: url(&quot;images/thales-philosophy.png&quot;)"
+              aria-hidden="true"
+              tabindex="-1"
+            ></a>
+            <div class="post-meta">
+              <span>History</span><span>6 min read</span>
+            </div>
+            <h3>
+              <a href="blog-thales.html">Why Thales Still Matters</a>
+            </h3>
+            <p>
+              What the first philosopher can teach us about intellectual
+              courage, twenty-six centuries after a merchant looked at an
+              eclipse and reached for reason.
+            </p>
+            <footer>Published Aug 2026 · by Kavya Jain</footer>
+          </article>
+
+          <article class="post-card" data-category="ethics">
+            <a
+              href="blog-trolley-problem.html"
+              class="post-thumb"
+              style="--img: url(&quot;images/trolley-problem-philosophy.png&quot;)"
+              aria-hidden="true"
+              tabindex="-1"
+            ></a>
+            <div class="post-meta">
+              <span>Ethics</span><span>7 min read</span>
+            </div>
             <h3>
               <a href="blog-trolley-problem.html"
                 >The Trolley Problem Isn't Really About Trains</a
               >
             </h3>
-            <p class="blog-card-subtitle">
-              What a thought experiment reveals about how we reason morally
-            </p>
-            <p class="blog-card-excerpt">
+            <p>
               Everyone's heard of the trolley problem — but few stop to ask what
               it's actually testing, and why philosophers still argue about it.
             </p>
-            <div class="blog-card-meta">
-              <span>📅 Jun 2026</span>
-              <span>⏱ 7 min read</span>
-            </div>
-            <a href="blog-trolley-problem.html" class="blog-read-link"
-              >Read Post</a
-            >
-          </div>
-        </article>
+            <footer>Published Jun 2026 · by Kavya Jain</footer>
+          </article>
 
-        <article class="blog-card">
-          <div class="blog-card-image">
-            <img
-              src="images/Meditations.jpg"
-              alt="Marcus Aurelius's Meditations"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="blog-card-content">
-            <span class="blog-category-tag">Ethics</span>
+          <article class="post-card" data-category="ethics">
+            <a
+              href="blog-stoicism-without-hype.html"
+              class="post-thumb"
+              style="--img: url(&quot;images/Marcus Aurelius-blog.png&quot;)"
+              aria-hidden="true"
+              tabindex="-1"
+            ></a>
+            <div class="post-meta">
+              <span>Ethics</span><span>6 min read</span>
+            </div>
             <h3>
               <a href="blog-stoicism-without-hype.html"
                 >Stoicism Without the Hype</a
               >
             </h3>
-            <p class="blog-card-subtitle">
-              What Marcus Aurelius actually meant by "control what you can"
-            </p>
-            <p class="blog-card-excerpt">
+            <p>
               Stoicism has become a self-help buzzword. Here's what the
               philosophy actually argues, stripped of the productivity-guru
               gloss.
             </p>
-            <div class="blog-card-meta">
-              <span>📅 May 2026</span>
-              <span>⏱ 6 min read</span>
+            <footer>Published May 2026 · by Kavya Jain</footer>
+          </article>
+
+          <article class="post-card" data-category="history">
+            <a
+              href="blog-socrates-never-wrote.html"
+              class="post-thumb"
+              style="--img: url(&quot;images/socrates-never-write.png&quot;)"
+              aria-hidden="true"
+              tabindex="-1"
+            ></a>
+            <div class="post-meta">
+              <span>History</span><span>8 min read</span>
             </div>
-            <a href="blog-stoicism-without-hype.html" class="blog-read-link"
-              >Read Post</a
-            >
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===== HISTORY ===== -->
-    <section class="library-section" id="history-posts">
-      <h2><span>🏛</span> History</h2>
-
-      <p>Stories and context from philosophy's long history.</p>
-
-      <div class="blog-grid">
-        <article class="blog-card">
-          <div class="blog-card-image">
-            <img
-              src="images/Socrates.jpg"
-              alt="Bust of Socrates"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="blog-card-content">
-            <span class="blog-category-tag">History</span>
             <h3>
               <a href="blog-socrates-never-wrote.html"
                 >Why Socrates Never Wrote Anything Down</a
               >
             </h3>
-            <p class="blog-card-subtitle">
-              On dialogue, memory, and the risks of the written word
-            </p>
-            <p class="blog-card-excerpt">
+            <p>
               Socrates left no texts of his own — and it may not have been an
               accident. What did he think was lost when ideas get written down?
             </p>
-            <div class="blog-card-meta">
-              <span>📅 Apr 2026</span>
-              <span>⏱ 8 min read</span>
-            </div>
-            <a href="blog-socrates-never-wrote.html" class="blog-read-link"
-              >Read Post</a
-            >
-          </div>
-        </article>
+            <footer>Published Apr 2026 · by Kavya Jain</footer>
+          </article>
 
-        <article class="blog-card">
-          <div class="blog-card-image">
-            <img
-              src="images/confucius.jpeg"
-              alt="Portrait of Confucius"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="blog-card-content">
-            <span class="blog-category-tag">History</span>
+          <article class="post-card" data-category="history">
+            <a
+              href="blog-confucius-legalism.html"
+              class="post-thumb"
+              style="--img: url(&quot;images/confucius-blog.png&quot;)"
+              aria-hidden="true"
+              tabindex="-1"
+            ></a>
+            <div class="post-meta">
+              <span>History</span><span>7 min read</span>
+            </div>
             <h3>
               <a href="blog-confucius-legalism.html"
                 >Confucius, Legalism, and the Art of Governing</a
               >
             </h3>
-            <p class="blog-card-subtitle">
-              Two ancient answers to the same hard question
-            </p>
-            <p class="blog-card-excerpt">
+            <p>
               Confucianism and Legalism gave wildly different answers to how a
               society should be run — and both still echo in how governments
               operate today.
             </p>
-            <div class="blog-card-meta">
-              <span>📅 Mar 2026</span>
-              <span>⏱ 7 min read</span>
-            </div>
-            <a href="blog-confucius-legalism.html" class="blog-read-link"
-              >Read Post</a
-            >
-          </div>
-        </article>
+            <footer>Published Mar 2026 · by Kavya Jain</footer>
+          </article>
 
-        <article class="blog-card">
-          <div class="blog-card-image">
-            <img
-              src="images/al-frabi-ancient-islamic.jpg"
-              alt="Al-Farabi and the Islamic Golden Age"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="blog-card-content">
-            <span class="blog-category-tag">History</span>
+          <article class="post-card" data-category="history">
+            <a
+              href="blog-philosophers-who-saved-aristotle.html"
+              class="post-thumb"
+              style="
+                --img: url(&quot;images/al-frabi-ancient-islamic.jpg&quot;);
+              "
+              aria-hidden="true"
+              tabindex="-1"
+            ></a>
+            <div class="post-meta">
+              <span>History</span><span>6 min read</span>
+            </div>
             <h3>
               <a href="blog-philosophers-who-saved-aristotle.html"
                 >The Philosophers Who Saved Aristotle</a
               >
             </h3>
-            <p class="blog-card-subtitle">
-              How the Islamic Golden Age preserved Greek thought for the West
-            </p>
-            <p class="blog-card-excerpt">
+            <p>
               Without a centuries-long translation project in Baghdad, much of
               what we know about Aristotle might never have survived at all.
             </p>
-            <div class="blog-card-meta">
-              <span>📅 Feb 2026</span>
-              <span>⏱ 6 min read</span>
-            </div>
+            <footer>Published Feb 2026 · by Kavya Jain</footer>
+          </article>
+
+          <article class="post-card" data-category="modern-life">
             <a
-              href="blog-philosophers-who-saved-aristotle.html"
-              class="blog-read-link"
-              >Read Post</a
-            >
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===== MODERN LIFE ===== -->
-    <section class="library-section" id="modern-life">
-      <h2><span>🌍</span> Modern Life</h2>
-
-      <p>Applying old ideas to the questions we're actually facing now.</p>
-
-      <div class="blog-grid">
-        <article class="blog-card">
-          <div class="blog-card-image">
-            <img
-              src="images/neitzsche.jpeg"
-              alt="Portrait of Friedrich Nietzsche"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="blog-card-content">
-            <span class="blog-category-tag">Modern Life</span>
+              href="blog-nietzsche-doomscrolling.html"
+              class="post-thumb"
+              style="--img: url(&quot;images/doomscroll-blog.png&quot;)"
+              aria-hidden="true"
+              tabindex="-1"
+            ></a>
+            <div class="post-meta">
+              <span>Modern Life</span><span>6 min read</span>
+            </div>
             <h3>
               <a href="blog-nietzsche-doomscrolling.html"
                 >What Nietzsche Would Make of Doomscrolling</a
               >
             </h3>
-            <p class="blog-card-subtitle">
-              Nihilism, distraction, and the will to create meaning
-            </p>
-            <p class="blog-card-excerpt">
+            <p>
               "God is dead" was a diagnosis, not a celebration. What does that
               diagnosis look like applied to an infinite phone feed?
             </p>
-            <div class="blog-card-meta">
-              <span>📅 Jan 2026</span>
-              <span>⏱ 6 min read</span>
-            </div>
-            <a href="blog-nietzsche-doomscrolling.html" class="blog-read-link"
-              >Read Post</a
-            >
-          </div>
-        </article>
+            <footer>Published Jan 2026 · by Kavya Jain</footer>
+          </article>
 
-        <article class="blog-card">
-          <div class="blog-card-image">
-            <img
-              src="images/jean-Paul%20Sartre-modern-schools.jpg"
-              alt="Jean-Paul Sartre and existentialism"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="blog-card-content">
-            <span class="blog-category-tag">Modern Life</span>
+          <article class="post-card" data-category="modern-life">
+            <a
+              href="blog-sartre-ai-choice.html"
+              class="post-thumb"
+              style="
+                --img: url(&quot;images/sartre-ai-blog.png&quot;);
+              "
+              aria-hidden="true"
+              tabindex="-1"
+            ></a>
+            <div class="post-meta">
+              <span>Modern Life</span><span>8 min read</span>
+            </div>
             <h3>
               <a href="blog-sartre-ai-choice.html"
                 >Sartre and the Anxiety of AI-Assisted Choice</a
               >
             </h3>
-            <p class="blog-card-subtitle">
-              What "existence precedes essence" means when a chatbot can decide
-              for you
-            </p>
-            <p class="blog-card-excerpt">
+            <p>
               Sartre argued freedom is a burden we can't escape. What happens to
               that burden when software offers to carry it for us?
             </p>
-            <div class="blog-card-meta">
-              <span>📅 Dec 2025</span>
-              <span>⏱ 8 min read</span>
+            <footer>Published Dec 2025 · by Kavya Jain</footer>
+          </article>
+
+          <article class="post-card" data-category="explainers">
+            <a
+              href="blog-kant-categorical-imperative.html"
+              class="post-thumb"
+              style="--img: url(&quot;images/kant-critique-blog.png&quot;)"
+              aria-hidden="true"
+              tabindex="-1"
+            ></a>
+            <div class="post-meta">
+              <span>Explainer</span><span>5 min read</span>
             </div>
-            <a href="blog-sartre-ai-choice.html" class="blog-read-link"
-              >Read Post</a
-            >
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===== EXPLAINERS ===== -->
-    <section class="library-section" id="explainers">
-      <h2><span>💡</span> Explainers</h2>
-
-      <p>Plain-language breakdowns of big philosophical ideas.</p>
-
-      <div class="blog-grid">
-        <article class="blog-card">
-          <div class="blog-card-image">
-            <img
-              src="images/pure-reason.jpg"
-              alt="Kant's Critique of Pure Reason"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="blog-card-content">
-            <span class="blog-category-tag">Explainer</span>
             <h3>
               <a href="blog-kant-categorical-imperative.html"
                 >Kant's Categorical Imperative, Explained Simply</a
               >
             </h3>
-            <p class="blog-card-subtitle">No jargon, just the actual idea</p>
-            <p class="blog-card-excerpt">
+            <p>
               "Act only according to that maxim whereby you can at the same time
               will that it should become a universal law" sounds intimidating.
               Here's what it actually means.
             </p>
-            <div class="blog-card-meta">
-              <span>📅 Nov 2025</span>
-              <span>⏱ 5 min read</span>
-            </div>
-            <a
-              href="blog-kant-categorical-imperative.html"
-              class="blog-read-link"
-              >Read Post</a
-            >
-          </div>
-        </article>
+            <footer>Published Nov 2025 · by Kavya Jain</footer>
+          </article>
 
-        <article class="blog-card">
-          <div class="blog-card-image">
-            <img
-              src="images/epistemology.jpg"
-              alt="Illustration representing epistemology"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div class="blog-card-content">
-            <span class="blog-category-tag">Explainer</span>
+          <article class="post-card" data-category="explainers">
+            <a
+              href="blog-what-is-epistemology.html"
+              class="post-thumb"
+              style="--img: url(&quot;images/epistemology-blog.png&quot;)"
+              aria-hidden="true"
+              tabindex="-1"
+            ></a>
+            <div class="post-meta">
+              <span>Explainer</span><span>4 min read</span>
+            </div>
             <h3>
               <a href="blog-what-is-epistemology.html"
                 >What Is Epistemology, Actually?</a
               >
             </h3>
-            <p class="blog-card-subtitle">
-              The branch of philosophy you use every day without noticing
-            </p>
-            <p class="blog-card-excerpt">
+            <p>
               Every time you ask "how do you know that?" you're doing
               epistemology. Here's a plain-language tour of the field.
             </p>
-            <div class="blog-card-meta">
-              <span>📅 Oct 2025</span>
-              <span>⏱ 4 min read</span>
-            </div>
-            <a href="blog-what-is-epistemology.html" class="blog-read-link"
-              >Read Post</a
-            >
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ================= NEWSLETTER ================= -->
-
-    <section class="fact-box">
-      <h2>📬 Get New Posts by Email</h2>
-
-      <p>
-        No spam, no schedule pressure — just an email when something new goes
-        up.
-      </p>
-
-      <form
-        id="newsletter-form"
-        class="contact-form"
-        action="https://formspree.io/f/xyegkbvg"
-        method="POST"
-        novalidate
-        style="max-width: 420px; margin: 1.5rem auto 0"
-      >
-        <div class="form-group">
-          <label for="newsletter-email">Email</label>
-          <input
-            type="email"
-            id="newsletter-email"
-            name="email"
-            placeholder="you@example.com"
-            required
-          />
-          <span class="form-error"></span>
+            <footer>Published Oct 2025 · by Kavya Jain</footer>
+          </article>
         </div>
 
-        <button type="submit" class="form-submit">Subscribe</button>
+        <p class="no-results" id="noResults" hidden>
+          No posts match your search.
+        </p>
+        <div class="load-more-wrap">
+          <button class="btn-primary" id="loadMore" type="button">
+            Load more
+          </button>
+        </div>
+      </section>
 
-        <p class="form-success" role="status"></p>
-      </form>
-    </section>
+      <section class="fact-box">
+        <h2>📬 Get New Posts by Email</h2>
 
-    <!-- ================= FOOTER ================= -->
+        <p>
+          No spam, no schedule pressure — just an email when something new goes
+          up.
+        </p>
+
+        <form
+          id="newsletter-form"
+          class="contact-form"
+          action="https://formspree.io/f/xyegkbvg"
+          method="POST"
+          novalidate
+          style="max-width: 420px; margin: 1.5rem auto 0"
+        >
+          <div class="form-group">
+            <label for="newsletter-email">Email</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+            <span class="form-error"></span>
+          </div>
+
+          <button type="submit" class="form-submit">Subscribe</button>
+
+          <p class="form-success" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <!-- =====================================================
+       FOOTER
+       ===================================================== -->
 
     <footer class="footer">
       <div class="footer-main">
-        <!-- BRAND / INTRO -->
         <div class="footer-brand">
           <h2>Φ Philosophy</h2>
 
@@ -2153,7 +1997,6 @@
           <p class="footer-tagline">WELCOME TO THE LIBRARY</p>
         </div>
 
-        <!-- EXPLORE -->
         <div class="footer-column">
           <h3>EXPLORE</h3>
 
@@ -2167,14 +2010,13 @@
           <a href="blog.html">Blog</a>
         </div>
 
-        <!-- PHILOSOPHICAL ERAS -->
         <div class="footer-column">
           <h3>Terms and Conditions</h3>
           <a href="about.html">About</a>
 
           <a href="editorial-policy.html">Editorial-policy</a>
 
-          <a href="privacy-policy.html">Policy</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
 
           <a href="terms.html">Terms</a>
 
@@ -2184,40 +2026,50 @@
         </div>
 
         <div class="footer-column">
+          <h3>TRADITIONS</h3>
+
+          <a href="ancient-greece.html">Ancient Greece</a>
+
+          <a href="ancient-india.html">Ancient India</a>
+
+          <a href="ancient-china.html">Ancient China</a>
+
+          <a href="islamic-philosophy.html">Islamic Philosophy</a>
+        </div>
+
+        <div class="footer-column">
           <h3>BRANCHES</h3>
 
           <a href="ethics-branch-philosophy.html">Ethics</a>
+
           <a href="metaphysics-branch-philosophy.html">Metaphysics</a>
+
           <a href="epistemology-branch-philosophy.html">Epistemology</a>
+
           <a href="logic-branch-philosophy.html">Logic</a>
+
           <a href="aesthetics-branch-philosophy.html">Aesthetics</a>
         </div>
 
-        <!-- TRADITIONS -->
-        <div class="footer-column">
-          <h3>SCHOOLS</h3>
-          <a href="greek-schools.html">Greeks Schools</a>
-          <a href="indian-schools.html">Indian Schools</a>
-          <a href="chinese-japanese-schools.html">Chinese&Japanese Schools</a>
-          <a href="islamic-persian-schools.html">Persian&Islamic Schools</a>
-          <a href="enlightenment-schools.html">Enlightenment Schools</a>
-          <a href="modern-schools.html">Modern Schools</a>
-        </div>
-
-        <!-- LIBRARY -->
         <div class="footer-column">
           <h3>LIBRARY</h3>
 
           <a href="books.html">Philosophical Books</a>
+
           <a href="world-literature.html">World Literature</a>
+
           <a href="thinkers.html">Philosophers &amp; Thinkers</a>
+
           <a href="schools.html">Schools of Thought</a>
+
           <a href="branches.html">Branches of Philosophy</a>
+
           <a href="contact.html">Contact the Library</a>
         </div>
       </div>
 
       <!-- FOOTER BOTTOM -->
+
       <div class="footer-bottom">
         <div class="footer-bottom-brand">
           <strong>Φ The Great Library of Philosophy</strong>
@@ -2236,12 +2088,23 @@
       </div>
     </footer>
 
+    <!-- =====================================================
+       SCRIPTS
+       ===================================================== -->
+
     <script src="script.js" defer></script>
-    <script src="article-toc.js" defer></script>
+    <script src="js/cookie-consent.js" defer></script>
+    <script src="blog.js" defer></script>
+
+    <!-- =====================================================
+       APPEARANCE PANEL
+       ===================================================== -->
+
     <div class="appearance-panel" id="appearancePanel" aria-hidden="true">
       <div class="appearance-panel-header">
         <div>
           <span class="appearance-label">READING</span>
+
           <h3>Appearance</h3>
         </div>
 
@@ -2260,9 +2123,11 @@
 
         <div class="appearance-options text-size-options">
           <button type="button" data-text-size="small">Small</button>
+
           <button type="button" data-text-size="standard" class="active">
             Standard
           </button>
+
           <button type="button" data-text-size="large">Large</button>
         </div>
       </div>
